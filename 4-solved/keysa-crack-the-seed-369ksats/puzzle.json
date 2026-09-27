@@ -2,9 +2,9 @@
   "schema_version": 1,
   "slug": "keysa-crack-the-seed-369ksats",
   "title": "Keysa: Crack the Seed Game",
-  "tier": "dead-end",
-  "status": "dead-end",
-  "dead_end_reason": "swept-by-third-party",
+  "tier": "solved",
+  "status": "solved",
+  "dead_end_reason": null,
   "series": null,
   "author": {
     "name": "Keysa",
@@ -64,7 +64,18 @@
       "status": "open"
     }
   ],
-  "solutions": [],
+  "solutions": [
+    {
+      "lot": "main",
+      "date": "2026-09-08",
+      "answer": "unknown (swept without a published selection rule; author confirmed a third-party solve)",
+      "key_material_disclosed": false,
+      "payout_txid": "d072de42a72e5dd75f5eb4776f32eb26727ce37c5f7d54ee94c74347ed4eb2d7",
+      "payout_amount": "369150 sats",
+      "payout_to": "bc1q82gz5dnpxnqmvzrkusm8yc0nt4dcqp8gd3y59j",
+      "explorer": "https://mempool.space/tx/d072de42a72e5dd75f5eb4776f32eb26727ce37c5f7d54ee94c74347ed4eb2d7"
+    }
+  ],
   "artifacts": [
     {
       "path": "clues/L9rQ.jpg",

@@ -1,4 +1,4 @@
-# Andy Bauch: New Money, COG (428,206 sats, [OPEN])
+# Andy Bauch: New Money, COG (428,206 sats, [SOLVED])
 
 Andy Bauch, a Los Angeles LEGO-mosaic artist, exhibited a series called "New Money" at
 Castelli Art Space in March 2018: each piece hides the private key to a cryptocurrency
@@ -7,10 +7,10 @@ pieces plus 2 others in the series have had their encoding reconstructed and the
 matched exactly, all from the artist's own published photos; I reproduced that reconstruction
 myself from the same public images. COG, a photographic LEGO portrait triptych from the same
 series, has never been solved and, as far as I can establish, was never publicly attacked
-before this research: its escrow still holds 428,206 sats. I understand the general encoding
-method and have ruled out 2 of its known variants for COG with witnessed negatives. What is
-missing is a higher-fidelity photograph of the piece itself, which the artist does not have;
-the physical work sold to a private collector in 2018.
+before this research: its escrow held 428,206 sats, untouched since 2017, until an unknown party swept it on
+2026-09-25. The solver has not published the method. The research below is kept as it stood at
+the time of the solve; if the solver reads this, an explanation of the plate-seam channel gets
+full credit here.
 
 ## At a glance
 
@@ -21,12 +21,12 @@ the physical work sold to a private collector in 2018.
 | Prize | 428,206 sats (about $270 at BTC = $63,000, 2026-08-16) |
 | Chain | bitcoin |
 | Escrow | `1HLodS8H2GoWbnBXWcz7EkY773dKdD4JEv` ([explorer](https://mempool.space/address/1HLodS8H2GoWbnBXWcz7EkY773dKdD4JEv)) |
-| Last on-chain check | 2026-08-16: partially spent, 428,206 sats unspent (a 527,872 sats deposit arrived 2017-07-01, left the address 2017-12-30, and was replaced by the address's own funder the next day, 2017-12-31; that replacement amount is untouched since) |
-| Status | OPEN |
+| Last on-chain check | 2026-09-25: swept in block 968,565, tx `230bba19`, 427,072 sats out after fee; escrow now empty (the 428,206 sats had been untouched since 2017-12-31) |
+| Status | SOLVED; swept 2026-09-25 by an unknown party, method not published |
 | Puzzle type | pixel-code, physical-object |
 | Target format | unknown; the address's one on-chain spend reveals a compressed public key, so a 52-character compressed WIF private key is the expected shape, P2PKH |
 | Certified oracle | yes: `tools/oracle.py --selftest` (certified against the private key behind a solved sibling piece in the same series, BITCOIN $60) |
-| What remains | a higher-fidelity photograph of the piece, or new information from whoever holds it now |
+| What remains | nothing on-chain; the solving method is not public |
 | Series | Andy Bauch, "New Money" (2016-2018); 10 of the series' pieces are solved and used here as ground truth |
 
 ## The puzzle as published
@@ -117,6 +117,17 @@ Full ledger in [analysis/tested.md](analysis/tested.md). Summary:
 2. **Close the color-count gap in the region search** (bounded re-run). The sweep on COG only
    tried a 4-color local palette; a sibling piece needed 5 colors at the same character width.
 3. **Pieces from the same series with no public photo yet** (OSINT, tooling ready).
+
+## Solution
+
+The escrow was swept on 2026-09-25 (block 968,565,
+[tx `230bba19`](https://mempool.space/tx/230bba19d8e60803f36cb88f428c20dcc88fb431e0f611ddb05d3432fa8c5947)),
+427,072 sats to `bc1qvzc2cgm99ewfmhrdadq6ru2m7296em7wefl6ca` after fee, a plain spend with no
+message. Reported in [issue #35](https://github.com/floflo777/open-crypto-puzzles/issues/35) by
+Andy00L. Whoever recovered the key has not published the reading of the piece; the method below the
+line above is our own reconstruction and the exact plate-seam channel that COG uses is still not
+public knowledge. If the solver reads this, a write-up of how the triptych was read gets full
+credit here.
 
 ## Files in this folder
 

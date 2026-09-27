@@ -15,12 +15,12 @@ on-chain right now.
 <!-- totals:start -->
 | Asset | Locked in unsolved puzzles | Approx. value |
 |---|---|---|
-| Bitcoin | 5.96 BTC | $375,000 |
+| Bitcoin | 5.95 BTC | $375,000 |
 | Ethereum | 13.21 ETH | $25,000 |
 | Arweave | 1,900 AR | $3,400 |
 | Litecoin | 3.03 LTC | $200 |
 | Stablecoins | 306 USDT + 0 USDC | $300 |
-| **Total** | **across 30 funded puzzles** | **$404,000** |
+| **Total** | **across 29 funded puzzles** | **$404,000** |
 
 Checked 2026-08-16 at BTC $63,000, ETH $1,880, AR $1.81. Prices and balances move; verify each escrow yourself.
 <!-- totals:end -->
@@ -104,7 +104,6 @@ grouped by prize, is in the tables below.
 | [AH White: Walking Banks](2-mid-prizes/ah-white-walking-banks-800ksats/) | 800,000 sats | 504 | bitcoin | bip39-seed, book, text-cipher | external-info | 2026-08-16 | open |
 | [Keir Finlow-Bates: Move Over Brokers Treasure Hunt](2-mid-prizes/keir-finlow-bates-blockchain-book-600ksats/) | 600,000 sats | 378 | bitcoin | book, brainwallet, text-cipher | human-action | 2026-09-01 | open |
 | [FTPK Season 2: Never-Ending](2-mid-prizes/ftpk-season-2-300usdt/) | 305.930218 USDT | 306 | ethereum | bip39-seed, word-selection | insight | 2026-08-27 | open |
-| [Andy Bauch: New Money, COG](2-mid-prizes/andy-bauch-new-money-cog-428ksats/) | 428,206 sats | 270 | bitcoin | pixel-code, physical-object | external-info | 2026-08-16 | open |
 | [Zden Level HALV](2-mid-prizes/zden-haluska-halv-312ksats/) | 312,500 sats | 197 | bitcoin | geometry, raw-private-key | external-info | 2026-08-16 | open |
 | [Path to Greatness: Treasure Hunt](2-mid-prizes/path-to-greatness-treasure-hunt-3ltc/) | 3.02608794 LTC | 163 | litecoin | raw-private-key, image-stego, audio, text-cipher | insight | 2026-09-12 | open |
 | [Pindar Van Arman: cryptoArtGAN Act 1 Puzzle](2-mid-prizes/pindar-van-arman-cryptoartgan-nft/) | 1 NFT |  | ethereum | bip39-seed, word-selection | insight | 2026-08-16 | open |
@@ -119,7 +118,10 @@ grouped by prize, is in the tables below.
 ## Solved and cashed
 | Puzzle | Cashed | Payout tx | Date | Series lesson |
 |---|---|---|---|---|
+| [Zden Cryptopuzzle LVL.5](4-solved/zden-haluska-lvl5-555ksats/) | 551745 sats | [e2544433184d0fe4157ca10a8e1ce753bb52a7b0bbcf833740d7448ed25e8e8e](https://mempool.space/tx/e2544433184d0fe4157ca10a8e1ce753bb52a7b0bbcf833740d7448ed25e8e8e) | 2026-09-22 | the rectangle geometry is certified byte-perfect and the hint formula is read at the pixel level; over 545 million candidate keys across 3,200-plus readings have produced zero matches; the blocker is the exact meaning of 3 undefined terms in the author's own hint, not computation |
+| [Andy Bauch: New Money, COG](4-solved/andy-bauch-new-money-cog-428ksats/) | 427072 sats | [230bba19d8e60803f36cb88f428c20dcc88fb431e0f611ddb05d3432fa8c5947](https://mempool.space/tx/230bba19d8e60803f36cb88f428c20dcc88fb431e0f611ddb05d3432fa8c5947) | 2026-09-25 | the general encoding method is understood and 2 of its known variants are ruled out for COG with witnessed negatives; the blocker is image fidelity (whether individual brick seams are visible), and the physical piece is held by a private collector who bought it in 2018, not the artist |
 | [VeteranHODL: Hunting Time](4-solved/veteranhodl-hunting-time-420ksats/) | 420000 sats | [d3783a1cde2c491a6edfbead81aeebda90257c8c25b4b0c9b2bac89bc5cd607a](https://mempool.space/tx/d3783a1cde2c491a6edfbead81aeebda90257c8c25b4b0c9b2bac89bc5cd607a) | 2026-08-18 | solved by a reader after publication, not by me |
+| [Keysa: Crack the Seed Game](4-solved/keysa-crack-the-seed-369ksats/) | 369150 sats | [d072de42a72e5dd75f5eb4776f32eb26727ce37c5f7d54ee94c74347ed4eb2d7](https://mempool.space/tx/d072de42a72e5dd75f5eb4776f32eb26727ce37c5f7d54ee94c74347ed4eb2d7) | 2026-09-08 | swept on 2026-09-08 (block 966,260, 369,150 sats to bc1q82gz5dnpxnqmvzrkusm8yc0nt4dcqp8gd3y59j); the author confirmed the crack on X on 2026-09-10 without naming the solver; neither the 12 words nor the selection rule has been published; the negatives ledger stays as a record of what the selection rule is not |
 | [FTPK Season 4: Something in Common](4-solved/ftpk-season-4-166usdc/) | 181 USDC | [0x4c10674a4856cbba9b66543cc027a77e6b3a1ba458085f8fe680d588ffdd8f37](https://etherscan.io/tx/0x4c10674a4856cbba9b66543cc027a77e6b3a1ba458085f8fe680d588ffdd8f37) | 2026-08-20 | solved by a reader after publication, not by me |
 | [bc1q21 Time-Lock Challenge, Level 5](4-solved/bc1q21-timelock-challenge-l5-100ksats/) | 99604 sats | [73baf40f668fb221b6b9c934f199a51f7e0ab1f1bb585e07c18a7b3e88dfd7ed](https://mempool.space/tx/73baf40f668fb221b6b9c934f199a51f7e0ab1f1bb585e07c18a7b3e88dfd7ed) | 2026-07-24 | solved; the claim transaction confirms the answer |
 | [Bitcoin Movie Enigma](4-solved/bitcoin-movie-enigma-100ksats/) | 99766 sats | [bd3b088164ae32458b97b917af8fab14056461c5e954499f7bd4cf3a67d6c5f4](https://mempool.space/tx/bd3b088164ae32458b97b917af8fab14056461c5e954499f7bd4cf3a67d6c5f4) | 2026-09-07 | solved by a reader (rabbidbird) after publication, not by me; the winning 24-word phrase fails the BIP39 checksum, so every checksum-filtered sweep, mine included, had discarded it |

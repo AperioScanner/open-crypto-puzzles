@@ -1,4 +1,4 @@
-# Keysa: Crack the Seed Game (369,369 sats, [DEAD END])
+# Keysa: Crack the Seed Game (369,369 sats, [SOLVED])
 
 **Swept on 2026-09-08.** The escrow was emptied in block 966,260 by
 [transaction d072de42](https://mempool.space/tx/d072de42a72e5dd75f5eb4776f32eb26727ce37c5f7d54ee94c74347ed4eb2d7),
@@ -41,14 +41,6 @@ except for two, so the whole puzzle is the selection.
 | Certified oracle | yes: `tools/oracle.py --selftest` (certified against the public BIP39/BIP84 test vector) |
 | What remains | the selection rule that picks 12 of the 70 printed words; the derivation itself is solved |
 | Series | none |
-
-## Why this is a dead end
-
-Swept by a third party on 2026-09-08 (block 966,260). The prize is gone and the solver has not
-published the derivation. Reusable: the author's clues were exactly two, "12 words" and "all
-but two in order", and the seed came from BlueWallet (a checksum-valid mnemonic), so every
-checksum-filtered negative in `analysis/tested.md` stands as a true negative on the
-selection rule. If the derivation surfaces, this folder moves to the solved tier with credit.
 
 ## The puzzle as published
 
@@ -193,6 +185,10 @@ in any family formulated so far.
    sets times 67 orders is about 2.4e11 derivations after the checksum filter, about
    3.5 days at 790,000 derivations/s, and the author's words argue for a rule on the
    selection rather than a blind row sweep. It needs a row rule first.
+
+## Solution
+
+Swept on 2026-09-08 (block 966,260, [tx `d072de42`](https://mempool.space/tx/d072de42a72e5dd75f5eb4776f32eb26727ce37c5f7d54ee94c74347ed4eb2d7)), 369,150 sats to `bc1q82gz5dnpxnqmvzrkusm8yc0nt4dcqp8gd3y59j`, a plain spend with no message. The author confirmed the crack on X on 2026-09-10 ([thread](https://x.com/SimplestBTCBook/status/2098130640528925162)): the 12-word BlueWallet seed was hidden among the 70 printed words, and she congratulated the solver without naming them. The selection rule that picks 12 of the 70 has not been published. If the solver reads this, a write-up of the derivation gets full credit here.
 
 ## Files in this folder
 
