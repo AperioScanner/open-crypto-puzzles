@@ -294,3 +294,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+# Workflow trigger marker: 2026-09-30
