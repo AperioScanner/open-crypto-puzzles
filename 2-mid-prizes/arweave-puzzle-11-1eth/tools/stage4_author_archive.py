@@ -15,7 +15,8 @@ TERMS=[
  "1252961944807641090","1253297784633122817","1429846914028158977",
  "ff2142e98e09b5344994f9beb9c56c95506b9f17",
  "private key","privatekey","weird image","format does not matter",
- "access by private key","mew","puzzle","stegan","hint",
+ "access by private key","mew","puzzle","stegan","hint","image","picture",
+ "similar","same","solved","store","storing","wallet","hidden",
 ]
 def norm(v):
     if v is None: return ""
@@ -32,13 +33,19 @@ for ws in wb.worksheets:
     headers=[norm(x) or f"col_{i}" for i,x in enumerate(first)]
     data_rows=[first]
     data_rows.extend(rows)
+    hmap={h.lower():i for i,h in enumerate(headers)}
+    text_idx=hmap.get("text")
+    id_idx=hmap.get("tweet id")
+    utc_idx=hmap.get("utc")
     count=0
     for ridx,row in enumerate(data_rows,start=1):
         vals=[norm(v) for v in row]
-        joined=" | ".join(vals)
-        low=joined.lower()
+        textval=vals[text_idx] if text_idx is not None and text_idx<len(vals) else ""
+        idval=vals[id_idx] if id_idx is not None and id_idx<len(vals) else ""
+        utcval=vals[utc_idx] if utc_idx is not None and utc_idx<len(vals) else ""
+        low=(textval+" "+idval).lower()
         hits=[t for t in TERMS if t in low]
-        date_hit=bool(re.search(r"2020[-/](?:0?4|0?5)[-/]",joined)) or bool(re.search(r"2021[-/]0?8[-/]",joined))
+        date_hit=bool(re.match(r"(?:2019-(?:11|12)|2020-(?:01|02|03|04|05)|2021-08)",utcval))
         if not hits and not date_hit: continue
         rec={headers[i] if i<len(headers) else f"col_{i}": vals[i] for i in range(len(vals)) if vals[i]}
         all_matches.append({"sheet":ws.title,"row":ridx,"terms":hits,"date_window":date_hit,"record":rec})
