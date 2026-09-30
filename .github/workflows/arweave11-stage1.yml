@@ -1,0 +1,83 @@
+name: Arweave 11 research stage 1
+
+on:
+  push:
+    branches:
+      - research/arweave11-chatgpt
+    paths:
+      - ".github/workflows/arweave11-stage1.yml"
+      - "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage1_steg_analysis.py"
+      - "2-mid-prizes/arweave-puzzle-11-1eth/clues/arweave-puzzle-11.png"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  stage1:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      PZL: 2-mid-prizes/arweave-puzzle-11-1eth
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/arweave11-chatgpt
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python analysis dependencies
+        run: python -m pip install --disable-pip-version-check numpy pillow
+
+      - name: Run structural steganalysis
+        run: python "$PZL/tools/stage1_steg_analysis.py"
+
+      - name: Install zsteg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ruby-full >/dev/null
+          sudo gem install zsteg --no-document >/dev/null
+
+      - name: Run zsteg without exposing extracted material
+        shell: bash
+        run: |
+          set +e
+          zsteg -a "$PZL/clues/arweave-puzzle-11.png" > /tmp/arweave11-zsteg.raw 2>&1
+          rc=$?
+          set -e
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json, re
+          root=Path("2-mid-prizes/arweave-puzzle-11-1eth")
+          out=root/"analysis"/"runs"/"stage1-steg"
+          out.mkdir(parents=True,exist_ok=True)
+          raw=Path("/tmp/arweave11-zsteg.raw").read_bytes()
+          lines=raw.splitlines()
+          hex64=re.compile(rb"(?<![0-9a-fA-F])[0-9a-fA-F]{64}(?![0-9a-fA-F])")
+          summary={
+            "raw_output_sha256":hashlib.sha256(raw).hexdigest(),
+            "line_count":len(lines),
+            "hex64_line_count":sum(bool(hex64.search(x)) for x in lines),
+            "nonempty_line_count":sum(bool(x.strip()) for x in lines),
+            "note":"Raw zsteg output is intentionally not persisted because it could contain prize key material."
+          }
+          (out/"zsteg-summary.json").write_text(json.dumps(summary,indent=2)+"\n")
+          print(json.dumps(summary))
+          PY
+          rm -f /tmp/arweave11-zsteg.raw
+          exit 0
+
+      - name: Commit non-secret stage 1 results
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$PZL/analysis/runs/stage1-steg"
+          if git diff --cached --quiet; then
+            echo "No result changes"
+            exit 0
+          fi
+          git commit -m "research: stage 1 steganalysis results [skip ci]"
+          git push origin HEAD:research/arweave11-chatgpt
