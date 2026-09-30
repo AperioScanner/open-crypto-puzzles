@@ -1,0 +1,7 @@
+{
+  "raw_output_sha256": "ecd6630e7c2890754d25057745050152e39ee85c3a9a32de73486114abfe2f22",
+  "line_count": 3107,
+  "hex64_line_count": 0,
+  "nonempty_line_count": 3078,
+  "note": "Raw zsteg output is intentionally not persisted because it could contain prize key material."
+}
