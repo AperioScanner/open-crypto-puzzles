@@ -58,7 +58,7 @@ def connected_components(mask: np.ndarray) -> list[dict]:
         xs = [p[1] for p in pts]
         comps.append({
             "size": len(pts),
-            "bbox": [min(xs), min(ys), max(xs), max(ys)],
+            "bbox": [int(min(xs)), int(min(ys)), int(max(xs)), int(max(ys))],
             "points": pts,
         })
     comps.sort(key=lambda c: c["size"], reverse=True)
