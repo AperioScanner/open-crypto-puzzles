@@ -43,7 +43,7 @@ def hough_measure(crop,canny1,canny2,hough_threshold,min_frac,gap):
     lines=cv2.HoughLinesP(edges,1,np.pi/180,hough_threshold,minLineLength=minlen,maxLineGap=gap)
     sums={"H":0.0,"V":0.0,"D":0.0}; counts={"H":0,"V":0,"D":0}
     if lines is not None:
-        for ln in lines[:,0,:]:
+        for ln in np.asarray(lines).reshape(-1,4):
             x1,y1,x2,y2=map(int,ln)
             dx=x2-x1; dy=y2-y1
             length=math.hypot(dx,dy)
