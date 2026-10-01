@@ -3,17 +3,17 @@
     1600,
     1105
   ],
-  "building_classes": "VVVVVHVVVVVV",
+  "building_classes": "HHVVHHVHHHHV",
   "mappings": {
     "H0_V1": {
-      "bits": "111110111111",
-      "hex": "fbf",
-      "int": 4031
+      "bits": "001100100001",
+      "hex": "321",
+      "int": 801
     },
     "H1_V0": {
-      "bits": "000001000000",
-      "hex": "040",
-      "int": 64
+      "bits": "110011011110",
+      "hex": "cde",
+      "int": 3294
     }
   },
   "buildings": [
@@ -114,16 +114,8 @@
           "edge_pixels": 2416
         }
       ],
-      "votes": [
-        "H",
-        "V",
-        "V",
-        "V",
-        "V",
-        "V"
-      ],
-      "class": "V",
-      "vote_confidence": 0.8333333333333334
+      "class": "H",
+      "sobel_margin": 0.4672738419770728
     },
     {
       "id": 2,
@@ -222,16 +214,8 @@
           "edge_pixels": 3497
         }
       ],
-      "votes": [
-        "H",
-        "V",
-        "V",
-        "V",
-        "V",
-        "V"
-      ],
-      "class": "V",
-      "vote_confidence": 0.8333333333333334
+      "class": "H",
+      "sobel_margin": 0.42968704571621136
     },
     {
       "id": 3,
@@ -330,16 +314,8 @@
           "edge_pixels": 2200
         }
       ],
-      "votes": [
-        "V",
-        "V",
-        "V",
-        "V",
-        "V",
-        "V"
-      ],
       "class": "V",
-      "vote_confidence": 1.0
+      "sobel_margin": 0.19149360937905724
     },
     {
       "id": 4,
@@ -438,16 +414,8 @@
           "edge_pixels": 5988
         }
       ],
-      "votes": [
-        "V",
-        "V",
-        "V",
-        "V",
-        "V",
-        "V"
-      ],
       "class": "V",
-      "vote_confidence": 1.0
+      "sobel_margin": 0.4230747499695026
     },
     {
       "id": 5,
@@ -546,16 +514,8 @@
           "edge_pixels": 5547
         }
       ],
-      "votes": [
-        "H",
-        "V",
-        "V",
-        "V",
-        "V",
-        "V"
-      ],
-      "class": "V",
-      "vote_confidence": 0.8333333333333334
+      "class": "H",
+      "sobel_margin": 0.5200656469183264
     },
     {
       "id": 6,
@@ -654,16 +614,8 @@
           "edge_pixels": 1921
         }
       ],
-      "votes": [
-        "H",
-        "H",
-        "H",
-        "H",
-        "H",
-        "H"
-      ],
       "class": "H",
-      "vote_confidence": 1.0
+      "sobel_margin": 0.471431711536071
     },
     {
       "id": 7,
@@ -762,16 +714,8 @@
           "edge_pixels": 7413
         }
       ],
-      "votes": [
-        "V",
-        "V",
-        "V",
-        "V",
-        "V",
-        "V"
-      ],
       "class": "V",
-      "vote_confidence": 1.0
+      "sobel_margin": 0.32775491967601517
     },
     {
       "id": 8,
@@ -870,16 +814,8 @@
           "edge_pixels": 4555
         }
       ],
-      "votes": [
-        "H",
-        "V",
-        "V",
-        "V",
-        "V",
-        "V"
-      ],
-      "class": "V",
-      "vote_confidence": 0.8333333333333334
+      "class": "H",
+      "sobel_margin": 0.5004749249346647
     },
     {
       "id": 9,
@@ -978,16 +914,8 @@
           "edge_pixels": 2254
         }
       ],
-      "votes": [
-        "H",
-        "V",
-        "V",
-        "V",
-        "V",
-        "V"
-      ],
-      "class": "V",
-      "vote_confidence": 0.8333333333333334
+      "class": "H",
+      "sobel_margin": 0.39244932980071845
     },
     {
       "id": 10,
@@ -1086,16 +1014,8 @@
           "edge_pixels": 3718
         }
       ],
-      "votes": [
-        "H",
-        "V",
-        "V",
-        "V",
-        "V",
-        "V"
-      ],
-      "class": "V",
-      "vote_confidence": 0.8333333333333334
+      "class": "H",
+      "sobel_margin": 0.46963730588872726
     },
     {
       "id": 11,
@@ -1194,16 +1114,8 @@
           "edge_pixels": 1339
         }
       ],
-      "votes": [
-        "H",
-        "V",
-        "V",
-        "V",
-        "V",
-        "V"
-      ],
-      "class": "V",
-      "vote_confidence": 0.8333333333333334
+      "class": "H",
+      "sobel_margin": 0.4055999423191235
     },
     {
       "id": 12,
@@ -1302,16 +1214,8 @@
           "edge_pixels": 3188
         }
       ],
-      "votes": [
-        "V",
-        "V",
-        "V",
-        "V",
-        "V",
-        "V"
-      ],
       "class": "V",
-      "vote_confidence": 1.0
+      "sobel_margin": 0.478826223271985
     }
   ],
   "threshold_robustness": [
