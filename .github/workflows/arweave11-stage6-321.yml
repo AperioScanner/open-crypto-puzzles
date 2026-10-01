@@ -41,6 +41,16 @@ jobs:
             exit 78
           fi
           exit "$rc"
+      - name: Upload diagnostic images
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stage6-321-diagnostics
+          path: |
+            ${{ env.PZL }}/analysis/runs/stage6-321/*.png
+            ${{ env.PZL }}/analysis/runs/stage6-321/REPORT.md
+            ${{ env.PZL }}/analysis/runs/stage6-321/result.json
+          retention-days: 7
       - name: Commit non-secret results
         if: success()
         shell: bash
