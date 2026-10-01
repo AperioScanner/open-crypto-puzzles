@@ -1,0 +1,23 @@
+{
+  "historical_reference": {
+    "repo": "surg0r/steg",
+    "public_since": "2015-11-22",
+    "mechanism": "first row, red-channel LSB, 1-byte length, payload plus 4 ASCII hex chars from sha256(data) tail"
+  },
+  "canonical_gray_lsb_decode": {
+    "source": "gray",
+    "plane": 0,
+    "direction": "forward",
+    "invert": false,
+    "bitorder": "big",
+    "bit_offset": 0,
+    "length_byte": 255,
+    "available_bytes": 199
+  },
+  "total_protocol_variants": 2048,
+  "valid_checksum_variants": 0,
+  "valid_checksum_metadata": [],
+  "top_plausible_metadata": [],
+  "exact_target_match": false,
+  "security_note": "Payload bytes and private-key candidates are never persisted."
+}
