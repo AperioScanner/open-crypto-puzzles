@@ -73,7 +73,7 @@ def serializations(vals):
 def direct32(data):
     if len(data)==32: return [("exact",data)]
     if len(data)<32:
-        return [("lpad0",b"\0"*(32-len(data))+data),("rpad0",data+b"\0"*(32-len(data))]
+        return [("lpad0",b"\0"*(32-len(data))+data),("rpad0",data+b"\0"*(32-len(data)))]
     return [("head32",data[:32]),("tail32",data[-32:])]
 
 def main():
