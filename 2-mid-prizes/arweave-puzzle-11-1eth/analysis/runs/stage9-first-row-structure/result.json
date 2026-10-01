@@ -1,0 +1,659 @@
+{
+  "canonical_lt255": {
+    "nonwhite_count": 147,
+    "nonwhite_positions": [
+      1013,
+      1014,
+      1026,
+      1027,
+      1028,
+      1029,
+      1031,
+      1032,
+      1033,
+      1038,
+      1039,
+      1044,
+      1045,
+      1053,
+      1111,
+      1112,
+      1113,
+      1114,
+      1115,
+      1116,
+      1117,
+      1118,
+      1119,
+      1120,
+      1121,
+      1122,
+      1123,
+      1124,
+      1125,
+      1126,
+      1127,
+      1128,
+      1129,
+      1130,
+      1131,
+      1132,
+      1133,
+      1134,
+      1135,
+      1136,
+      1137,
+      1138,
+      1139,
+      1140,
+      1141,
+      1142,
+      1143,
+      1144,
+      1145,
+      1146,
+      1147,
+      1148,
+      1149,
+      1150,
+      1151,
+      1152,
+      1153,
+      1154,
+      1155,
+      1156,
+      1157,
+      1158,
+      1159,
+      1160,
+      1161,
+      1162,
+      1163,
+      1164,
+      1165,
+      1166,
+      1167,
+      1168,
+      1169,
+      1170,
+      1171,
+      1172,
+      1173,
+      1174,
+      1175,
+      1176,
+      1177,
+      1178,
+      1179,
+      1180,
+      1181,
+      1182,
+      1183,
+      1184,
+      1185,
+      1186,
+      1187,
+      1188,
+      1189,
+      1190,
+      1191,
+      1192,
+      1193,
+      1194,
+      1195,
+      1196,
+      1197,
+      1198,
+      1199,
+      1200,
+      1201,
+      1202,
+      1203,
+      1204,
+      1205,
+      1206,
+      1207,
+      1208,
+      1209,
+      1210,
+      1211,
+      1212,
+      1213,
+      1214,
+      1215,
+      1216,
+      1217,
+      1218,
+      1219,
+      1220,
+      1221,
+      1222,
+      1223,
+      1271,
+      1272,
+      1273,
+      1274,
+      1275,
+      1276,
+      1277,
+      1362,
+      1363,
+      1364,
+      1365,
+      1366,
+      1367,
+      1368,
+      1369,
+      1396,
+      1397,
+      1398,
+      1399,
+      1400
+    ],
+    "one_runs": [
+      {
+        "start": 1013,
+        "length": 2
+      },
+      {
+        "start": 1026,
+        "length": 4
+      },
+      {
+        "start": 1031,
+        "length": 3
+      },
+      {
+        "start": 1038,
+        "length": 2
+      },
+      {
+        "start": 1044,
+        "length": 2
+      },
+      {
+        "start": 1053,
+        "length": 1
+      },
+      {
+        "start": 1111,
+        "length": 113
+      },
+      {
+        "start": 1271,
+        "length": 7
+      },
+      {
+        "start": 1362,
+        "length": 8
+      },
+      {
+        "start": 1396,
+        "length": 5
+      }
+    ],
+    "zero_runs": [
+      {
+        "start": 0,
+        "length": 1013
+      },
+      {
+        "start": 1015,
+        "length": 11
+      },
+      {
+        "start": 1030,
+        "length": 1
+      },
+      {
+        "start": 1034,
+        "length": 4
+      },
+      {
+        "start": 1040,
+        "length": 4
+      },
+      {
+        "start": 1046,
+        "length": 7
+      },
+      {
+        "start": 1054,
+        "length": 57
+      },
+      {
+        "start": 1224,
+        "length": 47
+      },
+      {
+        "start": 1278,
+        "length": 84
+      },
+      {
+        "start": 1370,
+        "length": 26
+      },
+      {
+        "start": 1401,
+        "length": 199
+      }
+    ],
+    "distinct_nonwhite_values": [
+      202,
+      203,
+      204,
+      205,
+      208,
+      211,
+      214,
+      215,
+      220,
+      221,
+      224,
+      225,
+      227,
+      229,
+      230,
+      231,
+      232,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254
+    ],
+    "nonwhite_value_counts": {
+      "202": 1,
+      "203": 2,
+      "204": 1,
+      "205": 1,
+      "208": 2,
+      "211": 1,
+      "214": 1,
+      "215": 2,
+      "220": 1,
+      "221": 1,
+      "224": 1,
+      "225": 1,
+      "227": 1,
+      "229": 2,
+      "230": 1,
+      "231": 1,
+      "232": 2,
+      "234": 4,
+      "235": 9,
+      "236": 2,
+      "237": 1,
+      "238": 2,
+      "239": 2,
+      "240": 1,
+      "241": 1,
+      "242": 4,
+      "243": 1,
+      "244": 1,
+      "245": 1,
+      "246": 1,
+      "247": 2,
+      "248": 4,
+      "249": 2,
+      "250": 6,
+      "251": 5,
+      "252": 18,
+      "253": 14,
+      "254": 44
+    }
+  },
+  "threshold_stats": [
+    {
+      "threshold_lt": 255,
+      "ones": 147,
+      "run_count": 21,
+      "one_run_count": 10,
+      "zero_run_count": 11,
+      "one_run_lengths": [
+        2,
+        4,
+        3,
+        2,
+        2,
+        1,
+        113,
+        7,
+        8,
+        5
+      ],
+      "zero_run_lengths": [
+        1013,
+        11,
+        1,
+        4,
+        4,
+        7,
+        57,
+        47,
+        84,
+        26,
+        199
+      ]
+    },
+    {
+      "threshold_lt": 254,
+      "ones": 103,
+      "run_count": 27,
+      "one_run_count": 13,
+      "zero_run_count": 14,
+      "one_run_lengths": [
+        2,
+        4,
+        3,
+        2,
+        2,
+        55,
+        3,
+        2,
+        1,
+        2,
+        17,
+        6,
+        4
+      ],
+      "zero_run_lengths": [
+        1013,
+        11,
+        1,
+        4,
+        4,
+        69,
+        14,
+        3,
+        3,
+        2,
+        6,
+        49,
+        87,
+        231
+      ]
+    },
+    {
+      "threshold_lt": 253,
+      "ones": 89,
+      "run_count": 23,
+      "one_run_count": 11,
+      "zero_run_count": 12,
+      "one_run_lengths": [
+        2,
+        4,
+        3,
+        2,
+        2,
+        52,
+        2,
+        1,
+        1,
+        16,
+        4
+      ],
+      "zero_run_lengths": [
+        1013,
+        11,
+        1,
+        4,
+        4,
+        70,
+        17,
+        3,
+        4,
+        10,
+        51,
+        323
+      ]
+    },
+    {
+      "threshold_lt": 252,
+      "ones": 71,
+      "run_count": 17,
+      "one_run_count": 8,
+      "zero_run_count": 9,
+      "one_run_lengths": [
+        1,
+        3,
+        3,
+        2,
+        2,
+        51,
+        6,
+        3
+      ],
+      "zero_run_lengths": [
+        1014,
+        12,
+        1,
+        4,
+        4,
+        71,
+        47,
+        53,
+        323
+      ]
+    },
+    {
+      "threshold_lt": 251,
+      "ones": 66,
+      "run_count": 17,
+      "one_run_count": 8,
+      "zero_run_count": 9,
+      "one_run_lengths": [
+        1,
+        3,
+        2,
+        2,
+        2,
+        50,
+        3,
+        3
+      ],
+      "zero_run_lengths": [
+        1014,
+        12,
+        2,
+        4,
+        4,
+        71,
+        50,
+        54,
+        323
+      ]
+    },
+    {
+      "threshold_lt": 250,
+      "ones": 60,
+      "run_count": 17,
+      "one_run_count": 8,
+      "zero_run_count": 9,
+      "one_run_lengths": [
+        1,
+        3,
+        2,
+        1,
+        2,
+        48,
+        1,
+        2
+      ],
+      "zero_run_lengths": [
+        1014,
+        12,
+        2,
+        5,
+        4,
+        72,
+        52,
+        55,
+        324
+      ]
+    },
+    {
+      "threshold_lt": 248,
+      "ones": 54,
+      "run_count": 15,
+      "one_run_count": 7,
+      "zero_run_count": 8,
+      "one_run_lengths": [
+        1,
+        3,
+        2,
+        1,
+        1,
+        45,
+        1
+      ],
+      "zero_run_lengths": [
+        1014,
+        12,
+        2,
+        5,
+        5,
+        72,
+        112,
+        324
+      ]
+    },
+    {
+      "threshold_lt": 245,
+      "ones": 50,
+      "run_count": 13,
+      "one_run_count": 6,
+      "zero_run_count": 7,
+      "one_run_lengths": [
+        1,
+        3,
+        2,
+        1,
+        1,
+        42
+      ],
+      "zero_run_lengths": [
+        1014,
+        12,
+        2,
+        5,
+        5,
+        73,
+        439
+      ]
+    },
+    {
+      "threshold_lt": 240,
+      "ones": 42,
+      "run_count": 13,
+      "one_run_count": 6,
+      "zero_run_count": 7,
+      "one_run_lengths": [
+        1,
+        3,
+        2,
+        1,
+        1,
+        34
+      ],
+      "zero_run_lengths": [
+        1014,
+        12,
+        2,
+        5,
+        5,
+        74,
+        446
+      ]
+    },
+    {
+      "threshold_lt": 235,
+      "ones": 26,
+      "run_count": 13,
+      "one_run_count": 6,
+      "zero_run_count": 7,
+      "one_run_lengths": [
+        1,
+        2,
+        1,
+        1,
+        20,
+        1
+      ],
+      "zero_run_lengths": [
+        1014,
+        12,
+        3,
+        12,
+        74,
+        7,
+        452
+      ]
+    },
+    {
+      "threshold_lt": 230,
+      "ones": 18,
+      "run_count": 5,
+      "one_run_count": 2,
+      "zero_run_count": 3,
+      "one_run_lengths": [
+        2,
+        16
+      ],
+      "zero_run_lengths": [
+        1027,
+        92,
+        463
+      ]
+    },
+    {
+      "threshold_lt": 220,
+      "ones": 11,
+      "run_count": 5,
+      "one_run_count": 2,
+      "zero_run_count": 3,
+      "one_run_lengths": [
+        1,
+        10
+      ],
+      "zero_run_lengths": [
+        1028,
+        95,
+        466
+      ]
+    },
+    {
+      "threshold_lt": 200,
+      "ones": 0,
+      "run_count": 1,
+      "one_run_count": 0,
+      "zero_run_count": 1,
+      "one_run_lengths": [],
+      "zero_run_lengths": [
+        1600
+      ]
+    }
+  ],
+  "unique_32byte_candidates": 60423,
+  "valid_scalars_checked": 56300,
+  "near_ff21": 1,
+  "exact_match": false,
+  "scope": "binary first-row masks at 13 intensity thresholds; forward/reverse/invert; both bit orders; every 256-bit window; packed-mask hashes; nonwhite positions/deltas/run lengths/gap lengths/run starts serialized and hashed/direct-mapped",
+  "security_note": "No candidate private key is persisted."
+}
