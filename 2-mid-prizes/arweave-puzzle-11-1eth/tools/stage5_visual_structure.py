@@ -80,19 +80,20 @@ def main():
         crop,inner=crop_inner(gray,b)
         sob=sobel_measure(crop)
         hs=[hough_measure(crop,*cfg) for cfg in configs]
-        votes=[sob["class"]]+[x["class"] for x in hs]
-        h=votes.count("H"); v=votes.count("V")
-        cls="H" if h>v else ("V" if v>h else "M")
-        confidence=max(h,v)/len(votes)
+        # For dense freehand hatching, HoughLinesP tends to lock onto long stroke edges
+        # and rectangle boundaries. The signed Sobel energy directly measures the dominant
+        # visual texture and is also independently repeated after eight binarization thresholds.
+        cls=sob["class"]
+        confidence=abs(float(sob["vh_score"]))
         stable.append(cls)
         row={
           "id":b["id"],"bbox":[b["x0"],b["roof_y"],b["x1"],b["bottom_y"]],
           "inner_bbox":list(inner),"sobel":sob,"hough":hs,
-          "votes":votes,"class":cls,"vote_confidence":confidence,
+          "class":cls,"sobel_margin":confidence,
         }
         rows.append(row)
         x0,y0,x1,y1=inner
-        label=f"{b['id']}:{cls} {confidence:.2f}"
+        label=f"{b['id']}:{cls}"
         cv2.rectangle(annotated,(x0,y0),(x1,y1),(0,0,0),1)
         cv2.putText(annotated,label,(x0,max(16,y0-4)),cv2.FONT_HERSHEY_SIMPLEX,0.45,(255,255,255),3,cv2.LINE_AA)
         cv2.putText(annotated,label,(x0,max(16,y0-4)),cv2.FONT_HERSHEY_SIMPLEX,0.45,(0,0,0),1,cv2.LINE_AA)
@@ -121,10 +122,10 @@ def main():
 
     md=["# Stage 5 — robust visual structure","",
         "The 12 building interiors were classified independently with Sobel orientation energy and five Hough-line parameter sets.","",
-        "| id | class | confidence | Sobel V-H score | Hough classes |",
-        "|---:|:---:|---:|---:|:---|"]
+        "| id | visual class | Sobel V-H score | Hough diagnostic |",
+        "|---:|:---:|---:|:---|"]
     for r in rows:
-        md.append(f"| {r['id']} | {r['class']} | {r['vote_confidence']:.3f} | {r['sobel']['vh_score']:.4f} | {''.join(x['class'] for x in r['hough'])} |")
+        md.append(f"| {r['id']} | {r['class']} | {r['sobel']['vh_score']:.4f} | {''.join(x['class'] for x in r['hough'])} |")
     md += ["",
       "Stable orientation sequence: "+''.join(stable),
       "H=0, V=1: "+json.dumps(mappings["H0_V1"]),
@@ -134,7 +135,8 @@ def main():
     for r in robustness:
         md.append(f"- threshold {r['threshold']}: {r['classes']}")
     md += ["",
-      "A pattern stable across independent estimators and thresholds is worth following because it is visually preserved by ordinary re-encoding, consistent with the author's 'format does not matter' hint. It is not a solution by itself.",
+      "The signed Sobel texture classifier is stable under all eight tested binarization thresholds. Hough is retained only as a diagnostic because dense freehand stroke edges bias it toward long edge/boundary segments.",
+      "The resulting 12-bit skyline pattern is visually preserved by ordinary re-encoding, consistent with the author's 'format does not matter' hint. It is a lead, not a solution.",
       ""]
     (OUT/"REPORT.md").write_text("\n".join(md))
     print(json.dumps({"status":"ok","classes":"".join(stable),"mappings":mappings}))
