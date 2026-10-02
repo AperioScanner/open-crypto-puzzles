@@ -1,0 +1,1694 @@
+{
+  "experiment_id": "A11-EXP-015",
+  "scope": "same semantic ROIs, thresholds and size bands as Stage 12; tests stable 3-2-1 or 1-2-3 component-count signatures only; no private-key operations",
+  "thresholds": [
+    80,
+    110,
+    140,
+    170,
+    200
+  ],
+  "component_bands_px": {
+    "small": [
+      3,
+      200
+    ],
+    "medium": [
+      201,
+      2000
+    ],
+    "large": [
+      2001,
+      null
+    ]
+  },
+  "promotion_rule": ">=4 of 5 thresholds exactly equal 3,2,1 or 1,2,3 in a single pre-defined semantic region",
+  "promoted": [],
+  "incidental_single_threshold_matches": [],
+  "regions": [
+    {
+      "region": "building_01",
+      "bbox": [
+        241,
+        174,
+        315,
+        315
+      ],
+      "counts_by_threshold": [
+        {
+          "threshold": 80,
+          "small_mid_large": [
+            29,
+            1,
+            1
+          ]
+        },
+        {
+          "threshold": 110,
+          "small_mid_large": [
+            29,
+            0,
+            1
+          ]
+        },
+        {
+          "threshold": 140,
+          "small_mid_large": [
+            20,
+            0,
+            1
+          ]
+        },
+        {
+          "threshold": 170,
+          "small_mid_large": [
+            16,
+            0,
+            1
+          ]
+        },
+        {
+          "threshold": 200,
+          "small_mid_large": [
+            14,
+            0,
+            1
+          ]
+        }
+      ],
+      "target_scores": [
+        {
+          "target": "321",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            20,
+            0,
+            1
+          ],
+          "mad_counts": [
+            6.0,
+            0.0,
+            0.0
+          ],
+          "mean_l1_distance": 20.4,
+          "min_l1_distance": 13
+        },
+        {
+          "target": "123",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            20,
+            0,
+            1
+          ],
+          "mad_counts": [
+            6.0,
+            0.0,
+            0.0
+          ],
+          "mean_l1_distance": 24.4,
+          "min_l1_distance": 17
+        }
+      ],
+      "best_target": {
+        "target": "321",
+        "exact_thresholds": 0,
+        "exact_fraction": 0.0,
+        "median_counts": [
+          20,
+          0,
+          1
+        ],
+        "mad_counts": [
+          6.0,
+          0.0,
+          0.0
+        ],
+        "mean_l1_distance": 20.4,
+        "min_l1_distance": 13
+      }
+    },
+    {
+      "region": "building_02",
+      "bbox": [
+        332,
+        97,
+        406,
+        304
+      ],
+      "counts_by_threshold": [
+        {
+          "threshold": 80,
+          "small_mid_large": [
+            15,
+            1,
+            1
+          ]
+        },
+        {
+          "threshold": 110,
+          "small_mid_large": [
+            16,
+            1,
+            1
+          ]
+        },
+        {
+          "threshold": 140,
+          "small_mid_large": [
+            8,
+            1,
+            1
+          ]
+        },
+        {
+          "threshold": 170,
+          "small_mid_large": [
+            5,
+            1,
+            1
+          ]
+        },
+        {
+          "threshold": 200,
+          "small_mid_large": [
+            6,
+            1,
+            1
+          ]
+        }
+      ],
+      "target_scores": [
+        {
+          "target": "321",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            8,
+            1,
+            1
+          ],
+          "mad_counts": [
+            3.0,
+            0.0,
+            0.0
+          ],
+          "mean_l1_distance": 8.0,
+          "min_l1_distance": 3
+        },
+        {
+          "target": "123",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            8,
+            1,
+            1
+          ],
+          "mad_counts": [
+            3.0,
+            0.0,
+            0.0
+          ],
+          "mean_l1_distance": 12.0,
+          "min_l1_distance": 7
+        }
+      ],
+      "best_target": {
+        "target": "321",
+        "exact_thresholds": 0,
+        "exact_fraction": 0.0,
+        "median_counts": [
+          8,
+          1,
+          1
+        ],
+        "mad_counts": [
+          3.0,
+          0.0,
+          0.0
+        ],
+        "mean_l1_distance": 8.0,
+        "min_l1_distance": 3
+      }
+    },
+    {
+      "region": "building_03",
+      "bbox": [
+        422,
+        194,
+        494,
+        316
+      ],
+      "counts_by_threshold": [
+        {
+          "threshold": 80,
+          "small_mid_large": [
+            45,
+            2,
+            0
+          ]
+        },
+        {
+          "threshold": 110,
+          "small_mid_large": [
+            24,
+            2,
+            0
+          ]
+        },
+        {
+          "threshold": 140,
+          "small_mid_large": [
+            8,
+            1,
+            1
+          ]
+        },
+        {
+          "threshold": 170,
+          "small_mid_large": [
+            6,
+            1,
+            1
+          ]
+        },
+        {
+          "threshold": 200,
+          "small_mid_large": [
+            7,
+            1,
+            1
+          ]
+        }
+      ],
+      "target_scores": [
+        {
+          "target": "321",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            8,
+            1,
+            1
+          ],
+          "mad_counts": [
+            2.0,
+            0.0,
+            0.0
+          ],
+          "mean_l1_distance": 16.0,
+          "min_l1_distance": 4
+        },
+        {
+          "target": "123",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            8,
+            1,
+            1
+          ],
+          "mad_counts": [
+            2.0,
+            0.0,
+            0.0
+          ],
+          "mean_l1_distance": 20.0,
+          "min_l1_distance": 8
+        }
+      ],
+      "best_target": {
+        "target": "321",
+        "exact_thresholds": 0,
+        "exact_fraction": 0.0,
+        "median_counts": [
+          8,
+          1,
+          1
+        ],
+        "mad_counts": [
+          2.0,
+          0.0,
+          0.0
+        ],
+        "mean_l1_distance": 16.0,
+        "min_l1_distance": 4
+      }
+    },
+    {
+      "region": "building_04",
+      "bbox": [
+        515,
+        123,
+        663,
+        303
+      ],
+      "counts_by_threshold": [
+        {
+          "threshold": 80,
+          "small_mid_large": [
+            146,
+            8,
+            0
+          ]
+        },
+        {
+          "threshold": 110,
+          "small_mid_large": [
+            145,
+            5,
+            1
+          ]
+        },
+        {
+          "threshold": 140,
+          "small_mid_large": [
+            139,
+            5,
+            1
+          ]
+        },
+        {
+          "threshold": 170,
+          "small_mid_large": [
+            127,
+            5,
+            1
+          ]
+        },
+        {
+          "threshold": 200,
+          "small_mid_large": [
+            108,
+            4,
+            1
+          ]
+        }
+      ],
+      "target_scores": [
+        {
+          "target": "321",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            139,
+            5,
+            1
+          ],
+          "mad_counts": [
+            7.0,
+            0.0,
+            0.0
+          ],
+          "mean_l1_distance": 133.6,
+          "min_l1_distance": 107
+        },
+        {
+          "target": "123",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            139,
+            5,
+            1
+          ],
+          "mad_counts": [
+            7.0,
+            0.0,
+            0.0
+          ],
+          "mean_l1_distance": 137.6,
+          "min_l1_distance": 111
+        }
+      ],
+      "best_target": {
+        "target": "321",
+        "exact_thresholds": 0,
+        "exact_fraction": 0.0,
+        "median_counts": [
+          139,
+          5,
+          1
+        ],
+        "mad_counts": [
+          7.0,
+          0.0,
+          0.0
+        ],
+        "mean_l1_distance": 133.6,
+        "min_l1_distance": 107
+      }
+    },
+    {
+      "region": "building_05",
+      "bbox": [
+        686,
+        43,
+        774,
+        289
+      ],
+      "counts_by_threshold": [
+        {
+          "threshold": 80,
+          "small_mid_large": [
+            62,
+            7,
+            1
+          ]
+        },
+        {
+          "threshold": 110,
+          "small_mid_large": [
+            60,
+            8,
+            1
+          ]
+        },
+        {
+          "threshold": 140,
+          "small_mid_large": [
+            55,
+            9,
+            1
+          ]
+        },
+        {
+          "threshold": 170,
+          "small_mid_large": [
+            44,
+            6,
+            3
+          ]
+        },
+        {
+          "threshold": 200,
+          "small_mid_large": [
+            24,
+            5,
+            2
+          ]
+        }
+      ],
+      "target_scores": [
+        {
+          "target": "321",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            55,
+            7,
+            1
+          ],
+          "mad_counts": [
+            7.0,
+            1.0,
+            0.0
+          ],
+          "mean_l1_distance": 51.6,
+          "min_l1_distance": 25
+        },
+        {
+          "target": "123",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            55,
+            7,
+            1
+          ],
+          "mad_counts": [
+            7.0,
+            1.0,
+            0.0
+          ],
+          "mean_l1_distance": 54.4,
+          "min_l1_distance": 27
+        }
+      ],
+      "best_target": {
+        "target": "321",
+        "exact_thresholds": 0,
+        "exact_fraction": 0.0,
+        "median_counts": [
+          55,
+          7,
+          1
+        ],
+        "mad_counts": [
+          7.0,
+          1.0,
+          0.0
+        ],
+        "mean_l1_distance": 51.6,
+        "min_l1_distance": 25
+      }
+    },
+    {
+      "region": "building_06",
+      "bbox": [
+        891,
+        209,
+        971,
+        299
+      ],
+      "counts_by_threshold": [
+        {
+          "threshold": 80,
+          "small_mid_large": [
+            20,
+            4,
+            0
+          ]
+        },
+        {
+          "threshold": 110,
+          "small_mid_large": [
+            15,
+            4,
+            0
+          ]
+        },
+        {
+          "threshold": 140,
+          "small_mid_large": [
+            8,
+            1,
+            1
+          ]
+        },
+        {
+          "threshold": 170,
+          "small_mid_large": [
+            9,
+            1,
+            1
+          ]
+        },
+        {
+          "threshold": 200,
+          "small_mid_large": [
+            6,
+            1,
+            1
+          ]
+        }
+      ],
+      "target_scores": [
+        {
+          "target": "321",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            9,
+            1,
+            1
+          ],
+          "mad_counts": [
+            3.0,
+            0.0,
+            0.0
+          ],
+          "mean_l1_distance": 10.4,
+          "min_l1_distance": 4
+        },
+        {
+          "target": "123",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            9,
+            1,
+            1
+          ],
+          "mad_counts": [
+            3.0,
+            0.0,
+            0.0
+          ],
+          "mean_l1_distance": 14.4,
+          "min_l1_distance": 8
+        }
+      ],
+      "best_target": {
+        "target": "321",
+        "exact_thresholds": 0,
+        "exact_fraction": 0.0,
+        "median_counts": [
+          9,
+          1,
+          1
+        ],
+        "mad_counts": [
+          3.0,
+          0.0,
+          0.0
+        ],
+        "mean_l1_distance": 10.4,
+        "min_l1_distance": 4
+      }
+    },
+    {
+      "region": "building_07",
+      "bbox": [
+        992,
+        92,
+        1128,
+        302
+      ],
+      "counts_by_threshold": [
+        {
+          "threshold": 80,
+          "small_mid_large": [
+            237,
+            6,
+            0
+          ]
+        },
+        {
+          "threshold": 110,
+          "small_mid_large": [
+            164,
+            12,
+            0
+          ]
+        },
+        {
+          "threshold": 140,
+          "small_mid_large": [
+            108,
+            5,
+            2
+          ]
+        },
+        {
+          "threshold": 170,
+          "small_mid_large": [
+            76,
+            2,
+            2
+          ]
+        },
+        {
+          "threshold": 200,
+          "small_mid_large": [
+            51,
+            2,
+            1
+          ]
+        }
+      ],
+      "target_scores": [
+        {
+          "target": "321",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            108,
+            5,
+            1
+          ],
+          "mad_counts": [
+            56.0,
+            3.0,
+            1.0
+          ],
+          "mean_l1_distance": 128.4,
+          "min_l1_distance": 48
+        },
+        {
+          "target": "123",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            108,
+            5,
+            1
+          ],
+          "mad_counts": [
+            56.0,
+            3.0,
+            1.0
+          ],
+          "mean_l1_distance": 131.6,
+          "min_l1_distance": 52
+        }
+      ],
+      "best_target": {
+        "target": "321",
+        "exact_thresholds": 0,
+        "exact_fraction": 0.0,
+        "median_counts": [
+          108,
+          5,
+          1
+        ],
+        "mad_counts": [
+          56.0,
+          3.0,
+          1.0
+        ],
+        "mean_l1_distance": 128.4,
+        "min_l1_distance": 48
+      }
+    },
+    {
+      "region": "building_08",
+      "bbox": [
+        1151,
+        118,
+        1249,
+        304
+      ],
+      "counts_by_threshold": [
+        {
+          "threshold": 80,
+          "small_mid_large": [
+            117,
+            6,
+            0
+          ]
+        },
+        {
+          "threshold": 110,
+          "small_mid_large": [
+            87,
+            8,
+            0
+          ]
+        },
+        {
+          "threshold": 140,
+          "small_mid_large": [
+            50,
+            4,
+            1
+          ]
+        },
+        {
+          "threshold": 170,
+          "small_mid_large": [
+            34,
+            3,
+            1
+          ]
+        },
+        {
+          "threshold": 200,
+          "small_mid_large": [
+            30,
+            2,
+            1
+          ]
+        }
+      ],
+      "target_scores": [
+        {
+          "target": "321",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            50,
+            4,
+            1
+          ],
+          "mad_counts": [
+            20.0,
+            2.0,
+            0.0
+          ],
+          "mean_l1_distance": 63.6,
+          "min_l1_distance": 27
+        },
+        {
+          "target": "123",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            50,
+            4,
+            1
+          ],
+          "mad_counts": [
+            20.0,
+            2.0,
+            0.0
+          ],
+          "mean_l1_distance": 67.6,
+          "min_l1_distance": 31
+        }
+      ],
+      "best_target": {
+        "target": "321",
+        "exact_thresholds": 0,
+        "exact_fraction": 0.0,
+        "median_counts": [
+          50,
+          4,
+          1
+        ],
+        "mad_counts": [
+          20.0,
+          2.0,
+          0.0
+        ],
+        "mean_l1_distance": 63.6,
+        "min_l1_distance": 27
+      }
+    },
+    {
+      "region": "building_09",
+      "bbox": [
+        1267,
+        186,
+        1341,
+        303
+      ],
+      "counts_by_threshold": [
+        {
+          "threshold": 80,
+          "small_mid_large": [
+            23,
+            2,
+            1
+          ]
+        },
+        {
+          "threshold": 110,
+          "small_mid_large": [
+            15,
+            2,
+            1
+          ]
+        },
+        {
+          "threshold": 140,
+          "small_mid_large": [
+            6,
+            1,
+            1
+          ]
+        },
+        {
+          "threshold": 170,
+          "small_mid_large": [
+            7,
+            1,
+            1
+          ]
+        },
+        {
+          "threshold": 200,
+          "small_mid_large": [
+            5,
+            1,
+            1
+          ]
+        }
+      ],
+      "target_scores": [
+        {
+          "target": "321",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            7,
+            1,
+            1
+          ],
+          "mad_counts": [
+            2.0,
+            0.0,
+            0.0
+          ],
+          "mean_l1_distance": 8.8,
+          "min_l1_distance": 3
+        },
+        {
+          "target": "123",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            7,
+            1,
+            1
+          ],
+          "mad_counts": [
+            2.0,
+            0.0,
+            0.0
+          ],
+          "mean_l1_distance": 12.8,
+          "min_l1_distance": 7
+        }
+      ],
+      "best_target": {
+        "target": "321",
+        "exact_thresholds": 0,
+        "exact_fraction": 0.0,
+        "median_counts": [
+          7,
+          1,
+          1
+        ],
+        "mad_counts": [
+          2.0,
+          0.0,
+          0.0
+        ],
+        "mean_l1_distance": 8.8,
+        "min_l1_distance": 3
+      }
+    },
+    {
+      "region": "building_10",
+      "bbox": [
+        1358,
+        121,
+        1444,
+        297
+      ],
+      "counts_by_threshold": [
+        {
+          "threshold": 80,
+          "small_mid_large": [
+            64,
+            6,
+            0
+          ]
+        },
+        {
+          "threshold": 110,
+          "small_mid_large": [
+            47,
+            3,
+            0
+          ]
+        },
+        {
+          "threshold": 140,
+          "small_mid_large": [
+            30,
+            2,
+            1
+          ]
+        },
+        {
+          "threshold": 170,
+          "small_mid_large": [
+            25,
+            1,
+            1
+          ]
+        },
+        {
+          "threshold": 200,
+          "small_mid_large": [
+            17,
+            1,
+            1
+          ]
+        }
+      ],
+      "target_scores": [
+        {
+          "target": "321",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            30,
+            2,
+            1
+          ],
+          "mad_counts": [
+            13.0,
+            1.0,
+            0.0
+          ],
+          "mean_l1_distance": 35.4,
+          "min_l1_distance": 15
+        },
+        {
+          "target": "123",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            30,
+            2,
+            1
+          ],
+          "mad_counts": [
+            13.0,
+            1.0,
+            0.0
+          ],
+          "mean_l1_distance": 39.4,
+          "min_l1_distance": 19
+        }
+      ],
+      "best_target": {
+        "target": "321",
+        "exact_thresholds": 0,
+        "exact_fraction": 0.0,
+        "median_counts": [
+          30,
+          2,
+          1
+        ],
+        "mad_counts": [
+          13.0,
+          1.0,
+          0.0
+        ],
+        "mean_l1_distance": 35.4,
+        "min_l1_distance": 15
+      }
+    },
+    {
+      "region": "building_11",
+      "bbox": [
+        1458,
+        174,
+        1506,
+        296
+      ],
+      "counts_by_threshold": [
+        {
+          "threshold": 80,
+          "small_mid_large": [
+            56,
+            0,
+            0
+          ]
+        },
+        {
+          "threshold": 110,
+          "small_mid_large": [
+            47,
+            0,
+            0
+          ]
+        },
+        {
+          "threshold": 140,
+          "small_mid_large": [
+            36,
+            1,
+            0
+          ]
+        },
+        {
+          "threshold": 170,
+          "small_mid_large": [
+            28,
+            2,
+            0
+          ]
+        },
+        {
+          "threshold": 200,
+          "small_mid_large": [
+            22,
+            3,
+            0
+          ]
+        }
+      ],
+      "target_scores": [
+        {
+          "target": "321",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            36,
+            1,
+            0
+          ],
+          "mad_counts": [
+            11.0,
+            1.0,
+            0.0
+          ],
+          "mean_l1_distance": 37.0,
+          "min_l1_distance": 21
+        },
+        {
+          "target": "123",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            36,
+            1,
+            0
+          ],
+          "mad_counts": [
+            11.0,
+            1.0,
+            0.0
+          ],
+          "mean_l1_distance": 41.0,
+          "min_l1_distance": 25
+        }
+      ],
+      "best_target": {
+        "target": "321",
+        "exact_thresholds": 0,
+        "exact_fraction": 0.0,
+        "median_counts": [
+          36,
+          1,
+          0
+        ],
+        "mad_counts": [
+          11.0,
+          1.0,
+          0.0
+        ],
+        "mean_l1_distance": 37.0,
+        "min_l1_distance": 21
+      }
+    },
+    {
+      "region": "building_12",
+      "bbox": [
+        1520,
+        92,
+        1586,
+        282
+      ],
+      "counts_by_threshold": [
+        {
+          "threshold": 80,
+          "small_mid_large": [
+            44,
+            1,
+            1
+          ]
+        },
+        {
+          "threshold": 110,
+          "small_mid_large": [
+            42,
+            1,
+            1
+          ]
+        },
+        {
+          "threshold": 140,
+          "small_mid_large": [
+            34,
+            1,
+            1
+          ]
+        },
+        {
+          "threshold": 170,
+          "small_mid_large": [
+            35,
+            0,
+            1
+          ]
+        },
+        {
+          "threshold": 200,
+          "small_mid_large": [
+            29,
+            0,
+            1
+          ]
+        }
+      ],
+      "target_scores": [
+        {
+          "target": "321",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            35,
+            1,
+            1
+          ],
+          "mad_counts": [
+            6.0,
+            0.0,
+            0.0
+          ],
+          "mean_l1_distance": 35.2,
+          "min_l1_distance": 28
+        },
+        {
+          "target": "123",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            35,
+            1,
+            1
+          ],
+          "mad_counts": [
+            6.0,
+            0.0,
+            0.0
+          ],
+          "mean_l1_distance": 39.2,
+          "min_l1_distance": 32
+        }
+      ],
+      "best_target": {
+        "target": "321",
+        "exact_thresholds": 0,
+        "exact_fraction": 0.0,
+        "median_counts": [
+          35,
+          1,
+          1
+        ],
+        "mad_counts": [
+          6.0,
+          0.0,
+          0.0
+        ],
+        "mean_l1_distance": 35.2,
+        "min_l1_distance": 28
+      }
+    },
+    {
+      "region": "large_sailboat",
+      "bbox": [
+        44,
+        320,
+        359,
+        599
+      ],
+      "counts_by_threshold": [
+        {
+          "threshold": 80,
+          "small_mid_large": [
+            122,
+            5,
+            1
+          ]
+        },
+        {
+          "threshold": 110,
+          "small_mid_large": [
+            102,
+            5,
+            1
+          ]
+        },
+        {
+          "threshold": 140,
+          "small_mid_large": [
+            71,
+            4,
+            1
+          ]
+        },
+        {
+          "threshold": 170,
+          "small_mid_large": [
+            49,
+            4,
+            1
+          ]
+        },
+        {
+          "threshold": 200,
+          "small_mid_large": [
+            26,
+            2,
+            2
+          ]
+        }
+      ],
+      "target_scores": [
+        {
+          "target": "321",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            71,
+            4,
+            1
+          ],
+          "mad_counts": [
+            31.0,
+            1.0,
+            0.0
+          ],
+          "mean_l1_distance": 73.2,
+          "min_l1_distance": 24
+        },
+        {
+          "target": "123",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            71,
+            4,
+            1
+          ],
+          "mad_counts": [
+            31.0,
+            1.0,
+            0.0
+          ],
+          "mean_l1_distance": 76.8,
+          "min_l1_distance": 26
+        }
+      ],
+      "best_target": {
+        "target": "321",
+        "exact_thresholds": 0,
+        "exact_fraction": 0.0,
+        "median_counts": [
+          71,
+          4,
+          1
+        ],
+        "mad_counts": [
+          31.0,
+          1.0,
+          0.0
+        ],
+        "mean_l1_distance": 73.2,
+        "min_l1_distance": 24
+      }
+    },
+    {
+      "region": "small_sails_full_band",
+      "bbox": [
+        0,
+        360,
+        1600,
+        480
+      ],
+      "counts_by_threshold": [
+        {
+          "threshold": 80,
+          "small_mid_large": [
+            110,
+            3,
+            4
+          ]
+        },
+        {
+          "threshold": 110,
+          "small_mid_large": [
+            85,
+            5,
+            4
+          ]
+        },
+        {
+          "threshold": 140,
+          "small_mid_large": [
+            77,
+            5,
+            4
+          ]
+        },
+        {
+          "threshold": 170,
+          "small_mid_large": [
+            67,
+            7,
+            4
+          ]
+        },
+        {
+          "threshold": 200,
+          "small_mid_large": [
+            57,
+            7,
+            4
+          ]
+        }
+      ],
+      "target_scores": [
+        {
+          "target": "321",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            77,
+            5,
+            4
+          ],
+          "mad_counts": [
+            10.0,
+            2.0,
+            0.0
+          ],
+          "mean_l1_distance": 82.6,
+          "min_l1_distance": 62
+        },
+        {
+          "target": "123",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            77,
+            5,
+            4
+          ],
+          "mad_counts": [
+            10.0,
+            2.0,
+            0.0
+          ],
+          "mean_l1_distance": 82.6,
+          "min_l1_distance": 62
+        }
+      ],
+      "best_target": {
+        "target": "321",
+        "exact_thresholds": 0,
+        "exact_fraction": 0.0,
+        "median_counts": [
+          77,
+          5,
+          4
+        ],
+        "mad_counts": [
+          10.0,
+          2.0,
+          0.0
+        ],
+        "mean_l1_distance": 82.6,
+        "min_l1_distance": 62
+      }
+    },
+    {
+      "region": "first_row_visual_strip",
+      "bbox": [
+        0,
+        0,
+        1600,
+        48
+      ],
+      "counts_by_threshold": [
+        {
+          "threshold": 80,
+          "small_mid_large": [
+            5,
+            1,
+            0
+          ]
+        },
+        {
+          "threshold": 110,
+          "small_mid_large": [
+            3,
+            1,
+            0
+          ]
+        },
+        {
+          "threshold": 140,
+          "small_mid_large": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "threshold": 170,
+          "small_mid_large": [
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "threshold": 200,
+          "small_mid_large": [
+            2,
+            0,
+            1
+          ]
+        }
+      ],
+      "target_scores": [
+        {
+          "target": "321",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            2,
+            1,
+            0
+          ],
+          "mad_counts": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mean_l1_distance": 3.2,
+          "min_l1_distance": 2
+        },
+        {
+          "target": "123",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            2,
+            1,
+            0
+          ],
+          "mad_counts": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mean_l1_distance": 5.6,
+          "min_l1_distance": 4
+        }
+      ],
+      "best_target": {
+        "target": "321",
+        "exact_thresholds": 0,
+        "exact_fraction": 0.0,
+        "median_counts": [
+          2,
+          1,
+          0
+        ],
+        "mad_counts": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "mean_l1_distance": 3.2,
+        "min_l1_distance": 2
+      }
+    },
+    {
+      "region": "skyline_full_band",
+      "bbox": [
+        200,
+        0,
+        1600,
+        340
+      ],
+      "counts_by_threshold": [
+        {
+          "threshold": 80,
+          "small_mid_large": [
+            1138,
+            38,
+            7
+          ]
+        },
+        {
+          "threshold": 110,
+          "small_mid_large": [
+            910,
+            35,
+            8
+          ]
+        },
+        {
+          "threshold": 140,
+          "small_mid_large": [
+            659,
+            17,
+            5
+          ]
+        },
+        {
+          "threshold": 170,
+          "small_mid_large": [
+            541,
+            18,
+            3
+          ]
+        },
+        {
+          "threshold": 200,
+          "small_mid_large": [
+            435,
+            12,
+            3
+          ]
+        }
+      ],
+      "target_scores": [
+        {
+          "target": "321",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            659,
+            18,
+            5
+          ],
+          "mad_counts": [
+            224.0,
+            6.0,
+            2.0
+          ],
+          "mean_l1_distance": 759.8,
+          "min_l1_distance": 444
+        },
+        {
+          "target": "123",
+          "exact_thresholds": 0,
+          "exact_fraction": 0.0,
+          "median_counts": [
+            659,
+            18,
+            5
+          ],
+          "mad_counts": [
+            224.0,
+            6.0,
+            2.0
+          ],
+          "mean_l1_distance": 759.8,
+          "min_l1_distance": 444
+        }
+      ],
+      "best_target": {
+        "target": "321",
+        "exact_thresholds": 0,
+        "exact_fraction": 0.0,
+        "median_counts": [
+          659,
+          18,
+          5
+        ],
+        "mad_counts": [
+          224.0,
+          6.0,
+          2.0
+        ],
+        "mean_l1_distance": 759.8,
+        "min_l1_distance": 444
+      }
+    }
+  ]
+}
