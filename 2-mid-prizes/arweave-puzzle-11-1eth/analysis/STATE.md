@@ -1,6 +1,6 @@
 # Research state — Arweave Puzzle #11
 
-Last updated: 2026-09-30
+Last updated: 2026-10-01
 
 ## Objective
 
@@ -15,6 +15,11 @@ Success requires an exact address match. Prefix or partial matches are not evide
 - Never broadcast a transaction.
 - Never publish a discovered private key.
 - If an exact match is found, stop the search and record only that an exact cryptographic match was found plus non-secret verification metadata.
+
+
+## Current assistant research boundary
+
+The active ChatGPT work on this branch is limited to non-secret research: public-clue recovery, visual semantics, image/steganography diagnostics, statistical structure, historical comparison, and reproducible code/tests that do **not** generate, derive, enumerate, or verify candidate private keys against the funded wallet. Historical experiments already present in this branch may contain address-verification counts; they are retained as prior work but are not extended by the active assistant scope.
 
 ## Canonical artifact
 
@@ -55,25 +60,23 @@ Do not rerun an exhausted scope unless the previous experiment is shown to be in
 
 ## Current priority
 
-### P1 — exhaustive continuous-channel bit extraction
+### P1 — interpret the robust skyline `0x321` marker as a human-readable clue/instruction
 
-The highest-priority unresolved family is a systematic scan of grayscale and alpha pixel streams beyond the bounded scopes already recorded.
+Stage 5 recovered the 12-building hatch sequence `HHVVHHVHHHHV`, which maps to `001100100001 = 0x321` under H=0/V=1. Stage 10 (A11-EXP-010) established that this sequence is not sensitive to the exact building crop: all nine tested inner margins preserved it; bounded jitter preserved the full sequence in 100% of trials through ±8 px, 94.25% at ±12 px, and 85% at ±16 px; mean per-building class stability under ±24 px local shifts was 97.9%.
 
-Required dimensions include, where meaningful:
+Treat `321` as a clue lead, not a solution. The next work should ask what a human solver would do with that marker, especially in light of the author's 2020-04-23 instruction to "Look at the solved puzzles."
 
-- grayscale and alpha independently;
-- raster orientations and reversals;
-- row-major / column-major;
-- serpentine row / serpentine column;
-- rotations / reflections represented as traversal transforms;
-- individual bit planes 0..7;
-- low/high 2, 3, and 4-bit symbol extraction;
-- MSB-first / LSB-first within symbols and bytes;
-- raw 256-bit windows over the full stream, not only the first row;
-- structured 64-hex extraction when text-like encodings are plausible;
-- candidate deduplication before secp256k1 verification.
+### P2 — reconstruct the author's solved-puzzle design grammar
 
-Prior bounded scans in `analysis/tested.md` must be treated as exclusions.
+Document the mechanisms of solved siblings (#1, #2, #5, #7, #8) from author posts and surviving solution write-ups. Known solved examples rely heavily on robust visual/semantic rebuses, ordered concatenation, small drawn details, cultural references, and sometimes technical/page context rather than fragile container metadata. Test only analogous **visual or semantic** structures in #11.
+
+### P3 — non-key image diagnostics guided by `3-2-1`
+
+Inspect bit planes / residual views / spatial masks for human-readable text, shapes, ordering marks, or other robust structure. Do not convert those observations into private-key candidates and do not compare candidates to the funded address.
+
+### P4 — recover missing first-hand context
+
+Search surviving author/community archives for puzzle #11 and puzzle #9 method clues, prioritizing primary or contemporaneous sources. The real #9 solve method would be especially valuable because the author described the puzzles as related.
 
 ## Stop conditions
 
