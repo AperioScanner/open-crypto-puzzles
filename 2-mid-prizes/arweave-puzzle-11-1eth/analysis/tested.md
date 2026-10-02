@@ -87,3 +87,9 @@ puzzle post; it did not provide an earlier drawing source or an extra author hin
 [Recorded reports and execution notes](../tools/REPRODUCE.md) preserve the scopes,
 controls and runtime measurements. Raw-key and HD negatives do not establish the
 absence of arbitrary image encodings, passphrases or other derivation paths.
+
+## Non-cryptographic structural experiments, 2026-10-01
+
+| ID | Hypothesis | Scope / controls | Result | What it establishes | Date |
+|---|---|---|---|---|---|
+| A11-EXP-010 | The 12-building H/V sequence `HHVVHHVHHHHV` → `0x321` is a robust image-level marker rather than an artifact of exact crop coordinates | 9 inner-margin fractions (0.06–0.22); 2,400 independently jittered 12-building sequences across ±1/2/4/8/12/16 px; 2,000 local ±24 px shifts per building | All 9 margin variants preserved the exact sequence; exact full-sequence rate 100% through ±8 px, 94.25% at ±12 px, 85% at ±16 px; mean per-building baseline-class fraction under ±24 px shifts 97.9% | Strongly supports the **stability** of the visual `321` observation. It does not establish author intent or the meaning of `321`, and no private-key material was generated or verified. Artifacts: `analysis/runs/stage10-marker-robustness/` | 2026-10-01 |
