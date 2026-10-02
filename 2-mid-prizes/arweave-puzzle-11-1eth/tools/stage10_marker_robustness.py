@@ -18,7 +18,7 @@ GEOM = ROOT / "data" / "geometry.json"
 OUT = ROOT / "analysis" / "runs" / "stage10-marker-robustness"
 OUT.mkdir(parents=True, exist_ok=True)
 
-EXPECTED = "HHVVHHVHHHHV"
+EXPERIMENT_VERSION = 1\nEXPECTED = "HHVVHHVHHHHV"
 
 
 def clamp_box(box, w, h):
