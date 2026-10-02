@@ -60,23 +60,27 @@ Do not rerun an exhausted scope unless the previous experiment is shown to be in
 
 ## Current priority
 
-### P1 — interpret the robust skyline `0x321` marker as a human-readable clue/instruction
+### P1 — seek an independent visual confirmation of the robust `0x321` marker
 
-Stage 5 recovered the 12-building hatch sequence `HHVVHHVHHHHV`, which maps to `001100100001 = 0x321` under H=0/V=1. Stage 10 (A11-EXP-010) established that this sequence is not sensitive to the exact building crop: all nine tested inner margins preserved it; bounded jitter preserved the full sequence in 100% of trials through ±8 px, 94.25% at ±12 px, and 85% at ±16 px; mean per-building class stability under ±24 px local shifts was 97.9%.
+Stages 10 and 13 now establish two separate facts: the 12-building H/V sequence is geometrically robust, and the exact `0x321` pattern is uncommon under simple random-orientation nulls (1/4096 unconditioned; 1/495 conditional on exactly four V buildings). This strengthens `321` as a lead but does not prove intent because the segmentation/coding were not pre-registered.
 
-Treat `321` as a clue lead, not a solution. The next work should ask what a human solver would do with that marker, especially in light of the author's 2020-04-23 instruction to "Look at the solved puzzles."
+Stage 14 reconstructed the complete mirrored author launch window (2020-04-20 through 2020-05-01): there is **no direct textual 3-2-1 clue and no ordering/direction wording**. Therefore a second confirmation, if it exists, is more likely visual/semantic than textual.
 
-### P2 — reconstruct the author's solved-puzzle design grammar
+Next bounded work: search the image for a second robust 3-2-1 / countdown / ordering / selection structure using object groups, secondary marks, perimeter/context cues, and spatial relationships. Reject unstable threshold artifacts.
 
-Document the mechanisms of solved siblings (#1, #2, #5, #7, #8) from author posts and surviving solution write-ups. Known solved examples rely heavily on robust visual/semantic rebuses, ordered concatenation, small drawn details, cultural references, and sometimes technical/page context rather than fragile container metadata. Test only analogous **visual or semantic** structures in #11.
+### P2 — use the solved-puzzle design grammar, not arbitrary transforms
 
-### P3 — non-key image diagnostics guided by `3-2-1`
+Stage 11 (A11-EXP-011) reconstructed 18 public solved-token mechanisms from #5/#7/#8. Fourteen are broadly semantic/contextual and four are counting/sequence/numeric-extraction mechanisms. Recurrent design habits include tiny secondary details, counting, cross-domain references, visual + technical context, and ordered interpretation.
 
-Inspect bit planes / residual views / spatial masks for human-readable text, shapes, ordering marks, or other robust structure. Do not convert those observations into private-key candidates and do not compare candidates to the funded address.
+This is now the main prior for deciding which visual hypotheses deserve tests.
 
-### P4 — recover missing first-hand context
+### P3 — inspect Stage 12 promoted regions without over-reading raster artifacts
 
-Search surviving author/community archives for puzzle #11 and puzzle #9 method clues, prioritizing primary or contemporaneous sources. The real #9 solve method would be especially valuable because the author described the puzzles as related.
+Stage 12 ranked regions by stable small-component counts, perimeter occupancy, and projection periodicity. The common best lag of 3 across very different regions is likely influenced by stroke width/raster structure, so it is **not** independent support for 321 by itself. Use the diagnostic atlas to identify human-visible deliberate marks; require threshold/crop robustness before promotion.
+
+### P4 — recover missing first-hand context around #9 and early community discussion
+
+The complete mirrored #11 launch window is exhausted. Remaining archival value is in sources outside that mirror: early Telegram/Discord/Weavemail, deleted replies, or a real #9 solve-method account. #9 remains the strongest sibling-control lead.
 
 ## Stop conditions
 
