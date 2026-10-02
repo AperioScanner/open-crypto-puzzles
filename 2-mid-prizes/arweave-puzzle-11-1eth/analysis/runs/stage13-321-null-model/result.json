@@ -1,0 +1,69 @@
+{
+  "experiment_id": "A11-EXP-013",
+  "scope": "null-model significance of the visual H/V marker only; no secret material",
+  "sequence": "HHVVHHVHHHHV",
+  "bits": "001100100001",
+  "hex": "321",
+  "n": 12,
+  "ones": 4,
+  "null_models": {
+    "uniform_exact_321": {
+      "probability": 0.000244140625,
+      "one_in": 4096.0
+    },
+    "uniform_allow_label_polarity_321_or_cde": {
+      "probability": 0.00048828125,
+      "one_in": 2048.0
+    },
+    "conditional_on_four_V_exact_positions": {
+      "probability": 0.00202020202020202,
+      "one_in": 495.0
+    },
+    "bernoulli_p_equal_observed_V_rate": {
+      "p_V": 0.3333333333333333,
+      "probability_exact_pattern": 0.00048170916432868405,
+      "one_in": 2075.9414062499986
+    }
+  },
+  "look_elsewhere_families": {
+    "strict_descending_consecutive_hex_triplets": {
+      "count": 14,
+      "probability": 0.00341796875,
+      "examples": [
+        "210",
+        "321",
+        "432",
+        "543",
+        "654",
+        "765",
+        "876",
+        "987",
+        "a98",
+        "ba9",
+        "cba",
+        "dcb",
+        "edc",
+        "fed"
+      ]
+    },
+    "ascending_or_descending_consecutive_hex_triplets": {
+      "count": 28,
+      "probability": 0.0068359375
+    },
+    "descending_triplets_conditioned_on_four_ones": {
+      "count": 2,
+      "space": 495,
+      "probability": 0.00404040404040404
+    },
+    "ascending_or_descending_conditioned_on_four_ones": {
+      "count": 4,
+      "space": 495,
+      "probability": 0.00808080808080808
+    }
+  },
+  "interpretation": {
+    "supports": "321 is uncommon under simple random-orientation nulls and is robust under crop perturbation.",
+    "does_not_support": "The calculation does not prove author intent because the skyline segmentation, binary coding, and memorable-pattern recognition were not pre-registered; look-elsewhere effects remain.",
+    "next": "Treat 321 as a prioritized semantic lead, while requiring an independent visual/author clue before calling it intentional."
+  }
+}
