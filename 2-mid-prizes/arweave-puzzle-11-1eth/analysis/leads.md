@@ -1,21 +1,21 @@
 # Open leads, ranked
 
-## 1. Interpret the robust skyline `0x321` marker as an instruction (active, visual-only)
+## 1. Find a second visual confirmation of `0x321` (active)
 
-The 12 building interiors form the stable H/V sequence `HHVVHHVHHHHV`; with H=0 and V=1 this is exactly `0011 0010 0001 = 0x321`. A11-EXP-010 tested whether this was caused by exact crop choices: all nine inner-margin choices preserved it, as did 100% of bounded perturbations through ±8 px; even at ±16 px, 85% of 400 full-sequence trials remained exact. This makes `321` a materially stronger clue than a one-off classifier artifact. The open question is semantic: what did the author expect a human solver to do with “3-2-1”? Stage 6 already tested the most literal bit-plane reading; future work should focus on human-readable instructions and image structure, not candidate-key generation.
+The skyline orientation sequence `HHVVHHVHHHHV = 0x321` is robust under crop perturbation (Stage 10) and uncommon under simple random nulls (Stage 13). But Stage 14 found no direct 3-2-1 or ordering clue in the complete mirrored launch-window transcript. The next decisive step is therefore an **independent visual** 3-2-1/countdown/order/selection structure. Candidate sources: object groups, secondary marks, spatial ordering, perimeter cues, or a semantic relationship among skyline/boats/watermark. Any candidate must survive threshold/crop perturbation.
 
-## 2. Reconstruct the solved-puzzle design grammar (active, public-source research)
+## 2. Apply the solved-puzzle grammar to secondary details (active)
 
-On 2020-04-23, while discussing #11, the author explicitly told a solver: “Look at the solved puzzles. If solutions make sense to you, you are good to go.” Surviving write-ups for solved #5, #7 and #8 show a recurring style: ordered visual rebuses, tiny but deliberate drawn details, cross-domain cultural references, counting, and occasional technical/page-context clues. Examples include #5’s drawn “O-O” resolving to the chess term Castle, and #7 mixing literature, numbers and visual/technical context. The next task is to build a compact mechanism inventory for solved siblings (#1/#2/#5/#7/#8) and test whether #11’s skyline, boats, watermark, hatching, object counts, or spatial order instantiate the same classes of clue.
+Stage 11 catalogued 18 solved-token mechanisms from #5/#7/#8: 14 semantic/contextual and 4 counting/sequence/numeric extraction. The author's recurring habits include tiny secondary details, counts, rebuses, cultural references, and overall technical/visual context. This is now the strongest evidence-based guide for choosing new tests.
 
-## 3. Non-key `3-2-1` image diagnostics (active, bounded)
+## 3. Inspect Stage 12 promoted visual regions (active, bounded)
 
-Stage 6 rendered the relevant grayscale bit planes and several 3-2-1 composites, but its main decision criterion was cryptographic. Revisit these views only as images: look for text-like strokes, repeated symbols, grids, ordering marks, or regions whose structure survives ordinary re-encoding. This lead is confirmed only by a reproducible visual structure, not by a private-key/address test.
+Stage 12 created a secondary-detail atlas and ranked regions by connected components, perimeter ink and 1-D periodicity. Common lag-3 periodicity appears across unrelated regions and is likely a stroke/raster artifact, so it must not be treated as confirmation. Focus on human-visible, deliberate-looking marks that remain stable across thresholds.
 
-## 4. Recover first-hand author/community context around #11 and #9 (needs archival evidence)
+## 4. Recover sources outside the mirrored #11 launch window (archival)
 
-The public @ArweaveP archive recovered several strong contemporaneous clues: “format does not matter,” “the private key is hidden in the image,” “alternative forms of storing a private key,” and the instruction to look at solved puzzles. What remains is early Telegram/Discord/Weavemail material outside the later archive window, deleted replies, or a first-hand account of puzzle #9’s actual solve method.
+The public mirror's 2020-04-20–2020-05-01 author window is now exhausted and contains the known clues but no hidden order/count instruction. Remaining sources are early Telegram/Discord/Weavemail, deleted replies, screenshots, quoted replies from other users, or archives not captured in the workbook.
 
-## 5. Puzzle #9's real solving method, if it surfaces (standing watch)
+## 5. Puzzle #9's actual solve method (standing high-value lead)
 
-#9 is the best sibling control because the author described it as related and it was solved in 2020 without a published method. A real write-up could reveal the intended visual grammar or construction technique. This is a standing information lead, not an active brute-force task.
+#9 remains the best sibling control because it is visually related, solved, and method-unknown. A first-hand solve description could provide the intended construction grammar for #11 without arbitrary guessing.
