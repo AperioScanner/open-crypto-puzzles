@@ -1,0 +1,219 @@
+{
+  "experiment_id": "A11-EXP-011",
+  "scope": "public solved-puzzle grammar reconstruction; no private-key generation or verification",
+  "sources": {
+    "PZL5": {
+      "url": "https://raw.githubusercontent.com/HomelessPhD/AR_Puzzles/main/PZL5/README.md",
+      "bytes": 15357,
+      "solution_markers": [
+        "### CORRECT KEY VALUE HERE IS: \"*\"",
+        "### CORRECT KEY VALUE HERE IS: \"48\"",
+        "### CORRECT KEY VALUE HERE IS: \"GCE\"",
+        "### CORRECT KEY VALUE HERE IS: \"Eris\"",
+        "### CORRECT KEY VALUE HERE IS: \"Umber\"",
+        "### CORRECT KEY VALUE HERE IS: \"Castle\" <----- THE TERM FROM CHESS, position denoted by O-O (that is drawn on the log on picture - check carefully, i was also in shock of this, but its true)",
+        "### CORRECT KEY VALUE HERE IS: \"Picasso\""
+      ]
+    },
+    "PZL7": {
+      "url": "https://raw.githubusercontent.com/HomelessPhD/AR_Puzzles/main/PZL7/README.md",
+      "bytes": 23394,
+      "solution_markers": [
+        "***THE CORRECT SOLUTION HERE IS Vivaldi***",
+        "***THE CORRECT SOLUTION HERE IS 227***",
+        "***THE CORRECT SOLUTION HERE IS Permanent***",
+        "***THE CORRECT SOLUTION HERE IS Arnheim***",
+        "***THE CORRECT SOLUTION HERE IS Bulgakov***",
+        "***THE CORRECT SOLUTION HERE IS 1157***",
+        "***THE CORRECT SOLUTION HERE IS Ulysses***",
+        "***THE CORRECT SOLUTION HERE IS 143176176209***"
+      ]
+    },
+    "PZL8": {
+      "url": "https://raw.githubusercontent.com/HomelessPhD/AR_Puzzles/main/PZL8/README.md",
+      "bytes": 12981,
+      "solution_markers": []
+    }
+  },
+  "author_hint_presence": {
+    "look_solved": true,
+    "format_invariant": true,
+    "alternative_storage": true,
+    "overall_picture": true,
+    "visual_context": true,
+    "overall_environment": true,
+    "perimeter": true,
+    "no_programming": true,
+    "simple_math": true
+  },
+  "mechanisms": [
+    {
+      "puzzle": 5,
+      "answer": "*",
+      "class": "medium-translation",
+      "evidence": "author hint: x on paper = what on computer?",
+      "lesson": "translate a familiar mark between physical and technical contexts"
+    },
+    {
+      "puzzle": 5,
+      "answer": "48",
+      "class": "small-detail-counting",
+      "evidence": "four groups / eight grass blades under the mushroom",
+      "lesson": "count small visual sub-elements rather than naming the main object"
+    },
+    {
+      "puzzle": 5,
+      "answer": "GCE",
+      "class": "cultural-reference",
+      "evidence": "moon/music image resolved through Moonlight Sonata / note context",
+      "lesson": "a picture can point to an external cultural reference and then a compact token"
+    },
+    {
+      "puzzle": 5,
+      "answer": "Eris",
+      "class": "symbol-identification",
+      "evidence": "drawn glyph interpreted as the Eris symbol",
+      "lesson": "identify an exact symbol rather than use a generic visual label"
+    },
+    {
+      "puzzle": 5,
+      "answer": "Umber",
+      "class": "franchise-reference",
+      "evidence": "author hint for GoT fans; heraldic/tree context",
+      "lesson": "external fictional context can disambiguate an otherwise generic drawing"
+    },
+    {
+      "puzzle": 5,
+      "answer": "Castle",
+      "class": "secondary-detail-rebus",
+      "evidence": "tiny O-O marks on a log resolve to the chess term Castle",
+      "lesson": "the intended clue can be a secondary drawn detail, not the dominant object"
+    },
+    {
+      "puzzle": 5,
+      "answer": "Picasso",
+      "class": "art-reference",
+      "evidence": "dove image points to Picasso's Dove of Peace",
+      "lesson": "visual resemblance can encode the creator/title, not the literal object"
+    },
+    {
+      "puzzle": 7,
+      "answer": "Vivaldi",
+      "class": "cultural-reference",
+      "evidence": "four seasonal tree states plus V* hint",
+      "lesson": "combine image semantics with a small textual constraint"
+    },
+    {
+      "puzzle": 7,
+      "answer": "227",
+      "class": "reference-to-number",
+      "evidence": "Life of Pi clue chain resolves to a numeric fact",
+      "lesson": "semantic identification can terminate in a number rather than a word"
+    },
+    {
+      "puzzle": 7,
+      "answer": "Permanent",
+      "class": "technical-context",
+      "evidence": "object plus Arweave/permanence context",
+      "lesson": "overall platform/environment can be part of the clue"
+    },
+    {
+      "puzzle": 7,
+      "answer": "Arnheim",
+      "class": "literature-reference",
+      "evidence": "visual/literary context",
+      "lesson": "literature and named works are recurring disambiguators"
+    },
+    {
+      "puzzle": 7,
+      "answer": "Bulgakov",
+      "class": "literature-reference",
+      "evidence": "Behemoth clue chain to Master and Margarita author",
+      "lesson": "the final token can be one semantic hop away from the pictured/hinted entity"
+    },
+    {
+      "puzzle": 7,
+      "answer": "1157",
+      "class": "sequence-pattern",
+      "evidence": "number/year series interpreted through eclipse context",
+      "lesson": "a visible numeric sequence can encode a rule and demand continuation"
+    },
+    {
+      "puzzle": 7,
+      "answer": "Ulysses",
+      "class": "cross-domain-reference",
+      "evidence": "squirrel clue resolves through Flora & Ulysses / 2014 Newbery context",
+      "lesson": "apparently unrelated visual details can point to a named cultural object"
+    },
+    {
+      "puzzle": 7,
+      "answer": "143176176209",
+      "class": "visual-number-extraction",
+      "evidence": "final pictured pattern resolves to a long numeric token",
+      "lesson": "literal numeric extraction is used when the image supplies a structured numeric cue"
+    },
+    {
+      "puzzle": 8,
+      "answer": "Rasputin",
+      "class": "biographical-rebus",
+      "evidence": "story/image of a famous death",
+      "lesson": "identify the famous person implied by a narrative scene"
+    },
+    {
+      "puzzle": 8,
+      "answer": "Wilhelm",
+      "class": "biographical-rebus",
+      "evidence": "historical death/context chain",
+      "lesson": "historical biography may supply the intended compact name"
+    },
+    {
+      "puzzle": 8,
+      "answer": "Alekhine",
+      "class": "biographical-rebus",
+      "evidence": "chess/history death context",
+      "lesson": "recognition of a person from contextual facts can be the entire mechanism"
+    }
+  ],
+  "class_counts": {
+    "medium-translation": 1,
+    "small-detail-counting": 1,
+    "cultural-reference": 2,
+    "symbol-identification": 1,
+    "franchise-reference": 1,
+    "secondary-detail-rebus": 1,
+    "art-reference": 1,
+    "reference-to-number": 1,
+    "technical-context": 1,
+    "literature-reference": 2,
+    "sequence-pattern": 1,
+    "cross-domain-reference": 1,
+    "visual-number-extraction": 1,
+    "biographical-rebus": 3
+  },
+  "high_level_counts": {
+    "semantic_or_contextual": 14,
+    "count_or_sequence": 4
+  },
+  "implications_for_puzzle11": [
+    {
+      "rank": 1,
+      "claim": "Treat 321 first as a human-readable instruction/semantic clue, not as raw payload.",
+      "basis": "Solved examples are dominated by semantic rebuses, contextual interpretation, and tiny deliberate visual details."
+    },
+    {
+      "rank": 2,
+      "claim": "Inspect secondary details around buildings and boats, not only dominant skyline shapes.",
+      "basis": "Puzzle #5 Castle came from tiny O-O marks on a log; #5 also used grass-blade counting."
+    },
+    {
+      "rank": 3,
+      "claim": "Test order, count, perimeter, and environment readings of 3-2-1.",
+      "basis": "The author repeatedly used ordering, counting, perimeter, visual context, and overall-environment hints in the series."
+    },
+    {
+      "rank": 4,
+      "claim": "Prefer clues that survive re-encoding and remain human-visible.",
+      "basis": "For #11 the author said format does not matter; the stable hatch-direction marker survives ordinary visual perturbation."
+    }
+  ]
+}
