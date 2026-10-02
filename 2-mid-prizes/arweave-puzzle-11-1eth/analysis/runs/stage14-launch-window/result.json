@@ -1,0 +1,215 @@
+{
+  "experiment_id": "A11-EXP-014",
+  "scope": "all mirrored @ArweaveP posts/replies in 2020-04-20 through 2020-05-01, plus bounded semantic term tagging; public text only",
+  "window_start": "2020-04-20T00:00:00",
+  "window_end": "2020-05-02T00:00:00",
+  "rows": [
+    {
+      "sheet": "tweets",
+      "row": 354,
+      "utc": "2020-04-22T14:06:21Z",
+      "hits": [
+        "puzzle"
+      ],
+      "record": {
+        "Tweet Id": "1252961944807641090",
+        "Text": "There is 1 ETH hidden in https://t.co/wyyxPDtXDH Puzzle 11 🧩. Please retweet to make more of these possible! #puzzle #steganography #arweave #cryptopuzzle https://t.co/et046WDjZN",
+        "Name": "Arweave Puzzle",
+        "Screen Name": "ArweaveP",
+        "UTC": "2020-04-22T14:06:21.000Z",
+        "Created At": "Wed Apr 22 14:06:21 +0000 2020",
+        "Favorites": "66",
+        "Retweets": "46",
+        "Language": "en",
+        "Client": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "Tweet Type": "Tweet",
+        "URLs": "https://niktb5grm22p.arweave.net/CzITHnEIlkQw9SbaX5futCzFrKk1qe_NwvWnIBmP2fY ",
+        "Hashtags": "4",
+        "Mentions": "0",
+        "Media Type": "photo",
+        "Media URLs": "https://pbs.twimg.com/media/EWNpO-YWoAEqQP3.jpg"
+      }
+    },
+    {
+      "sheet": "tweets",
+      "row": 353,
+      "utc": "2020-04-23T09:24:44Z",
+      "hits": [
+        "visual"
+      ],
+      "record": {
+        "Tweet Id": "1253253461828931584",
+        "Text": "@SamuelKilelemb4 0xFF2142E98E09b5344994F9bEB9C56C95506B9F17 it is also included somewhere in the image 🧐",
+        "Name": "Arweave Puzzle",
+        "Screen Name": "ArweaveP",
+        "UTC": "2020-04-23T09:24:44.000Z",
+        "Created At": "Thu Apr 23 09:24:44 +0000 2020",
+        "Favorites": "3",
+        "Retweets": "0",
+        "Language": "en",
+        "Client": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "Tweet Type": "Reply",
+        "Hashtags": "0",
+        "Mentions": "0"
+      }
+    },
+    {
+      "sheet": "tweets",
+      "row": 352,
+      "utc": "2020-04-23T12:20:51Z",
+      "hits": [
+        "visual",
+        "puzzle"
+      ],
+      "record": {
+        "Tweet Id": "1253297784633122817",
+        "Text": "I understand some of you get a bit frustrated when you can't solve a puzzle. Maybe take it as a chance to learn alternative forms of storing a private key. I.e. how will an attacker know what's with a weird image in your email account? #cryptocurrency #privatekey #wallet",
+        "Name": "Arweave Puzzle",
+        "Screen Name": "ArweaveP",
+        "UTC": "2020-04-23T12:20:51.000Z",
+        "Created At": "Thu Apr 23 12:20:51 +0000 2020",
+        "Favorites": "15",
+        "Retweets": "1",
+        "Language": "en",
+        "Client": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "Tweet Type": "Tweet",
+        "Hashtags": "3",
+        "Mentions": "0"
+      }
+    },
+    {
+      "sheet": "tweets",
+      "row": 351,
+      "utc": "2020-04-23T13:09:18Z",
+      "hits": [
+        "visual",
+        "puzzle"
+      ],
+      "record": {
+        "Tweet Id": "1253309976346574848",
+        "Text": "@Goovi2 Look at the solved puzzles. If solutions make sense to you, you are good to go.",
+        "Name": "Arweave Puzzle",
+        "Screen Name": "ArweaveP",
+        "UTC": "2020-04-23T13:09:18.000Z",
+        "Created At": "Thu Apr 23 13:09:18 +0000 2020",
+        "Favorites": "1",
+        "Retweets": "0",
+        "Language": "en",
+        "Client": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "Tweet Type": "Reply",
+        "Hashtags": "0",
+        "Mentions": "1"
+      }
+    },
+    {
+      "sheet": "tweets",
+      "row": 350,
+      "utc": "2020-04-23T16:07:09Z",
+      "hits": [
+        "count",
+        "visual",
+        "puzzle"
+      ],
+      "record": {
+        "Tweet Id": "1253354733911359491",
+        "Text": "@Kevin34755400 Like I specified, the private key is hidden in the image. One way to try is MEW: Access by Private Key 🤐 good luck!",
+        "Name": "Arweave Puzzle",
+        "Screen Name": "ArweaveP",
+        "UTC": "2020-04-23T16:07:09.000Z",
+        "Created At": "Thu Apr 23 16:07:09 +0000 2020",
+        "Favorites": "1",
+        "Retweets": "0",
+        "Language": "en",
+        "Client": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "Tweet Type": "Reply",
+        "Hashtags": "0",
+        "Mentions": "1"
+      }
+    },
+    {
+      "sheet": "tweets",
+      "row": 349,
+      "utc": "2020-04-23T16:14:21Z",
+      "hits": [
+        "puzzle"
+      ],
+      "record": {
+        "Tweet Id": "1253356547603914752",
+        "Text": "@DontBeNull1 @Goovi2 https://t.co/6vqoU7J708 https://t.co/Mtatk4DD9e https://t.co/5wudzAg7Dn Puzzle 4 was also solved, but I'm not sure where solver shared the solution.",
+        "Name": "Arweave Puzzle",
+        "Screen Name": "ArweaveP",
+        "UTC": "2020-04-23T16:14:21.000Z",
+        "Created At": "Thu Apr 23 16:14:21 +0000 2020",
+        "Favorites": "1",
+        "Retweets": "0",
+        "Language": "en",
+        "Client": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "Tweet Type": "Tweet",
+        "URLs": "https://twitter.com/ArweaveP/status/1131939486835838977 https://twitter.com/ArweaveP/status/1131629325126656002 https://twitter.com/ArweaveP/status/1215166049227808770 ",
+        "Hashtags": "0",
+        "Mentions": "1"
+      }
+    },
+    {
+      "sheet": "tweets",
+      "row": 348,
+      "utc": "2020-04-23T17:30:04Z",
+      "hits": [
+        "visual"
+      ],
+      "record": {
+        "Tweet Id": "1253375599323856896",
+        "Text": "@afronomad_ format does not matter",
+        "Name": "Arweave Puzzle",
+        "Screen Name": "ArweaveP",
+        "UTC": "2020-04-23T17:30:04.000Z",
+        "Created At": "Thu Apr 23 17:30:04 +0000 2020",
+        "Favorites": "2",
+        "Retweets": "0",
+        "Language": "en",
+        "Client": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "Tweet Type": "Reply",
+        "Hashtags": "0",
+        "Mentions": "0"
+      }
+    }
+  ],
+  "hit_counts": {
+    "321": 0,
+    "order": 0,
+    "count": 1,
+    "visual": 5,
+    "geometry": 0,
+    "puzzle": 5
+  },
+  "direct_321_mentions": [],
+  "order_mentions": [],
+  "count_mentions": [
+    {
+      "sheet": "tweets",
+      "row": 350,
+      "utc": "2020-04-23T16:07:09Z",
+      "hits": [
+        "count",
+        "visual",
+        "puzzle"
+      ],
+      "record": {
+        "Tweet Id": "1253354733911359491",
+        "Text": "@Kevin34755400 Like I specified, the private key is hidden in the image. One way to try is MEW: Access by Private Key 🤐 good luck!",
+        "Name": "Arweave Puzzle",
+        "Screen Name": "ArweaveP",
+        "UTC": "2020-04-23T16:07:09.000Z",
+        "Created At": "Thu Apr 23 16:07:09 +0000 2020",
+        "Favorites": "1",
+        "Retweets": "0",
+        "Language": "en",
+        "Client": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "Tweet Type": "Reply",
+        "Hashtags": "0",
+        "Mentions": "1"
+      }
+    }
+  ],
+  "geometry_mentions": []
+}
