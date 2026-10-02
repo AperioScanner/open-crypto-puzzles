@@ -55,7 +55,7 @@ def score_series(series,target):
         "target":"".join(map(str,target)),
         "exact_thresholds":int(sum(exact)),
         "exact_fraction":float(np.mean(exact)),
-        "median_counts":list(med),
+        "median_counts":[int(x) for x in med],
         "mad_counts":[float(x) for x in mad],
         "mean_l1_distance":float(np.mean(l1)),
         "min_l1_distance":int(np.min(l1)),
