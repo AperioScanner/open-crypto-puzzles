@@ -1,0 +1,221 @@
+{
+  "experiment_id": "A11-EXP-016",
+  "scope": "coding-choice/look-elsewhere audit only; no private-key operations",
+  "observed_bits": "001100100001",
+  "observed_identity_hex": "321",
+  "observed_common_hits": [
+    {
+      "transform": "identity",
+      "representation": "hex3",
+      "value": "321"
+    }
+  ],
+  "uniform_12bit_universe": 4096,
+  "exact_identity_hex_321_count": 1,
+  "exact_identity_hex_321_probability": 0.000244140625,
+  "any_321_or_123_under_common_choices_count": 242,
+  "any_321_or_123_under_common_choices_probability": 0.05908203125,
+  "common_choices": {
+    "transforms": [
+      "identity",
+      "reverse",
+      "complement",
+      "reverse_complement"
+    ],
+    "representations": [
+      "hex3",
+      "oct4",
+      "dec"
+    ],
+    "pattern_rule": "contains 321 or 123"
+  },
+  "geometry_grouping": {
+    "gaps_after_buildings_px": [
+      4,
+      4,
+      2,
+      2,
+      102,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4
+    ],
+    "ranked_gaps": [
+      {
+        "after_building": 5,
+        "gap_px": 102
+      },
+      {
+        "after_building": 1,
+        "gap_px": 4
+      },
+      {
+        "after_building": 2,
+        "gap_px": 4
+      },
+      {
+        "after_building": 11,
+        "gap_px": 4
+      },
+      {
+        "after_building": 3,
+        "gap_px": 2
+      },
+      {
+        "after_building": 4,
+        "gap_px": 2
+      },
+      {
+        "after_building": 6,
+        "gap_px": 2
+      },
+      {
+        "after_building": 7,
+        "gap_px": 2
+      },
+      {
+        "after_building": 8,
+        "gap_px": 2
+      },
+      {
+        "after_building": 9,
+        "gap_px": 2
+      },
+      {
+        "after_building": 10,
+        "gap_px": 2
+      }
+    ],
+    "median_gap_px": 2,
+    "largest_gap_px": 102,
+    "gap_after_4_px": 2,
+    "gap_after_8_px": 2,
+    "four_four_four_boundaries_are_largest": false,
+    "largest_boundary_after_building": 5
+  },
+  "examples": [
+    {
+      "bits": "000001010011",
+      "hits": [
+        {
+          "transform": "identity",
+          "representation": "oct4",
+          "value": "0123"
+        }
+      ]
+    },
+    {
+      "bits": "000001101011",
+      "hits": [
+        {
+          "transform": "reverse_complement",
+          "representation": "oct4",
+          "value": "1237"
+        }
+      ]
+    },
+    {
+      "bits": "000001111011",
+      "hits": [
+        {
+          "transform": "identity",
+          "representation": "dec",
+          "value": "123"
+        }
+      ]
+    },
+    {
+      "bits": "000010010011",
+      "hits": [
+        {
+          "transform": "reverse",
+          "representation": "dec",
+          "value": "3216"
+        }
+      ]
+    },
+    {
+      "bits": "000010110010",
+      "hits": [
+        {
+          "transform": "reverse",
+          "representation": "dec",
+          "value": "1232"
+        }
+      ]
+    },
+    {
+      "bits": "000011001101",
+      "hits": [
+        {
+          "transform": "reverse_complement",
+          "representation": "dec",
+          "value": "1231"
+        }
+      ]
+    },
+    {
+      "bits": "000011010001",
+      "hits": [
+        {
+          "transform": "identity",
+          "representation": "oct4",
+          "value": "0321"
+        }
+      ]
+    },
+    {
+      "bits": "000011101001",
+      "hits": [
+        {
+          "transform": "reverse_complement",
+          "representation": "oct4",
+          "value": "3217"
+        }
+      ]
+    },
+    {
+      "bits": "000011101100",
+      "hits": [
+        {
+          "transform": "reverse_complement",
+          "representation": "dec",
+          "value": "3215"
+        }
+      ]
+    },
+    {
+      "bits": "000100010110",
+      "hits": [
+        {
+          "transform": "reverse",
+          "representation": "oct4",
+          "value": "3210"
+        }
+      ]
+    },
+    {
+      "bits": "000100100011",
+      "hits": [
+        {
+          "transform": "identity",
+          "representation": "hex3",
+          "value": "123"
+        }
+      ]
+    },
+    {
+      "bits": "000100101110",
+      "hits": [
+        {
+          "transform": "complement",
+          "representation": "oct4",
+          "value": "7321"
+        }
+      ]
+    }
+  ]
+}
