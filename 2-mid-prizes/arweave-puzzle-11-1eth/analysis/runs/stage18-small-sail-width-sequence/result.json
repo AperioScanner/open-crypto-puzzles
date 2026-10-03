@@ -1,0 +1,36 @@
+{
+  "experiment_id": "A11-EXP-018",
+  "scope": "pre-existing left-to-right small-sail widths only; arithmetic progression and modulo-26 diagnostics; no private-key operations",
+  "widths_left_to_right_px": [
+    27,
+    53,
+    79,
+    83,
+    51
+  ],
+  "first_three": [
+    27,
+    53,
+    79
+  ],
+  "first_three_differences": [
+    26,
+    26
+  ],
+  "first_three_ap_error": 0,
+  "first_three_mean_step": 26.0,
+  "all_permutations": 120,
+  "permutations_with_exact_AP_first3": 4,
+  "exact_AP_permutation_probability": 0.03333333333333333,
+  "permutations_at_least_as_good": 4,
+  "mod26": [
+    1,
+    1,
+    1,
+    5,
+    25
+  ],
+  "first_three_same_mod26": true,
+  "permutations_with_same_mod26_first3": 12,
+  "same_mod26_permutation_probability": 0.1
+}
