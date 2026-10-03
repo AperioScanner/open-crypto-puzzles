@@ -1,0 +1,142 @@
+{
+  "experiment_id": "A11-EXP-017",
+  "scope": "fixed H/V skyline labels versus measured building geometry; exact permutation tests only; no private-key operations",
+  "sequence": "HHVVHHVHHHHV",
+  "vertical_buildings": [
+    3,
+    4,
+    7,
+    12
+  ],
+  "features": {
+    "width": {
+      "observed_abs_mean_difference": 32.25,
+      "exact_two_sided_p": 0.12727272727272726,
+      "permutations": 495,
+      "auc_V_greater": 0.5625,
+      "best_direction_auc": 0.5625,
+      "values": [
+        88,
+        86,
+        84,
+        174,
+        104,
+        94,
+        160,
+        116,
+        88,
+        102,
+        56,
+        78
+      ]
+    },
+    "height": {
+      "observed_abs_mean_difference": 18.125,
+      "exact_two_sided_p": 0.597979797979798,
+      "permutations": 495,
+      "auc_V_greater": 0.640625,
+      "best_direction_auc": 0.640625,
+      "values": [
+        167,
+        245,
+        144,
+        212,
+        292,
+        106,
+        250,
+        220,
+        137,
+        208,
+        144,
+        226
+      ]
+    },
+    "aspect_width_over_height": {
+      "observed_abs_mean_difference": 0.07607952963068454,
+      "exact_two_sided_p": 0.5191919191919192,
+      "permutations": 495,
+      "auc_V_greater": 0.59375,
+      "best_direction_auc": 0.59375,
+      "values": [
+        0.5269461077844312,
+        0.3510204081632653,
+        0.5833333333333334,
+        0.8207547169811321,
+        0.3561643835616438,
+        0.8867924528301887,
+        0.64,
+        0.5272727272727272,
+        0.6423357664233577,
+        0.49038461538461536,
+        0.3888888888888889,
+        0.34513274336283184
+      ]
+    },
+    "roof_y": {
+      "observed_abs_mean_difference": 16.625,
+      "exact_two_sided_p": 0.6444444444444445,
+      "permutations": 495,
+      "auc_V_greater": 0.40625,
+      "best_direction_auc": 0.59375,
+      "values": [
+        161,
+        78,
+        183,
+        107,
+        20,
+        201,
+        72,
+        101,
+        176,
+        105,
+        163,
+        74
+      ]
+    },
+    "x_center": {
+      "observed_abs_mean_difference": 46.875,
+      "exact_two_sided_p": 0.8727272727272727,
+      "permutations": 495,
+      "auc_V_greater": 0.5,
+      "best_direction_auc": 0.5,
+      "values": [
+        278.0,
+        369.0,
+        458.0,
+        589.0,
+        730.0,
+        931.0,
+        1060.0,
+        1200.0,
+        1304.0,
+        1401.0,
+        1482.0,
+        1553.0
+      ]
+    },
+    "area": {
+      "observed_abs_mean_difference": 8783.75,
+      "exact_two_sided_p": 0.1797979797979798,
+      "permutations": 495,
+      "auc_V_greater": 0.71875,
+      "best_direction_auc": 0.71875,
+      "values": [
+        14696,
+        21070,
+        12096,
+        36888,
+        30368,
+        9964,
+        40000,
+        25520,
+        12056,
+        21216,
+        8064,
+        17628
+      ]
+    }
+  },
+  "smallest_raw_p_feature": "width",
+  "smallest_raw_p": 0.12727272727272726,
+  "bonferroni_over_6_features": 0.7636363636363636
+}
