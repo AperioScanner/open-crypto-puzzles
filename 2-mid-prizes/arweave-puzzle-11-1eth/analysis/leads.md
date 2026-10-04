@@ -1,21 +1,25 @@
 # Open leads, ranked
 
-## 1. Find a second visual confirmation of `0x321` (active)
+## 1. Localize the promoted L-bit0 traversal anomaly (active)
 
-The skyline orientation sequence `HHVVHHVHHHHV = 0x321` is robust under crop perturbation (Stage 10) and uncommon under simple random nulls (Stage 13). But Stage 14 found no direct 3-2-1 or ordering clue in the complete mirrored launch-window transcript. The next decisive step is therefore an **independent visual** 3-2-1/countdown/order/selection structure. Candidate sources: object groups, secondary marks, spatial ordering, perimeter cues, or a semantic relationship among skyline/boats/watermark. Any candidate must survive threshold/crop perturbation.
+Stage 28 null-calibrated the Stage-27 traversal family with 100 matched 32×32 block-shuffled surrogates. Two global metrics were unusually extreme: max printable fraction 0.109059 (empirical p=0.0099) and min zlib ratio 0.464995 (p=0.0099). The longest printable run was not exceptional (8; p=0.8416), and there were no specific multi-byte file signatures.
 
-## 2. Apply the solved-puzzle grammar to secondary details (active)
+This is now the strongest active technical lead. Stage 29 tests whether the effect is spatially localized and whether it is specific to grayscale bit 0 or reproduced equally in higher bitplanes.
 
-Stage 11 catalogued 18 solved-token mechanisms from #5/#7/#8: 14 semantic/contextual and 4 counting/sequence/numeric extraction. The author's recurring habits include tiny secondary details, counts, rebuses, cultural references, and overall technical/visual context. This is now the strongest evidence-based guide for choosing new tests.
+## 2. Robust H/V skyline texture, but not hexadecimal `0x321` (retained, secondary)
 
-## 3. Inspect Stage 12 promoted visual regions (active, bounded)
+The H/V texture sequence is real: Stage 10 showed crop robustness and Stage 21 reproduced it 12/12 with Fourier and morphological classifiers independent of Stage-5 Sobel. But Stage 22 retired the specific hexadecimal `0x321` reading as the primary interpretation because there is no natural 4+4+4 grouping, no independent 321 count corroboration, and the representation look-elsewhere penalty is material.
 
-Stage 12 created a secondary-detail atlas and ranked regions by connected components, perimeter ink and 1-D periodicity. Common lag-3 periodicity appears across unrelated regions and is likely a stroke/raster artifact, so it must not be treated as confirmation. Focus on human-visible, deliberate-looking marks that remain stable across thresholds.
+Retain the visual texture as a semantic clue candidate; do not keep forcing 321-specific transforms.
 
-## 4. Recover sources outside the mirrored #11 launch window (archival)
+## 3. Statistical bit-level steganalysis (active family)
 
-The public mirror's 2020-04-20–2020-05-01 author window is now exhausted and contains the known clues but no hidden order/count instruction. Remaining sources are early Telegram/Discord/Weavemail, deleted replies, screenshots, quoted replies from other users, or archives not captured in the workbook.
+Stages 23–26 weakened simple global random-LSB replacement but revealed strong spatial correlation and localized low-bit structure. Continue only with experiments justified by calibrated anomalies, not brute-force bitstream enumeration.
 
-## 5. Puzzle #9's actual solve method (standing high-value lead)
+## 4. Apply the solved-puzzle grammar to secondary details (standing)
 
-#9 remains the best sibling control because it is visually related, solved, and method-unknown. A first-hand solve description could provide the intended construction grammar for #11 without arbitrary guessing.
+Stage 11 showed the author's solved puzzles favor human-readable semantics, tiny secondary details, counting, rebuses, cultural references and visual/technical context. This remains the main prior for any new visual clue that emerges from localized bit/anomaly regions.
+
+## 5. Recover sources outside the mirrored #11 launch window / solve method for #9 (archival)
+
+The public mirror's launch window is exhausted. Remaining high-value external evidence is early Telegram/Discord/Weavemail, deleted replies, screenshots, quoted replies, or a first-hand account of Puzzle #9's actual solve method.
