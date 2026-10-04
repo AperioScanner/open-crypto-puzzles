@@ -1,37 +1,44 @@
-# Arweave Puzzle #11 — stage queue
+# Arweave Puzzle #11 — adaptive stage controller
 
 Last updated: 2026-10-03
 
-This queue is the coordination plan for the safe research scope on `research/arweave11-chatgpt`.
-GitHub Actions only shows a run after that stage has actually been dispatched; planned stages below
-are therefore visible here before they appear in the Actions run list.
+This file replaces the fixed multi-stage queue. The research must now advance **adaptively, one stage at a time**.
 
-## Current
+## Required control loop
 
-| Stage | Status | Purpose |
-|---|---|---|
-| 21 | QUEUED/RUNNING | Independently replicate the 12-building H/V texture sequence with Fourier anisotropy and morphological line-response classifiers, without reusing the Stage-5 Sobel decision rule. |
+1. GitHub Actions executes exactly one experimental stage.
+2. That stage writes its non-secret `REPORT.md` and `result.json` and commits them.
+3. The ChatGPT research automation detects the newest completed, unreviewed stage.
+4. ChatGPT reads the actual results, re-evaluates the hypothesis tree, records a reasoning/decision entry, and only then designs the next stage.
+5. Pushing the new stage workflow starts GitHub Actions immediately.
+6. Repeat.
 
-## Exhaust the visual `321` family first
+A future stage must **not** be pre-scripted merely because it was once listed in a roadmap. The next experiment is chosen from the evidence produced by the previous one.
 
-| Stage | Status | Purpose |
-|---|---|---|
-| 22 | NEXT | Final evidence synthesis + stop rule for the specific `0x321` interpretation. Combine Stages 10, 13, 15, 16, 17, 20 and 21. Keep the H/V texture lead separate from the post-hoc hexadecimal interpretation. If no independent 321 corroboration remains, retire `0x321` as the primary visual hypothesis. |
+## Current evidence handoff
 
-## Then pivot to bit-level steganalysis
+The one-off accelerated batch 22–27 completed before this controller correction. Treat those stages as a **single exploratory evidence batch**, not as proof that adaptive reasoning occurred between each of them.
 
-| Stage | Status | Purpose |
-|---|---|---|
-| 23 | PLANNED | LSB/MSB statistical steganalysis: per-bitplane entropy, balance, pair-of-values / chi-square style tests, grayscale-vs-alpha comparisons and region controls. No key derivation. |
-| 24 | PLANNED | RS-style LSB steganalysis and local embedding-rate diagnostics on grayscale regions, with synthetic controls. |
-| 25 | PLANNED | Local entropy / anomaly maps by bitplane and residual channel; identify spatially localized carriers rather than brute-force bitstreams. |
-| 26 | PLANNED | 2-D autocorrelation and Fourier/spectral analysis of bitplanes/residuals; test periodic, tiled, row/column and serpentine structure. |
-| 27 | PLANNED | Traversal-order diagnostics (row-major, column-major, serpentine, rotations/reflections) using compressibility, byte statistics, printable-text rates and file-signature evidence only; no private-key reconstruction or wallet verification. |
+Important results from that batch:
 
-## Decision rule
+- Stage 22: retain the robust H/V texture as a visual lead, but **retire hexadecimal `0x321` as the primary interpretation**.
+- Stage 23: low grayscale bitplanes remain strongly image-correlated; descriptive statistics alone do not show an obvious global random LSB payload.
+- Stage 24: simple global LSB replacement is weakened; original RS-style behavior is far from the stronger synthetic replacement controls.
+- Stage 25: low-bit anomalies are mostly localized in image-texture regions; alpha anomalies are dominated by the sparse alpha channel and need caution.
+- Stage 26: strong low-frequency/spatial correlation is present across low grayscale planes; it may reflect drawing/render structure rather than payload.
+- Stage 27: no traversal is strongly text-like (best printable fraction about 0.109, longest printable run 8). The previous one-byte JSON magic test creates many false-positive “magic” hits and must be recalibrated before using those hits as evidence.
 
-Stages 21–22 finish the visual `321` route. Unless Stage 21 produces a materially new independent
-visual confirmation that survives the Stage-22 stop rule, Stage 23 begins the statistical
-bit-level steganalysis route.
+## Next adaptive decision
 
-The queue may be refined when a stage produces evidence that materially changes the next best test.
+**Stage 28 must be chosen from the combined Stage 23–27 evidence, not from an old fixed roadmap.**
+
+Current best justified question:
+> Are the Stage-27 traversal anomalies (printability/compressibility/signature hits) actually exceptional relative to matched null/surrogate streams, or are they expected from the highly biased and spatially correlated image bitplanes?
+
+A good Stage 28 should null-calibrate those anomalies using shuffled or block-shuffled surrogate streams that preserve relevant marginal statistics, and should replace one-byte “magic” signatures with sufficiently specific multi-byte signatures.
+
+## Status
+
+- Stages 1–27: completed or superseded as recorded in their run folders.
+- Adaptive controller: ACTIVE.
+- Next stage: 28, to be designed only after explicit reasoning over Stage 22–27.
