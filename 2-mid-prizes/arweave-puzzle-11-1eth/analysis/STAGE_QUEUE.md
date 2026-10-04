@@ -2,8 +2,6 @@
 
 Last updated: 2026-10-03
 
-This file defines the one-stage-at-a-time adaptive research loop on `research/arweave11-chatgpt`.
-
 ## Control loop
 
 1. GitHub Actions executes exactly one experiment.
@@ -12,65 +10,57 @@ This file defines the one-stage-at-a-time adaptive research loop on `research/ar
 4. ChatGPT updates the hypothesis tree and designs exactly one next bounded stage.
 5. Implementation failures are fixed under the same stage number before advancing.
 
-## Adaptive review through Stage 31
+## Adaptive review through Stage 32
 
-### Stages 28–30 — traversal anomaly resolved
-Stage 28 initially promoted a grayscale bit-0 traversal anomaly against block-shuffled surrogates. Stage 29 localized it. Stage 30 showed that the effect decomposes into ordinary large-scale image structure: foreground pixels generate the apparent printability, blank background strips generate extreme zlib compressibility, and the same behavior persists across bits 0–3.
+### Stage 31 — route selection
+The robust 12-building H/V texture stayed **12/12** under both independent classifiers across every tested JPEG/resampling variant, while foreground bit-0 agreement collapsed to about **0.52–0.55**.
 
-**Decision:** generic traversal / exact low-bit hunting is retired as a primary route.
+**Decision:** prioritize format-invariant visible/semantic mechanisms; strongly downgrade fragile exact-pixel LSB explanations.
 
-### Stage 31 — format invariance strongly favors the visual route
-The 12-building H/V sequence survived every lossy transformation with **12/12 agreement under both independent classifiers**:
+### Stage 32 — 160 vertical bit stripes: negative
+The exact dimensional coincidence `1600 px = 160 address bits × 10 px` was tested with a predeclared family of coarse visible features and two natural reading directions.
 
-- JPEG quality 95 / 85 / 70
-- downsample 0.75× then restore
-- upsample 1.25× then restore
-- JPEG85 + downsample/restore
+Best result:
+- Hamming distance: **66/160** (94 matches)
+- familywise empirical p: **0.40953**
+- same family survives lossy transform, but the target match is completely unexceptional
 
-At the same time, exact foreground bit-0 agreement fell to roughly **0.52–0.55**, close to chance.
-
-**Decision:** promote a format-invariant visual/semantic carrier and strongly downgrade exact-pixel LSB explanations. This is route-selection evidence; it does not prove that H/V itself is the payload.
+**Decision:** retire the simple 160×10px bit-stripe representation. Keep the known public address as a useful positive probe because the author explicitly said it is present somewhere in the image.
 
 ## Current hypothesis ranking
 
 1. **Format-invariant visible/semantic encoding — highest priority.**
-   Consistent with the author's statement that image format does not matter and with Stage 31.
-
-2. **Known public escrow address as a positive probe — promoted.**
-   The author said the public `0xFF2142...` address is also included somewhere in the image. Because the address is known, it can be used safely as a known-answer probe to discover the visual carrier mechanism without touching private-key material.
-
-3. **Robust H/V building texture — active clue, interpretation unresolved.**
-   The sequence is real and format-stable. The former hexadecimal `0x321` interpretation remains retired.
-
+2. **Known public escrow address as a positive probe — active, but Stage-32 bit stripes retired.**
+3. **Robust H/V building texture — active clue; interpretation unresolved.**
 4. **Solved-puzzle visual grammar — active prior.**
-   Prefer visible secondary details, counting, selection, rebuses, ordered interpretation and other human-readable mechanisms over arbitrary transforms.
-
-5. **Raw low-bit / generic traversal / alpha carriers — downgraded or exhausted.**
+5. **Raw low-bit / generic traversal / alpha — downgraded or exhausted.**
 
 ## Next stage
 
-**Stage 32 — public-address coarse-stripe known-answer probe.**
+**Stage 33 — 40-hex-digit coarse-cell probe.**
 
 Motivation:
-- the known Ethereum address contains exactly **160 bits**;
-- the image width is exactly **1600 px**, giving a natural **10 px per address bit** partition;
-- the author explicitly said the address is included somewhere in the image;
-- a 10-pixel coarse visual encoding is compatible with Stage-31 format invariance in a way that exact LSBs are not.
+- the public Ethereum address has exactly **40 hexadecimal digits**;
+- image width is **1600 px = 40 × 40 px**, another exact and more semantically natural dimensional correspondence;
+- hexadecimal digits are the human-visible representation in which the address was published;
+- a coarse 40px feature is compatible with Stage-31 format invariance.
 
 Bounded test:
-- partition the image into exactly 160 vertical cells of 10 px;
-- derive binary sequences only from a small pre-declared family of visible features and semantic y-bands;
-- compare against the known public address under standard ordering/inversion conventions;
-- require replication after JPEG/resampling;
-- familywise-calibrate the best Hamming match against random 160-bit controls with the same bit balance.
+- divide width into exactly 40 cells of 40 px;
+- use a small predeclared family of visible aggregate features over fixed semantic y-bands;
+- quantize each 40-cell feature vector into hexadecimal values using only predeclared min-max and rank-based 16-level quantizers;
+- test polarity and the two natural reading directions;
+- compare to the known public 40-digit address;
+- familywise-calibrate exact-digit matches and nibble-bit Hamming distance against random permutations of the same public-address digits;
+- require the same selected family member to reproduce after JPEG85 + resampling.
 
-A negative result retires this simple 160-stripe address representation, not all visual address encodings.
+A negative result retires this simple 40×40px hex-cell family, not other visual/semantic representations of the address.
 
 ## Status
 
-- Stages 1–31: completed.
-- Stage 31: COMPLETED + ADAPTIVELY REVIEWED.
+- Stages 1–32: completed.
+- Stage 32: COMPLETED + ADAPTIVELY REVIEWED — NEGATIVE.
 - Visual/semantic route: PROMOTED.
-- Exact-pixel low-bit route: STRONGLY DOWNGRADED.
+- Simple 160-bit vertical-stripe address encoding: RETIRED.
 - Adaptive controller: manual while user is active.
-- Next stage: 32.
+- Next stage: 33.
