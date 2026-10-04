@@ -1,0 +1,255 @@
+{
+  "experiment_id": "A11-EXP-028",
+  "scope": "null calibration of Stage-27 top printable L-bit0 traversal family using 32x32 block-shuffled surrogates; multi-byte signatures only; no secret reconstruction",
+  "candidate_streams": 12,
+  "surrogates": 100,
+  "observed": {
+    "max_printable": 0.10905882352941176,
+    "max_run": 8,
+    "min_zlib": 0.46499547511312217,
+    "magic_streams": 0
+  },
+  "empirical_p": {
+    "max_printable_upper": 0.009900990099009901,
+    "max_run_upper": 0.8415841584158416,
+    "min_zlib_lower": 0.009900990099009901,
+    "magic_streams_upper": 1.0
+  },
+  "promoted": true,
+  "observed_streams": [
+    {
+      "config": {
+        "channel": "L",
+        "rot90": 1,
+        "flip_lr": true,
+        "traversal": "row_serp",
+        "selection": "b0",
+        "bits": [
+          0
+        ],
+        "bitorder": "big"
+      },
+      "metrics": {
+        "printable_fraction": 0.10905882352941176,
+        "longest_printable_run": 8,
+        "zlib_ratio": 0.4654796380090498,
+        "magic_hits": []
+      }
+    },
+    {
+      "config": {
+        "channel": "L",
+        "rot90": 2,
+        "flip_lr": false,
+        "traversal": "col_serp",
+        "selection": "b0",
+        "bits": [
+          0
+        ],
+        "bitorder": "big"
+      },
+      "metrics": {
+        "printable_fraction": 0.10905882352941176,
+        "longest_printable_run": 8,
+        "zlib_ratio": 0.4654796380090498,
+        "magic_hits": []
+      }
+    },
+    {
+      "config": {
+        "channel": "L",
+        "rot90": 2,
+        "flip_lr": true,
+        "traversal": "col_serp",
+        "selection": "b0",
+        "bits": [
+          0
+        ],
+        "bitorder": "little"
+      },
+      "metrics": {
+        "printable_fraction": 0.10905882352941176,
+        "longest_printable_run": 8,
+        "zlib_ratio": 0.46499547511312217,
+        "magic_hits": []
+      }
+    },
+    {
+      "config": {
+        "channel": "L",
+        "rot90": 3,
+        "flip_lr": false,
+        "traversal": "row_serp",
+        "selection": "b0",
+        "bits": [
+          0
+        ],
+        "bitorder": "little"
+      },
+      "metrics": {
+        "printable_fraction": 0.10905882352941176,
+        "longest_printable_run": 8,
+        "zlib_ratio": 0.46499547511312217,
+        "magic_hits": []
+      }
+    },
+    {
+      "config": {
+        "channel": "L",
+        "rot90": 0,
+        "flip_lr": true,
+        "traversal": "col",
+        "selection": "b0",
+        "bits": [
+          0
+        ],
+        "bitorder": "little"
+      },
+      "metrics": {
+        "printable_fraction": 0.10898190045248869,
+        "longest_printable_run": 8,
+        "zlib_ratio": 0.46596380090497735,
+        "magic_hits": []
+      }
+    },
+    {
+      "config": {
+        "channel": "L",
+        "rot90": 1,
+        "flip_lr": false,
+        "traversal": "row",
+        "selection": "b0",
+        "bits": [
+          0
+        ],
+        "bitorder": "little"
+      },
+      "metrics": {
+        "printable_fraction": 0.10898190045248869,
+        "longest_printable_run": 8,
+        "zlib_ratio": 0.46596380090497735,
+        "magic_hits": []
+      }
+    },
+    {
+      "config": {
+        "channel": "L",
+        "rot90": 2,
+        "flip_lr": true,
+        "traversal": "col",
+        "selection": "b0",
+        "bits": [
+          0
+        ],
+        "bitorder": "big"
+      },
+      "metrics": {
+        "printable_fraction": 0.10898190045248869,
+        "longest_printable_run": 8,
+        "zlib_ratio": 0.4657647058823529,
+        "magic_hits": []
+      }
+    },
+    {
+      "config": {
+        "channel": "L",
+        "rot90": 3,
+        "flip_lr": false,
+        "traversal": "row",
+        "selection": "b0",
+        "bits": [
+          0
+        ],
+        "bitorder": "big"
+      },
+      "metrics": {
+        "printable_fraction": 0.10898190045248869,
+        "longest_printable_run": 8,
+        "zlib_ratio": 0.4657647058823529,
+        "magic_hits": []
+      }
+    },
+    {
+      "config": {
+        "channel": "L",
+        "rot90": 0,
+        "flip_lr": true,
+        "traversal": "col",
+        "selection": "b0",
+        "bits": [
+          0
+        ],
+        "bitorder": "big"
+      },
+      "metrics": {
+        "printable_fraction": 0.10887330316742082,
+        "longest_printable_run": 8,
+        "zlib_ratio": 0.4661131221719457,
+        "magic_hits": []
+      }
+    },
+    {
+      "config": {
+        "channel": "L",
+        "rot90": 1,
+        "flip_lr": false,
+        "traversal": "row",
+        "selection": "b0",
+        "bits": [
+          0
+        ],
+        "bitorder": "big"
+      },
+      "metrics": {
+        "printable_fraction": 0.10887330316742082,
+        "longest_printable_run": 8,
+        "zlib_ratio": 0.4661131221719457,
+        "magic_hits": []
+      }
+    },
+    {
+      "config": {
+        "channel": "L",
+        "rot90": 2,
+        "flip_lr": true,
+        "traversal": "col",
+        "selection": "b0",
+        "bits": [
+          0
+        ],
+        "bitorder": "little"
+      },
+      "metrics": {
+        "printable_fraction": 0.10887330316742082,
+        "longest_printable_run": 8,
+        "zlib_ratio": 0.46560180995475114,
+        "magic_hits": []
+      }
+    },
+    {
+      "config": {
+        "channel": "L",
+        "rot90": 3,
+        "flip_lr": false,
+        "traversal": "row",
+        "selection": "b0",
+        "bits": [
+          0
+        ],
+        "bitorder": "little"
+      },
+      "metrics": {
+        "printable_fraction": 0.10887330316742082,
+        "longest_printable_run": 8,
+        "zlib_ratio": 0.46560180995475114,
+        "magic_hits": []
+      }
+    }
+  ],
+  "null_summary": {
+    "max_printable_median": 0.10629638009049774,
+    "max_run_median": 8.0,
+    "min_zlib_median": 0.5369773755656109,
+    "magic_streams_max": 0
+  }
+}
