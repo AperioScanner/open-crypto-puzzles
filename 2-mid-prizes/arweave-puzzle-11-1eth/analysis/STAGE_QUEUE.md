@@ -10,57 +10,63 @@ Last updated: 2026-10-03
 4. ChatGPT updates the hypothesis tree and designs exactly one next bounded stage.
 5. Implementation failures are fixed under the same stage number before advancing.
 
-## Adaptive review through Stage 32
+## Adaptive review through Stage 33
 
 ### Stage 31 — route selection
-The robust 12-building H/V texture stayed **12/12** under both independent classifiers across every tested JPEG/resampling variant, while foreground bit-0 agreement collapsed to about **0.52–0.55**.
+The visible H/V structure remained **12/12** under two independent classifiers through JPEG/resampling while exact foreground bit-0 identity collapsed to ~0.52–0.55.
 
-**Decision:** prioritize format-invariant visible/semantic mechanisms; strongly downgrade fragile exact-pixel LSB explanations.
+**Decision:** prioritize format-invariant visible/semantic mechanisms.
 
-### Stage 32 — 160 vertical bit stripes: negative
-The exact dimensional coincidence `1600 px = 160 address bits × 10 px` was tested with a predeclared family of coarse visible features and two natural reading directions.
+### Stage 32 — 160×10px address-bit stripes: negative
+Best Hamming distance was 66/160 with familywise p=0.40953.
 
-Best result:
-- Hamming distance: **66/160** (94 matches)
-- familywise empirical p: **0.40953**
-- same family survives lossy transform, but the target match is completely unexceptional
+### Stage 33 — 40×40px address-hex cells: negative
+The more human-readable dimensional mapping `1600 px = 40 address hex digits × 40 px` also failed:
 
-**Decision:** retire the simple 160×10px bit-stripe representation. Keep the known public address as a useful positive probe because the author explicitly said it is present somewhere in the image.
+- best exact hex-digit matches: **9/40**
+- familywise p(exact): **0.08519**
+- nibble-bit Hamming: **67/160**
+- familywise p(bit-Hamming): **0.95830**
+- extracted coarse digits were format-stable (38/40) but their match to the public address was not exceptional
+
+**Decision:** retire uniform-width address tilings as a primary visual hypothesis. The known public address remains a useful positive probe, but there is no evidence that the image width is partitioned directly into its bits or hex digits.
 
 ## Current hypothesis ranking
 
-1. **Format-invariant visible/semantic encoding — highest priority.**
-2. **Known public escrow address as a positive probe — active, but Stage-32 bit stripes retired.**
-3. **Robust H/V building texture — active clue; interpretation unresolved.**
-4. **Solved-puzzle visual grammar — active prior.**
+1. **Format-invariant object/semantic encoding — highest priority.**
+2. **Robust H/V building texture — strongest specific visual clue; interpretation unresolved.**
+3. **Solved-puzzle grammar: secondary details, counts, selection and ordering — promoted.**
+4. **Known public address as positive probe — active, but uniform width mappings retired.**
 5. **Raw low-bit / generic traversal / alpha — downgraded or exhausted.**
 
 ## Next stage
 
-**Stage 33 — 40-hex-digit coarse-cell probe.**
+**Stage 34 — H/V selector × secondary-detail association audit.**
 
 Motivation:
-- the public Ethereum address has exactly **40 hexadecimal digits**;
-- image width is **1600 px = 40 × 40 px**, another exact and more semantically natural dimensional correspondence;
-- hexadecimal digits are the human-visible representation in which the address was published;
-- a coarse 40px feature is compatible with Stage-31 format invariance.
+- Stage 11 showed that the author's solved puzzles frequently use small secondary details and counting;
+- Stage 12 already measured secondary-detail counts and perimeter statistics for all 12 buildings;
+- Stage 21 proved the H/V label sequence is robust and classifier-independent;
+- Stage 17 showed simple building geometry does not explain the H/V labels.
+
+Question:
+> Do the four V-labeled buildings and eight H-labeled buildings also separate on independent secondary-detail measurements, as would be expected if H/V acts as a deliberate selector/class label rather than merely decorative hatching?
 
 Bounded test:
-- divide width into exactly 40 cells of 40 px;
-- use a small predeclared family of visible aggregate features over fixed semantic y-bands;
-- quantize each 40-cell feature vector into hexadecimal values using only predeclared min-max and rank-based 16-level quantizers;
-- test polarity and the two natural reading directions;
-- compare to the known public 40-digit address;
-- familywise-calibrate exact-digit matches and nibble-bit Hamming distance against random permutations of the same public-address digits;
-- require the same selected family member to reproduce after JPEG85 + resampling.
+- reuse Stage-12 measurements only; do not invent new visual features after seeing results;
+- exclude projection-periodicity metrics because they are directly entangled with H/V texture orientation;
+- normalize component counts by crop area;
+- test small-component density, mid-component density, threshold stability and perimeter occupancy;
+- enumerate all 495 possible placements of four V labels among 12 buildings for exact permutation p-values;
+- compute both per-feature tests and one multivariate within-class clustering statistic;
+- Bonferroni-correct the per-feature family.
 
-A negative result retires this simple 40×40px hex-cell family, not other visual/semantic representations of the address.
+A strong, multi-feature association would promote H/V as a selector that should guide object-level decoding. A null result would keep H/V as a real visual pattern but downgrade the idea that it organizes secondary-detail content.
 
 ## Status
 
-- Stages 1–32: completed.
-- Stage 32: COMPLETED + ADAPTIVELY REVIEWED — NEGATIVE.
-- Visual/semantic route: PROMOTED.
-- Simple 160-bit vertical-stripe address encoding: RETIRED.
+- Stages 1–33: completed.
+- Stage 33: COMPLETED + ADAPTIVELY REVIEWED — NEGATIVE.
+- Uniform bit/hex width partitions: RETIRED.
 - Adaptive controller: manual while user is active.
-- Next stage: 33.
+- Next stage: 34.
