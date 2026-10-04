@@ -1,0 +1,41 @@
+name: Arweave 11 research stage 28 traversal null calibration
+
+on:
+  push:
+    branches:
+      - research/arweave11-chatgpt
+    paths:
+      - ".github/workflows/arweave11-stage28-traversal-null-calibration.yml"
+      - "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage28_traversal_null_calibration.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  stage28:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PZL: 2-mid-prizes/arweave-puzzle-11-1eth
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/arweave11-chatgpt
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check numpy pillow
+      - name: Run Stage 28
+        run: python "$PZL/tools/stage28_traversal_null_calibration.py"
+      - name: Commit non-secret results
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$PZL/analysis/runs/stage28-traversal-null-calibration"
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "research: stage 28 traversal null calibration [skip ci]"
+          git pull --rebase origin research/arweave11-chatgpt
+          git push origin HEAD:research/arweave11-chatgpt
