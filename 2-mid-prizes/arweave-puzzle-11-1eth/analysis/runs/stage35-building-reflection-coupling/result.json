@@ -1,0 +1,344 @@
+{
+  "experiment_id": "A11-EXP-035",
+  "scope": "scene-level association between fixed building H/V labels and directly underlying reflection orientation; no private-key operations",
+  "baseline": "HHVVHHVHHHHV",
+  "eligible_buildings": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "excluded_buildings": [
+    1,
+    2
+  ],
+  "exclusion_reason": "large sailboat bbox overlaps their below-skyline reflection region",
+  "reflection_band_y": [
+    330,
+    360
+  ],
+  "inner_x_fraction": 0.1,
+  "permutations": 210,
+  "original_rows": [
+    {
+      "id": 3,
+      "label": "V",
+      "bbox": [
+        424,
+        330,
+        492,
+        360
+      ],
+      "sobel": -0.6532460065381723,
+      "fourier": -0.39402066771882943,
+      "mean_darkness": 19.498529411764707
+    },
+    {
+      "id": 4,
+      "label": "V",
+      "bbox": [
+        519,
+        330,
+        659,
+        360
+      ],
+      "sobel": -0.595197318888795,
+      "fourier": 0.5300721350800374,
+      "mean_darkness": 41.295476190476194
+    },
+    {
+      "id": 5,
+      "label": "H",
+      "bbox": [
+        688,
+        330,
+        772,
+        360
+      ],
+      "sobel": -0.554500034086583,
+      "fourier": 0.4208786666744832,
+      "mean_darkness": 13.286111111111097
+    },
+    {
+      "id": 6,
+      "label": "H",
+      "bbox": [
+        893,
+        330,
+        969,
+        360
+      ],
+      "sobel": 0.04209479920027515,
+      "fourier": 0.3859756148310537,
+      "mean_darkness": 0.4000000000000057
+    },
+    {
+      "id": 7,
+      "label": "V",
+      "bbox": [
+        996,
+        330,
+        1124,
+        360
+      ],
+      "sobel": -0.45383108811815853,
+      "fourier": 0.039924261946225344,
+      "mean_darkness": 20.07890624999999
+    },
+    {
+      "id": 8,
+      "label": "H",
+      "bbox": [
+        1154,
+        330,
+        1246,
+        360
+      ],
+      "sobel": -0.5344077216248472,
+      "fourier": 0.3730608922554909,
+      "mean_darkness": 15.860144927536226
+    },
+    {
+      "id": 9,
+      "label": "H",
+      "bbox": [
+        1269,
+        330,
+        1339,
+        360
+      ],
+      "sobel": -0.7880877678060296,
+      "fourier": -0.5862570884484629,
+      "mean_darkness": 2.413333333333327
+    },
+    {
+      "id": 10,
+      "label": "H",
+      "bbox": [
+        1360,
+        330,
+        1442,
+        360
+      ],
+      "sobel": -0.3994314976825008,
+      "fourier": 0.10158521569768134,
+      "mean_darkness": 15.414634146341456
+    },
+    {
+      "id": 11,
+      "label": "H",
+      "bbox": [
+        1460,
+        330,
+        1504,
+        360
+      ],
+      "sobel": -0.07957485564896732,
+      "fourier": -0.12181553921708548,
+      "mean_darkness": 0.8310606060606176
+    },
+    {
+      "id": 12,
+      "label": "V",
+      "bbox": [
+        1522,
+        330,
+        1584,
+        360
+      ],
+      "sobel": -0.16386841556445858,
+      "fourier": 0.6181504034519696,
+      "mean_darkness": 4.641397849462379
+    }
+  ],
+  "transformed_rows": [
+    {
+      "id": 3,
+      "label": "V",
+      "bbox": [
+        424,
+        330,
+        492,
+        360
+      ],
+      "sobel": -0.6287449645279823,
+      "fourier": -0.3073937737311402,
+      "mean_darkness": 21.199509803921558
+    },
+    {
+      "id": 4,
+      "label": "V",
+      "bbox": [
+        519,
+        330,
+        659,
+        360
+      ],
+      "sobel": -0.5933376628841652,
+      "fourier": 0.6662627376625968,
+      "mean_darkness": 44.47785714285715
+    },
+    {
+      "id": 5,
+      "label": "H",
+      "bbox": [
+        688,
+        330,
+        772,
+        360
+      ],
+      "sobel": -0.5161472949796719,
+      "fourier": 0.5249767645959766,
+      "mean_darkness": 15.504365079365073
+    },
+    {
+      "id": 6,
+      "label": "H",
+      "bbox": [
+        893,
+        330,
+        969,
+        360
+      ],
+      "sobel": -0.025154303241018583,
+      "fourier": 0.4635840697000348,
+      "mean_darkness": 0.8052631578947285
+    },
+    {
+      "id": 7,
+      "label": "V",
+      "bbox": [
+        996,
+        330,
+        1124,
+        360
+      ],
+      "sobel": -0.4335972437208482,
+      "fourier": 0.21170061967045747,
+      "mean_darkness": 21.634114583333343
+    },
+    {
+      "id": 8,
+      "label": "H",
+      "bbox": [
+        1154,
+        330,
+        1246,
+        360
+      ],
+      "sobel": -0.5091143934595093,
+      "fourier": 0.43732013416586524,
+      "mean_darkness": 17.432246376811605
+    },
+    {
+      "id": 9,
+      "label": "H",
+      "bbox": [
+        1269,
+        330,
+        1339,
+        360
+      ],
+      "sobel": -0.7498630352014021,
+      "fourier": -0.40060917030204013,
+      "mean_darkness": 2.9099999999999966
+    },
+    {
+      "id": 10,
+      "label": "H",
+      "bbox": [
+        1360,
+        330,
+        1442,
+        360
+      ],
+      "sobel": -0.3425101460261076,
+      "fourier": 0.2557607501409161,
+      "mean_darkness": 17.45162601626015
+    },
+    {
+      "id": 11,
+      "label": "H",
+      "bbox": [
+        1460,
+        330,
+        1504,
+        360
+      ],
+      "sobel": -0.14615241245637742,
+      "fourier": -0.017441004748824113,
+      "mean_darkness": 0.9515151515151388
+    },
+    {
+      "id": 12,
+      "label": "V",
+      "bbox": [
+        1522,
+        330,
+        1584,
+        360
+      ],
+      "sobel": -0.15618015652852768,
+      "fourier": 0.618718135508111,
+      "mean_darkness": 4.93763440860215
+    }
+  ],
+  "original_tests": {
+    "sobel": {
+      "observed_V_minus_H": -0.08088452766928728,
+      "exact_upper_p": 0.6761904761904762,
+      "exact_two_sided_p": 0.6476190476190476,
+      "null_median": -0.005726982105679429,
+      "null_p95": 0.277154208082189,
+      "null_min": -0.38292131859011874,
+      "null_max": 0.4463499970865181,
+      "H_mean": -0.3856511796081088,
+      "V_mean": -0.4665357072773961,
+      "bonferroni_upper_p": 1.0
+    },
+    "fourier": {
+      "observed_V_minus_H": 0.1029602395576573,
+      "exact_upper_p": 0.35714285714285715,
+      "exact_two_sided_p": 0.7095238095238096,
+      "null_median": -0.00454450643512265,
+      "null_p95": 0.4160867201988984,
+      "null_min": -0.6704960796913242,
+      "null_max": 0.586689692590216,
+      "H_mean": 0.09557129363219342,
+      "V_mean": 0.19853153318985073,
+      "bonferroni_upper_p": 0.7142857142857143
+    }
+  },
+  "transformed_tests": {
+    "sobel": {
+      "observed_V_minus_H": -0.071474742688033,
+      "exact_upper_p": 0.6761904761904762,
+      "exact_two_sided_p": 0.6571428571428571,
+      "null_median": 0.00010605579501496432,
+      "null_p95": 0.2517486834462532,
+      "null_min": -0.3532384634929073,
+      "null_max": 0.4043015112325886,
+      "H_mean": -0.38149026422734783,
+      "V_mean": -0.45296500691538083
+    },
+    "fourier": {
+      "observed_V_minus_H": 0.0867233391855182,
+      "exact_upper_p": 0.37142857142857144,
+      "exact_two_sided_p": 0.719047619047619,
+      "null_median": 0.0019383392123766274,
+      "null_p95": 0.3926300561391129,
+      "null_min": -0.6228729309068035,
+      "null_max": 0.5384958343341407,
+      "H_mean": 0.21059859059198807,
+      "V_mean": 0.29732192977750627
+    }
+  },
+  "promotion_rule": "both methods must have positive V-minus-H association, both Bonferroni-corrected one-sided exact p<=0.05 on original, and both association signs must remain positive after JPEG85+0.75x resampling",
+  "promoted": false
+}
