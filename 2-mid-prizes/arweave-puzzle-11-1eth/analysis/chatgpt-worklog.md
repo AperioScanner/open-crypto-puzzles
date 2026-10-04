@@ -68,3 +68,13 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - The H/V pattern itself remains an unresolved clue, not a proven payload; the prior post-hoc hexadecimal `0x321` interpretation stays retired.
 - New strategic leverage: the author said the known public escrow address is also present somewhere in the image. Use that known public 160-bit value as a safe positive probe for the visual carrier mechanism.
 - Stage 32 was chosen because the source width is exactly 1600 px = 160 address bits × 10 px. It tests a bounded coarse vertical-stripe encoding family, requires lossy-format reproduction, and familywise-calibrates the best match against random balanced 160-bit controls.
+
+
+## 2026-10-03 — adaptive review of Stage 32
+
+- Stage 32 tested the exact dimensional hypothesis `1600 px = 160 public-address bits × 10 px`.
+- Best candidate matched 94/160 bits (Hamming 66), with familywise empirical **p=0.40953** against 20,000 same-balance null targets.
+- The same coarse feature survived JPEG/resampling, confirming the feature itself is format-stable, but its address match is unexceptional.
+- Adaptive conclusion: retire the simple 160 vertical × 10px bit-stripe representation.
+- The public address remains useful as a safe known-answer probe because the author explicitly said it is present in the image.
+- Stage 33 was chosen from a separate exact dimensional relationship: the published address has 40 hex digits and the source width is 1600 px = **40×40 px**. Test this bounded coarse hex-cell family with predeclared quantizers, familywise null calibration, and lossy reproduction.
