@@ -78,3 +78,13 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Adaptive conclusion: retire the simple 160 vertical × 10px bit-stripe representation.
 - The public address remains useful as a safe known-answer probe because the author explicitly said it is present in the image.
 - Stage 33 was chosen from a separate exact dimensional relationship: the published address has 40 hex digits and the source width is 1600 px = **40×40 px**. Test this bounded coarse hex-cell family with predeclared quantizers, familywise null calibration, and lossy reproduction.
+
+
+## 2026-10-03 — adaptive review of Stage 33
+
+- Stage 33 tested the exact coarse mapping `1600 px = 40 public-address hex digits × 40 px`.
+- Best candidate matched **9/40** hex digits, with familywise p(exact)=**0.08519** and nibble-bit Hamming **67/160** with p=**0.95830**.
+- The selected coarse visual feature itself was stable after JPEG/resampling (38/40 extracted digits unchanged), but its match to the known address was not statistically exceptional.
+- Adaptive conclusion: retire uniform-width address partitions; Stage 32 and Stage 33 together provide no support for direct equal-cell encoding of the public address across image width.
+- Strategy pivots to object-level visual grammar: secondary details, counts, selectors and ordering.
+- Stage 34 was chosen to test whether the robust H/V building labels organize the independent Stage-12 secondary-detail measurements. It uses exact enumeration of all 495 four-V label assignments and excludes projection metrics that are circular with hatch orientation.
