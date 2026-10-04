@@ -30,15 +30,21 @@ Important results from that batch:
 
 ## Next adaptive decision
 
-**Stage 28 must be chosen from the combined Stage 23–27 evidence, not from an old fixed roadmap.**
+**Stage 28 completed successfully and was adaptively reviewed.**
 
-Current best justified question:
-> Are the Stage-27 traversal anomalies (printability/compressibility/signature hits) actually exceptional relative to matched null/surrogate streams, or are they expected from the highly biased and spatially correlated image bitplanes?
+Observed against 100 matched 32×32 block-shuffled surrogates:
+- max printable fraction = 0.109059, empirical p = **0.0099**
+- min zlib ratio = 0.464995, empirical p = **0.0099**
+- longest printable run = 8, p = 0.8416
+- specific multi-byte magic signatures = 0
 
-A good Stage 28 should null-calibrate those anomalies using shuffled or block-shuffled surrogate streams that preserve relevant marginal statistics, and should replace one-byte “magic” signatures with sufficiently specific multi-byte signatures.
+The anomaly is therefore not “obvious text,” but two independent global traversal metrics are unusually extreme relative to the matched surrogate family.
+
+**Adaptive decision:** Stage 29 localizes the fixed promoted L-bit0 traversal anomaly in byte windows and compares the same canonical traversal across grayscale bitplanes 0–7. This distinguishes a localized/LSB-specific effect from ordinary multiscale image structure.
 
 ## Status
 
 - Stages 1–27: completed or superseded as recorded in their run folders.
 - Adaptive controller: ACTIVE.
-- Next stage: 28, to be designed only after explicit reasoning over Stage 22–27.
+- Stage 28: COMPLETED + ADAPTIVELY REVIEWED.
+- Stage 29: QUEUED/RUNNING — localization + cross-bitplane reproduction.
