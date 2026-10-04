@@ -1,0 +1,830 @@
+{
+  "experiment_id": "A11-EXP-021",
+  "scope": "independent visual texture classifiers only; no private-key operations",
+  "baseline": "HHVVHHVHHHHV",
+  "fourier_sequence": "HHVVHHVHHHHV",
+  "fourier_agreement": 12,
+  "morph_sequence": "HHVVHHVHHHHV",
+  "morph_agreement": 12,
+  "both_methods_agree_with_baseline": 12,
+  "buildings": [
+    {
+      "id": 1,
+      "baseline": "H",
+      "fourier": {
+        "class": "H",
+        "score": -0.9427746610777714
+      },
+      "morph": {
+        "class": "H",
+        "vote_margin": -1.0,
+        "details": [
+          {
+            "threshold": 100,
+            "length": 7,
+            "score": -0.34898891063274623,
+            "class": "H"
+          },
+          {
+            "threshold": 100,
+            "length": 11,
+            "score": -0.7077986179664363,
+            "class": "H"
+          },
+          {
+            "threshold": 100,
+            "length": 15,
+            "score": -0.7906588824020017,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 7,
+            "score": -0.2753195673549656,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 11,
+            "score": -0.5904452690166976,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 15,
+            "score": -0.7505787037037037,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 7,
+            "score": -0.21911037891268534,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 11,
+            "score": -0.4632902167972308,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 15,
+            "score": -0.6681123031271399,
+            "class": "H"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "baseline": "H",
+      "fourier": {
+        "class": "H",
+        "score": -0.9349098005541949
+      },
+      "morph": {
+        "class": "H",
+        "vote_margin": -1.0,
+        "details": [
+          {
+            "threshold": 100,
+            "length": 7,
+            "score": -0.24925710210388685,
+            "class": "H"
+          },
+          {
+            "threshold": 100,
+            "length": 11,
+            "score": -0.47635524798154555,
+            "class": "H"
+          },
+          {
+            "threshold": 100,
+            "length": 15,
+            "score": -0.6559229803264964,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 7,
+            "score": -0.17781402936378465,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 11,
+            "score": -0.34906427990235966,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 15,
+            "score": -0.5096266044340724,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 7,
+            "score": -0.11557639354022475,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 11,
+            "score": -0.2372356428634634,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 15,
+            "score": -0.382607765536421,
+            "class": "H"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "baseline": "V",
+      "fourier": {
+        "class": "V",
+        "score": 0.2626962444273639
+      },
+      "morph": {
+        "class": "V",
+        "vote_margin": 1.0,
+        "details": [
+          {
+            "threshold": 100,
+            "length": 7,
+            "score": 0.3021680216802168,
+            "class": "V"
+          },
+          {
+            "threshold": 100,
+            "length": 11,
+            "score": 0.4,
+            "class": "V"
+          },
+          {
+            "threshold": 100,
+            "length": 15,
+            "score": 0.4582723279648609,
+            "class": "V"
+          },
+          {
+            "threshold": 140,
+            "length": 7,
+            "score": 0.3161131611316113,
+            "class": "V"
+          },
+          {
+            "threshold": 140,
+            "length": 11,
+            "score": 0.4202098288238542,
+            "class": "V"
+          },
+          {
+            "threshold": 140,
+            "length": 15,
+            "score": 0.5124816446402349,
+            "class": "V"
+          },
+          {
+            "threshold": 180,
+            "length": 7,
+            "score": 0.2972315181016124,
+            "class": "V"
+          },
+          {
+            "threshold": 180,
+            "length": 11,
+            "score": 0.4089689536220774,
+            "class": "V"
+          },
+          {
+            "threshold": 180,
+            "length": 15,
+            "score": 0.4781420765027322,
+            "class": "V"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "baseline": "V",
+      "fourier": {
+        "class": "V",
+        "score": 0.872277277393831
+      },
+      "morph": {
+        "class": "V",
+        "vote_margin": 1.0,
+        "details": [
+          {
+            "threshold": 100,
+            "length": 7,
+            "score": 0.644344761294457,
+            "class": "V"
+          },
+          {
+            "threshold": 100,
+            "length": 11,
+            "score": 0.6576426488962932,
+            "class": "V"
+          },
+          {
+            "threshold": 100,
+            "length": 15,
+            "score": 0.6019955654101996,
+            "class": "V"
+          },
+          {
+            "threshold": 140,
+            "length": 7,
+            "score": 0.6436913212731853,
+            "class": "V"
+          },
+          {
+            "threshold": 140,
+            "length": 11,
+            "score": 0.6635969664138678,
+            "class": "V"
+          },
+          {
+            "threshold": 140,
+            "length": 15,
+            "score": 0.6420612813370473,
+            "class": "V"
+          },
+          {
+            "threshold": 180,
+            "length": 7,
+            "score": 0.6263850415512465,
+            "class": "V"
+          },
+          {
+            "threshold": 180,
+            "length": 11,
+            "score": 0.6600854874821901,
+            "class": "V"
+          },
+          {
+            "threshold": 180,
+            "length": 15,
+            "score": 0.6378563283922463,
+            "class": "V"
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "baseline": "H",
+      "fourier": {
+        "class": "H",
+        "score": -0.9534460657844552
+      },
+      "morph": {
+        "class": "H",
+        "vote_margin": -1.0,
+        "details": [
+          {
+            "threshold": 100,
+            "length": 7,
+            "score": -0.48553911768625885,
+            "class": "H"
+          },
+          {
+            "threshold": 100,
+            "length": 11,
+            "score": -0.8648431214802896,
+            "class": "H"
+          },
+          {
+            "threshold": 100,
+            "length": 15,
+            "score": -0.9501100513573001,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 7,
+            "score": -0.4040609137055838,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 11,
+            "score": -0.7267450092028883,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 15,
+            "score": -0.8769710622075897,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 7,
+            "score": -0.3038251366120219,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 11,
+            "score": -0.6077359680470885,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 15,
+            "score": -0.8033750958834058,
+            "class": "H"
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "baseline": "H",
+      "fourier": {
+        "class": "H",
+        "score": -0.8804508597936407
+      },
+      "morph": {
+        "class": "H",
+        "vote_margin": -1.0,
+        "details": [
+          {
+            "threshold": 100,
+            "length": 7,
+            "score": -0.5914315569487983,
+            "class": "H"
+          },
+          {
+            "threshold": 100,
+            "length": 11,
+            "score": -0.8839869281045751,
+            "class": "H"
+          },
+          {
+            "threshold": 100,
+            "length": 15,
+            "score": -0.9501187648456056,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 7,
+            "score": -0.4724202626641651,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 11,
+            "score": -0.7663303239511418,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 15,
+            "score": -0.9419210722263589,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 7,
+            "score": -0.4365874606355568,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 11,
+            "score": -0.6683301343570057,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 15,
+            "score": -0.7404878048780488,
+            "class": "H"
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "baseline": "V",
+      "fourier": {
+        "class": "V",
+        "score": 0.8404432934911342
+      },
+      "morph": {
+        "class": "V",
+        "vote_margin": 1.0,
+        "details": [
+          {
+            "threshold": 100,
+            "length": 7,
+            "score": 0.6747572815533981,
+            "class": "V"
+          },
+          {
+            "threshold": 100,
+            "length": 11,
+            "score": 0.7986314760508308,
+            "class": "V"
+          },
+          {
+            "threshold": 100,
+            "length": 15,
+            "score": 0.8727404193781634,
+            "class": "V"
+          },
+          {
+            "threshold": 140,
+            "length": 7,
+            "score": 0.6217399233995987,
+            "class": "V"
+          },
+          {
+            "threshold": 140,
+            "length": 11,
+            "score": 0.7777777777777778,
+            "class": "V"
+          },
+          {
+            "threshold": 140,
+            "length": 15,
+            "score": 0.8354131534569983,
+            "class": "V"
+          },
+          {
+            "threshold": 180,
+            "length": 7,
+            "score": 0.5321022379845909,
+            "class": "V"
+          },
+          {
+            "threshold": 180,
+            "length": 11,
+            "score": 0.684037481505836,
+            "class": "V"
+          },
+          {
+            "threshold": 180,
+            "length": 15,
+            "score": 0.824501907587961,
+            "class": "V"
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "baseline": "H",
+      "fourier": {
+        "class": "H",
+        "score": -0.9285239938771293
+      },
+      "morph": {
+        "class": "H",
+        "vote_margin": -1.0,
+        "details": [
+          {
+            "threshold": 100,
+            "length": 7,
+            "score": -0.895742140867489,
+            "class": "H"
+          },
+          {
+            "threshold": 100,
+            "length": 11,
+            "score": -0.9524421593830334,
+            "class": "H"
+          },
+          {
+            "threshold": 100,
+            "length": 15,
+            "score": -0.9671532846715328,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 7,
+            "score": -0.8012519561815337,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 11,
+            "score": -0.8996680191811139,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 15,
+            "score": -0.9646365422396856,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 7,
+            "score": -0.7136690647482015,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 11,
+            "score": -0.8478314745972738,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 15,
+            "score": -0.9543701799485861,
+            "class": "H"
+          }
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "baseline": "H",
+      "fourier": {
+        "class": "H",
+        "score": -0.8756872661787357
+      },
+      "morph": {
+        "class": "H",
+        "vote_margin": -1.0,
+        "details": [
+          {
+            "threshold": 100,
+            "length": 7,
+            "score": -0.5454900429519719,
+            "class": "H"
+          },
+          {
+            "threshold": 100,
+            "length": 11,
+            "score": -0.8863309352517985,
+            "class": "H"
+          },
+          {
+            "threshold": 100,
+            "length": 15,
+            "score": -0.9823204419889503,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 7,
+            "score": -0.3328133125325013,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 11,
+            "score": -0.7153813378781423,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 15,
+            "score": -0.8547770700636943,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 7,
+            "score": -0.24911890187349287,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 11,
+            "score": -0.5910380034032898,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 15,
+            "score": -0.6763302752293578,
+            "class": "H"
+          }
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "baseline": "H",
+      "fourier": {
+        "class": "H",
+        "score": -0.9672259225665462
+      },
+      "morph": {
+        "class": "H",
+        "vote_margin": -1.0,
+        "details": [
+          {
+            "threshold": 100,
+            "length": 7,
+            "score": -0.811804384485666,
+            "class": "H"
+          },
+          {
+            "threshold": 100,
+            "length": 11,
+            "score": -0.9656218402426694,
+            "class": "H"
+          },
+          {
+            "threshold": 100,
+            "length": 15,
+            "score": -1.0,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 7,
+            "score": -0.7120799273387829,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 11,
+            "score": -0.8913881748071979,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 15,
+            "score": -1.0,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 7,
+            "score": -0.5216637781629117,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 11,
+            "score": -0.7258991274739306,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 15,
+            "score": -0.9316493313521546,
+            "class": "H"
+          }
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "baseline": "H",
+      "fourier": {
+        "class": "H",
+        "score": -0.9203050726503113
+      },
+      "morph": {
+        "class": "H",
+        "vote_margin": -1.0,
+        "details": [
+          {
+            "threshold": 100,
+            "length": 7,
+            "score": -0.8015267175572519,
+            "class": "H"
+          },
+          {
+            "threshold": 100,
+            "length": 11,
+            "score": -0.8095238095238095,
+            "class": "H"
+          },
+          {
+            "threshold": 100,
+            "length": 15,
+            "score": -0.8428571428571429,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 7,
+            "score": -0.7463054187192119,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 11,
+            "score": -0.8916666666666667,
+            "class": "H"
+          },
+          {
+            "threshold": 140,
+            "length": 15,
+            "score": -0.9252336448598131,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 7,
+            "score": -0.687235841081995,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 11,
+            "score": -0.9114583333333334,
+            "class": "H"
+          },
+          {
+            "threshold": 180,
+            "length": 15,
+            "score": -0.9219330855018587,
+            "class": "H"
+          }
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "baseline": "V",
+      "fourier": {
+        "class": "V",
+        "score": 0.8679490445904302
+      },
+      "morph": {
+        "class": "V",
+        "vote_margin": 1.0,
+        "details": [
+          {
+            "threshold": 100,
+            "length": 7,
+            "score": 0.3799958583557672,
+            "class": "V"
+          },
+          {
+            "threshold": 100,
+            "length": 11,
+            "score": 0.4993508179693586,
+            "class": "V"
+          },
+          {
+            "threshold": 100,
+            "length": 15,
+            "score": 0.7181340341655716,
+            "class": "V"
+          },
+          {
+            "threshold": 140,
+            "length": 7,
+            "score": 0.3349561830574489,
+            "class": "V"
+          },
+          {
+            "threshold": 140,
+            "length": 11,
+            "score": 0.43106060606060603,
+            "class": "V"
+          },
+          {
+            "threshold": 140,
+            "length": 15,
+            "score": 0.6459237819585142,
+            "class": "V"
+          },
+          {
+            "threshold": 180,
+            "length": 7,
+            "score": 0.3140754871235863,
+            "class": "V"
+          },
+          {
+            "threshold": 180,
+            "length": 11,
+            "score": 0.40424164524421596,
+            "class": "V"
+          },
+          {
+            "threshold": 180,
+            "length": 15,
+            "score": 0.6067108856808427,
+            "class": "V"
+          }
+        ]
+      }
+    }
+  ],
+  "promotion_rule": "pattern considered independently replicated if each method agrees with baseline on >=10/12 buildings and at least 9/12 are jointly confirmed",
+  "replicated": true
+}
