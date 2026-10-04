@@ -1,0 +1,56 @@
+{
+  "experiment_id": "A11-EXP-020",
+  "scope": "exact enumeration of all 12-position H/V strings with exactly four V labels; run/symmetry structure only; no private-key operations",
+  "observed_sequence": "HHVVHHVHHHHV",
+  "observed_metrics": {
+    "run_count": 6,
+    "transition_count": 5,
+    "run_lengths": [
+      2,
+      2,
+      2,
+      1,
+      4,
+      1
+    ],
+    "run_types": [
+      "H",
+      "V",
+      "H",
+      "V",
+      "H",
+      "V"
+    ],
+    "longest_H_run": 4,
+    "longest_V_run": 2,
+    "hamming_to_reverse": 8,
+    "hamming_to_complement": 12,
+    "alternation_matches": 5
+  },
+  "conditioned_universe_size": 495,
+  "tests": {
+    "run_count": {
+      "observed": 6,
+      "lower_tail_p": 0.5333333333333333
+    },
+    "longest_H_run": {
+      "observed": 4,
+      "upper_tail_p": 0.6868686868686869
+    },
+    "longest_V_run": {
+      "observed": 2,
+      "upper_tail_p": 0.7454545454545455
+    },
+    "transition_count": {
+      "observed": 5,
+      "lower_tail_p": 0.5333333333333333
+    },
+    "hamming_to_reverse": {
+      "observed": 8,
+      "lower_tail_p": 1.0
+    }
+  },
+  "composite_simple_block_probability": 0.47878787878787876,
+  "same_run_length_pattern_count": 1,
+  "same_run_length_pattern_probability": 0.00202020202020202
+}
