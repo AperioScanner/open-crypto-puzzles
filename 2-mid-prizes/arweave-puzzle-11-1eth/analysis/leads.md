@@ -1,37 +1,37 @@
 # Open leads, ranked
 
-## 1. Format-invariant visual / semantic carrier (active, highest priority)
+## 1. Format-invariant visual / semantic carrier (highest priority)
 
-The author publicly stated that image format does not matter. Stages 23–24 weakened simple global random-LSB replacement, and Stages 28–30 ultimately explained the promoted traversal anomaly as ordinary foreground/background image structure rather than a bit-0-specific payload.
+Stage 31 is the strongest route-selection result so far. The building H/V texture remained 12/12 stable under two independent classifiers across JPEG 95/85/70, down/up resampling, up/down resampling, and a combined JPEG+resampling transform. Exact foreground bit-0 agreement simultaneously collapsed to ~0.52–0.55.
 
-The robust 12-building H/V texture remains the strongest reproducible visual structure: Stage 10 showed crop/jitter robustness and Stage 21 reproduced the same sequence 12/12 with independent Fourier and morphological classifiers.
+This makes fragile exact-pixel LSB encoding a poor fit to the author's statement that image format does not matter. Prioritize features a human can still see after ordinary conversion/resizing.
 
-Stage 31 tests the key route-selection question directly: whether this H/V visual structure survives lossy JPEG/resampling while exact low-bit structure collapses.
+## 2. Known public escrow address as a positive visual probe (active)
 
-## 2. Robust H/V skyline texture, without forcing hexadecimal `0x321` (active)
+The author said the public escrow address `0xFF2142E98E09b5344994F9bEB9C56C95506B9F17` is also included somewhere in the image. That gives a rare known-answer signal.
 
-The H/V sequence `HHVVHHVHHHHV` is real and highly reproducible. Stage 22 correctly retired the specific hexadecimal `0x321` interpretation as primary because the 4+4+4 grouping and representation choice were post-hoc and lacked independent corroboration.
+The first bounded probe is especially motivated by dimensions: the address is 160 bits and the source image is 1600 px wide, exactly 10 px per address bit. Stage 32 tests only this simple coarse-stripe family with null calibration and lossy-reproduction requirements.
 
-Keep the H/V structure as a visual clue candidate. Do not revive 321-specific transforms unless a genuinely independent clue points back to that reading.
+## 3. Robust H/V skyline texture, interpretation unresolved (active)
 
-## 3. Solved-puzzle visual/semantic grammar (active)
+`HHVVHHVHHHHV` is real, robust and format-stable. Stage 22 retired the post-hoc hexadecimal `0x321` interpretation as primary, but the underlying H/V texture remains a plausible selector or semantic clue.
 
-Stage 11 showed the author’s solved puzzles favor human-readable semantics, tiny secondary details, counting, rebuses, cultural references, and visual + technical context. If Stage 31 confirms format invariance, this becomes the main guide for subsequent experiments.
+Do not revive 321-specific transforms without an independent reason.
 
-## 4. Raw low-bit / generic traversal steganography (strongly downgraded)
+## 4. Solved-puzzle visual/semantic grammar (active)
 
-Stage 28 initially found unusual printable/compressibility statistics relative to block-shuffled surrogates. Stage 29 localized those effects, and Stage 30 explained them:
+Stage 11 showed the author's solved puzzles favor visible secondary details, counting, rebuses, ordered interpretation and cross-domain semantic references. Use this as the main prior for new visual hypotheses.
 
-- foreground pixels naturally produce the apparent printability;
-- blank background pixels naturally produce extreme compressibility;
-- the pattern is present across bits 0–3, not uniquely bit 0.
+## 5. Generic traversal / exact low bits (strongly downgraded)
 
-The Stage-28 significance was therefore largely a null-model mismatch caused by destroying large-scale image semantics during block shuffling. Do not continue generic traversal enumeration without new independent evidence.
+Stages 28–30 resolved the apparent traversal anomaly as ordinary foreground/background structure. Stage 31 then directly showed that exact low bits are fragile under format conversion while the visual H/V structure survives.
 
-## 5. Alpha channel (exhausted / low priority)
+Do not continue generic low-bit enumeration without a new independent clue.
 
-434 non-opaque pixels are localized to the large sailboat outline and behave like an anti-aliasing/compositing halo. Existing direct inspection already supports a mundane rendering explanation.
+## 6. Alpha channel (exhausted / low priority)
 
-## 6. Recover sources outside the mirrored #11 launch window / solve method for #9 (archival)
+The 434 non-opaque pixels remain localized to the large sailboat anti-aliasing halo and are consistent with compositing.
 
-Remaining high-value external evidence includes early Telegram/Discord/Weavemail material, deleted replies, screenshots, quoted replies, or a first-hand account of Puzzle #9’s actual solve method.
+## 7. External archival evidence / Puzzle #9 solve method (standing)
+
+Still valuable: early Telegram/Discord/Weavemail material, deleted replies, screenshots, quoted replies, or a first-hand account of Puzzle #9's actual solve method.
