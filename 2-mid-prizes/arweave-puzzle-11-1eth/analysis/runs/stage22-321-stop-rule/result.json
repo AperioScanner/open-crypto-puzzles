@@ -1,0 +1,17 @@
+{
+  "experiment_id": "A11-EXP-022",
+  "scope": "deterministic evidence synthesis for visual H/V versus hexadecimal 0x321 interpretation; no private-key operations",
+  "evidence": {
+    "hv_crop_stable": true,
+    "hv_independently_replicated": true,
+    "simple_geometry_explains_hv": false,
+    "independent_321_count_corroboration": false,
+    "geometry_supports_4_4_4_hex_grouping": false,
+    "common_choice_321_123_probability": 0.05908203125,
+    "run_structure_exceptional": false
+  },
+  "hv_texture_verdict": "RETAIN_AS_VISUAL_LEAD",
+  "hex_0x321_verdict": "RETIRE_AS_PRIMARY",
+  "continue_to_bit_steganalysis": true,
+  "stop_rule": "Retire hexadecimal 0x321 as primary if there is no independent 321 count corroboration, no natural 4+4+4 geometry, common-choice look-elsewhere probability >=5%, and H/V run structure is not exceptional."
+}

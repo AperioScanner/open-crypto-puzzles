@@ -1,0 +1,138 @@
+{
+  "experiment_id": "A11-EXP-024",
+  "scope": "RS-style LSB diagnostics only; no payload reconstruction or private-key operations",
+  "channels": {
+    "L": {
+      "original": {
+        "groups": 442000,
+        "R_pos": 369939,
+        "S_pos": 72061,
+        "R_neg": 404457,
+        "S_neg": 37543,
+        "RminusS_pos": 0.6739321266968326,
+        "RminusS_neg": 0.8301221719457014,
+        "symmetry_gap": 0.1561900452488688
+      },
+      "synthetic_controls": [
+        {
+          "lsb_replacement_rate": 0.1,
+          "rs": {
+            "groups": 442000,
+            "R_pos": 340478,
+            "S_pos": 101522,
+            "R_neg": 403200,
+            "S_neg": 38800,
+            "RminusS_pos": 0.5406244343891403,
+            "RminusS_neg": 0.8244343891402715,
+            "symmetry_gap": 0.28380995475113124
+          }
+        },
+        {
+          "lsb_replacement_rate": 0.25,
+          "rs": {
+            "groups": 442000,
+            "R_pos": 302451,
+            "S_pos": 139549,
+            "R_neg": 400954,
+            "S_neg": 41046,
+            "RminusS_pos": 0.36855656108597284,
+            "RminusS_neg": 0.8142714932126697,
+            "symmetry_gap": 0.44571493212669683
+          }
+        },
+        {
+          "lsb_replacement_rate": 0.5,
+          "rs": {
+            "groups": 442000,
+            "R_pos": 254820,
+            "S_pos": 187180,
+            "R_neg": 397605,
+            "S_neg": 44395,
+            "RminusS_pos": 0.15303167420814479,
+            "RminusS_neg": 0.7991176470588235,
+            "symmetry_gap": 0.6460859728506787
+          }
+        },
+        {
+          "lsb_replacement_rate": 1.0,
+          "rs": {
+            "groups": 442000,
+            "R_pos": 221325,
+            "S_pos": 220675,
+            "R_neg": 390621,
+            "S_neg": 51379,
+            "RminusS_pos": 0.0014705882352941176,
+            "RminusS_neg": 0.7675158371040725,
+            "symmetry_gap": 0.7660452488687782
+          }
+        }
+      ]
+    },
+    "A": {
+      "original": {
+        "groups": 442000,
+        "R_pos": 441924,
+        "S_pos": 76,
+        "R_neg": 441996,
+        "S_neg": 4,
+        "RminusS_pos": 0.999656108597285,
+        "RminusS_neg": 0.9999819004524887,
+        "symmetry_gap": 0.0003257918552036199
+      },
+      "synthetic_controls": [
+        {
+          "lsb_replacement_rate": 0.1,
+          "rs": {
+            "groups": 442000,
+            "R_pos": 400079,
+            "S_pos": 41921,
+            "R_neg": 441994,
+            "S_neg": 6,
+            "RminusS_pos": 0.8103122171945701,
+            "RminusS_neg": 0.999972850678733,
+            "symmetry_gap": 0.1896606334841629
+          }
+        },
+        {
+          "lsb_replacement_rate": 0.25,
+          "rs": {
+            "groups": 442000,
+            "R_pos": 345375,
+            "S_pos": 96625,
+            "R_neg": 441991,
+            "S_neg": 9,
+            "RminusS_pos": 0.5627828054298643,
+            "RminusS_neg": 0.9999592760180995,
+            "symmetry_gap": 0.4371764705882353
+          }
+        },
+        {
+          "lsb_replacement_rate": 0.5,
+          "rs": {
+            "groups": 442000,
+            "R_pos": 276360,
+            "S_pos": 165640,
+            "R_neg": 441985,
+            "S_neg": 15,
+            "RminusS_pos": 0.2504977375565611,
+            "RminusS_neg": 0.9999321266968326,
+            "symmetry_gap": 0.7494343891402715
+          }
+        },
+        {
+          "lsb_replacement_rate": 1.0,
+          "rs": {
+            "groups": 442000,
+            "R_pos": 220277,
+            "S_pos": 221723,
+            "R_neg": 441977,
+            "S_neg": 23,
+            "RminusS_pos": -0.0032714932126696834,
+            "RminusS_neg": 0.99989592760181,
+            "symmetry_gap": 1.0031674208144796
+          }
+        }
+      ]
+    }
+  }
+}

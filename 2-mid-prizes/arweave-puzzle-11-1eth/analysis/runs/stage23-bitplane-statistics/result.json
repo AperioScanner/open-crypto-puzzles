@@ -1,0 +1,635 @@
+{
+  "experiment_id": "A11-EXP-023",
+  "scope": "descriptive bitplane entropy/balance/spatial agreement and pair-of-values diagnostics only; no private-key operations",
+  "regions": [
+    {
+      "name": "full_L",
+      "shape": [
+        1105,
+        1600
+      ],
+      "bitplanes": [
+        {
+          "bit": 0,
+          "p1": 0.8235746606334842,
+          "entropy": 0.6721942461692214,
+          "row_neighbor_agreement": 0.8529827748677765,
+          "col_neighbor_agreement": 0.8455689538043478
+        },
+        {
+          "bit": 1,
+          "p1": 0.8250520361990951,
+          "entropy": 0.6688994145095095,
+          "row_neighbor_agreement": 0.8583351019726696,
+          "col_neighbor_agreement": 0.8508503170289855
+        },
+        {
+          "bit": 2,
+          "p1": 0.8251821266968326,
+          "entropy": 0.6686082447220657,
+          "row_neighbor_agreement": 0.8606997020196446,
+          "col_neighbor_agreement": 0.8530123414855072
+        },
+        {
+          "bit": 3,
+          "p1": 0.826137443438914,
+          "entropy": 0.6664648542656908,
+          "row_neighbor_agreement": 0.8653621182922585,
+          "col_neighbor_agreement": 0.8562703804347827
+        },
+        {
+          "bit": 4,
+          "p1": 0.8267692307692308,
+          "entropy": 0.6650423152774725,
+          "row_neighbor_agreement": 0.8719380608355335,
+          "col_neighbor_agreement": 0.8605157382246377
+        },
+        {
+          "bit": 5,
+          "p1": 0.8270871040723982,
+          "entropy": 0.6643250687340632,
+          "row_neighbor_agreement": 0.8808786034257836,
+          "col_neighbor_agreement": 0.8665874094202899
+        },
+        {
+          "bit": 6,
+          "p1": 0.8277449095022624,
+          "entropy": 0.6628375634228428,
+          "row_neighbor_agreement": 0.8967233480201143,
+          "col_neighbor_agreement": 0.8830310235507246
+        },
+        {
+          "bit": 7,
+          "p1": 0.8275842760180996,
+          "entropy": 0.6632012098653512,
+          "row_neighbor_agreement": 0.9273012827587378,
+          "col_neighbor_agreement": 0.9035026041666666
+        }
+      ],
+      "pair_of_values": {
+        "pair_chi": 1314145.0276745255,
+        "pair_abs_imbalance": 0.7607488687782805
+      }
+    },
+    {
+      "name": "full_A",
+      "shape": [
+        1105,
+        1600
+      ],
+      "bitplanes": [
+        {
+          "bit": 0,
+          "p1": 0.9998399321266969,
+          "entropy": 0.0022492110364827752,
+          "row_neighbor_agreement": 0.9997724822357865,
+          "col_neighbor_agreement": 0.9997984601449276
+        },
+        {
+          "bit": 1,
+          "p1": 0.9999134615384615,
+          "entropy": 0.0012927921590899243,
+          "row_neighbor_agreement": 0.9998732239323785,
+          "col_neighbor_agreement": 0.9998901721014493
+        },
+        {
+          "bit": 2,
+          "p1": 0.9999445701357466,
+          "entropy": 0.0008636877497051832,
+          "row_neighbor_agreement": 0.9999077477722219,
+          "col_neighbor_agreement": 0.9999309329710145
+        },
+        {
+          "bit": 3,
+          "p1": 0.9999649321266968,
+          "entropy": 0.0005695780188040173,
+          "row_neighbor_agreement": 0.9999388758245397,
+          "col_neighbor_agreement": 0.9999569746376812
+        },
+        {
+          "bit": 4,
+          "p1": 0.9999858597285067,
+          "entropy": 0.000248197334490004,
+          "row_neighbor_agreement": 0.9999739656289706,
+          "col_neighbor_agreement": 0.9999818840579711
+        },
+        {
+          "bit": 5,
+          "p1": 1.0,
+          "entropy": 0.0,
+          "row_neighbor_agreement": 1.0,
+          "col_neighbor_agreement": 1.0
+        },
+        {
+          "bit": 6,
+          "p1": 1.0,
+          "entropy": 0.0,
+          "row_neighbor_agreement": 1.0,
+          "col_neighbor_agreement": 1.0
+        },
+        {
+          "bit": 7,
+          "p1": 1.0,
+          "entropy": 0.0,
+          "row_neighbor_agreement": 1.0,
+          "col_neighbor_agreement": 1.0
+        }
+      ],
+      "pair_of_values": {
+        "pair_chi": 1767033.6317348967,
+        "pair_abs_imbalance": 0.999697963800905
+      }
+    },
+    {
+      "name": "first48_L",
+      "shape": [
+        48,
+        1600
+      ],
+      "bitplanes": [
+        {
+          "bit": 0,
+          "p1": 0.977265625,
+          "entropy": 0.1565296000798116,
+          "row_neighbor_agreement": 0.9852251407129456,
+          "col_neighbor_agreement": 0.9828457446808511
+        },
+        {
+          "bit": 1,
+          "p1": 0.9785677083333333,
+          "entropy": 0.149408648773547,
+          "row_neighbor_agreement": 0.9856941838649156,
+          "col_neighbor_agreement": 0.9839893617021277
+        },
+        {
+          "bit": 2,
+          "p1": 0.9777864583333333,
+          "entropy": 0.1536947869274103,
+          "row_neighbor_agreement": 0.9871013133208255,
+          "col_neighbor_agreement": 0.9837632978723404
+        },
+        {
+          "bit": 3,
+          "p1": 0.9780338541666667,
+          "entropy": 0.15234196358729413,
+          "row_neighbor_agreement": 0.9873879508025849,
+          "col_neighbor_agreement": 0.9844547872340426
+        },
+        {
+          "bit": 4,
+          "p1": 0.978359375,
+          "entropy": 0.15055566352245514,
+          "row_neighbor_agreement": 0.989394413174901,
+          "col_neighbor_agreement": 0.9860372340425532
+        },
+        {
+          "bit": 5,
+          "p1": 0.9781380208333333,
+          "entropy": 0.15177112674125237,
+          "row_neighbor_agreement": 0.9909578903481342,
+          "col_neighbor_agreement": 0.9868617021276596
+        },
+        {
+          "bit": 6,
+          "p1": 0.9779296875,
+          "entropy": 0.15291207177168334,
+          "row_neighbor_agreement": 0.9921565561809464,
+          "col_neighbor_agreement": 0.9874468085106383
+        },
+        {
+          "bit": 7,
+          "p1": 0.9773697916666667,
+          "entropy": 0.15596405939370145,
+          "row_neighbor_agreement": 0.9943714821763602,
+          "col_neighbor_agreement": 0.9886037234042553
+        }
+      ],
+      "pair_of_values": {
+        "pair_chi": 74744.25131424784,
+        "pair_abs_imbalance": 0.978984375
+      }
+    },
+    {
+      "name": "skyline_L",
+      "shape": [
+        340,
+        1400
+      ],
+      "bitplanes": [
+        {
+          "bit": 0,
+          "p1": 0.7856344537815126,
+          "entropy": 0.7497448724496916,
+          "row_neighbor_agreement": 0.8157360299373502,
+          "col_neighbor_agreement": 0.8085503581963759
+        },
+        {
+          "bit": 1,
+          "p1": 0.7876176470588235,
+          "entropy": 0.7460119102740824,
+          "row_neighbor_agreement": 0.8214565025438338,
+          "col_neighbor_agreement": 0.8151348504003372
+        },
+        {
+          "bit": 2,
+          "p1": 0.7878382352941177,
+          "entropy": 0.7455946051946054,
+          "row_neighbor_agreement": 0.8253458352604802,
+          "col_neighbor_agreement": 0.8177918246944795
+        },
+        {
+          "bit": 3,
+          "p1": 0.7893004201680672,
+          "entropy": 0.7428178348495571,
+          "row_neighbor_agreement": 0.8315666652651054,
+          "col_neighbor_agreement": 0.8226422250316056
+        },
+        {
+          "bit": 4,
+          "p1": 0.7901029411764706,
+          "entropy": 0.7412859255660736,
+          "row_neighbor_agreement": 0.840444855569104,
+          "col_neighbor_agreement": 0.8293109987357775
+        },
+        {
+          "bit": 5,
+          "p1": 0.7911638655462185,
+          "entropy": 0.7392521557672508,
+          "row_neighbor_agreement": 0.8515620401126855,
+          "col_neighbor_agreement": 0.8387357774968395
+        },
+        {
+          "bit": 6,
+          "p1": 0.7931743697478991,
+          "entropy": 0.7353710711134742,
+          "row_neighbor_agreement": 0.8710192154059623,
+          "col_neighbor_agreement": 0.8588263801095659
+        },
+        {
+          "bit": 7,
+          "p1": 0.7934789915966387,
+          "entropy": 0.7347799332136848,
+          "row_neighbor_agreement": 0.9060253121977884,
+          "col_neighbor_agreement": 0.8845027391487569
+        }
+      ],
+      "pair_of_values": {
+        "pair_chi": 323582.2837187908,
+        "pair_abs_imbalance": 0.7046932773109243
+      }
+    },
+    {
+      "name": "large_sail_L",
+      "shape": [
+        279,
+        315
+      ],
+      "bitplanes": [
+        {
+          "bit": 0,
+          "p1": 0.7684246458440007,
+          "entropy": 0.7807474073643418,
+          "row_neighbor_agreement": 0.8301828641873844,
+          "col_neighbor_agreement": 0.8290624643142629
+        },
+        {
+          "bit": 1,
+          "p1": 0.7670933606417477,
+          "entropy": 0.7830439178057789,
+          "row_neighbor_agreement": 0.8372143460493574,
+          "col_neighbor_agreement": 0.8377869133264817
+        },
+        {
+          "bit": 2,
+          "p1": 0.7667178699436764,
+          "entropy": 0.7836890614880063,
+          "row_neighbor_agreement": 0.840924137616145,
+          "col_neighbor_agreement": 0.8408244832705264
+        },
+        {
+          "bit": 3,
+          "p1": 0.7688228935540764,
+          "entropy": 0.7800576275582818,
+          "row_neighbor_agreement": 0.8433326484487363,
+          "col_neighbor_agreement": 0.8416010049103574
+        },
+        {
+          "bit": 4,
+          "p1": 0.7669226830517153,
+          "entropy": 0.7833373059968575,
+          "row_neighbor_agreement": 0.8513572129762802,
+          "col_neighbor_agreement": 0.8486239579764759
+        },
+        {
+          "bit": 5,
+          "p1": 0.7642032201171987,
+          "entropy": 0.7879803205722317,
+          "row_neighbor_agreement": 0.8613679428349656,
+          "col_neighbor_agreement": 0.8545849035057668
+        },
+        {
+          "bit": 6,
+          "p1": 0.7568640837458042,
+          "entropy": 0.8002164224772799,
+          "row_neighbor_agreement": 0.8752711001529576,
+          "col_neighbor_agreement": 0.8729816147082334
+        },
+        {
+          "bit": 7,
+          "p1": 0.7538146441372248,
+          "entropy": 0.8051758826423712,
+          "row_neighbor_agreement": 0.9003949501175719,
+          "col_neighbor_agreement": 0.9029119561493663
+        }
+      ],
+      "pair_of_values": {
+        "pair_chi": 62795.07401612048,
+        "pair_abs_imbalance": 0.7430505774591796
+      }
+    },
+    {
+      "name": "small_sails_band_L",
+      "shape": [
+        120,
+        1600
+      ],
+      "bitplanes": [
+        {
+          "bit": 0,
+          "p1": 0.9020260416666667,
+          "entropy": 0.46254009368154264,
+          "row_neighbor_agreement": 0.9261673962893475,
+          "col_neighbor_agreement": 0.9265126050420168
+        },
+        {
+          "bit": 1,
+          "p1": 0.9027552083333333,
+          "entropy": 0.46020044301586305,
+          "row_neighbor_agreement": 0.929857202418178,
+          "col_neighbor_agreement": 0.9303151260504202
+        },
+        {
+          "bit": 2,
+          "p1": 0.9018489583333333,
+          "entropy": 0.46310698244816617,
+          "row_neighbor_agreement": 0.9308630393996248,
+          "col_neighbor_agreement": 0.931155462184874
+        },
+        {
+          "bit": 3,
+          "p1": 0.9010677083333334,
+          "entropy": 0.46560187210856663,
+          "row_neighbor_agreement": 0.9318323952470294,
+          "col_neighbor_agreement": 0.9326838235294118
+        },
+        {
+          "bit": 4,
+          "p1": 0.9013177083333334,
+          "entropy": 0.4648045854576688,
+          "row_neighbor_agreement": 0.9342140921409214,
+          "col_neighbor_agreement": 0.9347216386554622
+        },
+        {
+          "bit": 5,
+          "p1": 0.9003125,
+          "entropy": 0.4680042085882936,
+          "row_neighbor_agreement": 0.9398686679174484,
+          "col_neighbor_agreement": 0.9387289915966387
+        },
+        {
+          "bit": 6,
+          "p1": 0.8984270833333333,
+          "entropy": 0.47396188356416125,
+          "row_neighbor_agreement": 0.9488013341671878,
+          "col_neighbor_agreement": 0.9489915966386555
+        },
+        {
+          "bit": 7,
+          "p1": 0.8950364583333333,
+          "entropy": 0.4845350186499438,
+          "row_neighbor_agreement": 0.9611892849697727,
+          "col_neighbor_agreement": 0.9622426470588236
+        }
+      ],
+      "pair_of_values": {
+        "pair_chi": 168356.76297438002,
+        "pair_abs_imbalance": 0.8899375
+      }
+    },
+    {
+      "name": "bottom_water_L",
+      "shape": [
+        455,
+        1600
+      ],
+      "bitplanes": [
+        {
+          "bit": 0,
+          "p1": 0.8453118131868131,
+          "entropy": 0.6214491941679231,
+          "row_neighbor_agreement": 0.8693510367056333,
+          "col_neighbor_agreement": 0.8598650881057269
+        },
+        {
+          "bit": 1,
+          "p1": 0.8468104395604396,
+          "entropy": 0.6177649563872261,
+          "row_neighbor_agreement": 0.8747156533272856,
+          "col_neighbor_agreement": 0.8648884911894273
+        },
+        {
+          "bit": 2,
+          "p1": 0.8473228021978022,
+          "entropy": 0.6164996395693342,
+          "row_neighbor_agreement": 0.8763526654708643,
+          "col_neighbor_agreement": 0.8665817731277533
+        },
+        {
+          "bit": 3,
+          "p1": 0.8487967032967033,
+          "entropy": 0.6128433812818054,
+          "row_neighbor_agreement": 0.8804871176353353,
+          "col_neighbor_agreement": 0.8697122797356828
+        },
+        {
+          "bit": 4,
+          "p1": 0.8497197802197802,
+          "entropy": 0.6105411107848243,
+          "row_neighbor_agreement": 0.8865719646207451,
+          "col_neighbor_agreement": 0.872681718061674
+        },
+        {
+          "bit": 5,
+          "p1": 0.8508035714285714,
+          "entropy": 0.6078257082721675,
+          "row_neighbor_agreement": 0.8954099059164725,
+          "col_neighbor_agreement": 0.8770223017621145
+        },
+        {
+          "bit": 6,
+          "p1": 0.8524862637362637,
+          "entropy": 0.6035832956941746,
+          "row_neighbor_agreement": 0.9100701674810493,
+          "col_neighbor_agreement": 0.8925825991189428
+        },
+        {
+          "bit": 7,
+          "p1": 0.8537293956043956,
+          "entropy": 0.6004282583610943,
+          "row_neighbor_agreement": 0.9405617521940224,
+          "col_neighbor_agreement": 0.909789372246696
+        }
+      ],
+      "pair_of_values": {
+        "pair_chi": 559990.707908891,
+        "pair_abs_imbalance": 0.786271978021978
+      }
+    }
+  ],
+  "synthetic_controls": [
+    {
+      "lsb_replacement_rate": 0.25,
+      "analysis": {
+        "name": "synthetic",
+        "shape": [
+          1105,
+          1600
+        ],
+        "bitplanes": [
+          {
+            "bit": 0,
+            "p1": 0.7428076923076923,
+            "entropy": 0.8224799015146944,
+            "row_neighbor_agreement": 0.6990873821025019,
+            "col_neighbor_agreement": 0.6947356204710144
+          },
+          {
+            "bit": 1,
+            "p1": 0.8250520361990951,
+            "entropy": 0.6688994145095095,
+            "row_neighbor_agreement": 0.8583351019726696,
+            "col_neighbor_agreement": 0.8508503170289855
+          },
+          {
+            "bit": 2,
+            "p1": 0.8251821266968326,
+            "entropy": 0.6686082447220657,
+            "row_neighbor_agreement": 0.8606997020196446,
+            "col_neighbor_agreement": 0.8530123414855072
+          },
+          {
+            "bit": 3,
+            "p1": 0.826137443438914,
+            "entropy": 0.6664648542656908,
+            "row_neighbor_agreement": 0.8653621182922585,
+            "col_neighbor_agreement": 0.8562703804347827
+          },
+          {
+            "bit": 4,
+            "p1": 0.8267692307692308,
+            "entropy": 0.6650423152774725,
+            "row_neighbor_agreement": 0.8719380608355335,
+            "col_neighbor_agreement": 0.8605157382246377
+          },
+          {
+            "bit": 5,
+            "p1": 0.8270871040723982,
+            "entropy": 0.6643250687340632,
+            "row_neighbor_agreement": 0.8808786034257836,
+            "col_neighbor_agreement": 0.8665874094202899
+          },
+          {
+            "bit": 6,
+            "p1": 0.8277449095022624,
+            "entropy": 0.6628375634228428,
+            "row_neighbor_agreement": 0.8967233480201143,
+            "col_neighbor_agreement": 0.8830310235507246
+          },
+          {
+            "bit": 7,
+            "p1": 0.8275842760180996,
+            "entropy": 0.6632012098653512,
+            "row_neighbor_agreement": 0.9273012827587378,
+            "col_neighbor_agreement": 0.9035026041666666
+          }
+        ],
+        "pair_of_values": {
+          "pair_chi": 740378.7269231303,
+          "pair_abs_imbalance": 0.5719072398190045
+        }
+      }
+    },
+    {
+      "lsb_replacement_rate": 0.5,
+      "analysis": {
+        "name": "synthetic",
+        "shape": [
+          1105,
+          1600
+        ],
+        "bitplanes": [
+          {
+            "bit": 0,
+            "p1": 0.6620820135746607,
+            "entropy": 0.9228124127889781,
+            "row_neighbor_agreement": 0.5885590258617518,
+            "col_neighbor_agreement": 0.5861673460144927
+          },
+          {
+            "bit": 1,
+            "p1": 0.8250520361990951,
+            "entropy": 0.6688994145095095,
+            "row_neighbor_agreement": 0.8583351019726696,
+            "col_neighbor_agreement": 0.8508503170289855
+          },
+          {
+            "bit": 2,
+            "p1": 0.8251821266968326,
+            "entropy": 0.6686082447220657,
+            "row_neighbor_agreement": 0.8606997020196446,
+            "col_neighbor_agreement": 0.8530123414855072
+          },
+          {
+            "bit": 3,
+            "p1": 0.826137443438914,
+            "entropy": 0.6664648542656908,
+            "row_neighbor_agreement": 0.8653621182922585,
+            "col_neighbor_agreement": 0.8562703804347827
+          },
+          {
+            "bit": 4,
+            "p1": 0.8267692307692308,
+            "entropy": 0.6650423152774725,
+            "row_neighbor_agreement": 0.8719380608355335,
+            "col_neighbor_agreement": 0.8605157382246377
+          },
+          {
+            "bit": 5,
+            "p1": 0.8270871040723982,
+            "entropy": 0.6643250687340632,
+            "row_neighbor_agreement": 0.8808786034257836,
+            "col_neighbor_agreement": 0.8665874094202899
+          },
+          {
+            "bit": 6,
+            "p1": 0.8277449095022624,
+            "entropy": 0.6628375634228428,
+            "row_neighbor_agreement": 0.8967233480201143,
+            "col_neighbor_agreement": 0.8830310235507246
+          },
+          {
+            "bit": 7,
+            "p1": 0.8275842760180996,
+            "entropy": 0.6632012098653512,
+            "row_neighbor_agreement": 0.9273012827587378,
+            "col_neighbor_agreement": 0.9035026041666666
+          }
+        ],
+        "pair_of_values": {
+          "pair_chi": 329079.75394754397,
+          "pair_abs_imbalance": 0.38203846153846155
+        }
+      }
+    }
+  ]
+}
