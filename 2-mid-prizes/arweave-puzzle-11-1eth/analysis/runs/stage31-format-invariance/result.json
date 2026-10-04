@@ -1,0 +1,448 @@
+{
+  "experiment_id": "A11-EXP-031",
+  "scope": "format/resampling robustness of visual H/V texture versus exact grayscale low-bit agreement; no payload reconstruction or private-key operations",
+  "baseline": "HHVVHHVHHHHV",
+  "variants": [
+    {
+      "variant": "original",
+      "fourier_sequence": "HHVVHHVHHHHV",
+      "morph_sequence": "HHVVHHVHHHHV",
+      "fourier_agreement": 12,
+      "morph_agreement": 12,
+      "bit_agreement_full": [
+        {
+          "bit": 0,
+          "agreement": 1.0
+        },
+        {
+          "bit": 1,
+          "agreement": 1.0
+        },
+        {
+          "bit": 2,
+          "agreement": 1.0
+        },
+        {
+          "bit": 3,
+          "agreement": 1.0
+        }
+      ],
+      "bit_agreement_foreground": [
+        {
+          "bit": 0,
+          "agreement": 1.0
+        },
+        {
+          "bit": 1,
+          "agreement": 1.0
+        },
+        {
+          "bit": 2,
+          "agreement": 1.0
+        },
+        {
+          "bit": 3,
+          "agreement": 1.0
+        }
+      ],
+      "bit_agreement_foreground_skyline": [
+        {
+          "bit": 0,
+          "agreement": 1.0
+        },
+        {
+          "bit": 1,
+          "agreement": 1.0
+        },
+        {
+          "bit": 2,
+          "agreement": 1.0
+        },
+        {
+          "bit": 3,
+          "agreement": 1.0
+        }
+      ],
+      "mean_abs_pixel_delta": 0.0
+    },
+    {
+      "variant": "jpeg_q95",
+      "fourier_sequence": "HHVVHHVHHHHV",
+      "morph_sequence": "HHVVHHVHHHHV",
+      "fourier_agreement": 12,
+      "morph_agreement": 12,
+      "bit_agreement_full": [
+        {
+          "bit": 0,
+          "agreement": 0.8237279411764706
+        },
+        {
+          "bit": 1,
+          "agreement": 0.8442856334841629
+        },
+        {
+          "bit": 2,
+          "agreement": 0.9084570135746607
+        },
+        {
+          "bit": 3,
+          "agreement": 0.9578744343891402
+        }
+      ],
+      "bit_agreement_foreground": [
+        {
+          "bit": 0,
+          "agreement": 0.5512537362668308
+        },
+        {
+          "bit": 1,
+          "agreement": 0.5746448786492716
+        },
+        {
+          "bit": 2,
+          "agreement": 0.7060186582024885
+        },
+        {
+          "bit": 3,
+          "agreement": 0.8511406928235516
+        }
+      ],
+      "bit_agreement_foreground_skyline": [
+        {
+          "bit": 0,
+          "agreement": 0.5484803748124107
+        },
+        {
+          "bit": 1,
+          "agreement": 0.5700699112992765
+        },
+        {
+          "bit": 2,
+          "agreement": 0.7028098729883725
+        },
+        {
+          "bit": 3,
+          "agreement": 0.850062834762875
+        }
+      ],
+      "mean_abs_pixel_delta": 0.5250073529411765
+    },
+    {
+      "variant": "jpeg_q85",
+      "fourier_sequence": "HHVVHHVHHHHV",
+      "morph_sequence": "HHVVHHVHHHHV",
+      "fourier_agreement": 12,
+      "morph_agreement": 12,
+      "bit_agreement_full": [
+        {
+          "bit": 0,
+          "agreement": 0.8232590497737556
+        },
+        {
+          "bit": 1,
+          "agreement": 0.8303631221719457
+        },
+        {
+          "bit": 2,
+          "agreement": 0.8433331447963801
+        },
+        {
+          "bit": 3,
+          "agreement": 0.8795757918552036
+        }
+      ],
+      "bit_agreement_foreground": [
+        {
+          "bit": 0,
+          "agreement": 0.5507367938304831
+        },
+        {
+          "bit": 1,
+          "agreement": 0.5556809358870692
+        },
+        {
+          "bit": 2,
+          "agreement": 0.5666916086363581
+        },
+        {
+          "bit": 3,
+          "agreement": 0.6238730856032537
+        }
+      ],
+      "bit_agreement_foreground_skyline": [
+        {
+          "bit": 0,
+          "agreement": 0.5470589670697039
+        },
+        {
+          "bit": 1,
+          "agreement": 0.5516770171178975
+        },
+        {
+          "bit": 2,
+          "agreement": 0.5628896670367614
+        },
+        {
+          "bit": 3,
+          "agreement": 0.6189102133941753
+        }
+      ],
+      "mean_abs_pixel_delta": 1.5278529411764705
+    },
+    {
+      "variant": "jpeg_q70",
+      "fourier_sequence": "HHVVHHVHHHHV",
+      "morph_sequence": "HHVVHHVHHHHV",
+      "fourier_agreement": 12,
+      "morph_agreement": 12,
+      "bit_agreement_full": [
+        {
+          "bit": 0,
+          "agreement": 0.8212941176470588
+        },
+        {
+          "bit": 1,
+          "agreement": 0.8285475113122172
+        },
+        {
+          "bit": 2,
+          "agreement": 0.8370118778280543
+        },
+        {
+          "bit": 3,
+          "agreement": 0.852966628959276
+        }
+      ],
+      "bit_agreement_foreground": [
+        {
+          "bit": 0,
+          "agreement": 0.5507227136863024
+        },
+        {
+          "bit": 1,
+          "agreement": 0.5539913185853881
+        },
+        {
+          "bit": 2,
+          "agreement": 0.5604601391118245
+        },
+        {
+          "bit": 3,
+          "agreement": 0.5739187454993825
+        }
+      ],
+      "bit_agreement_foreground_skyline": [
+        {
+          "bit": 0,
+          "agreement": 0.5470101633703834
+        },
+        {
+          "bit": 1,
+          "agreement": 0.5501946047510401
+        },
+        {
+          "bit": 2,
+          "agreement": 0.5575334610363466
+        },
+        {
+          "bit": 3,
+          "agreement": 0.5697282854040336
+        }
+      ],
+      "mean_abs_pixel_delta": 2.78887443438914
+    },
+    {
+      "variant": "down75_up",
+      "fourier_sequence": "HHVVHHVHHHHV",
+      "morph_sequence": "HHVVHHVHHHHV",
+      "fourier_agreement": 12,
+      "morph_agreement": 12,
+      "bit_agreement_full": [
+        {
+          "bit": 0,
+          "agreement": 0.8098455882352941
+        },
+        {
+          "bit": 1,
+          "agreement": 0.8204451357466064
+        },
+        {
+          "bit": 2,
+          "agreement": 0.8330390271493213
+        },
+        {
+          "bit": 3,
+          "agreement": 0.8488885746606335
+        }
+      ],
+      "bit_agreement_foreground": [
+        {
+          "bit": 0,
+          "agreement": 0.5269674990043327
+        },
+        {
+          "bit": 1,
+          "agreement": 0.5326035795749405
+        },
+        {
+          "bit": 2,
+          "agreement": 0.5410033913032983
+        },
+        {
+          "bit": 3,
+          "agreement": 0.5521850372319241
+        }
+      ],
+      "bit_agreement_foreground_skyline": [
+        {
+          "bit": 0,
+          "agreement": 0.5257866546284208
+        },
+        {
+          "bit": 1,
+          "agreement": 0.527720501213992
+        },
+        {
+          "bit": 2,
+          "agreement": 0.5371091128707556
+        },
+        {
+          "bit": 3,
+          "agreement": 0.5450275130854919
+        }
+      ],
+      "mean_abs_pixel_delta": 7.339427036199095
+    },
+    {
+      "variant": "up125_down",
+      "fourier_sequence": "HHVVHHVHHHHV",
+      "morph_sequence": "HHVVHHVHHHHV",
+      "fourier_agreement": 12,
+      "morph_agreement": 12,
+      "bit_agreement_full": [
+        {
+          "bit": 0,
+          "agreement": 0.8143608597285068
+        },
+        {
+          "bit": 1,
+          "agreement": 0.8263721719457013
+        },
+        {
+          "bit": 2,
+          "agreement": 0.8488766968325792
+        },
+        {
+          "bit": 3,
+          "agreement": 0.8649140271493213
+        }
+      ],
+      "bit_agreement_foreground": [
+        {
+          "bit": 0,
+          "agreement": 0.5296467492969985
+        },
+        {
+          "bit": 1,
+          "agreement": 0.5386841904118241
+        },
+        {
+          "bit": 2,
+          "agreement": 0.5524867546072243
+        },
+        {
+          "bit": 3,
+          "agreement": 0.5820128169541028
+        }
+      ],
+      "bit_agreement_foreground_skyline": [
+        {
+          "bit": 0,
+          "agreement": 0.5277632044508974
+        },
+        {
+          "bit": 1,
+          "agreement": 0.5322714461756202
+        },
+        {
+          "bit": 2,
+          "agreement": 0.5463208111174827
+        },
+        {
+          "bit": 3,
+          "agreement": 0.5785129512817071
+        }
+      ],
+      "mean_abs_pixel_delta": 2.9202737556561087
+    },
+    {
+      "variant": "jpeg85_down75_up",
+      "fourier_sequence": "HHVVHHVHHHHV",
+      "morph_sequence": "HHVVHHVHHHHV",
+      "fourier_agreement": 12,
+      "morph_agreement": 12,
+      "bit_agreement_full": [
+        {
+          "bit": 0,
+          "agreement": 0.7868857466063348
+        },
+        {
+          "bit": 1,
+          "agreement": 0.79727092760181
+        },
+        {
+          "bit": 2,
+          "agreement": 0.8178783936651584
+        },
+        {
+          "bit": 3,
+          "agreement": 0.8435950226244344
+        }
+      ],
+      "bit_agreement_foreground": [
+        {
+          "bit": 0,
+          "agreement": 0.5230471845745986
+        },
+        {
+          "bit": 1,
+          "agreement": 0.5276715062133664
+        },
+        {
+          "bit": 2,
+          "agreement": 0.5349831239414748
+        },
+        {
+          "bit": 3,
+          "agreement": 0.5490170047912719
+        }
+      ],
+      "bit_agreement_foreground_skyline": [
+        {
+          "bit": 0,
+          "agreement": 0.522821829894706
+        },
+        {
+          "bit": 1,
+          "agreement": 0.5265858152047925
+        },
+        {
+          "bit": 2,
+          "agreement": 0.5325154646722221
+        },
+        {
+          "bit": 3,
+          "agreement": 0.5430875660375056
+        }
+      ],
+      "mean_abs_pixel_delta": 7.576314479638009
+    }
+  ],
+  "decision_rule": {
+    "visual_stable": "all lossy variants must have >=10/12 agreement under both independent H/V classifiers",
+    "lowbit_collapsed": "at least 3 lossy variants must have foreground bit-0 exact agreement <0.65"
+  },
+  "visual_stable": true,
+  "lowbit_collapsed": true,
+  "promote_visual_semantic_route": true
+}
