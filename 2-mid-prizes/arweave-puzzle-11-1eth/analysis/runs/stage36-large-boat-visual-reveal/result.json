@@ -1,0 +1,568 @@
+{
+  "experiment_id": "A11-EXP-036",
+  "scope": "visual-reveal diagnostics on large sailboat versus fixed same-size scene controls; no OCR, payload decoding, or private-key operations",
+  "regions": {
+    "large_sailboat": [
+      44,
+      320,
+      359,
+      599
+    ],
+    "skyline_control": [
+      884,
+      20,
+      1199,
+      299
+    ],
+    "jetty_control": [
+      1000,
+      360,
+      1315,
+      639
+    ],
+    "water_control": [
+      400,
+      500,
+      715,
+      779
+    ]
+  },
+  "transforms": 19,
+  "original_scores": [
+    {
+      "transform": "band_0_63",
+      "target_score": 1.102906213783437,
+      "target_rank": 2,
+      "control_max_score": 1.5386013793388809,
+      "target_minus_control_max": -0.43569516555544396,
+      "region_scores": {
+        "large_sailboat": 1.102906213783437,
+        "skyline_control": 1.0881603046467823,
+        "jetty_control": 1.0998142362563805,
+        "water_control": 1.5386013793388809
+      }
+    },
+    {
+      "transform": "band_128_191",
+      "target_score": 1.2117649872134668,
+      "target_rank": 4,
+      "control_max_score": 1.6528283795735055,
+      "target_minus_control_max": -0.44106339236003866,
+      "region_scores": {
+        "large_sailboat": 1.2117649872134668,
+        "skyline_control": 1.6242662534492531,
+        "jetty_control": 1.6528283795735055,
+        "water_control": 1.3558885877659204
+      }
+    },
+    {
+      "transform": "band_192_223",
+      "target_score": 0.576800149703875,
+      "target_rank": 4,
+      "control_max_score": 0.8482786803738025,
+      "target_minus_control_max": -0.27147853066992744,
+      "region_scores": {
+        "large_sailboat": 0.576800149703875,
+        "skyline_control": 0.6282119115086221,
+        "jetty_control": 0.7228063223242011,
+        "water_control": 0.8482786803738025
+      }
+    },
+    {
+      "transform": "band_224_239",
+      "target_score": 1.5811388300841898e-05,
+      "target_rank": 2,
+      "control_max_score": 0.19720265943665388,
+      "target_minus_control_max": -0.19718684804835304,
+      "region_scores": {
+        "large_sailboat": 1.5811388300841898e-05,
+        "skyline_control": 0.19720265943665388,
+        "jetty_control": 1.1952286093343936e-05,
+        "water_control": 1.4142135623730951e-05
+      }
+    },
+    {
+      "transform": "band_240_247",
+      "target_score": 1.825741858350554e-05,
+      "target_rank": 3,
+      "control_max_score": 2.2360679774997898e-05,
+      "target_minus_control_max": -4.103261191492359e-06,
+      "region_scores": {
+        "large_sailboat": 1.825741858350554e-05,
+        "skyline_control": 1.825741858350554e-05,
+        "jetty_control": 2.2360679774997898e-05,
+        "water_control": 2.2360679774997898e-05
+      }
+    },
+    {
+      "transform": "band_248_254",
+      "target_score": 0.26186146828319085,
+      "target_rank": 2,
+      "control_max_score": 0.3737412737209254,
+      "target_minus_control_max": -0.11187980543773457,
+      "region_scores": {
+        "large_sailboat": 0.26186146828319085,
+        "skyline_control": 1.4142135623730951e-05,
+        "jetty_control": 0.09200874124564724,
+        "water_control": 0.3737412737209254
+      }
+    },
+    {
+      "transform": "band_64_127",
+      "target_score": 1.268692570453281,
+      "target_rank": 3,
+      "control_max_score": 1.9184886961109329,
+      "target_minus_control_max": -0.6497961256576519,
+      "region_scores": {
+        "large_sailboat": 1.268692570453281,
+        "skyline_control": 1.1330265024162613,
+        "jetty_control": 1.9184886961109329,
+        "water_control": 1.4125870942531558
+      }
+    },
+    {
+      "transform": "clahe_thr_128",
+      "target_score": 0.9249624617007738,
+      "target_rank": 3,
+      "control_max_score": 1.739670953500985,
+      "target_minus_control_max": -0.8147084918002113,
+      "region_scores": {
+        "large_sailboat": 0.9249624617007738,
+        "skyline_control": 0.8321722293318748,
+        "jetty_control": 1.739670953500985,
+        "water_control": 0.9626844487234534
+      }
+    },
+    {
+      "transform": "dog_1_3",
+      "target_score": 1.4543401893700325,
+      "target_rank": 2,
+      "control_max_score": 1.9657958470560564,
+      "target_minus_control_max": -0.5114556576860239,
+      "region_scores": {
+        "large_sailboat": 1.4543401893700325,
+        "skyline_control": 1.1625758251345755,
+        "jetty_control": 1.9657958470560564,
+        "water_control": 1.4032641685717573
+      }
+    },
+    {
+      "transform": "dog_2_6",
+      "target_score": 1.0386131142856714,
+      "target_rank": 3,
+      "control_max_score": 1.8039504672067892,
+      "target_minus_control_max": -0.7653373529211178,
+      "region_scores": {
+        "large_sailboat": 1.0386131142856714,
+        "skyline_control": 0.9701751863366165,
+        "jetty_control": 1.8039504672067892,
+        "water_control": 1.2980584548518566
+      }
+    },
+    {
+      "transform": "dog_4_12",
+      "target_score": 0.667398865313124,
+      "target_rank": 4,
+      "control_max_score": 1.169120624020336,
+      "target_minus_control_max": -0.501721758707212,
+      "region_scores": {
+        "large_sailboat": 0.667398865313124,
+        "skyline_control": 1.169120624020336,
+        "jetty_control": 0.8032671381539863,
+        "water_control": 0.914991421995628
+      }
+    },
+    {
+      "transform": "line_suppressed_180",
+      "target_score": 0.8455664245919492,
+      "target_rank": 4,
+      "control_max_score": 1.7364862842489186,
+      "target_minus_control_max": -0.8909198596569694,
+      "region_scores": {
+        "large_sailboat": 0.8455664245919492,
+        "skyline_control": 1.3828099890276415,
+        "jetty_control": 1.1818736805705576,
+        "water_control": 1.7364862842489186
+      }
+    },
+    {
+      "transform": "thr_110",
+      "target_score": 1.0193463863641181,
+      "target_rank": 4,
+      "control_max_score": 1.5815190486372592,
+      "target_minus_control_max": -0.5621726622731411,
+      "region_scores": {
+        "large_sailboat": 1.0193463863641181,
+        "skyline_control": 1.0954451150103321,
+        "jetty_control": 1.5815190486372592,
+        "water_control": 1.1126972805283735
+      }
+    },
+    {
+      "transform": "thr_140",
+      "target_score": 0.4737210188728685,
+      "target_rank": 4,
+      "control_max_score": 1.0988845115895123,
+      "target_minus_control_max": -0.6251634927166438,
+      "region_scores": {
+        "large_sailboat": 0.4737210188728685,
+        "skyline_control": 0.7906659377718412,
+        "jetty_control": 0.857061453195939,
+        "water_control": 1.0988845115895123
+      }
+    },
+    {
+      "transform": "thr_170",
+      "target_score": 0.5698028822981897,
+      "target_rank": 3,
+      "control_max_score": 1.721892064184557,
+      "target_minus_control_max": -1.1520891818863674,
+      "region_scores": {
+        "large_sailboat": 0.5698028822981897,
+        "skyline_control": 0.6687467549246293,
+        "jetty_control": 0.2702144944592592,
+        "water_control": 1.721892064184557
+      }
+    },
+    {
+      "transform": "thr_200",
+      "target_score": 0.2817180849095055,
+      "target_rank": 3,
+      "control_max_score": 1.784435632438388,
+      "target_minus_control_max": -1.5027175475288825,
+      "region_scores": {
+        "large_sailboat": 0.2817180849095055,
+        "skyline_control": 0.7132711688892687,
+        "jetty_control": 1.5811388300841898e-05,
+        "water_control": 1.784435632438388
+      }
+    },
+    {
+      "transform": "thr_230",
+      "target_score": 1.825741858350554e-05,
+      "target_rank": 3,
+      "control_max_score": 0.663484468704159,
+      "target_minus_control_max": -0.6634662112855755,
+      "region_scores": {
+        "large_sailboat": 1.825741858350554e-05,
+        "skyline_control": 0.663484468704159,
+        "jetty_control": 1.825741858350554e-05,
+        "water_control": 0.5083159383372725
+      }
+    },
+    {
+      "transform": "thr_245",
+      "target_score": 2.2360679774997898e-05,
+      "target_rank": 3,
+      "control_max_score": 0.812599200293392,
+      "target_minus_control_max": -0.812576839613617,
+      "region_scores": {
+        "large_sailboat": 2.2360679774997898e-05,
+        "skyline_control": 0.812599200293392,
+        "jetty_control": 2.2360679774997898e-05,
+        "water_control": 0.5924001611562499
+      }
+    },
+    {
+      "transform": "thr_80",
+      "target_score": 0.7615583628134747,
+      "target_rank": 4,
+      "control_max_score": 1.302013093343571,
+      "target_minus_control_max": -0.5404547305300963,
+      "region_scores": {
+        "large_sailboat": 0.7615583628134747,
+        "skyline_control": 1.0045577199069173,
+        "jetty_control": 1.2303051628156296,
+        "water_control": 1.302013093343571
+      }
+    }
+  ],
+  "lossy_scores": [
+    {
+      "transform": "band_0_63",
+      "target_score": 0.9222965090635714,
+      "target_rank": 3,
+      "control_max_score": 1.3662601021279466,
+      "target_minus_control_max": -0.44396359306437516,
+      "region_scores": {
+        "large_sailboat": 0.9222965090635714,
+        "skyline_control": 1.326799170788089,
+        "jetty_control": 1.3662601021279466,
+        "water_control": 0.8405316808386859
+      }
+    },
+    {
+      "transform": "band_128_191",
+      "target_score": 1.5638478901088817,
+      "target_rank": 4,
+      "control_max_score": 1.92071794789891,
+      "target_minus_control_max": -0.35687005779002834,
+      "region_scores": {
+        "large_sailboat": 1.5638478901088817,
+        "skyline_control": 1.92071794789891,
+        "jetty_control": 1.84690216823946,
+        "water_control": 1.77306968473718
+      }
+    },
+    {
+      "transform": "band_192_223",
+      "target_score": 1.359830607143844,
+      "target_rank": 1,
+      "control_max_score": 1.1620088425930977,
+      "target_minus_control_max": 0.1978217645507463,
+      "region_scores": {
+        "large_sailboat": 1.359830607143844,
+        "skyline_control": 1.0487007402640591,
+        "jetty_control": 0.9904115471256072,
+        "water_control": 1.1620088425930977
+      }
+    },
+    {
+      "transform": "band_224_239",
+      "target_score": 0.5427735942390479,
+      "target_rank": 3,
+      "control_max_score": 0.8552359741197579,
+      "target_minus_control_max": -0.31246237988071,
+      "region_scores": {
+        "large_sailboat": 0.5427735942390479,
+        "skyline_control": 0.8552359741197579,
+        "jetty_control": 0.2676851299534323,
+        "water_control": 0.582495997670016
+      }
+    },
+    {
+      "transform": "band_240_247",
+      "target_score": 1.825741858350554e-05,
+      "target_rank": 3,
+      "control_max_score": 1.01329036786822,
+      "target_minus_control_max": -1.0132721104496365,
+      "region_scores": {
+        "large_sailboat": 1.825741858350554e-05,
+        "skyline_control": 0.4969529486471831,
+        "jetty_control": 1.4142135623730951e-05,
+        "water_control": 1.01329036786822
+      }
+    },
+    {
+      "transform": "band_248_254",
+      "target_score": 0.9047493733468007,
+      "target_rank": 4,
+      "control_max_score": 1.2719974560076321,
+      "target_minus_control_max": -0.3672480826608314,
+      "region_scores": {
+        "large_sailboat": 0.9047493733468007,
+        "skyline_control": 1.1898185587580052,
+        "jetty_control": 1.22050050783336,
+        "water_control": 1.2719974560076321
+      }
+    },
+    {
+      "transform": "band_64_127",
+      "target_score": 1.8181952546046236,
+      "target_rank": 3,
+      "control_max_score": 1.9973235281410928,
+      "target_minus_control_max": -0.1791282735364692,
+      "region_scores": {
+        "large_sailboat": 1.8181952546046236,
+        "skyline_control": 1.9973235281410928,
+        "jetty_control": 1.9724955405951596,
+        "water_control": 1.482028065061098
+      }
+    },
+    {
+      "transform": "clahe_thr_128",
+      "target_score": 0.8072494358323528,
+      "target_rank": 3,
+      "control_max_score": 1.3812424435379502,
+      "target_minus_control_max": -0.5739930077055975,
+      "region_scores": {
+        "large_sailboat": 0.8072494358323528,
+        "skyline_control": 0.7827193447523658,
+        "jetty_control": 1.2182475052824793,
+        "water_control": 1.3812424435379502
+      }
+    },
+    {
+      "transform": "dog_1_3",
+      "target_score": 1.2364997260933994,
+      "target_rank": 2,
+      "control_max_score": 1.8976949454322218,
+      "target_minus_control_max": -0.6611952193388224,
+      "region_scores": {
+        "large_sailboat": 1.2364997260933994,
+        "skyline_control": 1.2085872002809812,
+        "jetty_control": 1.8976949454322218,
+        "water_control": 1.102587224271694
+      }
+    },
+    {
+      "transform": "dog_2_6",
+      "target_score": 1.024764319767752,
+      "target_rank": 4,
+      "control_max_score": 1.8090680674665818,
+      "target_minus_control_max": -0.7843037476988297,
+      "region_scores": {
+        "large_sailboat": 1.024764319767752,
+        "skyline_control": 1.3235976128716498,
+        "jetty_control": 1.8090680674665818,
+        "water_control": 1.4256463560320745
+      }
+    },
+    {
+      "transform": "dog_4_12",
+      "target_score": 0.667398865313124,
+      "target_rank": 4,
+      "control_max_score": 1.3084757710929977,
+      "target_minus_control_max": -0.6410769057798738,
+      "region_scores": {
+        "large_sailboat": 0.667398865313124,
+        "skyline_control": 1.3084757710929977,
+        "jetty_control": 0.8692269873603532,
+        "water_control": 0.8846517369293828
+      }
+    },
+    {
+      "transform": "line_suppressed_180",
+      "target_score": 1.3633376172795417,
+      "target_rank": 2,
+      "control_max_score": 2.1193823917714694,
+      "target_minus_control_max": -0.7560447744919276,
+      "region_scores": {
+        "large_sailboat": 1.3633376172795417,
+        "skyline_control": 1.0469977453714856,
+        "jetty_control": 2.1193823917714694,
+        "water_control": 1.259881576697424
+      }
+    },
+    {
+      "transform": "thr_110",
+      "target_score": 0.48475579384782064,
+      "target_rank": 4,
+      "control_max_score": 1.035408251144606,
+      "target_minus_control_max": -0.5506524572967855,
+      "region_scores": {
+        "large_sailboat": 0.48475579384782064,
+        "skyline_control": 0.7589956074786554,
+        "jetty_control": 0.7855170507614949,
+        "water_control": 1.035408251144606
+      }
+    },
+    {
+      "transform": "thr_140",
+      "target_score": 0.7182430061427789,
+      "target_rank": 4,
+      "control_max_score": 1.1588171308956141,
+      "target_minus_control_max": -0.4405741247528352,
+      "region_scores": {
+        "large_sailboat": 0.7182430061427789,
+        "skyline_control": 0.8633316946034313,
+        "jetty_control": 1.1588171308956141,
+        "water_control": 1.1094003924504583
+      }
+    },
+    {
+      "transform": "thr_170",
+      "target_score": 0.3842122429322726,
+      "target_rank": 3,
+      "control_max_score": 1.414213562373095,
+      "target_minus_control_max": -1.0300013194408224,
+      "region_scores": {
+        "large_sailboat": 0.3842122429322726,
+        "skyline_control": 0.5565225807531214,
+        "jetty_control": 0.2057377999494559,
+        "water_control": 1.414213562373095
+      }
+    },
+    {
+      "transform": "thr_200",
+      "target_score": 0.4340043644478571,
+      "target_rank": 3,
+      "control_max_score": 0.8340977734768842,
+      "target_minus_control_max": -0.40009340902902707,
+      "region_scores": {
+        "large_sailboat": 0.4340043644478571,
+        "skyline_control": 0.6618876325292973,
+        "jetty_control": 1.5811388300841898e-05,
+        "water_control": 0.8340977734768842
+      }
+    },
+    {
+      "transform": "thr_230",
+      "target_score": 0.8752928459307583,
+      "target_rank": 1,
+      "control_max_score": 0.6172133998483676,
+      "target_minus_control_max": 0.25807944608239064,
+      "region_scores": {
+        "large_sailboat": 0.8752928459307583,
+        "skyline_control": 0.6172133998483676,
+        "jetty_control": 2.2360679774997898e-05,
+        "water_control": 0.39036002917941326
+      }
+    },
+    {
+      "transform": "thr_245",
+      "target_score": 0.5730136745330027,
+      "target_rank": 1,
+      "control_max_score": 0.4463937715374166,
+      "target_minus_control_max": 0.12661990299558606,
+      "region_scores": {
+        "large_sailboat": 0.5730136745330027,
+        "skyline_control": 0.4463937715374166,
+        "jetty_control": 1.5811388300841898e-05,
+        "water_control": 0.2803059552906941
+      }
+    },
+    {
+      "transform": "thr_80",
+      "target_score": 0.9597683821552239,
+      "target_rank": 4,
+      "control_max_score": 1.2790974261423207,
+      "target_minus_control_max": -0.31932904398709683,
+      "region_scores": {
+        "large_sailboat": 0.9597683821552239,
+        "skyline_control": 1.0955125083547013,
+        "jetty_control": 1.2790974261423207,
+        "water_control": 1.0754219434865353
+      }
+    }
+  ],
+  "family_summary": {
+    "intensity_band": {
+      "original_rank1": 0,
+      "replicated_rank1": 0,
+      "n": 7
+    },
+    "clahe": {
+      "original_rank1": 0,
+      "replicated_rank1": 0,
+      "n": 1
+    },
+    "dog": {
+      "original_rank1": 0,
+      "replicated_rank1": 0,
+      "n": 3
+    },
+    "line_suppression": {
+      "original_rank1": 0,
+      "replicated_rank1": 0,
+      "n": 1
+    },
+    "threshold": {
+      "original_rank1": 0,
+      "replicated_rank1": 0,
+      "n": 7
+    }
+  },
+  "target_rank1_original": 0,
+  "target_rank1_lossy": 3,
+  "replicated_target_rank1": 0,
+  "manual_review_priority_rule": "priority if >=2 transform families each contain a target-rank1 result that remains rank1 after JPEG85+resampling, and >=3 individual transforms replicate rank1",
+  "manual_review_priority": false,
+  "artifacts": [
+    "large-boat-contact-original.png",
+    "large-boat-contact-lossy.png",
+    "top-comparison-original.png",
+    "top-comparison-lossy.png"
+  ],
+  "interpretation_guard": "The component metric is only a ranking heuristic. Any positive signal requires direct visual inspection; it does not demonstrate readable text or secret material."
+}
