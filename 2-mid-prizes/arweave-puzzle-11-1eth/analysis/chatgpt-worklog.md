@@ -88,3 +88,12 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Adaptive conclusion: retire uniform-width address partitions; Stage 32 and Stage 33 together provide no support for direct equal-cell encoding of the public address across image width.
 - Strategy pivots to object-level visual grammar: secondary details, counts, selectors and ordering.
 - Stage 34 was chosen to test whether the robust H/V building labels organize the independent Stage-12 secondary-detail measurements. It uses exact enumeration of all 495 four-V label assignments and excludes projection metrics that are circular with hatch orientation.
+
+
+## 2026-10-03 — adaptive review of Stage 34
+
+- Stage 34 tested whether the robust H/V labels organize independent secondary-detail statistics already measured in Stage 12.
+- No feature was close to significant after exact permutation: raw p-values ranged from 0.3475 to 0.9071; the multivariate exact p-value was 0.7010.
+- Adaptive conclusion: keep H/V as a real format-stable visual clue, but downgrade the specific idea that it selects a second channel of building-detail counts.
+- Strategy shifts one level outward, from within-building statistics to explicit scene semantics.
+- Stage 35 was chosen to test a direct building↔water-reflection relation. Buildings 3–12 use a fixed clean reflection strip (y=330..360); buildings 1–2 are excluded in advance because the large sailboat overlaps their below-skyline region. Two independent orientation measures and exact 4-of-10 permutation tests are used, with lossy-format replication.
