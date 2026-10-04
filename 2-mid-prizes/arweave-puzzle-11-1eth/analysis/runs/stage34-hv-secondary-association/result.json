@@ -1,0 +1,215 @@
+{
+  "experiment_id": "A11-EXP-034",
+  "scope": "exact permutation association between fixed H/V labels and pre-existing Stage-12 secondary-detail measurements; no secret reconstruction or private-key operations",
+  "baseline": "HHVVHHVHHHHV",
+  "observed_V_buildings": [
+    3,
+    4,
+    7,
+    12
+  ],
+  "features": [
+    "small_component_density",
+    "small_component_instability_ratio",
+    "mid_component_density",
+    "perimeter_w2"
+  ],
+  "buildings": [
+    {
+      "id": 1,
+      "label": "H",
+      "area": 10434.0,
+      "small_component_density": 19.168104274487256,
+      "small_component_instability_ratio": 0.2857142857142857,
+      "mid_component_density": 0.0,
+      "perimeter_w2": 0.41232227488151657,
+      "raw_small_median": 20.0,
+      "raw_small_mad": 6.0,
+      "raw_mid_median": 0.0
+    },
+    {
+      "id": 2,
+      "label": "H",
+      "area": 15318.0,
+      "small_component_density": 5.2226139182660924,
+      "small_component_instability_ratio": 0.3333333333333333,
+      "mid_component_density": 0.6528267397832616,
+      "perimeter_w2": 0.4332129963898917,
+      "raw_small_median": 8.0,
+      "raw_small_mad": 3.0,
+      "raw_mid_median": 1.0
+    },
+    {
+      "id": 3,
+      "label": "V",
+      "area": 8784.0,
+      "small_component_density": 9.107468123861567,
+      "small_component_instability_ratio": 0.2222222222222222,
+      "mid_component_density": 1.138433515482696,
+      "perimeter_w2": 0.3986842105263158,
+      "raw_small_median": 8.0,
+      "raw_small_mad": 2.0,
+      "raw_mid_median": 1.0
+    },
+    {
+      "id": 4,
+      "label": "V",
+      "area": 26640.0,
+      "small_component_density": 52.17717717717718,
+      "small_component_instability_ratio": 0.05,
+      "mid_component_density": 1.8768768768768769,
+      "perimeter_w2": 0.30864197530864196,
+      "raw_small_median": 139.0,
+      "raw_small_mad": 7.0,
+      "raw_mid_median": 5.0
+    },
+    {
+      "id": 5,
+      "label": "H",
+      "area": 21648.0,
+      "small_component_density": 25.40650406504065,
+      "small_component_instability_ratio": 0.125,
+      "mid_component_density": 3.2335550628233554,
+      "perimeter_w2": 0.31136363636363634,
+      "raw_small_median": 55.0,
+      "raw_small_mad": 7.0,
+      "raw_mid_median": 7.0
+    },
+    {
+      "id": 6,
+      "label": "H",
+      "area": 7200.0,
+      "small_component_density": 12.5,
+      "small_component_instability_ratio": 0.3,
+      "mid_component_density": 1.3888888888888888,
+      "perimeter_w2": 0.4036144578313253,
+      "raw_small_median": 9.0,
+      "raw_small_mad": 3.0,
+      "raw_mid_median": 1.0
+    },
+    {
+      "id": 7,
+      "label": "V",
+      "area": 28560.0,
+      "small_component_density": 37.81512605042017,
+      "small_component_instability_ratio": 0.5137614678899083,
+      "mid_component_density": 1.7507002801120448,
+      "perimeter_w2": 0.30116959064327486,
+      "raw_small_median": 108.0,
+      "raw_small_mad": 56.0,
+      "raw_mid_median": 5.0
+    },
+    {
+      "id": 8,
+      "label": "H",
+      "area": 18228.0,
+      "small_component_density": 27.43032696949748,
+      "small_component_instability_ratio": 0.39215686274509803,
+      "mid_component_density": 2.194426157559798,
+      "perimeter_w2": 0.3464285714285714,
+      "raw_small_median": 50.0,
+      "raw_small_mad": 20.0,
+      "raw_mid_median": 4.0
+    },
+    {
+      "id": 9,
+      "label": "H",
+      "area": 8658.0,
+      "small_component_density": 8.085008085008084,
+      "small_component_instability_ratio": 0.25,
+      "mid_component_density": 1.155001155001155,
+      "perimeter_w2": 0.45187165775401067,
+      "raw_small_median": 7.0,
+      "raw_small_mad": 2.0,
+      "raw_mid_median": 1.0
+    },
+    {
+      "id": 10,
+      "label": "H",
+      "area": 15136.0,
+      "small_component_density": 19.82029598308668,
+      "small_component_instability_ratio": 0.41935483870967744,
+      "mid_component_density": 1.3213530655391121,
+      "perimeter_w2": 0.2625968992248062,
+      "raw_small_median": 30.0,
+      "raw_small_mad": 13.0,
+      "raw_mid_median": 2.0
+    },
+    {
+      "id": 11,
+      "label": "H",
+      "area": 5856.0,
+      "small_component_density": 61.47540983606557,
+      "small_component_instability_ratio": 0.2972972972972973,
+      "mid_component_density": 1.7076502732240437,
+      "perimeter_w2": 0.3057228915662651,
+      "raw_small_median": 36.0,
+      "raw_small_mad": 11.0,
+      "raw_mid_median": 1.0
+    },
+    {
+      "id": 12,
+      "label": "V",
+      "area": 12540.0,
+      "small_component_density": 27.91068580542265,
+      "small_component_instability_ratio": 0.16666666666666666,
+      "mid_component_density": 0.7974481658692185,
+      "perimeter_w2": 0.3125,
+      "raw_small_median": 35.0,
+      "raw_small_mad": 6.0,
+      "raw_mid_median": 1.0
+    }
+  ],
+  "permutations": 495,
+  "feature_results": [
+    {
+      "feature": "small_component_density",
+      "observed_abs_mean_difference": 9.364081397788912,
+      "H_mean": 22.388532891431478,
+      "V_mean": 31.75261428922039,
+      "exact_p": 0.4101010101010101,
+      "bonferroni_p": 1.0,
+      "null_median": 7.907261070690609,
+      "null_p95": 20.380429324437376
+    },
+    {
+      "feature": "small_component_instability_ratio",
+      "observed_abs_mean_difference": 0.06219448803026226,
+      "H_mean": 0.3003570772249615,
+      "V_mean": 0.23816258919469926,
+      "exact_p": 0.44646464646464645,
+      "bonferroni_p": 1.0,
+      "null_median": 0.056045514679453956,
+      "null_p95": 0.15081332799937539
+    },
+    {
+      "feature": "mid_component_density",
+      "observed_abs_mean_difference": 0.06584795826724288,
+      "H_mean": 1.4567126678524518,
+      "V_mean": 1.390864709585209,
+      "exact_p": 0.907070707070707,
+      "bonferroni_p": 1.0,
+      "null_median": 0.36489102046819966,
+      "null_p95": 0.9544160263122193
+    },
+    {
+      "feature": "perimeter_w2",
+      "observed_abs_mean_difference": 0.035642729060444744,
+      "H_mean": 0.36589167318000293,
+      "V_mean": 0.3302489441195582,
+      "exact_p": 0.3474747474747475,
+      "bonferroni_p": 1.0,
+      "null_median": 0.02670568778210891,
+      "null_p95": 0.07233313356626664
+    }
+  ],
+  "multivariate": {
+    "observed_within_group_sse": 45.53328352785442,
+    "exact_p_lower_sse": 0.701010101010101,
+    "observed_centroid_distance_sq": 0.9250186770545921,
+    "exact_p_upper_centroid_distance": 0.701010101010101
+  },
+  "promotion_rule": "promote selector hypothesis only if BOTH multivariate exact p-values <=0.05 AND either >=1 feature survives Bonferroni or >=2 individual features have raw exact p<=0.05",
+  "promoted": false,
+  "interpretation_guard": "Association would not by itself prove intentional encoding because some secondary-detail metrics may still be influenced by hatch construction. A positive result only justifies targeted visual follow-up."
+}
