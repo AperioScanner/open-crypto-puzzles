@@ -60,33 +60,31 @@ Do not rerun an exhausted scope unless the previous experiment is shown to be in
 
 ## Current priority
 
-### P1 — seek an independent visual confirmation of the robust `0x321` marker
+### P1 — identify a format-invariant visual carrier using known public information
 
-Stages 10 and 13 now establish two separate facts: the 12-building H/V sequence is geometrically robust, and the exact `0x321` pattern is uncommon under simple random-orientation nulls (1/4096 unconditioned; 1/495 conditional on exactly four V buildings). This strengthens `321` as a lead but does not prove intent because the segmentation/coding were not pre-registered.
+Stage 31 decisively favors the visual/semantic route: the robust 12-building H/V texture survives all tested lossy JPEG/resampling variants at 12/12 under two independent classifiers, while exact foreground bit-0 agreement collapses to ~0.52–0.55.
 
-Stage 14 reconstructed the complete mirrored author launch window (2020-04-20 through 2020-05-01): there is **no direct textual 3-2-1 clue and no ordering/direction wording**. Therefore a second confirmation, if it exists, is more likely visual/semantic than textual.
+The author also said the **public escrow address** is present somewhere in the image. Because that 160-bit value is already known and public, it can be used as a known-answer probe to discover the carrier mechanism without generating or verifying private-key material.
 
-Next bounded work: search the image for a second robust 3-2-1 / countdown / ordering / selection structure using object groups, secondary marks, perimeter/context cues, and spatial relationships. Reject unstable threshold artifacts.
+Stage 32 tests the simplest dimension-motivated visual hypothesis: image width 1600 px = 160 address bits × 10 px, using only coarse visible features, lossy-reproduction requirements, and familywise null calibration.
 
-### P2 — use the solved-puzzle design grammar, not arbitrary transforms
+### P2 — retain the H/V texture without forcing `0x321`
 
-Stage 11 (A11-EXP-011) reconstructed 18 public solved-token mechanisms from #5/#7/#8. Fourteen are broadly semantic/contextual and four are counting/sequence/numeric-extraction mechanisms. Recurrent design habits include tiny secondary details, counting, cross-domain references, visual + technical context, and ordered interpretation.
+The sequence `HHVVHHVHHHHV` remains a strong reproducible visual feature. The hexadecimal `0x321` interpretation was retired in Stage 22 due to grouping/representation look-elsewhere effects. H/V may still act as a selector, ordering clue, or semantic signal.
 
-This is now the main prior for deciding which visual hypotheses deserve tests.
+### P3 — solved-puzzle visual grammar
 
-### P3 — inspect Stage 12 promoted regions without over-reading raster artifacts
+Use human-readable semantics, tiny secondary details, counting, rebuses, selection, and ordered interpretation as the main prior for future visual hypotheses.
 
-Stage 12 ranked regions by stable small-component counts, perimeter occupancy, and projection periodicity. The common best lag of 3 across very different regions is likely influenced by stroke width/raster structure, so it is **not** independent support for 321 by itself. Use the diagnostic atlas to identify human-visible deliberate marks; require threshold/crop robustness before promotion.
+### P4 — archival context
 
-### P4 — recover missing first-hand context around #9 and early community discussion
-
-The complete mirrored #11 launch window is exhausted. Remaining archival value is in sources outside that mirror: early Telegram/Discord/Weavemail, deleted replies, or a real #9 solve-method account. #9 remains the strongest sibling-control lead.
+The mirrored #11 launch window is exhausted. Remaining archival value is in external early discussion or a first-hand account of Puzzle #9's solve method.
 
 ## Stop conditions
 
 Stop and request review if:
 
-1. an exact target address match is found;
-2. the planned scope would become computationally unreasonable without a justified reduction;
-3. a new clue materially changes the hypothesis space;
-4. a test would duplicate an already-exhausted scope.
+1. a new clue materially changes the safe hypothesis space;
+2. a planned scope becomes computationally unreasonable without justified reduction;
+3. a proposed experiment would duplicate an exhausted scope;
+4. the next step would require generating, deriving, reconstructing, enumerating, or verifying candidate private keys or attempting wallet access.
