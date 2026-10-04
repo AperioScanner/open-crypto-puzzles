@@ -1,0 +1,486 @@
+{
+  "experiment_id": "A11-EXP-030",
+  "scope": "semantic y-band and foreground/background decomposition of fixed Stage-29 source-x clusters; no payload reconstruction or private-key operations",
+  "foreground_threshold": 250,
+  "clusters": {
+    "printable_cluster": [
+      176,
+      385
+    ],
+    "compressible_cluster": [
+      769,
+      948
+    ],
+    "left_margin_control": [
+      0,
+      58
+    ]
+  },
+  "bands": {
+    "upper_skyline": [
+      0,
+      320
+    ],
+    "boats_mid": [
+      320,
+      620
+    ],
+    "lower_water": [
+      620,
+      1105
+    ],
+    "full_height": [
+      0,
+      1105
+    ]
+  },
+  "region_metrics": [
+    {
+      "cluster": "printable_cluster",
+      "band": "upper_skyline",
+      "bbox": [
+        176,
+        0,
+        385,
+        320
+      ],
+      "all": {
+        "bytes": 8360,
+        "printable_fraction": 0.12404306220095694,
+        "longest_printable_run": 7,
+        "zlib_ratio": 0.4922248803827751
+      },
+      "foreground": {
+        "bytes": 2821,
+        "printable_fraction": 0.36370081531371856,
+        "longest_printable_run": 8,
+        "zlib_ratio": 0.9436370081531372
+      },
+      "background": {
+        "bytes": 5539,
+        "printable_fraction": 0.003610760064993681,
+        "longest_printable_run": 2,
+        "zlib_ratio": 0.10976710597580791
+      },
+      "foreground_fraction": 0.3374401913875598
+    },
+    {
+      "cluster": "printable_cluster",
+      "band": "boats_mid",
+      "bbox": [
+        176,
+        320,
+        385,
+        620
+      ],
+      "all": {
+        "bytes": 7837,
+        "printable_fraction": 0.19803496235804516,
+        "longest_printable_run": 6,
+        "zlib_ratio": 0.7257879290544851
+      },
+      "foreground": {
+        "bytes": 4241,
+        "printable_fraction": 0.35840603631219053,
+        "longest_printable_run": 7,
+        "zlib_ratio": 0.9575571799103985
+      },
+      "background": {
+        "bytes": 3596,
+        "printable_fraction": 0.010567296996662959,
+        "longest_printable_run": 2,
+        "zlib_ratio": 0.20856507230255839
+      },
+      "foreground_fraction": 0.5411642743221691
+    },
+    {
+      "cluster": "printable_cluster",
+      "band": "lower_water",
+      "bbox": [
+        176,
+        620,
+        385,
+        1105
+      ],
+      "all": {
+        "bytes": 12670,
+        "printable_fraction": 0.24846093133385952,
+        "longest_printable_run": 8,
+        "zlib_ratio": 0.920284135753749
+      },
+      "foreground": {
+        "bytes": 8151,
+        "printable_fraction": 0.3763955342902711,
+        "longest_printable_run": 8,
+        "zlib_ratio": 0.9698196540301803
+      },
+      "background": {
+        "bytes": 4519,
+        "printable_fraction": 0.01593272847975216,
+        "longest_printable_run": 2,
+        "zlib_ratio": 0.3345872980747953
+      },
+      "foreground_fraction": 0.6433285650865683
+    },
+    {
+      "cluster": "printable_cluster",
+      "band": "full_height",
+      "bbox": [
+        176,
+        0,
+        385,
+        1105
+      ],
+      "all": {
+        "bytes": 28868,
+        "printable_fraction": 0.2031661355133712,
+        "longest_printable_run": 9,
+        "zlib_ratio": 0.7479562144935569
+      },
+      "foreground": {
+        "bytes": 15213,
+        "printable_fraction": 0.3598238348780648,
+        "longest_printable_run": 8,
+        "zlib_ratio": 0.9530664563202524
+      },
+      "background": {
+        "bytes": 13654,
+        "printable_fraction": 0.00820272447634393,
+        "longest_printable_run": 2,
+        "zlib_ratio": 0.20536106635418191
+      },
+      "foreground_fraction": 0.5270085951200503
+    },
+    {
+      "cluster": "compressible_cluster",
+      "band": "upper_skyline",
+      "bbox": [
+        769,
+        0,
+        948,
+        320
+      ],
+      "all": {
+        "bytes": 7160,
+        "printable_fraction": 0.04790502793296089,
+        "longest_printable_run": 4,
+        "zlib_ratio": 0.2655027932960894
+      },
+      "foreground": {
+        "bytes": 1010,
+        "printable_fraction": 0.37722772277227723,
+        "longest_printable_run": 8,
+        "zlib_ratio": 1.010891089108911
+      },
+      "background": {
+        "bytes": 6149,
+        "printable_fraction": 0.0006505122784192552,
+        "longest_printable_run": 1,
+        "zlib_ratio": 0.062286550658643684
+      },
+      "foreground_fraction": 0.14111382681564247
+    },
+    {
+      "cluster": "compressible_cluster",
+      "band": "boats_mid",
+      "bbox": [
+        769,
+        320,
+        948,
+        620
+      ],
+      "all": {
+        "bytes": 6712,
+        "printable_fraction": 0.02458283671036949,
+        "longest_printable_run": 4,
+        "zlib_ratio": 0.16626936829559
+      },
+      "foreground": {
+        "bytes": 420,
+        "printable_fraction": 0.4452380952380952,
+        "longest_printable_run": 5,
+        "zlib_ratio": 1.026190476190476
+      },
+      "background": {
+        "bytes": 6292,
+        "printable_fraction": 0.0006357279084551812,
+        "longest_printable_run": 1,
+        "zlib_ratio": 0.044818817546090274
+      },
+      "foreground_fraction": 0.06264432029795158
+    },
+    {
+      "cluster": "compressible_cluster",
+      "band": "lower_water",
+      "bbox": [
+        769,
+        620,
+        948,
+        1105
+      ],
+      "all": {
+        "bytes": 10851,
+        "printable_fraction": 0.0024882499308819463,
+        "longest_printable_run": 2,
+        "zlib_ratio": 0.038061008202009035
+      },
+      "foreground": {
+        "bytes": 95,
+        "printable_fraction": 0.3684210526315789,
+        "longest_printable_run": 5,
+        "zlib_ratio": 1.1157894736842104
+      },
+      "background": {
+        "bytes": 10756,
+        "printable_fraction": 9.297136481963555e-05,
+        "longest_printable_run": 1,
+        "zlib_ratio": 0.011993306061732985
+      },
+      "foreground_fraction": 0.00880032252490929
+    },
+    {
+      "cluster": "compressible_cluster",
+      "band": "full_height",
+      "bbox": [
+        769,
+        0,
+        948,
+        1105
+      ],
+      "all": {
+        "bytes": 24724,
+        "printable_fraction": 0.022488270506390552,
+        "longest_printable_run": 6,
+        "zlib_ratio": 0.1398236531305614
+      },
+      "foreground": {
+        "bytes": 1526,
+        "printable_fraction": 0.3800786369593709,
+        "longest_printable_run": 5,
+        "zlib_ratio": 1.0072083879423328
+      },
+      "background": {
+        "bytes": 23198,
+        "printable_fraction": 0.0003448573152858005,
+        "longest_printable_run": 1,
+        "zlib_ratio": 0.03375290973359772
+      },
+      "foreground_fraction": 0.06173563538006522
+    },
+    {
+      "cluster": "left_margin_control",
+      "band": "upper_skyline",
+      "bbox": [
+        0,
+        0,
+        58,
+        320
+      ],
+      "all": {
+        "bytes": 2320,
+        "printable_fraction": 0.015948275862068966,
+        "longest_printable_run": 3,
+        "zlib_ratio": 0.12413793103448276
+      },
+      "foreground": {
+        "bytes": 91,
+        "printable_fraction": 0.45054945054945056,
+        "longest_printable_run": 6,
+        "zlib_ratio": 1.120879120879121
+      },
+      "background": {
+        "bytes": 2228,
+        "printable_fraction": 0.0008976660682226212,
+        "longest_printable_run": 1,
+        "zlib_ratio": 0.036355475763016155
+      },
+      "foreground_fraction": 0.03927801724137931
+    },
+    {
+      "cluster": "left_margin_control",
+      "band": "boats_mid",
+      "bbox": [
+        0,
+        320,
+        58,
+        620
+      ],
+      "all": {
+        "bytes": 2175,
+        "printable_fraction": 0.0,
+        "longest_printable_run": 0,
+        "zlib_ratio": 0.014252873563218391
+      },
+      "foreground": {
+        "bytes": 0,
+        "printable_fraction": 0.0,
+        "longest_printable_run": 0,
+        "zlib_ratio": null
+      },
+      "background": {
+        "bytes": 2174,
+        "printable_fraction": 0.0,
+        "longest_printable_run": 0,
+        "zlib_ratio": 0.013339466421343146
+      },
+      "foreground_fraction": 0.00028735632183908046
+    },
+    {
+      "cluster": "left_margin_control",
+      "band": "lower_water",
+      "bbox": [
+        0,
+        620,
+        58,
+        1105
+      ],
+      "all": {
+        "bytes": 3516,
+        "printable_fraction": 0.05318543799772469,
+        "longest_printable_run": 5,
+        "zlib_ratio": 0.3097269624573379
+      },
+      "foreground": {
+        "bytes": 496,
+        "printable_fraction": 0.36693548387096775,
+        "longest_printable_run": 7,
+        "zlib_ratio": 1.0221774193548387
+      },
+      "background": {
+        "bytes": 3020,
+        "printable_fraction": 0.0013245033112582781,
+        "longest_printable_run": 1,
+        "zlib_ratio": 0.07119205298013245
+      },
+      "foreground_fraction": 0.14113046569498755
+    },
+    {
+      "cluster": "left_margin_control",
+      "band": "full_height",
+      "bbox": [
+        0,
+        0,
+        58,
+        1105
+      ],
+      "all": {
+        "bytes": 8011,
+        "printable_fraction": 0.029459493196854324,
+        "longest_printable_run": 4,
+        "zlib_ratio": 0.17188865310198478
+      },
+      "foreground": {
+        "bytes": 588,
+        "printable_fraction": 0.38945578231292516,
+        "longest_printable_run": 7,
+        "zlib_ratio": 1.0187074829931972
+      },
+      "background": {
+        "bytes": 7423,
+        "printable_fraction": 0.000538865687727334,
+        "longest_printable_run": 1,
+        "zlib_ratio": 0.037316448875117876
+      },
+      "foreground_fraction": 0.07339678577001092
+    }
+  ],
+  "cross_bitplane_full_height": [
+    {
+      "cluster": "printable_cluster",
+      "bit": 0,
+      "bytes": 28868,
+      "printable_fraction": 0.2031661355133712,
+      "longest_printable_run": 9,
+      "zlib_ratio": 0.7479562144935569
+    },
+    {
+      "cluster": "printable_cluster",
+      "bit": 1,
+      "bytes": 28868,
+      "printable_fraction": 0.19332825273659415,
+      "longest_printable_run": 8,
+      "zlib_ratio": 0.7406470832755992
+    },
+    {
+      "cluster": "printable_cluster",
+      "bit": 2,
+      "bytes": 28868,
+      "printable_fraction": 0.19048773728696133,
+      "longest_printable_run": 9,
+      "zlib_ratio": 0.7374255230705279
+    },
+    {
+      "cluster": "printable_cluster",
+      "bit": 3,
+      "bytes": 28868,
+      "printable_fraction": 0.1878550644312041,
+      "longest_printable_run": 8,
+      "zlib_ratio": 0.7353124566994597
+    },
+    {
+      "cluster": "compressible_cluster",
+      "bit": 0,
+      "bytes": 24724,
+      "printable_fraction": 0.022488270506390552,
+      "longest_printable_run": 6,
+      "zlib_ratio": 0.1398236531305614
+    },
+    {
+      "cluster": "compressible_cluster",
+      "bit": 1,
+      "bytes": 24724,
+      "printable_fraction": 0.02378255945639864,
+      "longest_printable_run": 4,
+      "zlib_ratio": 0.13569810710241062
+    },
+    {
+      "cluster": "compressible_cluster",
+      "bit": 2,
+      "bytes": 24724,
+      "printable_fraction": 0.02260961009545381,
+      "longest_printable_run": 5,
+      "zlib_ratio": 0.13452515774146578
+    },
+    {
+      "cluster": "compressible_cluster",
+      "bit": 3,
+      "bytes": 24724,
+      "printable_fraction": 0.0232163080407701,
+      "longest_printable_run": 5,
+      "zlib_ratio": 0.13452515774146578
+    },
+    {
+      "cluster": "left_margin_control",
+      "bit": 0,
+      "bytes": 8011,
+      "printable_fraction": 0.029459493196854324,
+      "longest_printable_run": 4,
+      "zlib_ratio": 0.17188865310198478
+    },
+    {
+      "cluster": "left_margin_control",
+      "bit": 1,
+      "bytes": 8011,
+      "printable_fraction": 0.029459493196854324,
+      "longest_printable_run": 4,
+      "zlib_ratio": 0.17126451129696668
+    },
+    {
+      "cluster": "left_margin_control",
+      "bit": 2,
+      "bytes": 8011,
+      "printable_fraction": 0.027462239420796404,
+      "longest_printable_run": 3,
+      "zlib_ratio": 0.17039071276994133
+    },
+    {
+      "cluster": "left_margin_control",
+      "bit": 3,
+      "bytes": 8011,
+      "printable_fraction": 0.025090500561727624,
+      "longest_printable_run": 3,
+      "zlib_ratio": 0.16477343652477844
+    }
+  ],
+  "decision_rule": "If printable/compressibility extremes are concentrated in semantic object/background subsets rather than persisting across bands and pixel classes, favor ordinary image structure over a hidden LSB carrier."
+}
