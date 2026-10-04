@@ -4,70 +4,73 @@ Last updated: 2026-10-03
 
 This file defines the one-stage-at-a-time adaptive research loop on `research/arweave11-chatgpt`.
 
-## Required control loop
+## Control loop
 
-1. GitHub Actions executes exactly one experimental stage.
-2. The stage writes non-secret `REPORT.md` + `result.json` and commits them.
-3. ChatGPT reads the actual result before choosing any later stage.
-4. ChatGPT updates the hypothesis tree, records the decision, and designs exactly one next bounded experiment.
-5. The new workflow is pushed and GitHub Actions executes it.
-6. Implementation failures are fixed and rerun under the same stage number before advancing.
+1. GitHub Actions executes exactly one experiment.
+2. The stage commits non-secret `REPORT.md` + `result.json`.
+3. ChatGPT reads the actual result before choosing the next experiment.
+4. ChatGPT updates the hypothesis tree and designs exactly one next bounded stage.
+5. Implementation failures are fixed under the same stage number before advancing.
 
-No fixed multi-stage pipeline should replace the reasoning step between experiments.
+## Adaptive review through Stage 31
 
-## Adaptive review through Stage 30
+### Stages 28–30 — traversal anomaly resolved
+Stage 28 initially promoted a grayscale bit-0 traversal anomaly against block-shuffled surrogates. Stage 29 localized it. Stage 30 showed that the effect decomposes into ordinary large-scale image structure: foreground pixels generate the apparent printability, blank background strips generate extreme zlib compressibility, and the same behavior persists across bits 0–3.
 
-### Stage 28
-The Stage-27 L-bit0 traversal family looked significant against 100 block-shuffled surrogates:
-- printable fraction p = 0.0099
-- zlib ratio p = 0.0099
-- printable-run length was not significant
-- no specific multi-byte file signature survived
+**Decision:** generic traversal / exact low-bit hunting is retired as a primary route.
 
-### Stage 29
-The effect localized strongly in source-space columns. The same general behavior was also visible in higher grayscale bitplanes, already arguing against a bit-0-specific payload.
+### Stage 31 — format invariance strongly favors the visual route
+The 12-building H/V sequence survived every lossy transformation with **12/12 agreement under both independent classifiers**:
 
-### Stage 30 — decisive source decomposition
-Stage 30 split the fixed Stage-29 source clusters by semantic y-band and foreground/background pixels.
+- JPEG quality 95 / 85 / 70
+- downsample 0.75× then restore
+- upsample 1.25× then restore
+- JPEG85 + downsample/restore
 
-The apparent anomalies decompose almost completely into ordinary image structure:
+At the same time, exact foreground bit-0 agreement fell to roughly **0.52–0.55**, close to chance.
 
-- In the “printable” cluster, foreground-only streams are consistently about 0.36–0.38 printable, while background-only streams are about 0.000–0.016 printable.
-- In the “compressible” cluster, foreground streams have zlib ratios around 1.0, while blank-background streams become extremely compressible (down to about 0.012).
-- The same cluster behavior persists across grayscale bits 0–3 instead of being unique to bit 0.
-- Therefore the Stage-28 p-values were driven by a null model that destroyed the image’s large-scale foreground/background layout. They are not evidence for a hidden traversal payload.
-
-**Decision:** retire generic traversal-text/compressibility hunting as a primary carrier hypothesis. Stages 28–30 remain useful as a negative result explaining the earlier statistical anomaly.
+**Decision:** promote a format-invariant visual/semantic carrier and strongly downgrade exact-pixel LSB explanations. This is route-selection evidence; it does not prove that H/V itself is the payload.
 
 ## Current hypothesis ranking
 
-1. **Format-invariant visual/semantic carrier — promoted.**
-   The author explicitly said image format does not matter. This is difficult to reconcile with fragile exact-pixel LSB encoding. The robust 12-building H/V texture remains reproducible, although its former hexadecimal `0x321` reading stays retired.
+1. **Format-invariant visible/semantic encoding — highest priority.**
+   Consistent with the author's statement that image format does not matter and with Stage 31.
 
-2. **Raw low-bit / generic traversal carrier — downgraded strongly.**
-   Global random-LSB replacement was already weakened by Stages 23–24, and the Stage-28/29 anomaly is now explained by ordinary spatial image structure in Stage 30.
+2. **Known public escrow address as a positive probe — promoted.**
+   The author said the public `0xFF2142...` address is also included somewhere in the image. Because the address is known, it can be used safely as a known-answer probe to discover the visual carrier mechanism without touching private-key material.
 
-3. **Alpha channel carrier — already exhausted / low priority.**
-   Prior inspection found 434 non-opaque pixels localized to the large sailboat anti-aliasing halo, consistent with compositing rather than structured data.
+3. **Robust H/V building texture — active clue, interpretation unresolved.**
+   The sequence is real and format-stable. The former hexadecimal `0x321` interpretation remains retired.
 
-4. **Human-readable visual semantics / solved-puzzle grammar — active.**
-   The author’s solved puzzles favor visible secondary details, counting, rebuses, semantic references and ordered interpretation.
+4. **Solved-puzzle visual grammar — active prior.**
+   Prefer visible secondary details, counting, selection, rebuses, ordered interpretation and other human-readable mechanisms over arbitrary transforms.
+
+5. **Raw low-bit / generic traversal / alpha carriers — downgraded or exhausted.**
 
 ## Next stage
 
-**Stage 31 — format-invariance audit of competing signal families.**
+**Stage 32 — public-address coarse-stripe known-answer probe.**
 
-Question:
-> Under lossy format conversion and resampling, does the robust H/V visual texture survive while exact low-bit structure collapses?
+Motivation:
+- the known Ethereum address contains exactly **160 bits**;
+- the image width is exactly **1600 px**, giving a natural **10 px per address bit** partition;
+- the author explicitly said the address is included somewhere in the image;
+- a 10-pixel coarse visual encoding is compatible with Stage-31 format invariance in a way that exact LSBs are not.
 
-Pre-declared interpretation:
-- If H/V classification remains stable across JPEG/resampling while foreground bit-0 agreement falls sharply, promote the visual-semantic route and further downgrade exact-pixel steganography.
-- If a low-bit signature survives lossy transformations comparably well, revisit the assumption that the carrier requires exact source pixels.
+Bounded test:
+- partition the image into exactly 160 vertical cells of 10 px;
+- derive binary sequences only from a small pre-declared family of visible features and semantic y-bands;
+- compare against the known public address under standard ordering/inversion conventions;
+- require replication after JPEG/resampling;
+- familywise-calibrate the best Hamming match against random 160-bit controls with the same bit balance.
+
+A negative result retires this simple 160-stripe address representation, not all visual address encodings.
 
 ## Status
 
-- Stages 1–30: completed.
-- Stage 30: COMPLETED + ADAPTIVELY REVIEWED.
-- Generic traversal anomaly: RETIRED AS PRIMARY.
+- Stages 1–31: completed.
+- Stage 31: COMPLETED + ADAPTIVELY REVIEWED.
+- Visual/semantic route: PROMOTED.
+- Exact-pixel low-bit route: STRONGLY DOWNGRADED.
 - Adaptive controller: manual while user is active.
-- Next stage: 31.
+- Next stage: 32.
