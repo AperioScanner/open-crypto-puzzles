@@ -10,63 +10,61 @@ Last updated: 2026-10-03
 4. ChatGPT updates the hypothesis tree and designs exactly one next bounded stage.
 5. Implementation failures are fixed under the same stage number before advancing.
 
-## Adaptive review through Stage 33
+## Adaptive review through Stage 34
 
 ### Stage 31 — route selection
-The visible H/V structure remained **12/12** under two independent classifiers through JPEG/resampling while exact foreground bit-0 identity collapsed to ~0.52–0.55.
+Visible H/V texture survives lossy conversion/resampling at 12/12 under two independent classifiers while exact low-bit identity collapses near chance.
 
-**Decision:** prioritize format-invariant visible/semantic mechanisms.
+### Stages 32–33 — uniform public-address tilings: negative
+Both natural equal-width address mappings were rejected after familywise calibration:
+- 160 address bits × 10 px
+- 40 address hex digits × 40 px
 
-### Stage 32 — 160×10px address-bit stripes: negative
-Best Hamming distance was 66/160 with familywise p=0.40953.
+### Stage 34 — H/V selector × secondary building details: negative
+The fixed H/V labels were tested against pre-existing Stage-12 detail measurements using all 495 possible four-V assignments.
 
-### Stage 33 — 40×40px address-hex cells: negative
-The more human-readable dimensional mapping `1600 px = 40 address hex digits × 40 px` also failed:
+- small-component density p = **0.4101**
+- component-instability p = **0.4465**
+- mid-component density p = **0.9071**
+- perimeter occupancy p = **0.3475**
+- multivariate exact p = **0.7010**
 
-- best exact hex-digit matches: **9/40**
-- familywise p(exact): **0.08519**
-- nibble-bit Hamming: **67/160**
-- familywise p(bit-Hamming): **0.95830**
-- extracted coarse digits were format-stable (38/40) but their match to the public address was not exceptional
-
-**Decision:** retire uniform-width address tilings as a primary visual hypothesis. The known public address remains a useful positive probe, but there is no evidence that the image width is partitioned directly into its bits or hex digits.
+**Decision:** H/V remains a real, format-stable visual pattern, but the hypothesis that it selects a second counted/detail channel inside the buildings is downgraded.
 
 ## Current hypothesis ranking
 
-1. **Format-invariant object/semantic encoding — highest priority.**
-2. **Robust H/V building texture — strongest specific visual clue; interpretation unresolved.**
-3. **Solved-puzzle grammar: secondary details, counts, selection and ordering — promoted.**
-4. **Known public address as positive probe — active, but uniform width mappings retired.**
-5. **Raw low-bit / generic traversal / alpha — downgraded or exhausted.**
+1. **Format-invariant scene/object semantics — highest priority.**
+2. **Robust H/V building texture — active as a standalone clue/instruction; not supported as a selector of building-detail counts.**
+3. **Scene context: water/reflection/mirroring — promoted for direct testing.**
+4. **Solved-puzzle grammar: rebuses, secondary details, selection, ordering and environment — active prior.**
+5. **Known public address as positive probe — active, but equal-cell mappings retired.**
+6. **Raw low-bit / generic traversal / alpha — downgraded or exhausted.**
 
 ## Next stage
 
-**Stage 34 — H/V selector × secondary-detail association audit.**
+**Stage 35 — building ↔ water-reflection orientation coupling audit.**
 
 Motivation:
-- Stage 11 showed that the author's solved puzzles frequently use small secondary details and counting;
-- Stage 12 already measured secondary-detail counts and perimeter statistics for all 12 buildings;
-- Stage 21 proved the H/V label sequence is robust and classifier-independent;
-- Stage 17 showed simple building geometry does not explain the H/V labels.
-
-Question:
-> Do the four V-labeled buildings and eight H-labeled buildings also separate on independent secondary-detail measurements, as would be expected if H/V acts as a deliberate selector/class label rather than merely decorative hatching?
+- the drawing is explicitly organized as a skyline above water with visible reflection strokes directly beneath it;
+- mirroring/reflection is human-readable and format-invariant;
+- Stage 11 shows that overall scene context/environment can participate in the author's clue grammar;
+- Stage 34 says H/V does not simply select counted details inside buildings, so a scene-level relation is the next justified use of the H/V clue.
 
 Bounded test:
-- reuse Stage-12 measurements only; do not invent new visual features after seeing results;
-- exclude projection-periodicity metrics because they are directly entangled with H/V texture orientation;
-- normalize component counts by crop area;
-- test small-component density, mid-component density, threshold stability and perimeter occupancy;
-- enumerate all 495 possible placements of four V labels among 12 buildings for exact permutation p-values;
-- compute both per-feature tests and one multivariate within-class clustering statistic;
-- Bonferroni-correct the per-feature family.
+- use buildings **3–12 only**; buildings 1–2 are excluded before analysis because the known large-sailboat bbox overlaps their below-skyline region;
+- fixed reflection band: **y=330..360**, ending before the small-sails band begins at y=360;
+- use inner 10% of each building x-span to reduce cross-building contamination;
+- measure reflection orientation continuously with two independent methods: Sobel gradient anisotropy and Fourier anisotropy;
+- test whether V buildings have more vertical-oriented reflection signal than H buildings using exact enumeration of all **210** four-V assignments among 10 eligible buildings;
+- Bonferroni-correct the two methods;
+- repeat the fixed test after JPEG85 + resize roundtrip and require the sign/order of the association to reproduce.
 
-A strong, multi-feature association would promote H/V as a selector that should guide object-level decoding. A null result would keep H/V as a real visual pattern but downgrade the idea that it organizes secondary-detail content.
+A positive result would promote H/V as a scene-level relation. A negative result would keep H/V as a standalone clue but retire the straightforward building-to-reflection coupling hypothesis.
 
 ## Status
 
-- Stages 1–33: completed.
-- Stage 33: COMPLETED + ADAPTIVELY REVIEWED — NEGATIVE.
-- Uniform bit/hex width partitions: RETIRED.
+- Stages 1–34: completed.
+- Stage 34: COMPLETED + ADAPTIVELY REVIEWED — NEGATIVE.
+- H/V-as-detail-selector: DOWNGRADED.
 - Adaptive controller: manual while user is active.
-- Next stage: 34.
+- Next stage: 35.
