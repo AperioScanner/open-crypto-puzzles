@@ -1,0 +1,213 @@
+{
+  "experiment_id": "A11-EXP-033",
+  "scope": "known public 40-hex-digit address vs coarse visible 40px cells; no private-key operations",
+  "address_hex": "ff2142e98e09b5344994f9beb9c56c95506b9f17",
+  "image_width": 1600,
+  "hex_digits": 40,
+  "cell_width_px": 40,
+  "bands": {
+    "full": [
+      0,
+      1105
+    ],
+    "upper_skyline": [
+      0,
+      320
+    ],
+    "boats_mid": [
+      320,
+      620
+    ],
+    "lower_water": [
+      620,
+      1105
+    ]
+  },
+  "features": [
+    "mean_darkness",
+    "ink250",
+    "ink220",
+    "ink180",
+    "vertical_change",
+    "horizontal_change"
+  ],
+  "quantizers": [
+    "minmax16",
+    "rank16"
+  ],
+  "candidate_sequences": 96,
+  "evaluated_with_directions": 192,
+  "null_permutations": 10000,
+  "best_original": {
+    "band": "full",
+    "feature": "ink220",
+    "quantizer": "minmax16",
+    "polarity": "inverted",
+    "direction": "left_to_right",
+    "exact_digit_matches": 9,
+    "digit_mismatches": 31,
+    "nibble_bit_hamming": 67,
+    "sequence_hex": "fca852021379acdcb9aeffedb9676777676788ab",
+    "transformed_exact_digit_matches": 9,
+    "transformed_nibble_bit_hamming": 66,
+    "self_stable_digits": 38
+  },
+  "familywise_empirical_p": {
+    "exact_digit_matches_upper": 0.0851914808519148,
+    "nibble_bit_hamming_lower": 0.9583041695830417
+  },
+  "null_summary": {
+    "best_exact_median": 7.0,
+    "best_exact_p99": 10.0,
+    "best_exact_max": 13,
+    "best_bith_median": 64.0,
+    "best_bith_p01": 55.0,
+    "best_bith_min": 51
+  },
+  "lossy_target_replication_ok": true,
+  "same_family_self_stable": true,
+  "promotion_rule": "p_exact<0.01 AND p_bit_hamming<0.01 AND transformed target matches within 2 digits of original AND >=34/40 extracted digits remain identical after JPEG85+resampling",
+  "promoted": false,
+  "top10": [
+    {
+      "band": "full",
+      "feature": "ink220",
+      "quantizer": "minmax16",
+      "polarity": "inverted",
+      "direction": "left_to_right",
+      "exact_digit_matches": 9,
+      "digit_mismatches": 31,
+      "nibble_bit_hamming": 67,
+      "sequence_hex": "fca852021379acdcb9aeffedb9676777676788ab",
+      "transformed_exact_digit_matches": 9,
+      "transformed_nibble_bit_hamming": 66,
+      "self_stable_digits": 38
+    },
+    {
+      "band": "boats_mid",
+      "feature": "ink250",
+      "quantizer": "rank16",
+      "polarity": "inverted",
+      "direction": "right_to_left",
+      "exact_digit_matches": 8,
+      "digit_mismatches": 32,
+      "nibble_bit_hamming": 57,
+      "sequence_hex": "7711523336527468ed9aedabb99cdc841005bfff",
+      "transformed_exact_digit_matches": 5,
+      "transformed_nibble_bit_hamming": 67,
+      "self_stable_digits": 31
+    },
+    {
+      "band": "boats_mid",
+      "feature": "mean_darkness",
+      "quantizer": "rank16",
+      "polarity": "inverted",
+      "direction": "right_to_left",
+      "exact_digit_matches": 8,
+      "digit_mismatches": 32,
+      "nibble_bit_hamming": 63,
+      "sequence_hex": "8723613216537458ed9aedbbb99cdc740015afff",
+      "transformed_exact_digit_matches": 6,
+      "transformed_nibble_bit_hamming": 65,
+      "self_stable_digits": 36
+    },
+    {
+      "band": "boats_mid",
+      "feature": "ink220",
+      "quantizer": "rank16",
+      "polarity": "inverted",
+      "direction": "right_to_left",
+      "exact_digit_matches": 7,
+      "digit_mismatches": 33,
+      "nibble_bit_hamming": 59,
+      "sequence_hex": "7712513326537468ed9aedbbba9cdc8410059fff",
+      "transformed_exact_digit_matches": 6,
+      "transformed_nibble_bit_hamming": 61,
+      "self_stable_digits": 36
+    },
+    {
+      "band": "full",
+      "feature": "ink180",
+      "quantizer": "minmax16",
+      "polarity": "inverted",
+      "direction": "left_to_right",
+      "exact_digit_matches": 7,
+      "digit_mismatches": 33,
+      "nibble_bit_hamming": 59,
+      "sequence_hex": "fca853022389adddcaaeffedb9776887687899bc",
+      "transformed_exact_digit_matches": 8,
+      "transformed_nibble_bit_hamming": 58,
+      "self_stable_digits": 37
+    },
+    {
+      "band": "boats_mid",
+      "feature": "ink180",
+      "quantizer": "rank16",
+      "polarity": "inverted",
+      "direction": "right_to_left",
+      "exact_digit_matches": 7,
+      "digit_mismatches": 33,
+      "nibble_bit_hamming": 63,
+      "sequence_hex": "8712513326637458ed9aedbbb99cdc741005afff",
+      "transformed_exact_digit_matches": 7,
+      "transformed_nibble_bit_hamming": 63,
+      "self_stable_digits": 40
+    },
+    {
+      "band": "lower_water",
+      "feature": "mean_darkness",
+      "quantizer": "rank16",
+      "polarity": "inverted",
+      "direction": "left_to_right",
+      "exact_digit_matches": 7,
+      "digit_mismatches": 33,
+      "nibble_bit_hamming": 67,
+      "sequence_hex": "a432010112334dec99cefffbbb55667757889add",
+      "transformed_exact_digit_matches": 5,
+      "transformed_nibble_bit_hamming": 71,
+      "self_stable_digits": 34
+    },
+    {
+      "band": "full",
+      "feature": "ink250",
+      "quantizer": "minmax16",
+      "polarity": "inverted",
+      "direction": "left_to_right",
+      "exact_digit_matches": 7,
+      "digit_mismatches": 33,
+      "nibble_bit_hamming": 71,
+      "sequence_hex": "fca752022379acccb9aeffedb95657776757779b",
+      "transformed_exact_digit_matches": 6,
+      "transformed_nibble_bit_hamming": 71,
+      "self_stable_digits": 25
+    },
+    {
+      "band": "boats_mid",
+      "feature": "ink250",
+      "quantizer": "minmax16",
+      "polarity": "inverted",
+      "direction": "right_to_left",
+      "exact_digit_matches": 6,
+      "digit_mismatches": 34,
+      "nibble_bit_hamming": 67,
+      "sequence_hex": "b81262343763857cffccffcdecceeeb61016dfff",
+      "transformed_exact_digit_matches": 8,
+      "transformed_nibble_bit_hamming": 67,
+      "self_stable_digits": 23
+    },
+    {
+      "band": "full",
+      "feature": "horizontal_change",
+      "quantizer": "minmax16",
+      "polarity": "inverted",
+      "direction": "left_to_right",
+      "exact_digit_matches": 6,
+      "digit_mismatches": 34,
+      "nibble_bit_hamming": 68,
+      "sequence_hex": "fca76320128acdcca79effecba776656564577ac",
+      "transformed_exact_digit_matches": 5,
+      "transformed_nibble_bit_hamming": 72,
+      "self_stable_digits": 37
+    }
+  ]
+}
