@@ -1,37 +1,36 @@
 # Open leads, ranked
 
-## 1. Format-invariant scene / object semantics (highest priority)
+## 1. Hidden visual text / secondary pattern in the large sailboat (active, highest priority)
 
-Stage 31 strongly favors visible scene structure over exact pixels. Stages 32–33 rejected equal-width address tilings, and Stage 34 rejected the idea that H/V simply labels a second channel of counted details inside buildings.
+After Stage 35, repeated attempts to use H/V as a selector or scene relation have failed. The early HomelessPhD PZL11 dossier contains a separate long-standing observation: the large sailboat's dense shading may conceal plain text or another readable pattern, but the original exploration was manual and inconclusive.
 
-The next priority is explicit scene relationships a human sees directly.
+Stage 36 turns that idea into a reproducible visual-reveal audit using fixed transform families and matched scene controls.
 
-## 2. Skyline ↔ water reflection / mirroring (active)
+## 2. Format-invariant visual / semantic carrier (active)
 
-The image is organized around buildings above water and reflection strokes below them. Reflection is format-invariant and fits the author's semantic/contextual puzzle grammar.
+The parent context of “format does not matter” is confirmed: a solver asked “What's the photo format. It's not JPG!?” The author replied that format does not matter. Stage 31 also showed that conspicuous visual structure survives lossy transformations while exact low bits do not.
 
-Stage 35 tests whether the robust H/V building labels couple to the orientation of their directly underlying reflection strokes using two independent continuous orientation measures and exact permutation tests.
+## 3. General scene/object semantics (active)
 
-## 3. Robust H/V skyline texture (active, interpretation unresolved)
+The solved-puzzle grammar favors human-readable secondary details, rebuses, counting and contextual interpretation. Continue to prefer visible structures over arbitrary byte transforms.
 
-`HHVVHHVHHHHV` remains real, reproducible and format-stable. Stage 22 retired the post-hoc `0x321` reading; Stage 34 now also weakens the idea that H/V selects counted secondary details. H/V may still be a scene-level instruction or semantic distinction.
+## 4. H/V skyline texture (secondary, interpretation unresolved)
 
-## 4. Solved-puzzle visual/semantic grammar (active)
+`HHVVHHVHHHHV` is genuine and format-stable, but:
+- `0x321` was retired as post-hoc;
+- it does not organize Stage-12 detail counts;
+- it does not couple significantly to directly underlying reflection orientation.
 
-Favor rebuses, secondary details, counting, ordering, selection, scene context and other human-readable mechanisms over arbitrary transforms.
+Pause further H/V-derived experiments until an independent clue points back to it.
 
-## 5. Known public escrow address as positive probe (active but constrained)
+## 5. Known public address as positive probe (active but constrained)
 
-The author said the address is present somewhere in the image. Stage 32 and Stage 33 ruled out the two simplest equal-width bit/hex mappings. Do not continue arbitrary canvas partitioning.
+The public address is known to be included somewhere in the image/file. Equal-width 160-bit and 40-hex-digit mappings were both negative. Do not continue arbitrary canvas tilings.
 
-## 6. Generic traversal / exact low bits (strongly downgraded)
+## 6. Classic pixel stego (downgraded / substantially covered)
 
-Stages 28–30 explained the apparent traversal anomaly as ordinary foreground/background structure, and Stage 31 showed exact low bits are fragile under format conversion.
+The branch already contains broad LSB/ASCII/compressed-stream tests, first-row tests, alpha inspection and statistical diagnostics. Do not duplicate those scopes.
 
-## 7. Alpha channel (exhausted / low priority)
+## 7. External archival evidence / Puzzle #9 solve method (standing)
 
-The 434 non-opaque pixels remain localized to the large-sailboat anti-aliasing halo and fit a compositing explanation.
-
-## 8. External archival evidence / Puzzle #9 solve method (standing)
-
-Early Telegram/Discord/Weavemail material, deleted replies, screenshots, quoted replies, or a first-hand Puzzle #9 solve account remain potentially valuable.
+Still potentially high-value if new first-hand material appears.
