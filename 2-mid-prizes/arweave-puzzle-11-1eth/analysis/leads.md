@@ -1,36 +1,38 @@
 # Open leads, ranked
 
-## 1. Hidden visual text / secondary pattern in the large sailboat (active, highest priority)
+## 1. Three nominal superbatch survivors — under confirmatory replication
 
-After Stage 35, repeated attempts to use H/V as a selector or scene relation have failed. The early HomelessPhD PZL11 dossier contains a separate long-standing observation: the large sailboat's dense shading may conceal plain text or another readable pattern, but the original exploration was manual and inconclusive.
+Aggregate Stage 87 found **no FDR-promoted hypothesis**. Only three tests had nominal p<=0.05:
 
-Stage 36 turns that idea into a reproducible visual-reveal audit using fixed transform families and matched scene controls.
+- A11-EXP-050: rightmost grayscale reflection correlation
+- A11-EXP-043: large-boat vertical projection peak
+- A11-EXP-061: small-sail width vs following-gap correlation
 
-## 2. Format-invariant visual / semantic carrier (active)
+All have q≈0.425, so none is treated as evidence by itself.
 
-The parent context of “format does not matter” is confirmed: a solver asked “What's the photo format. It's not JPG!?” The author replied that format does not matter. Stage 31 also showed that conspicuous visual structure survives lossy transformations while exact low bits do not.
+Stage 88 is an adversarial replication stage. It uses stricter, independent controls for each and Holm-corrects the three primary confirmation p-values.
 
-## 3. General scene/object semantics (active)
+## 2. Format-invariant visual / semantic mechanisms
 
-The solved-puzzle grammar favors human-readable secondary details, rebuses, counting and contextual interpretation. Continue to prefer visible structures over arbitrary byte transforms.
+Stage 31 remains the strongest route-selection result: visible structure can survive ordinary JPEG/resampling while exact low bits collapse near chance. Continue to favor human-visible mechanisms when a specific lead survives proper controls.
 
-## 4. H/V skyline texture (secondary, interpretation unresolved)
+## 3. Public-address known-answer probe
 
-`HHVVHHVHHHHV` is genuine and format-stable, but:
-- `0x321` was retired as post-hoc;
-- it does not organize Stage-12 detail counts;
-- it does not couple significantly to directly underlying reflection orientation.
+The author said the public address is included somewhere in the image/file. Equal-width 160-bit and 40-hex mappings were both rejected. Keep the public value as a known-answer probe, but do not revive arbitrary equal-cell tilings.
 
-Pause further H/V-derived experiments until an independent clue points back to it.
+## 4. H/V skyline texture — secondary
 
-## 5. Known public address as positive probe (active but constrained)
+The H/V sequence is reproducible and format-stable, but:
+- the post-hoc 0x321 reading was retired;
+- detail-selector association failed;
+- reflection-orientation coupling failed.
 
-The public address is known to be included somewhere in the image/file. Equal-width 160-bit and 40-hex-digit mappings were both negative. Do not continue arbitrary canvas tilings.
+Do not spend more stages on H/V without an independent clue.
 
-## 6. Classic pixel stego (downgraded / substantially covered)
+## 5. Classic pixel/traversal steganography — strongly downgraded
 
-The branch already contains broad LSB/ASCII/compressed-stream tests, first-row tests, alpha inspection and statistical diagnostics. Do not duplicate those scopes.
+Broad LSB, ASCII/compressed streams, alpha, traversal and low-bit statistical families have already been extensively tested or explained by ordinary image structure.
 
-## 7. External archival evidence / Puzzle #9 solve method (standing)
+## 6. External archival evidence / sibling solve methods
 
-Still potentially high-value if new first-hand material appears.
+Still potentially high-value if new first-hand material can be recovered.
