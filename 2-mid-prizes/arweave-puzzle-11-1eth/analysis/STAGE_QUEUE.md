@@ -2,61 +2,64 @@
 
 Last updated: 2026-10-05
 
-## Control loop
+## Review through Stage 88
 
-1. GitHub Actions executes a bounded experiment.
-2. The stage commits non-secret `REPORT.md` + `result.json`.
-3. ChatGPT reads the actual result before choosing the next adaptive experiment.
-4. Failed implementations are fixed under the same stage number.
-5. No private-key generation, derivation, reconstruction, enumeration, verification, or wallet access.
+Superbatch 37–86 produced three nominal p<=0.05 results, but none survived FDR. Stage 88 subjected exactly those three to stronger independent replication.
 
-## Review through aggregate Stage 87
+### Stage 88 result — all three retired
 
-The approved superbatch A11-EXP-037..086 completed successfully, followed by aggregate A11-EXP-087.
+- **A11-EXP-043 large-boat vertical projection**
+  - nuisance-matched p = 0.0717
+  - lossy nuisance-matched p = 0.0518
+  - Holm p = 0.2151
+  - not confirmed
 
-Aggregate result:
-- 50 subexperiments
-- 42 FDR-tested hypotheses
-- **0 PROMOTED**
-- **3 INTERESTING**
-- **39 NULL**
-- 7 control passes, 1 control failure, 0 errors
+- **A11-EXP-050 rightmost reflection**
+  - high-pass p = 0.6211
+  - edge p = 0.3222
+  - one fixed half replicates weakly, the other does not
+  - Holm p = 1.0
+  - not confirmed
 
-Nominal survivors:
-1. **A11-EXP-050** — rightmost grayscale reflection correlation, p=0.031056, q=0.425414
-2. **A11-EXP-043** — large-boat vertical projection peak, p=0.033149, q=0.425414
-3. **A11-EXP-061** — small-sail width vs following-gap correlation, p=0.039980, q=0.425414
+- **A11-EXP-061 small-sail width/gap correlation**
+  - independent Stage-19 method p-values = 0.5333 and 0.5667
+  - only 3/5 Stage-61 components align with Stage-19 stable centers
+  - Holm p = 1.0
+  - not confirmed
 
-None survives FDR. They are therefore leads for falsification/replication, not discoveries.
+**Decision:** retire all three nominal superbatch hits. Do not continue localizing them.
 
-## Adaptive decision — Stage 88
+## New independent clue family
 
-**A11-EXP-088: adversarial replication of exactly the three nominal survivors.**
+A public Puzzling StackExchange thread from 2020–2021 contains a reverse-image-search lead that has not been audited in this branch:
 
-The purpose is to determine whether any of the three persists under an independent, stricter control rather than continuing directly from a nominal p-value.
+- a commenter reported that the puzzle image appeared in an OpenSea collection named **cryptocanvas.xyz - CANVAS**;
+- current OpenSea indexing shows the collection contract `0x0b0b70905137786cf705102c194a1b4916d8c4d0`, five items, dated **Jul 2020**;
+- token #5 is owned by `0xfdae2f991a521f54bbef89048922dff9bac2d96b`;
+- the collection postdates Puzzle #11 (April 2020), so it may be a derivative mirror rather than a source—but its on-chain metadata/provenance could still preserve descriptions or source material no longer indexed elsewhere.
 
-### EXP-043 confirmation
-Re-test the large-sail vertical-projection statistic against **same-size nuisance-matched windows**, matched only on mean darkness, ink fraction and edge density. Use the same matched controls after JPEG85+resampling.
+This is genuinely independent of the exhausted visual-statistical families.
 
-### EXP-050 confirmation
-The original grayscale reflection effect may be driven by broad tonal layout. Require replication after:
-- high-pass removal of low-frequency tone;
-- edge-only representation;
-- two fixed 200px spatial halves;
-- JPEG85+resampling.
+## Next stage
 
-### EXP-061 confirmation
-Do not reuse the superbatch detector. Recompute width/following-gap correlation from both independent Stage-19 segmentation families and enumerate all 5! width permutations exactly.
+**Stage 89 — CryptoCanvas provenance and metadata audit.**
 
-### Multiple-testing rule
-The three primary confirmatory p-values are Holm-adjusted. A lead survives only if:
-- its family-specific replication gate passes; and
-- Holm-adjusted p <= 0.05.
+Goals:
+1. Query the public ERC-721 contract for `tokenURI(1..5)` and `ownerOf(1..5)` using public Ethereum RPC.
+2. Fetch any public token metadata and media URIs without credentials.
+3. Identify the first Transfer/mint log for each token and record block timestamp, recipient and transaction sender where available.
+4. Compare token #5 media against the canonical puzzle image using hashes, dimensions and image-level similarity.
+5. Determine whether the collection is:
+   - an exact post-publication mirror;
+   - a modified derivative carrying additional visual/metadata information;
+   - or unrelated/misidentified.
+6. Record descriptions/names/attributes that could constitute an independent clue, without treating later third-party text as author evidence unless provenance links it to Tiamat.
+
+No secret/key extraction is performed.
 
 ## Status
 
-- Stages 1–36: completed.
-- Superbatch 37–86: completed.
-- Aggregate 87: completed + reviewed.
-- Stage 88: launched.
+- Stages 1–88: completed.
+- Stage 88: reviewed — 0 confirmed survivors.
+- Stage 89: selected for launch.
 - Hourly controller: enabled.
