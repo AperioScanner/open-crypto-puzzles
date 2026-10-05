@@ -1,38 +1,33 @@
 # Open leads, ranked
 
-## 1. Three nominal superbatch survivors — under confirmatory replication
+## 1. CryptoCanvas reverse-image provenance lead (active)
 
-Aggregate Stage 87 found **no FDR-promoted hypothesis**. Only three tests had nominal p<=0.05:
+A 2021 Puzzling StackExchange comment reports that reverse-image search found the Puzzle #11 image in the five-item OpenSea collection **cryptocanvas.xyz - CANVAS**.
 
-- A11-EXP-050: rightmost grayscale reflection correlation
-- A11-EXP-043: large-boat vertical projection peak
-- A11-EXP-061: small-sail width vs following-gap correlation
+Current OpenSea indexing identifies:
+- collection contract `0x0b0b70905137786cf705102c194a1b4916d8c4d0`
+- collection date: Jul 2020
+- token #5 as the reported puzzle-image item
+- token #5 current owner: `0xfdae2f991a521f54bbef89048922dff9bac2d96b`
 
-All have q≈0.425, so none is treated as evidence by itself.
+Because Puzzle #11 was published in April 2020, this cannot automatically be treated as the source. Stage 89 audits on-chain mint provenance, token metadata and media similarity to determine whether it is merely a later mirror or preserves useful independent evidence.
 
-Stage 88 is an adversarial replication stage. It uses stricter, independent controls for each and Holm-corrects the three primary confirmation p-values.
+## 2. Format-invariant visible/semantic mechanisms
 
-## 2. Format-invariant visual / semantic mechanisms
-
-Stage 31 remains the strongest route-selection result: visible structure can survive ordinary JPEG/resampling while exact low bits collapse near chance. Continue to favor human-visible mechanisms when a specific lead survives proper controls.
+Still the best broad prior. Stage 31 showed visible structure survives JPEG/resampling while exact low bits collapse near chance.
 
 ## 3. Public-address known-answer probe
 
-The author said the public address is included somewhere in the image/file. Equal-width 160-bit and 40-hex mappings were both rejected. Keep the public value as a known-answer probe, but do not revive arbitrary equal-cell tilings.
+The public address is known to be present somewhere in the image/file, but equal-width bit and hex tilings were rejected.
 
 ## 4. H/V skyline texture — secondary
 
-The H/V sequence is reproducible and format-stable, but:
-- the post-hoc 0x321 reading was retired;
-- detail-selector association failed;
-- reflection-orientation coupling failed.
+Real and robust, but every attempted interpretation/association so far has failed independent confirmation.
 
-Do not spend more stages on H/V without an independent clue.
+## 5. Superbatch nominal hits — retired
 
-## 5. Classic pixel/traversal steganography — strongly downgraded
+Stage 88 independently rejected A11-EXP-043, A11-EXP-050 and A11-EXP-061. Do not revive them without new external evidence.
 
-Broad LSB, ASCII/compressed streams, alpha, traversal and low-bit statistical families have already been extensively tested or explained by ordinary image structure.
+## 6. External archival evidence / sibling puzzle methods
 
-## 6. External archival evidence / sibling solve methods
-
-Still potentially high-value if new first-hand material can be recovered.
+Still high-value. The CryptoCanvas lead is currently the strongest concrete archival branch.
