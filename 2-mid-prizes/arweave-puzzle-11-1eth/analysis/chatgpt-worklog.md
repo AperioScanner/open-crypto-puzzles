@@ -116,3 +116,16 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - The large-sailboat hidden-text hypothesis is therefore downgraded rather than extended serially.
 - The hourly controller has been re-enabled.
 - Per user request, the next phase is a one-shot **50-experiment superbatch (A11-EXP-037 through A11-EXP-086)** plus aggregate **A11-EXP-087**. The batch is restricted to safe visual/semantic/steganalysis diagnostics and uses multiple-testing correction in the aggregate report.
+
+
+## 2026-10-05 — adaptive review of Superbatch 37–87
+
+- The 50-experiment superbatch completed successfully with no implementation errors.
+- Aggregate A11-EXP-087: 0 PROMOTED, 3 INTERESTING, 39 NULL, 7 CONTROL_PASS, 1 CONTROL_FAIL.
+- The three nominal survivors were A11-EXP-050 (reflection, p=0.03106), A11-EXP-043 (large-boat vertical projection, p=0.03315), and A11-EXP-061 (small-sail width/following-gap, p=0.03998). All had BH q≈0.425, so none survived multiple-testing correction.
+- Adaptive conclusion: do not branch into three new interpretation trees. First falsify/replicate exactly these three under stronger independent controls.
+- Stage 88 was designed accordingly:
+  - 043: nuisance-matched same-size window null, with lossy replication;
+  - 050: high-pass + edge representations, fixed spatial halves, and lossy replication;
+  - 061: both independent Stage-19 segmentation families with exact 5! permutation tests.
+- The three primary confirmation p-values are Holm-adjusted; a lead survives only with both a family-specific replication gate and adjusted p<=0.05.
