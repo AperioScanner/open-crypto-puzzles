@@ -107,3 +107,12 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Re-read the early HomelessPhD PZL11 dossier. It confirms the parent question behind “format does not matter” was “What's the photo format. It's not JPG!?”, so the file-format context is real.
 - The same dossier records an old unresolved hypothesis that the **large sailboat may hide plain text or another readable pattern inside its dense shading**; the prior work used manual histogram/filter experiments but did not establish a reproducible result.
 - Adaptive decision: Stage 36 performs a bounded, reproducible multiscale visual-reveal audit of the large sailboat against matched scene controls, with no OCR and no private-key candidate construction.
+
+
+## 2026-10-05 — Stage 36 review and orchestration correction
+
+- Stage 36 had already completed successfully on 2026-10-04, but the ChatGPT research automation was disabled and therefore did not perform its hourly review.
+- Stage 36 result is negative: 0/19 target rank-1 transforms on the original image and 0 transforms that remained rank-1 before/after lossy conversion.
+- The large-sailboat hidden-text hypothesis is therefore downgraded rather than extended serially.
+- The hourly controller has been re-enabled.
+- Per user request, the next phase is a one-shot **50-experiment superbatch (A11-EXP-037 through A11-EXP-086)** plus aggregate **A11-EXP-087**. The batch is restricted to safe visual/semantic/steganalysis diagnostics and uses multiple-testing correction in the aggregate report.
