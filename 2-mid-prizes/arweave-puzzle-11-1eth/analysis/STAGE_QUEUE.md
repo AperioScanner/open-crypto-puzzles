@@ -1,44 +1,62 @@
-# Arweave Puzzle #11 — adaptive controller + approved superbatch
+# Arweave Puzzle #11 — adaptive controller
 
 Last updated: 2026-10-05
 
-## Stage 36 review
+## Control loop
 
-Stage 36 completed successfully on 2026-10-04. The large-sailboat visual-text hypothesis was **not promoted**:
+1. GitHub Actions executes a bounded experiment.
+2. The stage commits non-secret `REPORT.md` + `result.json`.
+3. ChatGPT reads the actual result before choosing the next adaptive experiment.
+4. Failed implementations are fixed under the same stage number.
+5. No private-key generation, derivation, reconstruction, enumeration, verification, or wallet access.
 
-- 19 fixed reveal transforms
-- target rank-1 on original image: **0**
-- target rank-1 after lossy conversion: **3**
-- rank-1 transforms replicated original→lossy: **0**
-- manual-review priority rule: **False**
+## Review through aggregate Stage 87
 
-**Decision:** do not spend another serial stage on the large-sailboat text idea. Treat it as a negative result.
+The approved superbatch A11-EXP-037..086 completed successfully, followed by aggregate A11-EXP-087.
 
-## Orchestration correction
+Aggregate result:
+- 50 subexperiments
+- 42 FDR-tested hypotheses
+- **0 PROMOTED**
+- **3 INTERESTING**
+- **39 NULL**
+- 7 control passes, 1 control failure, 0 errors
 
-The hourly ChatGPT controller is enabled again. It had been disabled during manual steering and therefore did not review Stage 36 automatically. The approved next action is the user's requested large independent battery.
+Nominal survivors:
+1. **A11-EXP-050** — rightmost grayscale reflection correlation, p=0.031056, q=0.425414
+2. **A11-EXP-043** — large-boat vertical projection peak, p=0.033149, q=0.425414
+3. **A11-EXP-061** — small-sail width vs following-gap correlation, p=0.039980, q=0.425414
 
-## Superbatch 37–86
+None survives FDR. They are therefore leads for falsification/replication, not discoveries.
 
-Run **50 bounded, non-secret experiments** in one GitHub Actions job, followed by aggregate experiment **87**.
+## Adaptive decision — Stage 88
 
-The batch intentionally contains independent or semi-independent diagnostics that can all be selected from evidence available through Stage 36; none depends on the result of another subexperiment.
+**A11-EXP-088: adversarial replication of exactly the three nominal survivors.**
 
-Families:
+The purpose is to determine whether any of the three persists under an independent, stricter control rather than continuing directly from a nominal p-value.
 
-- **37–46:** large-sailboat structural uniqueness vs matched windows
-- **47–54:** skyline ↔ water scene/reflection structure
-- **55–62:** small-sail arrangement geometry
-- **63–70:** ordered building-geometry structure
-- **71–78:** semantic-region visual/glyph structure
-- **79–86:** lossy-format robustness/negative controls
-- **87:** aggregate ranking with Benjamini–Hochberg FDR, family labels, and promotion/interested/null classifications
+### EXP-043 confirmation
+Re-test the large-sail vertical-projection statistic against **same-size nuisance-matched windows**, matched only on mean darkness, ink fraction and edge density. Use the same matched controls after JPEG85+resampling.
 
-No subexperiment may generate, derive, enumerate, reconstruct, or verify candidate private keys or attempt wallet access.
+### EXP-050 confirmation
+The original grayscale reflection effect may be driven by broad tonal layout. Require replication after:
+- high-pass removal of low-frequency tone;
+- edge-only representation;
+- two fixed 200px spatial halves;
+- JPEG85+resampling.
+
+### EXP-061 confirmation
+Do not reuse the superbatch detector. Recompute width/following-gap correlation from both independent Stage-19 segmentation families and enumerate all 5! width permutations exactly.
+
+### Multiple-testing rule
+The three primary confirmatory p-values are Holm-adjusted. A lead survives only if:
+- its family-specific replication gate passes; and
+- Holm-adjusted p <= 0.05.
 
 ## Status
 
 - Stages 1–36: completed.
-- Stage 36: COMPLETED + REVIEWED — NEGATIVE.
-- Superbatch 37–86: APPROVED / being launched.
-- Aggregate 87: follows automatically inside the same workflow.
+- Superbatch 37–86: completed.
+- Aggregate 87: completed + reviewed.
+- Stage 88: launched.
+- Hourly controller: enabled.
