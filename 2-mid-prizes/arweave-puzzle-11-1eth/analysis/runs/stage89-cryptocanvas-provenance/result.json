@@ -1,0 +1,323 @@
+{
+  "experiment_id": "A11-EXP-089",
+  "scope": "public on-chain and web provenance audit of the CryptoCanvas reverse-image lead; no private-key operations",
+  "contract": "0x0b0b70905137786cf705102c194a1b4916d8c4d0",
+  "sources": {
+    "opensea_collection": "https://opensea.io/collection/cryptocanvas-xyz",
+    "opensea_item5": "https://opensea.io/item/ethereum/0x0b0b70905137786cf705102c194a1b4916d8c4d0/5",
+    "stackexchange": "https://puzzling.stackexchange.com/questions/97537/image-steganography-hidden-message-inside-image-png-8-bit-grayalpha?noredirect=1"
+  },
+  "web_html": {
+    "collection": {
+      "url": "https://opensea.io/collection/cryptocanvas-xyz",
+      "status": 200,
+      "bytes": 1328896,
+      "sha256": "0fbacc3b7d5ef1e60ae2b803232344e66d2fe59c9c51dcbe0e473c283bf85f55",
+      "mentions_jul_2020": true,
+      "mentions_five_items": true
+    },
+    "item5": {
+      "url": "https://opensea.io/item/ethereum/0x0b0b70905137786cf705102c194a1b4916d8c4d0/5",
+      "status": 200,
+      "bytes": 981077,
+      "sha256": "53a48a683fb8ba1ef3b39bb75962d34db07d491df626a961d2a3534f6dba0f3d",
+      "media_urls": [
+        "https://i2c.seadn.io/base/6bd5d216f07f43cd94d6ff950031ea59/30a68a8743e550c12234c338ead498/b030a68a8743e550c12234c338ead498.png\\",
+        "https://i2c.seadn.io/base/67463b924644eb5efe997301/51b2bbfcd99a935414c637d4b4e3f3/7951b2bbfcd99a935414c637d4b4e3f3.png\\",
+        "https://i2c.seadn.io/base/241063664a3649668d2f575c7e702895/66204c8408133a78acc12126c1c758/6e66204c8408133a78acc12126c1c758.webp\\",
+        "https://i2c.seadn.io/base/622a8f44d03c4a45a7ccafcb1e3d0889/f6c24655270f0b7cf2513a9dbdcafb/43f6c24655270f0b7cf2513a9dbdcafb.png\\",
+        "https://i2c.seadn.io/base/3129509e94aa49a6b2ecfebcd6557db5/7bf98f56fd3fa099858a296959daf1/6f7bf98f56fd3fa099858a296959daf1.jpeg\\",
+        "https://i2c.seadn.io/base/2fd583305fa546ecbc980ec7f3cba4bb/79494a1f58c8738b7de231a5025c09/1b79494a1f58c8738b7de231a5025c09.png\\",
+        "https://i2c.seadn.io/base/69619011948a49a5a317e1b83c37de34/227a7b7d71b061aea6fd3cca2e33e8/23227a7b7d71b061aea6fd3cca2e33e8.jpeg\\",
+        "https://i2c.seadn.io/base/aab9893c55c34593a694ea3027f874c0/5fcf18e465e61a68bcae360229deb7/af5fcf18e465e61a68bcae360229deb7.jpeg\\",
+        "https://i2c.seadn.io/base/0xb20000000000000000000078ee7ce2fe4908108c/15b35d8677409c3a09cb4ca70df3b0/ed15b35d8677409c3a09cb4ca70df3b0.jpeg\\",
+        "https://i2c.seadn.io/base/0xb2000000000000000000008bc8786b856e61707c/06bd9fffef7b7f819f4259f314e2ee/eb06bd9fffef7b7f819f4259f314e2ee.jpeg\\"
+      ],
+      "addresses": [
+        "0x0b0b70905137786cf705102c194a1b4916d8c4d0",
+        "0x0000000000000000000000000000000000000000",
+        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+        "0xb8c77482e45f1f44de1745f52c74426c631bdd52",
+        "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "0x1abaea1f7c830bd89acc67ec4af516284b1bc33c",
+        "0xd1d2eb1b1e90b638588728b4130137d262c87cae",
+        "0x6b175474e89094c44da98b954eedeac495271d0f",
+        "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+        "0x4d224452801aced8b2f0aebe155379bb5d594381",
+        "0x0f5d2fb29fb7d3cfee444a200298f468908cc942",
+        "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0",
+        "0x0000000000a39bb272e79075ade125fd351887ac",
+        "0xdac17f958d2ee523a2206206994597c13d831ec7",
+        "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+        "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+        "0x45804880de22913dafe09f4980848ece6ecbaf78",
+        "0xb23d80f5fefcddaa212212f028021b41ded428cf",
+        "0x3845badade8e6dff049820680d1f14bd3903a5d0"
+      ]
+    },
+    "stackexchange": {
+      "url": "https://puzzling.stackexchange.com/questions/97537/image-steganography-hidden-message-inside-image-png-8-bit-grayalpha?noredirect=1",
+      "error": "HTTPError('403 Client Error: Forbidden for url: https://puzzling.stackexchange.com/questions/97537/image-steganography-hidden-message-inside-image-png-8-bit-grayalpha?noredirect=1')"
+    }
+  },
+  "tokens": {
+    "1": {
+      "token_id": 1,
+      "token_uri": "https://cryptocanvas.xyz/api/token/1",
+      "token_uri_rpc": "https://ethereum-rpc.publicnode.com",
+      "metadata_fetch": {
+        "errors": [
+          {
+            "url": "https://cryptocanvas.xyz/api/token/1",
+            "error": "HTTPError('404 Client Error: Not Found for url: https://cryptocanvas.xyz/api/token/1')"
+          }
+        ]
+      },
+      "metadata": null,
+      "current_owner": "0xdd10bb7829ba5ccd690e51b958bfadc207b83285",
+      "owner_rpc": "https://ethereum-rpc.publicnode.com",
+      "first_transfer_lookup": {
+        "errors": [
+          {
+            "range": [
+              10000000,
+              11000000
+            ],
+            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \\'RuntimeError({\\\\\\'code\\\\\\': -32047, \\\\\\'message\\\\\\': \"Invalid eth_getLogs request. \\\\\\'fromBlock\\\\\\'-\\\\\\'toBlock\\\\\\' range too large. Max range: 800\"})\\'}]')"
+          },
+          {
+            "range": [
+              9000000,
+              10000000
+            ],
+            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \\'RuntimeError({\\\\\\'code\\\\\\': -32047, \\\\\\'message\\\\\\': \"Invalid eth_getLogs request. \\\\\\'fromBlock\\\\\\'-\\\\\\'toBlock\\\\\\' range too large. Max range: 800\"})\\'}]')"
+          },
+          {
+            "range": [
+              11000000,
+              12000000
+            ],
+            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \\'RuntimeError({\\\\\\'code\\\\\\': -32047, \\\\\\'message\\\\\\': \"Invalid eth_getLogs request. \\\\\\'fromBlock\\\\\\'-\\\\\\'toBlock\\\\\\' range too large. Max range: 800\"})\\'}]')"
+          }
+        ]
+      }
+    },
+    "2": {
+      "token_id": 2,
+      "token_uri": "https://cryptocanvas.xyz/api/token/2",
+      "token_uri_rpc": "https://ethereum-rpc.publicnode.com",
+      "metadata_fetch": {
+        "errors": [
+          {
+            "url": "https://cryptocanvas.xyz/api/token/2",
+            "error": "HTTPError('404 Client Error: Not Found for url: https://cryptocanvas.xyz/api/token/2')"
+          }
+        ]
+      },
+      "metadata": null,
+      "current_owner": "0x718ffdc2b4e813e7d200c6086b5425fd6a219cff",
+      "owner_rpc": "https://ethereum-rpc.publicnode.com",
+      "first_transfer_lookup": {
+        "errors": [
+          {
+            "range": [
+              10000000,
+              11000000
+            ],
+            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \\'RuntimeError({\\\\\\'code\\\\\\': -32047, \\\\\\'message\\\\\\': \"Invalid eth_getLogs request. \\\\\\'fromBlock\\\\\\'-\\\\\\'toBlock\\\\\\' range too large. Max range: 800\"})\\'}]')"
+          },
+          {
+            "range": [
+              9000000,
+              10000000
+            ],
+            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \\'RuntimeError({\\\\\\'code\\\\\\': -32047, \\\\\\'message\\\\\\': \"Invalid eth_getLogs request. \\\\\\'fromBlock\\\\\\'-\\\\\\'toBlock\\\\\\' range too large. Max range: 800\"})\\'}]')"
+          },
+          {
+            "range": [
+              11000000,
+              12000000
+            ],
+            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \\'RuntimeError({\\\\\\'code\\\\\\': -32047, \\\\\\'message\\\\\\': \"Invalid eth_getLogs request. \\\\\\'fromBlock\\\\\\'-\\\\\\'toBlock\\\\\\' range too large. Max range: 800\"})\\'}]')"
+          }
+        ]
+      }
+    },
+    "3": {
+      "token_id": 3,
+      "token_uri": "https://cryptocanvas.xyz/api/token/3",
+      "token_uri_rpc": "https://ethereum-rpc.publicnode.com",
+      "metadata_fetch": {
+        "errors": [
+          {
+            "url": "https://cryptocanvas.xyz/api/token/3",
+            "error": "HTTPError('404 Client Error: Not Found for url: https://cryptocanvas.xyz/api/token/3')"
+          }
+        ]
+      },
+      "metadata": null,
+      "current_owner": "0xd8424ee7cc2520f7dae828f84f99f53ac0dd6734",
+      "owner_rpc": "https://ethereum-rpc.publicnode.com",
+      "first_transfer_lookup": {
+        "errors": [
+          {
+            "range": [
+              10000000,
+              11000000
+            ],
+            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \\'RuntimeError({\\\\\\'code\\\\\\': -32047, \\\\\\'message\\\\\\': \"Invalid eth_getLogs request. \\\\\\'fromBlock\\\\\\'-\\\\\\'toBlock\\\\\\' range too large. Max range: 800\"})\\'}]')"
+          },
+          {
+            "range": [
+              9000000,
+              10000000
+            ],
+            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \\'RuntimeError({\\\\\\'code\\\\\\': -32047, \\\\\\'message\\\\\\': \"Invalid eth_getLogs request. \\\\\\'fromBlock\\\\\\'-\\\\\\'toBlock\\\\\\' range too large. Max range: 800\"})\\'}]')"
+          },
+          {
+            "range": [
+              11000000,
+              12000000
+            ],
+            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \\'RuntimeError({\\\\\\'code\\\\\\': -32047, \\\\\\'message\\\\\\': \"Invalid eth_getLogs request. \\\\\\'fromBlock\\\\\\'-\\\\\\'toBlock\\\\\\' range too large. Max range: 800\"})\\'}]')"
+          }
+        ]
+      }
+    },
+    "4": {
+      "token_id": 4,
+      "token_uri": "https://cryptocanvas.xyz/api/token/4",
+      "token_uri_rpc": "https://ethereum-rpc.publicnode.com",
+      "metadata_fetch": {
+        "errors": [
+          {
+            "url": "https://cryptocanvas.xyz/api/token/4",
+            "error": "HTTPError('404 Client Error: Not Found for url: https://cryptocanvas.xyz/api/token/4')"
+          }
+        ]
+      },
+      "metadata": null,
+      "current_owner": "0x0386bf5e50ce1ce02b8b0417e679292f18476a40",
+      "owner_rpc": "https://ethereum-rpc.publicnode.com",
+      "first_transfer_lookup": {
+        "errors": [
+          {
+            "range": [
+              10000000,
+              11000000
+            ],
+            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \\'RuntimeError({\\\\\\'code\\\\\\': -32047, \\\\\\'message\\\\\\': \"Invalid eth_getLogs request. \\\\\\'fromBlock\\\\\\'-\\\\\\'toBlock\\\\\\' range too large. Max range: 800\"})\\'}]')"
+          },
+          {
+            "range": [
+              9000000,
+              10000000
+            ],
+            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
+          },
+          {
+            "range": [
+              11000000,
+              12000000
+            ],
+            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
+          }
+        ]
+      }
+    },
+    "5": {
+      "token_id": 5,
+      "token_uri": "https://cryptocanvas.xyz/api/token/5",
+      "token_uri_rpc": "https://ethereum-rpc.publicnode.com",
+      "metadata_fetch": {
+        "errors": [
+          {
+            "url": "https://cryptocanvas.xyz/api/token/5",
+            "error": "HTTPError('404 Client Error: Not Found for url: https://cryptocanvas.xyz/api/token/5')"
+          }
+        ]
+      },
+      "metadata": null,
+      "current_owner": "0xfdae2f991a521f54bbef89048922dff9bac2d96b",
+      "owner_rpc": "https://ethereum-rpc.publicnode.com",
+      "first_transfer_lookup": {
+        "errors": [
+          {
+            "range": [
+              10000000,
+              11000000
+            ],
+            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
+          },
+          {
+            "range": [
+              9000000,
+              10000000
+            ],
+            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
+          },
+          {
+            "range": [
+              11000000,
+              12000000
+            ],
+            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
+          }
+        ]
+      }
+    }
+  },
+  "opensea_media_fallback_errors": [
+    {
+      "url": "https://i2c.seadn.io/base/6bd5d216f07f43cd94d6ff950031ea59/30a68a8743e550c12234c338ead498/b030a68a8743e550c12234c338ead498.png\\",
+      "error": "HTTPError('400 Client Error: Bad Request for url: https://i2c.seadn.io/base/6bd5d216f07f43cd94d6ff950031ea59/30a68a8743e550c12234c338ead498/b030a68a8743e550c12234c338ead498.png%5C')"
+    },
+    {
+      "url": "https://i2c.seadn.io/base/67463b924644eb5efe997301/51b2bbfcd99a935414c637d4b4e3f3/7951b2bbfcd99a935414c637d4b4e3f3.png\\",
+      "error": "HTTPError('400 Client Error: Bad Request for url: https://i2c.seadn.io/base/67463b924644eb5efe997301/51b2bbfcd99a935414c637d4b4e3f3/7951b2bbfcd99a935414c637d4b4e3f3.png%5C')"
+    },
+    {
+      "url": "https://i2c.seadn.io/base/241063664a3649668d2f575c7e702895/66204c8408133a78acc12126c1c758/6e66204c8408133a78acc12126c1c758.webp\\",
+      "error": "HTTPError('400 Client Error: Bad Request for url: https://i2c.seadn.io/base/241063664a3649668d2f575c7e702895/66204c8408133a78acc12126c1c758/6e66204c8408133a78acc12126c1c758.webp%5C')"
+    },
+    {
+      "url": "https://i2c.seadn.io/base/622a8f44d03c4a45a7ccafcb1e3d0889/f6c24655270f0b7cf2513a9dbdcafb/43f6c24655270f0b7cf2513a9dbdcafb.png\\",
+      "error": "HTTPError('400 Client Error: Bad Request for url: https://i2c.seadn.io/base/622a8f44d03c4a45a7ccafcb1e3d0889/f6c24655270f0b7cf2513a9dbdcafb/43f6c24655270f0b7cf2513a9dbdcafb.png%5C')"
+    },
+    {
+      "url": "https://i2c.seadn.io/base/3129509e94aa49a6b2ecfebcd6557db5/7bf98f56fd3fa099858a296959daf1/6f7bf98f56fd3fa099858a296959daf1.jpeg\\",
+      "error": "HTTPError('400 Client Error: Bad Request for url: https://i2c.seadn.io/base/3129509e94aa49a6b2ecfebcd6557db5/7bf98f56fd3fa099858a296959daf1/6f7bf98f56fd3fa099858a296959daf1.jpeg%5C')"
+    },
+    {
+      "url": "https://i2c.seadn.io/base/2fd583305fa546ecbc980ec7f3cba4bb/79494a1f58c8738b7de231a5025c09/1b79494a1f58c8738b7de231a5025c09.png\\",
+      "error": "HTTPError('400 Client Error: Bad Request for url: https://i2c.seadn.io/base/2fd583305fa546ecbc980ec7f3cba4bb/79494a1f58c8738b7de231a5025c09/1b79494a1f58c8738b7de231a5025c09.png%5C')"
+    },
+    {
+      "url": "https://i2c.seadn.io/base/69619011948a49a5a317e1b83c37de34/227a7b7d71b061aea6fd3cca2e33e8/23227a7b7d71b061aea6fd3cca2e33e8.jpeg\\",
+      "error": "HTTPError('400 Client Error: Bad Request for url: https://i2c.seadn.io/base/69619011948a49a5a317e1b83c37de34/227a7b7d71b061aea6fd3cca2e33e8/23227a7b7d71b061aea6fd3cca2e33e8.jpeg%5C')"
+    },
+    {
+      "url": "https://i2c.seadn.io/base/aab9893c55c34593a694ea3027f874c0/5fcf18e465e61a68bcae360229deb7/af5fcf18e465e61a68bcae360229deb7.jpeg\\",
+      "error": "HTTPError('400 Client Error: Bad Request for url: https://i2c.seadn.io/base/aab9893c55c34593a694ea3027f874c0/5fcf18e465e61a68bcae360229deb7/af5fcf18e465e61a68bcae360229deb7.jpeg%5C')"
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0xb20000000000000000000078ee7ce2fe4908108c/15b35d8677409c3a09cb4ca70df3b0/ed15b35d8677409c3a09cb4ca70df3b0.jpeg\\",
+      "error": "HTTPError('400 Client Error: Bad Request for url: https://i2c.seadn.io/base/0xb20000000000000000000078ee7ce2fe4908108c/15b35d8677409c3a09cb4ca70df3b0/ed15b35d8677409c3a09cb4ca70df3b0.jpeg%5C')"
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0xb2000000000000000000008bc8786b856e61707c/06bd9fffef7b7f819f4259f314e2ee/eb06bd9fffef7b7f819f4259f314e2ee.jpeg\\",
+      "error": "HTTPError('400 Client Error: Bad Request for url: https://i2c.seadn.io/base/0xb2000000000000000000008bc8786b856e61707c/06bd9fffef7b7f819f4259f314e2ee/eb06bd9fffef7b7f819f4259f314e2ee.jpeg%5C')"
+    }
+  ],
+  "token5_image_similarity": {
+    "error": "token #5 media unavailable from tokenURI and OpenSea HTML fallbacks"
+  },
+  "provenance_flags": {
+    "mint_after_puzzle": null,
+    "media_strongly_matches_puzzle": false,
+    "media_byte_exact": false,
+    "metadata_has_nonempty_description": false
+  },
+  "verdict": "UNRESOLVED_OR_WEAK_MEDIA_MATCH"
+}
