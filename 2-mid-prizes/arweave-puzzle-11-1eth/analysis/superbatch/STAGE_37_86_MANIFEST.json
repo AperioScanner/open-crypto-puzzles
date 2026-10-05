@@ -1,0 +1,408 @@
+{
+  "batch": "Arweave Puzzle #11 Superbatch 37-86",
+  "count": 50,
+  "aggregate": "A11-EXP-087",
+  "scope": "Safe visual/semantic/steganalysis diagnostics only. No private-key generation, derivation, reconstruction, enumeration, verification, or wallet access.",
+  "experiments": [
+    {
+      "id": "A11-EXP-037",
+      "stage": 37,
+      "family": "large-boat",
+      "name": "Edge density uniqueness",
+      "method": "region_random_window:edge_density",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-038",
+      "stage": 38,
+      "family": "large-boat",
+      "name": "Intensity-variance uniqueness",
+      "method": "region_random_window:intensity_std",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-039",
+      "stage": 39,
+      "family": "large-boat",
+      "name": "Local-entropy heterogeneity",
+      "method": "region_random_window:tile_entropy_std",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-040",
+      "stage": 40,
+      "family": "large-boat",
+      "name": "Left-right symmetry",
+      "method": "region_random_window:x_symmetry",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-041",
+      "stage": 41,
+      "family": "large-boat",
+      "name": "Top-bottom symmetry",
+      "method": "region_random_window:y_symmetry",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-042",
+      "stage": 42,
+      "family": "large-boat",
+      "name": "Horizontal projection peak",
+      "method": "region_random_window:hproj_peak",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-043",
+      "stage": 43,
+      "family": "large-boat",
+      "name": "Vertical projection peak",
+      "method": "region_random_window:vproj_peak",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-044",
+      "stage": 44,
+      "family": "large-boat",
+      "name": "Spectral peak ratio",
+      "method": "region_random_window:spectral_peak",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-045",
+      "stage": 45,
+      "family": "large-boat",
+      "name": "Component density t140",
+      "method": "region_random_window:component_density",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-046",
+      "stage": 46,
+      "family": "large-boat",
+      "name": "Component aspect diversity t140",
+      "method": "region_random_window:component_aspect_entropy",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-047",
+      "stage": 47,
+      "family": "reflection",
+      "name": "x0_400 grayscale vertical-reflection correlation",
+      "method": "reflection_shift_null:gray",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-048",
+      "stage": 48,
+      "family": "reflection",
+      "name": "x400_800 grayscale vertical-reflection correlation",
+      "method": "reflection_shift_null:gray",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-049",
+      "stage": 49,
+      "family": "reflection",
+      "name": "x800_1200 grayscale vertical-reflection correlation",
+      "method": "reflection_shift_null:gray",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-050",
+      "stage": 50,
+      "family": "reflection",
+      "name": "x1200_1600 grayscale vertical-reflection correlation",
+      "method": "reflection_shift_null:gray",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-051",
+      "stage": 51,
+      "family": "reflection",
+      "name": "x0_400 edge vertical-reflection correlation",
+      "method": "reflection_shift_null:edge",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-052",
+      "stage": 52,
+      "family": "reflection",
+      "name": "x400_800 edge vertical-reflection correlation",
+      "method": "reflection_shift_null:edge",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-053",
+      "stage": 53,
+      "family": "reflection",
+      "name": "x800_1200 edge vertical-reflection correlation",
+      "method": "reflection_shift_null:edge",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-054",
+      "stage": 54,
+      "family": "reflection",
+      "name": "x1200_1600 edge vertical-reflection correlation",
+      "method": "reflection_shift_null:edge",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-055",
+      "stage": 55,
+      "family": "small-sails",
+      "name": "Width arithmetic-progression fit",
+      "method": "small_sails_permutation:width_ap",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-056",
+      "stage": 56,
+      "family": "small-sails",
+      "name": "Width monotonic trend",
+      "method": "small_sails_permutation:width_trend",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-057",
+      "stage": 57,
+      "family": "small-sails",
+      "name": "Width left-right symmetry",
+      "method": "small_sails_permutation:width_symmetry",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-058",
+      "stage": 58,
+      "family": "small-sails",
+      "name": "Width vs x correlation",
+      "method": "small_sails_permutation:width_xcorr",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-059",
+      "stage": 59,
+      "family": "small-sails",
+      "name": "Height vs x correlation",
+      "method": "small_sails_permutation:height_xcorr",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-060",
+      "stage": 60,
+      "family": "small-sails",
+      "name": "Area vs x correlation",
+      "method": "small_sails_permutation:area_xcorr",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-061",
+      "stage": 61,
+      "family": "small-sails",
+      "name": "Width vs following-gap correlation",
+      "method": "small_sails_permutation:width_gapcorr",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-062",
+      "stage": 62,
+      "family": "small-sails",
+      "name": "Area vs following-gap correlation",
+      "method": "small_sails_permutation:area_gapcorr",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-063",
+      "stage": 63,
+      "family": "buildings",
+      "name": "Width alternating-difference score",
+      "method": "building_permutation:width_alternation",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-064",
+      "stage": 64,
+      "family": "buildings",
+      "name": "Height alternating-difference score",
+      "method": "building_permutation:height_alternation",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-065",
+      "stage": 65,
+      "family": "buildings",
+      "name": "Area alternating-difference score",
+      "method": "building_permutation:area_alternation",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-066",
+      "stage": 66,
+      "family": "buildings",
+      "name": "Aspect alternating-difference score",
+      "method": "building_permutation:aspect_alternation",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-067",
+      "stage": 67,
+      "family": "buildings",
+      "name": "Width linear trend",
+      "method": "building_permutation:width_trend",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-068",
+      "stage": 68,
+      "family": "buildings",
+      "name": "Height linear trend",
+      "method": "building_permutation:height_trend",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-069",
+      "stage": 69,
+      "family": "buildings",
+      "name": "Roof-y linear trend",
+      "method": "building_permutation:roof_trend",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-070",
+      "stage": 70,
+      "family": "buildings",
+      "name": "Area linear trend",
+      "method": "building_permutation:area_trend",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-071",
+      "stage": 71,
+      "family": "semantic-regions",
+      "name": "First-row glyph-line uniqueness",
+      "method": "semantic_region_random:glyph:first_row",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-072",
+      "stage": 72,
+      "family": "semantic-regions",
+      "name": "Skyline glyph-line uniqueness",
+      "method": "semantic_region_random:glyph:skyline",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-073",
+      "stage": 73,
+      "family": "semantic-regions",
+      "name": "Large-sail glyph-line uniqueness",
+      "method": "semantic_region_random:glyph:large_sail",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-074",
+      "stage": 74,
+      "family": "semantic-regions",
+      "name": "Small-sails-band glyph-line uniqueness",
+      "method": "semantic_region_random:glyph:small_sails",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-075",
+      "stage": 75,
+      "family": "semantic-regions",
+      "name": "Right-boats glyph-line uniqueness",
+      "method": "semantic_region_random:glyph:right_boats",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-076",
+      "stage": 76,
+      "family": "semantic-regions",
+      "name": "Water glyph-line uniqueness",
+      "method": "semantic_region_random:glyph:water",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-077",
+      "stage": 77,
+      "family": "semantic-regions",
+      "name": "Skyline edge-orientation entropy",
+      "method": "semantic_region_random:edge_entropy:skyline",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-078",
+      "stage": 78,
+      "family": "semantic-regions",
+      "name": "Right-boats edge-orientation entropy",
+      "method": "semantic_region_random:edge_entropy:right_boats",
+      "control": false
+    },
+    {
+      "id": "A11-EXP-079",
+      "stage": 79,
+      "family": "controls",
+      "name": "Known H/V format-stability positive control",
+      "method": "robustness_control:hv",
+      "control": true
+    },
+    {
+      "id": "A11-EXP-080",
+      "stage": 80,
+      "family": "controls",
+      "name": "Large-sail edge-density format stability",
+      "method": "robustness_control:large_sail_edge",
+      "control": true
+    },
+    {
+      "id": "A11-EXP-081",
+      "stage": 81,
+      "family": "controls",
+      "name": "Skyline glyph metric format stability",
+      "method": "robustness_control:skyline_glyph",
+      "control": true
+    },
+    {
+      "id": "A11-EXP-082",
+      "stage": 82,
+      "family": "controls",
+      "name": "Reflection gray-correlation format stability",
+      "method": "robustness_control:reflection_gray",
+      "control": true
+    },
+    {
+      "id": "A11-EXP-083",
+      "stage": 83,
+      "family": "controls",
+      "name": "Reflection edge-correlation format stability",
+      "method": "robustness_control:reflection_edge",
+      "control": true
+    },
+    {
+      "id": "A11-EXP-084",
+      "stage": 84,
+      "family": "controls",
+      "name": "Small-sail segmentation count stability",
+      "method": "robustness_control:small_sail_count",
+      "control": true
+    },
+    {
+      "id": "A11-EXP-085",
+      "stage": 85,
+      "family": "controls",
+      "name": "Large-sail x-symmetry format stability",
+      "method": "robustness_control:large_sail_xsym",
+      "control": true
+    },
+    {
+      "id": "A11-EXP-086",
+      "stage": 86,
+      "family": "controls",
+      "name": "Large-sail spectral-peak format stability",
+      "method": "robustness_control:large_sail_spectral",
+      "control": true
+    }
+  ]
+}
