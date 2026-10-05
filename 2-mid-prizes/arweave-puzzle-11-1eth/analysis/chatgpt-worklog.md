@@ -129,3 +129,14 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
   - 050: high-pass + edge representations, fixed spatial halves, and lossy replication;
   - 061: both independent Stage-19 segmentation families with exact 5! permutation tests.
 - The three primary confirmation p-values are Holm-adjusted; a lead survives only with both a family-specific replication gate and adjusted p<=0.05.
+
+
+## 2026-10-05 — adaptive review of Stage 88
+
+- All three nominal superbatch survivors failed confirmatory replication.
+- A11-EXP-043 fell to nuisance-matched p=0.0717 (lossy 0.0518; Holm 0.2151).
+- A11-EXP-050 disappeared after high-pass and edge representations (p=0.6211 and 0.3222); its rightmost-band grayscale effect was localized to only one of two fixed halves.
+- A11-EXP-061 did not reproduce under either independent Stage-19 segmentation family (exact p=0.5333 and 0.5667); the superbatch detector aligned with only 3/5 stable Stage-19 centers.
+- Decision: retire all three and pivot to a genuinely independent evidence family rather than mining the same image statistics further.
+- Public web review surfaced a 2021 Puzzling StackExchange reverse-image-search report linking the puzzle image to the five-item OpenSea collection `cryptocanvas.xyz - CANVAS`. Current OpenSea indexing dates the collection to Jul 2020 and exposes contract `0x0b0b70905137786cf705102c194a1b4916d8c4d0`; token #5 is the reported puzzle item.
+- Stage 89 will audit public on-chain tokenURI/mint provenance and compare token #5 media to the canonical puzzle image. The collection postdates the puzzle, so derivative/mirror is the default hypothesis unless provenance says otherwise.
