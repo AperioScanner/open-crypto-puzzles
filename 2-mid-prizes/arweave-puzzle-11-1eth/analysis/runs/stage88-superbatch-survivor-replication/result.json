@@ -1,0 +1,156 @@
+{
+  "experiment_id": "A11-EXP-088",
+  "scope": "adversarial independent replication of exactly the three nominal superbatch survivors; no private-key operations",
+  "candidates": [
+    {
+      "candidate": "A11-EXP-043",
+      "name": "large-boat vertical projection peak",
+      "original_superbatch_p": 0.03314917127071823,
+      "matched_windows": 250,
+      "target_nuisance": {
+        "mean_darkness": 61.82709222279115,
+        "ink180_fraction": 0.2894236786709905,
+        "edge_density": 0.14963873243443135
+      },
+      "obs": 0.988551958155462,
+      "matched_null_median": 0.9560804947661516,
+      "matched_p": 0.07171314741035857,
+      "lossy_obs": 0.9892842431752145,
+      "lossy_matched_null_median": 0.958808975784454,
+      "lossy_matched_p": 0.05179282868525897,
+      "primary_confirmation_p": 0.07171314741035857,
+      "family_gate": false,
+      "gate_rule": "original and lossy nuisance-matched p must both be <=0.05",
+      "holm_p": 0.21513944223107573,
+      "confirmed": false
+    },
+    {
+      "candidate": "A11-EXP-050",
+      "name": "rightmost grayscale reflection correlation",
+      "original_superbatch_p": 0.031055900621118012,
+      "original_full": {
+        "gray": {
+          "obs": 0.0961295012531251,
+          "null_median": 0.012660273185541053,
+          "p": 0.02577319587628866
+        },
+        "highpass": {
+          "obs": 0.0026244270652880024,
+          "null_median": 0.003579436035419718,
+          "p": 0.6211340206185567
+        },
+        "edge": {
+          "obs": 0.05788981344063934,
+          "null_median": 0.05423436502095434,
+          "p": 0.32216494845360827
+        }
+      },
+      "lossy_full": {
+        "highpass": {
+          "obs": 0.002637947146083431,
+          "null_median": 0.004319903400980676,
+          "p": 0.6829896907216495
+        },
+        "edge": {
+          "obs": 0.05706246147283906,
+          "null_median": 0.054876302168271725,
+          "p": 0.39948453608247425
+        }
+      },
+      "original_fixed_halves": [
+        {
+          "obs": 0.1641969498773391,
+          "null_median": 0.1269651928501914,
+          "p": 0.047872340425531915
+        },
+        {
+          "obs": 0.01720764131007875,
+          "null_median": 0.060034532956714945,
+          "p": 0.7978723404255319
+        }
+      ],
+      "primary_confirmation_p": 0.6829896907216495,
+      "family_gate": false,
+      "gate_rule": "highpass+edge p<=0.05 on original and lossy, and both fixed raw-grayscale 200px halves p<=0.10",
+      "holm_p": 1.0,
+      "confirmed": false
+    },
+    {
+      "candidate": "A11-EXP-061",
+      "name": "small-sail width vs following-gap correlation",
+      "original_superbatch_p": 0.0399800099950025,
+      "independent_stage19_methods": {
+        "connected_components_close3": {
+          "widths": [
+            80.0,
+            29.0,
+            56.0,
+            84.0,
+            85.0
+          ],
+          "centers": [
+            675.5,
+            1046.5,
+            1144.5,
+            1269.5,
+            1361.0
+          ],
+          "following_gaps": [
+            371.0,
+            98.0,
+            125.0,
+            91.5
+          ],
+          "abs_correlation": 0.4449392685464326,
+          "exact_permutations": 120,
+          "exact_p": 0.5333333333333333,
+          "null_median": 0.4592147864228866
+        },
+        "vertical_projection_runs": {
+          "widths": [
+            76.0,
+            28.0,
+            54.0,
+            81.0,
+            83.0
+          ],
+          "centers": [
+            671.5,
+            1046.5,
+            1145.0,
+            1268.0,
+            1361.0
+          ],
+          "following_gaps": [
+            375.0,
+            98.5,
+            123.0,
+            93.0
+          ],
+          "abs_correlation": 0.4298928125878344,
+          "exact_permutations": 120,
+          "exact_p": 0.5666666666666667,
+          "null_median": 0.4711783907471585
+        }
+      },
+      "stage61_to_stage19_center_nearest_distance_px": [
+        121.45147679324896,
+        3.4032773780975276,
+        3.3637010676156933,
+        2.5805661404465354,
+        115.18690334128883
+      ],
+      "stage61_components_matching_stage19_within_40px": 3,
+      "primary_confirmation_p": 0.5666666666666667,
+      "family_gate": false,
+      "gate_rule": "both independent Stage-19 segmentation families must have exact permutation p<=0.05",
+      "holm_p": 1.0,
+      "confirmed": false
+    }
+  ],
+  "holm_family_size": 3,
+  "confirmed_survivors": [],
+  "confirmed_count": 0,
+  "decision_rule": "candidate survives only if its predeclared family replication gate passes AND Holm-adjusted primary confirmatory p<=0.05",
+  "next_step_rule": "If zero survive, retire all three nominal superbatch hits and choose a new hypothesis family from public clues/semantic evidence. If one or more survive, localize only the strongest confirmed survivor in the next adaptive stage."
+}
