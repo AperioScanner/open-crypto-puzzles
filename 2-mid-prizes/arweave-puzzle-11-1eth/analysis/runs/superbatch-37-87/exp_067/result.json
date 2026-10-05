@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-067",
+  "stage": 67,
+  "family": "buildings",
+  "name": "Width linear trend",
+  "method": "building_permutation:width_trend",
+  "control": false,
+  "statistic": 0.21789110888308286,
+  "p_value": 0.4992503748125937,
+  "lossy_statistic": 0.21789110888308286,
+  "lossy_p_value": null,
+  "robust": true,
+  "null_median": 0.2163935754886974,
+  "error": null,
+  "q_value": 0.8916341829085457,
+  "classification": "NULL"
+}

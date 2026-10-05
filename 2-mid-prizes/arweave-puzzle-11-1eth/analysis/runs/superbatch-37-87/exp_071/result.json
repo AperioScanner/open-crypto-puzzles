@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-071",
+  "stage": 71,
+  "family": "semantic-regions",
+  "name": "First-row glyph-line uniqueness",
+  "method": "semantic_region_random:glyph:first_row",
+  "control": false,
+  "statistic": 0.0,
+  "p_value": 1.0,
+  "lossy_statistic": 0.0,
+  "lossy_p_value": 1.0,
+  "robust": true,
+  "null_median": 1.8882299309435224,
+  "error": null,
+  "q_value": 1.0,
+  "classification": "NULL"
+}

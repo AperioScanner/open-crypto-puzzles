@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-041",
+  "stage": 41,
+  "family": "large-boat",
+  "name": "Top-bottom symmetry",
+  "method": "region_random_window:y_symmetry",
+  "control": false,
+  "statistic": 0.20590223447050665,
+  "p_value": 0.0718232044198895,
+  "lossy_statistic": 0.2320478218871329,
+  "lossy_p_value": 0.0718232044198895,
+  "robust": true,
+  "null_median": 0.07502204051524197,
+  "error": null,
+  "q_value": 0.430939226519337,
+  "classification": "NULL"
+}

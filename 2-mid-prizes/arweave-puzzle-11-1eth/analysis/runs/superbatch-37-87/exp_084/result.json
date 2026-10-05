@@ -1,0 +1,16 @@
+{
+  "id": "A11-EXP-084",
+  "stage": 84,
+  "family": "controls",
+  "name": "Small-sail segmentation count stability",
+  "method": "robustness_control:small_sail_count",
+  "control": true,
+  "statistic": 5.0,
+  "lossy_statistic": 5.0,
+  "relative_change": 0.0,
+  "p_value": null,
+  "robust": true,
+  "error": null,
+  "q_value": null,
+  "classification": "CONTROL_PASS"
+}

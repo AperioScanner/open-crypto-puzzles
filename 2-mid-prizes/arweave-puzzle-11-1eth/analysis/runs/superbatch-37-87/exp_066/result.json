@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-066",
+  "stage": 66,
+  "family": "buildings",
+  "name": "Aspect alternating-difference score",
+  "method": "building_permutation:aspect_alternation",
+  "control": false,
+  "statistic": 0.6,
+  "p_value": 0.8195902048975512,
+  "lossy_statistic": 0.6,
+  "lossy_p_value": null,
+  "robust": true,
+  "null_median": 0.7,
+  "error": null,
+  "q_value": 0.897136797454931,
+  "classification": "NULL"
+}

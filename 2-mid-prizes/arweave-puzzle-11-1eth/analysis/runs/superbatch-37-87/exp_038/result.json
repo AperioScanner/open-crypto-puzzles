@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-038",
+  "stage": 38,
+  "family": "large-boat",
+  "name": "Intensity-variance uniqueness",
+  "method": "region_random_window:intensity_std",
+  "control": false,
+  "statistic": 97.11631451899333,
+  "p_value": 0.292817679558011,
+  "lossy_statistic": 92.04311782163852,
+  "lossy_p_value": 0.27071823204419887,
+  "robust": true,
+  "null_median": 89.19891343090217,
+  "error": null,
+  "q_value": 0.8784530386740331,
+  "classification": "NULL"
+}

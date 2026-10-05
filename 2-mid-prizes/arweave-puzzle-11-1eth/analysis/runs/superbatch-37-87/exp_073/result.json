@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-073",
+  "stage": 73,
+  "family": "semantic-regions",
+  "name": "Large-sail glyph-line uniqueness",
+  "method": "semantic_region_random:glyph:large_sail",
+  "control": false,
+  "statistic": 0.5698028822981897,
+  "p_value": 0.7403314917127072,
+  "lossy_statistic": 0.3842122429322726,
+  "lossy_p_value": 0.8784530386740331,
+  "robust": false,
+  "null_median": 0.8324436141346335,
+  "error": null,
+  "q_value": 0.897136797454931,
+  "classification": "NULL"
+}

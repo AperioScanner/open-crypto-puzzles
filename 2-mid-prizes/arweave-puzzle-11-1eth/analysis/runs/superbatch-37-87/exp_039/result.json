@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-039",
+  "stage": 39,
+  "family": "large-boat",
+  "name": "Local-entropy heterogeneity",
+  "method": "region_random_window:tile_entropy_std",
+  "control": false,
+  "statistic": 1.7720874336350743,
+  "p_value": 0.06077348066298342,
+  "lossy_statistic": 2.0480390944777103,
+  "lossy_p_value": 0.03867403314917127,
+  "robust": true,
+  "null_median": 1.4610666651711064,
+  "error": null,
+  "q_value": 0.42541436464088395,
+  "classification": "NULL"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "A11-EXP-083",
+  "stage": 83,
+  "family": "controls",
+  "name": "Reflection edge-correlation format stability",
+  "method": "robustness_control:reflection_edge",
+  "control": true,
+  "statistic": 0.006578142505300568,
+  "lossy_statistic": 0.007698504650984847,
+  "relative_change": 0.1703158565606706,
+  "p_value": null,
+  "robust": true,
+  "error": null,
+  "q_value": null,
+  "classification": "CONTROL_PASS"
+}

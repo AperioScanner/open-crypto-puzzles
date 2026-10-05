@@ -1,0 +1,16 @@
+{
+  "id": "A11-EXP-080",
+  "stage": 80,
+  "family": "controls",
+  "name": "Large-sail edge-density format stability",
+  "method": "robustness_control:large_sail_edge",
+  "control": true,
+  "statistic": 0.14963873243443135,
+  "lossy_statistic": 0.14893326506229732,
+  "relative_change": 0.004714470350974701,
+  "p_value": null,
+  "robust": true,
+  "error": null,
+  "q_value": null,
+  "classification": "CONTROL_PASS"
+}

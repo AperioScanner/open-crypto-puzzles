@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-054",
+  "stage": 54,
+  "family": "reflection",
+  "name": "x1200_1600 edge vertical-reflection correlation",
+  "method": "reflection_shift_null:edge",
+  "control": false,
+  "statistic": 0.05788981344063934,
+  "p_value": 0.3167701863354037,
+  "lossy_statistic": 0.05706246147283906,
+  "lossy_p_value": 0.40372670807453415,
+  "robust": true,
+  "null_median": 0.05366314822885472,
+  "error": null,
+  "q_value": 0.8869565217391303,
+  "classification": "NULL"
+}

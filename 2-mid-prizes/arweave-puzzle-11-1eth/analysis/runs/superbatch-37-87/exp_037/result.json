@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-037",
+  "stage": 37,
+  "family": "large-boat",
+  "name": "Edge density uniqueness",
+  "method": "region_random_window:edge_density",
+  "control": false,
+  "statistic": 0.14963873243443135,
+  "p_value": 0.49171270718232046,
+  "lossy_statistic": 0.14893326506229732,
+  "lossy_p_value": 0.5027624309392266,
+  "robust": true,
+  "null_median": 0.1485236388462195,
+  "error": null,
+  "q_value": 0.8916341829085457,
+  "classification": "NULL"
+}

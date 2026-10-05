@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-048",
+  "stage": 48,
+  "family": "reflection",
+  "name": "x400_800 grayscale vertical-reflection correlation",
+  "method": "reflection_shift_null:gray",
+  "control": false,
+  "statistic": 0.028964372173919135,
+  "p_value": 0.7080745341614907,
+  "lossy_statistic": 0.03147174457355097,
+  "lossy_p_value": 0.7391304347826086,
+  "robust": true,
+  "null_median": 0.03677874813397224,
+  "error": null,
+  "q_value": 0.897136797454931,
+  "classification": "NULL"
+}

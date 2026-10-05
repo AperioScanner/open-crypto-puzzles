@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-076",
+  "stage": 76,
+  "family": "semantic-regions",
+  "name": "Water glyph-line uniqueness",
+  "method": "semantic_region_random:glyph:water",
+  "control": false,
+  "statistic": 1.255681450466045,
+  "p_value": 0.35911602209944754,
+  "lossy_statistic": 1.0480169471206775,
+  "lossy_p_value": 0.8066298342541437,
+  "robust": true,
+  "null_median": 1.2035225268350984,
+  "error": null,
+  "q_value": 0.8916341829085457,
+  "classification": "NULL"
+}

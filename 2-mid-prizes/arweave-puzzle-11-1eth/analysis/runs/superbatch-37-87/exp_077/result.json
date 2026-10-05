@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-077",
+  "stage": 77,
+  "family": "semantic-regions",
+  "name": "Skyline edge-orientation entropy",
+  "method": "semantic_region_random:edge_entropy:skyline",
+  "control": false,
+  "statistic": 3.329701702702205,
+  "p_value": 0.8729281767955801,
+  "lossy_statistic": 3.332493502597226,
+  "lossy_p_value": 0.8674033149171271,
+  "robust": true,
+  "null_median": 3.442982303144416,
+  "error": null,
+  "q_value": 0.897136797454931,
+  "classification": "NULL"
+}

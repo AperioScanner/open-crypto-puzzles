@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-072",
+  "stage": 72,
+  "family": "semantic-regions",
+  "name": "Skyline glyph-line uniqueness",
+  "method": "semantic_region_random:glyph:skyline",
+  "control": false,
+  "statistic": 1.417192779458624,
+  "p_value": 0.4198895027624309,
+  "lossy_statistic": 1.4342743312012722,
+  "lossy_p_value": 0.430939226519337,
+  "robust": true,
+  "null_median": 1.3621289546001476,
+  "error": null,
+  "q_value": 0.8916341829085457,
+  "classification": "NULL"
+}

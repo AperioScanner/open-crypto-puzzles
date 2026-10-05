@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-043",
+  "stage": 43,
+  "family": "large-boat",
+  "name": "Vertical projection peak",
+  "method": "region_random_window:vproj_peak",
+  "control": false,
+  "statistic": 0.988551958155462,
+  "p_value": 0.03314917127071823,
+  "lossy_statistic": 0.9892842431752145,
+  "lossy_p_value": 0.03314917127071823,
+  "robust": true,
+  "null_median": 0.9356130491974588,
+  "error": null,
+  "q_value": 0.42541436464088395,
+  "classification": "INTERESTING"
+}

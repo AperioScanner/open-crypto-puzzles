@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-040",
+  "stage": 40,
+  "family": "large-boat",
+  "name": "Left-right symmetry",
+  "method": "region_random_window:x_symmetry",
+  "control": false,
+  "statistic": 0.13447213007698836,
+  "p_value": 0.425414364640884,
+  "lossy_statistic": 0.14840456202562935,
+  "lossy_p_value": 0.4585635359116022,
+  "robust": true,
+  "null_median": 0.11700915467014814,
+  "error": null,
+  "q_value": 0.8916341829085457,
+  "classification": "NULL"
+}

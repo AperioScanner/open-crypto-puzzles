@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-068",
+  "stage": 68,
+  "family": "buildings",
+  "name": "Height linear trend",
+  "method": "building_permutation:height_trend",
+  "control": false,
+  "statistic": 0.058525043100241814,
+  "p_value": 0.8440779610194903,
+  "lossy_statistic": 0.058525043100241814,
+  "lossy_p_value": null,
+  "robust": true,
+  "null_median": 0.2092439764896676,
+  "error": null,
+  "q_value": 0.897136797454931,
+  "classification": "NULL"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "A11-EXP-086",
+  "stage": 86,
+  "family": "controls",
+  "name": "Large-sail spectral-peak format stability",
+  "method": "robustness_control:large_sail_spectral",
+  "control": true,
+  "statistic": 686.6085066202972,
+  "lossy_statistic": 3297.9311923648856,
+  "relative_change": 3.803219244390862,
+  "p_value": null,
+  "robust": false,
+  "error": null,
+  "q_value": null,
+  "classification": "CONTROL_FAIL"
+}

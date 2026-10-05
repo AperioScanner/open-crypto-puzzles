@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-074",
+  "stage": 74,
+  "family": "semantic-regions",
+  "name": "Small-sails-band glyph-line uniqueness",
+  "method": "semantic_region_random:glyph:small_sails",
+  "control": false,
+  "statistic": 1.1185272753341209,
+  "p_value": 0.7292817679558011,
+  "lossy_statistic": 1.242808083704579,
+  "lossy_p_value": 0.6077348066298343,
+  "robust": true,
+  "null_median": 1.5053737989280145,
+  "error": null,
+  "q_value": 0.897136797454931,
+  "classification": "NULL"
+}

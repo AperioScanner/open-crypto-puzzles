@@ -1,0 +1,16 @@
+{
+  "id": "A11-EXP-082",
+  "stage": 82,
+  "family": "controls",
+  "name": "Reflection gray-correlation format stability",
+  "method": "robustness_control:reflection_gray",
+  "control": true,
+  "statistic": 0.011437012711114533,
+  "lossy_statistic": 0.014855166490913048,
+  "relative_change": 0.29886768225841503,
+  "p_value": null,
+  "robust": true,
+  "error": null,
+  "q_value": null,
+  "classification": "CONTROL_PASS"
+}

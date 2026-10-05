@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-044",
+  "stage": 44,
+  "family": "large-boat",
+  "name": "Spectral peak ratio",
+  "method": "region_random_window:spectral_peak",
+  "control": false,
+  "statistic": 686.6085066202972,
+  "p_value": 0.5303867403314917,
+  "lossy_statistic": 3297.9311923648856,
+  "lossy_p_value": 0.6519337016574586,
+  "robust": false,
+  "null_median": 700.4293620007356,
+  "error": null,
+  "q_value": 0.8916341829085457,
+  "classification": "NULL"
+}

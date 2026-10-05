@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-069",
+  "stage": 69,
+  "family": "buildings",
+  "name": "Roof-y linear trend",
+  "method": "building_permutation:roof_trend",
+  "control": false,
+  "statistic": 0.06314031808134217,
+  "p_value": 0.8465767116441779,
+  "lossy_statistic": 0.06314031808134217,
+  "lossy_p_value": null,
+  "robust": true,
+  "null_median": 0.20843094248357036,
+  "error": null,
+  "q_value": 0.897136797454931,
+  "classification": "NULL"
+}

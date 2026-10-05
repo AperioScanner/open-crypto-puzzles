@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-078",
+  "stage": 78,
+  "family": "semantic-regions",
+  "name": "Right-boats edge-orientation entropy",
+  "method": "semantic_region_random:edge_entropy:right_boats",
+  "control": false,
+  "statistic": 3.5463677603776227,
+  "p_value": 0.10497237569060773,
+  "lossy_statistic": 3.54407025235633,
+  "lossy_p_value": 0.09944751381215469,
+  "robust": true,
+  "null_median": 3.446818038250292,
+  "error": null,
+  "q_value": 0.5511049723756906,
+  "classification": "NULL"
+}

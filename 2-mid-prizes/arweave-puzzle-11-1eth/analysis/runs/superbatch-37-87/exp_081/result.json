@@ -1,0 +1,16 @@
+{
+  "id": "A11-EXP-081",
+  "stage": 81,
+  "family": "controls",
+  "name": "Skyline glyph metric format stability",
+  "method": "robustness_control:skyline_glyph",
+  "control": true,
+  "statistic": 1.417192779458624,
+  "lossy_statistic": 1.4342743312012722,
+  "relative_change": 0.012053089726522808,
+  "p_value": null,
+  "robust": true,
+  "error": null,
+  "q_value": null,
+  "classification": "CONTROL_PASS"
+}

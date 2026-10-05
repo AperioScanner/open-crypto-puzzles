@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-042",
+  "stage": 42,
+  "family": "large-boat",
+  "name": "Horizontal projection peak",
+  "method": "region_random_window:hproj_peak",
+  "control": false,
+  "statistic": 0.9728291596509047,
+  "p_value": 0.06077348066298342,
+  "lossy_statistic": 0.9712017726574098,
+  "lossy_p_value": 0.08287292817679558,
+  "robust": true,
+  "null_median": 0.9193242395916781,
+  "error": null,
+  "q_value": 0.42541436464088395,
+  "classification": "NULL"
+}

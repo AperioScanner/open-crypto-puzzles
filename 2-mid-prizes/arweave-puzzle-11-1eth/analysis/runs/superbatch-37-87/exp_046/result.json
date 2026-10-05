@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-046",
+  "stage": 46,
+  "family": "large-boat",
+  "name": "Component aspect diversity t140",
+  "method": "region_random_window:component_aspect_entropy",
+  "control": false,
+  "statistic": 2.812803290351271,
+  "p_value": 0.2154696132596685,
+  "lossy_statistic": 2.8052769877688695,
+  "lossy_p_value": 0.2154696132596685,
+  "robust": true,
+  "null_median": 2.547596339053584,
+  "error": null,
+  "q_value": 0.8227021597187343,
+  "classification": "NULL"
+}

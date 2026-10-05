@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-045",
+  "stage": 45,
+  "family": "large-boat",
+  "name": "Component density t140",
+  "method": "region_random_window:component_density",
+  "control": false,
+  "statistic": 5.1203277009728625,
+  "p_value": 0.8729281767955801,
+  "lossy_statistic": 5.006542640951244,
+  "lossy_p_value": 0.8729281767955801,
+  "robust": true,
+  "null_median": 10.126870341924105,
+  "error": null,
+  "q_value": 0.897136797454931,
+  "classification": "NULL"
+}

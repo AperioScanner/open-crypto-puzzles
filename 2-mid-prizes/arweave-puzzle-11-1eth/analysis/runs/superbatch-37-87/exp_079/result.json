@@ -1,0 +1,14 @@
+{
+  "id": "A11-EXP-079",
+  "stage": 79,
+  "family": "controls",
+  "name": "Known H/V format-stability positive control",
+  "method": "robustness_control:hv",
+  "control": true,
+  "statistic": 1.0,
+  "p_value": null,
+  "robust": true,
+  "error": null,
+  "q_value": null,
+  "classification": "CONTROL_PASS"
+}

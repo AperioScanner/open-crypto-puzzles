@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-075",
+  "stage": 75,
+  "family": "semantic-regions",
+  "name": "Right-boats glyph-line uniqueness",
+  "method": "semantic_region_random:glyph:right_boats",
+  "control": false,
+  "statistic": 1.3329306265593936,
+  "p_value": 0.5082872928176796,
+  "lossy_statistic": 1.107500687920647,
+  "lossy_p_value": 0.7292817679558011,
+  "robust": true,
+  "null_median": 1.3443230181000148,
+  "error": null,
+  "q_value": 0.8916341829085457,
+  "classification": "NULL"
+}

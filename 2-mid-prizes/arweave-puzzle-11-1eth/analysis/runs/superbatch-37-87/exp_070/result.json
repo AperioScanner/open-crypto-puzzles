@@ -1,0 +1,17 @@
+{
+  "id": "A11-EXP-070",
+  "stage": 70,
+  "family": "buildings",
+  "name": "Area linear trend",
+  "method": "building_permutation:area_trend",
+  "control": false,
+  "statistic": 0.1551327919494591,
+  "p_value": 0.617191404297851,
+  "lossy_statistic": 0.1551327919494591,
+  "lossy_p_value": null,
+  "robust": true,
+  "null_median": 0.20563262651463135,
+  "error": null,
+  "q_value": 0.897136797454931,
+  "classification": "NULL"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "A11-EXP-085",
+  "stage": 85,
+  "family": "controls",
+  "name": "Large-sail x-symmetry format stability",
+  "method": "robustness_control:large_sail_xsym",
+  "control": true,
+  "statistic": 0.13447213007698836,
+  "lossy_statistic": 0.14840456202562935,
+  "relative_change": 0.10360832268408358,
+  "p_value": null,
+  "robust": true,
+  "error": null,
+  "q_value": null,
+  "classification": "CONTROL_PASS"
+}
