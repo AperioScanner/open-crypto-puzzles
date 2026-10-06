@@ -2,57 +2,69 @@
 
 Last updated: 2026-10-06
 
-## Review through corrected Stage 90
+## Anti-recycling rule
 
-The corrected Stage 90 completed successfully.
+Do **not** reopen a hypothesis classified COVERED, RETIRED, or independently falsified unless one of these is true:
 
-### CryptoCanvas conclusion
+1. a concrete implementation defect is demonstrated in the earlier test; or
+2. genuinely new independent evidence changes the hypothesis.
 
-- Token #5 mint: **2020-07-24 16:19:20 UTC**
-- Puzzle #11 publication: **2020-04-22**
-- the NFT therefore postdates the puzzle by roughly three months
-- token-specific OpenSea OpenGraph artwork was segmented from the social card and matched against the canonical puzzle image with ORB + RANSAC:
-  - **266** good feature matches
-  - **239** homography inliers
-  - inlier fraction **0.8985**
-- verdict: **CONFIRMED_POSTPUBLICATION_MIRROR**
+Historical popularity alone is not a reason to retest an exhausted idea.
 
-The first Stage-90 run that said “misidentified reverse-image lead” is explicitly invalidated: it accidentally treated unrelated OpenSea recommendation images as token-specific media. The corrected rerun uses only evidence tied to the exact contract/token route.
+## Review through corrected Stage 91
 
-### Hypothesis decision
+The first Stage-91 audit had a self-reference bug: claims mentioned in the current controller/leads/worklog or in the Stage-91 script itself were incorrectly counted as prior coverage. That implementation was fixed and Stage 91 rerun under the same stage number.
 
-- CryptoCanvas as a pre-publication source: **RETIRED**
-- CryptoCanvas as a later mirror of Puzzle #11: **CONFIRMED**
-- CryptoCanvas as a clue to the encoding mechanism: **NOT SUPPORTED**
+Corrected reconciliation:
 
-This archival branch is closed unless new author-linked evidence appears.
+- **RETIRED_BY_LATER_EVIDENCE: 3**
+- **COVERED: 4**
+- **PARTIAL: 1**
+- **UNTESTED: 2**
+
+### Genuinely untested historical claims
+
+1. **Source-photo hypothesis** — a public 2021 solver suggested the harbor sketch may derive from a real photograph, noting that another puzzle in the series used a photo-context mechanism. No prior branch stage/tool directly tests photo provenance.
+2. **Pier/supports as X / IX / XI Roman numerals** — objective visual interpretation has not been directly tested, but the historical evidence is weaker and explicitly speculative.
+
+### Partial, not fresh
+
+- **5 buildings left / 7 buildings right** — the count was already included in the broad historical geometry/object-count sweep, but not independently supported as a semantic instruction. Keep secondary; do not prioritize it over genuinely untested claims.
+
+### Already covered/retired
+
+- alpha ring/halo
+- anomalous first row
+- H/V building hatching
+- 1 large + 5 small boats
+- 203-second timestamp anomaly
+- Arweave identifier decoding to 32 bytes (explicitly tested in Stage 3)
+- CryptoCanvas reverse-image lead (closed as a July-2020 post-publication mirror)
 
 ## Next stage
 
-**Stage 91 — historical solver-clue reconciliation audit.**
+**Stage 92 — source-photo candidate audit.**
 
-Reason:
-- after closing CryptoCanvas, the best remaining path is external archival / semantic evidence;
-- the public Puzzling StackExchange discussion contains several concrete observations that were never systematically reconciled against the branch's tested ledger;
-- some are already exhausted (alpha, first row, H/V), while others may be genuinely untested (the objective 5/7 skyline split, pier Roman-numeral interpretation, possible source-photo hypothesis, and the filename/32-byte observation).
+Motivation:
+- this is the highest-priority genuinely untested public historical claim;
+- it fits the author's instruction to look at solved puzzles and the series' use of external semantic context;
+- it is independent of the heavily exhausted pixel/LSB/HV/statistical families.
 
-Bounded goals:
-1. Fetch the complete public Puzzling question, answers and comments through the Stack Exchange API / StackPrinter fallback.
-2. Fetch the HomelessPhD PZL11 public dossier.
-3. Inventory a predeclared set of historical clue claims.
-4. Search the current repository ledger/reports/scripts for direct evidence that each claim has already been tested.
-5. Classify each claim as:
-   - **COVERED**
-   - **PARTIAL**
-   - **UNTESTED**
-   - **RETIRED_BY_LATER_EVIDENCE**
-6. Rank only genuinely untested visible/semantic claims for the next adaptive stage.
+Bounded scope:
+1. Fetch the exact historical candidate page linked by the solver: `https://courageoussailing.org/sailing/racing/`.
+2. Query Internet Archive CDX for 2019–2021 snapshots of that page and recover page-image candidates where possible.
+3. Query a small public Wikimedia Commons candidate pool for Boston Harbor / sailing-race / skyline images.
+4. Compare candidates to the canonical sketch using geometry-focused methods tolerant of photo→drawing style change:
+   - SIFT/ORB feature matching on Canny/line representations;
+   - RANSAC homography inlier counts/fractions;
+   - coarse edge-layout correlation.
+5. Include a transformed canonical-image positive control to prove the geometric matcher works.
+6. Pre-register a strong-match gate requiring agreement across independent geometry metrics; do not promote weak semantic resemblance by eye.
 
-Stage 91 does not interpret any candidate as private-key material and performs no wallet/key operations.
+A negative result retires the **specific linked/Boston candidate pool**, not the global possibility that some unknown photograph exists.
 
 ## Status
 
-- Stages 1–90: completed.
-- Corrected Stage 90: COMPLETED + REVIEWED.
-- CryptoCanvas branch: CLOSED.
-- Stage 91: selected for launch.
+- Stages 1–91: completed.
+- Corrected Stage 91: COMPLETED + REVIEWED.
+- Stage 92: selected for launch.
