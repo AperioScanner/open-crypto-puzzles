@@ -1,34 +1,30 @@
 # Open leads, ranked
 
-## 1. Source-photo hypothesis (active, genuinely untested)
+## 1. Pier/supports as X / IX / XI (active, last genuinely untested historical visual claim)
 
-A 2021 public solver suggested that Puzzle #11's harbor sketch may have been derived from an identifiable photograph, citing another puzzle in the series that depended on wider photo context. The commenter linked Courageous Sailing's racing page as an example candidate source.
+Corrected Stage 91 identified this as genuinely untested. The original public comment was explicitly speculative, so Stage 93 gives it one bounded falsification-oriented test rather than building interpretations on top of it.
 
-Corrected Stage 91 confirms there is no prior direct source-photo provenance test in this branch.
+Stage 93 asks only whether the pier geometry forms an unusually stable Roman-like X/IX/XI structure relative to matched scene windows and lossy conversion.
 
-Stage 92 tests the linked candidate site, archived versions and a bounded public Boston/sailing/skyline image pool with geometry-focused photo-to-sketch matching.
+## 2. Format-invariant visible / semantic mechanisms
 
-## 2. Pier/supports as X / IX / XI (untested, weaker)
+Still the strongest broad prior. Stage 31 showed visible structure survives JPEG/resampling while exact low-bit identity collapses near chance.
 
-Also genuinely untested, but the historical comment itself was speculative (“could imagine”). Keep behind the source-photo hypothesis unless Stage 92 provides no usable candidate evidence.
+## 3. Public-address known-answer probe
 
-## 3. 5/7 skyline split (partial)
+The author explicitly said the public address is present somewhere in the image/file. Equal-width bit/hex mappings were rejected. No arbitrary new tilings without independent evidence.
 
-The left/right building counts were already included in the broad historical object-count/geometry candidate sweep. No independent semantic corroboration exists. Do not prioritize without new evidence.
+## 4. External archival evidence / sibling solve methods
 
-## 4. Format-invariant visible / semantic mechanisms
+Still valuable only when genuinely new evidence appears.
 
-Still the strongest general prior. Stage 31 showed visible structure survives JPEG/resampling while exact low-bit identity collapses near chance.
+## Deprioritized / closed
 
-## 5. External archival evidence / sibling solve methods
-
-Still valuable when it supplies genuinely new evidence rather than recycled hypotheses.
-
-## Closed / do not recycle
-
-- CryptoCanvas: confirmed post-publication mirror, not source clue.
-- Alpha halo: compositing/anti-aliasing explanation.
-- First-row anomaly: directly tested.
-- H/V interpretations tried so far: independently unconfirmed.
-- Superbatch nominal hits: all failed Stage-88 replication.
-- Filename/Arweave ID = 32 bytes: explicitly covered in Stage 3.
+- Source-photo exact Courageous Sailing/Boston pool: Stage 92 found 0 strong and 0 interesting geometric matches; do not broaden without new evidence.
+- 5/7 skyline split: partial historical coverage, no independent corroboration.
+- CryptoCanvas: confirmed post-publication mirror only.
+- Alpha halo: anti-aliasing/compositing.
+- First row: covered.
+- H/V interpretations tested so far: independently unconfirmed.
+- Superbatch nominal hits: all failed Stage 88.
+- Arweave ID -> 32 bytes: covered in Stage 3.
