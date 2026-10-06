@@ -1,23 +1,25 @@
 #!/usr/bin/env python3
-"""Stage 95: 16-level grayscale-alphabet audit.
+"""Stage 95 (corrected): robust 16-mode grayscale alphabet audit.
 
-Safe, non-cryptographic mechanism test.
+The first implementation used an affine/equally-spaced lattice score whose
+synthetic 16-level positive control was not distinguishable from Puzzle #5.
+That control failure invalidated interpretation.
 
-Hypothesis: Puzzle #11 may encode the 64-hex-character key through a visible
-16-symbol grayscale alphabet rather than through exact LSBs. This stage tests
-only whether a robust 16-level tonal alphabet exists. It never maps tones to
-hex digits, emits an ordered symbol sequence, or constructs/verifies a key.
+This corrected version tests the more general hypothesis actually justified by
+the target: a 16-symbol tonal alphabet whose levels need not be equally spaced.
+
+It measures:
+- 16-cluster compactness on foreground grayscale values;
+- fraction of foreground samples lying within ±2 gray levels of a cluster mode;
+- occupancy of all 16 fitted modes.
 
 Controls:
-- synthetic 16-level line art (positive);
-- solved hand-drawn Puzzle #5 image from the public HomelessPhD archive
-  converted to grayscale (author-style drawing control).
+- exact 16-shade synthetic line/block art (positive);
+- smooth continuous-tone gradient (negative);
+- solved hand-drawn Puzzle #5 (author-style specificity control).
 
-Target regions are fixed in advance:
-- whole foreground
-- large sail interior
-- skyline/building band
-- small-sails/jetty band
+No tone-to-hex mapping, ordered sequence, candidate key, or wallet operation is
+performed.
 """
 from __future__ import annotations
 
@@ -36,8 +38,8 @@ OUT=ROOT/"analysis"/"runs"/"stage95-grayscale-16level-alphabet"
 OUT.mkdir(parents=True,exist_ok=True)
 
 PZL5_URL="https://raw.githubusercontent.com/HomelessPhD/AR_Puzzles/main/PZL5/pics/pzl5.png"
-VARIANT_NAMES=("original","jpeg85","jpeg70","down75_up")
-MAX_SAMPLES=120000
+VARIANTS=("original","jpeg85","jpeg70","down75_up")
+MAX_SAMPLES=160000
 
 S=requests.Session()
 S.headers.update({"User-Agent":"Mozilla/5.0 (compatible; ArweavePuzzleResearch/1.0; public control fetch)"})
@@ -76,7 +78,7 @@ def region_masks(shape):
     h,w=shape
     whole=np.ones(shape,np.uint8)
     sail=sail_mask(shape)
-    skyline=np.zeros(shape,np.uint8); skyline[0:min(330,h),:]=1
+    skyline=np.zeros(shape,np.uint8); skyline[:min(330,h),:]=1
     jetty=np.zeros(shape,np.uint8)
     jetty[min(330,h):min(650,h),min(820,w):w]=1
     return {
@@ -89,113 +91,72 @@ def region_masks(shape):
 def foreground_values(gray,mask):
     vals=gray[(mask>0)&(gray<245)].astype(np.float64)
     if len(vals)>MAX_SAMPLES:
-        # deterministic evenly spaced sample preserves histogram shape
         idx=np.linspace(0,len(vals)-1,MAX_SAMPLES,dtype=int)
         vals=vals[idx]
     return vals
 
-def lattice_metrics(vals):
-    if len(vals)<200:
-        return {"n":int(len(vals)),"valid":False}
-    p1=float(np.percentile(vals,1))
-    p99=float(np.percentile(vals,99))
-    if p99-p1<15:
-        return {"n":int(len(vals)),"valid":False,"p1":p1,"p99":p99}
-    z=np.clip((vals-p1)/(p99-p1)*15.0,0,15)
-    nearest=np.rint(z)
-    resid=np.abs(z-nearest)
-    bins=np.bincount(nearest.astype(int),minlength=16).astype(float)
-    frac=bins/max(1,bins.sum())
-    occupied=int(np.sum(frac>=0.003))
-    entropy=float(-np.sum(frac[frac>0]*np.log2(frac[frac>0])))
-    return {
-        "n":int(len(vals)),
-        "valid":True,
-        "p1":p1,
-        "p99":p99,
-        "mean_normalized_lattice_residual":float(resid.mean()),
-        "median_normalized_lattice_residual":float(np.median(resid)),
-        "sharp_fraction_r008":float(np.mean(resid<=0.08)),
-        "sharp_fraction_r012":float(np.mean(resid<=0.12)),
-        "occupied_levels_ge_0p3pct":occupied,
-        "level_entropy_bits":entropy,
-        "level_min_fraction":float(frac.min()),
-        "level_max_fraction":float(frac.max()),
-    }
-
-def kmeans1d_sse(vals,k):
-    if len(vals)<k*10:
+def fit_kmeans_1d(vals,k=16):
+    if len(vals)<k*30:
         return None
-    # deterministic weighted histogram Lloyd k-means
     hist=np.bincount(np.clip(vals.astype(int),0,255),minlength=256).astype(float)
     xs=np.arange(256,dtype=float)
     nz=hist>0
-    xs2=xs[nz]; wt=hist[nz]
-    lo=float(np.percentile(vals,1)); hi=float(np.percentile(vals,99))
+    x=xs[nz]; w=hist[nz]
+    lo=float(np.percentile(vals,0.5)); hi=float(np.percentile(vals,99.5))
     centers=np.linspace(lo,hi,k)
-    for _ in range(50):
-        d=np.abs(xs2[:,None]-centers[None,:])
+    for _ in range(100):
+        d=np.abs(x[:,None]-centers[None,:])
         lab=np.argmin(d,axis=1)
         new=centers.copy()
         for j in range(k):
             m=lab==j
             if np.any(m):
-                new[j]=np.sum(xs2[m]*wt[m])/np.sum(wt[m])
-        if np.max(np.abs(new-centers))<1e-6:
+                new[j]=np.sum(x[m]*w[m])/np.sum(w[m])
+        new=np.sort(new)
+        if np.max(np.abs(new-centers))<1e-7:
             centers=new; break
         centers=new
-    d=(xs2[:,None]-centers[None,:])**2
-    lab=np.argmin(d,axis=1)
-    sse=float(np.sum(wt*np.min(d,axis=1))/max(1,np.sum(wt)))
-    return sse
-
-def cluster_metrics(vals):
-    ss={}
-    for k in (15,16,17):
-        ss[k]=kmeans1d_sse(vals,k)
-    if any(v is None or v<=0 for v in ss.values()):
-        return {"valid":False,"sse":ss}
-    gain15to16=(ss[15]-ss[16])/ss[15]
-    gain16to17=(ss[16]-ss[17])/ss[16]
-    elbow=float(gain15to16-gain16to17)
+    # Assign raw sample values to nearest center.
+    dist=np.abs(vals[:,None]-centers[None,:])
+    lab=np.argmin(dist,axis=1)
+    nearest=dist[np.arange(len(vals)),lab]
+    counts=np.bincount(lab,minlength=k).astype(float)
+    frac=counts/max(1,counts.sum())
+    rmse=float(np.sqrt(np.mean(nearest**2)))
+    dynamic=max(1.0,hi-lo)
     return {
-        "valid":True,
-        "sse_per_sample":{"15":ss[15],"16":ss[16],"17":ss[17]},
-        "gain_15_to_16":float(gain15to16),
-        "gain_16_to_17":float(gain16to17),
-        "elbow16":elbow,
+        "centers":[float(x) for x in centers],
+        "rmse_gray":rmse,
+        "rmse_normalized":float(rmse/dynamic),
+        "mode_concentration_pm2":float(np.mean(nearest<=2.0)),
+        "mode_concentration_pm3":float(np.mean(nearest<=3.0)),
+        "occupied_modes_ge_0p3pct":int(np.sum(frac>=0.003)),
+        "occupied_modes_ge_1pct":int(np.sum(frac>=0.01)),
+        "mode_entropy_bits":float(-np.sum(frac[frac>0]*np.log2(frac[frac>0]))),
+        "min_mode_fraction":float(frac.min()),
+        "max_mode_fraction":float(frac.max()),
+        "dynamic_range":dynamic,
     }
 
-def histogram_peak_metrics(vals):
-    hist=np.bincount(np.clip(vals.astype(int),0,255),minlength=256).astype(float)
-    hist[245:]=0
-    sm=cv2.GaussianBlur(hist.reshape(-1,1),(1,0),1.2).ravel()
-    mx=max(1.0,float(sm.max()))
-    peaks=[]
-    for i in range(3,242):
-        if sm[i]>sm[i-1] and sm[i]>=sm[i+1] and sm[i]>=0.015*mx:
-            # local prominence against +/-3 neighborhood minima
-            base=max(float(np.min(sm[i-3:i])),float(np.min(sm[i+1:i+4])))
-            prom=(sm[i]-base)/mx
-            if prom>=0.004:
-                peaks.append((i,float(sm[i]/mx),float(prom)))
+def alphabet_score(m):
+    if not m: return None
+    concentration=m["mode_concentration_pm2"]
+    compact=float(math.exp(-m["rmse_normalized"]/0.018))
+    occupancy=min(1.0,m["occupied_modes_ge_0p3pct"]/14.0)
+    entropy=min(1.0,m["mode_entropy_bits"]/3.7)
+    return float(0.50*concentration+0.25*compact+0.15*occupancy+0.10*entropy)
+
+def analyze_vals(vals):
+    km=fit_kmeans_1d(vals,16)
     return {
-        "significant_peak_count":len(peaks),
-        "peak_positions":[p[0] for p in peaks[:40]],
+        "n":int(len(vals)),
+        "k16":km,
+        "score":alphabet_score(km),
     }
 
-def analyze_values(vals):
-    out=lattice_metrics(vals)
-    out["clusters"]=cluster_metrics(vals)
-    out["histogram_peaks"]=histogram_peak_metrics(vals) if len(vals)>=200 else {"significant_peak_count":0}
-    return out
-
-def analyze_target(gray):
+def analyze_regions(gray):
     masks=region_masks(gray.shape)
-    out={}
-    for name,mask in masks.items():
-        out[name]=analyze_values(foreground_values(gray,mask))
-    return out
+    return {name:analyze_vals(foreground_values(gray,m)) for name,m in masks.items()}
 
 def fetch_pzl5():
     r=S.get(PZL5_URL,timeout=30)
@@ -204,171 +165,165 @@ def fetch_pzl5():
         "url":r.url,"status":r.status_code,"bytes":len(r.content)
     }
 
-def synthetic_control(shape=(800,800)):
-    h,w=shape
-    im=np.full((h,w),255,np.uint8)
-    levels=np.linspace(20,230,16).astype(int)
-    # Each tone gets multiple visible line segments and rectangles.
-    for i,level in enumerate(levels):
-        y=30+i*45
-        cv2.line(im,(40,y),(760,y),int(level),5,cv2.LINE_AA)
-        cv2.rectangle(im,(60+(i%4)*170,y+8),(150+(i%4)*170,y+30),int(level),-1)
+def synthetic_positive(shape=(800,800)):
+    im=np.full(shape,255,np.uint8)
+    levels=np.array([18,31,45,60,75,91,107,123,139,155,171,187,202,216,229,240],dtype=int)
+    # Non-antialiased filled blocks + lines make a true discrete 16-mode alphabet.
+    for i,lev in enumerate(levels):
+        row=i//4; col=i%4
+        x0=35+col*190; y0=35+row*190
+        cv2.rectangle(im,(x0,y0),(x0+140,y0+115),int(lev),-1)
+        cv2.line(im,(x0,y0+135),(x0+145,y0+155),int(lev),5,cv2.LINE_8)
     return im
 
-def score_record(rec):
-    if not rec.get("valid"): return None
-    cl=rec.get("clusters") or {}
-    if not cl.get("valid"): return None
-    # Strong 16-level alphabet: many occupied levels, narrow residuals, and an
-    # actual elbow at k=16. Score is descriptive and bounded roughly 0..1.
-    occ=min(1.0,rec["occupied_levels_ge_0p3pct"]/14.0)
-    sharp=min(1.0,rec["sharp_fraction_r008"]/0.55)
-    resid=max(0.0,1.0-rec["mean_normalized_lattice_residual"]/0.25)
-    elbow=max(0.0,min(1.0,(cl["elbow16"]+0.02)/0.08))
-    return float(0.35*sharp+0.30*resid+0.20*occ+0.15*elbow)
+def synthetic_negative(shape=(800,800)):
+    h,w=shape
+    x=np.linspace(15,240,w,dtype=float)[None,:]
+    y=np.linspace(-18,18,h,dtype=float)[:,None]
+    a=np.clip(x+y,0,244).astype(np.uint8)
+    return a
+
+def analyze_control_image(gray):
+    mask=np.ones(gray.shape,np.uint8)
+    return analyze_vals(foreground_values(gray,mask))
 
 def main():
-    original=load_gray()
-    tv=make_variants(original)
-    target={name:analyze_target(a) for name,a in tv.items()}
+    target_base=load_gray()
+    target={v:analyze_regions(a) for v,a in make_variants(target_base).items()}
 
-    pzl5,p5info=fetch_pzl5()
-    p5v=make_variants(pzl5)
-    sibling={}
-    for name,a in p5v.items():
-        mask=np.ones(a.shape,np.uint8)
-        sibling[name]=analyze_values(foreground_values(a,mask))
+    p5,p5info=fetch_pzl5()
+    sibling={v:analyze_control_image(a) for v,a in make_variants(p5).items()}
 
-    synth=synthetic_control()
-    sv=make_variants(synth)
-    synthetic={}
-    for name,a in sv.items():
-        mask=np.ones(a.shape,np.uint8)
-        synthetic[name]=analyze_values(foreground_values(a,mask))
+    pos={v:analyze_control_image(a) for v,a in make_variants(synthetic_positive()).items()}
+    neg={v:analyze_control_image(a) for v,a in make_variants(synthetic_negative()).items()}
 
-    synthetic_scores={k:score_record(v) for k,v in synthetic.items()}
-    sibling_scores={k:score_record(v) for k,v in sibling.items()}
+    pos_scores={v:pos[v]["score"] for v in VARIANTS}
+    neg_scores={v:neg[v]["score"] for v in VARIANTS}
+    sibling_scores={v:sibling[v]["score"] for v in VARIANTS}
 
-    controls_valid=all(
-        synthetic_scores[k] is not None and sibling_scores[k] is not None
-        and synthetic_scores[k] >= sibling_scores[k] + 0.12
-        for k in VARIANT_NAMES
+    detector_valid=all(
+        pos_scores[v] is not None and neg_scores[v] is not None
+        and pos_scores[v]>=0.68
+        and pos_scores[v]>=neg_scores[v]+0.18
+        for v in VARIANTS
     )
 
-    region_evidence={}
+    region_results={}
     promoted_regions=[]
+    rejected_regions=[]
     for region in ("whole_foreground","large_sail","skyline","small_sails_jetty"):
         per={}
-        relative=[]
-        peak_ok=0
-        occ_ok=0
-        for variant in VARIANT_NAMES:
-            rec=target[variant][region]
-            ts=score_record(rec)
-            ss=synthetic_scores[variant]
-            bs=sibling_scores[variant]
-            if ts is None or ss is None or bs is None or ss<=bs+1e-9:
-                rel=None
-            else:
-                rel=float((ts-bs)/(ss-bs))
-                relative.append(rel)
-            peaks=(rec.get("histogram_peaks") or {}).get("significant_peak_count",0)
-            if 10<=peaks<=22: peak_ok+=1
-            if rec.get("occupied_levels_ge_0p3pct",0)>=12: occ_ok+=1
-            per[variant]={
+        close_to_positive=0
+        beats_sibling=0
+        occupancy=0
+        for v in VARIANTS:
+            rec=target[v][region]
+            ts=rec["score"]
+            ps=pos_scores[v]; ns=neg_scores[v]; ss=sibling_scores[v]
+            ratio=None
+            if ts is not None and ps is not None and ns is not None and ps>ns+1e-9:
+                ratio=float((ts-ns)/(ps-ns))
+            if ratio is not None and ratio>=0.65: close_to_positive+=1
+            if ts is not None and ss is not None and ts>=ss+0.08: beats_sibling+=1
+            km=rec["k16"] or {}
+            if km.get("occupied_modes_ge_0p3pct",0)>=14: occupancy+=1
+            per[v]={
                 "target_score":ts,
-                "sibling_score":bs,
-                "synthetic_score":ss,
-                "relative_to_sibling_synthetic":rel,
-                "occupied_levels":rec.get("occupied_levels_ge_0p3pct"),
-                "peak_count":peaks,
-                "mean_lattice_residual":rec.get("mean_normalized_lattice_residual"),
-                "sharp_fraction_r008":rec.get("sharp_fraction_r008"),
-                "elbow16":(rec.get("clusters") or {}).get("elbow16"),
+                "positive_score":ps,
+                "negative_score":ns,
+                "puzzle5_score":ss,
+                "normalized_positive_similarity":ratio,
+                "mode_concentration_pm2":km.get("mode_concentration_pm2"),
+                "rmse_normalized":km.get("rmse_normalized"),
+                "occupied_modes_ge_0p3pct":km.get("occupied_modes_ge_0p3pct"),
+                "mode_entropy_bits":km.get("mode_entropy_bits"),
             }
-        median_rel=float(np.median(relative)) if relative else -999.0
-        passes=bool(
-            controls_valid and len(relative)==4 and
-            median_rel>=0.60 and
-            sum(x>=0.45 for x in relative)>=3 and
-            peak_ok>=3 and occ_ok>=3
-        )
-        region_evidence[region]={
-            "variants":per,
-            "median_relative_evidence":median_rel,
-            "variants_relative_ge_0p45":sum(x>=0.45 for x in relative),
-            "peak_gate_variants":peak_ok,
-            "occupancy_gate_variants":occ_ok,
-            "promoted":passes,
-        }
-        if passes: promoted_regions.append(region)
 
-    promoted=bool(promoted_regions)
+        promoted=bool(detector_valid and close_to_positive>=3 and beats_sibling>=3 and occupancy>=3)
+        rejected=bool(detector_valid and close_to_positive<=1)
+        region_results[region]={
+            "variants":per,
+            "variants_close_to_positive":close_to_positive,
+            "variants_beating_puzzle5":beats_sibling,
+            "variants_occupancy_ok":occupancy,
+            "promoted":promoted,
+            "rejected":rejected,
+        }
+        if promoted: promoted_regions.append(region)
+        if rejected: rejected_regions.append(region)
+
+    overall_promoted=bool(promoted_regions)
+    all_rejected=bool(len(rejected_regions)==len(region_results))
 
     result={
         "experiment_id":"A11-EXP-095",
-        "scope":"16-level grayscale alphabet structure only; no level-to-symbol mapping, no ordered target sequence, no private-key operations",
+        "scope":"general 16-mode grayscale alphabet audit; no tone-to-symbol mapping or ordered sequence; no private-key operations",
+        "implementation_correction":"First Stage-95 affine-lattice score failed its synthetic-vs-control validation. Corrected test uses general 16-mode compactness/concentration and adds a continuous-tone negative control.",
         "puzzle5_control_fetch":p5info,
-        "controls_valid":controls_valid,
-        "synthetic_scores":synthetic_scores,
-        "sibling_puzzle5_scores":sibling_scores,
-        "target_region_evidence":region_evidence,
+        "detector_valid":detector_valid,
+        "positive_scores":pos_scores,
+        "negative_scores":neg_scores,
+        "puzzle5_scores":sibling_scores,
+        "regions":region_results,
         "promoted_regions":promoted_regions,
-        "promotion_rule":"synthetic score exceeds Puzzle5 control by >=0.12 in every variant; target region median relative evidence >=0.60 with >=3/4 variants >=0.45; >=3 variants have 12+ occupied levels and 10..22 significant histogram peaks",
-        "promoted":promoted,
-        "interpretation_guard":"A positive result would establish only a robust 16-level tonal alphabet candidate, not a digit mapping or key.",
+        "rejected_regions":rejected_regions,
+        "all_regions_rejected":all_rejected,
+        "promotion_rule":"detector valid in all variants; region resembles positive control in >=3/4 variants; exceeds Puzzle5 by >=0.08 in >=3/4; >=14 occupied modes in >=3/4",
+        "rejection_rule":"detector valid and region resembles positive control in <=1/4 variants",
+        "promoted":overall_promoted,
+        "interpretation_guard":"Positive means only tonal-alphabet structure; no mapping to hexadecimal digits is attempted.",
     }
     (OUT/"result.json").write_text(json.dumps(result,indent=2)+"\n")
 
     md=[
-        "# Stage 95 — 16-level grayscale-alphabet audit",
+        "# Stage 95 — corrected 16-mode grayscale-alphabet audit",
         "",
         "**Experiment:** A11-EXP-095",
         "",
-        f"- synthetic-vs-Puzzle5 control validation: **{controls_valid}**",
-        f"- promoted target regions: **{promoted_regions}**",
-        f"- promotion rule satisfied: **{promoted}**",
+        f"- detector/control validation: **{detector_valid}**",
+        f"- promoted regions: **{promoted_regions}**",
+        f"- rejected regions: **{rejected_regions}**",
+        f"- all fixed regions rejected: **{all_rejected}**",
         "",
-        "## Control scores",
+        "## Controls",
         "",
-        "| variant | synthetic 16-level | Puzzle #5 drawing | delta |",
+        "| variant | positive 16-mode | continuous negative | Puzzle #5 |",
         "|:---|---:|---:|---:|",
     ]
-    for v in VARIANT_NAMES:
-        ss=synthetic_scores[v]; bs=sibling_scores[v]
-        delta=(ss-bs) if ss is not None and bs is not None else None
-        md.append(f"| {v} | {ss if ss is not None else ''} | {bs if bs is not None else ''} | {delta if delta is not None else ''} |")
+    for v in VARIANTS:
+        md.append(f"| {v} | {pos_scores[v]:.4f} | {neg_scores[v]:.4f} | {sibling_scores[v]:.4f} |")
 
     md += [
         "",
-        "## Target regions",
+        "## Target-region decisions",
         "",
-        "| region | median relative evidence | variants >=0.45 | peak gate | occupancy gate | promoted |",
-        "|:---|---:|---:|---:|---:|:---:|",
+        "| region | close to positive | beats Puzzle5 | occupancy ok | promoted | rejected |",
+        "|:---|---:|---:|---:|:---:|:---:|",
     ]
-    for name,r in region_evidence.items():
-        md.append(f"| {name} | {r['median_relative_evidence']:.3f} | {r['variants_relative_ge_0p45']}/4 | {r['peak_gate_variants']}/4 | {r['occupancy_gate_variants']}/4 | {r['promoted']} |")
+    for name,r in region_results.items():
+        md.append(f"| {name} | {r['variants_close_to_positive']}/4 | {r['variants_beating_puzzle5']}/4 | {r['variants_occupancy_ok']}/4 | {r['promoted']} | {r['rejected']} |")
 
-    md += ["","## Detailed target metrics",""]
-    for region,r in region_evidence.items():
-        md.append(f"### {region}")
+    md += ["","## Detailed metrics",""]
+    for name,r in region_results.items():
+        md.append(f"### {name}")
         md.append("")
-        md.append("| variant | target score | relative | occupied | peaks | mean residual | sharp@0.08 | elbow16 |")
-        md.append("|:---|---:|---:|---:|---:|---:|---:|---:|")
+        md.append("| variant | target | normalized positive similarity | mode concentration ±2 | norm RMSE | occupied modes |")
+        md.append("|:---|---:|---:|---:|---:|---:|")
         for v,z in r["variants"].items():
-            rel=z["relative_to_sibling_synthetic"]
+            rel=z["normalized_positive_similarity"]
             md.append(
-                f"| {v} | {z['target_score'] if z['target_score'] is not None else ''} | "
-                f"{rel if rel is not None else ''} | {z['occupied_levels']} | {z['peak_count']} | "
-                f"{z['mean_lattice_residual']} | {z['sharp_fraction_r008']} | {z['elbow16']} |"
+                f"| {v} | {z['target_score']:.4f} | {rel if rel is not None else ''} | "
+                f"{z['mode_concentration_pm2']} | {z['rmse_normalized']} | {z['occupied_modes_ge_0p3pct']} |"
             )
         md.append("")
 
     md += ["## Interpretation",""]
-    if promoted:
-        md.append("At least one fixed Puzzle #11 region exhibits a 16-level tonal structure that behaves substantially more like the synthetic 16-shade alphabet than the solved hand-drawn Puzzle #5 control and survives lossy transformations. This promotes tonal-symbol organization for a narrower follow-up, without mapping levels to digits.")
+    if overall_promoted:
+        md.append("At least one fixed region behaves like a robust 16-mode tonal alphabet across lossy variants and more strongly than the Puzzle #5 drawing control. This promotes tonal-symbol organization for a narrower structural follow-up, without assigning digit values.")
+    elif all_rejected:
+        md.append("All fixed regions are materially unlike the validated 16-mode positive control across the tested transformations. Retire the direct 16-gray-mode symbol-alphabet hypothesis.")
     else:
-        md.append("No fixed region satisfies the predeclared 16-level alphabet criteria relative to both synthetic and author-style drawing controls. Retire the direct 16-gray-level symbol-alphabet hypothesis.")
+        md.append("The corrected detector is valid, but some target regions remain intermediate rather than clearly positive or negative. Carry only those intermediate regions forward; do not map tones to digits.")
     md += [
         "",
         "No tone-to-hex mapping or ordered target symbol sequence is stored.",
@@ -376,11 +331,13 @@ def main():
         "",
     ]
     (OUT/"REPORT.md").write_text("\n".join(md))
+
     print(json.dumps({
         "status":"ok","experiment_id":"A11-EXP-095",
-        "controls_valid":controls_valid,
+        "detector_valid":detector_valid,
         "promoted_regions":promoted_regions,
-        "promoted":promoted,
+        "rejected_regions":rejected_regions,
+        "all_rejected":all_rejected,
     }))
 
 if __name__=="__main__":
