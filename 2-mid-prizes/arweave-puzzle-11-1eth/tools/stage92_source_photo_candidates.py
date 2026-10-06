@@ -42,6 +42,7 @@ COURAGEOUS="https://courageoussailing.org/sailing/racing/"
 CDX="https://web.archive.org/cdx/search/cdx"
 COMMONS_API="https://commons.wikimedia.org/w/api.php"
 MAX_CANDIDATES=110
+MAX_NULLS=14
 MAX_BYTES=12_000_000
 
 SEARCH_QUERIES=[
@@ -313,7 +314,10 @@ def main():
             by[u]["refs"]=[{"source":x.get("source"),"ref":x.get("ref"),"title":x.get("title")}]
         else:
             by[u]["refs"].append({"source":x.get("source"),"ref":x.get("ref"),"title":x.get("title")})
-    rows=list(by.values())[:MAX_CANDIDATES]
+    all_rows=list(by.values())
+    candidate_rows=[x for x in all_rows if x.get("source")!="commons_null"][:MAX_CANDIDATES]
+    null_rows=[x for x in all_rows if x.get("source")=="commons_null"][:MAX_NULLS]
+    rows=candidate_rows+null_rows
 
     results=[]
     for i,x in enumerate(rows):
@@ -346,7 +350,8 @@ def main():
         "experiment_id":"A11-EXP-092",
         "scope":"bounded photo-source candidate audit over the exact historical Courageous Sailing lead, archived page assets and a small Commons skyline/sailing pool; no private-key operations",
         "source_meta":source_meta,
-        "candidate_urls_total":len(rows),
+        "candidate_urls_total":len(candidate_rows),
+        "null_urls_total":len(null_rows),
         "candidate_images_scored":len(cand_results),
         "null_images_scored":len(null_results),
         "positive_control":control,
@@ -368,7 +373,8 @@ def main():
         "",
         "**Experiment:** A11-EXP-092",
         "",
-        f"- Candidate URLs gathered: **{len(rows)}**",
+        f"- Candidate URLs gathered: **{len(candidate_rows)}**",
+        f"- Null URLs gathered: **{len(null_rows)}**",
         f"- Candidate images scored: **{len(cand_results)}**",
         f"- Unrelated null images scored: **{len(null_results)}**",
         f"- Positive-control pass: **{control_pass}**",
