@@ -1,39 +1,34 @@
 # Open leads, ranked
 
-## 1. Historical public solver observations not yet reconciled (active)
+## 1. Source-photo hypothesis (active, genuinely untested)
 
-The CryptoCanvas branch is now closed: token #5 is a confirmed post-publication mirror, not a source clue.
+A 2021 public solver suggested that Puzzle #11's harbor sketch may have been derived from an identifiable photograph, citing another puzzle in the series that depended on wider photo context. The commenter linked Courageous Sailing's racing page as an example candidate source.
 
-The Puzzling StackExchange discussion contains several concrete observations that deserve a formal delta audit against everything already tested. Candidate historical observations include:
+Corrected Stage 91 confirms there is no prior direct source-photo provenance test in this branch.
 
-- the objective **5 buildings / 7 buildings** skyline split;
-- the pier/supports visually resembling **X / IX / XI**;
-- a possible **source photograph** behind the sketch;
-- the filename/transaction-id observation that it decodes to **32 bytes**;
-- already-known alpha, first-row, H/V and metadata observations.
+Stage 92 tests the linked candidate site, archived versions and a bounded public Boston/sailing/skyline image pool with geometry-focused photo-to-sketch matching.
 
-Stage 91 separates genuinely new claims from ideas already exhausted in the branch.
+## 2. Pier/supports as X / IX / XI (untested, weaker)
 
-## 2. Format-invariant visible / semantic mechanisms
+Also genuinely untested, but the historical comment itself was speculative (“could imagine”). Keep behind the source-photo hypothesis unless Stage 92 provides no usable candidate evidence.
 
-Still the strongest broad prior. Stage 31 showed visible structure survives JPEG/resampling while exact low-bit identity collapses near chance.
+## 3. 5/7 skyline split (partial)
 
-## 3. Public-address known-answer probe
+The left/right building counts were already included in the broad historical object-count/geometry candidate sweep. No independent semantic corroboration exists. Do not prioritize without new evidence.
 
-The author explicitly said the public address is present somewhere in the image/file. Equal-width bit and hex tilings were rejected; arbitrary tilings remain disfavored.
+## 4. Format-invariant visible / semantic mechanisms
 
-## 4. External archival evidence / sibling solve methods
+Still the strongest general prior. Stage 31 showed visible structure survives JPEG/resampling while exact low-bit identity collapses near chance.
 
-High priority after Stage 91 identifies which historical observations are actually novel.
+## 5. External archival evidence / sibling solve methods
 
-## 5. H/V skyline texture — secondary
+Still valuable when it supplies genuinely new evidence rather than recycled hypotheses.
 
-Real and robust, but its tested interpretations have failed independent confirmation.
+## Closed / do not recycle
 
-## 6. CryptoCanvas provenance — closed
-
-Corrected Stage 90 confirms token #5 mirrors Puzzle #11 but was minted in July 2020, months after publication. It adds provenance history, not an encoding clue.
-
-## 7. Classic pixel/traversal steganography — strongly downgraded
-
-Broad low-bit, alpha, traversal, ASCII/compression and generic pixel-statistical families have already been extensively covered.
+- CryptoCanvas: confirmed post-publication mirror, not source clue.
+- Alpha halo: compositing/anti-aliasing explanation.
+- First-row anomaly: directly tested.
+- H/V interpretations tried so far: independently unconfirmed.
+- Superbatch nominal hits: all failed Stage-88 replication.
+- Filename/Arweave ID = 32 bytes: explicitly covered in Stage 3.
