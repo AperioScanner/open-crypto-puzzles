@@ -36,7 +36,7 @@
     ],
     "has_more": false,
     "quota_max": 300,
-    "quota_remaining": 299
+    "quota_remaining": 248
   },
   "question_comments_fetch": {
     "url": "https://api.stackexchange.com/2.3/questions/97537/comments?site=puzzling&pagesize=100&filter=withbody",
@@ -165,7 +165,7 @@
     ],
     "has_more": false,
     "quota_max": 300,
-    "quota_remaining": 299
+    "quota_remaining": 248
   },
   "answers_fetch": {
     "url": "https://api.stackexchange.com/2.3/questions/97537/answers?site=puzzling&pagesize=100&filter=withbody",
@@ -196,7 +196,7 @@
     ],
     "has_more": false,
     "quota_max": 300,
-    "quota_remaining": 299
+    "quota_remaining": 248
   },
   "answer_comments_fetch": {
     "url": "https://api.stackexchange.com/2.3/answers/97553/comments?site=puzzling&pagesize=100&filter=withbody",
@@ -208,7 +208,7 @@
       {
         "owner": {
           "account_id": 3116542,
-          "reputation": 41733,
+          "reputation": 41743,
           "user_id": 2136,
           "user_type": "registered",
           "accept_rate": 100,
@@ -236,7 +236,7 @@
         },
         "reply_to_user": {
           "account_id": 3116542,
-          "reputation": 41733,
+          "reputation": 41743,
           "user_id": 2136,
           "user_type": "registered",
           "accept_rate": 100,
@@ -255,7 +255,7 @@
       {
         "owner": {
           "account_id": 3116542,
-          "reputation": 41733,
+          "reputation": 41743,
           "user_id": 2136,
           "user_type": "registered",
           "accept_rate": 100,
@@ -292,6 +292,6 @@
     ],
     "has_more": false,
     "quota_max": 300,
-    "quota_remaining": 299
+    "quota_remaining": 248
   }
 }
