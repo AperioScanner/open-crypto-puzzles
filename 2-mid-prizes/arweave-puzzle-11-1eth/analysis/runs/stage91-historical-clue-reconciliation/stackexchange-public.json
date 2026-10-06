@@ -165,7 +165,7 @@
     ],
     "has_more": false,
     "quota_max": 300,
-    "quota_remaining": 299
+    "quota_remaining": 298
   },
   "answers_fetch": {
     "url": "https://api.stackexchange.com/2.3/questions/97537/answers?site=puzzling&pagesize=100&filter=withbody",
@@ -196,7 +196,7 @@
     ],
     "has_more": false,
     "quota_max": 300,
-    "quota_remaining": 299
+    "quota_remaining": 298
   },
   "answer_comments_fetch": {
     "url": "https://api.stackexchange.com/2.3/answers/97553/comments?site=puzzling&pagesize=100&filter=withbody",
@@ -292,6 +292,6 @@
     ],
     "has_more": false,
     "quota_max": 300,
-    "quota_remaining": 299
+    "quota_remaining": 298
   }
 }
