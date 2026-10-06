@@ -2,12 +2,22 @@
 
 **Experiment:** A11-EXP-094
 
-- synthetic 64-stroke detector control: **True**
-- compatible representation counts across every variant: **[]**
+- synthetic multi-count detector calibration: **False**
+- calibration monotonic / Pearson: **True / 0.9483**
+- calibrated compatible representation counts: **[]**
 - classifiable-count CV: **0.1207**
 - orientation structure gate: **True**
-- cross-variant agreement gate: **False**
+- cross-variant agreement gate: **True**
 - promotion rule satisfied: **False**
+
+## Detector calibration
+
+| drawn strokes | mean detected | min | max | CV |
+|---:|---:|---:|---:|---:|
+| 16 | 15.25 | 15 | 16 | 0.028 |
+| 32 | 28.25 | 28 | 29 | 0.015 |
+| 64 | 53.50 | 49 | 56 | 0.050 |
+| 96 | 56.50 | 45 | 64 | 0.124 |
 
 ## Variant summaries
 

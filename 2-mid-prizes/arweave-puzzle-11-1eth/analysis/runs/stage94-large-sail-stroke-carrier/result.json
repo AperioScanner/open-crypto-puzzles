@@ -114,25 +114,259 @@
   "classifiable_count_cv": 0.1207363221040738,
   "compatible_target_counts": [],
   "orientation_structure_ok": true,
-  "cross_variant_agreement_ok": false,
-  "synthetic_64_stroke_control": {
-    "drawn_strokes": 64,
-    "summary": {
-      "stable_tracks": 48,
-      "classifiable_tracks": 48,
-      "positive_orientation_tracks": 24,
-      "negative_orientation_tracks": 24,
-      "minority_fraction": 0.5,
-      "orientation_median_separation_deg": 100.17824725097259,
-      "nearest_target_count": {
-        "target": 64,
-        "delta": 16,
-        "tolerance": 8
+  "cross_variant_agreement_ok": true,
+  "synthetic_calibration": {
+    "controls": {
+      "16": {
+        "drawn_strokes": 16,
+        "variants": {
+          "original": {
+            "stable_tracks": 15,
+            "classifiable_tracks": 15,
+            "positive_orientation_tracks": 8,
+            "negative_orientation_tracks": 7,
+            "minority_fraction": 0.4666666666666667,
+            "orientation_median_separation_deg": 104.72158493342641,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 49,
+              "tolerance": 8
+            }
+          },
+          "jpeg85": {
+            "stable_tracks": 16,
+            "classifiable_tracks": 16,
+            "positive_orientation_tracks": 8,
+            "negative_orientation_tracks": 8,
+            "minority_fraction": 0.5,
+            "orientation_median_separation_deg": 105.93330297299252,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 48,
+              "tolerance": 8
+            }
+          },
+          "jpeg70": {
+            "stable_tracks": 15,
+            "classifiable_tracks": 15,
+            "positive_orientation_tracks": 8,
+            "negative_orientation_tracks": 7,
+            "minority_fraction": 0.4666666666666667,
+            "orientation_median_separation_deg": 105.9383724729307,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 49,
+              "tolerance": 8
+            }
+          },
+          "down75_up": {
+            "stable_tracks": 15,
+            "classifiable_tracks": 15,
+            "positive_orientation_tracks": 7,
+            "negative_orientation_tracks": 8,
+            "minority_fraction": 0.4666666666666667,
+            "orientation_median_separation_deg": 106.26020470831196,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 49,
+              "tolerance": 8
+            }
+          }
+        },
+        "mean_detected": 15.25,
+        "min_detected": 15,
+        "max_detected": 16,
+        "cv": 0.02839427553391602
+      },
+      "32": {
+        "drawn_strokes": 32,
+        "variants": {
+          "original": {
+            "stable_tracks": 28,
+            "classifiable_tracks": 28,
+            "positive_orientation_tracks": 16,
+            "negative_orientation_tracks": 12,
+            "minority_fraction": 0.42857142857142855,
+            "orientation_median_separation_deg": 105.49089482086919,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 36,
+              "tolerance": 8
+            }
+          },
+          "jpeg85": {
+            "stable_tracks": 28,
+            "classifiable_tracks": 28,
+            "positive_orientation_tracks": 16,
+            "negative_orientation_tracks": 12,
+            "minority_fraction": 0.42857142857142855,
+            "orientation_median_separation_deg": 105.32744395320947,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 36,
+              "tolerance": 8
+            }
+          },
+          "jpeg70": {
+            "stable_tracks": 28,
+            "classifiable_tracks": 28,
+            "positive_orientation_tracks": 16,
+            "negative_orientation_tracks": 12,
+            "minority_fraction": 0.42857142857142855,
+            "orientation_median_separation_deg": 105.61654023754944,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 36,
+              "tolerance": 8
+            }
+          },
+          "down75_up": {
+            "stable_tracks": 29,
+            "classifiable_tracks": 29,
+            "positive_orientation_tracks": 16,
+            "negative_orientation_tracks": 13,
+            "minority_fraction": 0.4482758620689655,
+            "orientation_median_separation_deg": 105.91085751682023,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 35,
+              "tolerance": 8
+            }
+          }
+        },
+        "mean_detected": 28.25,
+        "min_detected": 28,
+        "max_detected": 29,
+        "cv": 0.015327883252821922
+      },
+      "64": {
+        "drawn_strokes": 64,
+        "variants": {
+          "original": {
+            "stable_tracks": 56,
+            "classifiable_tracks": 56,
+            "positive_orientation_tracks": 30,
+            "negative_orientation_tracks": 26,
+            "minority_fraction": 0.4642857142857143,
+            "orientation_median_separation_deg": 106.26020470831196,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 8,
+              "tolerance": 8
+            }
+          },
+          "jpeg85": {
+            "stable_tracks": 54,
+            "classifiable_tracks": 54,
+            "positive_orientation_tracks": 26,
+            "negative_orientation_tracks": 28,
+            "minority_fraction": 0.48148148148148145,
+            "orientation_median_separation_deg": 105.4633798647587,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 10,
+              "tolerance": 8
+            }
+          },
+          "jpeg70": {
+            "stable_tracks": 55,
+            "classifiable_tracks": 55,
+            "positive_orientation_tracks": 27,
+            "negative_orientation_tracks": 28,
+            "minority_fraction": 0.4909090909090909,
+            "orientation_median_separation_deg": 105.608022319193,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 9,
+              "tolerance": 8
+            }
+          },
+          "down75_up": {
+            "stable_tracks": 49,
+            "classifiable_tracks": 49,
+            "positive_orientation_tracks": 24,
+            "negative_orientation_tracks": 25,
+            "minority_fraction": 0.4897959183673469,
+            "orientation_median_separation_deg": 106.26020470831196,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 15,
+              "tolerance": 8
+            }
+          }
+        },
+        "mean_detected": 53.5,
+        "min_detected": 49,
+        "max_detected": 56,
+        "cv": 0.05032864305733181
+      },
+      "96": {
+        "drawn_strokes": 96,
+        "variants": {
+          "original": {
+            "stable_tracks": 64,
+            "classifiable_tracks": 64,
+            "positive_orientation_tracks": 30,
+            "negative_orientation_tracks": 34,
+            "minority_fraction": 0.46875,
+            "orientation_median_separation_deg": 104.11269555331648,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 0,
+              "tolerance": 8
+            }
+          },
+          "jpeg85": {
+            "stable_tracks": 59,
+            "classifiable_tracks": 59,
+            "positive_orientation_tracks": 30,
+            "negative_orientation_tracks": 29,
+            "minority_fraction": 0.4915254237288136,
+            "orientation_median_separation_deg": 104.97287576678693,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 5,
+              "tolerance": 8
+            }
+          },
+          "jpeg70": {
+            "stable_tracks": 58,
+            "classifiable_tracks": 58,
+            "positive_orientation_tracks": 26,
+            "negative_orientation_tracks": 32,
+            "minority_fraction": 0.4482758620689655,
+            "orientation_median_separation_deg": 105.45643867844785,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 6,
+              "tolerance": 8
+            }
+          },
+          "down75_up": {
+            "stable_tracks": 45,
+            "classifiable_tracks": 45,
+            "positive_orientation_tracks": 26,
+            "negative_orientation_tracks": 19,
+            "minority_fraction": 0.4222222222222222,
+            "orientation_median_separation_deg": 105.25511870305778,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 19,
+              "tolerance": 8
+            }
+          }
+        },
+        "mean_detected": 56.5,
+        "min_detected": 45,
+        "max_detected": 64,
+        "cv": 0.12420945882847964
       }
     },
-    "passed": true
+    "detected_vs_drawn_pearson": 0.9482853360439526,
+    "strictly_monotonic": true,
+    "passed": false
   },
-  "promotion_rule": "synthetic control passes; all variants stay within predeclared tolerance of 64 or 256 classifiable strokes; count CV<=0.12; minority orientation fraction>=0.20; median sign-class separation>=35deg; cross-variant match>=0.70 and same-sign>=0.90",
+  "promotion_rule": "multi-count synthetic calibration passes; all target variants lie within calibrated detector-output range for 64 or 256 one-stroke-per-symbol carriers; count CV<=0.15; minority orientation fraction>=0.20; median sign-class separation>=35deg; cross-variant match>=0.55 and same-sign>=0.90",
   "promoted": false,
   "privacy_guard": "Ordered target stroke orientations are intentionally not written to artifacts."
 }
