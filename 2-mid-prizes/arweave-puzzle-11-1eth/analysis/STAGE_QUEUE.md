@@ -10,72 +10,65 @@ Do **not** reopen a hypothesis classified COVERED, RETIRED, or independently fal
 
 Historical popularity alone is not a reason to retest an exhausted idea.
 
-## Review through corrected Stage 93
+## Review through calibrated Stage 94
 
-Stage 93 required two implementation repairs under the same stage number:
-- OpenCV 5 returns HoughLinesP output as (N,4) in this runner, not always (N,1,4);
-- the first X/IX/XI scorer mathematically prevented IX/XI composites from outranking bare X, and its synthetic IX/XI controls failed.
+The first Stage-94 result exposed a calibration issue: its 64-stroke synthetic control was detected as only 48 strokes, while the target-count gate assumed near-perfect recovery. That made a direct 64-vs-target count conclusion too strong.
 
-Both defects were fixed before interpretation.
+Stage 94 was therefore repaired under the same number with high-density synthetic controls at **16, 32, 64, 128 and 256** strokes and wide detector-calibrated compatibility bounds.
 
-### Valid Stage-93 result
+### Valid Stage-94 result
 
-- all synthetic X / IX / XI controls: **PASS**
-- original dominant template: **IX**, 4/5 detector configurations
-- lossy dominant template: **IX**, 3/5 configurations
-- target family-best score: **0.8741**
-- matched-window median: **0.8534**
-- matched-window maximum: **0.9857**
-- familywise empirical p: **0.4107**
-- promotion: **False**
+Target large-sail detector response across original/lossy variants:
+- **10, 13, 12, 14** classifiable stable tracks.
 
-The pier really can look Roman-like, and that appearance survives lossy conversion, but it is **not unusual** relative to other line-rich regions of the same drawing.
+Synthetic controls:
+- 16 drawn → **12–14** detected
+- 32 drawn → **22–27**
+- 64 drawn → **45–52**
+- 128 drawn → **49–68**
+- 256 drawn → **53–70**
+
+The detector saturates at high density, but this does not rescue the target: even under deliberately wide calibrated bounds, the real sail's 10–14 tracks are far below both canonical carrier families.
+
+Other target properties:
+- two-orientation structure: PASS
+- cross-format matched-sign stability: PASS
+- 64 one-stroke-per-symbol count compatibility: **REJECTED**
+- 256 one-stroke-per-symbol count compatibility: **REJECTED**
 
 ### Hypothesis decision
 
-**Pier X / IX / XI = RETIRED.**
+**Large-sail one-stroke-per-symbol carrier (64 hex symbols or 256 binary symbols) = RETIRED.**
 
-This closes the last genuinely untested historical visual claim identified in corrected Stage 91.
-
-## New mechanism family
-
-With the historical clue backlog exhausted, move back to mechanism discovery rather than recycling old solver ideas.
-
-The strongest surviving constraints are:
-- author: **format does not matter**;
-- author: the **private key is hidden in the image**;
-- Stage 31: macroscopic line/orientation structure survives JPEG/resampling while exact low bits collapse;
-- the artwork is explicitly a hand-drawn stroke image;
-- Stage 3 exhausted exact alpha-marked grayscale/bitstream/crop-hash candidates;
-- Stage 36 rejected hidden readable text in the large sailboat;
-- neither stage tested a **format-invariant discrete stroke-orientation carrier**.
+This does not reject every grayscale/stroke encoding. It rejects the specific hypothesis that each visible stable sail stroke is one key symbol/bit.
 
 ## Next stage
 
-**Stage 94 — large-sail stroke-orientation carrier-capacity audit.**
+**Stage 95 — 16-level grayscale-alphabet audit.**
 
-Question:
-> Does the large sail contain a robust, naturally discrete set of visible strokes whose count and binary orientation structure are compatible with storing a 64-hex / 256-bit key, without relying on exact pixels?
+Motivation:
+- Puzzle #11 is natively **8-bit grayscale+alpha**, unlike the more ordinary color/photo presentation of several solved siblings.
+- A 64-character hexadecimal private key has a natural **16-symbol alphabet**.
+- Prior stages tested bitplanes, alpha-marked grayscale sequences, crop hashes, hidden text and stroke orientation; they did **not** test whether visible foreground tone itself forms a robust 16-level symbol alphabet.
 
 Bounded design:
-1. Fixed triangular sail-interior mask derived from the existing large-sailboat bbox; hull excluded.
-2. Skeletonize visible ink at several fixed grayscale thresholds.
-3. Detect/deduplicate long stroke centerlines and track them across thresholds.
-4. Repeat on original, JPEG85, JPEG70, and 0.75x down/up variants.
-5. Measure only non-secret carrier properties:
-   - number of stable stroke tracks;
-   - robustness of the count;
-   - two-orientation separability/balance;
-   - cross-variant stroke agreement.
-6. Compare stable count against the only two canonical representation sizes justified in advance: **64 visible hex symbols** or **256 binary symbols**.
-7. Use a synthetic 64-stroke two-orientation sail as a positive detector control.
-8. Do **not** persist or print the target sail's ordered binary orientation sequence.
+1. Fixed regions:
+   - whole-image foreground
+   - large-sail interior
+   - skyline/building band
+   - small-sails/jetty band
+2. Evaluate only foreground grayscale samples (`gray < 245`).
+3. Fit a predeclared 16-level affine intensity lattice and measure normalized residual, level occupancy and per-level support.
+4. Independently fit 16 one-dimensional clusters and measure separation/within-cluster compactness.
+5. Repeat after JPEG85, JPEG70 and 0.75x resize roundtrip.
+6. Use synthetic 16-shade line-art controls.
+7. Use the solved hand-drawn Puzzle #5 image as an author-style drawing control so ordinary antialiasing/pencil-like rasterization is not mistaken for an encoded alphabet.
+8. Do not map levels to hex digits or construct a key candidate.
 
-Promotion requires a stable count close to 64 or 256 across variants plus strong two-class orientation structure. Otherwise retire this carrier family.
+Promotion requires a strong 16-level structure in Puzzle #11 that survives lossy transforms, passes synthetic controls, and is materially stronger than the sibling-drawing control.
 
 ## Status
 
-- Stages 1–93: completed.
-- Corrected Stage 93: COMPLETED + REVIEWED — Roman hypothesis retired.
-- Historical solver-clue backlog: exhausted.
-- Stage 94: selected for launch.
+- Stages 1–94: completed.
+- Calibrated Stage 94: COMPLETED + REVIEWED — negative for one-stroke-per-symbol sail carrier.
+- Stage 95: selected for launch.
