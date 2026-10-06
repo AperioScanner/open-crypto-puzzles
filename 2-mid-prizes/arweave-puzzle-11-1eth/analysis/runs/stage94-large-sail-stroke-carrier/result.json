@@ -1,0 +1,138 @@
+{
+  "experiment_id": "A11-EXP-094",
+  "scope": "large-sail visible stroke carrier-capacity/robustness audit; no ordered target orientation sequence is persisted; no private-key operations",
+  "sail_geometry": {
+    "box": [
+      44,
+      320,
+      359,
+      526
+    ],
+    "triangle": [
+      [
+        151,
+        6
+      ],
+      [
+        8,
+        201
+      ],
+      [
+        307,
+        201
+      ]
+    ]
+  },
+  "thresholds": [
+    110,
+    135,
+    160,
+    185,
+    210
+  ],
+  "target_representation_counts": [
+    {
+      "count": 64,
+      "tolerance": 8
+    },
+    {
+      "count": 256,
+      "tolerance": 16
+    }
+  ],
+  "variants": {
+    "original": {
+      "stable_tracks": 13,
+      "classifiable_tracks": 10,
+      "positive_orientation_tracks": 6,
+      "negative_orientation_tracks": 4,
+      "minority_fraction": 0.4,
+      "orientation_median_separation_deg": 111.93267425688745,
+      "nearest_target_count": {
+        "target": 64,
+        "delta": 54,
+        "tolerance": 8
+      }
+    },
+    "jpeg85": {
+      "stable_tracks": 16,
+      "classifiable_tracks": 13,
+      "positive_orientation_tracks": 8,
+      "negative_orientation_tracks": 5,
+      "minority_fraction": 0.38461538461538464,
+      "orientation_median_separation_deg": 112.3572801167854,
+      "nearest_target_count": {
+        "target": 64,
+        "delta": 51,
+        "tolerance": 8
+      }
+    },
+    "jpeg70": {
+      "stable_tracks": 13,
+      "classifiable_tracks": 12,
+      "positive_orientation_tracks": 7,
+      "negative_orientation_tracks": 5,
+      "minority_fraction": 0.4166666666666667,
+      "orientation_median_separation_deg": 111.08375458238066,
+      "nearest_target_count": {
+        "target": 64,
+        "delta": 52,
+        "tolerance": 8
+      }
+    },
+    "down75_up": {
+      "stable_tracks": 16,
+      "classifiable_tracks": 14,
+      "positive_orientation_tracks": 7,
+      "negative_orientation_tracks": 7,
+      "minority_fraction": 0.5,
+      "orientation_median_separation_deg": 111.26378818470923,
+      "nearest_target_count": {
+        "target": 64,
+        "delta": 50,
+        "tolerance": 8
+      }
+    }
+  },
+  "cross_variant_agreement": {
+    "jpeg85": {
+      "matched": 6,
+      "matched_fraction": 0.6,
+      "same_sign_fraction": 1.0
+    },
+    "jpeg70": {
+      "matched": 8,
+      "matched_fraction": 0.8,
+      "same_sign_fraction": 1.0
+    },
+    "down75_up": {
+      "matched": 7,
+      "matched_fraction": 0.7,
+      "same_sign_fraction": 1.0
+    }
+  },
+  "classifiable_count_cv": 0.1207363221040738,
+  "compatible_target_counts": [],
+  "orientation_structure_ok": true,
+  "cross_variant_agreement_ok": false,
+  "synthetic_64_stroke_control": {
+    "drawn_strokes": 64,
+    "summary": {
+      "stable_tracks": 48,
+      "classifiable_tracks": 48,
+      "positive_orientation_tracks": 24,
+      "negative_orientation_tracks": 24,
+      "minority_fraction": 0.5,
+      "orientation_median_separation_deg": 100.17824725097259,
+      "nearest_target_count": {
+        "target": 64,
+        "delta": 16,
+        "tolerance": 8
+      }
+    },
+    "passed": true
+  },
+  "promotion_rule": "synthetic control passes; all variants stay within predeclared tolerance of 64 or 256 classifiable strokes; count CV<=0.12; minority orientation fraction>=0.20; median sign-class separation>=35deg; cross-variant match>=0.70 and same-sign>=0.90",
+  "promoted": false,
+  "privacy_guard": "Ordered target stroke orientations are intentionally not written to artifacts."
+}
