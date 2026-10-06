@@ -145,28 +145,65 @@ def x_candidates(lines):
 def verticals(lines):
     return [r for r in lines if abs(r["angle"])>=72 and r["length"]>=60]
 
+def vertical_side_strength(v,xrec):
+    dx=v["mx"]-xrec["x"]
+    dy=abs(v["my"]-xrec["y"])
+    if abs(dx)<24 or abs(dx)>0.42*W or dy>0.42*H:
+        return 0.0
+    proximity=max(0.0,1.0-abs(dx)/(0.42*W))
+    yalign=max(0.0,1.0-dy/(0.42*H))
+    vlen=min(1.0,v["length"]/(0.42*H))
+    return float((proximity**0.45)*(yalign**0.25)*(vlen**0.30))
+
 def template_scores(lines):
+    """Score X, IX and XI as distinct templates.
+
+    The original implementation multiplied X by <=1 factors for IX/XI, making
+    composite templates structurally unable to outrank X. This corrected form
+    combines X evidence with independent adjacent-vertical evidence using a
+    geometric mean. A clean X therefore wins when no side vertical exists,
+    while IX/XI can win when the corresponding side stroke is strong.
+    """
     xs=x_candidates(lines)
     vs=verticals(lines)
     best={"X":0.0,"IX":0.0,"XI":0.0}
     details={"X":None,"IX":None,"XI":None}
-    for xrec in xs[:12]:
-        xscore=xrec["score"]
-        if xscore>best["X"]:
-            best["X"]=xscore; details["X"]=xrec
+
+    for xrec in xs[:16]:
+        xscore=float(xrec["score"])
+        left=(0.0,None)
+        right=(0.0,None)
         for v in vs:
+            strength=vertical_side_strength(v,xrec)
+            if strength<=0: continue
             dx=v["mx"]-xrec["x"]
-            dy=abs(v["my"]-xrec["y"])
-            if abs(dx)<24 or abs(dx)>0.42*W: continue
-            if dy>0.42*H: continue
-            proximity=max(0.0,1.0-abs(dx)/(0.42*W))
-            yalign=max(0.0,1.0-dy/(0.42*H))
-            vlen=min(1.0,v["length"]/(0.42*H))
-            combo=float(xscore*(0.55+0.45*proximity)*(0.60+0.40*yalign)*(0.65+0.35*vlen))
-            label="IX" if dx<0 else "XI"
-            if combo>best[label]:
-                best[label]=combo
-                details[label]={"x":xrec,"vertical":v,"dx":dx,"score":combo}
+            if dx<0 and strength>left[0]:
+                left=(strength,v)
+            elif dx>0 and strength>right[0]:
+                right=(strength,v)
+
+        # Penalize bare-X score slightly when a strong adjacent I is present,
+        # so the composite template can legitimately win.
+        side_max=max(left[0],right[0])
+        x_only=float(xscore*(1.0-0.35*side_max))
+        ix=float(math.sqrt(max(0.0,xscore*left[0]))) if left[0]>0 else 0.0
+        xi=float(math.sqrt(max(0.0,xscore*right[0]))) if right[0]>0 else 0.0
+
+        vals={"X":x_only,"IX":ix,"XI":xi}
+        for label,val in vals.items():
+            if val>best[label]:
+                best[label]=val
+                if label=="X":
+                    details[label]={"x":xrec,"side_max":side_max,"score":val}
+                else:
+                    side=left if label=="IX" else right
+                    details[label]={
+                        "x":xrec,
+                        "vertical":side[1],
+                        "vertical_strength":side[0],
+                        "dx":side[1]["mx"]-xrec["x"] if side[1] else None,
+                        "score":val,
+                    }
     return best,details
 
 def nuisance(c,lines):
@@ -242,14 +279,20 @@ def synthetic(label):
 
 def control_result(label):
     e=eval_crop(synthetic(label))
-    # For IX/XI, require intended composite score to beat bare X. For X, X only.
+    winners=[r["winner"] for r in e["per_config"]]
+    support=winners.count(label)
     scores=np.mean([[r["scores"][k] for r in e["per_config"]] for k in ("X","IX","XI")],axis=1)
     m={"X":float(scores[0]),"IX":float(scores[1]),"XI":float(scores[2])}
-    if label=="X":
-        passed=m["X"]>0.35
-    else:
-        passed=m[label]>0.30 and m[label]>=0.75*m["X"]
-    return {"label":label,"mean_scores":m,"passed":bool(passed),"evaluation":e}
+    intended=m[label]
+    alternatives=max(v for k,v in m.items() if k!=label)
+    passed=bool(support>=4 and intended>=0.45 and intended>alternatives)
+    return {
+        "label":label,
+        "mean_scores":m,
+        "winner_support":support,
+        "passed":passed,
+        "evaluation":e,
+    }
 
 def draw_overlay(c,ev,path):
     im=cv2.cvtColor(c,cv2.COLOR_GRAY2BGR)
@@ -282,7 +325,7 @@ def main():
     same_template=bool(ev0["dominant"] and ev0["dominant"]==ev1["dominant"])
     stable_support=bool(ev0["support"]>=3 and ev1["support"]>=3)
     # With 55 matched windows, minimum attainable p is 1/56=.0179, so use 0.02.
-    promoted=bool(controls_pass and same_template and stable_support and p<=0.02 and ev0["family_best"]>=0.30)
+    promoted=bool(controls_pass and same_template and stable_support and p<=0.02 and ev0["family_best"]>=0.45)
 
     result={
         "experiment_id":"A11-EXP-093",
@@ -300,7 +343,7 @@ def main():
         "controls_pass":controls_pass,
         "same_template_after_lossy":same_template,
         "stable_support":stable_support,
-        "promotion_rule":"all X/IX/XI synthetic controls pass; same dominant template original/lossy; dominant support>=3 configs in both; familywise p<=0.02; target family score>=0.30",
+        "promotion_rule":"all X/IX/XI synthetic controls pass; same dominant template original/lossy; dominant support>=3 configs in both; familywise p<=0.02; target family score>=0.45",
         "promoted":promoted,
         "interpretation_guard":"Promotion means only that Roman-like line geometry is unusually explicit/stable. It does not justify converting the shape into secret material.",
     }
@@ -327,12 +370,12 @@ def main():
         "",
         "## Synthetic controls",
         "",
-        "| control | passed | mean X | mean IX | mean XI |",
-        "|:---|:---:|---:|---:|---:|",
+        "| control | passed | winner support | mean X | mean IX | mean XI |",
+        "|:---|:---:|---:|---:|---:|---:|",
     ]
     for r in controls:
         m=r["mean_scores"]
-        md.append(f"| {r['label']} | {r['passed']} | {m['X']:.4f} | {m['IX']:.4f} | {m['XI']:.4f} |")
+        md.append(f"| {r['label']} | {r['passed']} | {r['winner_support']}/5 | {m['X']:.4f} | {m['IX']:.4f} | {m['XI']:.4f} |")
 
     md += ["","## Per-config target results","",
            "| config | winner | score | X | IX | XI | lines |",
