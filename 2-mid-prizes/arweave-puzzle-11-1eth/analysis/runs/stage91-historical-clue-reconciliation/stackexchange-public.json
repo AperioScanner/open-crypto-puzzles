@@ -1,0 +1,297 @@
+{
+  "question_fetch": {
+    "url": "https://api.stackexchange.com/2.3/questions/97537?site=puzzling&pagesize=100&filter=withbody",
+    "status": 200,
+    "bytes": 2302
+  },
+  "question": {
+    "items": [
+      {
+        "tags": [
+          "visual",
+          "steganography"
+        ],
+        "owner": {
+          "account_id": 18408517,
+          "reputation": 131,
+          "user_id": 68864,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/ebca0ad5d6da632047a366b5c637e38c?s=256&d=identicon&r=PG",
+          "display_name": "Eth Stegranographer",
+          "link": "https://puzzling.stackexchange.com/users/68864/eth-stegranographer"
+        },
+        "is_answered": true,
+        "view_count": 3890,
+        "answer_count": 1,
+        "score": 13,
+        "last_activity_date": 1721663553,
+        "creation_date": 1587884860,
+        "last_edit_date": 1611245284,
+        "question_id": 97537,
+        "content_license": "CC BY-SA 4.0",
+        "link": "https://puzzling.stackexchange.com/questions/97537/image-steganography-hidden-message-inside-image-png-8-bit-grayalpha",
+        "title": "Image steganography / hidden message inside image (png, 8-bit gray+alpha)",
+        "body": "<p>I'm new to steganography and have been trying to figure this one out but some additional help would be appreciated. There is this image <a href=\"https://niktb5grm22p.arweave.net/CzITHnEIlkQw9SbaX5futCzFrKk1qe_NwvWnIBmP2fY\" rel=\"noreferrer\">here</a>:</p>\n\n<p><a href=\"https://i.sstatic.net/2qQol.png\" rel=\"noreferrer\"><img src=\"https://i.sstatic.net/2qQol.png\" alt=\"enter image description here\"></a></p>\n\n<p>It supposedly has a hidden message in it that should lead to the private key to an Ethereum wallet that has 1 Eth in it. A private key for an ethereum wallet is a 64 hex character string. If anyone helps figure this puzzle out I do not care to have the prize, I have just spent many hours on this with no luck and would like to know how to solve it.</p>\n\n<p>Here is what I know so far: </p>\n\n<ol>\n<li>Running <code>file</code> on the image yields this: PNG image data, 1600 x 1105, 8-bit gray+alpha, non-interlaced. So it has no RGB values, just gray and alpha.</li>\n<li>There are only 434 pixels with an alpha value less than 255. I'm pretty sure this is where the solution lies but after this I have no luck.</li>\n<li>I have tried a lot of different things ranging from playing with the bits for both the gray and alpha values for the pixels that have an alpha &lt; 255. Converting them to ASCII and hex, reversing them, only looking at the least significant bit.</li>\n</ol>\n\n<p>At this point I am at a loss. Any ideas?</p>\n"
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 299
+  },
+  "question_comments_fetch": {
+    "url": "https://api.stackexchange.com/2.3/questions/97537/comments?site=puzzling&pagesize=100&filter=withbody",
+    "status": 200,
+    "bytes": 5231
+  },
+  "question_comments": {
+    "items": [
+      {
+        "owner": {
+          "account_id": 18329781,
+          "reputation": 373,
+          "user_id": 72677,
+          "user_type": "registered",
+          "profile_image": "https://i.sstatic.net/sPCCp.png?s=256",
+          "display_name": "flinty",
+          "link": "https://puzzling.stackexchange.com/users/72677/flinty"
+        },
+        "edited": false,
+        "score": 2,
+        "creation_date": 1620920802,
+        "post_id": 97537,
+        "comment_id": 308134,
+        "content_license": "CC BY-SA 4.0",
+        "body": "I reverse image searched the picture and came up with this: 0xFDAE2...  at <a href=\"https://opensea.io/collection/cryptocanvas-xyz\" rel=\"nofollow noreferrer\">opensea.io/collection/cryptocanvas-xyz</a> . They have a collection of five images, this one included, with weird descriptions. This could be a lead to examine too:  1. Linux penguin (tux?) : Wow #eth -  2. empty box (R) : Not set ? <a href=\"https://angel.co/company/gse-1\" rel=\"nofollow noreferrer\">angel.co/company/gse-1</a> (GSE Clean Energy  -Technology - Berlin) -  3. Pepe the frog : Pepe the Frog #eth #moon -  4. Cannabis plant : Alien Cookies Strain. Stay Frosty!! -  5. this boat puzzle (boat is highlighted, hidden ring in the alpha channel) -"
+      },
+      {
+        "owner": {
+          "account_id": 18329781,
+          "reputation": 373,
+          "user_id": 72677,
+          "user_type": "registered",
+          "profile_image": "https://i.sstatic.net/sPCCp.png?s=256",
+          "display_name": "flinty",
+          "link": "https://puzzling.stackexchange.com/users/72677/flinty"
+        },
+        "edited": false,
+        "score": 0,
+        "creation_date": 1620918782,
+        "post_id": 97537,
+        "comment_id": 308131,
+        "content_license": "CC BY-SA 4.0",
+        "body": "Still not claimed after 394 days and now worth $3,812.20"
+      },
+      {
+        "owner": {
+          "account_id": 18329781,
+          "reputation": 373,
+          "user_id": 72677,
+          "user_type": "registered",
+          "profile_image": "https://i.sstatic.net/sPCCp.png?s=256",
+          "display_name": "flinty",
+          "link": "https://puzzling.stackexchange.com/users/72677/flinty"
+        },
+        "edited": false,
+        "score": 0,
+        "creation_date": 1615737651,
+        "post_id": 97537,
+        "comment_id": 304857,
+        "content_license": "CC BY-SA 4.0",
+        "body": "I have an idea: one of the other puzzles involved identifying a segment of a photo, the full picture contained a very young Vitalik Buterin on a computer. It&#39;s possible this is a similar kind of puzzle but using a sketch derived from a photograph instead. Have a look at the images here for example <a href=\"https://courageoussailing.org/sailing/racing/\" rel=\"nofollow noreferrer\">courageoussailing.org/sailing/racing</a>. Maybe there&#39;s a photo online somewhere of a sailing race/event. I&#39;d especially look for boats with crypto company sponsorships. The boats have numbers on the sails, so look out for the boat ringed by the alpha if you are lucky and find such a photo."
+      },
+      {
+        "owner": {
+          "account_id": 18408517,
+          "reputation": 131,
+          "user_id": 68864,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/ebca0ad5d6da632047a366b5c637e38c?s=256&d=identicon&r=PG",
+          "display_name": "Eth Stegranographer",
+          "link": "https://puzzling.stackexchange.com/users/68864/eth-stegranographer"
+        },
+        "reply_to_user": {
+          "account_id": 18329781,
+          "reputation": 373,
+          "user_id": 72677,
+          "user_type": "registered",
+          "profile_image": "https://i.sstatic.net/sPCCp.png?s=256",
+          "display_name": "flinty",
+          "link": "https://puzzling.stackexchange.com/users/72677/flinty"
+        },
+        "edited": false,
+        "score": 0,
+        "creation_date": 1615696781,
+        "post_id": 97537,
+        "comment_id": 304849,
+        "content_license": "CC BY-SA 4.0",
+        "body": "Funny, I hadn&#39;t thought about this for a while until just the other day. Likely because of the crazy ETH price lately lol.  Something else I&#39;ve noticed is some buildings have horizontal lines while some have vertical lines. Could be another piece to this puzzle, but it certainly is a tough one."
+      },
+      {
+        "owner": {
+          "account_id": 18329781,
+          "reputation": 373,
+          "user_id": 72677,
+          "user_type": "registered",
+          "profile_image": "https://i.sstatic.net/sPCCp.png?s=256",
+          "display_name": "flinty",
+          "link": "https://puzzling.stackexchange.com/users/72677/flinty"
+        },
+        "edited": false,
+        "score": 0,
+        "creation_date": 1615574971,
+        "post_id": 97537,
+        "comment_id": 304822,
+        "content_license": "CC BY-SA 4.0",
+        "body": "The prize has not been claimed in 332 days and it&#39;s worth almost $1780 - so I imagine a lot of people have tried and it&#39;s just too difficult: <a href=\"https://etherscan.io/address/0xFF2142E98E09b5344994F9bEB9C56C95506B9F17\" rel=\"nofollow noreferrer\">etherscan.io/address/0xFF2142E98E09b5344994F9bEB9C56C95506B9F17</a>"
+      },
+      {
+        "owner": {
+          "account_id": 18329781,
+          "reputation": 373,
+          "user_id": 72677,
+          "user_type": "registered",
+          "profile_image": "https://i.sstatic.net/sPCCp.png?s=256",
+          "display_name": "flinty",
+          "link": "https://puzzling.stackexchange.com/users/72677/flinty"
+        },
+        "edited": false,
+        "score": 0,
+        "creation_date": 1615574833,
+        "post_id": 97537,
+        "comment_id": 304821,
+        "content_license": "CC BY-SA 4.0",
+        "body": "The first row in the image has 147 anomalous pixels less than full-white. The boat is surrounded by those strange 434 spots of alpha. The metadata has the public key FF2142E98E09b5344994F9bEB9C56C95506B9F17 and the modification date is 203 seconds behind the creation date. There are 5 buildings left, 7 buildings right, 1 big boat and 5 small boats. Also I suppose you could imagine the pier to have an IX or XI, or just X roman numeral. The name of the file may not be relevant, but it can be decoded to 32 bytes from Base85 ascii, but nothing falls out."
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 299
+  },
+  "answers_fetch": {
+    "url": "https://api.stackexchange.com/2.3/questions/97537/answers?site=puzzling&pagesize=100&filter=withbody",
+    "status": 200,
+    "bytes": 929
+  },
+  "answers": {
+    "items": [
+      {
+        "owner": {
+          "account_id": 8951880,
+          "reputation": 171,
+          "user_id": 68845,
+          "user_type": "registered",
+          "profile_image": "https://graph.facebook.com/10157455517365495/picture?type=large",
+          "display_name": "Commissar Vasili Karlovic",
+          "link": "https://puzzling.stackexchange.com/users/68845/commissar-vasili-karlovic"
+        },
+        "is_accepted": false,
+        "score": 2,
+        "last_activity_date": 1587916502,
+        "creation_date": 1587916502,
+        "answer_id": 97553,
+        "question_id": 97537,
+        "content_license": "CC BY-SA 4.0",
+        "body": "<p>The alpha values that are less than 255 actually seem to draw a cycle (white short lines) around the ship. Perhaps the solution does not lie in alpha, but it's the first step on where to focus.</p>\n\n<p><a href=\"https://i.sstatic.net/lQVp7.png\" rel=\"nofollow noreferrer\"><img src=\"https://i.sstatic.net/lQVp7.png\" alt=\"enter image description here\"></a></p>\n\n<p>hope it helps</p>\n"
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 299
+  },
+  "answer_comments_fetch": {
+    "url": "https://api.stackexchange.com/2.3/answers/97553/comments?site=puzzling&pagesize=100&filter=withbody",
+    "status": 200,
+    "bytes": 2566
+  },
+  "answer_comments": {
+    "items": [
+      {
+        "owner": {
+          "account_id": 3116542,
+          "reputation": 41733,
+          "user_id": 2136,
+          "user_type": "registered",
+          "accept_rate": 100,
+          "profile_image": "https://i.sstatic.net/okH8Y.jpg?s=256",
+          "display_name": "Florian F",
+          "link": "https://puzzling.stackexchange.com/users/2136/florian-f"
+        },
+        "edited": false,
+        "score": 0,
+        "creation_date": 1699624466,
+        "post_id": 97553,
+        "comment_id": 343866,
+        "content_license": "CC BY-SA 4.0",
+        "body": "It might disappoint you but I haven&#39;t been working on this day and night for the last 2 years.  No progress.  I just commented about the alpha channel and forgot about it."
+      },
+      {
+        "owner": {
+          "account_id": 27607024,
+          "reputation": 129,
+          "user_id": 83018,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/aca89255331cfa8dbe3f1c1f85a7c4f8?s=256&d=identicon&r=PG",
+          "display_name": "1357924680a",
+          "link": "https://puzzling.stackexchange.com/users/83018/1357924680a"
+        },
+        "reply_to_user": {
+          "account_id": 3116542,
+          "reputation": 41733,
+          "user_id": 2136,
+          "user_type": "registered",
+          "accept_rate": 100,
+          "profile_image": "https://i.sstatic.net/okH8Y.jpg?s=256",
+          "display_name": "Florian F",
+          "link": "https://puzzling.stackexchange.com/users/2136/florian-f"
+        },
+        "edited": false,
+        "score": 0,
+        "creation_date": 1699567013,
+        "post_id": 97553,
+        "comment_id": 343841,
+        "content_license": "CC BY-SA 4.0",
+        "body": "@FlorianF Any progress whatsoever?"
+      },
+      {
+        "owner": {
+          "account_id": 3116542,
+          "reputation": 41733,
+          "user_id": 2136,
+          "user_type": "registered",
+          "accept_rate": 100,
+          "profile_image": "https://i.sstatic.net/okH8Y.jpg?s=256",
+          "display_name": "Florian F",
+          "link": "https://puzzling.stackexchange.com/users/2136/florian-f"
+        },
+        "edited": false,
+        "score": 3,
+        "creation_date": 1634671675,
+        "post_id": 97553,
+        "comment_id": 316687,
+        "content_license": "CC BY-SA 4.0",
+        "body": "The alpha anomalies could appear from a cut and paste.  That boat was cut from some place and pasted here.  The alpha differences could be due to the antialiasing at the border of the cut piece.  Maybe."
+      },
+      {
+        "owner": {
+          "account_id": 18408517,
+          "reputation": 131,
+          "user_id": 68864,
+          "user_type": "registered",
+          "profile_image": "https://www.gravatar.com/avatar/ebca0ad5d6da632047a366b5c637e38c?s=256&d=identicon&r=PG",
+          "display_name": "Eth Stegranographer",
+          "link": "https://puzzling.stackexchange.com/users/68864/eth-stegranographer"
+        },
+        "edited": false,
+        "score": 0,
+        "creation_date": 1587939094,
+        "post_id": 97553,
+        "comment_id": 276947,
+        "content_license": "CC BY-SA 4.0",
+        "body": "I believe the alpha channel is definitely going in the right direction but even when I inspect just the boat with a bunch of common steganographic filters nothing really pops out."
+      }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 299
+  }
+}
