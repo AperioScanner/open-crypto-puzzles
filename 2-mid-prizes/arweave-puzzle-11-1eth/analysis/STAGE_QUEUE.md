@@ -1,65 +1,54 @@
 # Arweave Puzzle #11 — adaptive controller
 
-Last updated: 2026-10-05
+Last updated: 2026-10-06
 
-## Review through Stage 88
+## Review through Stage 89
 
-Superbatch 37–86 produced three nominal p<=0.05 results, but none survived FDR. Stage 88 subjected exactly those three to stronger independent replication.
+Stage 89 is now technically valid enough to review after two implementation fixes.
 
-### Stage 88 result — all three retired
+### Confirmed facts
 
-- **A11-EXP-043 large-boat vertical projection**
-  - nuisance-matched p = 0.0717
-  - lossy nuisance-matched p = 0.0518
-  - Holm p = 0.2151
-  - not confirmed
+- CryptoCanvas contract: `0x0b0b70905137786cf705102c194a1b4916d8c4d0`
+- token #5 first mint/Transfer: **2020-07-24 16:19:20 UTC**
+- Puzzle #11 public announcement: **2020-04-22**
+- therefore the CryptoCanvas token is on-chain **~3 months after** the puzzle publication
+- all five CryptoCanvas tokens were minted in July 2020
+- current `tokenURI` values point to dead `https://cryptocanvas.xyz/api/token/<id>` endpoints
+- no archived token JSON was recovered in Stage 89
+- the Stage-89 media comparison used OpenSea's generated **opengraph image**, not proven original NFT media; its mismatch therefore does **not** establish that the reverse-image-search report was false
 
-- **A11-EXP-050 rightmost reflection**
-  - high-pass p = 0.6211
-  - edge p = 0.3222
-  - one fixed half replicates weakly, the other does not
-  - Holm p = 1.0
-  - not confirmed
+### Hypothesis decision
 
-- **A11-EXP-061 small-sail width/gap correlation**
-  - independent Stage-19 method p-values = 0.5333 and 0.5667
-  - only 3/5 Stage-61 components align with Stage-19 stable centers
-  - Holm p = 1.0
-  - not confirmed
+**CryptoCanvas is retired as a possible pre-publication source.** The mint dates make that impossible.
 
-**Decision:** retire all three nominal superbatch hits. Do not continue localizing them.
+However, the weaker hypothesis remains unresolved:
 
-## New independent clue family
+> CryptoCanvas may be a post-publication derivative/mirror whose cached NFT metadata or original media could identify who mirrored the puzzle, preserve historical asset URLs, or validate the 2021 reverse-image-search report.
 
-A public Puzzling StackExchange thread from 2020–2021 contains a reverse-image-search lead that has not been audited in this branch:
-
-- a commenter reported that the puzzle image appeared in an OpenSea collection named **cryptocanvas.xyz - CANVAS**;
-- current OpenSea indexing shows the collection contract `0x0b0b70905137786cf705102c194a1b4916d8c4d0`, five items, dated **Jul 2020**;
-- token #5 is owned by `0xfdae2f991a521f54bbef89048922dff9bac2d96b`;
-- the collection postdates Puzzle #11 (April 2020), so it may be a derivative mirror rather than a source—but its on-chain metadata/provenance could still preserve descriptions or source material no longer indexed elsewhere.
-
-This is genuinely independent of the exhausted visual-statistical families.
+That distinction matters. We should close the provenance branch correctly rather than infer from an OpenSea social-preview card.
 
 ## Next stage
 
-**Stage 89 — CryptoCanvas provenance and metadata audit.**
+**Stage 90 — CryptoCanvas closure audit: cached NFT media + deployer provenance.**
 
-Goals:
-1. Query the public ERC-721 contract for `tokenURI(1..5)` and `ownerOf(1..5)` using public Ethereum RPC.
-2. Fetch any public token metadata and media URIs without credentials.
-3. Identify the first Transfer/mint log for each token and record block timestamp, recipient and transaction sender where available.
-4. Compare token #5 media against the canonical puzzle image using hashes, dimensions and image-level similarity.
-5. Determine whether the collection is:
-   - an exact post-publication mirror;
-   - a modified derivative carrying additional visual/metadata information;
-   - or unrelated/misidentified.
-6. Record descriptions/names/attributes that could constitute an independent clue, without treating later third-party text as author evidence unless provenance links it to Tiamat.
+Bounded goals:
 
-No secret/key extraction is performed.
+1. Query Blockscout's indexed token-instance endpoint for tokens 1–5, looking for cached metadata, image URLs and external URLs no longer available at `cryptocanvas.xyz`.
+2. Query Blockscout contract/address records for creator/deployment transaction and verified-source metadata.
+3. Resolve transaction senders for the deployment and the five mint transactions.
+4. Parse the current OpenSea token #5 HTML for embedded original-asset candidates, not only the opengraph card.
+5. Query the Internet Archive wildcard index for historical `cryptocanvas.xyz/*` URLs from 2020–2021 and look specifically for token #5 metadata/media candidates.
+6. Download bounded image candidates and rank them against the canonical puzzle PNG using image-level perceptual similarity.
+7. Classify the lead as:
+   - **CONFIRMED_POSTPUBLICATION_MIRROR** if actual/cached token #5 media strongly matches the puzzle;
+   - **POSTPUBLICATION_COLLECTION_NO_MEDIA_PROOF** if provenance is later but original media cannot be recovered;
+   - **MISIDENTIFIED_REVERSE_IMAGE_LEAD** if recovered token #5 media clearly does not match.
+
+No identity attribution is inferred from an address without independent public evidence.
 
 ## Status
 
-- Stages 1–88: completed.
-- Stage 88: reviewed — 0 confirmed survivors.
-- Stage 89: selected for launch.
-- Hourly controller: enabled.
+- Stages 1–89: completed.
+- Stage 89: COMPLETED + REVIEWED.
+- CryptoCanvas as pre-publication source: RETIRED.
+- Stage 90: selected for launch.
