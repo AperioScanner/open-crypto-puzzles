@@ -1,29 +1,34 @@
 # Open leads, ranked
 
-## 1. Pier/supports as X / IX / XI (active, last genuinely untested historical visual claim)
+## 1. Format-invariant stroke-orientation carrier (active, new mechanism family)
 
-Corrected Stage 91 identified this as genuinely untested. The original public comment was explicitly speculative, so Stage 93 gives it one bounded falsification-oriented test rather than building interpretations on top of it.
+Historical visual claims are now exhausted. Stage 31 established that visible orientation survives JPEG/resampling while exact low bits do not.
 
-Stage 93 asks only whether the pier geometry forms an unusually stable Roman-like X/IX/XI structure relative to matched scene windows and lossy conversion.
+The large sail is a dense field of deliberate visible strokes. Prior work tested:
+- alpha as data/marker;
+- exact grayscale/bitstreams/crop hashes;
+- hidden readable text.
 
-## 2. Format-invariant visible / semantic mechanisms
+It has **not** tested whether individual visible strokes form a robust discrete orientation code. Stage 94 audits carrier capacity/structure only and never emits an ordered 256-bit candidate.
 
-Still the strongest broad prior. Stage 31 showed visible structure survives JPEG/resampling while exact low-bit identity collapses near chance.
+## 2. General format-invariant visual / semantic mechanism
 
-## 3. Public-address known-answer probe
+Still the strongest broad prior from the author's wording and Stage 31.
 
-The author explicitly said the public address is present somewhere in the image/file. Equal-width bit/hex mappings were rejected. No arbitrary new tilings without independent evidence.
+## 3. Public-address evidence — constrained
 
-## 4. External archival evidence / sibling solve methods
+The known public address is present in PNG metadata. Do not assume it shares the private-key carrier mechanism. Equal-width address bit/hex probes were negative.
 
-Still valuable only when genuinely new evidence appears.
+## 4. External archival / sibling mechanism evidence
 
-## Deprioritized / closed
+Reopen only if genuinely new first-hand evidence appears, especially a real Puzzle #9 solve method or an unrecovered author hint.
 
-- Source-photo exact Courageous Sailing/Boston pool: Stage 92 found 0 strong and 0 interesting geometric matches; do not broaden without new evidence.
-- 5/7 skyline split: partial historical coverage, no independent corroboration.
+## Closed / do not recycle
+
+- Pier X/IX/XI: visually plausible but p=0.4107 against matched line-rich windows.
+- Source-photo Courageous Sailing/Boston pool: 0 strong / 0 interesting matches.
 - CryptoCanvas: confirmed post-publication mirror only.
-- Alpha halo: anti-aliasing/compositing.
+- Alpha halo: compositing/anti-aliasing.
 - First row: covered.
 - H/V interpretations tested so far: independently unconfirmed.
 - Superbatch nominal hits: all failed Stage 88.
