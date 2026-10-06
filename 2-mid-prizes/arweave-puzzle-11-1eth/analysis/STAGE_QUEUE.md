@@ -2,53 +2,57 @@
 
 Last updated: 2026-10-06
 
-## Review through Stage 89
+## Review through corrected Stage 90
 
-Stage 89 is now technically valid enough to review after two implementation fixes.
+The corrected Stage 90 completed successfully.
 
-### Confirmed facts
+### CryptoCanvas conclusion
 
-- CryptoCanvas contract: `0x0b0b70905137786cf705102c194a1b4916d8c4d0`
-- token #5 first mint/Transfer: **2020-07-24 16:19:20 UTC**
-- Puzzle #11 public announcement: **2020-04-22**
-- therefore the CryptoCanvas token is on-chain **~3 months after** the puzzle publication
-- all five CryptoCanvas tokens were minted in July 2020
-- current `tokenURI` values point to dead `https://cryptocanvas.xyz/api/token/<id>` endpoints
-- no archived token JSON was recovered in Stage 89
-- the Stage-89 media comparison used OpenSea's generated **opengraph image**, not proven original NFT media; its mismatch therefore does **not** establish that the reverse-image-search report was false
+- Token #5 mint: **2020-07-24 16:19:20 UTC**
+- Puzzle #11 publication: **2020-04-22**
+- the NFT therefore postdates the puzzle by roughly three months
+- token-specific OpenSea OpenGraph artwork was segmented from the social card and matched against the canonical puzzle image with ORB + RANSAC:
+  - **266** good feature matches
+  - **239** homography inliers
+  - inlier fraction **0.8985**
+- verdict: **CONFIRMED_POSTPUBLICATION_MIRROR**
+
+The first Stage-90 run that said “misidentified reverse-image lead” is explicitly invalidated: it accidentally treated unrelated OpenSea recommendation images as token-specific media. The corrected rerun uses only evidence tied to the exact contract/token route.
 
 ### Hypothesis decision
 
-**CryptoCanvas is retired as a possible pre-publication source.** The mint dates make that impossible.
+- CryptoCanvas as a pre-publication source: **RETIRED**
+- CryptoCanvas as a later mirror of Puzzle #11: **CONFIRMED**
+- CryptoCanvas as a clue to the encoding mechanism: **NOT SUPPORTED**
 
-However, the weaker hypothesis remains unresolved:
-
-> CryptoCanvas may be a post-publication derivative/mirror whose cached NFT metadata or original media could identify who mirrored the puzzle, preserve historical asset URLs, or validate the 2021 reverse-image-search report.
-
-That distinction matters. We should close the provenance branch correctly rather than infer from an OpenSea social-preview card.
+This archival branch is closed unless new author-linked evidence appears.
 
 ## Next stage
 
-**Stage 90 — CryptoCanvas closure audit: cached NFT media + deployer provenance.**
+**Stage 91 — historical solver-clue reconciliation audit.**
+
+Reason:
+- after closing CryptoCanvas, the best remaining path is external archival / semantic evidence;
+- the public Puzzling StackExchange discussion contains several concrete observations that were never systematically reconciled against the branch's tested ledger;
+- some are already exhausted (alpha, first row, H/V), while others may be genuinely untested (the objective 5/7 skyline split, pier Roman-numeral interpretation, possible source-photo hypothesis, and the filename/32-byte observation).
 
 Bounded goals:
+1. Fetch the complete public Puzzling question, answers and comments through the Stack Exchange API / StackPrinter fallback.
+2. Fetch the HomelessPhD PZL11 public dossier.
+3. Inventory a predeclared set of historical clue claims.
+4. Search the current repository ledger/reports/scripts for direct evidence that each claim has already been tested.
+5. Classify each claim as:
+   - **COVERED**
+   - **PARTIAL**
+   - **UNTESTED**
+   - **RETIRED_BY_LATER_EVIDENCE**
+6. Rank only genuinely untested visible/semantic claims for the next adaptive stage.
 
-1. Query Blockscout's indexed token-instance endpoint for tokens 1–5, looking for cached metadata, image URLs and external URLs no longer available at `cryptocanvas.xyz`.
-2. Query Blockscout contract/address records for creator/deployment transaction and verified-source metadata.
-3. Resolve transaction senders for the deployment and the five mint transactions.
-4. Parse the current OpenSea token #5 HTML for embedded original-asset candidates, not only the opengraph card.
-5. Query the Internet Archive wildcard index for historical `cryptocanvas.xyz/*` URLs from 2020–2021 and look specifically for token #5 metadata/media candidates.
-6. Download bounded image candidates and rank them against the canonical puzzle PNG using image-level perceptual similarity.
-7. Classify the lead as:
-   - **CONFIRMED_POSTPUBLICATION_MIRROR** if actual/cached token #5 media strongly matches the puzzle;
-   - **POSTPUBLICATION_COLLECTION_NO_MEDIA_PROOF** if provenance is later but original media cannot be recovered;
-   - **MISIDENTIFIED_REVERSE_IMAGE_LEAD** if recovered token #5 media clearly does not match.
-
-No identity attribution is inferred from an address without independent public evidence.
+Stage 91 does not interpret any candidate as private-key material and performs no wallet/key operations.
 
 ## Status
 
-- Stages 1–89: completed.
-- Stage 89: COMPLETED + REVIEWED.
-- CryptoCanvas as pre-publication source: RETIRED.
-- Stage 90: selected for launch.
+- Stages 1–90: completed.
+- Corrected Stage 90: COMPLETED + REVIEWED.
+- CryptoCanvas branch: CLOSED.
+- Stage 91: selected for launch.
