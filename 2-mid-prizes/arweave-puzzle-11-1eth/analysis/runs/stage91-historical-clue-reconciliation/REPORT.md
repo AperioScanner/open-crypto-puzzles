@@ -19,7 +19,7 @@
 | 1 large boat / 5 small boats | **COVERED** | 0 | analysis/tested.md, analysis/runs/stage88-superbatch-survivor-replication/result.json, analysis/runs/stage36-large-boat-visual-reveal/result.json, analysis/runs/stage19-small-sail-remeasure/REPORT.md |
 | buildings alternate horizontal/vertical hatch directions | **COVERED** | 0 | analysis/tested.md, analysis/STATE.md, analysis/runs/stage17-orientation-geometry-independence/REPORT.md, analysis/runs/stage17-orientation-geometry-independence/result.json |
 | reverse-image search leads to CryptoCanvas/OpenSea | **RETIRED_BY_LATER_EVIDENCE** | 0 | analysis/runs/stage90-cryptocanvas-closure/REPORT.md, analysis/runs/stage90-cryptocanvas-closure/result.json, analysis/runs/stage89-cryptocanvas-provenance/REPORT.md, tools/stage89_cryptocanvas_provenance.py |
-| anomalous first image row | **COVERED** | 0 | analysis/runs/stage93-pier-roman-structure/REPORT.md, analysis/runs/stage7-first-row-steg/REPORT.md, analysis/runs/stage9-first-row-structure/REPORT.md, analysis/runs/stage90-cryptocanvas-closure/REPORT.md |
+| anomalous first image row | **COVERED** | 0 | analysis/runs/stage94-large-sail-stroke-carrier/REPORT.md, analysis/runs/stage93-pier-roman-structure/REPORT.md, analysis/runs/stage7-first-row-steg/REPORT.md, analysis/runs/stage9-first-row-structure/REPORT.md |
 
 ## Ranked genuinely untested claims
 
