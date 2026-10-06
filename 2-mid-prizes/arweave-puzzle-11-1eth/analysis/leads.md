@@ -1,22 +1,29 @@
 # Open leads, ranked
 
-## 1. 16-level grayscale symbol alphabet (active)
+## 1. Puzzle #9 four-step sibling mechanism (active, highest priority)
 
-Puzzle #11 is natively grayscale and the target representation is 64 hexadecimal characters, giving a natural 16-symbol alphabet. This specific mechanism has not been tested.
+New independent author evidence surfaced: after Puzzle #9 was anonymously solved, Tiamat said it **required 4 steps** and guessed the solver found 3 then brute-forced one.
 
-Stage 95 asks whether foreground tone is organized into a robust 16-level alphabet rather than ordinary continuous pencil/antialias grayscale. It uses lossy variants, synthetic controls and Puzzle #5's hand-drawn image as an author-style raster control.
+Puzzle #9 is the closest known sibling to #11:
+- image-hidden secret;
+- Ethereum-side prize;
+- same metadata date anomaly;
+- solved, but method never published.
 
-## 2. General format-invariant visible / semantic mechanism
+Stage 96 reconstructs its page/image structure and author-thread context to infer mechanism-level constraints without attempting key recovery.
 
-Still the strongest broad prior from the author's wording and Stage 31.
+## 2. General format-invariant visual / semantic mechanism
 
-## 3. External archival / sibling mechanism evidence
+Still the strongest broad prior from the author's #11 wording and Stage 31.
 
-Reopen only when genuinely new first-hand evidence appears, especially a real Puzzle #9 solve method or unrecovered author hint.
+## 3. External archival evidence
+
+Now actively useful because the new #9 quote materially changes the hypothesis space. Prioritize direct author/first-hand sources over solver speculation.
 
 ## Closed / do not recycle
 
-- Large-sail 64/256 one-stroke-per-symbol carrier: calibrated Stage 94 rejects both count families.
+- Direct 16-gray-mode symbol alphabet: corrected Stage 95 rejects all fixed regions.
+- Large-sail 64/256 one-stroke-per-symbol carrier: calibrated Stage 94 rejects both.
 - Pier X/IX/XI: p=0.4107 against matched line-rich windows.
 - Source-photo Courageous Sailing/Boston pool: 0 strong / 0 interesting matches.
 - CryptoCanvas: confirmed post-publication mirror only.
