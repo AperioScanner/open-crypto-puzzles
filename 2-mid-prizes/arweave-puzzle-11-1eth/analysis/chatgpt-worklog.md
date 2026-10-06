@@ -140,3 +140,13 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Decision: retire all three and pivot to a genuinely independent evidence family rather than mining the same image statistics further.
 - Public web review surfaced a 2021 Puzzling StackExchange reverse-image-search report linking the puzzle image to the five-item OpenSea collection `cryptocanvas.xyz - CANVAS`. Current OpenSea indexing dates the collection to Jul 2020 and exposes contract `0x0b0b70905137786cf705102c194a1b4916d8c4d0`; token #5 is the reported puzzle item.
 - Stage 89 will audit public on-chain tokenURI/mint provenance and compare token #5 media to the canonical puzzle image. The collection postdates the puzzle, so derivative/mirror is the default hypothesis unless provenance says otherwise.
+
+
+## 2026-10-06 — adaptive review of Stage 89
+
+- The hardened Stage-89 rerun completed successfully.
+- Blockscout indexed the first mint/Transfer for token #5 at 2020-07-24 16:19:20 UTC, about three months after the 2020-04-22 Puzzle #11 announcement. Tokens 1–5 were all minted in July 2020.
+- This decisively retires CryptoCanvas as a possible pre-publication source for the puzzle image.
+- Current tokenURI endpoints at cryptocanvas.xyz are dead and Stage 89 did not recover archived JSON.
+- Important correction: the downloaded OpenSea media was the generated opengraph preview card, not proven original token media. Its poor correlation with the puzzle cannot be used to reject the 2021 reverse-image-search report.
+- Adaptive decision: Stage 90 closes this branch by querying indexed NFT metadata/media and contract/deployer provenance, parsing embedded original-asset URLs from OpenSea, searching Internet Archive wildcard records, and perceptually comparing only actual candidate images against the canonical puzzle.
