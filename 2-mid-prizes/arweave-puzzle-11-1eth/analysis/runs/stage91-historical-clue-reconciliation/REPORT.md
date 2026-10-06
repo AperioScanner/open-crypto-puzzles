@@ -4,13 +4,13 @@
 
 - StackExchange records recovered: **12**
 - Historical claims audited: **10**
-- Status counts: **{'RETIRED_BY_LATER_EVIDENCE': 3, 'COVERED': 4, 'PARTIAL': 1, 'UNTESTED': 2}**
+- Status counts: **{'RETIRED_BY_LATER_EVIDENCE': 3, 'COVERED': 5, 'PARTIAL': 1, 'UNTESTED': 1}**
 
 ## Reconciliation
 
 | claim | status | priority | repo evidence paths |
 |:---|:---|---:|:---|
-| sketch may derive from an identifiable source photograph | **UNTESTED** | 5 |  |
+| sketch may derive from an identifiable source photograph | **COVERED** | 5 | analysis/runs/stage92-source-photo-candidates/REPORT.md, analysis/runs/stage92-source-photo-candidates/result.json, tools/stage92_source_photo_candidates.py |
 | pier/supports resemble X / IX / XI Roman numerals | **UNTESTED** | 3 |  |
 | Arweave/file identifier decodes to 32 bytes | **COVERED** | 2 | tools/stage3_marked_grayscale.py |
 | 5 buildings left / 7 buildings right | **PARTIAL** | 2 | analysis/tested.md |
@@ -23,8 +23,7 @@
 
 ## Ranked genuinely untested claims
 
-1. **sketch may derive from an identifiable source photograph** (`source_photo_hypothesis`, priority 5)
-2. **pier/supports resemble X / IX / XI Roman numerals** (`pier_roman_numeral`, priority 3)
+1. **pier/supports resemble X / IX / XI Roman numerals** (`pier_roman_numeral`, priority 3)
 
 ## Interpretation
 
