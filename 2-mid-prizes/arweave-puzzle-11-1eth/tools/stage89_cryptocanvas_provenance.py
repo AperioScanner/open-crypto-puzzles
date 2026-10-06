@@ -198,28 +198,30 @@ def owner_of(token_id):
 
 def first_transfer_log(token_id):
     topic_token="0x"+abi_uint(token_id)
-    # Collection is indexed Jul 2020. Search a bounded historical window first,
-    # then fall back to a few broader 1M-block windows if needed.
-    ranges=[
-        (10_000_000,11_000_000),
-        (9_000_000,10_000_000),
-        (11_000_000,12_000_000),
-    ]
+    # Cloudflare currently caps eth_getLogs to 800 blocks. Scan the historically
+    # plausible 2020 deployment window in compliant chunks instead of issuing
+    # oversized 1M-block requests.
+    ranges=[(10_200_000,10_900_000)]
     errors=[]
     for lo,hi in ranges:
-        try:
-            logs,endpoint=rpc_call("eth_getLogs",[{
-                "address":CONTRACT,
-                "fromBlock":hex(lo),
-                "toBlock":hex(hi),
-                "topics":[TRANSFER_TOPIC,None,None,topic_token],
-            }])
-            if logs:
-                log=sorted(logs,key=lambda z:int(z["blockNumber"],16))[0]
-                return log,endpoint
-        except Exception as e:
-            errors.append({"range":[lo,hi],"error":repr(e)})
-    return None,{"errors":errors}
+        step=800
+        for a in range(lo,hi+1,step):
+            b=min(hi,a+step-1)
+            try:
+                logs,endpoint=rpc_call("eth_getLogs",[{
+                    "address":CONTRACT,
+                    "fromBlock":hex(a),
+                    "toBlock":hex(b),
+                    "topics":[TRANSFER_TOPIC,None,None,topic_token],
+                }])
+                if logs:
+                    log=sorted(logs,key=lambda z:int(z["blockNumber"],16))[0]
+                    return log,endpoint
+            except Exception as e:
+                errors.append({"range":[a,b],"error":repr(e)})
+                # Keep scanning on provider/rate-limit failures; a later chunk/provider may work.
+                continue
+    return None,{"errors":errors[-20:],"scanned_window":[10_200_000,10_900_000]}
 
 def block_info(hex_block):
     b,endpoint=rpc_call("eth_getBlockByNumber",[hex_block,False])
