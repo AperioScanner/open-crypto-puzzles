@@ -150,3 +150,13 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Current tokenURI endpoints at cryptocanvas.xyz are dead and Stage 89 did not recover archived JSON.
 - Important correction: the downloaded OpenSea media was the generated opengraph preview card, not proven original token media. Its poor correlation with the puzzle cannot be used to reject the 2021 reverse-image-search report.
 - Adaptive decision: Stage 90 closes this branch by querying indexed NFT metadata/media and contract/deployer provenance, parsing embedded original-asset URLs from OpenSea, searching Internet Archive wildcard records, and perceptually comparing only actual candidate images against the canonical puzzle.
+
+
+## 2026-10-06 — adaptive review of corrected Stage 90
+
+- The corrected Stage-90 rerun invalidated the first Stage-90 implementation's false “misidentified reverse-image” conclusion.
+- The exact token #5 OpenSea route renders the Puzzle #11 artwork inside its OpenGraph card. After isolating the artwork rectangle, ORB produced 266 good matches and RANSAC retained 239 homography inliers (89.85% inlier fraction) against the canonical puzzle image.
+- Combined with the 2020-07-24 token #5 mint, CryptoCanvas is a confirmed **post-publication mirror**, not a pre-publication source and not evidence for the puzzle's encoding mechanism.
+- Adaptive conclusion: close the CryptoCanvas branch.
+- Next direction: reconcile the complete 2020–2021 public solver discussion against the current tested ledger. Several observations in the Puzzling thread—5/7 skyline split, pier X/IX/XI reading, source-photo possibility and filename-to-32-byte observation—do not appear in repository search, while alpha/first-row/H/V ideas are already heavily covered.
+- Stage 91 will perform this archival delta audit before selecting another image experiment.
