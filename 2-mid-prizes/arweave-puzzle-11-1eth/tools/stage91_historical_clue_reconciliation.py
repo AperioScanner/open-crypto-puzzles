@@ -58,9 +58,9 @@ CANDIDATES=[
         "id":"five_seven_skyline_split",
         "label":"5 buildings left / 7 buildings right",
         "source_patterns":[r"5 buildings left",r"7 buildings right",r"five buildings left",r"seven buildings right"],
-        "coverage_patterns":[r"5 buildings left",r"7 buildings right",r"five.seven skyline",r"5/7 skyline",r"skyline split"],
+        "coverage_patterns":[r"5 buildings left",r"7 buildings right",r"five.seven skyline",r"5/7 skyline",r"skyline split",r"Object counts.{0,180}left/right counts"],
         "retire_patterns":[],
-        "priority":5,
+        "priority":2,
     },
     {
         "id":"pier_roman_numeral",
@@ -68,7 +68,7 @@ CANDIDATES=[
         "source_patterns":[r"pier.{0,120}(?:ix|xi|roman|numeral)",r"roman numeral",r"\bIX\b.{0,80}\bXI\b"],
         "coverage_patterns":[r"pier.{0,100}(?:roman|numeral|ix|xi)",r"roman numeral"],
         "retire_patterns":[],
-        "priority":4,
+        "priority":3,
     },
     {
         "id":"building_hv_lines",
@@ -84,7 +84,7 @@ CANDIDATES=[
         "source_patterns":[r"sketch derived from a photograph",r"similar kind of puzzle.{0,100}sketch",r"sailing race/event",r"photo online somewhere"],
         "coverage_patterns":[r"source photograph",r"source-photo",r"photo origin",r"image provenance.*photograph"],
         "retire_patterns":[],
-        "priority":3,
+        "priority":5,
     },
     {
         "id":"filename_32_bytes",
@@ -166,17 +166,24 @@ def repo_texts():
     roots=[ROOT/"analysis",ROOT/"tools",ROOT/"data",ROOT/"README.md"]
     rows=[]
     exts={".md",".json",".py",".txt",".yml",".yaml"}
+    excluded_exact={
+        "analysis/STAGE_QUEUE.md",
+        "analysis/leads.md",
+        "analysis/chatgpt-worklog.md",
+        "tools/stage91_historical_clue_reconciliation.py",
+    }
     for root in roots:
         paths=[root] if root.is_file() else list(root.rglob("*"))
         for p in paths:
             if not p.is_file() or p.suffix.lower() not in exts: continue
-            # Avoid Stage91's own generated results and huge non-text artifacts.
-            if "stage91-historical-clue-reconciliation" in str(p): continue
+            rel=str(p.relative_to(ROOT))
+            if rel in excluded_exact: continue
+            if "stage91-historical-clue-reconciliation" in rel: continue
             try:
                 t=p.read_text(errors="ignore")
             except Exception:
                 continue
-            rows.append({"path":str(p.relative_to(ROOT)),"text":t})
+            rows.append({"path":rel,"text":t})
     return rows
 
 def pattern_hits(patterns,text):
@@ -215,10 +222,21 @@ def main():
         elif retire:
             status="RETIRED_BY_LATER_EVIDENCE"
         elif cover:
-            # Objective historical claims can be present in docs without a dedicated
-            # test; distinguish mentions from actual stage/tool coverage.
-            stageish=any(("analysis/runs/" in p or "/tools/" in p or p.startswith("tools/")) for p in path_hits)
-            status="COVERED" if stageish else "PARTIAL"
+            dedicated=any(
+                ("analysis/runs/" in p or p.startswith("tools/"))
+                and "stage91_" not in p
+                for p in path_hits
+            )
+            generic_ledger_only=all(
+                p in ("analysis/tested.md","README.md","data/geometry.json","puzzle.json")
+                for p in path_hits
+            ) if path_hits else False
+            if dedicated:
+                status="COVERED"
+            elif generic_ledger_only:
+                status="PARTIAL"
+            else:
+                status="PARTIAL"
         else:
             status="UNTESTED"
 
@@ -254,7 +272,8 @@ def main():
         "candidates":results,
         "untested_ranked":[{"id":r["id"],"label":r["label"],"priority":r["priority"]} for r in promoted],
         "partial_ranked":[{"id":r["id"],"label":r["label"],"priority":r["priority"]} for r in partial],
-        "decision_rule":"Only source-observed claims with no direct repository coverage are UNTESTED. RETIRED_BY_LATER_EVIDENCE outranks source novelty. Next adaptive stage should select the highest-priority objective visible/semantic UNTESTED claim, not a private-key interpretation.",
+        "audit_guard":"Controller docs, leads/worklog, Stage-91's own script and Stage-91 results are excluded from coverage evidence to prevent self-referential false coverage.",
+        "decision_rule":"Only source-observed claims with no prior direct run/tool evidence are UNTESTED. Generic mentions or broad historical candidate sweeps are PARTIAL. RETIRED_BY_LATER_EVIDENCE outranks source novelty. Next adaptive stage selects the highest-priority genuinely UNTESTED visible/semantic claim.",
     }
     (OUT/"result.json").write_text(json.dumps(result,indent=2,ensure_ascii=False)+"\n")
     (OUT/"stackexchange-public.json").write_text(json.dumps(stackraw,indent=2,ensure_ascii=False)+"\n")
