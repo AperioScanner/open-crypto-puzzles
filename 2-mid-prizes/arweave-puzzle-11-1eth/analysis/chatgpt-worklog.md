@@ -182,3 +182,13 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - The thin null pool prevents strong false-positive calibration, but is immaterial to the observed negative because there were no candidate positives to calibrate.
 - Do not broaden arbitrary photo search without new provenance evidence.
 - Stage 93 selected: one bounded test of the last genuinely untested historical visual claim, the pier/support X/IX/XI Roman-numeral interpretation.
+
+
+## 2026-10-06 — adaptive review of corrected Stage 93
+
+- Initial Stage 93 failed on OpenCV 5 Hough output shape; fixed under the same stage number.
+- The next run exposed a deeper control defect: the composite IX/XI score was mathematically constrained below X, so synthetic IX/XI controls failed. Redesigned the scorer to combine independent X and adjacent-vertical evidence; all three synthetic controls then passed.
+- Valid result: target is visually IX-like (4/5 configs original, 3/5 lossy), but this is not unusual among matched line-rich windows: familywise p=0.4107, matched-null max 0.9857 versus target 0.8741.
+- Roman X/IX/XI hypothesis retired. This closes the corrected Stage-91 historical visual backlog.
+- Next mechanism family is genuinely new: a format-invariant discrete stroke-orientation carrier inside the large sail. Earlier boat stages covered exact pixels/hashes and hidden text, not the capacity/robustness of individual visible line orientations.
+- Stage 94 will measure only count/separability/robustness and explicitly will not persist or print an ordered target bit sequence.
