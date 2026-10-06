@@ -7,8 +7,6 @@ on:
     paths:
       - ".github/workflows/arweave11-stage91-historical-clue-reconciliation.yml"
       - "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage91_historical_clue_reconciliation.py"
-      - "2-mid-prizes/arweave-puzzle-11-1eth/analysis/**"
-      - "2-mid-prizes/arweave-puzzle-11-1eth/data/**"
   workflow_dispatch:
 
 permissions:
