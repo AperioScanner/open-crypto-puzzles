@@ -1,0 +1,2923 @@
+{
+  "experiment_id": "A11-EXP-090",
+  "scope": "close CryptoCanvas post-publication mirror lead using indexed cached metadata/media and deployment provenance; no private-key operations",
+  "stage89_token5_mint_utc": "2020-07-24T16:19:20.000000Z",
+  "contract": "0x0b0b70905137786cf705102c194a1b4916d8c4d0",
+  "blockscout": {
+    "address_fetch": {
+      "url": "https://eth.blockscout.com/api/v2/addresses/0x0b0b70905137786cf705102c194a1b4916d8c4d0",
+      "status": 200,
+      "bytes": 1031,
+      "sha256": "d89a4a3cf460f2985e21d6f2ce779de257e4cd009525d06243c3f86124ef7bfb"
+    },
+    "smart_contract_fetch": {
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x0b0b70905137786cf705102c194a1b4916d8c4d0",
+      "status": 200,
+      "bytes": 117515,
+      "sha256": "ce3f5165a023ced79ca6a6e04f3fe822e3c53ec01a52ddd6cc14cd76a8260e56"
+    },
+    "address": {
+      "hash": "0x0b0B70905137786cf705102c194a1b4916d8c4D0",
+      "name": "CANVAS",
+      "is_contract": true,
+      "is_verified": true,
+      "creator_address_hash": "0xD8424eE7cC2520F7Dae828f84f99F53Ac0Dd6734",
+      "coin_balance": "0",
+      "has_beacon_chain_withdrawals": false
+    },
+    "smart_contract": {
+      "name": "CANVAS",
+      "compiler_version": "v0.5.16+commit.9c3226ce",
+      "optimization_enabled": false,
+      "verified_at": "2026-01-02T15:59:33.370242Z",
+      "is_verified": true,
+      "language": "solidity",
+      "evm_version": "default",
+      "license_type": "none"
+    },
+    "creation_transaction": {
+      "hash": "0x9eeeb25429f558cff0dbde868ff6086b7a9daa5437fe2d97772e354c31f608cf",
+      "from": "0xD8424eE7cC2520F7Dae828f84f99F53Ac0Dd6734",
+      "to": null,
+      "timestamp": "2020-07-17T16:51:01.000000Z",
+      "block": null,
+      "status": "ok",
+      "method": null,
+      "fetch": {
+        "url": "https://eth.blockscout.com/api/v2/transactions/0x9eeeb25429f558cff0dbde868ff6086b7a9daa5437fe2d97772e354c31f608cf",
+        "status": 200,
+        "bytes": 31903,
+        "sha256": "ad244e12966436953bf33fe5a00a6cc29212c39564f41383fd75bfbac79c31b3"
+      }
+    }
+  },
+  "tokens": {
+    "1": {
+      "token_id": 1,
+      "fetch": {
+        "url": "https://eth.blockscout.com/api/v2/tokens/0x0b0b70905137786cf705102c194a1b4916d8c4d0/instances/1",
+        "status": 200,
+        "bytes": 757,
+        "sha256": "3142b20d91ba7f3d3f5481803c7c1cf17ac2c23b8d772fc7305653859101ef9e"
+      },
+      "owner": "0xDD10Bb7829bA5cCD690E51b958bfAdC207b83285",
+      "metadata": null,
+      "image_url": null,
+      "external_app_url": null,
+      "animation_url": null,
+      "is_unique": true,
+      "token_type": null,
+      "mint": {
+        "block_number": 10478281,
+        "transaction_hash": "0x8810bf4acbb89483a959d31820aa98ebab3e2cd87fb4818fb27a7f2a41e6249a",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xd8424ee7cc2520f7dae828f84f99f53ac0dd6734",
+        "timestamp_utc": "2020-07-17T17:21:02.000000Z",
+        "source": "blockscout",
+        "source_url": "https://eth.blockscout.com/api/v2/tokens/0x0b0b70905137786cf705102c194a1b4916d8c4d0/instances/1/transfers",
+        "tx_rpc": "https://ethereum-rpc.publicnode.com"
+      },
+      "mint_transaction": {
+        "hash": "0x8810bf4acbb89483a959d31820aa98ebab3e2cd87fb4818fb27a7f2a41e6249a",
+        "from": "0xD8424eE7cC2520F7Dae828f84f99F53Ac0Dd6734",
+        "to": "0x0b0B70905137786cf705102c194a1b4916d8c4D0",
+        "timestamp": "2020-07-17T17:21:02.000000Z",
+        "block": null,
+        "status": "ok",
+        "method": "mint",
+        "fetch": {
+          "url": "https://eth.blockscout.com/api/v2/transactions/0x8810bf4acbb89483a959d31820aa98ebab3e2cd87fb4818fb27a7f2a41e6249a",
+          "status": 200,
+          "bytes": 17371,
+          "sha256": "d1f0b01aefaf17fd483bef5211fb8fb3b35ce98b8041bb1ffdc40d829eb7b90c"
+        }
+      }
+    },
+    "2": {
+      "token_id": 2,
+      "fetch": {
+        "url": "https://eth.blockscout.com/api/v2/tokens/0x0b0b70905137786cf705102c194a1b4916d8c4d0/instances/2",
+        "status": 200,
+        "bytes": 757,
+        "sha256": "5124e07f1005c7d36758119a62278173d7fe2c246a2a7a7ad41bb22c69ca4be9"
+      },
+      "owner": "0x718FfdC2b4e813E7d200C6086B5425fd6a219CFF",
+      "metadata": null,
+      "image_url": null,
+      "external_app_url": null,
+      "animation_url": null,
+      "is_unique": true,
+      "token_type": null,
+      "mint": {
+        "block_number": 10495164,
+        "transaction_hash": "0x5a3a73cbb4f841bd46f1d8997035d6192abb631d1bf37696452c16112039bd22",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x718ffdc2b4e813e7d200c6086b5425fd6a219cff",
+        "timestamp_utc": "2020-07-20T07:52:30.000000Z",
+        "source": "blockscout",
+        "source_url": "https://eth.blockscout.com/api/v2/tokens/0x0b0b70905137786cf705102c194a1b4916d8c4d0/instances/2/transfers",
+        "tx_rpc": "https://ethereum-rpc.publicnode.com"
+      },
+      "mint_transaction": {
+        "hash": "0x5a3a73cbb4f841bd46f1d8997035d6192abb631d1bf37696452c16112039bd22",
+        "from": "0x718FfdC2b4e813E7d200C6086B5425fd6a219CFF",
+        "to": "0x0b0B70905137786cf705102c194a1b4916d8c4D0",
+        "timestamp": "2020-07-20T07:52:30.000000Z",
+        "block": null,
+        "status": "ok",
+        "method": "mint",
+        "fetch": {
+          "url": "https://eth.blockscout.com/api/v2/transactions/0x5a3a73cbb4f841bd46f1d8997035d6192abb631d1bf37696452c16112039bd22",
+          "status": 200,
+          "bytes": 3820,
+          "sha256": "f196394d5f483fd46558746b5e4d4e88ae01fd2b4592e89efd608f40147f71df"
+        }
+      }
+    },
+    "3": {
+      "token_id": 3,
+      "fetch": {
+        "url": "https://eth.blockscout.com/api/v2/tokens/0x0b0b70905137786cf705102c194a1b4916d8c4d0/instances/3",
+        "status": 200,
+        "bytes": 757,
+        "sha256": "caf3464fbe0629943712108ea14cd2adaaa5fb13de0fc32a5cab8b9857fc584d"
+      },
+      "owner": "0xD8424eE7cC2520F7Dae828f84f99F53Ac0Dd6734",
+      "metadata": null,
+      "image_url": null,
+      "external_app_url": null,
+      "animation_url": null,
+      "is_unique": true,
+      "token_type": null,
+      "mint": {
+        "block_number": 10511476,
+        "transaction_hash": "0x9a39cd1b64c68a8b64965e5f0398abcfc49af9b94f858e6ad7df285d7f4c88e0",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xd8424ee7cc2520f7dae828f84f99f53ac0dd6734",
+        "timestamp_utc": "2020-07-22T20:57:20.000000Z",
+        "source": "blockscout",
+        "source_url": "https://eth.blockscout.com/api/v2/tokens/0x0b0b70905137786cf705102c194a1b4916d8c4d0/instances/3/transfers",
+        "tx_rpc": "https://ethereum-rpc.publicnode.com"
+      },
+      "mint_transaction": {
+        "hash": "0x9a39cd1b64c68a8b64965e5f0398abcfc49af9b94f858e6ad7df285d7f4c88e0",
+        "from": "0xD8424eE7cC2520F7Dae828f84f99F53Ac0Dd6734",
+        "to": "0x0b0B70905137786cf705102c194a1b4916d8c4D0",
+        "timestamp": "2020-07-22T20:57:20.000000Z",
+        "block": null,
+        "status": "ok",
+        "method": "mint",
+        "fetch": {
+          "url": "https://eth.blockscout.com/api/v2/transactions/0x9a39cd1b64c68a8b64965e5f0398abcfc49af9b94f858e6ad7df285d7f4c88e0",
+          "status": 200,
+          "bytes": 1913,
+          "sha256": "0203f267d8674e245c99bcfbcb1687f2e14e6c4c54f05bf0493a0dd9f1ee27ba"
+        }
+      }
+    },
+    "4": {
+      "token_id": 4,
+      "fetch": {
+        "url": "https://eth.blockscout.com/api/v2/tokens/0x0b0b70905137786cf705102c194a1b4916d8c4d0/instances/4",
+        "status": 200,
+        "bytes": 757,
+        "sha256": "a496ef0bf7c70cf696e21899e81a8c5263c688ec56a113f3c7e24d2901a97354"
+      },
+      "owner": "0x0386BF5e50ce1cE02b8b0417E679292f18476A40",
+      "metadata": null,
+      "image_url": null,
+      "external_app_url": null,
+      "animation_url": null,
+      "is_unique": true,
+      "token_type": null,
+      "mint": {
+        "block_number": 10512159,
+        "transaction_hash": "0xa6d768ab86077d845a3e97e89de495fe73e588722f91aa5a75ad6efa83d6b5a7",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xd8424ee7cc2520f7dae828f84f99f53ac0dd6734",
+        "timestamp_utc": "2020-07-22T23:26:00.000000Z",
+        "source": "blockscout",
+        "source_url": "https://eth.blockscout.com/api/v2/tokens/0x0b0b70905137786cf705102c194a1b4916d8c4d0/instances/4/transfers",
+        "tx_rpc": "https://ethereum-rpc.publicnode.com"
+      },
+      "mint_transaction": {
+        "hash": "0xa6d768ab86077d845a3e97e89de495fe73e588722f91aa5a75ad6efa83d6b5a7",
+        "from": "0xD8424eE7cC2520F7Dae828f84f99F53Ac0Dd6734",
+        "to": "0x0b0B70905137786cf705102c194a1b4916d8c4D0",
+        "timestamp": "2020-07-22T23:26:00.000000Z",
+        "block": null,
+        "status": "ok",
+        "method": "mint",
+        "fetch": {
+          "url": "https://eth.blockscout.com/api/v2/transactions/0xa6d768ab86077d845a3e97e89de495fe73e588722f91aa5a75ad6efa83d6b5a7",
+          "status": 200,
+          "bytes": 1914,
+          "sha256": "b694dd949820dcd0c4e735594cc1be86cafbb740e75346c7dcebc274d08c4625"
+        }
+      }
+    },
+    "5": {
+      "token_id": 5,
+      "fetch": {
+        "url": "https://eth.blockscout.com/api/v2/tokens/0x0b0b70905137786cf705102c194a1b4916d8c4d0/instances/5",
+        "status": 200,
+        "bytes": 757,
+        "sha256": "df3ae2990f067c8593f22d79d78bd1f9a6ae51e2c50a503720444d8c99144979"
+      },
+      "owner": "0xFdAe2f991a521F54bbEF89048922DFf9bAC2D96B",
+      "metadata": null,
+      "image_url": null,
+      "external_app_url": null,
+      "animation_url": null,
+      "is_unique": true,
+      "token_type": null,
+      "mint": {
+        "block_number": 10523228,
+        "transaction_hash": "0xaffeb5efaecb081e5a101894d58b6eaa3d8e6da07dc9914622b9627bf934834a",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xfdae2f991a521f54bbef89048922dff9bac2d96b",
+        "timestamp_utc": "2020-07-24T16:19:20.000000Z",
+        "source": "blockscout",
+        "source_url": "https://eth.blockscout.com/api/v2/tokens/0x0b0b70905137786cf705102c194a1b4916d8c4d0/instances/5/transfers",
+        "tx_rpc": "https://ethereum-rpc.publicnode.com"
+      },
+      "mint_transaction": {
+        "hash": "0xaffeb5efaecb081e5a101894d58b6eaa3d8e6da07dc9914622b9627bf934834a",
+        "from": "0xFdAe2f991a521F54bbEF89048922DFf9bAC2D96B",
+        "to": "0x0b0B70905137786cf705102c194a1b4916d8c4D0",
+        "timestamp": "2020-07-24T16:19:20.000000Z",
+        "block": null,
+        "status": "ok",
+        "method": "mint",
+        "fetch": {
+          "url": "https://eth.blockscout.com/api/v2/transactions/0xaffeb5efaecb081e5a101894d58b6eaa3d8e6da07dc9914622b9627bf934834a",
+          "status": 200,
+          "bytes": 1914,
+          "sha256": "0833de966afd80d3973ced3ebdc80c56a2b5def5906323933100b7e44e4aff21"
+        }
+      }
+    }
+  },
+  "archive": {
+    "index_fetch": {
+      "url": "https://web.archive.org/cdx/search/cdx?url=cryptocanvas.xyz%2F%2A&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest&filter=statuscode%3A200&from=2020&to=2021&collapse=digest&limit=500",
+      "status": 200,
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "row_count": 0,
+    "rows": [],
+    "relevant_rows": []
+  },
+  "opensea_fetch": {
+    "url": "https://opensea.io/item/ethereum/0x0b0b70905137786cf705102c194a1b4916d8c4d0/5",
+    "status": 200,
+    "bytes": 974716,
+    "sha256": "806f4323d6d2495c9ef62105c2de3e0ae03011479bfd73cfb2a03478e4560339",
+    "content_type": "text/html; charset=utf-8"
+  },
+  "opensea_embedded_image_url_count": 121,
+  "opensea_embedded_image_urls": [
+    "https://opensea.io/item/ethereum/0x0b0b70905137786cf705102c194a1b4916d8c4d0/5/opengraph-image?ts=29855129",
+    "https://raw2.seadn.io/currency_logos/USDT0.webp",
+    "https://i2c.seadn.io/base/6bd5d216f07f43cd94d6ff950031ea59/30a68a8743e550c12234c338ead498/b030a68a8743e550c12234c338ead498.png",
+    "https://i2c.seadn.io/base/67463b924644eb5efe997301/51b2bbfcd99a935414c637d4b4e3f3/7951b2bbfcd99a935414c637d4b4e3f3.png",
+    "https://i2c.seadn.io/base/241063664a3649668d2f575c7e702895/66204c8408133a78acc12126c1c758/6e66204c8408133a78acc12126c1c758.webp",
+    "https://i2c.seadn.io/base/622a8f44d03c4a45a7ccafcb1e3d0889/f6c24655270f0b7cf2513a9dbdcafb/43f6c24655270f0b7cf2513a9dbdcafb.png",
+    "https://i2c.seadn.io/base/3129509e94aa49a6b2ecfebcd6557db5/7bf98f56fd3fa099858a296959daf1/6f7bf98f56fd3fa099858a296959daf1.jpeg",
+    "https://i2c.seadn.io/base/2fd583305fa546ecbc980ec7f3cba4bb/79494a1f58c8738b7de231a5025c09/1b79494a1f58c8738b7de231a5025c09.png",
+    "https://i2c.seadn.io/base/69619011948a49a5a317e1b83c37de34/227a7b7d71b061aea6fd3cca2e33e8/23227a7b7d71b061aea6fd3cca2e33e8.jpeg",
+    "https://i2c.seadn.io/base/aab9893c55c34593a694ea3027f874c0/5fcf18e465e61a68bcae360229deb7/af5fcf18e465e61a68bcae360229deb7.jpeg",
+    "https://i2c.seadn.io/base/0xb20000000000000000000078ee7ce2fe4908108c/15b35d8677409c3a09cb4ca70df3b0/ed15b35d8677409c3a09cb4ca70df3b0.jpeg",
+    "https://i2c.seadn.io/base/0xb2000000000000000000008bc8786b856e61707c/06bd9fffef7b7f819f4259f314e2ee/eb06bd9fffef7b7f819f4259f314e2ee.jpeg",
+    "https://i2c.seadn.io/base/0xb2000000000000000000002d0ba3164cc74f58b7/5dab252d82f50ac19fbbf52d3f597d/835dab252d82f50ac19fbbf52d3f597d.jpeg",
+    "https://i2c.seadn.io/base/0xb200000000000000000000c2e324d24d7eecd1fb/7d986c60c14a1f0addd53a623b8261/a87d986c60c14a1f0addd53a623b8261.jpeg",
+    "https://i2c.seadn.io/base/0xb200000000000000000000d9192b6b456483c2e8/0c9dd22e40312a66b3fed6719feae3/d40c9dd22e40312a66b3fed6719feae3.png",
+    "https://i2c.seadn.io/base/0xb200000000000000000000ab99cfa739e253872b/5d60084575377cb050df1fc22555af/415d60084575377cb050df1fc22555af.jpeg",
+    "https://i2c.seadn.io/base/0xb2000000000000000000004884b426556b92883d/2073e550fac0d3fec805b24e357aad/172073e550fac0d3fec805b24e357aad.png",
+    "https://i2c.seadn.io/base/0xb200000000000000000000397293cb8cda9a10c5/6266986c02cb208f5573e9f9f4dcd6/396266986c02cb208f5573e9f9f4dcd6.png",
+    "https://i2c.seadn.io/base/0xb2000000000000000000007b9fcbd005511acbd5/927d57e5721047d90f5e338c0d7e3e/7b927d57e5721047d90f5e338c0d7e3e.png",
+    "https://i2c.seadn.io/base/0xb2000000000000000000001e800a7f5189430cd0/2d990be2607d67de865862ae9a2a60/fc2d990be2607d67de865862ae9a2a60.jpeg",
+    "https://i2c.seadn.io/base/0xb200000000000000000000fd2f87532b90095211/7b999b994b724afc912ec24fa75a17/427b999b994b724afc912ec24fa75a17.png",
+    "https://i2c.seadn.io/base/67463b8d6eab5157562b4a5c/e228f0dc1634447364fa8741c0431f/75e228f0dc1634447364fa8741c0431f.png",
+    "https://i2c.seadn.io/base/38fc427b597a4c1c81a014d565d09026/0de77f0f27e4dc7175a8cc1b4d87eb/360de77f0f27e4dc7175a8cc1b4d87eb.png",
+    "https://i2c.seadn.io/base/67463b906eab5157562b4a65/53c2af56c5a8fd7aece4c1162fb51c/3d53c2af56c5a8fd7aece4c1162fb51c.png",
+    "https://i2c.seadn.io/base/74da867469694aa1bf85d78567939644/ee5a53ba925ebc70a853e8327958ee/23ee5a53ba925ebc70a853e8327958ee.png",
+    "https://i2c.seadn.io/ethereum/67463bedd2898b5cd98b0687/1135c794bdea22d7941a30d651cfb9/6a1135c794bdea22d7941a30d651cfb9.png",
+    "https://i2c.seadn.io/collection/shell-ape/image_type_logo/1f529d507a5c9d71a3f458b0f95b97/9e1f529d507a5c9d71a3f458b0f95b97.png",
+    "https://i2c.seadn.io/base/66e1dfd273c34a19bb3e97010cd471b9/8e4efb3851def6646c09a5eb1bdcbc/268e4efb3851def6646c09a5eb1bdcbc.png",
+    "https://i2c.seadn.io/collection/matictoken-shell/image_type_logo/9c38437f1666071910f13231c255e2/959c38437f1666071910f13231c255e2.png",
+    "https://i2c.seadn.io/collection/usdt-shell/image/2f80f07bf192ca8237ca9bdcb33aa4/212f80f07bf192ca8237ca9bdcb33aa4.png",
+    "https://i2c.seadn.io/ethereum/67463bc1d2898b5cd98b05c7/4b171c151a4ff5853dcf92a307524d/2e4b171c151a4ff5853dcf92a307524d.png",
+    "https://i2c.seadn.io/base/2165d022f24e4f15a1f04ea4fefd3c85/3607dd8e4420181c1e5a5ce6adaa52/453607dd8e4420181c1e5a5ce6adaa52.png",
+    "https://i2c.seadn.io/base/e96c32b94c644e1c968aa53125593293/7002ed219b4da6ccfff50b6f957c50/c77002ed219b4da6ccfff50b6f957c50.png",
+    "https://raw2.seadn.io/currency_logos/TUSD.webp",
+    "https://i2c.seadn.io/base/36e688e6d90640e190a6dfa885c244b6/259bc4d23635386e44ed58d1405554/3a259bc4d23635386e44ed58d1405554.jpeg",
+    "https://i2c.seadn.io/base/85ccd4ee998c4ce3865ba0a877b00e85/7efe747bb96f8fd6edb11d192a1323/7a7efe747bb96f8fd6edb11d192a1323.png",
+    "https://i2c.seadn.io/base/fbdc1a0bd26b419791b82a808fb38905/c4ddbeea488b52bd6cc38070f02cb6/25c4ddbeea488b52bd6cc38070f02cb6.jpeg",
+    "https://i2c.seadn.io/base/9bf0d0c0a2c842e2be06c5769b81f7fd/3000b9cdd2f29f71e6c63da82a689b/d53000b9cdd2f29f71e6c63da82a689b.jpeg",
+    "https://i2c.seadn.io/base/0544bb670446453e916b2fedb0cdd5eb/63b7ea6c5d346d1be0c5ac3d0ceb66/a663b7ea6c5d346d1be0c5ac3d0ceb66.png",
+    "https://i2c.seadn.io/ethereum/66f1371d50841e772e734f41/ff7e3d77d800fc5e0a698cb050d93d/3bff7e3d77d800fc5e0a698cb050d93d.png",
+    "https://i2c.seadn.io/arbitrum/677fd9b4b4b850442891a943/50bd96ada2042046587575e3a470e2/cb50bd96ada2042046587575e3a470e2.png",
+    "https://i2c.seadn.io/arbitrum/677ac1c453f3596ab15e8cbc/6791141119e917a818fb03db9b31eb/626791141119e917a818fb03db9b31eb.png",
+    "https://i2c.seadn.io/arbitrum/6788acad717d224de1612d8e/433a620e8a1b1cea14484dc0a3dd4f/80433a620e8a1b1cea14484dc0a3dd4f.png",
+    "https://i2c.seadn.io/base/bab9e5624ae84521be5de919948f179a/6686166af19763e453a86b091556db/0a6686166af19763e453a86b091556db.png",
+    "https://i2c.seadn.io/base/480705469cf34873a010390cf819853f/9ecd97b7e7d7483db19c7cfc41a61f/419ecd97b7e7d7483db19c7cfc41a61f.png",
+    "https://i2c.seadn.io/sei/678ae87212175d546eda8251/220ea3f9ff25a7c6543ef7945ea03b/7b220ea3f9ff25a7c6543ef7945ea03b.png",
+    "https://i2c.seadn.io/sei/0xe15fc38f6d8c56af07bbcbe3baf5708a2bf42392/f7c6f08854d13ce69a789e91adbec2/9cf7c6f08854d13ce69a789e91adbec2.png",
+    "https://i2c.seadn.io/base/8d0d5c38ff1640d6b3255918e3097ecf/594959cd68b9e0e98160ed6c15f7b2/10594959cd68b9e0e98160ed6c15f7b2.png",
+    "https://i2c.seadn.io/avalanche/6788ad07717d224de1612dfc/4586a1e6416437c258132f68c6459c/9c4586a1e6416437c258132f68c6459c.png",
+    "https://i2c.seadn.io/avalanche/6788acc1717d224de1612da7/5de093e9e813001bdf03563d554ea9/5a5de093e9e813001bdf03563d554ea9.png",
+    "https://i2c.seadn.io/collection/pol-shell/image_type_logo/055d3ea48e3b349485adafa11af824/3b055d3ea48e3b349485adafa11af824.png",
+    "https://i2c.seadn.io/polygon/66f636708a4e222b58fcdd26/c04757b55ca9bee76e0497ae9d0231/8dc04757b55ca9bee76e0497ae9d0231.png",
+    "https://i2c.seadn.io/polygon/66f5d533a4b8c248752dad36/96b0a1668ec2099be09de7250fe60a/de96b0a1668ec2099be09de7250fe60a.png",
+    "https://i2c.seadn.io/optimism/677c01b4f578556c7239d42b/198965480df3d507669010e54dbaa0/94198965480df3d507669010e54dbaa0.png",
+    "https://i2c.seadn.io/optimism/6788ad1b717d224de1612e12/9533daf4dd11d193392cff572db34e/3f9533daf4dd11d193392cff572db34e.png",
+    "https://opensea.io/images/blockies/0xa2235d059f80e176d931ef76b6c51953eb3fbef4",
+    "https://i2c.seadn.io/flow/67af8b7db7ea2043dcd5d1dc/f81f24e15ae3b3a7e8844911abf0c2/5ff81f24e15ae3b3a7e8844911abf0c2.png",
+    "https://i2c.seadn.io/flow/0x99af3eea856556646c98c8b9b2548fe815240750/26c76e755987f76b76e2e4005e9f52/4126c76e755987f76b76e2e4005e9f52.png",
+    "https://i2c.seadn.io/soneium/67996ff517c64d020c64cadf/50bd96ada2042046587575e3a470e2/cb50bd96ada2042046587575e3a470e2.png",
+    "https://i2c.seadn.io/base/ab8fa0c4a0e247a2936e24c00f9e9f85/e93c229cb629bb3b8290f2ef3e9d6a/aae93c229cb629bb3b8290f2ef3e9d6a.jpeg",
+    "https://i2c.seadn.io/ronin/67a2b162a623d24fc5f7fca8/5de093e9e813001bdf03563d554ea9/5a5de093e9e813001bdf03563d554ea9.png",
+    "https://i2c.seadn.io/bera_chain/67a4f1afe5ae922409a374f0/1a95cb031a29cce7b47ea9b1d94018/631a95cb031a29cce7b47ea9b1d94018.png",
+    "https://i2c.seadn.io/bera_chain/67a4fff8d098b435181fa9d1/5195ded082f2df3f17433908da85c7/825195ded082f2df3f17433908da85c7.png",
+    "https://i2c.seadn.io/bera_chain/67a4faac9cda7d1f0193c34c/50bd96ada2042046587575e3a470e2/cb50bd96ada2042046587575e3a470e2.png",
+    "https://i2c.seadn.io/base/2f2f646bd75241cfb3627254ed6a0ffd/95f4a6bccf7f79ff45314e0f4e7618/b395f4a6bccf7f79ff45314e0f4e7618.png",
+    "https://i2c.seadn.io/bera_chain/67a4ff5f0b1222492fec58f5/a7b999d6085e787577e5773d324be5/7fa7b999d6085e787577e5773d324be5.png",
+    "https://i2c.seadn.io/bera_chain/67a4f1f52a60315af764a1d4/c6a77096633f0d472dc37289de034a/97c6a77096633f0d472dc37289de034a.png",
+    "https://i2c.seadn.io/bera_chain/67a4fef531a70f7255cf48ae/d1a8c0ea76b22128f394bfb6d3aa12/42d1a8c0ea76b22128f394bfb6d3aa12.png",
+    "https://i2c.seadn.io/base/5b4e939bbfa447608052bbcae735d5e2/2e4b230485aff0c1696f2bfc4e67a2/f22e4b230485aff0c1696f2bfc4e67a2.png",
+    "https://i2c.seadn.io/solana/So11111111111111111111111111111111111111112/36be6feeb4e1d02cc0efca4dc35514/0336be6feeb4e1d02cc0efca4dc35514.png",
+    "https://i2c.seadn.io/solana/4sWNB8zGWHkh6UnmwiEtzNxL4XrN7uK9tosbESbJFfVs/26b8b7189eb5e7c41dafedd7ed4d19/c426b8b7189eb5e7c41dafedd7ed4d19.png",
+    "https://i2c.seadn.io/solana/USD1ttGY1N17NEEHLmELoaybftRBUSErhqYiQzvEmuB/605fceee9489e7655245f6f6e4d102/89605fceee9489e7655245f6f6e4d102.png",
+    "https://i2c.seadn.io/solana/Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh/3b0439648a1afea347a6af58f431ae/d23b0439648a1afea347a6af58f431ae.png",
+    "https://i2c.seadn.io/solana/XsqE9cRRpzxcGKDXj1BJ7Xmg4GRhZoyY1KpmGSxAWT2/e8dce80ec9b00bad8d1492e15f6de1/a0e8dce80ec9b00bad8d1492e15f6de1.png",
+    "https://i2c.seadn.io/solana/98sMhvDwXj1RQi5c5Mndm3vPe9cBqPrbLaufMXFNMh5g/4dc21a73f24878406528ab8086b2fa/ac4dc21a73f24878406528ab8086b2fa.png",
+    "https://i2c.seadn.io/solana/4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8/0885bb9cda3fd94244068246dda701/680885bb9cda3fd94244068246dda701.jpeg",
+    "https://i2c.seadn.io/solana/HTmQz7My6MehV7bjhJ6jde8nDND1yvsz68d24LP7YgUQ/ec6f072ad26e0b677c3fb23816cfa2/7dec6f072ad26e0b677c3fb23816cfa2.jpeg",
+    "https://i2c.seadn.io/collection/zcash-shell/image_type_logo/ba4b10ce757add5b54d18ba5d5073b/39ba4b10ce757add5b54d18ba5d5073b.png",
+    "https://i2c.seadn.io/solana/Pren1FvFX6J3E4kXhJuCiAD5aDmGEb7qJRncwA8Lkhw/bb919a32dacd009142712444ba394f/3cbb919a32dacd009142712444ba394f.png",
+    "https://i2c.seadn.io/solana/taoC6xyv2v8tDLcev4uaGUgV4vdQsWJrGft2kcBRrBY/1f115f4630da297d8dd425eed81fc8/5d1f115f4630da297d8dd425eed81fc8.png"
+  ],
+  "image_candidates_tested": 60,
+  "image_candidates": [
+    {
+      "url": "https://i2c.seadn.io/collection/usdt-shell/image/2f80f07bf192ca8237ca9bdcb33aa4/212f80f07bf192ca8237ca9bdcb33aa4.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/collection/usdt-shell/image/2f80f07bf192ca8237ca9bdcb33aa4/212f80f07bf192ca8237ca9bdcb33aa4.png",
+        "status": 200,
+        "bytes": 1931,
+        "sha256": "ce3c75d4f6943851cfd0f29b27b16e0a4934bd868fd3c5af06b34170a0ba3f67",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "ce3c75d4f6943851cfd0f29b27b16e0a4934bd868fd3c5af06b34170a0ba3f67",
+        "shape": [
+          500,
+          500
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.28265036859692066,
+        "dhash256_hamming": 124,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/85ccd4ee998c4ce3865ba0a877b00e85/7efe747bb96f8fd6edb11d192a1323/7a7efe747bb96f8fd6edb11d192a1323.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/85ccd4ee998c4ce3865ba0a877b00e85/7efe747bb96f8fd6edb11d192a1323/7a7efe747bb96f8fd6edb11d192a1323.png",
+        "status": 200,
+        "bytes": 1275,
+        "sha256": "0e1711d733be3bde2ab80b809177f2057ef1b4d0ef39ed94b8e3837b4f072a0f",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "0e1711d733be3bde2ab80b809177f2057ef1b4d0ef39ed94b8e3837b4f072a0f",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.21330259310968336,
+        "dhash256_hamming": 113,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/flow/0x99af3eea856556646c98c8b9b2548fe815240750/26c76e755987f76b76e2e4005e9f52/4126c76e755987f76b76e2e4005e9f52.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/flow/0x99af3eea856556646c98c8b9b2548fe815240750/26c76e755987f76b76e2e4005e9f52/4126c76e755987f76b76e2e4005e9f52.png",
+        "status": 200,
+        "bytes": 1663,
+        "sha256": "8a8f0707ac15a648a652ca3d217ee4ec3db438d2f1bdb3332b981e40c6663232",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "8a8f0707ac15a648a652ca3d217ee4ec3db438d2f1bdb3332b981e40c6663232",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.2023895148687956,
+        "dhash256_hamming": 97,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0xb2000000000000000000004884b426556b92883d/2073e550fac0d3fec805b24e357aad/172073e550fac0d3fec805b24e357aad.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/0xb2000000000000000000004884b426556b92883d/2073e550fac0d3fec805b24e357aad/172073e550fac0d3fec805b24e357aad.png",
+        "status": 200,
+        "bytes": 1178,
+        "sha256": "7e36c20e4f1bdecdead5e32a2f96e9cbf86b7a24113d6880dab866b6afcfa49e",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "7e36c20e4f1bdecdead5e32a2f96e9cbf86b7a24113d6880dab866b6afcfa49e",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.18634590444666493,
+        "dhash256_hamming": 111,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0xb200000000000000000000c2e324d24d7eecd1fb/7d986c60c14a1f0addd53a623b8261/a87d986c60c14a1f0addd53a623b8261.jpeg",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/0xb200000000000000000000c2e324d24d7eecd1fb/7d986c60c14a1f0addd53a623b8261/a87d986c60c14a1f0addd53a623b8261.jpeg",
+        "status": 200,
+        "bytes": 758,
+        "sha256": "4f08895b37a252daf0e0c8183f4086453172c5f89837616fabab3e5aab089315",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "4f08895b37a252daf0e0c8183f4086453172c5f89837616fabab3e5aab089315",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.17829801354606137,
+        "dhash256_hamming": 122,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0xb200000000000000000000d9192b6b456483c2e8/0c9dd22e40312a66b3fed6719feae3/d40c9dd22e40312a66b3fed6719feae3.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/0xb200000000000000000000d9192b6b456483c2e8/0c9dd22e40312a66b3fed6719feae3/d40c9dd22e40312a66b3fed6719feae3.png",
+        "status": 200,
+        "bytes": 1371,
+        "sha256": "89e382efd2055bf10dea8e81aef08e5c642f286079b55ea7094164dee15a590c",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "89e382efd2055bf10dea8e81aef08e5c642f286079b55ea7094164dee15a590c",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.1354526881427995,
+        "dhash256_hamming": 115,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/aab9893c55c34593a694ea3027f874c0/5fcf18e465e61a68bcae360229deb7/af5fcf18e465e61a68bcae360229deb7.jpeg",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/aab9893c55c34593a694ea3027f874c0/5fcf18e465e61a68bcae360229deb7/af5fcf18e465e61a68bcae360229deb7.jpeg",
+        "status": 200,
+        "bytes": 2276,
+        "sha256": "302b535404e187f5312d01b9c37170a47310fb25fb0c80d71ef9743430074ba5",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "302b535404e187f5312d01b9c37170a47310fb25fb0c80d71ef9743430074ba5",
+        "shape": [
+          400,
+          400
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.12169327417570104,
+        "dhash256_hamming": 134,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0xb2000000000000000000002d0ba3164cc74f58b7/5dab252d82f50ac19fbbf52d3f597d/835dab252d82f50ac19fbbf52d3f597d.jpeg",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/0xb2000000000000000000002d0ba3164cc74f58b7/5dab252d82f50ac19fbbf52d3f597d/835dab252d82f50ac19fbbf52d3f597d.jpeg",
+        "status": 200,
+        "bytes": 1150,
+        "sha256": "e1d535bba69e997b57a7bfb0b14b1f9431b65fe0cc724feea8976b39b20cc493",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "e1d535bba69e997b57a7bfb0b14b1f9431b65fe0cc724feea8976b39b20cc493",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.11063126939825424,
+        "dhash256_hamming": 119,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/67463b8d6eab5157562b4a5c/e228f0dc1634447364fa8741c0431f/75e228f0dc1634447364fa8741c0431f.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/67463b8d6eab5157562b4a5c/e228f0dc1634447364fa8741c0431f/75e228f0dc1634447364fa8741c0431f.png",
+        "status": 200,
+        "bytes": 1027,
+        "sha256": "f09f67d320c55f04c2d1dea22f5b4d154e29514a3da9ff500221dc4ee0808b77",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "f09f67d320c55f04c2d1dea22f5b4d154e29514a3da9ff500221dc4ee0808b77",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.10484703385714013,
+        "dhash256_hamming": 110,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0544bb670446453e916b2fedb0cdd5eb/63b7ea6c5d346d1be0c5ac3d0ceb66/a663b7ea6c5d346d1be0c5ac3d0ceb66.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/0544bb670446453e916b2fedb0cdd5eb/63b7ea6c5d346d1be0c5ac3d0ceb66/a663b7ea6c5d346d1be0c5ac3d0ceb66.png",
+        "status": 200,
+        "bytes": 5821,
+        "sha256": "04d7b6f6d285fd311cb22a2f9555a67ec4a296e331ca52b38fe567518722eaf7",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "04d7b6f6d285fd311cb22a2f9555a67ec4a296e331ca52b38fe567518722eaf7",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.10089275706616592,
+        "dhash256_hamming": 117,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/ethereum/67463bc1d2898b5cd98b05c7/4b171c151a4ff5853dcf92a307524d/2e4b171c151a4ff5853dcf92a307524d.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/ethereum/67463bc1d2898b5cd98b05c7/4b171c151a4ff5853dcf92a307524d/2e4b171c151a4ff5853dcf92a307524d.png",
+        "status": 200,
+        "bytes": 3344,
+        "sha256": "7808e391c4e53605fde2f6d0774203f133da14c5e12d33a708412682a6bd4d1e",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "7808e391c4e53605fde2f6d0774203f133da14c5e12d33a708412682a6bd4d1e",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.08103308305981455,
+        "dhash256_hamming": 113,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0xb200000000000000000000397293cb8cda9a10c5/6266986c02cb208f5573e9f9f4dcd6/396266986c02cb208f5573e9f9f4dcd6.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/0xb200000000000000000000397293cb8cda9a10c5/6266986c02cb208f5573e9f9f4dcd6/396266986c02cb208f5573e9f9f4dcd6.png",
+        "status": 200,
+        "bytes": 1124,
+        "sha256": "a8fdad839b23862fcb24c33e21e99fcaefe11b0aa6db90097a0e5df9453a9c5c",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "a8fdad839b23862fcb24c33e21e99fcaefe11b0aa6db90097a0e5df9453a9c5c",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.07352888392435648,
+        "dhash256_hamming": 125,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0xb2000000000000000000008bc8786b856e61707c/06bd9fffef7b7f819f4259f314e2ee/eb06bd9fffef7b7f819f4259f314e2ee.jpeg",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/0xb2000000000000000000008bc8786b856e61707c/06bd9fffef7b7f819f4259f314e2ee/eb06bd9fffef7b7f819f4259f314e2ee.jpeg",
+        "status": 200,
+        "bytes": 1202,
+        "sha256": "5ab73ba187216970627a270d96b398e9dd66c76d838b571d7ddb9e6d40742cd4",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "5ab73ba187216970627a270d96b398e9dd66c76d838b571d7ddb9e6d40742cd4",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.06708594926451417,
+        "dhash256_hamming": 106,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/480705469cf34873a010390cf819853f/9ecd97b7e7d7483db19c7cfc41a61f/419ecd97b7e7d7483db19c7cfc41a61f.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/480705469cf34873a010390cf819853f/9ecd97b7e7d7483db19c7cfc41a61f/419ecd97b7e7d7483db19c7cfc41a61f.png",
+        "status": 200,
+        "bytes": 3431,
+        "sha256": "ead843f9a11ba5c26b0cd69393337e0df3cf470d7b3e08f9868d8d7009240f9f",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "ead843f9a11ba5c26b0cd69393337e0df3cf470d7b3e08f9868d8d7009240f9f",
+        "shape": [
+          500,
+          500
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.06625792153372488,
+        "dhash256_hamming": 120,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/arbitrum/677fd9b4b4b850442891a943/50bd96ada2042046587575e3a470e2/cb50bd96ada2042046587575e3a470e2.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/arbitrum/677fd9b4b4b850442891a943/50bd96ada2042046587575e3a470e2/cb50bd96ada2042046587575e3a470e2.png",
+        "status": 200,
+        "bytes": 2951,
+        "sha256": "149ada4372d1dea9a09f8a897d33bd1edcac7323712d6e7e0f34f68ccb7808b5",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "149ada4372d1dea9a09f8a897d33bd1edcac7323712d6e7e0f34f68ccb7808b5",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.06411494643999065,
+        "dhash256_hamming": 119,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/soneium/67996ff517c64d020c64cadf/50bd96ada2042046587575e3a470e2/cb50bd96ada2042046587575e3a470e2.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/soneium/67996ff517c64d020c64cadf/50bd96ada2042046587575e3a470e2/cb50bd96ada2042046587575e3a470e2.png",
+        "status": 200,
+        "bytes": 2985,
+        "sha256": "555f1371ccf5717f660272a5cda9bbeb5a892ebc9d5b16835c5e0e4eeb4ff1f1",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "555f1371ccf5717f660272a5cda9bbeb5a892ebc9d5b16835c5e0e4eeb4ff1f1",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.06388492989953429,
+        "dhash256_hamming": 119,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/bera_chain/67a4faac9cda7d1f0193c34c/50bd96ada2042046587575e3a470e2/cb50bd96ada2042046587575e3a470e2.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/bera_chain/67a4faac9cda7d1f0193c34c/50bd96ada2042046587575e3a470e2/cb50bd96ada2042046587575e3a470e2.png",
+        "status": 200,
+        "bytes": 2985,
+        "sha256": "555f1371ccf5717f660272a5cda9bbeb5a892ebc9d5b16835c5e0e4eeb4ff1f1",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "555f1371ccf5717f660272a5cda9bbeb5a892ebc9d5b16835c5e0e4eeb4ff1f1",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.06388492989953429,
+        "dhash256_hamming": 119,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/e96c32b94c644e1c968aa53125593293/7002ed219b4da6ccfff50b6f957c50/c77002ed219b4da6ccfff50b6f957c50.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/e96c32b94c644e1c968aa53125593293/7002ed219b4da6ccfff50b6f957c50/c77002ed219b4da6ccfff50b6f957c50.png",
+        "status": 200,
+        "bytes": 649,
+        "sha256": "f9ab533fb5936b7eabd492be77ffe678dc8e740da3ff227e639ed5dfe2fe0336",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "f9ab533fb5936b7eabd492be77ffe678dc8e740da3ff227e639ed5dfe2fe0336",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.0583289255775499,
+        "dhash256_hamming": 114,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/sei/678ae87212175d546eda8251/220ea3f9ff25a7c6543ef7945ea03b/7b220ea3f9ff25a7c6543ef7945ea03b.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/sei/678ae87212175d546eda8251/220ea3f9ff25a7c6543ef7945ea03b/7b220ea3f9ff25a7c6543ef7945ea03b.png",
+        "status": 200,
+        "bytes": 3533,
+        "sha256": "4285d108b7895fcf1337df4539a3a8174d876a4af2599528f8699c9a492f7196",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "4285d108b7895fcf1337df4539a3a8174d876a4af2599528f8699c9a492f7196",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.05811881807638839,
+        "dhash256_hamming": 116,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/2165d022f24e4f15a1f04ea4fefd3c85/3607dd8e4420181c1e5a5ce6adaa52/453607dd8e4420181c1e5a5ce6adaa52.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/2165d022f24e4f15a1f04ea4fefd3c85/3607dd8e4420181c1e5a5ce6adaa52/453607dd8e4420181c1e5a5ce6adaa52.png",
+        "status": 200,
+        "bytes": 2204,
+        "sha256": "8ea8af263773e818e9816fd80886cc5cf5ddb8e353f384adcde062ff471021b4",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "8ea8af263773e818e9816fd80886cc5cf5ddb8e353f384adcde062ff471021b4",
+        "shape": [
+          400,
+          400
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.047937947544113416,
+        "dhash256_hamming": 118,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/2f2f646bd75241cfb3627254ed6a0ffd/95f4a6bccf7f79ff45314e0f4e7618/b395f4a6bccf7f79ff45314e0f4e7618.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/2f2f646bd75241cfb3627254ed6a0ffd/95f4a6bccf7f79ff45314e0f4e7618/b395f4a6bccf7f79ff45314e0f4e7618.png",
+        "status": 200,
+        "bytes": 2599,
+        "sha256": "a7c17866b188cc70c963645535b902cf49d7be1515668db24d3b2a2cf704097c",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "a7c17866b188cc70c963645535b902cf49d7be1515668db24d3b2a2cf704097c",
+        "shape": [
+          410,
+          446
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.03928881149368471,
+        "dhash256_hamming": 123,
+        "aspect_ratio_delta": 0.3601589228561968,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0xb2000000000000000000007b9fcbd005511acbd5/927d57e5721047d90f5e338c0d7e3e/7b927d57e5721047d90f5e338c0d7e3e.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/0xb2000000000000000000007b9fcbd005511acbd5/927d57e5721047d90f5e338c0d7e3e/7b927d57e5721047d90f5e338c0d7e3e.png",
+        "status": 200,
+        "bytes": 1885,
+        "sha256": "beb844f0f6ca9163df48ef82e986a36cdcd27bab5d5e18965bd717eef5a315db",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "beb844f0f6ca9163df48ef82e986a36cdcd27bab5d5e18965bd717eef5a315db",
+        "shape": [
+          128,
+          128
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.03432699158984529,
+        "dhash256_hamming": 119,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0xb20000000000000000000078ee7ce2fe4908108c/15b35d8677409c3a09cb4ca70df3b0/ed15b35d8677409c3a09cb4ca70df3b0.jpeg",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/0xb20000000000000000000078ee7ce2fe4908108c/15b35d8677409c3a09cb4ca70df3b0/ed15b35d8677409c3a09cb4ca70df3b0.jpeg",
+        "status": 200,
+        "bytes": 1083,
+        "sha256": "d0d0454b0591b16ac25100d8fc370a44fbb6df224a9ccc59fbabef3e871e696b",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "d0d0454b0591b16ac25100d8fc370a44fbb6df224a9ccc59fbabef3e871e696b",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.03414913646891549,
+        "dhash256_hamming": 108,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0xb200000000000000000000fd2f87532b90095211/7b999b994b724afc912ec24fa75a17/427b999b994b724afc912ec24fa75a17.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/0xb200000000000000000000fd2f87532b90095211/7b999b994b724afc912ec24fa75a17/427b999b994b724afc912ec24fa75a17.png",
+        "status": 200,
+        "bytes": 1636,
+        "sha256": "4d58a02fc7f65cc9a41effc22742e50dba230b04088ba71a19b6ebeef08006c3",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "4d58a02fc7f65cc9a41effc22742e50dba230b04088ba71a19b6ebeef08006c3",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.032509030925497694,
+        "dhash256_hamming": 120,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/ab8fa0c4a0e247a2936e24c00f9e9f85/e93c229cb629bb3b8290f2ef3e9d6a/aae93c229cb629bb3b8290f2ef3e9d6a.jpeg",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/ab8fa0c4a0e247a2936e24c00f9e9f85/e93c229cb629bb3b8290f2ef3e9d6a/aae93c229cb629bb3b8290f2ef3e9d6a.jpeg",
+        "status": 200,
+        "bytes": 1882,
+        "sha256": "2cf9fd7414d955c53637c5ffad6f020b092119662ed386d80d2d3c84462774ed",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "2cf9fd7414d955c53637c5ffad6f020b092119662ed386d80d2d3c84462774ed",
+        "shape": [
+          400,
+          400
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.02757420664014122,
+        "dhash256_hamming": 131,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/bera_chain/67a4fff8d098b435181fa9d1/5195ded082f2df3f17433908da85c7/825195ded082f2df3f17433908da85c7.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/bera_chain/67a4fff8d098b435181fa9d1/5195ded082f2df3f17433908da85c7/825195ded082f2df3f17433908da85c7.png",
+        "status": 200,
+        "bytes": 1458,
+        "sha256": "baa32a991089501df41e1fb5d65a333208866007617350ad2f17a6d620031f42",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "baa32a991089501df41e1fb5d65a333208866007617350ad2f17a6d620031f42",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.02547318283011667,
+        "dhash256_hamming": 121,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/3129509e94aa49a6b2ecfebcd6557db5/7bf98f56fd3fa099858a296959daf1/6f7bf98f56fd3fa099858a296959daf1.jpeg",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/3129509e94aa49a6b2ecfebcd6557db5/7bf98f56fd3fa099858a296959daf1/6f7bf98f56fd3fa099858a296959daf1.jpeg",
+        "status": 200,
+        "bytes": 6129,
+        "sha256": "af5c83ce36b3828083dc543ff66ba04a1da7deac7a48c1c3a4f767b3c2160bba",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "af5c83ce36b3828083dc543ff66ba04a1da7deac7a48c1c3a4f767b3c2160bba",
+        "shape": [
+          500,
+          500
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.011073797573588711,
+        "dhash256_hamming": 110,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/ethereum/66f1371d50841e772e734f41/ff7e3d77d800fc5e0a698cb050d93d/3bff7e3d77d800fc5e0a698cb050d93d.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/ethereum/66f1371d50841e772e734f41/ff7e3d77d800fc5e0a698cb050d93d/3bff7e3d77d800fc5e0a698cb050d93d.png",
+        "status": 200,
+        "bytes": 3602,
+        "sha256": "19271e369267a8e741e607c92a930eaed5d55e755f0f94181c763f8f713ec1e9",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "19271e369267a8e741e607c92a930eaed5d55e755f0f94181c763f8f713ec1e9",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.0019947692301566454,
+        "dhash256_hamming": 116,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/9bf0d0c0a2c842e2be06c5769b81f7fd/3000b9cdd2f29f71e6c63da82a689b/d53000b9cdd2f29f71e6c63da82a689b.jpeg",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/9bf0d0c0a2c842e2be06c5769b81f7fd/3000b9cdd2f29f71e6c63da82a689b/d53000b9cdd2f29f71e6c63da82a689b.jpeg",
+        "status": 200,
+        "bytes": 6691,
+        "sha256": "c1a82c3de67edae8ef46341a4ff5b61a2dd748bdb60d5b749a90e3fd5aa303f4",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "c1a82c3de67edae8ef46341a4ff5b61a2dd748bdb60d5b749a90e3fd5aa303f4",
+        "shape": [
+          400,
+          400
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.005419713250997457,
+        "dhash256_hamming": 126,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/622a8f44d03c4a45a7ccafcb1e3d0889/f6c24655270f0b7cf2513a9dbdcafb/43f6c24655270f0b7cf2513a9dbdcafb.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/622a8f44d03c4a45a7ccafcb1e3d0889/f6c24655270f0b7cf2513a9dbdcafb/43f6c24655270f0b7cf2513a9dbdcafb.png",
+        "status": 200,
+        "bytes": 3885,
+        "sha256": "4f48aad4f6af94fea08d7803a6cfe11fe33c5d795f0771aafad085ba6b7a7361",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "4f48aad4f6af94fea08d7803a6cfe11fe33c5d795f0771aafad085ba6b7a7361",
+        "shape": [
+          500,
+          500
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.028351769830997634,
+        "dhash256_hamming": 120,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/74da867469694aa1bf85d78567939644/ee5a53ba925ebc70a853e8327958ee/23ee5a53ba925ebc70a853e8327958ee.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/74da867469694aa1bf85d78567939644/ee5a53ba925ebc70a853e8327958ee/23ee5a53ba925ebc70a853e8327958ee.png",
+        "status": 200,
+        "bytes": 1383,
+        "sha256": "d39eb1a215735b386b6a9bacd98b383256fed1757bd11eb2fc797e5b6e3c4af2",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "d39eb1a215735b386b6a9bacd98b383256fed1757bd11eb2fc797e5b6e3c4af2",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.028563212794501885,
+        "dhash256_hamming": 131,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://opensea.io/images/blockies/0xa2235d059f80e176d931ef76b6c51953eb3fbef4",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": false
+        }
+      ],
+      "decisive": false,
+      "fetch": {
+        "url": "https://opensea.io/images/blockies/0xa2235d059f80e176d931ef76b6c51953eb3fbef4",
+        "status": 200,
+        "bytes": 16616,
+        "sha256": "8d987fb98965047686912b399683e2bc367105a69dd7757732d6fb361b636a3f",
+        "content_type": "image/png"
+      },
+      "metrics": {
+        "sha256": "8d987fb98965047686912b399683e2bc367105a69dd7757732d6fb361b636a3f",
+        "shape": [
+          128,
+          128
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.030846193991495085,
+        "dhash256_hamming": 120,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/fbdc1a0bd26b419791b82a808fb38905/c4ddbeea488b52bd6cc38070f02cb6/25c4ddbeea488b52bd6cc38070f02cb6.jpeg",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/fbdc1a0bd26b419791b82a808fb38905/c4ddbeea488b52bd6cc38070f02cb6/25c4ddbeea488b52bd6cc38070f02cb6.jpeg",
+        "status": 200,
+        "bytes": 8818,
+        "sha256": "586d7f57337431d446442b99f4adfaebf049f1b3367e83a6683860d39f424e1b",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "586d7f57337431d446442b99f4adfaebf049f1b3367e83a6683860d39f424e1b",
+        "shape": [
+          400,
+          400
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.03517065679874658,
+        "dhash256_hamming": 118,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/36e688e6d90640e190a6dfa885c244b6/259bc4d23635386e44ed58d1405554/3a259bc4d23635386e44ed58d1405554.jpeg",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/36e688e6d90640e190a6dfa885c244b6/259bc4d23635386e44ed58d1405554/3a259bc4d23635386e44ed58d1405554.jpeg",
+        "status": 200,
+        "bytes": 6413,
+        "sha256": "b59fd2a0a3bbea75676c5cb1f8dab66b8cb1efe51a4b0fdcc377ef20a3121e7d",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "b59fd2a0a3bbea75676c5cb1f8dab66b8cb1efe51a4b0fdcc377ef20a3121e7d",
+        "shape": [
+          400,
+          400
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.039027245583268234,
+        "dhash256_hamming": 118,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0xb2000000000000000000001e800a7f5189430cd0/2d990be2607d67de865862ae9a2a60/fc2d990be2607d67de865862ae9a2a60.jpeg",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/0xb2000000000000000000001e800a7f5189430cd0/2d990be2607d67de865862ae9a2a60/fc2d990be2607d67de865862ae9a2a60.jpeg",
+        "status": 200,
+        "bytes": 2079,
+        "sha256": "1851a384c403654656b991bb935b7c894c8c526c08459c2cb64d4337a649afb3",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "1851a384c403654656b991bb935b7c894c8c526c08459c2cb64d4337a649afb3",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.044782400539841345,
+        "dhash256_hamming": 127,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/6bd5d216f07f43cd94d6ff950031ea59/30a68a8743e550c12234c338ead498/b030a68a8743e550c12234c338ead498.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/6bd5d216f07f43cd94d6ff950031ea59/30a68a8743e550c12234c338ead498/b030a68a8743e550c12234c338ead498.png",
+        "status": 200,
+        "bytes": 8754,
+        "sha256": "40a87ec7901828faae3a7288cff99e26768dc88b493752eb60fb3bf83d9c7260",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "40a87ec7901828faae3a7288cff99e26768dc88b493752eb60fb3bf83d9c7260",
+        "shape": [
+          500,
+          500
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.0501326505829994,
+        "dhash256_hamming": 117,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/67463b924644eb5efe997301/51b2bbfcd99a935414c637d4b4e3f3/7951b2bbfcd99a935414c637d4b4e3f3.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/67463b924644eb5efe997301/51b2bbfcd99a935414c637d4b4e3f3/7951b2bbfcd99a935414c637d4b4e3f3.png",
+        "status": 200,
+        "bytes": 3113,
+        "sha256": "98c2e126514d7ecb57d4927587bbb6d933d56229ba2b65bc2e4d36c0b185978f",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "98c2e126514d7ecb57d4927587bbb6d933d56229ba2b65bc2e4d36c0b185978f",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.05182531840598944,
+        "dhash256_hamming": 122,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/avalanche/6788acc1717d224de1612da7/5de093e9e813001bdf03563d554ea9/5a5de093e9e813001bdf03563d554ea9.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/avalanche/6788acc1717d224de1612da7/5de093e9e813001bdf03563d554ea9/5a5de093e9e813001bdf03563d554ea9.png",
+        "status": 200,
+        "bytes": 3233,
+        "sha256": "fac15de708bcbf0609cb687bfab3ad6b5f09deca0337706140942e319cdd9648",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "fac15de708bcbf0609cb687bfab3ad6b5f09deca0337706140942e319cdd9648",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.0565915951622987,
+        "dhash256_hamming": 121,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/ronin/67a2b162a623d24fc5f7fca8/5de093e9e813001bdf03563d554ea9/5a5de093e9e813001bdf03563d554ea9.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/ronin/67a2b162a623d24fc5f7fca8/5de093e9e813001bdf03563d554ea9/5a5de093e9e813001bdf03563d554ea9.png",
+        "status": 200,
+        "bytes": 3233,
+        "sha256": "fac15de708bcbf0609cb687bfab3ad6b5f09deca0337706140942e319cdd9648",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "fac15de708bcbf0609cb687bfab3ad6b5f09deca0337706140942e319cdd9648",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.0565915951622987,
+        "dhash256_hamming": 121,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/ethereum/67463bedd2898b5cd98b0687/1135c794bdea22d7941a30d651cfb9/6a1135c794bdea22d7941a30d651cfb9.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/ethereum/67463bedd2898b5cd98b0687/1135c794bdea22d7941a30d651cfb9/6a1135c794bdea22d7941a30d651cfb9.png",
+        "status": 200,
+        "bytes": 1995,
+        "sha256": "f86432e20c062bbcf1a05f8e99bf6d2c7d4dbe7c474cb150d22702e41be2db61",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "f86432e20c062bbcf1a05f8e99bf6d2c7d4dbe7c474cb150d22702e41be2db61",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.062410381800804646,
+        "dhash256_hamming": 137,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/arbitrum/6788acad717d224de1612d8e/433a620e8a1b1cea14484dc0a3dd4f/80433a620e8a1b1cea14484dc0a3dd4f.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/arbitrum/6788acad717d224de1612d8e/433a620e8a1b1cea14484dc0a3dd4f/80433a620e8a1b1cea14484dc0a3dd4f.png",
+        "status": 200,
+        "bytes": 2911,
+        "sha256": "ec7b6b9a28bda254fbe6a93a107ad0f24747196b667a064805e95b0a85c9d40d",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "ec7b6b9a28bda254fbe6a93a107ad0f24747196b667a064805e95b0a85c9d40d",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.06731510308436436,
+        "dhash256_hamming": 124,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/polygon/66f5d533a4b8c248752dad36/96b0a1668ec2099be09de7250fe60a/de96b0a1668ec2099be09de7250fe60a.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/polygon/66f5d533a4b8c248752dad36/96b0a1668ec2099be09de7250fe60a/de96b0a1668ec2099be09de7250fe60a.png",
+        "status": 200,
+        "bytes": 2406,
+        "sha256": "a601b49b5f7c6b059cb9ba558b3bb30317ec10442208c820ab96df27d705fce8",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "a601b49b5f7c6b059cb9ba558b3bb30317ec10442208c820ab96df27d705fce8",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.0702085109060555,
+        "dhash256_hamming": 117,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/bera_chain/67a4f1afe5ae922409a374f0/1a95cb031a29cce7b47ea9b1d94018/631a95cb031a29cce7b47ea9b1d94018.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/bera_chain/67a4f1afe5ae922409a374f0/1a95cb031a29cce7b47ea9b1d94018/631a95cb031a29cce7b47ea9b1d94018.png",
+        "status": 200,
+        "bytes": 3175,
+        "sha256": "fd5a0ce4ca16be42957518f4a36cdd74888a2285df8d95a656f374d36ee80f94",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "fd5a0ce4ca16be42957518f4a36cdd74888a2285df8d95a656f374d36ee80f94",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.07533504129061053,
+        "dhash256_hamming": 134,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/8d0d5c38ff1640d6b3255918e3097ecf/594959cd68b9e0e98160ed6c15f7b2/10594959cd68b9e0e98160ed6c15f7b2.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/8d0d5c38ff1640d6b3255918e3097ecf/594959cd68b9e0e98160ed6c15f7b2/10594959cd68b9e0e98160ed6c15f7b2.png",
+        "status": 200,
+        "bytes": 5533,
+        "sha256": "14cbcb78d159580f2739c7217bc225ae5e2e501e4a546f7885f6f25e982ccf27",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "14cbcb78d159580f2739c7217bc225ae5e2e501e4a546f7885f6f25e982ccf27",
+        "shape": [
+          316,
+          316
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.0872567855799737,
+        "dhash256_hamming": 129,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/arbitrum/677ac1c453f3596ab15e8cbc/6791141119e917a818fb03db9b31eb/626791141119e917a818fb03db9b31eb.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/arbitrum/677ac1c453f3596ab15e8cbc/6791141119e917a818fb03db9b31eb/626791141119e917a818fb03db9b31eb.png",
+        "status": 200,
+        "bytes": 2382,
+        "sha256": "0f2e52cff1b9554eaf83c284625033a1420c7b7eff8e6068bdbbea4dafab115b",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "0f2e52cff1b9554eaf83c284625033a1420c7b7eff8e6068bdbbea4dafab115b",
+        "shape": [
+          203,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.10344161403664183,
+        "dhash256_hamming": 138,
+        "aspect_ratio_delta": 0.21643670730891817,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/optimism/6788ad1b717d224de1612e12/9533daf4dd11d193392cff572db34e/3f9533daf4dd11d193392cff572db34e.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/optimism/6788ad1b717d224de1612e12/9533daf4dd11d193392cff572db34e/3f9533daf4dd11d193392cff572db34e.png",
+        "status": 200,
+        "bytes": 2382,
+        "sha256": "0f2e52cff1b9554eaf83c284625033a1420c7b7eff8e6068bdbbea4dafab115b",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "0f2e52cff1b9554eaf83c284625033a1420c7b7eff8e6068bdbbea4dafab115b",
+        "shape": [
+          203,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.10344161403664183,
+        "dhash256_hamming": 138,
+        "aspect_ratio_delta": 0.21643670730891817,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/69619011948a49a5a317e1b83c37de34/227a7b7d71b061aea6fd3cca2e33e8/23227a7b7d71b061aea6fd3cca2e33e8.jpeg",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/69619011948a49a5a317e1b83c37de34/227a7b7d71b061aea6fd3cca2e33e8/23227a7b7d71b061aea6fd3cca2e33e8.jpeg",
+        "status": 200,
+        "bytes": 1415,
+        "sha256": "aad3d9410833697093ba451c72aab867a22ed6f4b0abb8f298d2c9c893ea2afc",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "aad3d9410833697093ba451c72aab867a22ed6f4b0abb8f298d2c9c893ea2afc",
+        "shape": [
+          400,
+          400
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.10979201152315635,
+        "dhash256_hamming": 133,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/bab9e5624ae84521be5de919948f179a/6686166af19763e453a86b091556db/0a6686166af19763e453a86b091556db.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/bab9e5624ae84521be5de919948f179a/6686166af19763e453a86b091556db/0a6686166af19763e453a86b091556db.png",
+        "status": 200,
+        "bytes": 3552,
+        "sha256": "49d8369621af8cfb198089a03470f8696a3abe032f0651fe15b9df61025ef4fb",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "49d8369621af8cfb198089a03470f8696a3abe032f0651fe15b9df61025ef4fb",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.1188672562473476,
+        "dhash256_hamming": 140,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://opensea.io/item/ethereum/0x0b0b70905137786cf705102c194a1b4916d8c4d0/5/opengraph-image?ts=29855129",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": false
+        }
+      ],
+      "decisive": false,
+      "fetch": {
+        "url": "https://opensea.io/item/ethereum/0x0b0b70905137786cf705102c194a1b4916d8c4d0/5/opengraph-image?ts=29855129",
+        "status": 200,
+        "bytes": 303850,
+        "sha256": "ba75bd7e768e64a53d5eaeabbeba20dbc1781ce88d1e462a3d69464ad911c850",
+        "content_type": "image/png"
+      },
+      "metrics": {
+        "sha256": "ba75bd7e768e64a53d5eaeabbeba20dbc1781ce88d1e462a3d69464ad911c850",
+        "shape": [
+          630,
+          1200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.13021315075918,
+        "dhash256_hamming": 132,
+        "aspect_ratio_delta": 0.4567981038569273,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/avalanche/6788ad07717d224de1612dfc/4586a1e6416437c258132f68c6459c/9c4586a1e6416437c258132f68c6459c.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/avalanche/6788ad07717d224de1612dfc/4586a1e6416437c258132f68c6459c/9c4586a1e6416437c258132f68c6459c.png",
+        "status": 200,
+        "bytes": 2639,
+        "sha256": "099df0deb625b81cee352714478822d0416b9ca712e231e7fb2f6cd27cfe1aa4",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "099df0deb625b81cee352714478822d0416b9ca712e231e7fb2f6cd27cfe1aa4",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.1339007575940213,
+        "dhash256_hamming": 126,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/38fc427b597a4c1c81a014d565d09026/0de77f0f27e4dc7175a8cc1b4d87eb/360de77f0f27e4dc7175a8cc1b4d87eb.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/38fc427b597a4c1c81a014d565d09026/0de77f0f27e4dc7175a8cc1b4d87eb/360de77f0f27e4dc7175a8cc1b4d87eb.png",
+        "status": 200,
+        "bytes": 8732,
+        "sha256": "f0ed7b13ac67b53bce04a7a2b38766360fd8e4c307871268776c9305e83ed639",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "f0ed7b13ac67b53bce04a7a2b38766360fd8e4c307871268776c9305e83ed639",
+        "shape": [
+          500,
+          500
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.14835664035570637,
+        "dhash256_hamming": 132,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/2fd583305fa546ecbc980ec7f3cba4bb/79494a1f58c8738b7de231a5025c09/1b79494a1f58c8738b7de231a5025c09.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/2fd583305fa546ecbc980ec7f3cba4bb/79494a1f58c8738b7de231a5025c09/1b79494a1f58c8738b7de231a5025c09.png",
+        "status": 200,
+        "bytes": 2326,
+        "sha256": "e3123af2553a58b3dd5ef1a81bd1d68b309af34b44d9e80ad51f31a689f09c33",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "e3123af2553a58b3dd5ef1a81bd1d68b309af34b44d9e80ad51f31a689f09c33",
+        "shape": [
+          400,
+          400
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.14911100352947462,
+        "dhash256_hamming": 127,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/66e1dfd273c34a19bb3e97010cd471b9/8e4efb3851def6646c09a5eb1bdcbc/268e4efb3851def6646c09a5eb1bdcbc.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/66e1dfd273c34a19bb3e97010cd471b9/8e4efb3851def6646c09a5eb1bdcbc/268e4efb3851def6646c09a5eb1bdcbc.png",
+        "status": 200,
+        "bytes": 4356,
+        "sha256": "559145c0fe13258a6fceb29af259a44ff0e52af655163f6c27ad9ea30a905660",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "559145c0fe13258a6fceb29af259a44ff0e52af655163f6c27ad9ea30a905660",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.16635885104372394,
+        "dhash256_hamming": 138,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0xb200000000000000000000ab99cfa739e253872b/5d60084575377cb050df1fc22555af/415d60084575377cb050df1fc22555af.jpeg",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/0xb200000000000000000000ab99cfa739e253872b/5d60084575377cb050df1fc22555af/415d60084575377cb050df1fc22555af.jpeg",
+        "status": 200,
+        "bytes": 1996,
+        "sha256": "c9609553692fe7afc599663d4488406577a478c2281052d770e6106149733242",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "c9609553692fe7afc599663d4488406577a478c2281052d770e6106149733242",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.17402535016471585,
+        "dhash256_hamming": 128,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/67463b906eab5157562b4a65/53c2af56c5a8fd7aece4c1162fb51c/3d53c2af56c5a8fd7aece4c1162fb51c.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/67463b906eab5157562b4a65/53c2af56c5a8fd7aece4c1162fb51c/3d53c2af56c5a8fd7aece4c1162fb51c.png",
+        "status": 200,
+        "bytes": 3773,
+        "sha256": "4ff11a3e391f85f826ff1d92bd283bfaad2c5961e05790b421eccec26ce252cb",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "4ff11a3e391f85f826ff1d92bd283bfaad2c5961e05790b421eccec26ce252cb",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.17516899181321652,
+        "dhash256_hamming": 135,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/polygon/66f636708a4e222b58fcdd26/c04757b55ca9bee76e0497ae9d0231/8dc04757b55ca9bee76e0497ae9d0231.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/polygon/66f636708a4e222b58fcdd26/c04757b55ca9bee76e0497ae9d0231/8dc04757b55ca9bee76e0497ae9d0231.png",
+        "status": 200,
+        "bytes": 2106,
+        "sha256": "aac47b2e32228116584dcd83d8b25ecf991b1aa68a15aa51ccfff731383012f9",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "aac47b2e32228116584dcd83d8b25ecf991b1aa68a15aa51ccfff731383012f9",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.1751761619827874,
+        "dhash256_hamming": 128,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/sei/0xe15fc38f6d8c56af07bbcbe3baf5708a2bf42392/f7c6f08854d13ce69a789e91adbec2/9cf7c6f08854d13ce69a789e91adbec2.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/sei/0xe15fc38f6d8c56af07bbcbe3baf5708a2bf42392/f7c6f08854d13ce69a789e91adbec2/9cf7c6f08854d13ce69a789e91adbec2.png",
+        "status": 200,
+        "bytes": 3252,
+        "sha256": "bab10953d351ae700b5043f667bb60093d4ff958df86f1b85350d64c490c7197",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "bab10953d351ae700b5043f667bb60093d4ff958df86f1b85350d64c490c7197",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.1893436685750067,
+        "dhash256_hamming": 133,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/flow/67af8b7db7ea2043dcd5d1dc/f81f24e15ae3b3a7e8844911abf0c2/5ff81f24e15ae3b3a7e8844911abf0c2.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/flow/67af8b7db7ea2043dcd5d1dc/f81f24e15ae3b3a7e8844911abf0c2/5ff81f24e15ae3b3a7e8844911abf0c2.png",
+        "status": 200,
+        "bytes": 4595,
+        "sha256": "0ce5934f1055f9ee3aa36307f743b8f728619816d466f3b849bcfe48f35df141",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "0ce5934f1055f9ee3aa36307f743b8f728619816d466f3b849bcfe48f35df141",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.19204983470762885,
+        "dhash256_hamming": 136,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/optimism/677c01b4f578556c7239d42b/198965480df3d507669010e54dbaa0/94198965480df3d507669010e54dbaa0.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/optimism/677c01b4f578556c7239d42b/198965480df3d507669010e54dbaa0/94198965480df3d507669010e54dbaa0.png",
+        "status": 200,
+        "bytes": 4303,
+        "sha256": "ec9dfb3f0f35ce7abb01a40d4c291a6f191b94e0d0a2c9018faac70ebf03b7f6",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "ec9dfb3f0f35ce7abb01a40d4c291a6f191b94e0d0a2c9018faac70ebf03b7f6",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.19652902112166126,
+        "dhash256_hamming": 130,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/241063664a3649668d2f575c7e702895/66204c8408133a78acc12126c1c758/6e66204c8408133a78acc12126c1c758.webp",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/241063664a3649668d2f575c7e702895/66204c8408133a78acc12126c1c758/6e66204c8408133a78acc12126c1c758.webp",
+        "status": 200,
+        "bytes": 8170,
+        "sha256": "d3a04de739dc23db46f07328ff09e67b2b25487599692e6ca0a9ec3143e4de46",
+        "content_type": "image/webp"
+      },
+      "metrics": {
+        "sha256": "d3a04de739dc23db46f07328ff09e67b2b25487599692e6ca0a9ec3143e4de46",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": -0.2706119116162793,
+        "dhash256_hamming": 137,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    }
+  ],
+  "top_image_candidates": [
+    {
+      "url": "https://i2c.seadn.io/collection/usdt-shell/image/2f80f07bf192ca8237ca9bdcb33aa4/212f80f07bf192ca8237ca9bdcb33aa4.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/collection/usdt-shell/image/2f80f07bf192ca8237ca9bdcb33aa4/212f80f07bf192ca8237ca9bdcb33aa4.png",
+        "status": 200,
+        "bytes": 1931,
+        "sha256": "ce3c75d4f6943851cfd0f29b27b16e0a4934bd868fd3c5af06b34170a0ba3f67",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "ce3c75d4f6943851cfd0f29b27b16e0a4934bd868fd3c5af06b34170a0ba3f67",
+        "shape": [
+          500,
+          500
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.28265036859692066,
+        "dhash256_hamming": 124,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/85ccd4ee998c4ce3865ba0a877b00e85/7efe747bb96f8fd6edb11d192a1323/7a7efe747bb96f8fd6edb11d192a1323.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/85ccd4ee998c4ce3865ba0a877b00e85/7efe747bb96f8fd6edb11d192a1323/7a7efe747bb96f8fd6edb11d192a1323.png",
+        "status": 200,
+        "bytes": 1275,
+        "sha256": "0e1711d733be3bde2ab80b809177f2057ef1b4d0ef39ed94b8e3837b4f072a0f",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "0e1711d733be3bde2ab80b809177f2057ef1b4d0ef39ed94b8e3837b4f072a0f",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.21330259310968336,
+        "dhash256_hamming": 113,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/flow/0x99af3eea856556646c98c8b9b2548fe815240750/26c76e755987f76b76e2e4005e9f52/4126c76e755987f76b76e2e4005e9f52.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/flow/0x99af3eea856556646c98c8b9b2548fe815240750/26c76e755987f76b76e2e4005e9f52/4126c76e755987f76b76e2e4005e9f52.png",
+        "status": 200,
+        "bytes": 1663,
+        "sha256": "8a8f0707ac15a648a652ca3d217ee4ec3db438d2f1bdb3332b981e40c6663232",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "8a8f0707ac15a648a652ca3d217ee4ec3db438d2f1bdb3332b981e40c6663232",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.2023895148687956,
+        "dhash256_hamming": 97,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0xb2000000000000000000004884b426556b92883d/2073e550fac0d3fec805b24e357aad/172073e550fac0d3fec805b24e357aad.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/0xb2000000000000000000004884b426556b92883d/2073e550fac0d3fec805b24e357aad/172073e550fac0d3fec805b24e357aad.png",
+        "status": 200,
+        "bytes": 1178,
+        "sha256": "7e36c20e4f1bdecdead5e32a2f96e9cbf86b7a24113d6880dab866b6afcfa49e",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "7e36c20e4f1bdecdead5e32a2f96e9cbf86b7a24113d6880dab866b6afcfa49e",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.18634590444666493,
+        "dhash256_hamming": 111,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0xb200000000000000000000c2e324d24d7eecd1fb/7d986c60c14a1f0addd53a623b8261/a87d986c60c14a1f0addd53a623b8261.jpeg",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/0xb200000000000000000000c2e324d24d7eecd1fb/7d986c60c14a1f0addd53a623b8261/a87d986c60c14a1f0addd53a623b8261.jpeg",
+        "status": 200,
+        "bytes": 758,
+        "sha256": "4f08895b37a252daf0e0c8183f4086453172c5f89837616fabab3e5aab089315",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "4f08895b37a252daf0e0c8183f4086453172c5f89837616fabab3e5aab089315",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.17829801354606137,
+        "dhash256_hamming": 122,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0xb200000000000000000000d9192b6b456483c2e8/0c9dd22e40312a66b3fed6719feae3/d40c9dd22e40312a66b3fed6719feae3.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/0xb200000000000000000000d9192b6b456483c2e8/0c9dd22e40312a66b3fed6719feae3/d40c9dd22e40312a66b3fed6719feae3.png",
+        "status": 200,
+        "bytes": 1371,
+        "sha256": "89e382efd2055bf10dea8e81aef08e5c642f286079b55ea7094164dee15a590c",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "89e382efd2055bf10dea8e81aef08e5c642f286079b55ea7094164dee15a590c",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.1354526881427995,
+        "dhash256_hamming": 115,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/aab9893c55c34593a694ea3027f874c0/5fcf18e465e61a68bcae360229deb7/af5fcf18e465e61a68bcae360229deb7.jpeg",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/aab9893c55c34593a694ea3027f874c0/5fcf18e465e61a68bcae360229deb7/af5fcf18e465e61a68bcae360229deb7.jpeg",
+        "status": 200,
+        "bytes": 2276,
+        "sha256": "302b535404e187f5312d01b9c37170a47310fb25fb0c80d71ef9743430074ba5",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "302b535404e187f5312d01b9c37170a47310fb25fb0c80d71ef9743430074ba5",
+        "shape": [
+          400,
+          400
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.12169327417570104,
+        "dhash256_hamming": 134,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0xb2000000000000000000002d0ba3164cc74f58b7/5dab252d82f50ac19fbbf52d3f597d/835dab252d82f50ac19fbbf52d3f597d.jpeg",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/0xb2000000000000000000002d0ba3164cc74f58b7/5dab252d82f50ac19fbbf52d3f597d/835dab252d82f50ac19fbbf52d3f597d.jpeg",
+        "status": 200,
+        "bytes": 1150,
+        "sha256": "e1d535bba69e997b57a7bfb0b14b1f9431b65fe0cc724feea8976b39b20cc493",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "e1d535bba69e997b57a7bfb0b14b1f9431b65fe0cc724feea8976b39b20cc493",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.11063126939825424,
+        "dhash256_hamming": 119,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/67463b8d6eab5157562b4a5c/e228f0dc1634447364fa8741c0431f/75e228f0dc1634447364fa8741c0431f.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/67463b8d6eab5157562b4a5c/e228f0dc1634447364fa8741c0431f/75e228f0dc1634447364fa8741c0431f.png",
+        "status": 200,
+        "bytes": 1027,
+        "sha256": "f09f67d320c55f04c2d1dea22f5b4d154e29514a3da9ff500221dc4ee0808b77",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "f09f67d320c55f04c2d1dea22f5b4d154e29514a3da9ff500221dc4ee0808b77",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.10484703385714013,
+        "dhash256_hamming": 110,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0544bb670446453e916b2fedb0cdd5eb/63b7ea6c5d346d1be0c5ac3d0ceb66/a663b7ea6c5d346d1be0c5ac3d0ceb66.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/0544bb670446453e916b2fedb0cdd5eb/63b7ea6c5d346d1be0c5ac3d0ceb66/a663b7ea6c5d346d1be0c5ac3d0ceb66.png",
+        "status": 200,
+        "bytes": 5821,
+        "sha256": "04d7b6f6d285fd311cb22a2f9555a67ec4a296e331ca52b38fe567518722eaf7",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "04d7b6f6d285fd311cb22a2f9555a67ec4a296e331ca52b38fe567518722eaf7",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.10089275706616592,
+        "dhash256_hamming": 117,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/ethereum/67463bc1d2898b5cd98b05c7/4b171c151a4ff5853dcf92a307524d/2e4b171c151a4ff5853dcf92a307524d.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/ethereum/67463bc1d2898b5cd98b05c7/4b171c151a4ff5853dcf92a307524d/2e4b171c151a4ff5853dcf92a307524d.png",
+        "status": 200,
+        "bytes": 3344,
+        "sha256": "7808e391c4e53605fde2f6d0774203f133da14c5e12d33a708412682a6bd4d1e",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "7808e391c4e53605fde2f6d0774203f133da14c5e12d33a708412682a6bd4d1e",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.08103308305981455,
+        "dhash256_hamming": 113,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0xb200000000000000000000397293cb8cda9a10c5/6266986c02cb208f5573e9f9f4dcd6/396266986c02cb208f5573e9f9f4dcd6.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/0xb200000000000000000000397293cb8cda9a10c5/6266986c02cb208f5573e9f9f4dcd6/396266986c02cb208f5573e9f9f4dcd6.png",
+        "status": 200,
+        "bytes": 1124,
+        "sha256": "a8fdad839b23862fcb24c33e21e99fcaefe11b0aa6db90097a0e5df9453a9c5c",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "a8fdad839b23862fcb24c33e21e99fcaefe11b0aa6db90097a0e5df9453a9c5c",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.07352888392435648,
+        "dhash256_hamming": 125,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/0xb2000000000000000000008bc8786b856e61707c/06bd9fffef7b7f819f4259f314e2ee/eb06bd9fffef7b7f819f4259f314e2ee.jpeg",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/0xb2000000000000000000008bc8786b856e61707c/06bd9fffef7b7f819f4259f314e2ee/eb06bd9fffef7b7f819f4259f314e2ee.jpeg",
+        "status": 200,
+        "bytes": 1202,
+        "sha256": "5ab73ba187216970627a270d96b398e9dd66c76d838b571d7ddb9e6d40742cd4",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "5ab73ba187216970627a270d96b398e9dd66c76d838b571d7ddb9e6d40742cd4",
+        "shape": [
+          200,
+          200
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.06708594926451417,
+        "dhash256_hamming": 106,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/base/480705469cf34873a010390cf819853f/9ecd97b7e7d7483db19c7cfc41a61f/419ecd97b7e7d7483db19c7cfc41a61f.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/base/480705469cf34873a010390cf819853f/9ecd97b7e7d7483db19c7cfc41a61f/419ecd97b7e7d7483db19c7cfc41a61f.png",
+        "status": 200,
+        "bytes": 3431,
+        "sha256": "ead843f9a11ba5c26b0cd69393337e0df3cf470d7b3e08f9868d8d7009240f9f",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "ead843f9a11ba5c26b0cd69393337e0df3cf470d7b3e08f9868d8d7009240f9f",
+        "shape": [
+          500,
+          500
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.06625792153372488,
+        "dhash256_hamming": 120,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    },
+    {
+      "url": "https://i2c.seadn.io/arbitrum/677fd9b4b4b850442891a943/50bd96ada2042046587575e3a470e2/cb50bd96ada2042046587575e3a470e2.png",
+      "sources": [
+        {
+          "kind": "opensea_embedded",
+          "ref": "item5",
+          "decisive": true
+        }
+      ],
+      "decisive": true,
+      "fetch": {
+        "url": "https://i2c.seadn.io/arbitrum/677fd9b4b4b850442891a943/50bd96ada2042046587575e3a470e2/cb50bd96ada2042046587575e3a470e2.png",
+        "status": 200,
+        "bytes": 2951,
+        "sha256": "149ada4372d1dea9a09f8a897d33bd1edcac7323712d6e7e0f34f68ccb7808b5",
+        "content_type": "image/avif"
+      },
+      "metrics": {
+        "sha256": "149ada4372d1dea9a09f8a897d33bd1edcac7323712d6e7e0f34f68ccb7808b5",
+        "shape": [
+          250,
+          250
+        ],
+        "canonical_shape": [
+          1105,
+          1600
+        ],
+        "pearson64": 0.06411494643999065,
+        "dhash256_hamming": 119,
+        "aspect_ratio_delta": 0.44796380090497734,
+        "strong_match": false,
+        "clear_nonmatch": true
+      }
+    }
+  ],
+  "verdict": "MISIDENTIFIED_REVERSE_IMAGE_LEAD",
+  "strong_matches": [],
+  "strong_decisive_matches": [],
+  "decisive_candidates_scored": 58,
+  "clear_decisive_nonmatches": 58,
+  "interpretation_guard": "Addresses are provenance identifiers only; no identity attribution is inferred without independent public evidence."
+}
