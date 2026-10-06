@@ -202,3 +202,13 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Both 64-hex-symbol and 256-binary-symbol one-stroke-per-symbol sail carriers are rejected conservatively.
 - The sail still has stable two-orientation structure, but there are too few robust individual tracks for the tested direct carrier sizes.
 - Stage 95 selected as a genuinely different mechanism: a 16-level foreground grayscale alphabet, motivated by the native grayscale image and the hexadecimal target representation. It will compare #11 against lossy variants, synthetic 16-shade controls, and solved Puzzle #5 as an author-style hand-drawn raster control.
+
+
+## 2026-10-06 — corrected Stage 95 review and new Puzzle #9 evidence
+
+- First Stage-95 run failed its synthetic-control validation and was not interpreted.
+- Corrected detector cleanly separates a 16-mode positive from a continuous negative and uses solved Puzzle #5 as an author-style drawing control.
+- All four Puzzle #11 regions are far from the validated positive control in every variant; direct 16-gray-mode / one-tone-per-hex-symbol encoding is retired.
+- Fresh public-source research surfaced a directly relevant author statement about solved sibling Puzzle #9: on 2020-06-14 Tiamat wrote that the puzzle “required 4 steps” and guessed the anonymous solver found 3 and brute-forced one.
+- This exact clue is absent from the current #11 branch, so it is genuinely new evidence rather than recycled community speculation.
+- Stage 96 will fetch the original #9 permaweb page and assets, recover the author tweet context where possible, and compare #9/#11 mechanism-level construction to infer reusable steps without generating any candidate secret material.
