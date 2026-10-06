@@ -171,3 +171,14 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - The 5/7 skyline split is only PARTIAL: the counts appeared in the broad historical object-count sweep, but no independent evidence promotes them as a semantic instruction.
 - Added a durable anti-recycling rule: exhausted/falsified hypotheses are not reopened without a demonstrated implementation defect or new independent evidence.
 - Stage 92 selected: bounded source-photo candidate audit of the exact Courageous Sailing lead, its 2019–2021 archived page images, and a small public Boston/sailing/skyline image pool using photo-to-sketch geometric matching.
+
+
+## 2026-10-06 — adaptive review of corrected Stage 92
+
+- Stage 92's first run accidentally produced zero scored null images because the global URL cap was consumed by candidates before nulls were appended. Fixed and reran the same stage with separate candidate/null caps.
+- Corrected run: 110 candidate URLs, 74 successfully scored candidates, 14 null URLs but only 1 successfully fetched null image, positive control PASS.
+- No candidate met even the weaker “interesting” geometry gate; strong=0, interesting=0. The transformed-canonical control produced ~2291 SIFT homography inliers and ~524 ORB inliers, showing the matcher can detect a true geometric derivative.
+- Best real candidate (Courageous Sailing CASD5.jpg) produced only 6 SIFT and 7 ORB homography inliers. Therefore the specific Courageous Sailing/Boston candidate pool is retired.
+- The thin null pool prevents strong false-positive calibration, but is immaterial to the observed negative because there were no candidate positives to calibrate.
+- Do not broaden arbitrary photo search without new provenance evidence.
+- Stage 93 selected: one bounded test of the last genuinely untested historical visual claim, the pier/support X/IX/XI Roman-numeral interpretation.
