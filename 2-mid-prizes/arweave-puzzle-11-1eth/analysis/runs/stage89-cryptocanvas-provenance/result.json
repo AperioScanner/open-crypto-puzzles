@@ -11,27 +11,21 @@
     "collection": {
       "url": "https://opensea.io/collection/cryptocanvas-xyz",
       "status": 200,
-      "bytes": 1326686,
-      "sha256": "4ef8f49ae9b8b36415bb8b07765c3a08c204921119e7571a165591a07a364728",
+      "bytes": 1324469,
+      "sha256": "52277f2846a49c7fe7abbad6e2b99928433145f40fc2f05f8a114c0b804d37cf",
       "mentions_jul_2020": true,
       "mentions_five_items": true
     },
     "item5": {
       "url": "https://opensea.io/item/ethereum/0x0b0b70905137786cf705102c194a1b4916d8c4d0/5",
       "status": 200,
-      "bytes": 970527,
-      "sha256": "1b8a6c1209e47c72a26d41ed779c06fbc6dc1fe4f2ce63fab0b4a63829a28faa",
+      "bytes": 974617,
+      "sha256": "fe7a0502e8a291ff022c29a9901a11c9e1a803cae504fd967fc232d7adabd672",
+      "og_media_urls": [
+        "https://opensea.io/item/ethereum/0x0b0b70905137786cf705102c194a1b4916d8c4d0/5/opengraph-image?ts=29855121"
+      ],
       "media_urls": [
-        "https://i2c.seadn.io/base/6bd5d216f07f43cd94d6ff950031ea59/30a68a8743e550c12234c338ead498/b030a68a8743e550c12234c338ead498.png\\",
-        "https://i2c.seadn.io/base/67463b924644eb5efe997301/51b2bbfcd99a935414c637d4b4e3f3/7951b2bbfcd99a935414c637d4b4e3f3.png\\",
-        "https://i2c.seadn.io/base/241063664a3649668d2f575c7e702895/66204c8408133a78acc12126c1c758/6e66204c8408133a78acc12126c1c758.webp\\",
-        "https://i2c.seadn.io/base/622a8f44d03c4a45a7ccafcb1e3d0889/f6c24655270f0b7cf2513a9dbdcafb/43f6c24655270f0b7cf2513a9dbdcafb.png\\",
-        "https://i2c.seadn.io/base/3129509e94aa49a6b2ecfebcd6557db5/7bf98f56fd3fa099858a296959daf1/6f7bf98f56fd3fa099858a296959daf1.jpeg\\",
-        "https://i2c.seadn.io/base/2fd583305fa546ecbc980ec7f3cba4bb/79494a1f58c8738b7de231a5025c09/1b79494a1f58c8738b7de231a5025c09.png\\",
-        "https://i2c.seadn.io/base/69619011948a49a5a317e1b83c37de34/227a7b7d71b061aea6fd3cca2e33e8/23227a7b7d71b061aea6fd3cca2e33e8.jpeg\\",
-        "https://i2c.seadn.io/base/aab9893c55c34593a694ea3027f874c0/5fcf18e465e61a68bcae360229deb7/af5fcf18e465e61a68bcae360229deb7.jpeg\\",
-        "https://i2c.seadn.io/base/0xb20000000000000000000078ee7ce2fe4908108c/15b35d8677409c3a09cb4ca70df3b0/ed15b35d8677409c3a09cb4ca70df3b0.jpeg\\",
-        "https://i2c.seadn.io/base/0xb2000000000000000000008bc8786b856e61707c/06bd9fffef7b7f819f4259f314e2ee/eb06bd9fffef7b7f819f4259f314e2ee.jpeg\\"
+        "https://opensea.io/item/ethereum/0x0b0b70905137786cf705102c194a1b4916d8c4d0/5/opengraph-image?ts=29855121"
       ],
       "addresses": [
         "0x0b0b70905137786cf705102c194a1b4916d8c4d0",
@@ -66,6 +60,9 @@
       "token_id": 1,
       "token_uri": "https://cryptocanvas.xyz/api/token/1",
       "token_uri_rpc": "https://ethereum-rpc.publicnode.com",
+      "wayback_metadata_fetch": {
+        "cdx_rows": 0
+      },
       "metadata_fetch": {
         "errors": [
           {
@@ -77,159 +74,24 @@
       "metadata": null,
       "current_owner": "0xdd10bb7829ba5ccd690e51b958bfadc207b83285",
       "owner_rpc": "https://ethereum-rpc.publicnode.com",
-      "first_transfer_lookup": {
-        "errors": [
-          {
-            "range": [
-              10884800,
-              10885599
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10885600,
-              10886399
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10886400,
-              10887199
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10887200,
-              10887999
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10888000,
-              10888799
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10888800,
-              10889599
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10889600,
-              10890399
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10890400,
-              10891199
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10891200,
-              10891999
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10892000,
-              10892799
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10892800,
-              10893599
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10893600,
-              10894399
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10894400,
-              10895199
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10895200,
-              10895999
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10896000,
-              10896799
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10896800,
-              10897599
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10897600,
-              10898399
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10898400,
-              10899199
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10899200,
-              10899999
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10900000,
-              10900000
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          }
-        ],
-        "scanned_window": [
-          10200000,
-          10900000
-        ]
+      "first_transfer": {
+        "block_number": 10478281,
+        "transaction_hash": "0x8810bf4acbb89483a959d31820aa98ebab3e2cd87fb4818fb27a7f2a41e6249a",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xd8424ee7cc2520f7dae828f84f99f53ac0dd6734",
+        "timestamp_utc": "2020-07-17T17:21:02.000000Z",
+        "source": "blockscout",
+        "source_url": "https://eth.blockscout.com/api/v2/tokens/0x0b0b70905137786cf705102c194a1b4916d8c4d0/instances/1/transfers",
+        "tx_rpc": "https://ethereum-rpc.publicnode.com"
       }
     },
     "2": {
       "token_id": 2,
       "token_uri": "https://cryptocanvas.xyz/api/token/2",
       "token_uri_rpc": "https://ethereum-rpc.publicnode.com",
+      "wayback_metadata_fetch": {
+        "error": "HTTPError('503 Server Error: Service Unavailable for url: https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fcryptocanvas.xyz%2Fapi%2Ftoken%2F2&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest&from=2020&to=2022')"
+      },
       "metadata_fetch": {
         "errors": [
           {
@@ -241,159 +103,24 @@
       "metadata": null,
       "current_owner": "0x718ffdc2b4e813e7d200c6086b5425fd6a219cff",
       "owner_rpc": "https://ethereum-rpc.publicnode.com",
-      "first_transfer_lookup": {
-        "errors": [
-          {
-            "range": [
-              10884800,
-              10885599
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10885600,
-              10886399
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10886400,
-              10887199
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10887200,
-              10887999
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10888000,
-              10888799
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10888800,
-              10889599
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10889600,
-              10890399
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10890400,
-              10891199
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10891200,
-              10891999
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10892000,
-              10892799
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10892800,
-              10893599
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10893600,
-              10894399
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10894400,
-              10895199
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10895200,
-              10895999
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10896000,
-              10896799
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10896800,
-              10897599
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10897600,
-              10898399
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10898400,
-              10899199
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10899200,
-              10899999
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10900000,
-              10900000
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          }
-        ],
-        "scanned_window": [
-          10200000,
-          10900000
-        ]
+      "first_transfer": {
+        "block_number": 10495164,
+        "transaction_hash": "0x5a3a73cbb4f841bd46f1d8997035d6192abb631d1bf37696452c16112039bd22",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0x718ffdc2b4e813e7d200c6086b5425fd6a219cff",
+        "timestamp_utc": "2020-07-20T07:52:30.000000Z",
+        "source": "blockscout",
+        "source_url": "https://eth.blockscout.com/api/v2/tokens/0x0b0b70905137786cf705102c194a1b4916d8c4d0/instances/2/transfers",
+        "tx_rpc": "https://ethereum-rpc.publicnode.com"
       }
     },
     "3": {
       "token_id": 3,
       "token_uri": "https://cryptocanvas.xyz/api/token/3",
       "token_uri_rpc": "https://ethereum-rpc.publicnode.com",
+      "wayback_metadata_fetch": {
+        "error": "HTTPError('503 Server Error: Service Unavailable for url: https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fcryptocanvas.xyz%2Fapi%2Ftoken%2F3&output=json&filter=statuscode%3A200&collapse=digest&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest&from=2020&to=2022')"
+      },
       "metadata_fetch": {
         "errors": [
           {
@@ -405,159 +132,24 @@
       "metadata": null,
       "current_owner": "0xd8424ee7cc2520f7dae828f84f99f53ac0dd6734",
       "owner_rpc": "https://ethereum-rpc.publicnode.com",
-      "first_transfer_lookup": {
-        "errors": [
-          {
-            "range": [
-              10884800,
-              10885599
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10885600,
-              10886399
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10886400,
-              10887199
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10887200,
-              10887999
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10888000,
-              10888799
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10888800,
-              10889599
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10889600,
-              10890399
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10890400,
-              10891199
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10891200,
-              10891999
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10892000,
-              10892799
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10892800,
-              10893599
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10893600,
-              10894399
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10894400,
-              10895199
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10895200,
-              10895999
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10896000,
-              10896799
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10896800,
-              10897599
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10897600,
-              10898399
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10898400,
-              10899199
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10899200,
-              10899999
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10900000,
-              10900000
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          }
-        ],
-        "scanned_window": [
-          10200000,
-          10900000
-        ]
+      "first_transfer": {
+        "block_number": 10511476,
+        "transaction_hash": "0x9a39cd1b64c68a8b64965e5f0398abcfc49af9b94f858e6ad7df285d7f4c88e0",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xd8424ee7cc2520f7dae828f84f99f53ac0dd6734",
+        "timestamp_utc": "2020-07-22T20:57:20.000000Z",
+        "source": "blockscout",
+        "source_url": "https://eth.blockscout.com/api/v2/tokens/0x0b0b70905137786cf705102c194a1b4916d8c4d0/instances/3/transfers",
+        "tx_rpc": "https://ethereum-rpc.publicnode.com"
       }
     },
     "4": {
       "token_id": 4,
       "token_uri": "https://cryptocanvas.xyz/api/token/4",
       "token_uri_rpc": "https://ethereum-rpc.publicnode.com",
+      "wayback_metadata_fetch": {
+        "cdx_rows": 0
+      },
       "metadata_fetch": {
         "errors": [
           {
@@ -569,159 +161,24 @@
       "metadata": null,
       "current_owner": "0x0386bf5e50ce1ce02b8b0417e679292f18476a40",
       "owner_rpc": "https://ethereum-rpc.publicnode.com",
-      "first_transfer_lookup": {
-        "errors": [
-          {
-            "range": [
-              10884800,
-              10885599
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10885600,
-              10886399
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10886400,
-              10887199
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10887200,
-              10887999
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10888000,
-              10888799
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10888800,
-              10889599
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10889600,
-              10890399
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10890400,
-              10891199
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10891200,
-              10891999
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10892000,
-              10892799
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10892800,
-              10893599
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10893600,
-              10894399
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10894400,
-              10895199
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10895200,
-              10895999
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10896000,
-              10896799
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10896800,
-              10897599
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10897600,
-              10898399
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10898400,
-              10899199
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10899200,
-              10899999
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10900000,
-              10900000
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          }
-        ],
-        "scanned_window": [
-          10200000,
-          10900000
-        ]
+      "first_transfer": {
+        "block_number": 10512159,
+        "transaction_hash": "0xa6d768ab86077d845a3e97e89de495fe73e588722f91aa5a75ad6efa83d6b5a7",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xd8424ee7cc2520f7dae828f84f99f53ac0dd6734",
+        "timestamp_utc": "2020-07-22T23:26:00.000000Z",
+        "source": "blockscout",
+        "source_url": "https://eth.blockscout.com/api/v2/tokens/0x0b0b70905137786cf705102c194a1b4916d8c4d0/instances/4/transfers",
+        "tx_rpc": "https://ethereum-rpc.publicnode.com"
       }
     },
     "5": {
       "token_id": 5,
       "token_uri": "https://cryptocanvas.xyz/api/token/5",
       "token_uri_rpc": "https://ethereum-rpc.publicnode.com",
+      "wayback_metadata_fetch": {
+        "cdx_rows": 0
+      },
       "metadata_fetch": {
         "errors": [
           {
@@ -733,203 +190,42 @@
       "metadata": null,
       "current_owner": "0xfdae2f991a521f54bbef89048922dff9bac2d96b",
       "owner_rpc": "https://ethereum-rpc.publicnode.com",
-      "first_transfer_lookup": {
-        "errors": [
-          {
-            "range": [
-              10884800,
-              10885599
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10885600,
-              10886399
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10886400,
-              10887199
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10887200,
-              10887999
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10888000,
-              10888799
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10888800,
-              10889599
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10889600,
-              10890399
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10890400,
-              10891199
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10891200,
-              10891999
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10892000,
-              10892799
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10892800,
-              10893599
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10893600,
-              10894399
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10894400,
-              10895199
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10895200,
-              10895999
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10896000,
-              10896799
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10896800,
-              10897599
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10897600,
-              10898399
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10898400,
-              10899199
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10899200,
-              10899999
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'403 Client Error: Forbidden for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          },
-          {
-            "range": [
-              10900000,
-              10900000
-            ],
-            "error": "RuntimeError('all RPC endpoints failed: [{\\'endpoint\\': \\'https://ethereum-rpc.publicnode.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://ethereum-rpc.publicnode.com/\\')\"}, {\\'endpoint\\': \\'https://cloudflare-eth.com\\', \\'error\\': \"HTTPError(\\'429 Client Error: Too Many Requests for url: https://cloudflare-eth.com/\\')\"}]')"
-          }
-        ],
-        "scanned_window": [
-          10200000,
-          10900000
-        ]
+      "first_transfer": {
+        "block_number": 10523228,
+        "transaction_hash": "0xaffeb5efaecb081e5a101894d58b6eaa3d8e6da07dc9914622b9627bf934834a",
+        "from": "0x0000000000000000000000000000000000000000",
+        "to": "0xfdae2f991a521f54bbef89048922dff9bac2d96b",
+        "timestamp_utc": "2020-07-24T16:19:20.000000Z",
+        "source": "blockscout",
+        "source_url": "https://eth.blockscout.com/api/v2/tokens/0x0b0b70905137786cf705102c194a1b4916d8c4d0/instances/5/transfers",
+        "tx_rpc": "https://ethereum-rpc.publicnode.com"
       }
     }
   },
-  "opensea_media_fallback_errors": [
-    {
-      "url": "https://i2c.seadn.io/base/6bd5d216f07f43cd94d6ff950031ea59/30a68a8743e550c12234c338ead498/b030a68a8743e550c12234c338ead498.png\\",
-      "error": "HTTPError('400 Client Error: Bad Request for url: https://i2c.seadn.io/base/6bd5d216f07f43cd94d6ff950031ea59/30a68a8743e550c12234c338ead498/b030a68a8743e550c12234c338ead498.png%5C')"
-    },
-    {
-      "url": "https://i2c.seadn.io/base/67463b924644eb5efe997301/51b2bbfcd99a935414c637d4b4e3f3/7951b2bbfcd99a935414c637d4b4e3f3.png\\",
-      "error": "HTTPError('400 Client Error: Bad Request for url: https://i2c.seadn.io/base/67463b924644eb5efe997301/51b2bbfcd99a935414c637d4b4e3f3/7951b2bbfcd99a935414c637d4b4e3f3.png%5C')"
-    },
-    {
-      "url": "https://i2c.seadn.io/base/241063664a3649668d2f575c7e702895/66204c8408133a78acc12126c1c758/6e66204c8408133a78acc12126c1c758.webp\\",
-      "error": "HTTPError('400 Client Error: Bad Request for url: https://i2c.seadn.io/base/241063664a3649668d2f575c7e702895/66204c8408133a78acc12126c1c758/6e66204c8408133a78acc12126c1c758.webp%5C')"
-    },
-    {
-      "url": "https://i2c.seadn.io/base/622a8f44d03c4a45a7ccafcb1e3d0889/f6c24655270f0b7cf2513a9dbdcafb/43f6c24655270f0b7cf2513a9dbdcafb.png\\",
-      "error": "HTTPError('400 Client Error: Bad Request for url: https://i2c.seadn.io/base/622a8f44d03c4a45a7ccafcb1e3d0889/f6c24655270f0b7cf2513a9dbdcafb/43f6c24655270f0b7cf2513a9dbdcafb.png%5C')"
-    },
-    {
-      "url": "https://i2c.seadn.io/base/3129509e94aa49a6b2ecfebcd6557db5/7bf98f56fd3fa099858a296959daf1/6f7bf98f56fd3fa099858a296959daf1.jpeg\\",
-      "error": "HTTPError('400 Client Error: Bad Request for url: https://i2c.seadn.io/base/3129509e94aa49a6b2ecfebcd6557db5/7bf98f56fd3fa099858a296959daf1/6f7bf98f56fd3fa099858a296959daf1.jpeg%5C')"
-    },
-    {
-      "url": "https://i2c.seadn.io/base/2fd583305fa546ecbc980ec7f3cba4bb/79494a1f58c8738b7de231a5025c09/1b79494a1f58c8738b7de231a5025c09.png\\",
-      "error": "HTTPError('400 Client Error: Bad Request for url: https://i2c.seadn.io/base/2fd583305fa546ecbc980ec7f3cba4bb/79494a1f58c8738b7de231a5025c09/1b79494a1f58c8738b7de231a5025c09.png%5C')"
-    },
-    {
-      "url": "https://i2c.seadn.io/base/69619011948a49a5a317e1b83c37de34/227a7b7d71b061aea6fd3cca2e33e8/23227a7b7d71b061aea6fd3cca2e33e8.jpeg\\",
-      "error": "HTTPError('400 Client Error: Bad Request for url: https://i2c.seadn.io/base/69619011948a49a5a317e1b83c37de34/227a7b7d71b061aea6fd3cca2e33e8/23227a7b7d71b061aea6fd3cca2e33e8.jpeg%5C')"
-    },
-    {
-      "url": "https://i2c.seadn.io/base/aab9893c55c34593a694ea3027f874c0/5fcf18e465e61a68bcae360229deb7/af5fcf18e465e61a68bcae360229deb7.jpeg\\",
-      "error": "HTTPError('400 Client Error: Bad Request for url: https://i2c.seadn.io/base/aab9893c55c34593a694ea3027f874c0/5fcf18e465e61a68bcae360229deb7/af5fcf18e465e61a68bcae360229deb7.jpeg%5C')"
-    },
-    {
-      "url": "https://i2c.seadn.io/base/0xb20000000000000000000078ee7ce2fe4908108c/15b35d8677409c3a09cb4ca70df3b0/ed15b35d8677409c3a09cb4ca70df3b0.jpeg\\",
-      "error": "HTTPError('400 Client Error: Bad Request for url: https://i2c.seadn.io/base/0xb20000000000000000000078ee7ce2fe4908108c/15b35d8677409c3a09cb4ca70df3b0/ed15b35d8677409c3a09cb4ca70df3b0.jpeg%5C')"
-    },
-    {
-      "url": "https://i2c.seadn.io/base/0xb2000000000000000000008bc8786b856e61707c/06bd9fffef7b7f819f4259f314e2ee/eb06bd9fffef7b7f819f4259f314e2ee.jpeg\\",
-      "error": "HTTPError('400 Client Error: Bad Request for url: https://i2c.seadn.io/base/0xb2000000000000000000008bc8786b856e61707c/06bd9fffef7b7f819f4259f314e2ee/eb06bd9fffef7b7f819f4259f314e2ee.jpeg%5C')"
-    }
-  ],
+  "opensea_media_fallback": {
+    "url": "https://opensea.io/item/ethereum/0x0b0b70905137786cf705102c194a1b4916d8c4d0/5/opengraph-image?ts=29855121",
+    "sha256": "ba75bd7e768e64a53d5eaeabbeba20dbc1781ce88d1e462a3d69464ad911c850",
+    "bytes": 303850
+  },
   "token5_image_similarity": {
-    "error": "token #5 media unavailable from tokenURI and OpenSea HTML fallbacks"
+    "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+    "media_sha256": "ba75bd7e768e64a53d5eaeabbeba20dbc1781ce88d1e462a3d69464ad911c850",
+    "canonical_shape": [
+      1105,
+      1600
+    ],
+    "media_shape": [
+      630,
+      1200
+    ],
+    "resized_for_comparison": true,
+    "pearson_gray": -0.08821032581893376,
+    "mean_abs_gray_delta": 155.18628054298642,
+    "exact_gray_fraction": 0.0900039592760181,
+    "pearson_64x64": -0.13030806860376487
   },
   "provenance_flags": {
-    "mint_after_puzzle": null,
+    "mint_after_puzzle": true,
     "media_strongly_matches_puzzle": false,
     "media_byte_exact": false,
     "metadata_has_nonempty_description": false
