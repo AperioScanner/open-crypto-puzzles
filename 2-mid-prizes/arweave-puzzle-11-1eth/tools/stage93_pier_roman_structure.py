@@ -81,7 +81,9 @@ def detect_lines(c,config):
     rows=[]
     if raw is None:
         return rows,edges
-    for z in raw[:,0,:]:
+    # OpenCV 4 commonly returns (N,1,4); OpenCV 5 may return (N,4).
+    # Normalize both layouts before iterating.
+    for z in np.asarray(raw).reshape(-1,4):
         x1,y1,x2,y2=map(float,z)
         length=float(math.hypot(x2-x1,y2-y1))
         ang=seg_angle(x1,y1,x2,y2)
