@@ -160,3 +160,14 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Adaptive conclusion: close the CryptoCanvas branch.
 - Next direction: reconcile the complete 2020–2021 public solver discussion against the current tested ledger. Several observations in the Puzzling thread—5/7 skyline split, pier X/IX/XI reading, source-photo possibility and filename-to-32-byte observation—do not appear in repository search, while alpha/first-row/H/V ideas are already heavily covered.
 - Stage 91 will perform this archival delta audit before selecting another image experiment.
+
+
+## 2026-10-06 — corrected Stage 91 review
+
+- The first Stage-91 reconciliation was invalid because its coverage scan counted the controller/leads/worklog and Stage-91's own script as prior evidence. This made newly mentioned historical claims falsely appear COVERED.
+- Fixed the same stage number to exclude self-referential planning material and reran it.
+- Corrected result: 3 RETIRED_BY_LATER_EVIDENCE, 4 COVERED, 1 PARTIAL, 2 genuinely UNTESTED.
+- The genuinely untested claims are (1) source-photo provenance and (2) pier/support Roman-numeral interpretation. The source-photo hypothesis receives higher priority because it is tied to the series' external-context puzzle grammar, while the Roman-numeral comment was explicitly speculative.
+- The 5/7 skyline split is only PARTIAL: the counts appeared in the broad historical object-count sweep, but no independent evidence promotes them as a semantic instruction.
+- Added a durable anti-recycling rule: exhausted/falsified hypotheses are not reopened without a demonstrated implementation defect or new independent evidence.
+- Stage 92 selected: bounded source-photo candidate audit of the exact Courageous Sailing lead, its 2019–2021 archived page images, and a small public Boston/sailing/skyline image pool using photo-to-sketch geometric matching.
