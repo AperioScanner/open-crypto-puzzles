@@ -11,60 +11,57 @@ Do **not** reopen a hypothesis classified COVERED, RETIRED, or independently fal
 
 Historical popularity alone is not a reason to retest an exhausted idea.
 
-## Review through corrected Stage 91
+## Review through corrected Stage 92
 
-The first Stage-91 audit had a self-reference bug: claims mentioned in the current controller/leads/worklog or in the Stage-91 script itself were incorrectly counted as prior coverage. That implementation was fixed and Stage 91 rerun under the same stage number.
+Stage 92 initially had a control-sampling defect: the candidate list exhausted the global URL cap before the unrelated-photo null pool was appended. The same stage number was fixed and rerun with independent candidate/null caps.
 
-Corrected reconciliation:
+Corrected Stage-92 result:
 
-- **RETIRED_BY_LATER_EVIDENCE: 3**
-- **COVERED: 4**
-- **PARTIAL: 1**
-- **UNTESTED: 2**
+- candidate URLs: **110**
+- candidate images successfully scored: **74**
+- null URLs: **14**
+- null images successfully scored: **1** (many external Commons assets failed to fetch in the runner)
+- transformed-canonical positive control: **PASS**
+- strong candidate matches: **0**
+- interesting candidate matches: **0**
+- promotion: **False**
 
-### Genuinely untested historical claims
+The weak null-pool recovery limits calibration of hypothetical false positives, but it does **not** weaken the main negative result here: no source-photo candidate crossed even the weaker “interesting” geometry gate, while the positive control was detected extremely strongly.
 
-1. **Source-photo hypothesis** — a public 2021 solver suggested the harbor sketch may derive from a real photograph, noting that another puzzle in the series used a photo-context mechanism. No prior branch stage/tool directly tests photo provenance.
-2. **Pier/supports as X / IX / XI Roman numerals** — objective visual interpretation has not been directly tested, but the historical evidence is weaker and explicitly speculative.
+### Hypothesis decision
 
-### Partial, not fresh
+- exact Courageous Sailing candidate page: **RETIRED**
+- bounded Boston/sailing/skyline photo pool tested in Stage 92: **RETIRED**
+- global unknown-source-photo hypothesis: **UNRESOLVED but deprioritized**; do not broaden image search without new evidence
 
-- **5 buildings left / 7 buildings right** — the count was already included in the broad historical geometry/object-count sweep, but not independently supported as a semantic instruction. Keep secondary; do not prioritize it over genuinely untested claims.
-
-### Already covered/retired
-
-- alpha ring/halo
-- anomalous first row
-- H/V building hatching
-- 1 large + 5 small boats
-- 203-second timestamp anomaly
-- Arweave identifier decoding to 32 bytes (explicitly tested in Stage 3)
-- CryptoCanvas reverse-image lead (closed as a July-2020 post-publication mirror)
+The best candidate, `CASD5.jpg`, had only 6 SIFT homography inliers and 7 ORB inliers, far below the predeclared strong gate.
 
 ## Next stage
 
-**Stage 92 — source-photo candidate audit.**
+**Stage 93 — pier Roman-numeral structure audit.**
 
-Motivation:
-- this is the highest-priority genuinely untested public historical claim;
-- it fits the author's instruction to look at solved puzzles and the series' use of external semantic context;
-- it is independent of the heavily exhausted pixel/LSB/HV/statistical families.
+This is the only remaining genuinely untested historical visual claim identified by corrected Stage 91.
 
-Bounded scope:
-1. Fetch the exact historical candidate page linked by the solver: `https://courageoussailing.org/sailing/racing/`.
-2. Query Internet Archive CDX for 2019–2021 snapshots of that page and recover page-image candidates where possible.
-3. Query a small public Wikimedia Commons candidate pool for Boston Harbor / sailing-race / skyline images.
-4. Compare candidates to the canonical sketch using geometry-focused methods tolerant of photo→drawing style change:
-   - SIFT/ORB feature matching on Canny/line representations;
-   - RANSAC homography inlier counts/fractions;
-   - coarse edge-layout correlation.
-5. Include a transformed canonical-image positive control to prove the geometric matcher works.
-6. Pre-register a strong-match gate requiring agreement across independent geometry metrics; do not promote weak semantic resemblance by eye.
+Historical claim:
+> the pier/support structure might visually form **X**, **IX**, or **XI**.
 
-A negative result retires the **specific linked/Boston candidate pool**, not the global possibility that some unknown photograph exists.
+Bounded test:
+1. Use one predeclared pier-support ROI: **x=900..1320, y=510..830**.
+2. Detect only long straight strokes using multiple fixed Canny/Hough settings.
+3. Score three predeclared templates:
+   - X = two long opposite-slope segments crossing internally
+   - IX = stable X with an adjacent near-vertical stroke on the left
+   - XI = stable X with an adjacent near-vertical stroke on the right
+4. Require the same structural template to persist across thresholds and JPEG85+resampling.
+5. Compare the pier template score against matched same-size image windows with similar ink/long-line density.
+6. Include synthetic X / IX / XI positive controls.
+
+Promotion means only “the Roman-like structure is unusually explicit and stable”; it does **not** assign a numeric/private-key interpretation.
+
+A null result retires this historical pier/Roman claim.
 
 ## Status
 
-- Stages 1–91: completed.
-- Corrected Stage 91: COMPLETED + REVIEWED.
-- Stage 92: selected for launch.
+- Stages 1–92: completed.
+- Corrected Stage 92: COMPLETED + REVIEWED — negative for tested source-photo pool.
+- Stage 93: selected for launch.
