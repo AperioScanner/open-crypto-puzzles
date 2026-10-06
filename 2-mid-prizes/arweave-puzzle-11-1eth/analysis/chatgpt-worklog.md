@@ -192,3 +192,13 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Roman X/IX/XI hypothesis retired. This closes the corrected Stage-91 historical visual backlog.
 - Next mechanism family is genuinely new: a format-invariant discrete stroke-orientation carrier inside the large sail. Earlier boat stages covered exact pixels/hashes and hidden text, not the capacity/robustness of individual visible line orientations.
 - Stage 94 will measure only count/separability/robustness and explicitly will not persist or print an ordered target bit sequence.
+
+
+## 2026-10-06 — calibrated Stage 94 review
+
+- The initial Stage-94 count inference was not sufficiently calibrated because a synthetic 64-stroke carrier produced only 48 detected classifiable tracks.
+- Repaired Stage 94 with synthetic controls at 16/32/64/128/256 strokes and wide detector-output compatibility bands.
+- Detector saturation is visible at high density, but the real sail remains far below canonical carriers: target 10–14 detected tracks vs 45–52 for 64 drawn and 53–70 for 256 drawn.
+- Both 64-hex-symbol and 256-binary-symbol one-stroke-per-symbol sail carriers are rejected conservatively.
+- The sail still has stable two-orientation structure, but there are too few robust individual tracks for the tested direct carrier sizes.
+- Stage 95 selected as a genuinely different mechanism: a 16-level foreground grayscale alphabet, motivated by the native grayscale image and the hexadecimal target representation. It will compare #11 against lossy variants, synthetic 16-shade controls, and solved Puzzle #5 as an author-style hand-drawn raster control.
