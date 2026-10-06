@@ -2,9 +2,10 @@
 
 **Experiment:** A11-EXP-094
 
-- synthetic multi-count detector calibration: **False**
-- calibration monotonic / Pearson: **True / 0.9483**
-- calibrated compatible representation counts: **[]**
+- synthetic count controls tested: **[16, 32, 64, 128, 256]**
+- detector count correlation (descriptive): **0.8415**
+- count-compatible canonical carriers: **[]**
+- all 64/256 one-stroke carriers rejected by conservative count gate: **True**
 - classifiable-count CV: **0.1207**
 - orientation structure gate: **True**
 - cross-variant agreement gate: **True**
@@ -14,10 +15,11 @@
 
 | drawn strokes | mean detected | min | max | CV |
 |---:|---:|---:|---:|---:|
-| 16 | 15.25 | 15 | 16 | 0.028 |
-| 32 | 28.25 | 28 | 29 | 0.015 |
-| 64 | 53.50 | 49 | 56 | 0.050 |
-| 96 | 56.50 | 45 | 64 | 0.124 |
+| 16 | 13.25 | 12 | 14 | 0.063 |
+| 32 | 25.25 | 22 | 27 | 0.081 |
+| 64 | 48.50 | 45 | 52 | 0.056 |
+| 128 | 61.25 | 49 | 68 | 0.119 |
+| 256 | 64.75 | 53 | 70 | 0.106 |
 
 ## Variant summaries
 
@@ -38,7 +40,7 @@
 
 ## Interpretation
 
-The large sail does not satisfy the predeclared count + binary-orientation + cross-format robustness requirements for a natural 64-symbol or 256-symbol visible stroke carrier. Retire this carrier family rather than decoding an unstable stroke sequence.
+Both canonical one-stroke-per-symbol carrier sizes (64 visible hex symbols and 256 binary symbols) produce substantially larger detector responses in synthetic controls than the real sail. Retire this specific one-stroke-per-symbol carrier family.
 
 The ordered target stroke-orientation sequence is deliberately not stored or printed.
 No private-key material was generated, reconstructed or tested.

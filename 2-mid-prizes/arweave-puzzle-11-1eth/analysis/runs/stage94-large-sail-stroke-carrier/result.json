@@ -121,173 +121,234 @@
         "drawn_strokes": 16,
         "variants": {
           "original": {
-            "stable_tracks": 15,
-            "classifiable_tracks": 15,
-            "positive_orientation_tracks": 8,
-            "negative_orientation_tracks": 7,
-            "minority_fraction": 0.4666666666666667,
-            "orientation_median_separation_deg": 104.72158493342641,
+            "stable_tracks": 14,
+            "classifiable_tracks": 14,
+            "positive_orientation_tracks": 6,
+            "negative_orientation_tracks": 8,
+            "minority_fraction": 0.42857142857142855,
+            "orientation_median_separation_deg": 107.24307737068986,
             "nearest_target_count": {
               "target": 64,
-              "delta": 49,
+              "delta": 50,
               "tolerance": 8
             }
           },
           "jpeg85": {
-            "stable_tracks": 16,
-            "classifiable_tracks": 16,
-            "positive_orientation_tracks": 8,
+            "stable_tracks": 14,
+            "classifiable_tracks": 14,
+            "positive_orientation_tracks": 6,
             "negative_orientation_tracks": 8,
-            "minority_fraction": 0.5,
-            "orientation_median_separation_deg": 105.93330297299252,
+            "minority_fraction": 0.42857142857142855,
+            "orientation_median_separation_deg": 108.41691585683796,
             "nearest_target_count": {
               "target": 64,
-              "delta": 48,
+              "delta": 50,
               "tolerance": 8
             }
           },
           "jpeg70": {
-            "stable_tracks": 15,
-            "classifiable_tracks": 15,
-            "positive_orientation_tracks": 8,
-            "negative_orientation_tracks": 7,
-            "minority_fraction": 0.4666666666666667,
-            "orientation_median_separation_deg": 105.9383724729307,
+            "stable_tracks": 12,
+            "classifiable_tracks": 12,
+            "positive_orientation_tracks": 4,
+            "negative_orientation_tracks": 8,
+            "minority_fraction": 0.3333333333333333,
+            "orientation_median_separation_deg": 108.92464441605124,
             "nearest_target_count": {
               "target": 64,
-              "delta": 49,
+              "delta": 52,
               "tolerance": 8
             }
           },
           "down75_up": {
-            "stable_tracks": 15,
-            "classifiable_tracks": 15,
+            "stable_tracks": 13,
+            "classifiable_tracks": 13,
             "positive_orientation_tracks": 7,
-            "negative_orientation_tracks": 8,
-            "minority_fraction": 0.4666666666666667,
-            "orientation_median_separation_deg": 106.26020470831196,
+            "negative_orientation_tracks": 6,
+            "minority_fraction": 0.46153846153846156,
+            "orientation_median_separation_deg": 108.92464441605124,
             "nearest_target_count": {
               "target": 64,
-              "delta": 49,
+              "delta": 51,
               "tolerance": 8
             }
           }
         },
-        "mean_detected": 15.25,
-        "min_detected": 15,
-        "max_detected": 16,
-        "cv": 0.02839427553391602
+        "mean_detected": 13.25,
+        "min_detected": 12,
+        "max_detected": 14,
+        "cv": 0.06257782623312075
       },
       "32": {
         "drawn_strokes": 32,
         "variants": {
           "original": {
-            "stable_tracks": 28,
-            "classifiable_tracks": 28,
-            "positive_orientation_tracks": 16,
-            "negative_orientation_tracks": 12,
-            "minority_fraction": 0.42857142857142855,
-            "orientation_median_separation_deg": 105.49089482086919,
+            "stable_tracks": 25,
+            "classifiable_tracks": 25,
+            "positive_orientation_tracks": 14,
+            "negative_orientation_tracks": 11,
+            "minority_fraction": 0.44,
+            "orientation_median_separation_deg": 107.65346373054237,
             "nearest_target_count": {
               "target": 64,
-              "delta": 36,
+              "delta": 39,
               "tolerance": 8
             }
           },
           "jpeg85": {
-            "stable_tracks": 28,
-            "classifiable_tracks": 28,
-            "positive_orientation_tracks": 16,
+            "stable_tracks": 27,
+            "classifiable_tracks": 27,
+            "positive_orientation_tracks": 15,
             "negative_orientation_tracks": 12,
-            "minority_fraction": 0.42857142857142855,
-            "orientation_median_separation_deg": 105.32744395320947,
+            "minority_fraction": 0.4444444444444444,
+            "orientation_median_separation_deg": 109.2447292398329,
             "nearest_target_count": {
               "target": 64,
-              "delta": 36,
+              "delta": 37,
               "tolerance": 8
             }
           },
           "jpeg70": {
-            "stable_tracks": 28,
-            "classifiable_tracks": 28,
-            "positive_orientation_tracks": 16,
-            "negative_orientation_tracks": 12,
-            "minority_fraction": 0.42857142857142855,
-            "orientation_median_separation_deg": 105.61654023754944,
+            "stable_tracks": 27,
+            "classifiable_tracks": 27,
+            "positive_orientation_tracks": 14,
+            "negative_orientation_tracks": 13,
+            "minority_fraction": 0.48148148148148145,
+            "orientation_median_separation_deg": 107.41775096643573,
             "nearest_target_count": {
               "target": 64,
-              "delta": 36,
+              "delta": 37,
               "tolerance": 8
             }
           },
           "down75_up": {
-            "stable_tracks": 29,
-            "classifiable_tracks": 29,
-            "positive_orientation_tracks": 16,
-            "negative_orientation_tracks": 13,
-            "minority_fraction": 0.4482758620689655,
-            "orientation_median_separation_deg": 105.91085751682023,
+            "stable_tracks": 22,
+            "classifiable_tracks": 22,
+            "positive_orientation_tracks": 10,
+            "negative_orientation_tracks": 12,
+            "minority_fraction": 0.45454545454545453,
+            "orientation_median_separation_deg": 107.41775096643573,
             "nearest_target_count": {
               "target": 64,
-              "delta": 35,
+              "delta": 42,
               "tolerance": 8
             }
           }
         },
-        "mean_detected": 28.25,
-        "min_detected": 28,
-        "max_detected": 29,
-        "cv": 0.015327883252821922
+        "mean_detected": 25.25,
+        "min_detected": 22,
+        "max_detected": 27,
+        "cv": 0.08104309675121238
       },
       "64": {
         "drawn_strokes": 64,
         "variants": {
           "original": {
-            "stable_tracks": 56,
-            "classifiable_tracks": 56,
-            "positive_orientation_tracks": 30,
-            "negative_orientation_tracks": 26,
-            "minority_fraction": 0.4642857142857143,
-            "orientation_median_separation_deg": 106.26020470831196,
+            "stable_tracks": 45,
+            "classifiable_tracks": 45,
+            "positive_orientation_tracks": 17,
+            "negative_orientation_tracks": 28,
+            "minority_fraction": 0.37777777777777777,
+            "orientation_median_separation_deg": 108.32757175971915,
             "nearest_target_count": {
               "target": 64,
-              "delta": 8,
+              "delta": 19,
               "tolerance": 8
             }
           },
           "jpeg85": {
-            "stable_tracks": 54,
-            "classifiable_tracks": 54,
-            "positive_orientation_tracks": 26,
+            "stable_tracks": 50,
+            "classifiable_tracks": 50,
+            "positive_orientation_tracks": 22,
             "negative_orientation_tracks": 28,
-            "minority_fraction": 0.48148148148148145,
-            "orientation_median_separation_deg": 105.4633798647587,
+            "minority_fraction": 0.44,
+            "orientation_median_separation_deg": 108.92464441605124,
             "nearest_target_count": {
               "target": 64,
-              "delta": 10,
+              "delta": 14,
               "tolerance": 8
             }
           },
           "jpeg70": {
-            "stable_tracks": 55,
-            "classifiable_tracks": 55,
-            "positive_orientation_tracks": 27,
+            "stable_tracks": 52,
+            "classifiable_tracks": 52,
+            "positive_orientation_tracks": 24,
             "negative_orientation_tracks": 28,
-            "minority_fraction": 0.4909090909090909,
-            "orientation_median_separation_deg": 105.608022319193,
+            "minority_fraction": 0.46153846153846156,
+            "orientation_median_separation_deg": 108.92464441605124,
             "nearest_target_count": {
               "target": 64,
-              "delta": 9,
+              "delta": 12,
+              "tolerance": 8
+            }
+          },
+          "down75_up": {
+            "stable_tracks": 47,
+            "classifiable_tracks": 47,
+            "positive_orientation_tracks": 20,
+            "negative_orientation_tracks": 27,
+            "minority_fraction": 0.425531914893617,
+            "orientation_median_separation_deg": 108.67979661948662,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 17,
+              "tolerance": 8
+            }
+          }
+        },
+        "mean_detected": 48.5,
+        "min_detected": 45,
+        "max_detected": 52,
+        "cv": 0.055517162960149524
+      },
+      "128": {
+        "drawn_strokes": 128,
+        "variants": {
+          "original": {
+            "stable_tracks": 65,
+            "classifiable_tracks": 65,
+            "positive_orientation_tracks": 28,
+            "negative_orientation_tracks": 37,
+            "minority_fraction": 0.4307692307692308,
+            "orientation_median_separation_deg": 107.12630300956963,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 1,
+              "tolerance": 8
+            }
+          },
+          "jpeg85": {
+            "stable_tracks": 68,
+            "classifiable_tracks": 68,
+            "positive_orientation_tracks": 27,
+            "negative_orientation_tracks": 41,
+            "minority_fraction": 0.39705882352941174,
+            "orientation_median_separation_deg": 106.72540077741739,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 4,
+              "tolerance": 8
+            }
+          },
+          "jpeg70": {
+            "stable_tracks": 63,
+            "classifiable_tracks": 63,
+            "positive_orientation_tracks": 26,
+            "negative_orientation_tracks": 37,
+            "minority_fraction": 0.4126984126984127,
+            "orientation_median_separation_deg": 106.2237764674608,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 1,
               "tolerance": 8
             }
           },
           "down75_up": {
             "stable_tracks": 49,
             "classifiable_tracks": 49,
-            "positive_orientation_tracks": 24,
-            "negative_orientation_tracks": 25,
-            "minority_fraction": 0.4897959183673469,
-            "orientation_median_separation_deg": 106.26020470831196,
+            "positive_orientation_tracks": 22,
+            "negative_orientation_tracks": 27,
+            "minority_fraction": 0.4489795918367347,
+            "orientation_median_separation_deg": 107.0537804925197,
             "nearest_target_count": {
               "target": 64,
               "delta": 15,
@@ -295,34 +356,34 @@
             }
           }
         },
-        "mean_detected": 53.5,
+        "mean_detected": 61.25,
         "min_detected": 49,
-        "max_detected": 56,
-        "cv": 0.05032864305733181
+        "max_detected": 68,
+        "cv": 0.11906899710869243
       },
-      "96": {
-        "drawn_strokes": 96,
+      "256": {
+        "drawn_strokes": 256,
         "variants": {
           "original": {
-            "stable_tracks": 64,
-            "classifiable_tracks": 64,
-            "positive_orientation_tracks": 30,
-            "negative_orientation_tracks": 34,
-            "minority_fraction": 0.46875,
-            "orientation_median_separation_deg": 104.11269555331648,
+            "stable_tracks": 67,
+            "classifiable_tracks": 67,
+            "positive_orientation_tracks": 37,
+            "negative_orientation_tracks": 30,
+            "minority_fraction": 0.44776119402985076,
+            "orientation_median_separation_deg": 106.11089257485125,
             "nearest_target_count": {
               "target": 64,
-              "delta": 0,
+              "delta": 3,
               "tolerance": 8
             }
           },
           "jpeg85": {
-            "stable_tracks": 59,
-            "classifiable_tracks": 59,
-            "positive_orientation_tracks": 30,
-            "negative_orientation_tracks": 29,
-            "minority_fraction": 0.4915254237288136,
-            "orientation_median_separation_deg": 104.97287576678693,
+            "stable_tracks": 70,
+            "classifiable_tracks": 69,
+            "positive_orientation_tracks": 34,
+            "negative_orientation_tracks": 35,
+            "minority_fraction": 0.4927536231884058,
+            "orientation_median_separation_deg": 105.68466771442822,
             "nearest_target_count": {
               "target": 64,
               "delta": 5,
@@ -330,12 +391,12 @@
             }
           },
           "jpeg70": {
-            "stable_tracks": 58,
-            "classifiable_tracks": 58,
-            "positive_orientation_tracks": 26,
-            "negative_orientation_tracks": 32,
-            "minority_fraction": 0.4482758620689655,
-            "orientation_median_separation_deg": 105.45643867844785,
+            "stable_tracks": 70,
+            "classifiable_tracks": 70,
+            "positive_orientation_tracks": 35,
+            "negative_orientation_tracks": 35,
+            "minority_fraction": 0.5,
+            "orientation_median_separation_deg": 105.97148792674358,
             "nearest_target_count": {
               "target": 64,
               "delta": 6,
@@ -343,30 +404,62 @@
             }
           },
           "down75_up": {
-            "stable_tracks": 45,
-            "classifiable_tracks": 45,
+            "stable_tracks": 53,
+            "classifiable_tracks": 53,
             "positive_orientation_tracks": 26,
-            "negative_orientation_tracks": 19,
-            "minority_fraction": 0.4222222222222222,
-            "orientation_median_separation_deg": 105.25511870305778,
+            "negative_orientation_tracks": 27,
+            "minority_fraction": 0.49056603773584906,
+            "orientation_median_separation_deg": 106.2415244326005,
             "nearest_target_count": {
               "target": 64,
-              "delta": 19,
+              "delta": 11,
               "tolerance": 8
             }
           }
         },
-        "mean_detected": 56.5,
-        "min_detected": 45,
-        "max_detected": 64,
-        "cv": 0.12420945882847964
+        "mean_detected": 64.75,
+        "min_detected": 53,
+        "max_detected": 70,
+        "cv": 0.10608981979949102
       }
     },
-    "detected_vs_drawn_pearson": 0.9482853360439526,
-    "strictly_monotonic": true,
-    "passed": false
+    "detected_vs_drawn_pearson": 0.8415178150089131,
+    "counts_tested": [
+      16,
+      32,
+      64,
+      128,
+      256
+    ]
   },
-  "promotion_rule": "multi-count synthetic calibration passes; all target variants lie within calibrated detector-output range for 64 or 256 one-stroke-per-symbol carriers; count CV<=0.15; minority orientation fraction>=0.20; median sign-class separation>=35deg; cross-variant match>=0.55 and same-sign>=0.90",
+  "carrier_count_decisions": {
+    "64": {
+      "control_min_detected": 45,
+      "control_max_detected": 52,
+      "target_detected_min": 10,
+      "target_detected_max": 14,
+      "compatibility_band": [
+        22,
+        78
+      ],
+      "compatible": false,
+      "rejected_by_count": true
+    },
+    "256": {
+      "control_min_detected": 53,
+      "control_max_detected": 70,
+      "target_detected_min": 10,
+      "target_detected_max": 14,
+      "compatibility_band": [
+        26,
+        105
+      ],
+      "compatible": false,
+      "rejected_by_count": true
+    }
+  },
+  "all_canonical_one_stroke_carriers_rejected": true,
+  "promotion_rule": "a canonical 64- or 256-stroke carrier remains count-compatible under wide control-calibrated detector bounds; target count CV<=0.15; minority orientation fraction>=0.20; median sign-class separation>=35deg; cross-variant match>=0.55 and same-sign>=0.90",
   "promoted": false,
   "privacy_guard": "Ordered target stroke orientations are intentionally not written to artifacts."
 }
