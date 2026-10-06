@@ -23,7 +23,7 @@
       "fetch": {
         "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=Boston+Harbor+sailing+race+skyline&gsrnamespace=6&gsrlimit=18&prop=imageinfo&iiprop=url%7Cmime%7Csize",
         "status": 200,
-        "bytes": 12996
+        "bytes": 13022
       },
       "query": "Boston Harbor sailing race skyline",
       "count": 18
@@ -41,7 +41,7 @@
       "fetch": {
         "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=sailing+race+city+skyline&gsrnamespace=6&gsrlimit=18&prop=imageinfo&iiprop=url%7Cmime%7Csize",
         "status": 200,
-        "bytes": 12204
+        "bytes": 12242
       },
       "query": "sailing race city skyline",
       "count": 18
@@ -66,8 +66,9 @@
     }
   },
   "candidate_urls_total": 110,
+  "null_urls_total": 14,
   "candidate_images_scored": 74,
-  "null_images_scored": 0,
+  "null_images_scored": 1,
   "positive_control": {
     "sift_gray": {
       "target_keypoints": 6500,
@@ -75,9 +76,9 @@
       "good_matches": 2304,
       "homography_inliers": 2291,
       "inlier_fraction": 0.9943576388888888,
-      "target_edge_coverage": 0.9892781565953445,
+      "target_edge_coverage": 0.9892824316525234,
       "candidate_edge_coverage": 1.0,
-      "edge_f1": 0.9946101839156541
+      "edge_f1": 0.9946123445434677
     },
     "orb_edge": {
       "target_keypoints": 6500,
@@ -92,7 +93,7 @@
     "coarse_edge_corr": 0.7429135866950246,
     "strong_match": true,
     "interesting_match": true,
-    "rank_score": 2267.280781480942
+    "rank_score": 2267.285703549585
   },
   "positive_control_pass": true,
   "strong_candidate_matches": 0,
@@ -1130,7 +1131,51 @@
       }
     }
   ],
-  "top_nulls": [],
+  "top_nulls": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Alfred_de_Br%C3%A9anski_-_Mountain_lake_landscape_in_evening_mood.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "commons_null",
+      "ref": "mountain landscape photograph",
+      "title": "File:Alfred de Bréanski - Mountain lake landscape in evening mood.jpg",
+      "refs": [
+        {
+          "source": "commons_null",
+          "ref": "mountain landscape photograph",
+          "title": "File:Alfred de Bréanski - Mountain lake landscape in evening mood.jpg"
+        }
+      ],
+      "fetch": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Alfred_de_Br%C3%A9anski_-_Mountain_lake_landscape_in_evening_mood.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "status": 200,
+        "bytes": 2849376,
+        "content_type": "image/jpeg"
+      },
+      "shape": [
+        898,
+        1400
+      ],
+      "comparison": {
+        "sift_gray": {
+          "target_keypoints": 6500,
+          "candidate_keypoints": 5419,
+          "good_matches": 13,
+          "homography_inliers": 5,
+          "inlier_fraction": 0.38461538461538464
+        },
+        "orb_edge": {
+          "target_keypoints": 6500,
+          "candidate_keypoints": 6500,
+          "good_matches": 50,
+          "homography_inliers": 5,
+          "inlier_fraction": 0.1
+        },
+        "coarse_edge_corr": -0.06842909425592789,
+        "strong_match": false,
+        "interesting_match": false,
+        "rank_score": 0.019230769230769232
+      }
+    }
+  ],
   "all_results": [
     {
       "url": "https://courageoussailing.org/wp-content/uploads/2016/08/Logo-Horizontal.png",
@@ -1747,7 +1792,7 @@
         "bytes": 51862,
         "content_type": "image/svg+xml"
       },
-      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7f2e549e19e0>')"
+      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7fdfa85e5a80>')"
     },
     {
       "url": "https://courageoussailing.org/wp-content/uploads/2021/09/boy_coloring_on_ground.jpeg",
@@ -2298,7 +2343,7 @@
         "bytes": 51862,
         "content_type": "image/svg+xml"
       },
-      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7f2e549e19e0>')"
+      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7fdfa85e5a80>')"
     },
     {
       "url": "https://web.archive.org/web/20190826025357id_/http://courageous.cloudaccess.host/wp-content/uploads/2017/11/Logo-1.svg",
@@ -2317,7 +2362,7 @@
         "bytes": 51862,
         "content_type": "image/svg+xml"
       },
-      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7f2e549e19e0>')"
+      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7fdfa85e5a80>')"
     },
     {
       "url": "https://courageoussailing.org/wp-content/uploads/2018/11/annual_giving_2018_menu_image.jpg",
@@ -4733,7 +4778,7 @@
         "bytes": 51862,
         "content_type": "image/svg+xml"
       },
-      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7f2e5417a700>')"
+      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7fdfa7d0e7a0>')"
     },
     {
       "url": "https://web.archive.org/web/20190826025357id_/https://courageous.cloudaccess.host/wp-content/uploads/2017/11/Logo-1.svg",
@@ -4752,7 +4797,7 @@
         "bytes": 51862,
         "content_type": "image/svg+xml"
       },
-      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7f2e5417a700>')"
+      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7fdfa7d0e7a0>')"
     },
     {
       "url": "https://courageoussailing.org/wp-content/uploads/2017/11/Logo-1.svg",
@@ -4806,7 +4851,7 @@
         "bytes": 51862,
         "content_type": "image/svg+xml"
       },
-      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7f2e5417a700>')"
+      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7fdfa7d0e7a0>')"
     },
     {
       "url": "https://web.archive.org/web/20190826025357id_/https://courageoussailing.org/wp-content/uploads/2017/11/Logo-1.svg",
@@ -4825,7 +4870,7 @@
         "bytes": 51862,
         "content_type": "image/svg+xml"
       },
-      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7f2e5417a700>')"
+      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7fdfa7d0e7a0>')"
     },
     {
       "url": "https://web.archive.org/web/20191021052701id_/http://courageous.cloudaccess.host/wp-content/uploads/2017/11/Logo-1.svg",
@@ -4844,7 +4889,7 @@
         "bytes": 51862,
         "content_type": "image/svg+xml"
       },
-      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7f2e5417a700>')"
+      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7fdfa7d0e7a0>')"
     },
     {
       "url": "https://web.archive.org/web/20191021052701id_/https://courageoussailing.org/wp-content/uploads/2018/11/annual_giving_2018_menu_image.jpg",
@@ -5752,7 +5797,7 @@
         "bytes": 51862,
         "content_type": "image/svg+xml"
       },
-      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7f2e5417a700>')"
+      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7fdfa7d0e7a0>')"
     },
     {
       "url": "https://web.archive.org/web/20191021052701id_/https://courageoussailing.org/wp-content/uploads/2017/11/Logo-1.svg",
@@ -5771,7 +5816,7 @@
         "bytes": 51862,
         "content_type": "image/svg+xml"
       },
-      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7f2e5417a700>')"
+      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7fdfa7d0e7a0>')"
     },
     {
       "url": "https://web.archive.org/web/20200927164236id_/https://courageoussailing.org/wp-content/uploads/2017/11/Logo-1.svg",
@@ -5790,7 +5835,7 @@
         "bytes": 51862,
         "content_type": "image/svg+xml"
       },
-      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7f2e5417a700>')"
+      "error": "UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7fdfa7d0e7a0>')"
     },
     {
       "url": "https://courageoussailing.org/wp-content/uploads/2019/11/CS2019-1.jpg",
@@ -5861,6 +5906,231 @@
         "interesting_match": false,
         "rank_score": 0.3167560051718793
       }
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/%22Wind_Mountain%22_Columbia_R_-_NARA_-_102278851_%28page_1%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "commons_null",
+      "ref": "mountain landscape photograph",
+      "title": "File:\"Wind Mountain\" Columbia R - NARA - 102278851 (page 1).png",
+      "refs": [
+        {
+          "source": "commons_null",
+          "ref": "mountain landscape photograph",
+          "title": "File:\"Wind Mountain\" Columbia R - NARA - 102278851 (page 1).png"
+        }
+      ],
+      "error": "RuntimeError('asset too large: 21904461')"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Alfred_de_Br%C3%A9anski_-_Mountain_lake_landscape_in_evening_mood.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "commons_null",
+      "ref": "mountain landscape photograph",
+      "title": "File:Alfred de Bréanski - Mountain lake landscape in evening mood.jpg",
+      "refs": [
+        {
+          "source": "commons_null",
+          "ref": "mountain landscape photograph",
+          "title": "File:Alfred de Bréanski - Mountain lake landscape in evening mood.jpg"
+        }
+      ],
+      "fetch": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Alfred_de_Br%C3%A9anski_-_Mountain_lake_landscape_in_evening_mood.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "status": 200,
+        "bytes": 2849376,
+        "content_type": "image/jpeg"
+      },
+      "shape": [
+        898,
+        1400
+      ],
+      "comparison": {
+        "sift_gray": {
+          "target_keypoints": 6500,
+          "candidate_keypoints": 5419,
+          "good_matches": 13,
+          "homography_inliers": 5,
+          "inlier_fraction": 0.38461538461538464
+        },
+        "orb_edge": {
+          "target_keypoints": 6500,
+          "candidate_keypoints": 6500,
+          "good_matches": 50,
+          "homography_inliers": 5,
+          "inlier_fraction": 0.1
+        },
+        "coarse_edge_corr": -0.06842909425592789,
+        "strong_match": false,
+        "interesting_match": false,
+        "rank_score": 0.019230769230769232
+      }
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Barn_on_Mastl%C3%A9_mountain_Gherd%C3%ABina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "commons_null",
+      "ref": "mountain landscape photograph",
+      "title": "File:Barn on Mastlé mountain Gherdëina.jpg",
+      "refs": [
+        {
+          "source": "commons_null",
+          "ref": "mountain landscape photograph",
+          "title": "File:Barn on Mastlé mountain Gherdëina.jpg"
+        }
+      ],
+      "error": "RuntimeError('asset too large: 28514252')"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Blue_Mountains_National_Park_%28AU%29%2C_Three_Sisters_--_2019_--_1987-9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "commons_null",
+      "ref": "mountain landscape photograph",
+      "title": "File:Blue Mountains National Park (AU), Three Sisters -- 2019 -- 1987-9.jpg",
+      "refs": [
+        {
+          "source": "commons_null",
+          "ref": "mountain landscape photograph",
+          "title": "File:Blue Mountains National Park (AU), Three Sisters -- 2019 -- 1987-9.jpg"
+        }
+      ],
+      "error": "HTTPError('429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/d/de/Blue_Mountains_National_Park_%28AU%29%2C_Three_Sisters_--_2019_--_1987-9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original')"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Cheops_Mountain_seen_the_Sir_Donald_Trail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "commons_null",
+      "ref": "mountain landscape photograph",
+      "title": "File:Cheops Mountain seen the Sir Donald Trail.jpg",
+      "refs": [
+        {
+          "source": "commons_null",
+          "ref": "mountain landscape photograph",
+          "title": "File:Cheops Mountain seen the Sir Donald Trail.jpg"
+        }
+      ],
+      "error": "HTTPError('429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/5/51/Cheops_Mountain_seen_the_Sir_Donald_Trail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original')"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Landscape_Arnisee-region.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "commons_null",
+      "ref": "mountain landscape photograph",
+      "title": "File:Landscape Arnisee-region.JPG",
+      "refs": [
+        {
+          "source": "commons_null",
+          "ref": "mountain landscape photograph",
+          "title": "File:Landscape Arnisee-region.JPG"
+        }
+      ],
+      "error": "HTTPError('429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/1/14/Landscape_Arnisee-region.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original')"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Landscape_in_Peyriac-de-Mer%2C_february_2018_%2805%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "commons_null",
+      "ref": "mountain landscape photograph",
+      "title": "File:Landscape in Peyriac-de-Mer, february 2018 (05).jpg",
+      "refs": [
+        {
+          "source": "commons_null",
+          "ref": "mountain landscape photograph",
+          "title": "File:Landscape in Peyriac-de-Mer, february 2018 (05).jpg"
+        }
+      ],
+      "error": "HTTPError('429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/e/ec/Landscape_in_Peyriac-de-Mer%2C_february_2018_%2805%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original')"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Mountain_Peak%2C_Alaska_%281999%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "commons_null",
+      "ref": "mountain landscape photograph",
+      "title": "File:Mountain Peak, Alaska (1999).jpg",
+      "refs": [
+        {
+          "source": "commons_null",
+          "ref": "mountain landscape photograph",
+          "title": "File:Mountain Peak, Alaska (1999).jpg"
+        }
+      ],
+      "error": "HTTPError('429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/e/e8/Mountain_Peak%2C_Alaska_%281999%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original')"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Mountain_lake_landscape.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "commons_null",
+      "ref": "mountain landscape photograph",
+      "title": "File:Mountain lake landscape.JPG",
+      "refs": [
+        {
+          "source": "commons_null",
+          "ref": "mountain landscape photograph",
+          "title": "File:Mountain lake landscape.JPG"
+        }
+      ],
+      "error": "HTTPError('429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/7/78/Mountain_lake_landscape.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original')"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Mountains_in_snow%2C_Mountain_lake%2C_Chola_Valley%2C_Nepal%2C_Himalayas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "commons_null",
+      "ref": "mountain landscape photograph",
+      "title": "File:Mountains in snow, Mountain lake, Chola Valley, Nepal, Himalayas.jpg",
+      "refs": [
+        {
+          "source": "commons_null",
+          "ref": "mountain landscape photograph",
+          "title": "File:Mountains in snow, Mountain lake, Chola Valley, Nepal, Himalayas.jpg"
+        }
+      ],
+      "error": "HTTPError('429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/5/5a/Mountains_in_snow%2C_Mountain_lake%2C_Chola_Valley%2C_Nepal%2C_Himalayas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original')"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Utah_Dunes_Landscape_-_West_Desert_District.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "commons_null",
+      "ref": "mountain landscape photograph",
+      "title": "File:Utah Dunes Landscape - West Desert District.jpg",
+      "refs": [
+        {
+          "source": "commons_null",
+          "ref": "mountain landscape photograph",
+          "title": "File:Utah Dunes Landscape - West Desert District.jpg"
+        }
+      ],
+      "error": "HTTPError('429 Client Error: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1) for url: https://upload.wikimedia.org/wikipedia/commons/c/cb/Utah_Dunes_Landscape_-_West_Desert_District.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original')"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Vihren_%26_Kutelo_Pirin_Mountains_Bulgaria_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "commons_null",
+      "ref": "mountain landscape photograph",
+      "title": "File:Vihren & Kutelo Pirin Mountains Bulgaria 2025.jpg",
+      "refs": [
+        {
+          "source": "commons_null",
+          "ref": "mountain landscape photograph",
+          "title": "File:Vihren & Kutelo Pirin Mountains Bulgaria 2025.jpg"
+        }
+      ],
+      "error": "HTTPError('429 Client Error: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1) for url: https://upload.wikimedia.org/wikipedia/commons/8/82/Vihren_%26_Kutelo_Pirin_Mountains_Bulgaria_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original')"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Winter_in_Tatry_Mountains_-_Poland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "commons_null",
+      "ref": "mountain landscape photograph",
+      "title": "File:Winter in Tatry Mountains - Poland.jpg",
+      "refs": [
+        {
+          "source": "commons_null",
+          "ref": "mountain landscape photograph",
+          "title": "File:Winter in Tatry Mountains - Poland.jpg"
+        }
+      ],
+      "error": "HTTPError('429 Client Error: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1) for url: https://upload.wikimedia.org/wikipedia/commons/4/4e/Winter_in_Tatry_Mountains_-_Poland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original')"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Zagedan_Lakes%2C_Mountain_cirque%2C_Caucasus_Mountains.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "commons_null",
+      "ref": "mountain landscape photograph",
+      "title": "File:Zagedan Lakes, Mountain cirque, Caucasus Mountains.jpg",
+      "refs": [
+        {
+          "source": "commons_null",
+          "ref": "mountain landscape photograph",
+          "title": "File:Zagedan Lakes, Mountain cirque, Caucasus Mountains.jpg"
+        }
+      ],
+      "error": "HTTPError('429 Client Error: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1) for url: https://upload.wikimedia.org/wikipedia/commons/8/88/Zagedan_Lakes%2C_Mountain_cirque%2C_Caucasus_Mountains.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original')"
     }
   ],
   "coverage_limit": "A negative result rejects only the exact Courageous Sailing/Boston/public-Commons candidate pool tested here. It does not globally disprove that some other source photograph exists."

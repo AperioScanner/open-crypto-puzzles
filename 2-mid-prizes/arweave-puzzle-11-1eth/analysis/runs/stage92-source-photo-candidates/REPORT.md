@@ -3,8 +3,9 @@
 **Experiment:** A11-EXP-092
 
 - Candidate URLs gathered: **110**
+- Null URLs gathered: **14**
 - Candidate images scored: **74**
-- Unrelated null images scored: **0**
+- Unrelated null images scored: **1**
 - Positive-control pass: **True**
 - Strong candidate matches: **0**
 - Interesting candidate matches: **0**
