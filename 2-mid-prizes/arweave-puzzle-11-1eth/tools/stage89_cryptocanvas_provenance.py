@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import base64
 import hashlib
+import html
 import json
 import re
 import time
@@ -119,6 +120,44 @@ def resolve_uri(uri:str):
         return [uri]
     return []
 
+def wayback_json(url:str):
+    """Recover dead token metadata from the public Internet Archive when possible."""
+    try:
+        cdx="https://web.archive.org/cdx/search/cdx"
+        r=SESSION.get(cdx,params={
+            "url":url,
+            "output":"json",
+            "filter":"statuscode:200",
+            "collapse":"digest",
+            "fl":"timestamp,original,statuscode,mimetype,digest",
+            "from":"2020",
+            "to":"2022",
+        },timeout=25)
+        r.raise_for_status()
+        rows=r.json()
+        if not isinstance(rows,list) or len(rows)<2:
+            return None,{"cdx_rows":0}
+        candidates=rows[1:]
+        for row in candidates[:12]:
+            ts=row[0]
+            snap=f"https://web.archive.org/web/{ts}id_/{url}"
+            try:
+                rr=SESSION.get(snap,timeout=25)
+                rr.raise_for_status()
+                data=rr.json()
+                return data,{
+                    "timestamp":ts,
+                    "snapshot":snap,
+                    "sha256":sha256_bytes(rr.content),
+                    "bytes":len(rr.content),
+                    "cdx_rows":len(candidates),
+                }
+            except Exception:
+                continue
+        return None,{"cdx_rows":len(candidates),"error":"no readable JSON snapshot"}
+    except Exception as e:
+        return None,{"error":repr(e)}
+
 def load_json_uri(uri:str):
     if uri.startswith("data:application/json;base64,"):
         b=base64.b64decode(uri.split(",",1)[1])
@@ -197,31 +236,30 @@ def owner_of(token_id):
     return decode_owner(res),endpoint
 
 def first_transfer_log(token_id):
-    topic_token="0x"+abi_uint(token_id)
-    # Cloudflare currently caps eth_getLogs to 800 blocks. Scan the historically
-    # plausible 2020 deployment window in compliant chunks instead of issuing
-    # oversized 1M-block requests.
-    ranges=[(10_200_000,10_900_000)]
-    errors=[]
-    for lo,hi in ranges:
-        step=800
-        for a in range(lo,hi+1,step):
-            b=min(hi,a+step-1)
-            try:
-                logs,endpoint=rpc_call("eth_getLogs",[{
-                    "address":CONTRACT,
-                    "fromBlock":hex(a),
-                    "toBlock":hex(b),
-                    "topics":[TRANSFER_TOPIC,None,None,topic_token],
-                }])
-                if logs:
-                    log=sorted(logs,key=lambda z:int(z["blockNumber"],16))[0]
-                    return log,endpoint
-            except Exception as e:
-                errors.append({"range":[a,b],"error":repr(e)})
-                # Keep scanning on provider/rate-limit failures; a later chunk/provider may work.
-                continue
-    return None,{"errors":errors[-20:],"scanned_window":[10_200_000,10_900_000]}
+    # Prefer Blockscout's public indexed API; this avoids hammering public RPCs
+    # with hundreds of eth_getLogs calls and is sufficient for provenance.
+    url=f"https://eth.blockscout.com/api/v2/tokens/{CONTRACT}/instances/{token_id}/transfers"
+    try:
+        r=SESSION.get(url,timeout=25)
+        r.raise_for_status()
+        j=r.json()
+        items=j.get("items",[]) if isinstance(j,dict) else []
+        if items:
+            def ts_key(x):
+                return x.get("timestamp") or "9999"
+            x=sorted(items,key=ts_key)[0]
+            return {
+                "_blockscout":True,
+                "block_number":x.get("block_number"),
+                "transaction_hash":x.get("transaction_hash"),
+                "from":(x.get("from") or {}).get("hash") if isinstance(x.get("from"),dict) else x.get("from"),
+                "to":(x.get("to") or {}).get("hash") if isinstance(x.get("to"),dict) else x.get("to"),
+                "timestamp":x.get("timestamp"),
+                "source_url":url,
+            },"blockscout"
+    except Exception as ex:
+        return None,{"blockscout_url":url,"error":repr(ex)}
+    return None,{"blockscout_url":url,"error":"no transfer items"}
 
 def block_info(hex_block):
     b,endpoint=rpc_call("eth_getBlockByNumber",[hex_block,False])
@@ -253,8 +291,18 @@ def parse_opensea_html():
                 entry["mentions_jul_2020"]=bool(re.search(r"Jul\s+2020",t,re.I))
                 entry["mentions_five_items"]=bool(re.search(r">\s*5\s*<",t))
             if label=="item5":
-                media=re.findall(r"https://i2c\.seadn\.io/[^\"'<> ]+",t)
-                entry["media_urls"]=list(dict.fromkeys(media))[:10]
+                media=re.findall(r"https://i2c\\.seadn\\.io/[^\\\"'<> ]+",t)
+                media=[html.unescape(u).rstrip("\\\\") for u in media]
+                og=[]
+                for pat in (
+                    r'<meta[^>]+property=[\"\\\']og:image[\"\\\'][^>]+content=[\"\\\']([^\"\\\']+)',
+                    r'<meta[^>]+content=[\"\\\']([^\"\\\']+)[\"\\\'][^>]+property=[\"\\\']og:image[\"\\\']',
+                    r'<meta[^>]+name=[\"\\\']twitter:image[\"\\\'][^>]+content=[\"\\\']([^\"\\\']+)',
+                ):
+                    og.extend(re.findall(pat,t,re.I))
+                og=[html.unescape(u).rstrip("\\\\") for u in og]
+                entry["og_media_urls"]=list(dict.fromkeys(og))[:10]
+                entry["media_urls"]=list(dict.fromkeys(og+media))[:30]
                 owner=re.findall(r"0x[a-fA-F0-9]{40}",t)
                 entry["addresses"]=list(dict.fromkeys(x.lower() for x in owner))[:20]
             if label=="stackexchange":
@@ -287,6 +335,12 @@ def main():
             row["token_uri"]=uri
             row["token_uri_rpc"]=ep
             meta,meta_info=load_json_uri(uri) if uri else (None,{"error":"no tokenURI"})
+            if meta is None and uri and uri.startswith("https://cryptocanvas.xyz/"):
+                archived,archive_info=wayback_json(uri)
+                row["wayback_metadata_fetch"]=archive_info
+                if isinstance(archived,dict):
+                    meta=archived
+                    meta_info={"source":"wayback","archive":archive_info}
             row["metadata_fetch"]=meta_info
             if isinstance(meta,dict):
                 row["metadata"]={
@@ -318,29 +372,26 @@ def main():
 
         log,ep=first_transfer_log(tid)
         if log:
-            mint={
-                "block_number":int(log["blockNumber"],16),
-                "transaction_hash":log["transactionHash"],
-                "from":topic_addr(log["topics"][1]) if len(log.get("topics",[]))>1 else None,
-                "to":topic_addr(log["topics"][2]) if len(log.get("topics",[]))>2 else None,
-                "rpc":ep,
-            }
-            try:
-                b,bep=block_info(log["blockNumber"])
-                ts=int(b["timestamp"],16)
-                mint["timestamp_unix"]=ts
-                mint["timestamp_utc"]=time.strftime("%Y-%m-%dT%H:%M:%SZ",time.gmtime(ts))
-                mint["block_rpc"]=bep
-            except Exception as e:
-                mint["block_error"]=repr(e)
-            try:
-                tx,tep=tx_info(log["transactionHash"])
-                if tx:
-                    mint["tx_from"]=tx.get("from","").lower()
-                    mint["tx_to"]=(tx.get("to") or "").lower() if tx.get("to") else None
-                mint["tx_rpc"]=tep
-            except Exception as e:
-                mint["tx_error"]=repr(e)
+            if log.get("_blockscout"):
+                mint={
+                    "block_number":log.get("block_number"),
+                    "transaction_hash":log.get("transaction_hash"),
+                    "from":(log.get("from") or "").lower() if log.get("from") else None,
+                    "to":(log.get("to") or "").lower() if log.get("to") else None,
+                    "timestamp_utc":log.get("timestamp"),
+                    "source":"blockscout",
+                    "source_url":log.get("source_url"),
+                }
+                try:
+                    tx,tep=tx_info(log.get("transaction_hash"))
+                    if tx:
+                        mint["tx_from"]=tx.get("from","").lower()
+                        mint["tx_to"]=(tx.get("to") or "").lower() if tx.get("to") else None
+                    mint["tx_rpc"]=tep
+                except Exception as ex:
+                    mint["tx_error"]=repr(ex)
+            else:
+                mint={"source":"unknown"}
             row["first_transfer"]=mint
         else:
             row["first_transfer_lookup"]=ep
