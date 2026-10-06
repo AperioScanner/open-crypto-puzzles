@@ -10,65 +10,74 @@ Do **not** reopen a hypothesis classified COVERED, RETIRED, or independently fal
 
 Historical popularity alone is not a reason to retest an exhausted idea.
 
-## Review through calibrated Stage 94
+## Review through corrected Stage 95
 
-The first Stage-94 result exposed a calibration issue: its 64-stroke synthetic control was detected as only 48 strokes, while the target-count gate assumed near-perfect recovery. That made a direct 64-vs-target count conclusion too strong.
+The first Stage-95 implementation failed its own control validation because the synthetic 16-level positive control did not score above the Puzzle #5 drawing control. That run was not interpreted.
 
-Stage 94 was therefore repaired under the same number with high-density synthetic controls at **16, 32, 64, 128 and 256** strokes and wide detector-calibrated compatibility bounds.
+Stage 95 was repaired under the same number with a general 16-mode detector and three control classes:
+- exact 16-shade synthetic positive;
+- continuous-tone synthetic negative;
+- solved Puzzle #5 as an author-style drawing control.
 
-### Valid Stage-94 result
+### Valid Stage-95 result
 
-Target large-sail detector response across original/lossy variants:
-- **10, 13, 12, 14** classifiable stable tracks.
+Control validation: **PASS**
 
-Synthetic controls:
-- 16 drawn → **12–14** detected
-- 32 drawn → **22–27**
-- 64 drawn → **45–52**
-- 128 drawn → **49–68**
-- 256 drawn → **53–70**
+Scores:
+- synthetic positive: **0.838–1.000**
+- continuous negative: **~0.468**
+- Puzzle #5: **0.491–0.669**
 
-The detector saturates at high density, but this does not rescue the target: even under deliberately wide calibrated bounds, the real sail's 10–14 tracks are far below both canonical carrier families.
+All four fixed Puzzle #11 regions are rejected:
+- whole foreground
+- large sail
+- skyline
+- small-sails / jetty
 
-Other target properties:
-- two-orientation structure: PASS
-- cross-format matched-sign stability: PASS
-- 64 one-stroke-per-symbol count compatibility: **REJECTED**
-- 256 one-stroke-per-symbol count compatibility: **REJECTED**
+No region was close to the positive control in any of the four image variants.
 
 ### Hypothesis decision
 
-**Large-sail one-stroke-per-symbol carrier (64 hex symbols or 256 binary symbols) = RETIRED.**
+**Direct 16-gray-mode / one-tone-per-hex-symbol alphabet = RETIRED.**
 
-This does not reject every grayscale/stroke encoding. It rejects the specific hypothesis that each visible stable sail stroke is one key symbol/bit.
+## New independent evidence
+
+A fresh public-source sweep surfaced an author statement about **Puzzle #9**, the closest solved sibling to #11:
+
+- #9 was also a puzzle where everything needed was hidden in an image and the prize was Ethereum-side (100 DAI);
+- #9 shared the same create-before-modify metadata anomaly already noted in #11;
+- #9 was solved anonymously;
+- on 2020-06-14, Tiamat wrote that **“The puzzle required 4 steps. My guess is the solver figured out 3 and brute forced one, that's why he is silent.”**
+
+This exact 4-step statement is not present anywhere in the current #11 branch. It is therefore genuinely new independent evidence and satisfies the anti-recycling exception.
 
 ## Next stage
 
-**Stage 95 — 16-level grayscale-alphabet audit.**
+**Stage 96 — Puzzle #9 four-step sibling reconstruction audit.**
 
-Motivation:
-- Puzzle #11 is natively **8-bit grayscale+alpha**, unlike the more ordinary color/photo presentation of several solved siblings.
-- A 64-character hexadecimal private key has a natural **16-symbol alphabet**.
-- Prior stages tested bitplanes, alpha-marked grayscale sequences, crop hashes, hidden text and stroke orientation; they did **not** test whether visible foreground tone itself forms a robust 16-level symbol alphabet.
+Goals:
+1. Fetch the original #9 permaweb page at `1--NRFY3naNwTlxBSRjzDPNUq-Cn1yLG2RmgGHZem9c`.
+2. Extract all embedded/linked image assets and identify the primary puzzle image(s).
+3. Save only bounded diagnostic thumbnails/metadata needed for reproducible review.
+4. Recover the 2020-06-14 author tweet through Internet Archive CDX/Wayback if possible and verify the exact “4 steps / brute forced one” wording and thread context.
+5. Characterize #9's page/image construction and compare mechanism-level traits with #11:
+   - image mode/channels/dimensions;
+   - PNG chunks / date metadata;
+   - alpha behavior;
+   - first-row anomalies;
+   - grayscale quantization / bitplane statistics;
+   - visible line/region organization.
+6. Identify which of the four conceptual steps can be inferred from #9 **without** generating or checking any private-key candidate.
+7. Produce a ranked set of **new mechanism constraints** for #11, explicitly separating:
+   - shared production artifacts;
+   - likely selection/ordering steps;
+   - the one step that may have been brute-forced.
 
-Bounded design:
-1. Fixed regions:
-   - whole-image foreground
-   - large-sail interior
-   - skyline/building band
-   - small-sails/jetty band
-2. Evaluate only foreground grayscale samples (`gray < 245`).
-3. Fit a predeclared 16-level affine intensity lattice and measure normalized residual, level occupancy and per-level support.
-4. Independently fit 16 one-dimensional clusters and measure separation/within-cluster compactness.
-5. Repeat after JPEG85, JPEG70 and 0.75x resize roundtrip.
-6. Use synthetic 16-shade line-art controls.
-7. Use the solved hand-drawn Puzzle #5 image as an author-style drawing control so ordinary antialiasing/pencil-like rasterization is not mistaken for an encoded alphabet.
-8. Do not map levels to hex digits or construct a key candidate.
-
-Promotion requires a strong 16-level structure in Puzzle #11 that survives lossy transforms, passes synthetic controls, and is materially stronger than the sibling-drawing control.
+No private-key derivation or wallet access is performed.
 
 ## Status
 
-- Stages 1–94: completed.
-- Calibrated Stage 94: COMPLETED + REVIEWED — negative for one-stroke-per-symbol sail carrier.
-- Stage 95: selected for launch.
+- Stages 1–95: completed.
+- Corrected Stage 95: COMPLETED + REVIEWED — 16-level grayscale alphabet retired.
+- New Puzzle #9 author evidence: PROMOTED.
+- Stage 96: selected for launch.
