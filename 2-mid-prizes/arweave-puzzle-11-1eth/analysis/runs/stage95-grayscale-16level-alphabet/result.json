@@ -1,240 +1,255 @@
 {
   "experiment_id": "A11-EXP-095",
-  "scope": "16-level grayscale alphabet structure only; no level-to-symbol mapping, no ordered target sequence, no private-key operations",
+  "scope": "general 16-mode grayscale alphabet audit; no tone-to-symbol mapping or ordered sequence; no private-key operations",
+  "implementation_correction": "First Stage-95 affine-lattice score failed its synthetic-vs-control validation. Corrected test uses general 16-mode compactness/concentration and adds a continuous-tone negative control.",
   "puzzle5_control_fetch": {
     "url": "https://raw.githubusercontent.com/HomelessPhD/AR_Puzzles/main/PZL5/pics/pzl5.png",
     "status": 200,
     "bytes": 257657
   },
-  "controls_valid": false,
-  "synthetic_scores": {
-    "original": 0.28468939393939396,
-    "jpeg85": 0.3049098484848485,
-    "jpeg70": 0.28720833333333334,
-    "down75_up": 0.34057519947579173
+  "detector_valid": true,
+  "positive_scores": {
+    "original": 1.0,
+    "jpeg85": 0.9200820742608826,
+    "jpeg70": 0.8860958268148275,
+    "down75_up": 0.8376660085832993
   },
-  "sibling_puzzle5_scores": {
-    "original": 0.29360037847936404,
-    "jpeg85": 0.4408144043634627,
-    "jpeg70": 0.3651664122173873,
-    "down75_up": 0.35068614113176133
+  "negative_scores": {
+    "original": 0.46834816251271394,
+    "jpeg85": 0.46772432030700484,
+    "jpeg70": 0.4679831094858842,
+    "down75_up": 0.46842478958284384
   },
-  "target_region_evidence": {
+  "puzzle5_scores": {
+    "original": 0.668933945458741,
+    "jpeg85": 0.5167240755301085,
+    "jpeg70": 0.49093707344334603,
+    "down75_up": 0.5068743409310306
+  },
+  "regions": {
     "whole_foreground": {
       "variants": {
         "original": {
-          "target_score": 0.53731579526736,
-          "sibling_score": 0.29360037847936404,
-          "synthetic_score": 0.28468939393939396,
-          "relative_to_sibling_synthetic": null,
-          "occupied_levels": 16,
-          "peak_count": 0,
-          "mean_lattice_residual": 0.19492366255144034,
-          "sharp_fraction_r008": 0.34568333333333334,
-          "elbow16": 0.007330073226018821
+          "target_score": 0.5578926320038678,
+          "positive_score": 1.0,
+          "negative_score": 0.46834816251271394,
+          "puzzle5_score": 0.668933945458741,
+          "normalized_positive_similarity": 0.16842689741158898,
+          "mode_concentration_pm2": 0.4156125,
+          "rmse_normalized": 0.016477691124839183,
+          "occupied_modes_ge_0p3pct": 16,
+          "mode_entropy_bits": 3.7126312051807875
         },
         "jpeg85": {
-          "target_score": 0.44949598821687053,
-          "sibling_score": 0.4408144043634627,
-          "synthetic_score": 0.3049098484848485,
-          "relative_to_sibling_synthetic": null,
-          "occupied_levels": 16,
-          "peak_count": 0,
-          "mean_lattice_residual": 0.21660341530054644,
-          "sharp_fraction_r008": 0.27235,
-          "elbow16": -0.0007432265525920273
+          "target_score": 0.5343274370956583,
+          "positive_score": 0.9200820742608826,
+          "negative_score": 0.46772432030700484,
+          "puzzle5_score": 0.5167240755301085,
+          "normalized_positive_similarity": 0.14723549271898703,
+          "mode_concentration_pm2": 0.37384375,
+          "rmse_normalized": 0.01696639685650767,
+          "occupied_modes_ge_0p3pct": 16,
+          "mode_entropy_bits": 3.752341891416676
         },
         "jpeg70": {
-          "target_score": 0.4649156967186617,
-          "sibling_score": 0.3651664122173873,
-          "synthetic_score": 0.28720833333333334,
-          "relative_to_sibling_synthetic": null,
-          "occupied_levels": 16,
-          "peak_count": 0,
-          "mean_lattice_residual": 0.2165889344262295,
-          "sharp_fraction_r008": 0.2758083333333333,
-          "elbow16": 0.006297612848396333
+          "target_score": 0.53298728110976,
+          "positive_score": 0.8860958268148275,
+          "negative_score": 0.4679831094858842,
+          "puzzle5_score": 0.49093707344334603,
+          "normalized_positive_similarity": 0.15547044834978047,
+          "mode_concentration_pm2": 0.37116875,
+          "rmse_normalized": 0.016966887674454256,
+          "occupied_modes_ge_0p3pct": 16,
+          "mode_entropy_bits": 3.798111896545549
         },
         "down75_up": {
-          "target_score": 0.43645361163900315,
-          "sibling_score": 0.35068614113176133,
-          "synthetic_score": 0.34057519947579173,
-          "relative_to_sibling_synthetic": null,
-          "occupied_levels": 16,
-          "peak_count": 5,
-          "mean_lattice_residual": 0.22990967078189303,
-          "sharp_fraction_r008": 0.22599166666666667,
-          "elbow16": 0.016550580154344532
+          "target_score": 0.47425588262938145,
+          "positive_score": 0.8376660085832993,
+          "negative_score": 0.46842478958284384,
+          "puzzle5_score": 0.5068743409310306,
+          "normalized_positive_similarity": 0.01579209672831901,
+          "mode_concentration_pm2": 0.26185625,
+          "rmse_normalized": 0.01773618020695424,
+          "occupied_modes_ge_0p3pct": 16,
+          "mode_entropy_bits": 3.9542152999546394
         }
       },
-      "median_relative_evidence": -999.0,
-      "variants_relative_ge_0p45": 0,
-      "peak_gate_variants": 0,
-      "occupancy_gate_variants": 4,
-      "promoted": false
+      "variants_close_to_positive": 0,
+      "variants_beating_puzzle5": 0,
+      "variants_occupancy_ok": 4,
+      "promoted": false,
+      "rejected": true
     },
     "large_sail": {
       "variants": {
         "original": {
-          "target_score": 0.6454553144548807,
-          "sibling_score": 0.29360037847936404,
-          "synthetic_score": 0.28468939393939396,
-          "relative_to_sibling_synthetic": null,
-          "occupied_levels": 16,
-          "peak_count": 2,
-          "mean_lattice_residual": 0.15363548088751927,
-          "sharp_fraction_r008": 0.4938481120067883,
-          "elbow16": -0.01170618071896129
+          "target_score": 0.6142268235839198,
+          "positive_score": 1.0,
+          "negative_score": 0.46834816251271394,
+          "puzzle5_score": 0.668933945458741,
+          "normalized_positive_similarity": 0.2743875799633522,
+          "mode_concentration_pm2": 0.5397539244802715,
+          "rmse_normalized": 0.014968415551020181,
+          "occupied_modes_ge_0p3pct": 16,
+          "mode_entropy_bits": 3.163851329752794
         },
         "jpeg85": {
-          "target_score": 0.5436805341888549,
-          "sibling_score": 0.4408144043634627,
-          "synthetic_score": 0.3049098484848485,
-          "relative_to_sibling_synthetic": null,
-          "occupied_levels": 16,
-          "peak_count": 2,
-          "mean_lattice_residual": 0.19083070974055702,
-          "sharp_fraction_r008": 0.35766176719040377,
-          "elbow16": 0.004039702997329975
+          "target_score": 0.5741163101451676,
+          "positive_score": 0.9200820742608826,
+          "negative_score": 0.46772432030700484,
+          "puzzle5_score": 0.5167240755301085,
+          "normalized_positive_similarity": 0.23519435426547472,
+          "mode_concentration_pm2": 0.4642676127724278,
+          "rmse_normalized": 0.015701603673946025,
+          "occupied_modes_ge_0p3pct": 16,
+          "mode_entropy_bits": 3.236997509334883
         },
         "jpeg70": {
-          "target_score": 0.5251444666308828,
-          "sibling_score": 0.3651664122173873,
-          "synthetic_score": 0.28720833333333334,
-          "relative_to_sibling_synthetic": null,
-          "occupied_levels": 16,
-          "peak_count": 3,
-          "mean_lattice_residual": 0.1921704184485912,
-          "sharp_fraction_r008": 0.35657237936772046,
-          "elbow16": -0.004619054502445
+          "target_score": 0.5651712813325157,
+          "positive_score": 0.8860958268148275,
+          "negative_score": 0.4679831094858842,
+          "puzzle5_score": 0.49093707344334603,
+          "normalized_positive_similarity": 0.232444907362553,
+          "mode_concentration_pm2": 0.44384359400998336,
+          "rmse_normalized": 0.015989289714681602,
+          "occupied_modes_ge_0p3pct": 16,
+          "mode_entropy_bits": 3.345178840069403
         },
         "down75_up": {
-          "target_score": 0.46825806808950593,
-          "sibling_score": 0.35068614113176133,
-          "synthetic_score": 0.34057519947579173,
-          "relative_to_sibling_synthetic": null,
-          "occupied_levels": 16,
-          "peak_count": 2,
-          "mean_lattice_residual": 0.2024725832656377,
-          "sharp_fraction_r008": 0.33192526401299755,
-          "elbow16": -0.02497987931122181
+          "target_score": 0.5537451734946751,
+          "positive_score": 0.8376660085832993,
+          "negative_score": 0.46842478958284384,
+          "puzzle5_score": 0.5068743409310306,
+          "normalized_positive_similarity": 0.23106950015709388,
+          "mode_concentration_pm2": 0.418927701056052,
+          "rmse_normalized": 0.016602719168111284,
+          "occupied_modes_ge_0p3pct": 16,
+          "mode_entropy_bits": 3.51084609739421
         }
       },
-      "median_relative_evidence": -999.0,
-      "variants_relative_ge_0p45": 0,
-      "peak_gate_variants": 0,
-      "occupancy_gate_variants": 4,
-      "promoted": false
+      "variants_close_to_positive": 0,
+      "variants_beating_puzzle5": 0,
+      "variants_occupancy_ok": 4,
+      "promoted": false,
+      "rejected": true
     },
     "skyline": {
       "variants": {
         "original": {
-          "target_score": 0.5583035473660568,
-          "sibling_score": 0.29360037847936404,
-          "synthetic_score": 0.28468939393939396,
-          "relative_to_sibling_synthetic": null,
-          "occupied_levels": 16,
-          "peak_count": 0,
-          "mean_lattice_residual": 0.19675956790123456,
-          "sharp_fraction_r008": 0.339575,
-          "elbow16": 0.021771651748990137
+          "target_score": 0.554306392137059,
+          "positive_score": 1.0,
+          "negative_score": 0.46834816251271394,
+          "puzzle5_score": 0.668933945458741,
+          "normalized_positive_similarity": 0.16168143052153128,
+          "mode_concentration_pm2": 0.40936875,
+          "rmse_normalized": 0.016561398997942553,
+          "occupied_modes_ge_0p3pct": 16,
+          "mode_entropy_bits": 3.7409444211200933
         },
         "jpeg85": {
-          "target_score": 0.4626763445445695,
-          "sibling_score": 0.4408144043634627,
-          "synthetic_score": 0.3049098484848485,
-          "relative_to_sibling_synthetic": null,
-          "occupied_levels": 16,
-          "peak_count": 0,
-          "mean_lattice_residual": 0.21709470628415298,
-          "sharp_fraction_r008": 0.270075,
-          "elbow16": 0.007372844263810144
+          "target_score": 0.5318742024523974,
+          "positive_score": 0.9200820742608826,
+          "negative_score": 0.46772432030700484,
+          "puzzle5_score": 0.5167240755301085,
+          "normalized_positive_similarity": 0.14181227487466308,
+          "mode_concentration_pm2": 0.3694375,
+          "rmse_normalized": 0.017012675151972346,
+          "occupied_modes_ge_0p3pct": 16,
+          "mode_entropy_bits": 3.77512256102898
         },
         "jpeg70": {
-          "target_score": 0.47060058165798246,
-          "sibling_score": 0.3651664122173873,
-          "synthetic_score": 0.28720833333333334,
-          "relative_to_sibling_synthetic": null,
-          "occupied_levels": 16,
-          "peak_count": 0,
-          "mean_lattice_residual": 0.2180173838797814,
-          "sharp_fraction_r008": 0.27015833333333333,
-          "elbow16": 0.012161334890549769
+          "target_score": 0.5302228269564045,
+          "positive_score": 0.8860958268148275,
+          "negative_score": 0.4679831094858842,
+          "puzzle5_score": 0.49093707344334603,
+          "normalized_positive_similarity": 0.14885870458122014,
+          "mode_concentration_pm2": 0.36643125,
+          "rmse_normalized": 0.017040162512552224,
+          "occupied_modes_ge_0p3pct": 16,
+          "mode_entropy_bits": 3.813921670107259
         },
         "down75_up": {
-          "target_score": 0.42870835193989343,
-          "sibling_score": 0.35068614113176133,
-          "synthetic_score": 0.34057519947579173,
-          "relative_to_sibling_synthetic": null,
-          "occupied_levels": 16,
-          "peak_count": 9,
-          "mean_lattice_residual": 0.23115,
-          "sharp_fraction_r008": 0.22203333333333333,
-          "elbow16": 0.014557020024508843
+          "target_score": 0.4731907747900621,
+          "positive_score": 0.8376660085832993,
+          "negative_score": 0.46842478958284384,
+          "puzzle5_score": 0.5068743409310306,
+          "normalized_positive_similarity": 0.012907511301473608,
+          "mode_concentration_pm2": 0.2603875,
+          "rmse_normalized": 0.017800081501057878,
+          "occupied_modes_ge_0p3pct": 16,
+          "mode_entropy_bits": 3.9663473076757603
         }
       },
-      "median_relative_evidence": -999.0,
-      "variants_relative_ge_0p45": 0,
-      "peak_gate_variants": 0,
-      "occupancy_gate_variants": 4,
-      "promoted": false
+      "variants_close_to_positive": 0,
+      "variants_beating_puzzle5": 0,
+      "variants_occupancy_ok": 4,
+      "promoted": false,
+      "rejected": true
     },
     "small_sails_jetty": {
       "variants": {
         "original": {
-          "target_score": 0.5905014484969905,
-          "sibling_score": 0.29360037847936404,
-          "synthetic_score": 0.28468939393939396,
-          "relative_to_sibling_synthetic": null,
-          "occupied_levels": 16,
-          "peak_count": 1,
-          "mean_lattice_residual": 0.18784972333353908,
-          "sharp_fraction_r008": 0.36866880060252305,
-          "elbow16": 0.02336730556373086
+          "target_score": 0.5667650960492693,
+          "positive_score": 1.0,
+          "negative_score": 0.46834816251271394,
+          "puzzle5_score": 0.668933945458741,
+          "normalized_positive_similarity": 0.18511538303280836,
+          "mode_concentration_pm2": 0.4346429841628486,
+          "rmse_normalized": 0.01630997179560675,
+          "occupied_modes_ge_0p3pct": 16,
+          "mode_entropy_bits": 3.641550535282507
         },
         "jpeg85": {
-          "target_score": 0.44479536397813735,
-          "sibling_score": 0.4408144043634627,
-          "synthetic_score": 0.3049098484848485,
-          "relative_to_sibling_synthetic": null,
-          "occupied_levels": 16,
-          "peak_count": 0,
-          "mean_lattice_residual": 0.21229262779028288,
-          "sharp_fraction_r008": 0.2867619754920163,
-          "elbow16": -0.01090046728983611
+          "target_score": 0.5400361930798615,
+          "positive_score": 0.9200820742608826,
+          "negative_score": 0.46772432030700484,
+          "puzzle5_score": 0.5167240755301085,
+          "normalized_positive_similarity": 0.15985549521547399,
+          "mode_concentration_pm2": 0.3853405949581219,
+          "rmse_normalized": 0.016908371152099224,
+          "occupied_modes_ge_0p3pct": 16,
+          "mode_entropy_bits": 3.6868955391082228
         },
         "jpeg70": {
-          "target_score": 0.4818816238994306,
-          "sibling_score": 0.3651664122173873,
-          "synthetic_score": 0.28720833333333334,
-          "relative_to_sibling_synthetic": null,
-          "occupied_levels": 16,
-          "peak_count": 0,
-          "mean_lattice_residual": 0.2140064865683787,
-          "sharp_fraction_r008": 0.2855457168638261,
-          "elbow16": 0.010388531759978309
+          "target_score": 0.5356737920672126,
+          "positive_score": 0.8860958268148275,
+          "negative_score": 0.4679831094858842,
+          "puzzle5_score": 0.49093707344334603,
+          "normalized_positive_similarity": 0.16189577541137992,
+          "mode_concentration_pm2": 0.3760076946722327,
+          "rmse_normalized": 0.016917606616984566,
+          "occupied_modes_ge_0p3pct": 16,
+          "mode_entropy_bits": 3.7517465019376175
         },
         "down75_up": {
-          "target_score": 0.43286004351771556,
-          "sibling_score": 0.35068614113176133,
-          "synthetic_score": 0.34057519947579173,
-          "relative_to_sibling_synthetic": null,
-          "occupied_levels": 16,
-          "peak_count": 6,
-          "mean_lattice_residual": 0.2276569967987077,
-          "sharp_fraction_r008": 0.2350001871467605,
-          "elbow16": 0.010134861886569188
+          "target_score": 0.4721822688939038,
+          "positive_score": 0.8376660085832993,
+          "negative_score": 0.46842478958284384,
+          "puzzle5_score": 0.5068743409310306,
+          "normalized_positive_similarity": 0.010176218465618619,
+          "mode_concentration_pm2": 0.25822510012351685,
+          "rmse_normalized": 0.017786016732700027,
+          "occupied_modes_ge_0p3pct": 16,
+          "mode_entropy_bits": 3.9238095677369826
         }
       },
-      "median_relative_evidence": -999.0,
-      "variants_relative_ge_0p45": 0,
-      "peak_gate_variants": 0,
-      "occupancy_gate_variants": 4,
-      "promoted": false
+      "variants_close_to_positive": 0,
+      "variants_beating_puzzle5": 0,
+      "variants_occupancy_ok": 4,
+      "promoted": false,
+      "rejected": true
     }
   },
   "promoted_regions": [],
-  "promotion_rule": "synthetic score exceeds Puzzle5 control by >=0.12 in every variant; target region median relative evidence >=0.60 with >=3/4 variants >=0.45; >=3 variants have 12+ occupied levels and 10..22 significant histogram peaks",
+  "rejected_regions": [
+    "whole_foreground",
+    "large_sail",
+    "skyline",
+    "small_sails_jetty"
+  ],
+  "all_regions_rejected": true,
+  "promotion_rule": "detector valid in all variants; region resembles positive control in >=3/4 variants; exceeds Puzzle5 by >=0.08 in >=3/4; >=14 occupied modes in >=3/4",
+  "rejection_rule": "detector valid and region resembles positive control in <=1/4 variants",
   "promoted": false,
-  "interpretation_guard": "A positive result would establish only a robust 16-level tonal alphabet candidate, not a digit mapping or key."
+  "interpretation_guard": "Positive means only tonal-alphabet structure; no mapping to hexadecimal digits is attempted."
 }

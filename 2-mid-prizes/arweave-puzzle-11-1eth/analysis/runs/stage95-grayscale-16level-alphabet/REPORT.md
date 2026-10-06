@@ -1,70 +1,71 @@
-# Stage 95 — 16-level grayscale-alphabet audit
+# Stage 95 — corrected 16-mode grayscale-alphabet audit
 
 **Experiment:** A11-EXP-095
 
-- synthetic-vs-Puzzle5 control validation: **False**
-- promoted target regions: **[]**
-- promotion rule satisfied: **False**
+- detector/control validation: **True**
+- promoted regions: **[]**
+- rejected regions: **['whole_foreground', 'large_sail', 'skyline', 'small_sails_jetty']**
+- all fixed regions rejected: **True**
 
-## Control scores
+## Controls
 
-| variant | synthetic 16-level | Puzzle #5 drawing | delta |
+| variant | positive 16-mode | continuous negative | Puzzle #5 |
 |:---|---:|---:|---:|
-| original | 0.28468939393939396 | 0.29360037847936404 | -0.00891098453997008 |
-| jpeg85 | 0.3049098484848485 | 0.4408144043634627 | -0.13590455587861422 |
-| jpeg70 | 0.28720833333333334 | 0.3651664122173873 | -0.07795807888405398 |
-| down75_up | 0.34057519947579173 | 0.35068614113176133 | -0.010110941655969596 |
+| original | 1.0000 | 0.4683 | 0.6689 |
+| jpeg85 | 0.9201 | 0.4677 | 0.5167 |
+| jpeg70 | 0.8861 | 0.4680 | 0.4909 |
+| down75_up | 0.8377 | 0.4684 | 0.5069 |
 
-## Target regions
+## Target-region decisions
 
-| region | median relative evidence | variants >=0.45 | peak gate | occupancy gate | promoted |
-|:---|---:|---:|---:|---:|:---:|
-| whole_foreground | -999.000 | 0/4 | 0/4 | 4/4 | False |
-| large_sail | -999.000 | 0/4 | 0/4 | 4/4 | False |
-| skyline | -999.000 | 0/4 | 0/4 | 4/4 | False |
-| small_sails_jetty | -999.000 | 0/4 | 0/4 | 4/4 | False |
+| region | close to positive | beats Puzzle5 | occupancy ok | promoted | rejected |
+|:---|---:|---:|---:|:---:|:---:|
+| whole_foreground | 0/4 | 0/4 | 4/4 | False | True |
+| large_sail | 0/4 | 0/4 | 4/4 | False | True |
+| skyline | 0/4 | 0/4 | 4/4 | False | True |
+| small_sails_jetty | 0/4 | 0/4 | 4/4 | False | True |
 
-## Detailed target metrics
+## Detailed metrics
 
 ### whole_foreground
 
-| variant | target score | relative | occupied | peaks | mean residual | sharp@0.08 | elbow16 |
-|:---|---:|---:|---:|---:|---:|---:|---:|
-| original | 0.53731579526736 |  | 16 | 0 | 0.19492366255144034 | 0.34568333333333334 | 0.007330073226018821 |
-| jpeg85 | 0.44949598821687053 |  | 16 | 0 | 0.21660341530054644 | 0.27235 | -0.0007432265525920273 |
-| jpeg70 | 0.4649156967186617 |  | 16 | 0 | 0.2165889344262295 | 0.2758083333333333 | 0.006297612848396333 |
-| down75_up | 0.43645361163900315 |  | 16 | 5 | 0.22990967078189303 | 0.22599166666666667 | 0.016550580154344532 |
+| variant | target | normalized positive similarity | mode concentration ±2 | norm RMSE | occupied modes |
+|:---|---:|---:|---:|---:|---:|
+| original | 0.5579 | 0.16842689741158898 | 0.4156125 | 0.016477691124839183 | 16 |
+| jpeg85 | 0.5343 | 0.14723549271898703 | 0.37384375 | 0.01696639685650767 | 16 |
+| jpeg70 | 0.5330 | 0.15547044834978047 | 0.37116875 | 0.016966887674454256 | 16 |
+| down75_up | 0.4743 | 0.01579209672831901 | 0.26185625 | 0.01773618020695424 | 16 |
 
 ### large_sail
 
-| variant | target score | relative | occupied | peaks | mean residual | sharp@0.08 | elbow16 |
-|:---|---:|---:|---:|---:|---:|---:|---:|
-| original | 0.6454553144548807 |  | 16 | 2 | 0.15363548088751927 | 0.4938481120067883 | -0.01170618071896129 |
-| jpeg85 | 0.5436805341888549 |  | 16 | 2 | 0.19083070974055702 | 0.35766176719040377 | 0.004039702997329975 |
-| jpeg70 | 0.5251444666308828 |  | 16 | 3 | 0.1921704184485912 | 0.35657237936772046 | -0.004619054502445 |
-| down75_up | 0.46825806808950593 |  | 16 | 2 | 0.2024725832656377 | 0.33192526401299755 | -0.02497987931122181 |
+| variant | target | normalized positive similarity | mode concentration ±2 | norm RMSE | occupied modes |
+|:---|---:|---:|---:|---:|---:|
+| original | 0.6142 | 0.2743875799633522 | 0.5397539244802715 | 0.014968415551020181 | 16 |
+| jpeg85 | 0.5741 | 0.23519435426547472 | 0.4642676127724278 | 0.015701603673946025 | 16 |
+| jpeg70 | 0.5652 | 0.232444907362553 | 0.44384359400998336 | 0.015989289714681602 | 16 |
+| down75_up | 0.5537 | 0.23106950015709388 | 0.418927701056052 | 0.016602719168111284 | 16 |
 
 ### skyline
 
-| variant | target score | relative | occupied | peaks | mean residual | sharp@0.08 | elbow16 |
-|:---|---:|---:|---:|---:|---:|---:|---:|
-| original | 0.5583035473660568 |  | 16 | 0 | 0.19675956790123456 | 0.339575 | 0.021771651748990137 |
-| jpeg85 | 0.4626763445445695 |  | 16 | 0 | 0.21709470628415298 | 0.270075 | 0.007372844263810144 |
-| jpeg70 | 0.47060058165798246 |  | 16 | 0 | 0.2180173838797814 | 0.27015833333333333 | 0.012161334890549769 |
-| down75_up | 0.42870835193989343 |  | 16 | 9 | 0.23115 | 0.22203333333333333 | 0.014557020024508843 |
+| variant | target | normalized positive similarity | mode concentration ±2 | norm RMSE | occupied modes |
+|:---|---:|---:|---:|---:|---:|
+| original | 0.5543 | 0.16168143052153128 | 0.40936875 | 0.016561398997942553 | 16 |
+| jpeg85 | 0.5319 | 0.14181227487466308 | 0.3694375 | 0.017012675151972346 | 16 |
+| jpeg70 | 0.5302 | 0.14885870458122014 | 0.36643125 | 0.017040162512552224 | 16 |
+| down75_up | 0.4732 | 0.012907511301473608 | 0.2603875 | 0.017800081501057878 | 16 |
 
 ### small_sails_jetty
 
-| variant | target score | relative | occupied | peaks | mean residual | sharp@0.08 | elbow16 |
-|:---|---:|---:|---:|---:|---:|---:|---:|
-| original | 0.5905014484969905 |  | 16 | 1 | 0.18784972333353908 | 0.36866880060252305 | 0.02336730556373086 |
-| jpeg85 | 0.44479536397813735 |  | 16 | 0 | 0.21229262779028288 | 0.2867619754920163 | -0.01090046728983611 |
-| jpeg70 | 0.4818816238994306 |  | 16 | 0 | 0.2140064865683787 | 0.2855457168638261 | 0.010388531759978309 |
-| down75_up | 0.43286004351771556 |  | 16 | 6 | 0.2276569967987077 | 0.2350001871467605 | 0.010134861886569188 |
+| variant | target | normalized positive similarity | mode concentration ±2 | norm RMSE | occupied modes |
+|:---|---:|---:|---:|---:|---:|
+| original | 0.5668 | 0.18511538303280836 | 0.4346429841628486 | 0.01630997179560675 | 16 |
+| jpeg85 | 0.5400 | 0.15985549521547399 | 0.3853405949581219 | 0.016908371152099224 | 16 |
+| jpeg70 | 0.5357 | 0.16189577541137992 | 0.3760076946722327 | 0.016917606616984566 | 16 |
+| down75_up | 0.4722 | 0.010176218465618619 | 0.25822510012351685 | 0.017786016732700027 | 16 |
 
 ## Interpretation
 
-No fixed region satisfies the predeclared 16-level alphabet criteria relative to both synthetic and author-style drawing controls. Retire the direct 16-gray-level symbol-alphabet hypothesis.
+All fixed regions are materially unlike the validated 16-mode positive control across the tested transformations. Retire the direct 16-gray-mode symbol-alphabet hypothesis.
 
 No tone-to-hex mapping or ordered target symbol sequence is stored.
 No private-key material was generated, reconstructed or tested.
