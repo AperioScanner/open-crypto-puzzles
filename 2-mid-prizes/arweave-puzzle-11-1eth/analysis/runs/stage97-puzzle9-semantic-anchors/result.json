@@ -124,7 +124,14 @@
           "peak_fraction": 0.08487845076225793
         }
       },
-      "stable_expected_label": false,
+      "hue_drift_from_original": {
+        "original": 0,
+        "jpeg85": 2,
+        "jpeg70": 2,
+        "down75_up": 2
+      },
+      "stability_rule": "original expected category + circular dominant-hue drift <=6/180 in every variant",
+      "stable_expected_label": true,
       "crop_sha256": "736edd126bce21420eababb06865eaf45542c62d02e7eb3ad3cbfb2a7d1c8b21"
     },
     "bird_blue": {
@@ -155,6 +162,13 @@
           "peak_fraction": 0.07321797520661157
         }
       },
+      "hue_drift_from_original": {
+        "original": 0,
+        "jpeg85": 0,
+        "jpeg70": 0,
+        "down75_up": 0
+      },
+      "stability_rule": "original expected category + circular dominant-hue drift <=6/180 in every variant",
       "stable_expected_label": true,
       "crop_sha256": "5880d8082d1ff1d19a78ffb2d29d4864c300755628fbf326dd166a00c13f571a"
     },
@@ -186,6 +200,13 @@
           "peak_fraction": 0.09869072505226098
         }
       },
+      "hue_drift_from_original": {
+        "original": 0,
+        "jpeg85": 1,
+        "jpeg70": 1,
+        "down75_up": 1
+      },
+      "stability_rule": "original expected category + circular dominant-hue drift <=6/180 in every variant",
       "stable_expected_label": true,
       "crop_sha256": "32afed3db9d9b4a034081048ea06d4772e739bb62db2c6af6d2341b0b4b5a7cf"
     },
@@ -217,6 +238,13 @@
           "peak_fraction": 0.15050341019811628
         }
       },
+      "hue_drift_from_original": {
+        "original": 0,
+        "jpeg85": 1,
+        "jpeg70": 1,
+        "down75_up": 1
+      },
+      "stability_rule": "original expected category + circular dominant-hue drift <=6/180 in every variant",
       "stable_expected_label": true,
       "crop_sha256": "afc490a554ac6773c2a7f021ac18a0d841e5d2ace455e6b4b669093a57a5842f"
     },
@@ -248,12 +276,19 @@
           "peak_fraction": 0.07740205000478972
         }
       },
+      "hue_drift_from_original": {
+        "original": 0,
+        "jpeg85": 0,
+        "jpeg70": 0,
+        "down75_up": 0
+      },
+      "stability_rule": "original expected category + circular dominant-hue drift <=6/180 in every variant",
       "stable_expected_label": true,
       "crop_sha256": "67eac408ad256a14196b9bba78c7569c12c4cb5586f66f9f91cc336b34ba6fe0"
     }
   },
   "five_distinct_bird_colors_original": true,
-  "all_bird_colors_stable_across_variants": false,
+  "all_bird_colors_stable_across_variants": true,
   "source_records": [
     {
       "url": "https://arweave.medium.com/arweave-newsletter-december-e83e962bcb9b",
@@ -261,13 +296,19 @@
       "error": "HTTPError('403 Client Error: Forbidden for url: https://arweave.medium.com/arweave-newsletter-december-e83e962bcb9b')"
     },
     {
+      "url": "https://arweave.medium.com/arweave-newsletter-december-e83e962bcb9b",
+      "kind": "official_arweave_newsletter_wayback",
+      "verified": false,
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='web.archive.org', port=443): Read timed out. (read timeout=20)\"))"
+    },
+    {
       "url": "https://t.me/s/arweaveannouncements?after=127",
       "kind": "official_arweave_telegram",
       "fetch": {
         "url": "https://t.me/s/arweaveannouncements?after=127",
         "status": 200,
-        "bytes": 115675,
-        "sha256": "fae543400e85edbb9b9a98b1155dd0a551114bc4ac46773f3286c49a9a097a8f"
+        "bytes": 115676,
+        "sha256": "fa3f9dc6884a421821d002bc2f98bb4c366ace7288044e116ffbf8d866e9e58d"
       },
       "has_exact_four_step_quote": false,
       "has_tweet_id": false,

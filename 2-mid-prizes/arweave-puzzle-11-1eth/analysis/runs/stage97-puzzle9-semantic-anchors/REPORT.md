@@ -8,7 +8,7 @@
 - official 'everything needed ... hidden in image' context: **False**
 - literary/numeric crops robust across lossy variants: **True**
 - five distinct bird colors in original: **True**
-- bird color identities stable across variants: **False**
+- bird color identities stable across variants: **True**
 - semantic multi-anchor scaffold supported: **False**
 
 ## Visible anchors
@@ -28,17 +28,18 @@
 
 | crop | expected | original | jpeg85 | jpeg70 | resize | stable |
 |:---|:---|:---|:---|:---|:---|:---:|
-| bird_green | green | green | yellow | yellow | yellow | False |
-| bird_blue | blue | blue | blue | blue | blue | True |
-| bird_orange | orange | orange | orange | orange | orange | True |
-| bird_red | red | red | red | red | red | True |
-| bird_yellow | yellow | yellow | yellow | yellow | yellow | True |
+| bird_green | green | green(38) | yellow(36) | yellow(36) | yellow(36) | True |
+| bird_blue | blue | blue(94) | blue(94) | blue(94) | blue(94) | True |
+| bird_orange | orange | orange(13) | orange(14) | orange(14) | orange(14) | True |
+| bird_red | red | red(4) | red(3) | red(3) | red(3) | True |
+| bird_yellow | yellow | yellow(26) | yellow(26) | yellow(26) | yellow(26) | True |
 
 ## Source hierarchy
 
 | kind | fetched | exact four-step quote | tweet id | #9 context | image-only official phrase |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | official_arweave_newsletter | False | False | False | False | False |
+| official_arweave_newsletter_wayback | False | False | False | False | False |
 | official_arweave_telegram | True | False | False | True | False |
 | secondary_crypto_puzzle_dossier_11 | True | True | True | True | False |
 | secondary_crypto_puzzle_dossier_3 | True | True | True | True | False |
