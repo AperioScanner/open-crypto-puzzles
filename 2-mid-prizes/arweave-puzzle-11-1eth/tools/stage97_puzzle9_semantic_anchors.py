@@ -66,6 +66,8 @@ BIRD_EXPECTED={
     "bird_red":"red",
     "bird_yellow":"yellow",
 }
+VARIANT_NAMES=("original","jpeg85","jpeg70","down75_up")
+
 MANUAL_TRANSCRIPTIONS={
     "literary_quote":"It was a bright cold day in April, and the clocks were striking thirteen.",
     "numeric_stamp":"12:05.04",
