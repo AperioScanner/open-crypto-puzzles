@@ -1,20 +1,25 @@
 # Open leads, ranked
 
-## 1. Puzzle #9 semantic multi-anchor / four-step mechanism (active)
+## 1. Puzzle #9 four-step primary thread reconstruction (active, highest priority)
 
-Stage 96 recovered the canonical Puzzle #9 image. It is not structurally similar to #11 at the channel level (indexed-color P, no alpha), so alpha/continuous-channel analogies are weakened.
+Stage 97 primary-verifies the author's archived statement that solved sibling Puzzle #9 **required four steps** and that the anonymous solver may have brute-forced one.
 
-What *is* shared is the image-only puzzle format and production metadata lineage. Public archival research also consistently attributes an author statement to #9 saying it required four steps and the anonymous solver may have brute-forced one.
+The canonical #9 image also contains multiple robust visible anchors (literary quote, numeric stamp, five distinct bird colors), and official Arweave material says everything needed was hidden in the image.
 
-Stage 97 separates what is actually visible and robust in #9 from what is merely inferred, and ranks the source confidence of the four-step quote.
+Stage 98 now searches the contemporaneous primary Twitter thread for actual mechanism language before transferring any concrete four-step model to #11.
 
-## 2. General format-invariant visible / semantic mechanism
+## 2. Image-only, multi-step semantic prior (promoted)
 
-Still the strongest broad prior. Stage 31 showed #11's visible/macroscopic structure survives ordinary lossy transformations while exact low-bit identity does not.
+The defensible transfer from #9 is broad:
+- everything required was inside the image;
+- the solve required multiple steps;
+- several obvious visible anchors survive ordinary re-encoding.
 
-## 3. External archival evidence
+This supports semantic/visible pipelines for #11 but does **not** prove four visible clue objects or any specific ordering.
 
-High priority only when it adds genuinely new first-hand or independently corroborated information. The current #9 four-step evidence qualifies for one bounded corroboration stage.
+## 3. General format-invariant visible / semantic mechanism
+
+Still strongly supported by #11 Stage 31 and the author's "format does not matter" wording.
 
 ## Closed / do not recycle
 
