@@ -212,3 +212,14 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Fresh public-source research surfaced a directly relevant author statement about solved sibling Puzzle #9: on 2020-06-14 Tiamat wrote that the puzzle “required 4 steps” and guessed the anonymous solver found 3 and brute-forced one.
 - This exact clue is absent from the current #11 branch, so it is genuinely new evidence rather than recycled community speculation.
 - Stage 96 will fetch the original #9 permaweb page and assets, recover the author tweet context where possible, and compare #9/#11 mechanism-level construction to infer reusable steps without generating any candidate secret material.
+
+
+## 2026-10-10 — adaptive review of Stage 96
+
+- Stage 96 recovered the original Puzzle #9 image and page successfully.
+- #9 is PNG P-mode indexed color, 900x635, no alpha; #11 is LA grayscale+alpha, 1600x1105. This weakens any attempt to transfer #11 alpha/channel-specific mechanisms from #9.
+- The two images do share a broad PNG production family and the create-before-modify tEXt timestamp pattern, supporting production lineage rather than payload significance.
+- Stage 96's Wayback call timed out, so its direct primary verification of the "required 4 steps" tweet failed.
+- Follow-up public-source validation found the same status ID, timestamp, exact wording and Puzzle #9 context preserved independently in two public crypto-puzzle research pages. The official Arweave December newsletter independently confirms that everything needed for #9 was hidden in the image.
+- The #9 image visibly contains a strong literary quote (Orwell/1984), a literal numeric stamp (12:05.04), and five distinct colored birds. These are obvious semantic/numeric anchors, but their role in the four steps is not yet established.
+- Stage 97 selected to audit anchor robustness and source hierarchy before transferring any mechanism prior to #11.
