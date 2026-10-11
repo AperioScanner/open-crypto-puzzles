@@ -1,0 +1,729 @@
+{
+  "experiment_id": "A11-EXP-098",
+  "scope": "bounded primary archival reconstruction around Puzzle #9 solve; no private-key operations",
+  "seed_status": {
+    "id": "1272111084867129344",
+    "snapshot": "https://web.archive.org/web/20200614102022id_/https://twitter.com/arweavep/status/1272111084867129344",
+    "title": "Arweave Puzzle on Twitter: \"The puzzle required 4 steps. My guess is the solver figured out 3 and brute forced one, that's why he is silent.… \"",
+    "conversation_id": "1215166354707439621",
+    "in_reply_to_status_id": null,
+    "linked_status_count": 2
+  },
+  "week_cdx": {
+    "uppercase": {
+      "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='web.archive.org', port=443): Read timed out. (read timeout=20)\"))",
+      "query": {
+        "url": "https://twitter.com/ArweaveP/status/*",
+        "output": "json",
+        "filter": "statuscode:200",
+        "fl": "timestamp,original,statuscode,digest",
+        "collapse": "digest",
+        "limit": "120",
+        "from": "20200608",
+        "to": "20200615"
+      }
+    },
+    "lowercase": {
+      "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Ftwitter.com%2Farweavep%2Fstatus%2F%2A&output=json&filter=statuscode%3A200&fl=timestamp%2Coriginal%2Cstatuscode%2Cdigest&collapse=digest&limit=120&from=20200608&to=20200615",
+      "rows": 2
+    },
+    "unique_status_rows": 2,
+    "snapshots_attempted": 2
+  },
+  "dossiers": [
+    {
+      "url": "https://raw.githubusercontent.com/itsnex1s/crypto-puzzle-list/main/unsolved/arweave-puzzle-11-1eth.md",
+      "fetch": {
+        "url": "https://raw.githubusercontent.com/itsnex1s/crypto-puzzle-list/main/unsolved/arweave-puzzle-11-1eth.md",
+        "status": 200,
+        "bytes": 21710
+      },
+      "four_step_context": "ha 225–254, scattered along drawn edges | **Cumulative: on the order of 1,000 candidates, 0 matches, 0 near misses.** A thousand candidates sounds trivially small, and it is — but the number is not the point. What these families exhaust is *every direct, single-transform reading of the measured geometry and the metadata that could be enumerated*: take a measurable property of the image, serialise it, optionally hash it, treat the result as a key. That whole class is dead. What remains is a reading that requires information outside the image, or a bit-level encoding that was never a \"whole value\" in the first place. ## Where it actually stands This is the weakest-verified entry in its series and the honest label for it is *insight, with no oracle*. Three things are simultaneously true: the target format is certain, the container has been exhaustively characterised, and nobody has any idea what the encoding is. The single most useful structural observation is negative and comes from the sibling. Puzzle #9 was the same shape of puzzle — a private key hidden in an image, an Ethereum prize, the same create-before-modify metadata anomaly — and it *was* solved: its 100 DAI left `0x6f85D220C70abB69a1205B96b566c1eD5d9c3831` on 2020-06-08 06:36:33 UTC in transaction `0x91968c60519866e1a982177ffca22d60520904e53ae6d11814fbc501ad0289bd` (block 10223548, an ERC-20 `transfer` to `0xD8d8bC3bb68eC59a8491Af4257522dFE4F0B9412`). The solver never came forward, and the author's own reading of that silence, four days after asking @_LeFevre_ and @shijint89 \"any idea who solved it?\", was: **\"The puzzle required 4 steps. My guess is the solver figured out 3 and brute forced one, that's why he is silent\"** (2020-06-14, 10:18:11 UTC, [1272111084867129344](https://twitter.com/arweavep/status/1272111084867129344)). So the one closely-comparable data point in the entire series is a solve whose method was never published — and when the local research tried to reverse-engineer #9's carrier from its already-known answer as a calibration exercise, that failed too. There is no worked example of this author's steganography anywhere. Three leads, in order: 1. **A systematic bit-level scan of the two continuous channels** (hours). Every candidate so far reads geometry or metadata as a *whole value*, hashed as a block. A genuine LSB sweep of the grayscale channel (256 levels) and the alpha channel (26 distinct observed values) with a tool built for it — `zsteg -a`, `stegoveritas` — across bit orders and bit widths, keeping only 64-hex outputs, has not been run to exhaustion. This is the most literal reading of \"format does not matter\": a payload in the pixel *values*. Confirmed if an extracted string derives the target address; killed by an exhaustive sweep with no match. 2. **The promised hint, from a channel the archive does not cover** (needs a person). The 55,002-message Telegram archive from November 2021 onward is already searched and contains nothing. What it cannot cover is April 2020 to November 2021, a direct message, or a deleted post — and the original announcement tweet itself is deleted, which shows the author does delete things. 3. **A published method for puzzle #9, if one ever surfaces** (needs new information). That would hand this puzzle its first certified, author-specific extraction scheme, which is precisely what it lacks. It is a standing watch item, not a search. For anyone tempted to price a brute force: there is none. The target is a uniformly random 256-bit integer unless the encoding is found, and 2^256 is not a number you spend money against. ## Sources - Announcement tweet, 2020-04-22 14:06:21 UTC, deleted from Twitter: <https://twitter.com/arweavep/status/1252961944807641090>. **Archived copy**, Internet Archive capture of 2020-05-02 17:38:35 UTC, which carries the full tweet text, the expanded Arweave link, the `data-time` timestamp and the reply thread: <https://web.archive.org/web/20200502173835/https://twitter.com/ArweaveP/status/1252961944807641090>. The Wayback CDX index lists roughly fifty captures of this URL between 2020-05-02 and 2022; the earliest is used here be",
+      "twitter_status_refs": 16
+    },
+    {
+      "url": "https://raw.githubusercontent.com/itsnex1s/crypto-puzzle-list/main/unsolved/arweave-puzzle-3-1000ar.md",
+      "fetch": {
+        "url": "https://raw.githubusercontent.com/itsnex1s/crypto-puzzle-list/main/unsolved/arweave-puzzle-3-1000ar.md",
+        "status": 200,
+        "bytes": 23823
+      },
+      "twitter_status_refs": 13
+    }
+  ],
+  "linked_status_fetches": [
+    {
+      "handle": "arweavep",
+      "id": "1253375599323856896",
+      "cdx": {
+        "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Ftwitter.com%2Farweavep%2Fstatus%2F1253375599323856896&output=json&filter=statuscode%3A200&fl=timestamp%2Coriginal%2Cstatuscode%2Cdigest&collapse=digest&limit=8&from=2020&to=2022",
+        "rows": 1
+      },
+      "record": {
+        "snapshot_url": "https://web.archive.org/web/20200430210602id_/https://twitter.com/ArweaveP/status/1253375599323856896",
+        "title": "Arweave Puzzle on Twitter: \"format does not matter… \"",
+        "descriptions": [
+          "“@afronomad_ format does not matter”"
+        ],
+        "text_projection": "Arweave Puzzle on Twitter: \"format does not matter… \" We've detected that JavaScript is disabled in your browser. Would you like to proceed to legacy Twitter? Yes Skip to content By using Twitter’s services you agree to our Cookies Use . We and our partners operate globally and use cookies, including for analytics, personalisation, and ads. Close Home Home Home, current page. About Search query Search Twitter Saved searches Remove In this conversation Verified account Protected Tweets @ Suggested users Verified account Protected Tweets @ Verified account Protected Tweets @ Language: English Bahasa Indonesia Bahasa Melayu Català Čeština Dansk Deutsch English UK Español Filipino Français Hrvatski Italiano Magyar Nederlands Norsk Polski Português Română Slovenčina Suomi Svenska Tiếng Việt Türkçe Ελληνικά Български език Русский Српски Українська мова עִבְרִית العربية فارسی मराठी हिन्दी বাংলা ગુજરાતી தமிழ் ಕನ್ನಡ ภาษาไทย 한국어 日本語 简体中文 繁體中文 Have an account? Log in Have an account? Remember me · Forgot password? New to Twitter? Sign up ArweaveP's profile Arweave Puzzle @ ArweaveP Tweets Arweave Puzzle @ ArweaveP Joined May 2019 Tweets © 2020 Twitter About Help Center Terms Privacy policy Imprint Cookies Ads info Dismiss Close Previous Next Close Go to a person's profile Saved searches Remove In this conversation Verified account Protected Tweets @ Suggested users Verified account Protected Tweets @ Verified account Protected Tweets @ Close Promote this Tweet Close Block Cancel Block Tweet with a location You can add location information to your Tweets, such as your city or precise location, from the web and via third-party applications. You always have the option to delete your Tweet location history. Learn more Turn on Not now Close Your lists Close Create a new list List name Description Under 100 characters, optional Privacy Public · Anyone can follow this list Private · Only you can access this list Save list Close Close Copy link to Tweet Here's the URL for this Tweet. Copy it to easily share with friends. Close Embed this Tweet Embed this Video Add this Tweet to your website by copying the code below. Learn more Add this video to your website by copying the code below. Learn more Hmm, there was a problem reaching the server. Try again? Include parent Tweet Include media By embedding Twitter content in your website or app, you are agreeing to the Twitter Developer Agreement and Developer Policy . Preview Close Why you're seeing this ad Close Log in to Twitter Remember me · Forgot password? Don't have an account? Sign up » Close Sign up for Twitter Not on Twitter? Sign up, tune into the things you care about, and get updates as they happen. Sign up Have an account? Log in » Close Two-way (sending and receiving) short codes: Country Code For customers of United States 40404 (any) Canada 21212 (any) United Kingdom 86444 Vodafone, Orange, 3, O2 Brazil 40404 Nextel, TIM Haiti 40404 Digicel, Voila Ireland 51210 Vodafone, O2 India 53000 Bharti Airtel, Videocon, Reliance Indonesia 89887 AXIS, 3, Telkomsel, Indosat, XL Axiata Italy 4880804 Wind 3424486444 Vodafone » See SMS short codes for other countries Close Confirmation Close Close Skip all Welcome home! This timeline is where you’ll spend most of your time, getting instant updates about what matters to you. Tweets not working for you? Hover over the profile pic and click the Following button to unfollow any account. Say a lot with a little When you see a Tweet you love, tap the heart — it lets the person who wrote it know you shared the love. Spread the word The fastest way to share someone else’s Tweet with your followers is with a Retweet. Tap the icon to send it instantly. Join the conversation Add your thoughts about any Tweet with a Reply. Find a topic you’re passionate about, and jump right in. Learn the latest Get instant insight into what people are talking about now. Get more of what you love Follow more accounts to get instant updates about topics you care about. Find what's happening See the latest conversations about any topic instantly. Never miss a Moment Catch up instantly on the best stories happening as they unfold. Back Next Next Tweet from user Arweave Puzzle ‏ @ ArweaveP Apr 22 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation There is 1 ETH hidden in https:// niktb5grm22p.arweave.net/CzITHnEIlkQw9S baX5futCzFrKk1qe_NwvWnIBmP2fY … Puzzle 11 . Please retweet to make more of these possible! # puzzle # steganography # arweave # cryptopuzzle pic.twitter.com/et046WDjZN 8 replies 30 retweets 34 likes Reply 8 Retweet 30 Retweeted 30 Like 34 Liked 34 🅐🅕🅡🅞 ⓝⓞⓜⓐⓓ ‏ @ afronomad_ Apr 23 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ ArweaveP What's the photo format. It'smnot JPG !? 1 reply 0 retweets 0 likes Reply 1 Retweet Retweeted Like Liked Arweave Puzzle ‏ @ ArweaveP Apr 23 Follow Follow @ ArweaveP Following Following @ ArweaveP Unfollow Unfollow @ ArweaveP Blocked Blocked @ ArweaveP Unblock Unblock @ ArweaveP Pending Pending follow request from @ ArweaveP Cancel Cancel your follow request to @ ArweaveP More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ afronomad_ format does not matter 10:30 AM - 23 Apr 2020 2 replies 0 retweets 0 likes Reply 2 Retweet Retweeted Like Liked 🅐🅕🅡🅞 ⓝⓞⓜⓐⓓ ‏ @ afronomad_ Apr 23 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ ArweaveP pic.twitter.com/feN4WUeMTf 0 replies 0 retweets 0 likes Reply Retweet Retweeted Like Liked Thanks. Twitter will use this to make your timeline better. Undo Undo New conversation Nguyen Hai Au ‏ @ haiaune Apr 25 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ ArweaveP @ afronomad_ Image hidden in image, but hard to find the password to decode hidden image, I just see some binary code 00110 0100001 1 reply 0 retweets 0 likes Reply 1 Retweet Retweeted Like Liked 🅐🅕🅡🅞 ⓝⓞⓜⓐⓓ ‏ @ afronomad_ Apr 26 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ haiaune pic.twitter.com/LGEQHwVPCS 0 replies 0 retweets 0 likes Reply Retweet Retweeted Like Liked End of conversation Back to top ↑ Loading seems to be taking a while. Twitter may be over capacity or experiencing a momentary hiccup. Try again or visit Twitter Status for more information. Promoted Tweet false © 2020 Twitter About Help Center Terms Privacy policy Imprint Cookies Ads info",
+        "linked_statuses": [
+          {
+            "handle": "arweavep",
+            "id": "1253375599323856896"
+          },
+          {
+            "handle": "ArweaveP",
+            "id": "1253375599323856896"
+          }
+        ],
+        "conversation_id": "1252961944807641090",
+        "item_id": "1252961944807641090",
+        "in_reply_to_status_id": null,
+        "screen_name": "ArweaveP",
+        "tweet_text_guess": "format does not matter… \"",
+        "generic_terms": [
+          "puzzle"
+        ],
+        "mechanism_terms": [
+          "date",
+          "read"
+        ],
+        "mentions_puzzle9": false,
+        "timestamp": "20200430210602",
+        "original_url": "https://twitter.com/ArweaveP/status/1253375599323856896",
+        "fetch": {
+          "url": "https://web.archive.org/web/20200430210602id_/https://twitter.com/ArweaveP/status/1253375599323856896",
+          "status": 200,
+          "bytes": 389939
+        }
+      }
+    },
+    {
+      "handle": "arweavep",
+      "id": "1253354733911359491",
+      "cdx": {
+        "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Ftwitter.com%2Farweavep%2Fstatus%2F1253354733911359491&output=json&filter=statuscode%3A200&fl=timestamp%2Coriginal%2Cstatuscode%2Cdigest&collapse=digest&limit=8&from=2020&to=2022",
+        "rows": 1
+      },
+      "record": {
+        "snapshot_url": "https://web.archive.org/web/20200430185132id_/https://twitter.com/ArweaveP/status/1253354733911359491",
+        "title": "Arweave Puzzle on Twitter: \"Like I specified, the private key is hidden in the image. One way to try is MEW: Access by Private Key 🤐 good luck!… \"",
+        "descriptions": [
+          "“@Kevin34755400 Like I specified, the private key is hidden in the image. One way to try is MEW: Access by Private Key 🤐 good luck!”"
+        ],
+        "text_projection": "Arweave Puzzle on Twitter: \"Like I specified, the private key is hidden in the image. One way to try is MEW: Access by Private Key 🤐 good luck!… \" We've detected that JavaScript is disabled in your browser. Would you like to proceed to legacy Twitter? Yes Skip to content By using Twitter’s services you agree to our Cookies Use . We and our partners operate globally and use cookies, including for analytics, personalisation, and ads. Close Home Home Home, current page. About Search query Search Twitter Saved searches Remove In this conversation Verified account Protected Tweets @ Suggested users Verified account Protected Tweets @ Verified account Protected Tweets @ Language: English Bahasa Indonesia Bahasa Melayu Català Čeština Dansk Deutsch English UK Español Filipino Français Hrvatski Italiano Magyar Nederlands Norsk Polski Português Română Slovenčina Suomi Svenska Tiếng Việt Türkçe Ελληνικά Български език Русский Српски Українська мова עִבְרִית العربية فارسی मराठी हिन्दी বাংলা ગુજરાતી தமிழ் ಕನ್ನಡ ภาษาไทย 한국어 日本語 简体中文 繁體中文 Have an account? Log in Have an account? Remember me · Forgot password? New to Twitter? Sign up ArweaveP's profile Arweave Puzzle @ ArweaveP Tweets Arweave Puzzle @ ArweaveP Joined May 2019 Tweets © 2020 Twitter About Help Center Terms Privacy policy Imprint Cookies Ads info Dismiss Close Previous Next Close Go to a person's profile Saved searches Remove In this conversation Verified account Protected Tweets @ Suggested users Verified account Protected Tweets @ Verified account Protected Tweets @ Close Promote this Tweet Close Block Cancel Block Tweet with a location You can add location information to your Tweets, such as your city or precise location, from the web and via third-party applications. You always have the option to delete your Tweet location history. Learn more Turn on Not now Close Your lists Close Create a new list List name Description Under 100 characters, optional Privacy Public · Anyone can follow this list Private · Only you can access this list Save list Close Close Copy link to Tweet Here's the URL for this Tweet. Copy it to easily share with friends. Close Embed this Tweet Embed this Video Add this Tweet to your website by copying the code below. Learn more Add this video to your website by copying the code below. Learn more Hmm, there was a problem reaching the server. Try again? Include parent Tweet Include media By embedding Twitter content in your website or app, you are agreeing to the Twitter Developer Agreement and Developer Policy . Preview Close Why you're seeing this ad Close Log in to Twitter Remember me · Forgot password? Don't have an account? Sign up » Close Sign up for Twitter Not on Twitter? Sign up, tune into the things you care about, and get updates as they happen. Sign up Have an account? Log in » Close Two-way (sending and receiving) short codes: Country Code For customers of United States 40404 (any) Canada 21212 (any) United Kingdom 86444 Vodafone, Orange, 3, O2 Brazil 40404 Nextel, TIM Haiti 40404 Digicel, Voila Ireland 51210 Vodafone, O2 India 53000 Bharti Airtel, Videocon, Reliance Indonesia 89887 AXIS, 3, Telkomsel, Indosat, XL Axiata Italy 4880804 Wind 3424486444 Vodafone » See SMS short codes for other countries Close Confirmation Close Close Skip all Welcome home! This timeline is where you’ll spend most of your time, getting instant updates about what matters to you. Tweets not working for you? Hover over the profile pic and click the Following button to unfollow any account. Say a lot with a little When you see a Tweet you love, tap the heart — it lets the person who wrote it know you shared the love. Spread the word The fastest way to share someone else’s Tweet with your followers is with a Retweet. Tap the icon to send it instantly. Join the conversation Add your thoughts about any Tweet with a Reply. Find a topic you’re passionate about, and jump right in. Learn the latest Get instant insight into what people are talking about now. Get more of what you love Follow more accounts to get instant updates about topics you care about. Find what's happening See the latest conversations about any topic instantly. Never miss a Moment Catch up instantly on the best stories happening as they unfold. Back Next Next Tweet from user Arweave Puzzle ‏ @ ArweaveP Apr 23 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation I understand some of you get a bit frustrated when you can't solve a puzzle. Maybe take it as a chance to learn alternative forms of storing a private key. I.e. how will an attacker know what's with a weird image in your email account? # cryptocurrency # privatekey # wallet 4 replies 0 retweets 10 likes Reply 4 Retweet Retweeted Like 10 Liked 10 Kevin ‏ @ Kevin34755400 Apr 23 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ ArweaveP Are we looking for a private key or will you send a prize once we tell you a secret phrase? 1 reply 0 retweets 0 likes Reply 1 Retweet Retweeted Like Liked Arweave Puzzle ‏ @ ArweaveP Apr 23 Follow Follow @ ArweaveP Following Following @ ArweaveP Unfollow Unfollow @ ArweaveP Blocked Blocked @ ArweaveP Unblock Unblock @ ArweaveP Pending Pending follow request from @ ArweaveP Cancel Cancel your follow request to @ ArweaveP More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ Kevin34755400 Like I specified, the private key is hidden in the image. One way to try is MEW: Access by Private Key good luck! 9:07 AM - 23 Apr 2020 0 replies 0 retweets 0 likes Reply Retweet Retweeted Like Liked Back to top ↑ Loading seems to be taking a while. Twitter may be over capacity or experiencing a momentary hiccup. Try again or visit Twitter Status for more information. Promoted Tweet false © 2020 Twitter About Help Center Terms Privacy policy Imprint Cookies Ads info",
+        "linked_statuses": [
+          {
+            "handle": "arweavep",
+            "id": "1253354733911359491"
+          },
+          {
+            "handle": "ArweaveP",
+            "id": "1253354733911359491"
+          }
+        ],
+        "conversation_id": "1253297784633122817",
+        "item_id": "1253297784633122817",
+        "in_reply_to_status_id": null,
+        "screen_name": "ArweaveP",
+        "tweet_text_guess": "Like I specified, the private key is hidden in the image. One way to try is MEW: Access by Private Key 🤐 good luck!… \"",
+        "generic_terms": [
+          "puzzle",
+          "solve"
+        ],
+        "mechanism_terms": [
+          "date",
+          "read"
+        ],
+        "mentions_puzzle9": false,
+        "timestamp": "20200430185132",
+        "original_url": "https://twitter.com/ArweaveP/status/1253354733911359491",
+        "fetch": {
+          "url": "https://web.archive.org/web/20200430185132id_/https://twitter.com/ArweaveP/status/1253354733911359491",
+          "status": 200,
+          "bytes": 356467
+        }
+      }
+    },
+    {
+      "handle": "arweavep",
+      "id": "1253297784633122817",
+      "cdx": {
+        "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Ftwitter.com%2Farweavep%2Fstatus%2F1253297784633122817&output=json&filter=statuscode%3A200&fl=timestamp%2Coriginal%2Cstatuscode%2Cdigest&collapse=digest&limit=8&from=2020&to=2022",
+        "rows": 6
+      },
+      "record": {
+        "snapshot_url": "https://web.archive.org/web/20200503002442id_/https://twitter.com/ArweaveP/status/1253297784633122817",
+        "title": "Arweave Puzzle on Twitter: \"I understand some of you get a bit frustrated when you can't solve a puzzle. Maybe take it as a chance to learn alternative forms of storing a private key. I.e. how will an attacker know what's with a weird image in your email account? #cryptocurrency #privatekey #wallet\"",
+        "descriptions": [
+          "“I understand some of you get a bit frustrated when you can't solve a puzzle. Maybe take it as a chance to learn alternative forms of storing a private key. I.e. how will an attacker know what's with a weird image in your email account? #cryptocurrency #privatekey #wallet”"
+        ],
+        "text_projection": "Arweave Puzzle on Twitter: \"I understand some of you get a bit frustrated when you can't solve a puzzle. Maybe take it as a chance to learn alternative forms of storing a private key. I.e. how will an attacker know what's with a weird image in your email account? #cryptocurrency #privatekey #wallet\" We've detected that JavaScript is disabled in your browser. Would you like to proceed to legacy Twitter? Yes Skip to content By using Twitter’s services you agree to our Cookies Use . We and our partners operate globally and use cookies, including for analytics, personalisation, and ads. Close Home Home Home, current page. About Search query Search Twitter Saved searches Remove In this conversation Verified account Protected Tweets @ Suggested users Verified account Protected Tweets @ Verified account Protected Tweets @ Language: English Bahasa Indonesia Bahasa Melayu Català Čeština Dansk Deutsch English UK Español Filipino Français Hrvatski Italiano Magyar Nederlands Norsk Polski Português Română Slovenčina Suomi Svenska Tiếng Việt Türkçe Ελληνικά Български език Русский Српски Українська мова עִבְרִית العربية فارسی मराठी हिन्दी বাংলা ગુજરાતી தமிழ் ಕನ್ನಡ ภาษาไทย 한국어 日本語 简体中文 繁體中文 Have an account? Log in Have an account? Remember me · Forgot password? New to Twitter? Sign up ArweaveP's profile Arweave Puzzle @ ArweaveP Tweets Arweave Puzzle @ ArweaveP Joined May 2019 Tweets © 2020 Twitter About Help Center Terms Privacy policy Imprint Cookies Ads info Dismiss Close Previous Next Close Go to a person's profile Saved searches Remove In this conversation Verified account Protected Tweets @ Suggested users Verified account Protected Tweets @ Verified account Protected Tweets @ Close Promote this Tweet Close Block Cancel Block Tweet with a location You can add location information to your Tweets, such as your city or precise location, from the web and via third-party applications. You always have the option to delete your Tweet location history. Learn more Turn on Not now Close Your lists Close Create a new list List name Description Under 100 characters, optional Privacy Public · Anyone can follow this list Private · Only you can access this list Save list Close Close Copy link to Tweet Here's the URL for this Tweet. Copy it to easily share with friends. Close Embed this Tweet Embed this Video Add this Tweet to your website by copying the code below. Learn more Add this video to your website by copying the code below. Learn more Hmm, there was a problem reaching the server. Try again? Include parent Tweet Include media By embedding Twitter content in your website or app, you are agreeing to the Twitter Developer Agreement and Developer Policy . Preview Close Why you're seeing this ad Close Log in to Twitter Remember me · Forgot password? Don't have an account? Sign up » Close Sign up for Twitter Not on Twitter? Sign up, tune into the things you care about, and get updates as they happen. Sign up Have an account? Log in » Close Two-way (sending and receiving) short codes: Country Code For customers of United States 40404 (any) Canada 21212 (any) United Kingdom 86444 Vodafone, Orange, 3, O2 Brazil 40404 Nextel, TIM Haiti 40404 Digicel, Voila Ireland 51210 Vodafone, O2 India 53000 Bharti Airtel, Videocon, Reliance Indonesia 89887 AXIS, 3, Telkomsel, Indosat, XL Axiata Italy 4880804 Wind 3424486444 Vodafone » See SMS short codes for other countries Close Confirmation Close Close Skip all Welcome home! This timeline is where you’ll spend most of your time, getting instant updates about what matters to you. Tweets not working for you? Hover over the profile pic and click the Following button to unfollow any account. Say a lot with a little When you see a Tweet you love, tap the heart — it lets the person who wrote it know you shared the love. Spread the word The fastest way to share someone else’s Tweet with your followers is with a Retweet. Tap the icon to send it instantly. Join the conversation Add your thoughts about any Tweet with a Reply. Find a topic you’re passionate about, and jump right in. Learn the latest Get instant insight into what people are talking about now. Get more of what you love Follow more accounts to get instant updates about topics you care about. Find what's happening See the latest conversations about any topic instantly. Never miss a Moment Catch up instantly on the best stories happening as they unfold. Back Next Next Tweet from user Arweave Puzzle ‏ @ ArweaveP Apr 23 Follow Follow @ ArweaveP Following Following @ ArweaveP Unfollow Unfollow @ ArweaveP Blocked Blocked @ ArweaveP Unblock Unblock @ ArweaveP Pending Pending follow request from @ ArweaveP Cancel Cancel your follow request to @ ArweaveP More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation I understand some of you get a bit frustrated when you can't solve a puzzle. Maybe take it as a chance to learn alternative forms of storing a private key. I.e. how will an attacker know what's with a weird image in your email account? # cryptocurrency # privatekey # wallet 5:20 AM - 23 Apr 2020 11 Likes 4 replies 0 retweets 11 likes Reply 4 Retweet Retweeted Like 11 Liked 11 Piotr Miogel ‏ @ PMiogel Apr 23 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ ArweaveP I just want to confirm: The key is stored within the image using some steganographic algorithm. The image is NOT used for private key generation 0 replies 0 retweets 1 like Reply Retweet Retweeted Like 1 Liked 1 Thanks. Twitter will use this to make your timeline better. Undo Undo Tony Garcia ‏ @ Tonyr51111488 Apr 23 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ ArweaveP Is there some sort of encryption when getting the information out of the photo? 0 replies 0 retweets 0 likes Reply Retweet Retweeted Like Liked Thanks. Twitter will use this to make your timeline better. Undo Undo Show more replies Back to top ↑ Loading seems to be taking a while. Twitter may be over capacity or experiencing a momentary hiccup. Try again or visit Twitter Status for more information. Promoted Tweet false © 2020 Twitter About Help Center Terms Privacy policy Imprint Cookies Ads info",
+        "linked_statuses": [
+          {
+            "handle": "arweavep",
+            "id": "1253297784633122817"
+          },
+          {
+            "handle": "ArweaveP",
+            "id": "1253297784633122817"
+          }
+        ],
+        "conversation_id": "1253297784633122817",
+        "item_id": "1253297784633122817",
+        "in_reply_to_status_id": null,
+        "screen_name": "ArweaveP",
+        "tweet_text_guess": "I understand some of you get a bit frustrated when you can't solve a puzzle. Maybe take it as a chance to learn alternative forms of storing a private key. I.e. how will an attacker know what's with a weird image in your email account? #cryptocurrency #privatekey #wallet\"",
+        "generic_terms": [
+          "puzzle",
+          "solve"
+        ],
+        "mechanism_terms": [
+          "date",
+          "read"
+        ],
+        "mentions_puzzle9": false,
+        "timestamp": "20200503002442",
+        "original_url": "https://twitter.com/ArweaveP/status/1253297784633122817",
+        "fetch": {
+          "url": "https://web.archive.org/web/20200503002442id_/https://twitter.com/ArweaveP/status/1253297784633122817",
+          "status": 200,
+          "bytes": 363203
+        }
+      }
+    },
+    {
+      "handle": "arweavep",
+      "id": "1253253461828931584",
+      "cdx": {
+        "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Ftwitter.com%2Farweavep%2Fstatus%2F1253253461828931584&output=json&filter=statuscode%3A200&fl=timestamp%2Coriginal%2Cstatuscode%2Cdigest&collapse=digest&limit=8&from=2020&to=2022",
+        "rows": 1
+      },
+      "record": {
+        "snapshot_url": "https://web.archive.org/web/20200501121921id_/https://twitter.com/ArweaveP/status/1253253461828931584",
+        "title": "Arweave Puzzle on Twitter: \"0xFF2142E98E09b5344994F9bEB9C56C95506B9F17 it is also included somewhere in the image 🧐… \"",
+        "descriptions": [
+          "“@SamuelKilelemb4 0xFF2142E98E09b5344994F9bEB9C56C95506B9F17 it is also included somewhere in the image 🧐”"
+        ],
+        "text_projection": "Arweave Puzzle on Twitter: \"0xFF2142E98E09b5344994F9bEB9C56C95506B9F17 it is also included somewhere in the image 🧐… \" We've detected that JavaScript is disabled in your browser. Would you like to proceed to legacy Twitter? Yes Skip to content By using Twitter’s services you agree to our Cookies Use . We and our partners operate globally and use cookies, including for analytics, personalisation, and ads. Close Home Home Home, current page. About Search query Search Twitter Saved searches Remove In this conversation Verified account Protected Tweets @ Suggested users Verified account Protected Tweets @ Verified account Protected Tweets @ Language: English Bahasa Indonesia Bahasa Melayu Català Čeština Dansk Deutsch English UK Español Filipino Français Hrvatski Italiano Magyar Nederlands Norsk Polski Português Română Slovenčina Suomi Svenska Tiếng Việt Türkçe Ελληνικά Български език Русский Српски Українська мова עִבְרִית العربية فارسی मराठी हिन्दी বাংলা ગુજરાતી தமிழ் ಕನ್ನಡ ภาษาไทย 한국어 日本語 简体中文 繁體中文 Have an account? Log in Have an account? Remember me · Forgot password? New to Twitter? Sign up ArweaveP's profile Arweave Puzzle @ ArweaveP Tweets Arweave Puzzle @ ArweaveP Joined May 2019 Tweets © 2020 Twitter About Help Center Terms Privacy policy Imprint Cookies Ads info Dismiss Close Previous Next Close Go to a person's profile Saved searches Remove In this conversation Verified account Protected Tweets @ Suggested users Verified account Protected Tweets @ Verified account Protected Tweets @ Close Promote this Tweet Close Block Cancel Block Tweet with a location You can add location information to your Tweets, such as your city or precise location, from the web and via third-party applications. You always have the option to delete your Tweet location history. Learn more Turn on Not now Close Your lists Close Create a new list List name Description Under 100 characters, optional Privacy Public · Anyone can follow this list Private · Only you can access this list Save list Close Close Copy link to Tweet Here's the URL for this Tweet. Copy it to easily share with friends. Close Embed this Tweet Embed this Video Add this Tweet to your website by copying the code below. Learn more Add this video to your website by copying the code below. Learn more Hmm, there was a problem reaching the server. Try again? Include parent Tweet Include media By embedding Twitter content in your website or app, you are agreeing to the Twitter Developer Agreement and Developer Policy . Preview Close Why you're seeing this ad Close Log in to Twitter Remember me · Forgot password? Don't have an account? Sign up » Close Sign up for Twitter Not on Twitter? Sign up, tune into the things you care about, and get updates as they happen. Sign up Have an account? Log in » Close Two-way (sending and receiving) short codes: Country Code For customers of United States 40404 (any) Canada 21212 (any) United Kingdom 86444 Vodafone, Orange, 3, O2 Brazil 40404 Nextel, TIM Haiti 40404 Digicel, Voila Ireland 51210 Vodafone, O2 India 53000 Bharti Airtel, Videocon, Reliance Indonesia 89887 AXIS, 3, Telkomsel, Indosat, XL Axiata Italy 4880804 Wind 3424486444 Vodafone » See SMS short codes for other countries Close Confirmation Close Close Skip all Welcome home! This timeline is where you’ll spend most of your time, getting instant updates about what matters to you. Tweets not working for you? Hover over the profile pic and click the Following button to unfollow any account. Say a lot with a little When you see a Tweet you love, tap the heart — it lets the person who wrote it know you shared the love. Spread the word The fastest way to share someone else’s Tweet with your followers is with a Retweet. Tap the icon to send it instantly. Join the conversation Add your thoughts about any Tweet with a Reply. Find a topic you’re passionate about, and jump right in. Learn the latest Get instant insight into what people are talking about now. Get more of what you love Follow more accounts to get instant updates about topics you care about. Find what's happening See the latest conversations about any topic instantly. Never miss a Moment Catch up instantly on the best stories happening as they unfold. Back Next Next Tweet from user Arweave Puzzle ‏ @ ArweaveP Apr 22 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation There is 1 ETH hidden in https:// niktb5grm22p.arweave.net/CzITHnEIlkQw9S baX5futCzFrKk1qe_NwvWnIBmP2fY … Puzzle 11 . Please retweet to make more of these possible! # puzzle # steganography # arweave # cryptopuzzle pic.twitter.com/et046WDjZN 8 replies 30 retweets 34 likes Reply 8 Retweet 30 Retweeted 30 Like 34 Liked 34 Samuel Kilelemba ‏ @ SamuelKilelemb4 Apr 23 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ ArweaveP Which address is the prize in? 1 reply 0 retweets 0 likes Reply 1 Retweet Retweeted Like Liked Arweave Puzzle ‏ @ ArweaveP Apr 23 Follow Follow @ ArweaveP Following Following @ ArweaveP Unfollow Unfollow @ ArweaveP Blocked Blocked @ ArweaveP Unblock Unblock @ ArweaveP Pending Pending follow request from @ ArweaveP Cancel Cancel your follow request to @ ArweaveP More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ SamuelKilelemb4 0xFF2142E98E09b5344994F9bEB9C56C95506B9F17 it is also included somewhere in the image 2:24 AM - 23 Apr 2020 1 Like 3 replies 0 retweets 1 like Reply 3 Retweet Retweeted Like 1 Liked 1 New conversation Lotfy ‏ @ Goovi2 Apr 23 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ ArweaveP @ SamuelKilelemb4 Where i don't see any need a magnifying glass :)) 1 reply 0 retweets 0 likes Reply 1 Retweet Retweeted Like Liked G ‏ @ mfgercinci Apr 24 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ Goovi2 @ ArweaveP @ SamuelKilelemb4 2tEXtcomment 0xFF2142E98E09b5344994F9bEB9C56C95506B9F17ìË @ E %tEXtdate:create 2020-03-30T11:38:07+03:00áî4¹ %tEXtdate:modify 2020-03-30T11:34:44+03:00?-xì !tEXtCreation Time 2020:04:24 00:15:54 it says in here. 0 replies 0 retweets 0 likes Reply Retweet Retweeted Like Liked End of conversation Nguyen Hai Au ‏ @ haiaune Apr 23 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ ArweaveP @ SamuelKilelemb4 Password is binary, need convert to string, is it right? 0 replies 0 retweets 0 likes Reply Retweet Retweeted Like Liked Thanks. Twitter will use this to make your timeline better. Undo Undo Can Gurel ‏ @ cangurel91 Apr 23 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ ArweaveP @ SamuelKilelemb4 2tEXtcomment? 0 replies 0 retweets 0 likes Reply Retweet Retweeted Like Liked Thanks. Twitter will use this to make your timeline better. Undo Undo Back to top ↑ Loading seems to be taking a while. Twitter may be over capacity or experiencing a momentary hiccup. Try again or visit Twitter Status for more information. Promoted Tweet false © 2020 Twitter About Help Center Terms Privacy policy Imprint Cookies Ads info",
+        "linked_statuses": [
+          {
+            "handle": "arweavep",
+            "id": "1253253461828931584"
+          },
+          {
+            "handle": "ArweaveP",
+            "id": "1253253461828931584"
+          }
+        ],
+        "conversation_id": "1252961944807641090",
+        "item_id": "1252961944807641090",
+        "in_reply_to_status_id": null,
+        "screen_name": "ArweaveP",
+        "tweet_text_guess": "0xFF2142E98E09b5344994F9bEB9C56C95506B9F17 it is also included somewhere in the image 🧐… \"",
+        "generic_terms": [
+          "puzzle"
+        ],
+        "mechanism_terms": [
+          "date",
+          "read"
+        ],
+        "mentions_puzzle9": false,
+        "timestamp": "20200501121921",
+        "original_url": "https://twitter.com/ArweaveP/status/1253253461828931584",
+        "fetch": {
+          "url": "https://web.archive.org/web/20200501121921id_/https://twitter.com/ArweaveP/status/1253253461828931584",
+          "status": 200,
+          "bytes": 409043
+        }
+      }
+    },
+    {
+      "handle": "ArweaveP",
+      "id": "1252961944807641090",
+      "cdx": {
+        "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Ftwitter.com%2FArweaveP%2Fstatus%2F1252961944807641090&output=json&filter=statuscode%3A200&fl=timestamp%2Coriginal%2Cstatuscode%2Cdigest&collapse=digest&limit=8&from=2020&to=2022",
+        "rows": 8
+      },
+      "record": {
+        "snapshot_url": "https://web.archive.org/web/20200502173835id_/https://twitter.com/ArweaveP/status/1252961944807641090",
+        "title": "Arweave Puzzle on Twitter: \"There is 1 ETH hidden in https://t.co/wyyxPDtXDH Puzzle 11 🧩. Please retweet to make more of these possible! #puzzle #steganography #arweave #cryptopuzzle… https://t.co/8llFe3yvq9\"",
+        "descriptions": [
+          "“There is 1 ETH hidden in https://t.co/wyyxPDtXDH Puzzle 11 🧩. Please retweet to make more of these possible! #puzzle #steganography #arweave #cryptopuzzle”"
+        ],
+        "text_projection": "Arweave Puzzle on Twitter: \"There is 1 ETH hidden in https://t.co/wyyxPDtXDH Puzzle 11 🧩. Please retweet to make more of these possible! #puzzle #steganography #arweave #cryptopuzzle… https://t.co/8llFe3yvq9\" We've detected that JavaScript is disabled in your browser. Would you like to proceed to legacy Twitter? Yes Skip to content By using Twitter’s services you agree to our Cookies Use . We and our partners operate globally and use cookies, including for analytics, personalisation, and ads. Close Home Home Home, current page. About Search query Search Twitter Saved searches Remove In this conversation Verified account Protected Tweets @ Suggested users Verified account Protected Tweets @ Verified account Protected Tweets @ Language: English Bahasa Indonesia Bahasa Melayu Català Čeština Dansk Deutsch English UK Español Filipino Français Hrvatski Italiano Magyar Nederlands Norsk Polski Português Română Slovenčina Suomi Svenska Tiếng Việt Türkçe Ελληνικά Български език Русский Српски Українська мова עִבְרִית العربية فارسی मराठी हिन्दी বাংলা ગુજરાતી தமிழ் ಕನ್ನಡ ภาษาไทย 한국어 日本語 简体中文 繁體中文 Have an account? Log in Have an account? Remember me · Forgot password? New to Twitter? Sign up ArweaveP's profile Arweave Puzzle @ ArweaveP Tweets Arweave Puzzle @ ArweaveP Joined May 2019 Tweets © 2020 Twitter About Help Center Terms Privacy policy Imprint Cookies Ads info Dismiss Close Previous Next Close Go to a person's profile Saved searches Remove In this conversation Verified account Protected Tweets @ Suggested users Verified account Protected Tweets @ Verified account Protected Tweets @ Close Promote this Tweet Close Block Cancel Block Tweet with a location You can add location information to your Tweets, such as your city or precise location, from the web and via third-party applications. You always have the option to delete your Tweet location history. Learn more Turn on Not now Close Your lists Close Create a new list List name Description Under 100 characters, optional Privacy Public · Anyone can follow this list Private · Only you can access this list Save list Close Close Copy link to Tweet Here's the URL for this Tweet. Copy it to easily share with friends. Close Embed this Tweet Embed this Video Add this Tweet to your website by copying the code below. Learn more Add this video to your website by copying the code below. Learn more Hmm, there was a problem reaching the server. Try again? Include parent Tweet Include media By embedding Twitter content in your website or app, you are agreeing to the Twitter Developer Agreement and Developer Policy . Preview Close Why you're seeing this ad Close Log in to Twitter Remember me · Forgot password? Don't have an account? Sign up » Close Sign up for Twitter Not on Twitter? Sign up, tune into the things you care about, and get updates as they happen. Sign up Have an account? Log in » Close Two-way (sending and receiving) short codes: Country Code For customers of United States 40404 (any) Canada 21212 (any) United Kingdom 86444 Vodafone, Orange, 3, O2 Brazil 40404 Nextel, TIM Haiti 40404 Digicel, Voila Ireland 51210 Vodafone, O2 India 53000 Bharti Airtel, Videocon, Reliance Indonesia 89887 AXIS, 3, Telkomsel, Indosat, XL Axiata Italy 4880804 Wind 3424486444 Vodafone » See SMS short codes for other countries Close Confirmation Close Close Skip all Welcome home! This timeline is where you’ll spend most of your time, getting instant updates about what matters to you. Tweets not working for you? Hover over the profile pic and click the Following button to unfollow any account. Say a lot with a little When you see a Tweet you love, tap the heart — it lets the person who wrote it know you shared the love. Spread the word The fastest way to share someone else’s Tweet with your followers is with a Retweet. Tap the icon to send it instantly. Join the conversation Add your thoughts about any Tweet with a Reply. Find a topic you’re passionate about, and jump right in. Learn the latest Get instant insight into what people are talking about now. Get more of what you love Follow more accounts to get instant updates about topics you care about. Find what's happening See the latest conversations about any topic instantly. Never miss a Moment Catch up instantly on the best stories happening as they unfold. Back Next Next Tweet from user Arweave Puzzle ‏ @ ArweaveP Apr 22 Follow Follow @ ArweaveP Following Following @ ArweaveP Unfollow Unfollow @ ArweaveP Blocked Blocked @ ArweaveP Unblock Unblock @ ArweaveP Pending Pending follow request from @ ArweaveP Cancel Cancel your follow request to @ ArweaveP More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation There is 1 ETH hidden in https:// niktb5grm22p.arweave.net/CzITHnEIlkQw9S baX5futCzFrKk1qe_NwvWnIBmP2fY … Puzzle 11 . Please retweet to make more of these possible! # puzzle # steganography # arweave # cryptopuzzle pic.twitter.com/et046WDjZN 7:06 AM - 22 Apr 2020 30 Retweets 34 Likes 8 replies 30 retweets 34 likes Reply 8 Retweet 30 Retweeted 30 Like 34 Liked 34 New conversation 🅐🅕🅡🅞 ⓝⓞⓜⓐⓓ ‏ @ afronomad_ Apr 23 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ ArweaveP What's the photo format. It'smnot JPG !? 1 reply 0 retweets 0 likes Reply 1 Retweet Retweeted Like Liked Arweave Puzzle ‏ @ ArweaveP Apr 23 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ afronomad_ format does not matter 2 replies 0 retweets 0 likes Reply 2 Retweet Retweeted Like Liked 1 more reply New conversation Samuel Kilelemba ‏ @ SamuelKilelemb4 Apr 23 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ ArweaveP Which address is the prize in? 1 reply 0 retweets 0 likes Reply 1 Retweet Retweeted Like Liked Arweave Puzzle ‏ @ ArweaveP Apr 23 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ SamuelKilelemb4 0xFF2142E98E09b5344994F9bEB9C56C95506B9F17 it is also included somewhere in the image 3 replies 0 retweets 1 like Reply 3 Retweet Retweeted Like 1 Liked 1 2 more replies Jordan ‏ @ dankslimshady Apr 22 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ ArweaveP lol what 0 replies 0 retweets 0 likes Reply Retweet Retweeted Like Liked Thanks. Twitter will use this to make your timeline better. Undo Undo Nguyen Hai Au ‏ @ haiaune Apr 22 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ ArweaveP Any hint - Is it binary 0 replies 0 retweets 0 likes Reply Retweet Retweeted Like Liked Thanks. Twitter will use this to make your timeline better. Undo Undo New conversation Paskal S ‏ @ DJPascimix Apr 24 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ ArweaveP Can we get another hint? 1 reply 0 retweets 0 likes Reply 1 Retweet Retweeted Like Liked Samuel Kilelemba ‏ @ SamuelKilelemb4 8h 8 hours ago More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ DJPascimix @ ArweaveP @ ArweaveP Another hint would be appreciated 0 replies 0 retweets 0 likes Reply Retweet Retweeted Like Liked End of conversation Judies ‏ @ Judiesjude Apr 28 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ ArweaveP scholar ? 0 replies 0 retweets 0 likes Reply Retweet Retweeted Like Liked Thanks. Twitter will use this to make your timeline better. Undo Undo Can Gurel ‏ @ cangurel91 Apr 25 More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation Replying to @ ArweaveP still unsolved? 0 replies 0 retweets 0 likes Reply Retweet Retweeted Like Liked Thanks. Twitter will use this to make your timeline better. Undo Undo Back to top ↑ Loading seems to be taking a while. Twitter may be over capacity or experiencing a momentary hiccup. Try again or visit Twitter Status for more information. Promoted Tweet false © 2020 Twitter About Help Center Terms Privacy policy Imprint Cookies Ads info",
+        "linked_statuses": [
+          {
+            "handle": "arweavep",
+            "id": "1252961944807641090"
+          },
+          {
+            "handle": "ArweaveP",
+            "id": "1252961944807641090"
+          }
+        ],
+        "conversation_id": "1252961944807641090",
+        "item_id": "1252961944807641090",
+        "in_reply_to_status_id": null,
+        "screen_name": "ArweaveP",
+        "tweet_text_guess": "There is 1 ETH hidden in https://t.co/wyyxPDtXDH Puzzle 11 🧩. Please retweet to make more of these possible! #puzzle #steganography #arweave #cryptopuzzle… https://t.co/8llFe3yvq9\"",
+        "generic_terms": [
+          "puzzle"
+        ],
+        "mechanism_terms": [
+          "date",
+          "read"
+        ],
+        "mentions_puzzle9": false,
+        "timestamp": "20200502173835",
+        "original_url": "https://twitter.com/ArweaveP/status/1252961944807641090",
+        "fetch": {
+          "url": "https://web.archive.org/web/20200502173835id_/https://twitter.com/ArweaveP/status/1252961944807641090",
+          "status": 200,
+          "bytes": 442404
+        }
+      }
+    },
+    {
+      "handle": "arweavep",
+      "id": "1235199397371277315",
+      "cdx": {
+        "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Ftwitter.com%2Farweavep%2Fstatus%2F1235199397371277315&output=json&filter=statuscode%3A200&fl=timestamp%2Coriginal%2Cstatuscode%2Cdigest&collapse=digest&limit=8&from=2020&to=2022",
+        "rows": 5
+      },
+      "record": {
+        "snapshot_url": "https://web.archive.org/web/20200304134933id_/https://twitter.com/ArweaveP/status/1235199397371277315",
+        "title": "Arweave Puzzle on Twitter: \"The list of unsolved #Arweave puzzles ordered by difficulty probably looks like: 3, 9, 8, 5 ,7\"",
+        "descriptions": [
+          "“The list of unsolved #Arweave puzzles ordered by difficulty probably looks like: 3, 9, 8, 5 ,7”"
+        ],
+        "text_projection": "Arweave Puzzle on Twitter: \"The list of unsolved #Arweave puzzles ordered by difficulty probably looks like: 3, 9, 8, 5 ,7\" We've detected that JavaScript is disabled in your browser. Would you like to proceed to legacy Twitter? Yes Skip to content By using Twitter’s services you agree to our Cookies Use . We and our partners operate globally and use cookies, including for analytics, personalisation, and ads. Close Home Home Home, current page. About Search query Search Twitter Saved searches Remove In this conversation Verified account Protected Tweets @ Suggested users Verified account Protected Tweets @ Verified account Protected Tweets @ Language: English Bahasa Indonesia Bahasa Melayu Català Čeština Dansk Deutsch English UK Español Filipino Français Hrvatski Italiano Magyar Nederlands Norsk Polski Português Română Slovenčina Suomi Svenska Tiếng Việt Türkçe Ελληνικά Български език Русский Српски Українська мова עִבְרִית العربية فارسی मराठी हिन्दी বাংলা ગુજરાતી தமிழ் ಕನ್ನಡ ภาษาไทย 한국어 日本語 简体中文 繁體中文 Have an account? Log in Have an account? Remember me · Forgot password? New to Twitter? Sign up ArweaveP's profile Arweave Puzzle @ ArweaveP Tweets Arweave Puzzle @ ArweaveP Joined May 2019 Tweets © 2020 Twitter About Help Center Terms Privacy policy Imprint Cookies Ads info Dismiss Close Previous Next Close Go to a person's profile Saved searches Remove In this conversation Verified account Protected Tweets @ Suggested users Verified account Protected Tweets @ Verified account Protected Tweets @ Close Promote this Tweet Close Block Cancel Block Tweet with a location You can add location information to your Tweets, such as your city or precise location, from the web and via third-party applications. You always have the option to delete your Tweet location history. Learn more Turn on Not now Close Your lists Close Create a new list List name Description Under 100 characters, optional Privacy Public · Anyone can follow this list Private · Only you can access this list Save list Close Close Copy link to Tweet Here's the URL for this Tweet. Copy it to easily share with friends. Close Embed this Tweet Embed this Video Add this Tweet to your website by copying the code below. Learn more Add this video to your website by copying the code below. Learn more Hmm, there was a problem reaching the server. Try again? Include parent Tweet Include media By embedding Twitter content in your website or app, you are agreeing to the Twitter Developer Agreement and Developer Policy . Preview Close Why you're seeing this ad Close Log in to Twitter Remember me · Forgot password? Don't have an account? Sign up » Close Sign up for Twitter Not on Twitter? Sign up, tune into the things you care about, and get updates as they happen. Sign up Have an account? Log in » Close Two-way (sending and receiving) short codes: Country Code For customers of United States 40404 (any) Canada 21212 (any) United Kingdom 86444 Vodafone, Orange, 3, O2 Brazil 40404 Nextel, TIM Haiti 40404 Digicel, Voila Ireland 51210 Vodafone, O2 India 53000 Bharti Airtel, Videocon, Reliance Indonesia 89887 AXIS, 3, Telkomsel, Indosat, XL Axiata Italy 4880804 Wind 3424486444 Vodafone » See SMS short codes for other countries Close Confirmation Close Close Skip all Welcome home! This timeline is where you’ll spend most of your time, getting instant updates about what matters to you. Tweets not working for you? Hover over the profile pic and click the Following button to unfollow any account. Say a lot with a little When you see a Tweet you love, tap the heart — it lets the person who wrote it know you shared the love. Spread the word The fastest way to share someone else’s Tweet with your followers is with a Retweet. Tap the icon to send it instantly. Join the conversation Add your thoughts about any Tweet with a Reply. Find a topic you’re passionate about, and jump right in. Learn the latest Get instant insight into what people are talking about now. Get more of what you love Follow more accounts to get instant updates about topics you care about. Find what's happening See the latest conversations about any topic instantly. Never miss a Moment Catch up instantly on the best stories happening as they unfold. Back Next Next Tweet from user Arweave Puzzle ‏ @ ArweaveP 5m 5 minutes ago Follow Follow @ ArweaveP Following Following @ ArweaveP Unfollow Unfollow @ ArweaveP Blocked Blocked @ ArweaveP Unblock Unblock @ ArweaveP Pending Pending follow request from @ ArweaveP Cancel Cancel your follow request to @ ArweaveP More Copy link to Tweet Embed Tweet Report Tweet Report NetzDG Violation The list of unsolved # Arweave puzzles ordered by difficulty probably looks like: 3, 9, 8, 5 ,7 5:44 AM - 4 Mar 2020 0 replies 0 retweets 0 likes Reply Retweet Retweeted Like Liked Back to top ↑ Loading seems to be taking a while. Twitter may be over capacity or experiencing a momentary hiccup. Try again or visit Twitter Status for more information. Promoted Tweet false © 2020 Twitter About Help Center Terms Privacy policy Imprint Cookies Ads info",
+        "linked_statuses": [
+          {
+            "handle": "arweavep",
+            "id": "1235199397371277315"
+          },
+          {
+            "handle": "ArweaveP",
+            "id": "1235199397371277315"
+          }
+        ],
+        "conversation_id": "1235199397371277315",
+        "item_id": "1235199397371277315",
+        "in_reply_to_status_id": null,
+        "screen_name": "ArweaveP",
+        "tweet_text_guess": "The list of unsolved #Arweave puzzles ordered by difficulty probably looks like: 3, 9, 8, 5 ,7\"",
+        "generic_terms": [
+          "puzzle",
+          "solve"
+        ],
+        "mechanism_terms": [
+          "date",
+          "order",
+          "read"
+        ],
+        "mentions_puzzle9": false,
+        "timestamp": "20200304134933",
+        "original_url": "https://twitter.com/ArweaveP/status/1235199397371277315",
+        "fetch": {
+          "url": "https://web.archive.org/web/20200304134933id_/https://twitter.com/ArweaveP/status/1235199397371277315",
+          "status": 200,
+          "bytes": 342450
+        }
+      }
+    },
+    {
+      "handle": "arweavep",
+      "id": "1177235139035836417",
+      "cdx": {
+        "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Ftwitter.com%2Farweavep%2Fstatus%2F1177235139035836417&output=json&filter=statuscode%3A200&fl=timestamp%2Coriginal%2Cstatuscode%2Cdigest&collapse=digest&limit=8&from=2020&to=2022",
+        "rows": 0
+      },
+      "record": null
+    },
+    {
+      "handle": "arweavep",
+      "id": "1177233799752683526",
+      "cdx": {
+        "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Ftwitter.com%2Farweavep%2Fstatus%2F1177233799752683526&output=json&filter=statuscode%3A200&fl=timestamp%2Coriginal%2Cstatuscode%2Cdigest&collapse=digest&limit=8&from=2020&to=2022",
+        "rows": 0
+      },
+      "record": null
+    },
+    {
+      "handle": "arweavep",
+      "id": "1152887601529073665",
+      "cdx": {
+        "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='web.archive.org', port=443): Read timed out. (read timeout=20)\"))",
+        "query": {
+          "url": "https://twitter.com/arweavep/status/1152887601529073665",
+          "output": "json",
+          "filter": "statuscode:200",
+          "fl": "timestamp,original,statuscode,digest",
+          "collapse": "digest",
+          "limit": "8",
+          "from": "2020",
+          "to": "2022"
+        }
+      },
+      "record": null
+    },
+    {
+      "handle": "arweavep",
+      "id": "1132936723162378240",
+      "cdx": {
+        "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Ftwitter.com%2Farweavep%2Fstatus%2F1132936723162378240&output=json&filter=statuscode%3A200&fl=timestamp%2Coriginal%2Cstatuscode%2Cdigest&collapse=digest&limit=8&from=2020&to=2022",
+        "rows": 8
+      },
+      "record": {
+        "snapshot_url": "https://web.archive.org/web/20210411071341id_/https://twitter.com/ArweaveP/status/1132936723162378240",
+        "title": "Arweave Puzzle Twitterissä: \"Puzzle #3 https://t.co/YdMBex582M\"",
+        "descriptions": [
+          "“Puzzle #3 https://t.co/YdMBex582M”"
+        ],
+        "text_projection": "Arweave Puzzle Twitterissä: \"Puzzle #3 https://t.co/YdMBex582M\" Havaitsimme, ettei JavaScript ole käytössä selaimessasi. Haluaisitko siirtyä Twitterin vanhalle alustalle? Kyllä Siirry sisältöön Käyttämällä Twitterin palveluita hyväksyt evästeiden käytön . Toimimme yhteistyökumppaneidemme kanssa kansainvälisesti ja käytämme evästeitä muun muassa tilastoihin, mukauttamiseen ja mainoksiin. Sulje Etusivu Etusivu Etusivu, nykyinen sivu. Tietoja Hakulauseke Hae Twitteristä Tallennetut haut Poista Tässä keskustelussa Varmennettu tili Suojatut twiitit @ Ehdotetut käyttäjät Varmennettu tili Suojatut twiitit @ Varmennettu tili Suojatut twiitit @ Kieli: suomi Bahasa Indonesia Bahasa Melayu Català Čeština Dansk Deutsch English English UK Español Filipino Français Hrvatski Italiano Magyar Nederlands Norsk Polski Português Română Slovenčina Svenska Tiếng Việt Türkçe Ελληνικά Български език Русский Српски Українська мова עִבְרִית العربية فارسی मराठी हिन्दी বাংলা ગુજરાતી தமிழ் ಕನ್ನಡ ภาษาไทย 한국어 日本語 简体中文 繁體中文 Onko sinulla tili? Kirjaudu sisään Onko sinulla tili? Muista minut · Unohditko salasanasi? Uusi Twitterissä? Rekisteröidy Käyttäjän ArweaveP profiili Arweave Puzzle @ ArweaveP Tweets Arweave Puzzle @ ArweaveP Liittynyt toukokuu 2019 Tweets © 2021 Twitter Tietoja Ohjekeskus Ehdot Yksityisyyskäytäntö Evästeet Mainosten tiedot Hylkää Sulje Edellinen Seuraava Sulje Siirry henkilön profiiliin Tallennetut haut Poista Tässä keskustelussa Varmennettu tili Suojatut twiitit @ Ehdotetut käyttäjät Varmennettu tili Suojatut twiitit @ Varmennettu tili Suojatut twiitit @ Sulje Mainosta tätä twiittiä Sulje Estä Peruuta Estä Twiittaa sijainti ilmoittaen Voit lisätä twiitteihisi sijainnin, esimerkiksi kaupungin tai tarkemman paikan, verkosta ja kolmannen osapuolen sovellusten kautta. Halutessasi voit poistaa twiittisi sijaintihistorian myöhemmin. Lue lisää Ota käyttöön Ei nyt Sulje Listasi Sulje Luo uusi lista Listan nimi Kuvaus Alle 100 merkkiä, valinnainen Yksityisyys Julkinen · Kuka tahansa voi seurata tätä listaa Yksityinen · Vain sinulla on pääsy tähän listaan Tallenna lista Sulje Sulje Kopioi linkki twiittiin Tässä on tämän twiitin URL-osoite. Kopioi se jaettavaksi helposti ystävillesi. Sulje Upota tämä twiitti Embed this Video Lisää tämä twiitti verkkosivustollesi kopioimalla alla oleva koodi. Lue lisää Lisää tämä video verkkosivustollesi kopioimalla alla oleva koodi. Lue lisää Hmm, palvelinyhteydessä oli ongelmia. Yritä uudelleen? Sisällytä alkuperäinen twiitti Sisällytä mediasisältö Upottamalla Twitter-sisältöä sivustollesi tai sovellukseesi hyväksyt Twitterin kehittäjäsopimuksen ja kehittäjäkäytännön . Esikatselu Sulje Miksi näet tämän mainoksen Sulje Kirjaudu sisään Twitteriin Muista minut · Unohditko salasanasi? Eikö sinulla ole tiliä? Rekisteröidy » Sulje Rekisteröidy Twitteriin Etkö ole Twitterissä? Rekisteröity, virittäydy seuraamaan asioita, joista välität ja vastaanota päivityksiä tapahtumista. Rekisteröidy Onko sinulla tili? Kirjaudu sisään » Sulje Kaksisuuntaiset (lähetys ja vastaanotto) lyhytnumerot: Maa Koodi Asiakkaille yrityksessä Yhdysvallat 40404 (mikä tahansa) Kanada 21212 (mikä tahansa) Yhdistynyt kuningaskunta 86444 Vodafone, Orange, 3, O2 Brasilia 40404 Nextel, TIM Haiti 40404 Digicel, Voila Irlanti 51210 Vodafone, O2 Intia 53000 Bharti Airtel, Videocon, Reliance Indonesia 89887 AXIS, 3, Telkomsel, Indosat, XL Axiata Italia 4880804 Wind 3424486444 Vodafone » Näytä muiden maiden lyhytnumerot tekstiviesteille Sulje Vahvistus Sulje Sulje Ohita kaikki Tervetuloa kotiin! Tällä aikajanalla vietät suurimman osan ajastasi ja saat välittömiä päivityksiä sinulle tärkeistä asioista. Eivätkö twiitit ole mieleesi? Siirrä osoitin profiilikuvan päälle ja napsauta Seurataan-painiketta lopettaaksesi tilien seuraamisen. Sano paljon pienellä teolla Kun näet twiitin, jota rakastat, napauta sydäntä — siten voit kertoa twiitin kirjoittaneelle henkilölle jakavasi rakkautta. Jaa sanomaa Nopein tapa jakaa jonkun muun twiitti seuraajillesi on uudelleentwiittaus. Napauta kuvaketta lähettääksesi sen heti. Liity keskusteluun Lisää ajatuksesi twiittiin vastaamalla. Etsi sinua kiinnostava aihe ja hyppää mukaan keskusteluun. Pysy ajan tasalla Näe välittömät päivitykset siitä, mistä ihmiset puhuvat juuri nyt. Näe enemmän sitä, mitä rakastat Seuraa lisää tilejä nähdäksesi välittömät päivitykset sinua kiinnostavista aiheista. Selvitä, mitä tapahtuu Näe mihin tahansa aiheeseen liittyvät viimeisimmät keskustelut välittömästi. Älä jää paitsi hetkestäkään Pysy ajan tasalla parhaista tarinoista niiden tapahtuessa. Takaisin Seuraava Seuraava twiitti käyttäjältä Arweave Puzzle ‏ @ ArweaveP 27. toukok. 2019 Seuraa Seuraa käyttäjää @ ArweaveP Seurataan Seurataan käyttäjää @ ArweaveP Älä seuraa Älä seuraa käyttäjää @ ArweaveP Estetty Estetty @ ArweaveP Poista esto Poista esto käyttäjältä @ ArweaveP Odottaa Odottava seuraamispyyntö käyttäjältä @ ArweaveP Peruuta Peruuta seuraamispyyntösi käyttäjälle @ ArweaveP Enemmän Kopioi linkki twiittiin Upota twiitti Puzzle #3 https:// arweave.net/VLJIGuTJewofKx 8ad4JYQs93nEuGnkgjrIt_Sd2QPYw … 2.08 - 27. toukok. 2019 1 uudelleentwiittaus 7 tykkäystä 11 vastausta 1 uudelleentwiittaus 7 tykkäystä Vastaa 11 Uudelleentwiittaa 1 Uudelleentwiitattu 1 Tykkää 7 Tykätty 7 Uusi keskustelu Arweave Puzzle ‏ @ ArweaveP 21. heinäk. 2019 Enemmän Kopioi linkki twiittiin Upota twiitti Did anybody count the dots? 5 vastausta 0 uudelleentwiittausta 1 tykkäys Vastaa 5 Uudelleentwiittaa Uudelleentwiitattu Tykkää 1 Tykätty 1 Näytä tämä ketju Arweave Puzzle ‏ @ ArweaveP 26. syysk. 2019 Enemmän Kopioi linkki twiittiin Upota twiitti With N.1.7.0.0 release, third pic became obsolete 2 vastausta 0 uudelleentwiittausta 4 tykkäystä Vastaa 2 Uudelleentwiittaa Uudelleentwiitattu Tykkää 4 Tykätty 4 Näytä tämä ketju Keskustelun loppu Saitama ‏ @ I__Saitama__I 27. toukok. 2019 Enemmän Kopioi linkki twiittiin Upota twiitti Vastauksena käyttäjälle @ ArweaveP Where to start just saw it now 11h after post but still no one managed to do it 0 vastausta 0 uudelleentwiittausta 0 tykkäystä Vastaa Uudelleentwiittaa Uudelleentwiitattu Tykkää Tykätty Kiitos. Käytämme tätä aikajanasi parantamiseen. Kumoa Kumoa Uusi keskustelu StatsLance ‏ @ StatsLance 25. heinäk. 2019 Enemmän Kopioi linkki twiittiin Upota twiitti Vastauksena käyttäjälle @ ArweaveP any clue on this? pic.twitter.com/cAwQO3bUo3 1 vastaus 0 uudelleentwiittausta 0 tykkäystä Vastaa 1 Uudelleentwiittaa Uudelleentwiitattu Tykkää Tykätty kush bitt ‏ @ THEbit3 6. tammik. 2020 Enemmän Kopioi linkki twiittiin Upota twiitti Vastauksena käyttäjille @ StatsLance ja @ ArweaveP Lol what is this now 0 vastausta 0 uudelleentwiittausta 0 tykkäystä Vastaa Uudelleentwiittaa Uudelleentwiitattu Tykkää Tykätty Keskustelun loppu Голос безмолвия ‏ @ s_immortal 16. tammik. 2020 Enemmän Kopioi linkki twiittiin Upota twiitti Vastauksena käyttäjälle @ ArweaveP I am glad that there are other unsolved puzzles, there will be something to do on the weekend 0 vastausta 0 uudelleentwiittausta 0 tykkäystä Vastaa Uudelleentwiittaa Uudelleentwiitattu Tykkää Tykätty Kiitos. Käytämme tätä aikajanasi parantamiseen. Kumoa Kumoa Chase Gould ‏ @ ChaseGould 6. helmik. 2020 Enemmän Kopioi linkki twiittiin Upota twiitti Vastauksena käyttäjälle @ ArweaveP I can't believe I just found this yesterday. I've got a ton of ground to make up. I think im getting close on #3. How about a hint since it's been so long? On the first one.... Ya know, the random squigglies 0 vastausta 0 uudelleentwiittausta 0 tykkäystä Vastaa Uudelleentwiittaa Uudelleentwiitattu Tykkää Tykätty Kiitos. Käytämme tätä aikajanasi parantamiseen. Kumoa Kumoa mapl3sn0ws ‏ @ mapl3sn0ws 19. kesäk. 2020 Enemmän Kopioi linkki twiittiin Upota twiitti Vastauksena käyttäjälle @ ArweaveP What arweave mail addy can we send a message to about this puzzle #3 ? 0 vastausta 0 uudelleentwiittausta 0 tykkäystä Vastaa Uudelleentwiittaa Uudelleentwiitattu Tykkää Tykätty Kiitos. Käytämme tätä aikajanasi parantamiseen. Kumoa Kumoa Maxim ‏ @ MisterMaxim 3. syysk. 2020 Enemmän Kopioi linkki twiittiin Upota twiitti Vastauksena käyttäjälle @ ArweaveP please give us hints for P3. especially for \"21863\" or this \"hairy cactus\" 0 vastausta 0 uudelleentwiittausta 0 tykkäystä Vastaa Uudelleentwiittaa Uudelleentwiitattu Tykkää Tykätty Kiitos. Käytämme tätä aikajanasi parantamiseen. Kumoa Kumoa Uusi keskustelu Maxim ‏ @ MisterMaxim 10. syysk. 2020 Enemmän Kopioi linkki twiittiin Upota twiitti Vastauksena käyttäjälle @ ArweaveP 1. year 2. code /sign/ snow/ hill 3. hash 4. rate 5. scan 6. tree 7. pull 8. base Dear Arweave, please wink if it is at least 50% accurate 1 vastaus 0 uudelleentwiittausta 0 tykkäystä Vastaa 1 Uudelleentwiittaa Uudelleentwiitattu Tykkää Tykätty Näytä vastaukset Takaisin ylös ↑ Lataaminen näyttää kestävän hetken. Twitter saattaa olla ruuhkautunut tai ongelma on muuten hetkellinen. Yritä uudelleen tai käy Twitterin tilasivulla saadaksesi lisätietoja. Mainostettu twiitti false © 2021 Twitter Tietoja Ohjekeskus Ehdot Yksityisyyskäytäntö Evästeet Mainosten tiedot",
+        "linked_statuses": [
+          {
+            "handle": "arweavep",
+            "id": "1132936723162378240"
+          },
+          {
+            "handle": "ArweaveP",
+            "id": "1132936723162378240"
+          }
+        ],
+        "conversation_id": "1132936723162378240",
+        "item_id": "1132936723162378240",
+        "in_reply_to_status_id": null,
+        "screen_name": "ArweaveP",
+        "tweet_text_guess": "Arweave Puzzle Twitterissä: \"Puzzle #3 https://t.co/YdMBex582M\"",
+        "generic_terms": [
+          "puzzle"
+        ],
+        "mechanism_terms": [],
+        "mentions_puzzle9": false,
+        "timestamp": "20210411071341",
+        "original_url": "https://twitter.com/ArweaveP/status/1132936723162378240",
+        "fetch": {
+          "url": "https://web.archive.org/web/20210411071341id_/https://twitter.com/ArweaveP/status/1132936723162378240",
+          "status": 200,
+          "bytes": 520089
+        }
+      }
+    },
+    {
+      "handle": "arweavep",
+      "id": "1429846914028158977",
+      "cdx": {
+        "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='web.archive.org', port=443): Read timed out. (read timeout=20)\"))",
+        "query": {
+          "url": "https://twitter.com/arweavep/status/1429846914028158977",
+          "output": "json",
+          "filter": "statuscode:200",
+          "fl": "timestamp,original,statuscode,digest",
+          "collapse": "digest",
+          "limit": "8",
+          "from": "2020",
+          "to": "2022"
+        }
+      },
+      "record": null
+    },
+    {
+      "handle": "arweavep",
+      "id": "1433836440765468683",
+      "cdx": {
+        "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Ftwitter.com%2Farweavep%2Fstatus%2F1433836440765468683&output=json&filter=statuscode%3A200&fl=timestamp%2Coriginal%2Cstatuscode%2Cdigest&collapse=digest&limit=8&from=2020&to=2022",
+        "rows": 1
+      },
+      "record": {
+        "snapshot_url": "https://web.archive.org/web/20210903191529id_/https://twitter.com/ArweaveP/status/1433836440765468683",
+        "title": "Arweave Puzzle on Twitter: \"Solver never showed up, TBH I think it was bruteforced. I might release a slightly adjusted version someday.… \"",
+        "descriptions": [
+          "“@VSmolyanski Solver never showed up, TBH I think it was bruteforced. I might release a slightly adjusted version someday.”"
+        ],
+        "text_projection": "Arweave Puzzle on Twitter: \"Solver never showed up, TBH I think it was bruteforced. I might release a slightly adjusted version someday.… \" We've detected that JavaScript is disabled in your browser. Would you like to proceed to legacy Twitter? Yes Skip to content By using Twitter’s services you agree to our Cookies Use . We and our partners operate globally and use cookies, including for analytics, personalisation, and ads. Close Home Home Home, current page. About Search query Search Twitter Saved searches Remove In this conversation Verified account Protected Tweets @ Suggested users Verified account Protected Tweets @ Verified account Protected Tweets @ Language: English Bahasa Indonesia Bahasa Melayu Català Čeština Dansk Deutsch English UK Español Filipino Français Hrvatski Italiano Magyar Nederlands Norsk Polski Português Română Slovenčina Suomi Svenska Tiếng Việt Türkçe Ελληνικά Български език Русский Српски Українська мова עִבְרִית العربية فارسی मराठी हिन्दी বাংলা ગુજરાતી தமிழ் ಕನ್ನಡ ภาษาไทย 한국어 日本語 简体中文 繁體中文 Have an account? Log in Have an account? Remember me · Forgot password? New to Twitter? Sign up ArweaveP's profile Arweave Puzzle @ ArweaveP Tweets Arweave Puzzle @ ArweaveP Joined May 2019 Tweets © 2021 Twitter About Help Center Terms Privacy policy Cookies Ads info Dismiss Close Previous Next Close Go to a person's profile Saved searches Remove In this conversation Verified account Protected Tweets @ Suggested users Verified account Protected Tweets @ Verified account Protected Tweets @ Close Promote this Tweet Close Block Cancel Block Tweet with a location You can add location information to your Tweets, such as your city or precise location, from the web and via third-party applications. You always have the option to delete your Tweet location history. Learn more Turn on Not now Close Your lists Close Create a new list List name Description Under 100 characters, optional Privacy Public · Anyone can follow this list Private · Only you can access this list Save list Close Close Copy link to Tweet Here's the URL for this Tweet. Copy it to easily share with friends. Close Embed this Tweet Embed this Video Add this Tweet to your website by copying the code below. Learn more Add this video to your website by copying the code below. Learn more Hmm, there was a problem reaching the server. Try again? Include parent Tweet Include media By embedding Twitter content in your website or app, you are agreeing to the Twitter Developer Agreement and Developer Policy . Preview Close Why you're seeing this ad Close Log in to Twitter Remember me · Forgot password? Don't have an account? Sign up » Close Sign up for Twitter Not on Twitter? Sign up, tune into the things you care about, and get updates as they happen. Sign up Have an account? Log in » Close Two-way (sending and receiving) short codes: Country Code For customers of United States 40404 (any) Canada 21212 (any) United Kingdom 86444 Vodafone, Orange, 3, O2 Brazil 40404 Nextel, TIM Haiti 40404 Digicel, Voila Ireland 51210 Vodafone, O2 India 53000 Bharti Airtel, Videocon, Reliance Indonesia 89887 AXIS, 3, Telkomsel, Indosat, XL Axiata Italy 4880804 Wind 3424486444 Vodafone » See SMS short codes for other countries Close Confirmation Close Close Skip all Welcome home! This timeline is where you’ll spend most of your time, getting instant updates about what matters to you. Tweets not working for you? Hover over the profile pic and click the Following button to unfollow any account. Say a lot with a little When you see a Tweet you love, tap the heart — it lets the person who wrote it know you shared the love. Spread the word The fastest way to share someone else’s Tweet with your followers is with a Retweet. Tap the icon to send it instantly. Join the conversation Add your thoughts about any Tweet with a Reply. Find a topic you’re passionate about, and jump right in. Learn the latest Get instant insight into what people are talking about now. Get more of what you love Follow more accounts to get instant updates about topics you care about. Find what's happening See the latest conversations about any topic instantly. Never miss a Moment Catch up instantly on the best stories happening as they unfold. Back Next Next Tweet from user Arweave Puzzle ‏ @ ArweaveP 8 Jan 2020 More Copy link to Tweet Embed Tweet Puzzle #9: There is a wallet with 100 DAI hidden somewhere here: http:// arweave.net/1--NRFY3naNwTl xBSRjzDPNUq-Cn1yLG2RmgGHZem9c … 18 replies 1 retweet 8 likes Reply 18 Retweet 1 Retweeted 1 Like 8 Liked 8 Vasil ‏ @ VSmolyanski 6h 6 hours ago More Copy link to Tweet Embed Tweet Replying to @ ArweaveP So, what was the solution to this one, we never found out? 1 reply 0 retweets 0 likes Reply 1 Retweet Retweeted Like Liked Arweave Puzzle ‏ @ ArweaveP 2h 2 hours ago Follow Follow @ ArweaveP Following Following @ ArweaveP Unfollow Unfollow @ ArweaveP Blocked Blocked @ ArweaveP Unblock Unblock @ ArweaveP Pending Pending follow request from @ ArweaveP Cancel Cancel your follow request to @ ArweaveP More Copy link to Tweet Embed Tweet Replying to @ VSmolyanski Solver never showed up, TBH I think it was bruteforced. I might release a slightly adjusted version someday. 9:57 AM - 3 Sep 2021 1 Like 0 replies 0 retweets 1 like Reply Retweet Retweeted Like 1 Liked 1 Back to top ↑ Loading seems to be taking a while. Twitter may be over capacity or experiencing a momentary hiccup. Try again or visit Twitter Status for more information. Promoted Tweet false © 2021 Twitter About Help Center Terms Privacy policy Cookies Ads info",
+        "linked_statuses": [
+          {
+            "handle": "arweavep",
+            "id": "1433836440765468683"
+          },
+          {
+            "handle": "ArweaveP",
+            "id": "1433836440765468683"
+          }
+        ],
+        "conversation_id": "1215166354707439621",
+        "item_id": "1215166354707439621",
+        "in_reply_to_status_id": null,
+        "screen_name": "ArweaveP",
+        "tweet_text_guess": "Solver never showed up, TBH I think it was bruteforced. I might release a slightly adjusted version someday.… \"",
+        "generic_terms": [
+          "puzzle",
+          "solver",
+          "solve",
+          "brute",
+          "dai",
+          "100 dai"
+        ],
+        "mechanism_terms": [
+          "date",
+          "read"
+        ],
+        "mentions_puzzle9": true,
+        "timestamp": "20210903191529",
+        "original_url": "https://twitter.com/ArweaveP/status/1433836440765468683",
+        "fetch": {
+          "url": "https://web.archive.org/web/20210903191529id_/https://twitter.com/ArweaveP/status/1433836440765468683",
+          "status": 200,
+          "bytes": 585501
+        }
+      }
+    }
+  ],
+  "primary_status_count": 10,
+  "relevant_primary_statuses": [
+    {
+      "id": "1272111084867129344",
+      "title": "Arweave Puzzle on Twitter: \"The puzzle required 4 steps. My guess is the solver figured out 3 and brute forced one, that's why he is silent.… \"",
+      "tweet_text_guess": "The puzzle required 4 steps. My guess is the solver figured out 3 and brute forced one, that's why he is silent.… \"",
+      "timestamp": null,
+      "screen_name": "ArweaveP",
+      "conversation_id": "1215166354707439621",
+      "in_reply_to_status_id": null,
+      "generic_terms": [
+        "puzzle",
+        "solver",
+        "solve",
+        "brute",
+        "step",
+        "dai",
+        "100 dai",
+        "silent"
+      ],
+      "mechanism_terms": [
+        "date",
+        "read"
+      ],
+      "mentions_puzzle9": true,
+      "snapshot_url": "https://web.archive.org/web/20200614102022id_/https://twitter.com/arweavep/status/1272111084867129344",
+      "classification": "SOLVE_CONTEXT_PRIMARY"
+    },
+    {
+      "id": "1235199397371277315",
+      "title": "Arweave Puzzle on Twitter: \"The list of unsolved #Arweave puzzles ordered by difficulty probably looks like: 3, 9, 8, 5 ,7\"",
+      "tweet_text_guess": "The list of unsolved #Arweave puzzles ordered by difficulty probably looks like: 3, 9, 8, 5 ,7\"",
+      "timestamp": "20200304134933",
+      "screen_name": "ArweaveP",
+      "conversation_id": "1235199397371277315",
+      "in_reply_to_status_id": null,
+      "generic_terms": [
+        "puzzle",
+        "solve"
+      ],
+      "mechanism_terms": [
+        "date",
+        "order",
+        "read"
+      ],
+      "mentions_puzzle9": false,
+      "snapshot_url": "https://web.archive.org/web/20200304134933id_/https://twitter.com/ArweaveP/status/1235199397371277315",
+      "classification": "MECHANISM_SPECIFIC_PRIMARY",
+      "mechanism_terms_primary_text": [
+        "order"
+      ]
+    },
+    {
+      "id": "1253354733911359491",
+      "title": "Arweave Puzzle on Twitter: \"Like I specified, the private key is hidden in the image. One way to try is MEW: Access by Private Key 🤐 good luck!… \"",
+      "tweet_text_guess": "Like I specified, the private key is hidden in the image. One way to try is MEW: Access by Private Key 🤐 good luck!… \"",
+      "timestamp": "20200430185132",
+      "screen_name": "ArweaveP",
+      "conversation_id": "1253297784633122817",
+      "in_reply_to_status_id": null,
+      "generic_terms": [
+        "puzzle",
+        "solve"
+      ],
+      "mechanism_terms": [
+        "date",
+        "read"
+      ],
+      "mentions_puzzle9": false,
+      "snapshot_url": "https://web.archive.org/web/20200430185132id_/https://twitter.com/ArweaveP/status/1253354733911359491",
+      "classification": "SOLVE_CONTEXT_PRIMARY"
+    },
+    {
+      "id": "1253375599323856896",
+      "title": "Arweave Puzzle on Twitter: \"format does not matter… \"",
+      "tweet_text_guess": "format does not matter… \"",
+      "timestamp": "20200430210602",
+      "screen_name": "ArweaveP",
+      "conversation_id": "1252961944807641090",
+      "in_reply_to_status_id": null,
+      "generic_terms": [
+        "puzzle"
+      ],
+      "mechanism_terms": [
+        "date",
+        "read"
+      ],
+      "mentions_puzzle9": false,
+      "snapshot_url": "https://web.archive.org/web/20200430210602id_/https://twitter.com/ArweaveP/status/1253375599323856896",
+      "classification": "SOLVE_CONTEXT_PRIMARY"
+    },
+    {
+      "id": "1253253461828931584",
+      "title": "Arweave Puzzle on Twitter: \"0xFF2142E98E09b5344994F9bEB9C56C95506B9F17 it is also included somewhere in the image 🧐… \"",
+      "tweet_text_guess": "0xFF2142E98E09b5344994F9bEB9C56C95506B9F17 it is also included somewhere in the image 🧐… \"",
+      "timestamp": "20200501121921",
+      "screen_name": "ArweaveP",
+      "conversation_id": "1252961944807641090",
+      "in_reply_to_status_id": null,
+      "generic_terms": [
+        "puzzle"
+      ],
+      "mechanism_terms": [
+        "date",
+        "read"
+      ],
+      "mentions_puzzle9": false,
+      "snapshot_url": "https://web.archive.org/web/20200501121921id_/https://twitter.com/ArweaveP/status/1253253461828931584",
+      "classification": "SOLVE_CONTEXT_PRIMARY"
+    },
+    {
+      "id": "1252961944807641090",
+      "title": "Arweave Puzzle on Twitter: \"There is 1 ETH hidden in https://t.co/wyyxPDtXDH Puzzle 11 🧩. Please retweet to make more of these possible! #puzzle #steganography #arweave #cryptopuzzle… https://t.co/8llFe3yvq9\"",
+      "tweet_text_guess": "There is 1 ETH hidden in https://t.co/wyyxPDtXDH Puzzle 11 🧩. Please retweet to make more of these possible! #puzzle #steganography #arweave #cryptopuzzle… https://t.co/8llFe3yvq9\"",
+      "timestamp": "20200502173835",
+      "screen_name": "ArweaveP",
+      "conversation_id": "1252961944807641090",
+      "in_reply_to_status_id": null,
+      "generic_terms": [
+        "puzzle"
+      ],
+      "mechanism_terms": [
+        "date",
+        "read"
+      ],
+      "mentions_puzzle9": false,
+      "snapshot_url": "https://web.archive.org/web/20200502173835id_/https://twitter.com/ArweaveP/status/1252961944807641090",
+      "classification": "SOLVE_CONTEXT_PRIMARY"
+    },
+    {
+      "id": "1253297784633122817",
+      "title": "Arweave Puzzle on Twitter: \"I understand some of you get a bit frustrated when you can't solve a puzzle. Maybe take it as a chance to learn alternative forms of storing a private key. I.e. how will an attacker know what's with a weird image in your email account? #cryptocurrency #privatekey #wallet\"",
+      "tweet_text_guess": "I understand some of you get a bit frustrated when you can't solve a puzzle. Maybe take it as a chance to learn alternative forms of storing a private key. I.e. how will an attacker know what's with a weird image in your email account? #cryptocurrency #privatekey #wallet\"",
+      "timestamp": "20200503002442",
+      "screen_name": "ArweaveP",
+      "conversation_id": "1253297784633122817",
+      "in_reply_to_status_id": null,
+      "generic_terms": [
+        "puzzle",
+        "solve"
+      ],
+      "mechanism_terms": [
+        "date",
+        "read"
+      ],
+      "mentions_puzzle9": false,
+      "snapshot_url": "https://web.archive.org/web/20200503002442id_/https://twitter.com/ArweaveP/status/1253297784633122817",
+      "classification": "SOLVE_CONTEXT_PRIMARY"
+    },
+    {
+      "id": "1270809510165299202",
+      "title": "Arweave Puzzle on Twitter: \"any idea who solved it?… \"",
+      "tweet_text_guess": "any idea who solved it?… \"",
+      "timestamp": "20200610201547",
+      "screen_name": "ArweaveP",
+      "conversation_id": "1215166354707439621",
+      "in_reply_to_status_id": null,
+      "generic_terms": [
+        "puzzle",
+        "solver",
+        "solve",
+        "dai",
+        "100 dai"
+      ],
+      "mechanism_terms": [
+        "date",
+        "read"
+      ],
+      "mentions_puzzle9": true,
+      "snapshot_url": "https://web.archive.org/web/20200610201547id_/https://twitter.com/ArweaveP/status/1270809510165299202",
+      "classification": "SOLVE_CONTEXT_PRIMARY"
+    },
+    {
+      "id": "1132936723162378240",
+      "title": "Arweave Puzzle Twitterissä: \"Puzzle #3 https://t.co/YdMBex582M\"",
+      "tweet_text_guess": "Arweave Puzzle Twitterissä: \"Puzzle #3 https://t.co/YdMBex582M\"",
+      "timestamp": "20210411071341",
+      "screen_name": "ArweaveP",
+      "conversation_id": "1132936723162378240",
+      "in_reply_to_status_id": null,
+      "generic_terms": [
+        "puzzle"
+      ],
+      "mechanism_terms": [],
+      "mentions_puzzle9": false,
+      "snapshot_url": "https://web.archive.org/web/20210411071341id_/https://twitter.com/ArweaveP/status/1132936723162378240",
+      "classification": "SOLVE_CONTEXT_PRIMARY"
+    },
+    {
+      "id": "1433836440765468683",
+      "title": "Arweave Puzzle on Twitter: \"Solver never showed up, TBH I think it was bruteforced. I might release a slightly adjusted version someday.… \"",
+      "tweet_text_guess": "Solver never showed up, TBH I think it was bruteforced. I might release a slightly adjusted version someday.… \"",
+      "timestamp": "20210903191529",
+      "screen_name": "ArweaveP",
+      "conversation_id": "1215166354707439621",
+      "in_reply_to_status_id": null,
+      "generic_terms": [
+        "puzzle",
+        "solver",
+        "solve",
+        "brute",
+        "dai",
+        "100 dai"
+      ],
+      "mechanism_terms": [
+        "date",
+        "read"
+      ],
+      "mentions_puzzle9": true,
+      "snapshot_url": "https://web.archive.org/web/20210903191529id_/https://twitter.com/ArweaveP/status/1433836440765468683",
+      "classification": "SOLVE_CONTEXT_PRIMARY"
+    }
+  ],
+  "mechanism_specific_primary_statuses": [
+    {
+      "id": "1235199397371277315",
+      "title": "Arweave Puzzle on Twitter: \"The list of unsolved #Arweave puzzles ordered by difficulty probably looks like: 3, 9, 8, 5 ,7\"",
+      "tweet_text_guess": "The list of unsolved #Arweave puzzles ordered by difficulty probably looks like: 3, 9, 8, 5 ,7\"",
+      "timestamp": "20200304134933",
+      "screen_name": "ArweaveP",
+      "conversation_id": "1235199397371277315",
+      "in_reply_to_status_id": null,
+      "generic_terms": [
+        "puzzle",
+        "solve"
+      ],
+      "mechanism_terms": [
+        "date",
+        "order",
+        "read"
+      ],
+      "mentions_puzzle9": false,
+      "snapshot_url": "https://web.archive.org/web/20200304134933id_/https://twitter.com/ArweaveP/status/1235199397371277315",
+      "classification": "MECHANISM_SPECIFIC_PRIMARY",
+      "mechanism_terms_primary_text": [
+        "order"
+      ]
+    }
+  ],
+  "solve_context_primary_count": 9,
+  "promoted_mechanism_terms": [
+    "order"
+  ],
+  "decision": "MECHANISM_SPECIFIC_PRIMARY",
+  "interpretation_guard": "Only explicit mechanism terms in archived primary tweet title/description text can be promoted. Image-derived interpretations and secondary dossiers are context only."
+}
