@@ -1,24 +1,20 @@
 # Open leads, ranked
 
-## 1. Puzzle #9 four-step sibling mechanism (active, highest priority)
+## 1. Puzzle #9 semantic multi-anchor / four-step mechanism (active)
 
-New independent author evidence surfaced: after Puzzle #9 was anonymously solved, Tiamat said it **required 4 steps** and guessed the solver found 3 then brute-forced one.
+Stage 96 recovered the canonical Puzzle #9 image. It is not structurally similar to #11 at the channel level (indexed-color P, no alpha), so alpha/continuous-channel analogies are weakened.
 
-Puzzle #9 is the closest known sibling to #11:
-- image-hidden secret;
-- Ethereum-side prize;
-- same metadata date anomaly;
-- solved, but method never published.
+What *is* shared is the image-only puzzle format and production metadata lineage. Public archival research also consistently attributes an author statement to #9 saying it required four steps and the anonymous solver may have brute-forced one.
 
-Stage 96 reconstructs its page/image structure and author-thread context to infer mechanism-level constraints without attempting key recovery.
+Stage 97 separates what is actually visible and robust in #9 from what is merely inferred, and ranks the source confidence of the four-step quote.
 
-## 2. General format-invariant visual / semantic mechanism
+## 2. General format-invariant visible / semantic mechanism
 
-Still the strongest broad prior from the author's #11 wording and Stage 31.
+Still the strongest broad prior. Stage 31 showed #11's visible/macroscopic structure survives ordinary lossy transformations while exact low-bit identity does not.
 
 ## 3. External archival evidence
 
-Now actively useful because the new #9 quote materially changes the hypothesis space. Prioritize direct author/first-hand sources over solver speculation.
+High priority only when it adds genuinely new first-hand or independently corroborated information. The current #9 four-step evidence qualifies for one bounded corroboration stage.
 
 ## Closed / do not recycle
 
