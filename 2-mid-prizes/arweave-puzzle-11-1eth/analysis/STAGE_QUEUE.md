@@ -10,73 +10,80 @@ Do **not** reopen a hypothesis classified COVERED, RETIRED, or independently fal
 
 Historical popularity alone is not a reason to retest an exhausted idea.
 
-## Review through Stage 96
+## Review through corrected Stage 97
 
-Stage 96 completed successfully and recovered the original Puzzle #9 page/image.
+Stage 97 first failed on an undefined variant-name constant; fixed under the same stage number.
 
-### What Stage 96 established directly
+A second review found two measurement/source issues:
+- the green bird's dominant hue shifted only **2 / 180 hue units** after lossy transforms but crossed an arbitrary categorical green/yellow boundary;
+- Medium returned HTTP 403 to the GitHub runner, so the official newsletter phrase could not be captured inside the Action artifact.
 
-Puzzle #9 primary image:
-- PNG, **indexed-color P mode**
-- **900 × 635**
-- **no alpha channel**
-- 159 grayscale values after grayscale conversion
-- visible image contains an Orwell/1984 quote, five colored birds on a tree, and a visible `12:05.04` stamp
-- same PNG production family as #11 at the container level: gAMA, cHRM, bKGD, pHYs and tEXt chunks
-- #9 has the same create-before-modify timestamp pattern as #11
+The bird stability test was corrected to use circular dominant-hue drift rather than brittle category boundaries. The official newsletter statement was separately verified from the public indexed article outside the runner.
 
-Puzzle #11 differs materially:
-- LA grayscale+alpha, 1600 × 1105
-- 256 grayscale values
-- 434 nonopaque alpha pixels
-- public escrow address in a tEXt comment
+### Valid Stage-97 evidence
 
-### Four-step author statement: source validation
+**Primary author quote: VERIFIED.**
 
-Stage 96 itself **did not recover the original tweet from Wayback** because the archive request timed out. Therefore the run's own field `author four-step Wayback verification = False` must not be read as a primary-source verification.
+Wayback recovered the 2020-06-14 Twitter page for status `1272111084867129344`. Its archived HTML title contains:
 
-A fresh public-source check after Stage 96 found two independent public research pages carrying the same tweet ID, timestamp, wording and #9 context:
-- `itsnex1s/crypto-puzzle-list/unsolved/arweave-puzzle-11-1eth.md`
-- `itsnex1s/crypto-puzzle-list/unsolved/arweave-puzzle-3-1000ar.md`
+> "The puzzle required 4 steps. My guess is the solver figured out 3 and brute forced one, that's why he is silent."
 
-Both attribute status **1272111084867129344**, 2020-06-14 10:18:11 UTC, to Puzzle #9 and reproduce:
-> "The puzzle required 4 steps. My guess is the solver figured out 3 and brute forced one, that's why he is silent"
+The exact statement is also independently preserved in two public crypto-puzzle dossiers with the same status ID and #9 context.
 
-The official Arweave December newsletter independently confirms that Puzzle #9's format was different and that **everything needed to crack the code is hidden in the image**.
+**Official Puzzle #9 context: VERIFIED externally.**
+
+Arweave's January 2020 newsletter states that Puzzle #9 was different from earlier puzzles and that **everything needed to crack the code is hidden in the image**. The GitHub runner received 403 from Medium, but the public indexed page remains available and matches the official Arweave announcement context.
+
+**Visible #9 anchors: robust.**
+- Orwell/1984 quote crop: JPEG85 edge corr 0.974, JPEG70 0.967, resize 0.827.
+- numeric `12:05.04` crop: 0.954 / 0.935 / 0.873.
+- five bird colors are distinct in the source image and their dominant hues move by only 0–2 units after the tested re-encodings.
 
 ### Hypothesis decision
 
-- Shared create/modify timestamps: production lineage, not payload evidence.
-- #9 alpha-carrier analogy: invalid because #9 has no alpha.
-- The exact four-step tweet is **strongly corroborated by public secondary archival research but not yet re-captured from a primary Twitter/Wayback endpoint in this branch**.
-- The visible #9 image clearly supplies several robust semantic/numeric anchors; whether these correspond to the four steps remains unproven.
+Promote only the following prior:
+
+> **Puzzle #9 was an image-only, multi-step puzzle with multiple robust visible semantic/numeric anchors.**
+
+Do **not** infer that:
+- the four solve steps equal four visible objects;
+- every visible anchor participated in the solve;
+- Puzzle #11 uses the same concrete objects/colors.
+
+This is mechanism-level evidence, not a recovered #9 solution.
 
 ## Next stage
 
-**Stage 97 — Puzzle #9 semantic-anchor + four-step source corroboration audit.**
+**Stage 98 — Puzzle #9 primary Twitter thread reconstruction.**
 
-Goals:
-1. Re-fetch the original #9 image from the committed Stage-96 artifact.
-2. Preserve fixed crops for:
-   - Orwell/1984 quote
-   - visible `12:05.04` stamp
-   - each of the five colored birds
-3. Measure whether those visible anchors survive JPEG/resampling and whether the five bird color classes remain distinct.
-4. Fetch the official Arweave newsletter / announcement pages and record the "everything needed ... hidden in the image" statement.
-5. Fetch the two independent public crypto-puzzle dossiers that preserve the exact four-step quote and thread context.
-6. Attempt direct recovery through Twitter syndication and Internet Archive again, but classify evidence honestly if primary recovery fails.
-7. Produce an evidence hierarchy:
-   - PRIMARY_VERIFIED
-   - OFFICIAL_CONTEXT_ONLY
-   - MULTI_SOURCE_SECONDARY_CORROBORATED
-   - UNVERIFIED
-8. Decide whether #9 provides a defensible **semantic multi-anchor prior** for #11 or only a generic "image contains everything" prior.
+Reason:
+The four-step statement is now primary-verified. The highest-value next question is whether the surrounding contemporaneous author/solver thread reveals *what any of the four steps were*, rather than inventing a four-step mapping ourselves.
 
-No private-key candidates, hashes-to-key pipelines, or wallet checks are performed.
+Bounded goals:
+1. Use the verified Wayback snapshot of status `1272111084867129344` as seed.
+2. Parse old-Twitter HTML for conversation ID, in-reply-to status, quoted status and neighboring status links.
+3. Query Wayback CDX for @ArweaveP status pages during **2020-06-08..2020-06-15**, the week around the #9 sweep.
+4. Fetch a bounded set of archived status snapshots and extract:
+   - status ID
+   - author handle
+   - timestamp where present
+   - page title / tweet text
+   - reply-parent relationships
+5. Follow only status links reachable from the seed or matching mechanism terms (`puzzle`, `solver`, `brute`, `step`, `bird`, `color`, `clock`, `April`, `1984`, `12:05.04`), max 40 statuses.
+6. Cross-check the two public dossiers for quoted neighboring statuses/participants.
+7. Classify recovered evidence:
+   - **MECHANISM_SPECIFIC_PRIMARY**
+   - **SOLVE_CONTEXT_PRIMARY**
+   - **SECONDARY_CONTEXT**
+   - **NO_NEW_MECHANISM**
+8. Promote a mechanism term only if it appears in primary archived author/solver material, not merely in our interpretation of the image.
+
+No private-key candidates or wallet operations are performed.
 
 ## Status
 
-- Stages 1–96: completed.
-- Stage 96: COMPLETED + REVIEWED.
-- Puzzle #9 four-step statement: secondary corroboration strong; primary recapture pending.
-- Stage 97: selected for launch.
+- Stages 1–97: completed.
+- Corrected Stage 97: COMPLETED + REVIEWED.
+- Puzzle #9 four-step statement: PRIMARY_VERIFIED.
+- Puzzle #9 multi-step/image-only prior: PROMOTED.
+- Stage 98: selected for launch.
