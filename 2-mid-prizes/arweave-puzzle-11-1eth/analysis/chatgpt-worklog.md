@@ -223,3 +223,13 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Follow-up public-source validation found the same status ID, timestamp, exact wording and Puzzle #9 context preserved independently in two public crypto-puzzle research pages. The official Arweave December newsletter independently confirms that everything needed for #9 was hidden in the image.
 - The #9 image visibly contains a strong literary quote (Orwell/1984), a literal numeric stamp (12:05.04), and five distinct colored birds. These are obvious semantic/numeric anchors, but their role in the four steps is not yet established.
 - Stage 97 selected to audit anchor robustness and source hierarchy before transferring any mechanism prior to #11.
+
+
+## 2026-10-10 — adaptive review of corrected Stage 97
+
+- Initial Stage 97 failed on an undefined variant constant; fixed under the same stage.
+- Wayback then successfully recovered the original 2020-06-14 Twitter snapshot for status 1272111084867129344. The archived page title contains the author's exact “required 4 steps ... figured out 3 and brute forced one” statement. This upgrades the four-step clue from secondary corroboration to PRIMARY_VERIFIED.
+- The green-bird “instability” was a categorical hue-boundary artifact: dominant hue moved only 38→36 after lossy transforms. Corrected stability uses circular hue drift; all five color anchors are stable (0–2 hue units).
+- The official Arweave newsletter could not be fetched by the GitHub runner because Medium returns 403, but the public indexed official article independently confirms that everything needed for #9 was hidden in the image.
+- Promoted prior: #9 was an image-only multi-step puzzle with multiple robust visible anchors. Guardrail: four steps do not imply four visible objects.
+- Stage 98 selected to reconstruct the primary Twitter conversation around the #9 solve and look for explicit step/mechanism language before inventing any transfer to #11.
