@@ -1,0 +1,339 @@
+{
+  "experiment_id": "A11-EXP-097",
+  "scope": "Puzzle #9 visible semantic-anchor robustness + four-step source hierarchy; no private-key operations",
+  "p9_image_sha256": "f2c3926d3023be3e4d4dd6621bcfa49bd89db4429c06f913c41ff593110421d5",
+  "manual_visual_transcriptions": {
+    "literary_quote": "It was a bright cold day in April, and the clocks were striking thirteen.",
+    "numeric_stamp": "12:05.04"
+  },
+  "anchor_crops": {
+    "literary_quote": {
+      "box": [
+        10,
+        350,
+        265,
+        455
+      ],
+      "sha256": "9e09bd25cc576276c58fc8e42f584d277f6647ae07ca3f8a63cecc1fc800d3df"
+    },
+    "numeric_stamp": {
+      "box": [
+        755,
+        565,
+        898,
+        633
+      ],
+      "sha256": "a55ba56b5812a79bd6d177df1a99971fdbcfb4d8bcc47f87e9eab15ef15cae55"
+    },
+    "bird_green": {
+      "box": [
+        145,
+        115,
+        270,
+        365
+      ],
+      "sha256": "736edd126bce21420eababb06865eaf45542c62d02e7eb3ad3cbfb2a7d1c8b21"
+    },
+    "bird_blue": {
+      "box": [
+        270,
+        105,
+        405,
+        365
+      ],
+      "sha256": "5880d8082d1ff1d19a78ffb2d29d4864c300755628fbf326dd166a00c13f571a"
+    },
+    "bird_orange": {
+      "box": [
+        585,
+        25,
+        795,
+        205
+      ],
+      "sha256": "32afed3db9d9b4a034081048ea06d4772e739bb62db2c6af6d2341b0b4b5a7cf"
+    },
+    "bird_red": {
+      "box": [
+        615,
+        320,
+        825,
+        565
+      ],
+      "sha256": "afc490a554ac6773c2a7f021ac18a0d841e5d2ace455e6b4b669093a57a5842f"
+    },
+    "bird_yellow": {
+      "box": [
+        165,
+        420,
+        350,
+        635
+      ],
+      "sha256": "67eac408ad256a14196b9bba78c7569c12c4cb5586f66f9f91cc336b34ba6fe0"
+    }
+  },
+  "text_anchor_robustness": {
+    "literary_quote": {
+      "manual_transcription": "It was a bright cold day in April, and the clocks were striking thirteen.",
+      "crop_sha256": "9e09bd25cc576276c58fc8e42f584d277f6647ae07ca3f8a63cecc1fc800d3df",
+      "edge_correlations": {
+        "original": 1.0,
+        "jpeg85": 0.9738000257072738,
+        "jpeg70": 0.9669585017542113,
+        "down75_up": 0.8269441830215765
+      },
+      "robust": true
+    },
+    "numeric_stamp": {
+      "manual_transcription": "12:05.04",
+      "crop_sha256": "a55ba56b5812a79bd6d177df1a99971fdbcfb4d8bcc47f87e9eab15ef15cae55",
+      "edge_correlations": {
+        "original": 1.0,
+        "jpeg85": 0.9542182357120276,
+        "jpeg70": 0.9346365622848223,
+        "down75_up": 0.8730477115534131
+      },
+      "robust": true
+    }
+  },
+  "bird_color_anchors": {
+    "bird_green": {
+      "expected_visual_label": "green",
+      "variants": {
+        "original": {
+          "label": "green",
+          "dominant_hue": 38,
+          "saturated_pixels": 7179,
+          "peak_fraction": 0.07257278172447416
+        },
+        "jpeg85": {
+          "label": "yellow",
+          "dominant_hue": 36,
+          "saturated_pixels": 6910,
+          "peak_fraction": 0.08856729377713458
+        },
+        "jpeg70": {
+          "label": "yellow",
+          "dominant_hue": 36,
+          "saturated_pixels": 6874,
+          "peak_fraction": 0.08757637474541752
+        },
+        "down75_up": {
+          "label": "yellow",
+          "dominant_hue": 36,
+          "saturated_pixels": 7281,
+          "peak_fraction": 0.08487845076225793
+        }
+      },
+      "stable_expected_label": false,
+      "crop_sha256": "736edd126bce21420eababb06865eaf45542c62d02e7eb3ad3cbfb2a7d1c8b21"
+    },
+    "bird_blue": {
+      "expected_visual_label": "blue",
+      "variants": {
+        "original": {
+          "label": "blue",
+          "dominant_hue": 94,
+          "saturated_pixels": 7485,
+          "peak_fraction": 0.0
+        },
+        "jpeg85": {
+          "label": "blue",
+          "dominant_hue": 94,
+          "saturated_pixels": 7293,
+          "peak_fraction": 0.07760866584395996
+        },
+        "jpeg70": {
+          "label": "blue",
+          "dominant_hue": 94,
+          "saturated_pixels": 7286,
+          "peak_fraction": 0.09799615701345045
+        },
+        "down75_up": {
+          "label": "blue",
+          "dominant_hue": 94,
+          "saturated_pixels": 7744,
+          "peak_fraction": 0.07321797520661157
+        }
+      },
+      "stable_expected_label": true,
+      "crop_sha256": "5880d8082d1ff1d19a78ffb2d29d4864c300755628fbf326dd166a00c13f571a"
+    },
+    "bird_orange": {
+      "expected_visual_label": "orange",
+      "variants": {
+        "original": {
+          "label": "orange",
+          "dominant_hue": 13,
+          "saturated_pixels": 8927,
+          "peak_fraction": 0.18774504312759047
+        },
+        "jpeg85": {
+          "label": "orange",
+          "dominant_hue": 14,
+          "saturated_pixels": 8782,
+          "peak_fraction": 0.08813482122523343
+        },
+        "jpeg70": {
+          "label": "orange",
+          "dominant_hue": 14,
+          "saturated_pixels": 8813,
+          "peak_fraction": 0.10064677181436514
+        },
+        "down75_up": {
+          "label": "orange",
+          "dominant_hue": 14,
+          "saturated_pixels": 9089,
+          "peak_fraction": 0.09869072505226098
+        }
+      },
+      "stable_expected_label": true,
+      "crop_sha256": "32afed3db9d9b4a034081048ea06d4772e739bb62db2c6af6d2341b0b4b5a7cf"
+    },
+    "bird_red": {
+      "expected_visual_label": "red",
+      "variants": {
+        "original": {
+          "label": "red",
+          "dominant_hue": 4,
+          "saturated_pixels": 15221,
+          "peak_fraction": 0.16812298797713685
+        },
+        "jpeg85": {
+          "label": "red",
+          "dominant_hue": 3,
+          "saturated_pixels": 15184,
+          "peak_fraction": 0.20212065331928344
+        },
+        "jpeg70": {
+          "label": "red",
+          "dominant_hue": 3,
+          "saturated_pixels": 15108,
+          "peak_fraction": 0.19552554937781308
+        },
+        "down75_up": {
+          "label": "red",
+          "dominant_hue": 3,
+          "saturated_pixels": 15395,
+          "peak_fraction": 0.15050341019811628
+        }
+      },
+      "stable_expected_label": true,
+      "crop_sha256": "afc490a554ac6773c2a7f021ac18a0d841e5d2ace455e6b4b669093a57a5842f"
+    },
+    "bird_yellow": {
+      "expected_visual_label": "yellow",
+      "variants": {
+        "original": {
+          "label": "yellow",
+          "dominant_hue": 26,
+          "saturated_pixels": 10278,
+          "peak_fraction": 0.1634559252772913
+        },
+        "jpeg85": {
+          "label": "yellow",
+          "dominant_hue": 26,
+          "saturated_pixels": 10009,
+          "peak_fraction": 0.08052752522729544
+        },
+        "jpeg70": {
+          "label": "yellow",
+          "dominant_hue": 26,
+          "saturated_pixels": 10015,
+          "peak_fraction": 0.07169246130803794
+        },
+        "down75_up": {
+          "label": "yellow",
+          "dominant_hue": 26,
+          "saturated_pixels": 10439,
+          "peak_fraction": 0.07740205000478972
+        }
+      },
+      "stable_expected_label": true,
+      "crop_sha256": "67eac408ad256a14196b9bba78c7569c12c4cb5586f66f9f91cc336b34ba6fe0"
+    }
+  },
+  "five_distinct_bird_colors_original": true,
+  "all_bird_colors_stable_across_variants": false,
+  "source_records": [
+    {
+      "url": "https://arweave.medium.com/arweave-newsletter-december-e83e962bcb9b",
+      "kind": "official_arweave_newsletter",
+      "error": "HTTPError('403 Client Error: Forbidden for url: https://arweave.medium.com/arweave-newsletter-december-e83e962bcb9b')"
+    },
+    {
+      "url": "https://t.me/s/arweaveannouncements?after=127",
+      "kind": "official_arweave_telegram",
+      "fetch": {
+        "url": "https://t.me/s/arweaveannouncements?after=127",
+        "status": 200,
+        "bytes": 115675,
+        "sha256": "fae543400e85edbb9b9a98b1155dd0a551114bc4ac46773f3286c49a9a097a8f"
+      },
+      "has_exact_four_step_quote": false,
+      "has_tweet_id": false,
+      "mentions_puzzle9": true,
+      "mentions_image_only": false
+    },
+    {
+      "url": "https://raw.githubusercontent.com/itsnex1s/crypto-puzzle-list/main/unsolved/arweave-puzzle-11-1eth.md",
+      "kind": "secondary_crypto_puzzle_dossier_11",
+      "fetch": {
+        "url": "https://raw.githubusercontent.com/itsnex1s/crypto-puzzle-list/main/unsolved/arweave-puzzle-11-1eth.md",
+        "status": 200,
+        "bytes": 21710,
+        "sha256": "623f8402f83600d283d5f295738b224dd3e51d8f85232ab1e887ec46f0d95ac7"
+      },
+      "has_exact_four_step_quote": true,
+      "has_tweet_id": true,
+      "mentions_puzzle9": true,
+      "mentions_image_only": false,
+      "quote_context": "ere it actually stands This is the weakest-verified entry in its series and the honest label for it is *insight, with no oracle*. Three things are simultaneously true: the target format is certain, the container has been exhaustively characterised, and nobody has any idea what the encoding is. The single most useful structural observation is negative and comes from the sibling. Puzzle #9 was the same shape of puzzle — a private key hidden in an image, an Ethereum prize, the same create-before-modify metadata anomaly — and it *was* solved: its 100 DAI left `0x6f85D220C70abB69a1205B96b566c1eD5d9c3831` on 2020-06-08 06:36:33 UTC in transaction `0x91968c60519866e1a982177ffca22d60520904e53ae6d11814fbc501ad0289bd` (block 10223548, an ERC-20 `transfer` to `0xD8d8bC3bb68eC59a8491Af4257522dFE4F0B9412`). The solver never came forward, and the author's own reading of that silence, four days after asking @_LeFevre_ and @shijint89 \"any idea who solved it?\", was: **\"The puzzle required 4 steps. My guess is the solver figured out 3 and brute forced one, that's why he is silent\"** (2020-06-14, 10:18:11 UTC, [1272111084867129344](https://twitter.com/arweavep/status/1272111084867129344)). So the one closely-comparable data point in the entire series is a solve whose method was never published — and when the local research tried to reverse-engineer #9's carrier from its already-known answer as a calibration exercise, that failed too. There is no worked example of this author's steganography anywhere. Three leads, in order: 1. **A systematic bit-level scan of the two continuous channels** (hours). Every candidate so far reads geometry or metadata as a *whole value*, hashed as a block. A genuine LSB sweep of the grayscale channel (256 levels) and the alpha channel (26 distinct observed values) with a tool built for it — `zsteg -a`, `stegoveritas` — across bit orders and bit widths, keeping only 64-hex outputs, has not been run to exhaustion. This is the most literal reading of \"format does not matter\": a payload in the pixel *values*. Confirmed if an extracted string derives the target address; killed by an exhaustive sweep with no match. 2. **The promised hint, from a ch"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/itsnex1s/crypto-puzzle-list/main/unsolved/arweave-puzzle-3-1000ar.md",
+      "kind": "secondary_crypto_puzzle_dossier_3",
+      "fetch": {
+        "url": "https://raw.githubusercontent.com/itsnex1s/crypto-puzzle-list/main/unsolved/arweave-puzzle-3-1000ar.md",
+        "status": 200,
+        "bytes": 23823,
+        "sha256": "6d04e2ccdb9d5e6528049a51e10de7dd00425d6095381414995895b92d7c87ce"
+      },
+      "has_exact_four_step_quote": true,
+      "has_tweet_id": true,
+      "mentions_puzzle9": true,
+      "mentions_image_only": false,
+      "quote_context": "ot 5** — checked against a 683-message export of the author's own Discord messages; every apparent mythological reference there is a project codename, not mythology. - **SHA-3 / Keccak as the reading of slot 3** — the drawn glyph and the author's own discussion of hash sizes point to SHA-384, which is what the N.1.7.0.0 hint is about. - **Base58 as Arweave's own address encoding** — Arweave addresses are base64url, so that reading is factually wrong. (The *OTC desk* named Base58 remains a live candidate source for that slot's token; the coincidence of names is what made this worth checking.) One claim that circulates about this puzzle should be treated as **unestablished**: that the author said #3 was probably brute-forced once by a solver who never came forward. The author's remarks of that shape — \"Solver never showed up, TBH I think it was bruteforced. I might release a slightly adjusted version someday\" (2021-09-03, 16:57:01 UTC, [1433836440765468683](https://twitter.com/arweavep/status/1433836440765468683)) and \"The puzzle required 4 steps. My guess is the solver figured out 3 and brute forced one, that's why he is silent\" (2020-06-14, 10:18:11 UTC, [1272111084867129344](https://twitter.com/arweavep/status/1272111084867129344)) — cannot be about #3, because #3's escrow demonstrably still holds its money and has never signed a transaction. On the surrounding thread they concern puzzle #9, whose 100 DAI *was* swept on 2020-06-08 by someone who never explained how. Nobody has ever solved #3. ## Where it actually stands The block is an idea, and it is a small, specific one: two or more of eight drawings are being read wrong, and the free-slot diagnostic proves it without saying which. Everything downstream of the reading is finished. The cipher is reversed, the oracle is certified against a real solved sibling, the search harness runs, and 330 million candidates have been burned to no effect. Throwing more compute at the current readings is worthless: the B6 runs already swept 25–31 million strings per relaxed anchor, and the B8/B9/B15/B16 runs each exhausted a full 8^8 reordering. The space that remains is not a keyspace, it is a space of *interpretations*,"
+    },
+    {
+      "url": "https://cdn.syndication.twimg.com/tweet-result?id=1272111084867129344&lang=en",
+      "kind": "twitter_syndication",
+      "status": 200,
+      "bytes": 2,
+      "json": {},
+      "has_exact_four_step_quote": false,
+      "text": ""
+    },
+    {
+      "url": "https://twitter.com/arweavep/status/1272111084867129344",
+      "kind": "wayback",
+      "cdx_rows": [
+        [
+          "20200614102022",
+          "https://twitter.com/ArweaveP/status/1272111084867129344",
+          "200",
+          "SMGGP2UMGPKLUBGSIQKGBSHFTTEFFLRS"
+        ]
+      ],
+      "verified": true,
+      "snapshot": "https://web.archive.org/web/20200614102022id_/https://twitter.com/arweavep/status/1272111084867129344",
+      "snapshot_sha256": "7e08a315b9a420f43af6548a05bf5f208d81debf260d2f1bd29f8666513af70e",
+      "quote_context": "positionstart\",t,!1),document.addEventListener(\"compositionend\",n,!1))}(); </script> <link rel=\"stylesheet\" href=\"https://abs.twimg.com/a/1591827571/css/t1/twitter_core.bundle.css\" class=\"coreCSSBundles\"> <link rel=\"stylesheet\" class=\"moreCSSBundles\" href=\"https://abs.twimg.com/a/1591827571/css/t1/twitter_more_1.bundle.css\"> <link rel=\"stylesheet\" class=\"moreCSSBundles\" href=\"https://abs.twimg.com/a/1591827571/css/t1/twitter_more_2.bundle.css\"> <link rel=\"dns-prefetch\" href=\"https://pbs.twimg.com\"> <link rel=\"dns-prefetch\" href=\"https://t.co\"> <link rel=\"preload\" href=\"https://abs.twimg.com/k/en/init.en.c41d7829af04eaed7810.js\" as=\"script\"> <link rel=\"preload\" href=\"https://abs.twimg.com/k/en/0.commons.en.2d6be4aa18878a5eb7fc.js\" as=\"script\"> <link rel=\"preload\" href=\"https://abs.twimg.com/k/en/5.pages_permalink.en.d01701ba3cce1f0d3917.js\" as=\"script\"> <title>Arweave Puzzle on Twitter: \"The puzzle required 4 steps. My guess is the solver figured out 3 and brute forced one, that's why he is silent.… \"</title> <meta name=\"robots\" content=\"NOODP\"> <meta name=\"msapplication-TileImage\" content=\"//abs.twimg.com/favicons/win8-tile-144.png\"/> <meta name=\"msapplication-TileColor\" content=\"#00aced\"/> <link rel=\"mask-icon\" sizes=\"any\" href=\"https://abs.twimg.com/a/1591827571/icons/favicon.svg\" color=\"#1da1f2\"> <link rel=\"shortcut icon\" href=\"//abs.twimg.com/favicons/favicon.ico\" type=\"image/x-icon\"> <link rel=\"apple-touch-icon\" href=\"https://abs.twimg.com/icons/apple-touch-icon-192x192.png\" sizes=\"192x192\"> <link rel=\"manifest\" href=\"/manifest.json\"> <meta name=\"swift-page-name\" id=\"swift-page-name\" content=\"permalink\"> <meta name=\"swift-page-section\" id=\"swift-section-name\" content=\"permalink\"> <link rel=\"canonical\" href=\"https://twitter.com/arweavep/status/1272111084867129344\"> <link rel=\"alternate\" hreflang=\"x-default\" href=\"https://twitter.com/arweavep/status/1272111084867129344\"> <link rel=\"alternate\" hreflang=\"fr\" href=\"https://twitter.com/arweavep/status/1272111084867129344?lang=fr\"><link rel=\"alternate\" hreflang=\"en\" href=\"https://twitter.com/arweavep/status/1272111084867129344?lang=en\"><link rel=\"alternate\" hreflang=\"ar\" href=\"https://twitter.com/arweavep/status/127211108486"
+    }
+  ],
+  "primary_four_step_quote_verified": true,
+  "secondary_quote_sources_count": 2,
+  "official_image_only_context_verified": false,
+  "four_step_quote_confidence": "PRIMARY_VERIFIED",
+  "semantic_multi_anchor_scaffold_supported": false,
+  "interpretation_guard": "Visible anchors being robust does not prove which anchors participate in the solve or that 'four steps' means four visible clue objects."
+}
