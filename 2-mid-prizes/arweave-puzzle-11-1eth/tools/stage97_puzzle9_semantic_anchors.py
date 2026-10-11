@@ -189,6 +189,42 @@ def syndication_record():
         rec["has_exact_four_step_quote"]=False
     return rec
 
+def wayback_page_record(url,phrase,kind):
+    rec={"url":url,"kind":kind,"verified":False}
+    try:
+        r=S.get(CDX,params={
+            "url":url,
+            "output":"json",
+            "filter":"statuscode:200",
+            "fl":"timestamp,original,statuscode,digest",
+            "from":"2020","to":"2022",
+            "collapse":"digest",
+            "limit":"30",
+        },timeout=20)
+        r.raise_for_status()
+        rows=r.json()
+        rec["cdx_rows"]=rows[1:] if isinstance(rows,list) and len(rows)>1 else []
+        for row in rec["cdx_rows"][:10]:
+            ts=row[0]
+            snap=f"https://web.archive.org/web/{ts}id_/{url}"
+            try:
+                rr=S.get(snap,timeout=15)
+                if not rr.ok: continue
+                txt=html.unescape(re.sub(r"\\s+"," ",rr.text))
+                if phrase.lower() in txt.lower():
+                    rec["verified"]=True
+                    rec["snapshot"]=snap
+                    rec["snapshot_sha256"]=sha256(rr.content)
+                    rec["mentions_image_only"]=True
+                    i=txt.lower().find(phrase.lower())
+                    rec["image_only_context"]=txt[max(0,i-700):i+len(phrase)+1000]
+                    break
+            except Exception:
+                continue
+    except Exception as e:
+        rec["error"]=repr(e)
+    return rec
+
 def wayback_record():
     rec={"url":TWEET_URL,"kind":"wayback"}
     try:
@@ -262,10 +298,24 @@ def main():
         for variant,a in vv.items():
             per[variant]=hue_label(crop(a,CROPS[name]))
         labels_original.append(per["original"]["label"])
-        stable=all(per[v]["label"]==expected for v in VARIANT_NAMES if v in per)
+        base_hue=per["original"].get("dominant_hue")
+        hue_drifts={}
+        for v in VARIANT_NAMES:
+            hv=per[v].get("dominant_hue")
+            if base_hue is None or hv is None:
+                hue_drifts[v]=None
+            else:
+                d=abs(int(hv)-int(base_hue))
+                hue_drifts[v]=min(d,180-d)
+        stable=bool(
+            per["original"]["label"]==expected
+            and all(hue_drifts[v] is not None and hue_drifts[v]<=6 for v in VARIANT_NAMES)
+        )
         bird_results[name]={
             "expected_visual_label":expected,
             "variants":per,
+            "hue_drift_from_original":hue_drifts,
+            "stability_rule":"original expected category + circular dominant-hue drift <=6/180 in every variant",
             "stable_expected_label":stable,
             "crop_sha256":crop_hashes[name],
         }
@@ -274,6 +324,7 @@ def main():
 
     sources=[
         source_record(OFFICIAL_NEWSLETTER,"official_arweave_newsletter"),
+        wayback_page_record(OFFICIAL_NEWSLETTER,IMAGE_ONLY_EXPECTED,"official_arweave_newsletter_wayback"),
         source_record(OFFICIAL_TELEGRAM,"official_arweave_telegram"),
         source_record(SECONDARY_11,"secondary_crypto_puzzle_dossier_11"),
         source_record(SECONDARY_3,"secondary_crypto_puzzle_dossier_3"),
@@ -294,7 +345,8 @@ def main():
         and x.get("mentions_puzzle9")
     ]
     official_image_only=any(
-        x.get("kind","").startswith("official_") and x.get("mentions_image_only")
+        x.get("kind","").startswith("official_")
+        and (x.get("mentions_image_only") or x.get("verified") and x.get("kind")=="official_arweave_newsletter_wayback")
         for x in sources
     )
 
@@ -375,9 +427,9 @@ def main():
     for name,r in bird_results.items():
         v=r["variants"]
         md.append(
-            f"| {name} | {r['expected_visual_label']} | {v['original']['label']} | "
-            f"{v['jpeg85']['label']} | {v['jpeg70']['label']} | {v['down75_up']['label']} | "
-            f"{r['stable_expected_label']} |"
+            f"| {name} | {r['expected_visual_label']} | {v['original']['label']}({v['original']['dominant_hue']}) | "
+            f"{v['jpeg85']['label']}({v['jpeg85']['dominant_hue']}) | {v['jpeg70']['label']}({v['jpeg70']['dominant_hue']}) | "
+            f"{v['down75_up']['label']}({v['down75_up']['dominant_hue']}) | {r['stable_expected_label']} |"
         )
 
     md += ["","## Source hierarchy","",
