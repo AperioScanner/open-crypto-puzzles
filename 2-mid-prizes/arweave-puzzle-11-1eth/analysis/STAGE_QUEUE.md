@@ -1,6 +1,6 @@
 # Arweave Puzzle #11 — adaptive controller
 
-Last updated: 2026-10-06
+Last updated: 2026-10-10
 
 ## Anti-recycling rule
 
@@ -10,74 +10,73 @@ Do **not** reopen a hypothesis classified COVERED, RETIRED, or independently fal
 
 Historical popularity alone is not a reason to retest an exhausted idea.
 
-## Review through corrected Stage 95
+## Review through Stage 96
 
-The first Stage-95 implementation failed its own control validation because the synthetic 16-level positive control did not score above the Puzzle #5 drawing control. That run was not interpreted.
+Stage 96 completed successfully and recovered the original Puzzle #9 page/image.
 
-Stage 95 was repaired under the same number with a general 16-mode detector and three control classes:
-- exact 16-shade synthetic positive;
-- continuous-tone synthetic negative;
-- solved Puzzle #5 as an author-style drawing control.
+### What Stage 96 established directly
 
-### Valid Stage-95 result
+Puzzle #9 primary image:
+- PNG, **indexed-color P mode**
+- **900 × 635**
+- **no alpha channel**
+- 159 grayscale values after grayscale conversion
+- visible image contains an Orwell/1984 quote, five colored birds on a tree, and a visible `12:05.04` stamp
+- same PNG production family as #11 at the container level: gAMA, cHRM, bKGD, pHYs and tEXt chunks
+- #9 has the same create-before-modify timestamp pattern as #11
 
-Control validation: **PASS**
+Puzzle #11 differs materially:
+- LA grayscale+alpha, 1600 × 1105
+- 256 grayscale values
+- 434 nonopaque alpha pixels
+- public escrow address in a tEXt comment
 
-Scores:
-- synthetic positive: **0.838–1.000**
-- continuous negative: **~0.468**
-- Puzzle #5: **0.491–0.669**
+### Four-step author statement: source validation
 
-All four fixed Puzzle #11 regions are rejected:
-- whole foreground
-- large sail
-- skyline
-- small-sails / jetty
+Stage 96 itself **did not recover the original tweet from Wayback** because the archive request timed out. Therefore the run's own field `author four-step Wayback verification = False` must not be read as a primary-source verification.
 
-No region was close to the positive control in any of the four image variants.
+A fresh public-source check after Stage 96 found two independent public research pages carrying the same tweet ID, timestamp, wording and #9 context:
+- `itsnex1s/crypto-puzzle-list/unsolved/arweave-puzzle-11-1eth.md`
+- `itsnex1s/crypto-puzzle-list/unsolved/arweave-puzzle-3-1000ar.md`
+
+Both attribute status **1272111084867129344**, 2020-06-14 10:18:11 UTC, to Puzzle #9 and reproduce:
+> "The puzzle required 4 steps. My guess is the solver figured out 3 and brute forced one, that's why he is silent"
+
+The official Arweave December newsletter independently confirms that Puzzle #9's format was different and that **everything needed to crack the code is hidden in the image**.
 
 ### Hypothesis decision
 
-**Direct 16-gray-mode / one-tone-per-hex-symbol alphabet = RETIRED.**
-
-## New independent evidence
-
-A fresh public-source sweep surfaced an author statement about **Puzzle #9**, the closest solved sibling to #11:
-
-- #9 was also a puzzle where everything needed was hidden in an image and the prize was Ethereum-side (100 DAI);
-- #9 shared the same create-before-modify metadata anomaly already noted in #11;
-- #9 was solved anonymously;
-- on 2020-06-14, Tiamat wrote that **“The puzzle required 4 steps. My guess is the solver figured out 3 and brute forced one, that's why he is silent.”**
-
-This exact 4-step statement is not present anywhere in the current #11 branch. It is therefore genuinely new independent evidence and satisfies the anti-recycling exception.
+- Shared create/modify timestamps: production lineage, not payload evidence.
+- #9 alpha-carrier analogy: invalid because #9 has no alpha.
+- The exact four-step tweet is **strongly corroborated by public secondary archival research but not yet re-captured from a primary Twitter/Wayback endpoint in this branch**.
+- The visible #9 image clearly supplies several robust semantic/numeric anchors; whether these correspond to the four steps remains unproven.
 
 ## Next stage
 
-**Stage 96 — Puzzle #9 four-step sibling reconstruction audit.**
+**Stage 97 — Puzzle #9 semantic-anchor + four-step source corroboration audit.**
 
 Goals:
-1. Fetch the original #9 permaweb page at `1--NRFY3naNwTlxBSRjzDPNUq-Cn1yLG2RmgGHZem9c`.
-2. Extract all embedded/linked image assets and identify the primary puzzle image(s).
-3. Save only bounded diagnostic thumbnails/metadata needed for reproducible review.
-4. Recover the 2020-06-14 author tweet through Internet Archive CDX/Wayback if possible and verify the exact “4 steps / brute forced one” wording and thread context.
-5. Characterize #9's page/image construction and compare mechanism-level traits with #11:
-   - image mode/channels/dimensions;
-   - PNG chunks / date metadata;
-   - alpha behavior;
-   - first-row anomalies;
-   - grayscale quantization / bitplane statistics;
-   - visible line/region organization.
-6. Identify which of the four conceptual steps can be inferred from #9 **without** generating or checking any private-key candidate.
-7. Produce a ranked set of **new mechanism constraints** for #11, explicitly separating:
-   - shared production artifacts;
-   - likely selection/ordering steps;
-   - the one step that may have been brute-forced.
+1. Re-fetch the original #9 image from the committed Stage-96 artifact.
+2. Preserve fixed crops for:
+   - Orwell/1984 quote
+   - visible `12:05.04` stamp
+   - each of the five colored birds
+3. Measure whether those visible anchors survive JPEG/resampling and whether the five bird color classes remain distinct.
+4. Fetch the official Arweave newsletter / announcement pages and record the "everything needed ... hidden in the image" statement.
+5. Fetch the two independent public crypto-puzzle dossiers that preserve the exact four-step quote and thread context.
+6. Attempt direct recovery through Twitter syndication and Internet Archive again, but classify evidence honestly if primary recovery fails.
+7. Produce an evidence hierarchy:
+   - PRIMARY_VERIFIED
+   - OFFICIAL_CONTEXT_ONLY
+   - MULTI_SOURCE_SECONDARY_CORROBORATED
+   - UNVERIFIED
+8. Decide whether #9 provides a defensible **semantic multi-anchor prior** for #11 or only a generic "image contains everything" prior.
 
-No private-key derivation or wallet access is performed.
+No private-key candidates, hashes-to-key pipelines, or wallet checks are performed.
 
 ## Status
 
-- Stages 1–95: completed.
-- Corrected Stage 95: COMPLETED + REVIEWED — 16-level grayscale alphabet retired.
-- New Puzzle #9 author evidence: PROMOTED.
-- Stage 96: selected for launch.
+- Stages 1–96: completed.
+- Stage 96: COMPLETED + REVIEWED.
+- Puzzle #9 four-step statement: secondary corroboration strong; primary recapture pending.
+- Stage 97: selected for launch.
