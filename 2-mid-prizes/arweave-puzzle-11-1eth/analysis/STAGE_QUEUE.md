@@ -8,63 +8,65 @@ Do **not** reopen a hypothesis classified COVERED, RETIRED, or independently fal
 1. a concrete implementation defect is demonstrated; or
 2. genuinely new independent evidence changes the hypothesis.
 
-## Review through Stage 117
+## Review through Stage 118
 
-Stage 117 completed successfully. Both source/schema and synthetic controls passed.
+Stage 118 completed successfully and its positive control passed.
 
-### Stage-117 result
+### Stage-118 result
 
-The strict Stage-116 inspiration grammar had three operations:
-- visible_text_or_symbol_reading
-- ordering_or_traversal
-- cross_domain_conversion
+Fixed stable building sequence:
+`HHVVHHVHHHHV`
 
-Testing those against Tiamat's own solved Arweave puzzles leaves only two recurrent author-series operations:
+Exactly four predeclared standard-Braille readings were tested:
+- LTR, H raised → `?T`
+- LTR, V raised → `??`
+- RTL, H raised → `T?`
+- RTL, V raised → `??`
 
-1. **cross_domain_conversion**
-   - 15 supporting mechanisms
-   - appears in solved puzzles 5, 7 and 8
-2. **visible_text_or_symbol_reading**
-   - 6 supporting mechanisms
-   - appears in solved puzzles 5 and 7
+No reading produced two Braille letters.
 
-`ordering_or_traversal` appears in only one solved puzzle and is not promoted.
+Count-matched exact null:
+- 495 sequences with the same 8H/4V balance
+- 242/495 produce at least one two-letter reading under the same four mappings
+- familywise probability = **0.488889**
 
-Decision: **AUTHOR_SERIES_INTERSECTION**.
+Decision: **standard two-cell Braille RETIRED**.
 
-### Hypothesis decision
+Do not expand this negative into arbitrary binary alphabets.
 
-This is genuinely new independent evidence. It permits one narrowly predeclared revisit of a previously observed visible symbol family, but not generic H/V mining.
+## Active prior after Stage 118
 
-The 12 building interiors form the stable visible binary sequence `HHVVHHVHHHHV`. Twelve binary symbols have an exact, standard human-readable cross-domain fit to **two 6-dot Braille cells**. Braille has not previously been tested in the repository.
+Stage 117 remains the strongest mechanism-family evidence:
+- recurrent **visible text/symbol reading**
+- recurrent **cross-domain conversion**
+- generic ordering/traversal was not recurrent
 
-This exact dimensional fit plus Stage-117's recurrent visible-symbol + cross-domain prior satisfies the anti-recycling exception for one bounded test.
+A literal visible cross-domain pointer exists in Puzzle #11 itself: the watermark `twitter.com/ArweaveP`.
+
+Prior archive work reconstructed posts and replies, but did not test whether the watermark points to contemporaneous **profile/header visual context** that could act as a cross-domain clue.
 
 ## Next stage
 
-**Stage 118 — exact two-cell Braille audit of the 12 building H/V sequence.**
+**Stage 119 — watermark-directed @ArweaveP profile/header archive audit.**
+
+Question:
+> Did the visible `twitter.com/ArweaveP` watermark point, at publication time, to profile/header imagery or profile metadata that reused or materially referenced the Puzzle #11 scene?
 
 Bounded design:
-1. Fixed sequence: `HHVVHHVHHHHV`; do not alter/re-segment buildings.
-2. Standard Braille dot numbering only (1,2,3,4,5,6).
-3. Exactly four predeclared readings:
-   - left→right, H=raised
-   - left→right, V=raised
-   - right→left, H=raised
-   - right→left, V=raised
-4. Split only as 6+6; no sliding windows.
-5. Positive control encodes/decodes two known Braille letters.
-6. Null calibration enumerates all 12-bit strings with the same H/V counts as the observed sequence.
-7. Promotion requires:
-   - both cells decode to standard alphabetic Braille letters in a predeclared reading;
-   - the all-letter outcome is familywise exceptional under the count-matched null (p<=0.05).
-
-If no reading produces two letters, or the result is not exceptional, retire standard two-cell Braille. Do not expand to arbitrary binary alphabets after a negative.
+1. Query archived snapshots of the exact @ArweaveP profile around 2020-04-20 through 2020-05-02.
+2. Recover only profile-level metadata and referenced profile/header/OG images.
+3. Source control requires at least one timestamped archive snapshot tied to the exact handle.
+4. Compare recovered profile/header images to canonical Puzzle #11 using perceptual similarity + ORB/RANSAC geometry.
+5. Record only short public profile metadata and image-similarity statistics.
+6. Promotion requires either:
+   - a strong geometric visual derivative of Puzzle #11 in contemporaneous profile/header imagery, or
+   - an explicit profile-level puzzle-specific reference independently tied to the image scene.
+7. If archive recovery fails, classify SOURCE_FAILURE and repair Stage 119; do not interpret as a negative.
 
 No private-key material is generated or tested.
 
 ## Status
 
-- Stages 1–117: completed and reviewed.
-- Stage 117: VALID AUTHOR-SERIES PRIOR — cross-domain conversion + visible symbol reading.
-- Stage 118: selected for launch.
+- Stages 1–118: completed and reviewed.
+- Stage 118: VALID NEGATIVE — standard Braille retired.
+- Stage 119: selected for launch.
