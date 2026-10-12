@@ -1,0 +1,402 @@
+{
+  "experiment_id": "A11-EXP-100",
+  "scope": "canonical-coordinate spatial confirmation of exactly four Stage-99 short OCR candidates; no raw OCR persistence and no private-key operations",
+  "candidates": {
+    "SSS": {
+      "region": "full",
+      "rotation": 0
+    },
+    "EAE": {
+      "region": "lower_water",
+      "rotation": 0
+    },
+    "BEE": {
+      "region": "full",
+      "rotation": 0
+    },
+    "IES": {
+      "region": "full",
+      "rotation": 0
+    }
+  },
+  "positive_controls": {
+    "APRIL": {
+      "passed": true,
+      "clusters": [
+        {
+          "original_transforms": [
+            "adaptive",
+            "gray",
+            "otsu"
+          ],
+          "lossy_transforms": [
+            "adaptive",
+            "gray",
+            "otsu"
+          ],
+          "original_count": 3,
+          "lossy_count": 3,
+          "median_box": [
+            24.0,
+            396.8,
+            205.2,
+            412.0
+          ],
+          "mean_conf": 0.0,
+          "max_conf": 0.0,
+          "original_lossy_crop_corr": 0.9138711595578356,
+          "qualifies": true
+        }
+      ],
+      "occurrence_count": 6
+    },
+    "120504": {
+      "passed": true,
+      "clusters": [
+        {
+          "original_transforms": [
+            "adaptive",
+            "gray",
+            "otsu"
+          ],
+          "lossy_transforms": [
+            "adaptive",
+            "gray",
+            "otsu"
+          ],
+          "original_count": 3,
+          "lossy_count": 3,
+          "median_box": [
+            783.8,
+            596.6,
+            843.4,
+            608.8
+          ],
+          "mean_conf": 54.594677666666655,
+          "max_conf": 92.092964,
+          "original_lossy_crop_corr": 0.9335196318077009,
+          "qualifies": true
+        }
+      ],
+      "occurrence_count": 6
+    }
+  },
+  "controls_pass": true,
+  "results": {
+    "SSS": {
+      "stage99_region": "full",
+      "occurrence_count": 5,
+      "clusters": [
+        {
+          "original_transforms": [
+            "gray",
+            "otsu"
+          ],
+          "lossy_transforms": [],
+          "original_count": 2,
+          "lossy_count": 0,
+          "median_box": [
+            1377.0,
+            287.0,
+            1457.0,
+            308.0
+          ],
+          "mean_conf": 47.519989,
+          "max_conf": 48.888187,
+          "original_lossy_crop_corr": 0.9658418369238719,
+          "qualifies": false
+        },
+        {
+          "original_transforms": [
+            "adaptive"
+          ],
+          "lossy_transforms": [],
+          "original_count": 1,
+          "lossy_count": 0,
+          "median_box": [
+            177.0,
+            977.0,
+            427.0,
+            998.0
+          ],
+          "mean_conf": 51.461903,
+          "max_conf": 51.461903,
+          "original_lossy_crop_corr": 0.9544010709667256,
+          "qualifies": false
+        },
+        {
+          "original_transforms": [],
+          "lossy_transforms": [
+            "adaptive"
+          ],
+          "original_count": 0,
+          "lossy_count": 1,
+          "median_box": [
+            1110.0,
+            325.0,
+            1171.0,
+            354.0
+          ],
+          "mean_conf": 0.0,
+          "max_conf": 0.0,
+          "original_lossy_crop_corr": 0.951114909465009,
+          "qualifies": false
+        },
+        {
+          "original_transforms": [],
+          "lossy_transforms": [
+            "adaptive"
+          ],
+          "original_count": 0,
+          "lossy_count": 1,
+          "median_box": [
+            1246.0,
+            271.0,
+            1492.0,
+            346.0
+          ],
+          "mean_conf": 0.0,
+          "max_conf": 0.0,
+          "original_lossy_crop_corr": 0.9694461548944645,
+          "qualifies": false
+        }
+      ],
+      "qualifying_target_clusters": 0,
+      "shuffled_occurrence_count": 1,
+      "shuffled_clusters": [
+        {
+          "original_transforms": [],
+          "lossy_transforms": [
+            "adaptive"
+          ],
+          "original_count": 0,
+          "lossy_count": 1,
+          "median_box": [
+            608.0,
+            748.0,
+            704.0,
+            768.0
+          ],
+          "mean_conf": 47.484642,
+          "max_conf": 47.484642,
+          "original_lossy_crop_corr": 0.9761282262996528,
+          "qualifies": false
+        }
+      ],
+      "qualifying_shuffled_clusters": 0,
+      "survived": false,
+      "diagnostic_crop": null
+    },
+    "EAE": {
+      "stage99_region": "lower_water",
+      "occurrence_count": 3,
+      "clusters": [
+        {
+          "original_transforms": [
+            "gray",
+            "otsu"
+          ],
+          "lossy_transforms": [],
+          "original_count": 2,
+          "lossy_count": 0,
+          "median_box": [
+            317.0,
+            816.0,
+            351.0,
+            822.0
+          ],
+          "mean_conf": 21.198868,
+          "max_conf": 34.73642,
+          "original_lossy_crop_corr": 0.9721141900547015,
+          "qualifies": false
+        },
+        {
+          "original_transforms": [],
+          "lossy_transforms": [
+            "otsu"
+          ],
+          "original_count": 0,
+          "lossy_count": 1,
+          "median_box": [
+            630.0,
+            681.0,
+            752.0,
+            705.0
+          ],
+          "mean_conf": 25.667236,
+          "max_conf": 25.667236,
+          "original_lossy_crop_corr": 0.949549969685587,
+          "qualifies": false
+        }
+      ],
+      "qualifying_target_clusters": 0,
+      "shuffled_occurrence_count": 0,
+      "shuffled_clusters": [],
+      "qualifying_shuffled_clusters": 0,
+      "survived": false,
+      "diagnostic_crop": null
+    },
+    "BEE": {
+      "stage99_region": "full",
+      "occurrence_count": 5,
+      "clusters": [
+        {
+          "original_transforms": [
+            "gray",
+            "otsu"
+          ],
+          "lossy_transforms": [
+            "gray",
+            "otsu"
+          ],
+          "original_count": 2,
+          "lossy_count": 2,
+          "median_box": [
+            803.0,
+            520.5,
+            883.0,
+            545.0
+          ],
+          "mean_conf": 54.64003575,
+          "max_conf": 65.602211,
+          "original_lossy_crop_corr": 0.9686898074301333,
+          "qualifies": true
+        },
+        {
+          "original_transforms": [],
+          "lossy_transforms": [
+            "adaptive"
+          ],
+          "original_count": 0,
+          "lossy_count": 1,
+          "median_box": [
+            1281.0,
+            939.0,
+            1316.0,
+            950.0
+          ],
+          "mean_conf": 34.064377,
+          "max_conf": 34.064377,
+          "original_lossy_crop_corr": 0.9041575044313774,
+          "qualifies": false
+        }
+      ],
+      "qualifying_target_clusters": 1,
+      "shuffled_occurrence_count": 2,
+      "shuffled_clusters": [
+        {
+          "original_transforms": [],
+          "lossy_transforms": [
+            "adaptive"
+          ],
+          "original_count": 0,
+          "lossy_count": 1,
+          "median_box": [
+            448.0,
+            665.0,
+            480.0,
+            672.0
+          ],
+          "mean_conf": 33.059433,
+          "max_conf": 33.059433,
+          "original_lossy_crop_corr": 0.962779351738863,
+          "qualifies": false
+        },
+        {
+          "original_transforms": [],
+          "lossy_transforms": [
+            "adaptive"
+          ],
+          "original_count": 0,
+          "lossy_count": 1,
+          "median_box": [
+            0.0,
+            768.0,
+            96.0,
+            800.0
+          ],
+          "mean_conf": 0.0,
+          "max_conf": 0.0,
+          "original_lossy_crop_corr": 0.9554198382423911,
+          "qualifies": false
+        }
+      ],
+      "qualifying_shuffled_clusters": 0,
+      "survived": true,
+      "diagnostic_crop": "bee-localized.png"
+    },
+    "IES": {
+      "stage99_region": "full",
+      "occurrence_count": 4,
+      "clusters": [
+        {
+          "original_transforms": [
+            "gray",
+            "otsu"
+          ],
+          "lossy_transforms": [],
+          "original_count": 2,
+          "lossy_count": 0,
+          "median_box": [
+            602.0,
+            100.0,
+            653.0,
+            106.0
+          ],
+          "mean_conf": 35.9655075,
+          "max_conf": 42.815315,
+          "original_lossy_crop_corr": 0.9709268322930943,
+          "qualifies": false
+        },
+        {
+          "original_transforms": [
+            "otsu"
+          ],
+          "lossy_transforms": [],
+          "original_count": 1,
+          "lossy_count": 0,
+          "median_box": [
+            219.0,
+            431.0,
+            251.0,
+            448.0
+          ],
+          "mean_conf": 26.02388,
+          "max_conf": 26.02388,
+          "original_lossy_crop_corr": 0.9816144670390936,
+          "qualifies": false
+        },
+        {
+          "original_transforms": [],
+          "lossy_transforms": [
+            "adaptive"
+          ],
+          "original_count": 0,
+          "lossy_count": 1,
+          "median_box": [
+            658.0,
+            777.0,
+            722.0,
+            793.0
+          ],
+          "mean_conf": 31.165741,
+          "max_conf": 31.165741,
+          "original_lossy_crop_corr": 0.9711015941036976,
+          "qualifies": false
+        }
+      ],
+      "qualifying_target_clusters": 0,
+      "shuffled_occurrence_count": 0,
+      "shuffled_clusters": [],
+      "qualifying_shuffled_clusters": 0,
+      "survived": false,
+      "diagnostic_crop": null
+    }
+  },
+  "survivors": [
+    "BEE"
+  ],
+  "promotion_rule": "Puzzle9 APRIL and numeric localization controls pass; candidate has same physical location across >=2 original transforms and >=1 lossy transform with <=18px center displacement plus overlap/size agreement and crop correlation>=0.70; zero equally persistent shuffled clusters",
+  "promoted": true,
+  "safety_guard": "Only predeclared short tokens and bounding boxes are persisted. Raw OCR and long/key-shaped strings are discarded. No key candidate is constructed or verified."
+}
