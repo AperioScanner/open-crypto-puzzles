@@ -1,0 +1,123 @@
+{
+  "experiment_id": "A11-EXP-113",
+  "scope": "64 vertical cells x 25 px; robust 16-state carrier-structure test only; no ordered class sequence persisted and no private-key operations",
+  "exact_dimension_relation": "1600 px = 64 cells * 25 px",
+  "features": [
+    "ink100",
+    "ink140",
+    "ink180",
+    "edge_density",
+    "gradient_x_fraction",
+    "gradient_balance",
+    "entropy16",
+    "dark_y_centroid",
+    "component_density"
+  ],
+  "positive_control": {
+    "passed": false,
+    "phase0": {
+      "phase": 0,
+      "silhouette_k16": 1.0,
+      "cross_variant_stability": 0.75,
+      "occupied_states": 16,
+      "singleton_states": 0,
+      "score": 0.75
+    },
+    "phase0_rank": 23,
+    "best_k": {
+      "k": 16,
+      "silhouette": 1.0,
+      "occupied": 16,
+      "inertia": 0.0
+    },
+    "k16_rank": 1,
+    "k16_tied": true
+  },
+  "negative_control": {
+    "passed": true,
+    "phase0": {
+      "phase": 0,
+      "silhouette_k16": 0.3083849826007091,
+      "cross_variant_stability": 0.8229166666666666,
+      "occupied_states": 16,
+      "singleton_states": 0,
+      "score": 0.25377514193183354
+    },
+    "phase0_rank": 1,
+    "best_k": {
+      "k": 2,
+      "silhouette": 0.447106463420519,
+      "occupied": 2,
+      "inertia": 356.1867419834343
+    },
+    "k16_rank": 10,
+    "k16_tied": false,
+    "structural_gate": false
+  },
+  "controls_pass": false,
+  "real": {
+    "phase0": {
+      "phase": 0,
+      "silhouette_k16": 0.30457155419118825,
+      "cross_variant_stability": 0.9895833333333334,
+      "occupied_states": 16,
+      "singleton_states": 2,
+      "score": 0.2511657781958584
+    },
+    "phase0_rank": 23,
+    "top_phase_scores": [
+      {
+        "phase": 9,
+        "silhouette_k16": 0.3434455279427251,
+        "cross_variant_stability": 1.0,
+        "occupied_states": 16,
+        "singleton_states": 0,
+        "score": 0.3434455279427251
+      },
+      {
+        "phase": 2,
+        "silhouette_k16": 0.3368958745631677,
+        "cross_variant_stability": 0.9791666666666666,
+        "occupied_states": 16,
+        "singleton_states": 0,
+        "score": 0.32987721050976837
+      },
+      {
+        "phase": 8,
+        "silhouette_k16": 0.3443693990924047,
+        "cross_variant_stability": 0.9895833333333334,
+        "occupied_states": 16,
+        "singleton_states": 1,
+        "score": 0.31238369969753726
+      },
+      {
+        "phase": 1,
+        "silhouette_k16": 0.34277020786072887,
+        "cross_variant_stability": 0.9895833333333334,
+        "occupied_states": 16,
+        "singleton_states": 1,
+        "score": 0.310933044456998
+      },
+      {
+        "phase": 10,
+        "silhouette_k16": 0.30721896917743097,
+        "cross_variant_stability": 0.9895833333333334,
+        "occupied_states": 16,
+        "singleton_states": 0,
+        "score": 0.3040187715818327
+      }
+    ],
+    "best_k": {
+      "k": 8,
+      "silhouette": 0.4121668883269201,
+      "occupied": 8,
+      "inertia": 89.59220877717186
+    },
+    "k16_silhouette_rank": 18,
+    "k16_effectively_tied_best": false,
+    "structural_gate": false
+  },
+  "promotion_rule": "both controls pass; phase0 k16 assignments stable >=0.90 across lossy variants; >=12 states occupied; <=4 singleton states; phase0 ranks #1 among all 25 x-phases; k16 silhouette within 0.02 of best k=2..20",
+  "promoted": false,
+  "safety_guard": "No ordered 64-cell cluster labels are written, printed, mapped to hexadecimal, reconstructed as secret material, or verified against any wallet."
+}
