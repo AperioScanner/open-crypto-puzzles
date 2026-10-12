@@ -1,7 +1,7 @@
 # Stage 110 — building stroke-tone / pencil-pressure audit
 
 - synthetic binary control pass: **True**
-- synthetic ternary control pass: **False**
+- synthetic ternary control pass: **True**
 - real dominant models: **{'otsu_ink_median_darkness': {'k': 3, 'win_fraction': 1.0, 'counts': {'2': 0, '3': 60}}, 'edge_median_darkness': {'k': 3, 'win_fraction': 1.0, 'counts': {'2': 0, '3': 60}}}**
 - same dominant k across both metrics: **True**
 - buildings stable >=90%: **7/12**
@@ -12,8 +12,8 @@
 
 ## Synthetic controls
 
-- binary correct-model fraction: 0.967, label accuracy: 0.997
-- ternary correct-model fraction: 1.000, label accuracy: 0.974
+- binary correct-model fraction: 0.967, label accuracy: 0.997, min patch stability: 0.967
+- ternary correct-model fraction: 1.000, label accuracy: 0.974, min patch stability: 0.933
 
 ## Per-building stability
 
@@ -34,6 +34,6 @@
 
 ## Interpretation
 
-The tone harness fails one or more synthetic controls. This is an implementation failure; do not interpret the real-image clustering.
+Per-building stroke tone does not form a sufficiently stable, independently validated discrete channel. Retire stroke-tone coding.
 
 No private-key material was generated or tested.

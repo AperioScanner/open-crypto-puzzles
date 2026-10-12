@@ -44,6 +44,35 @@
       "conditions": 120,
       "correct_model_fraction": 0.9666666666666667,
       "label_accuracy": 0.9972222222222222,
+      "patch_modal_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "patch_stability": [
+        0.9666666666666667,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min_patch_stability": 0.9666666666666667,
       "pass": true
     },
     "ternary": {
@@ -51,10 +80,39 @@
       "conditions": 120,
       "correct_model_fraction": 1.0,
       "label_accuracy": 0.9743055555555555,
-      "pass": false
+      "patch_modal_labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "patch_stability": [
+        0.9333333333333333,
+        1.0,
+        1.0,
+        1.0,
+        0.975,
+        0.975,
+        0.9333333333333333,
+        0.975,
+        0.975,
+        0.975,
+        0.975,
+        0.975
+      ],
+      "min_patch_stability": 0.9333333333333333,
+      "pass": true
     }
   },
-  "controls_pass": false,
+  "controls_pass": true,
   "winner_counts": {
     "otsu_ink_median_darkness": {
       "3": 60
