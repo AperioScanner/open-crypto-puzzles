@@ -1,8 +1,8 @@
 # Open leads, ranked
 
-## 1. Building stroke tone / pencil pressure (active)
+## 1. Small-sail ↔ skyline vertical alignment (active)
 
-Density amount failed adversarial stability, but the actual darkness of drawn strokes is a separate visual property. Stage 110 tests whether the 12 building interiors use stable discrete ink-tone classes independent of hatch orientation and fill amount.
+The five right-hand sailboats may correspond vertically to one consecutive run of five skyline buildings. Stage 111 tests this directly with same-canvas x coordinates, lossy re-detection and two familywise null models.
 
 ## 2. General format-invariant visible / semantic mechanism
 
@@ -14,11 +14,12 @@ Puzzle #9 is primary-verified as a four-step image puzzle, but no concrete step 
 
 ## Closed / deprioritized
 
-- 5|7 delimiter: striking geometry, but independent detector controls failed; not promoted.
-- Building density coding: Stage 108 failed adversarial label stability.
-- Small-sail spoke count: detector controls failed twice.
+- Building stroke tone: Stage 110 valid controls, only 7/12 stable.
+- 5|7 skyline delimiter: striking geometry, independent detector not validated.
+- Building density coding: adversarial stability failed.
+- Small-sail spoke count: detector controls failed.
 - Building topology / roof profiles: rejected.
-- Small-sail L/R: rejected.
+- Small-sail L/R direction: rejected.
 - Literal OCR branch: retired.
 - Direct 16-gray-mode alphabet: rejected.
 - Large-sail one-stroke-per-symbol carrier: rejected.
