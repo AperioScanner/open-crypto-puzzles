@@ -1,0 +1,507 @@
+{
+  "experiment_id": "A11-EXP-099",
+  "scope": "short visible alphanumeric/instruction-token OCR audit over fixed regions/transforms/cardinal rotations; no raw OCR persistence and no private-key operations",
+  "regions": {
+    "full": [
+      0,
+      0,
+      1600,
+      1105
+    ],
+    "skyline": [
+      0,
+      0,
+      1600,
+      330
+    ],
+    "large_sailboat": [
+      44,
+      320,
+      359,
+      599
+    ],
+    "small_sails_jetty": [
+      820,
+      330,
+      1600,
+      650
+    ],
+    "lower_water": [
+      0,
+      650,
+      1600,
+      1105
+    ]
+  },
+  "transforms": [
+    "gray",
+    "otsu",
+    "adaptive"
+  ],
+  "rotations": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "ocr_jobs": {
+    "original": 60,
+    "lossy": 60,
+    "shuffled_negative": 60
+  },
+  "positive_controls": {
+    "p9_quote_april": {
+      "passed": false,
+      "detail": {
+        "original_april_paths": 0,
+        "lossy_april_paths": 0
+      },
+      "rows": [
+        {
+          "variant": "original",
+          "transform": "gray",
+          "tokens": [
+            "APRILANDTHECLOCKSWER",
+            "ITWASABRIGHTCOLDDAYI",
+            "STRIKINGTHIRTEEN"
+          ],
+          "digits_projection": ""
+        },
+        {
+          "variant": "original",
+          "transform": "otsu",
+          "tokens": [
+            "APRIL.ANDTHECLOCKSWE",
+            "ITWASABRIGHTCOLDDAYI",
+            "STRIKINGTHIRTEEN"
+          ],
+          "digits_projection": "7"
+        },
+        {
+          "variant": "original",
+          "transform": "adaptive",
+          "tokens": [
+            "APRILANDTHECLOCKSWER",
+            "IEWASABRIGHTCOLDDAYI",
+            "STRIKINGTHIRTEEN"
+          ],
+          "digits_projection": "7"
+        },
+        {
+          "variant": "lossy",
+          "transform": "gray",
+          "tokens": [
+            "APRILANDTHECLOCKSWER",
+            "ITWASABRIGHTCOLDDAYI",
+            "STRIKINGTHIRTEEN"
+          ],
+          "digits_projection": "4"
+        },
+        {
+          "variant": "lossy",
+          "transform": "otsu",
+          "tokens": [
+            "APRIL.ANDTHECLOCKSWE",
+            "ITWASABRIGHTCOLDDAYI",
+            "STRIKINGTHIRTEEN"
+          ],
+          "digits_projection": "4"
+        },
+        {
+          "variant": "lossy",
+          "transform": "adaptive",
+          "tokens": [
+            "APRIL.ANDTHECLOCKSWE",
+            "ITWASBRIGHTCOLDDAYIN",
+            "STRIKINGTHIRTEEN"
+          ],
+          "digits_projection": ""
+        }
+      ]
+    },
+    "p9_numeric_120504": {
+      "passed": true,
+      "detail": {
+        "original_numeric_paths": 3,
+        "lossy_numeric_paths": 3
+      },
+      "rows": [
+        {
+          "variant": "original",
+          "transform": "gray",
+          "tokens": [
+            "12:05.04"
+          ],
+          "digits_projection": "120504"
+        },
+        {
+          "variant": "original",
+          "transform": "otsu",
+          "tokens": [
+            "12:05.04"
+          ],
+          "digits_projection": "120504"
+        },
+        {
+          "variant": "original",
+          "transform": "adaptive",
+          "tokens": [
+            "12:05.04"
+          ],
+          "digits_projection": "120504"
+        },
+        {
+          "variant": "lossy",
+          "transform": "gray",
+          "tokens": [
+            "12:05.04"
+          ],
+          "digits_projection": "120504"
+        },
+        {
+          "variant": "lossy",
+          "transform": "otsu",
+          "tokens": [
+            "12:08.04"
+          ],
+          "digits_projection": "120804"
+        },
+        {
+          "variant": "lossy",
+          "transform": "adaptive",
+          "tokens": [
+            "12:05.04"
+          ],
+          "digits_projection": "120504"
+        }
+      ]
+    },
+    "all_pass": false
+  },
+  "promoted_candidates": [
+    {
+      "token": "SSS",
+      "qualifying_paths": [
+        {
+          "region": "full",
+          "rotation": 0,
+          "original_transforms": [
+            "adaptive",
+            "gray",
+            "otsu"
+          ],
+          "lossy_transforms": [
+            "adaptive"
+          ]
+        }
+      ],
+      "original_occurrences": 11,
+      "lossy_occurrences": 9,
+      "shuffled_occurrences": 0
+    },
+    {
+      "token": "EAE",
+      "qualifying_paths": [
+        {
+          "region": "lower_water",
+          "rotation": 0,
+          "original_transforms": [
+            "gray",
+            "otsu"
+          ],
+          "lossy_transforms": [
+            "otsu"
+          ]
+        }
+      ],
+      "original_occurrences": 7,
+      "lossy_occurrences": 9,
+      "shuffled_occurrences": 3
+    },
+    {
+      "token": "BEE",
+      "qualifying_paths": [
+        {
+          "region": "full",
+          "rotation": 0,
+          "original_transforms": [
+            "gray",
+            "otsu"
+          ],
+          "lossy_transforms": [
+            "gray",
+            "otsu"
+          ]
+        }
+      ],
+      "original_occurrences": 2,
+      "lossy_occurrences": 3,
+      "shuffled_occurrences": 6
+    },
+    {
+      "token": "IES",
+      "qualifying_paths": [
+        {
+          "region": "full",
+          "rotation": 0,
+          "original_transforms": [
+            "gray",
+            "otsu"
+          ],
+          "lossy_transforms": [
+            "adaptive"
+          ]
+        }
+      ],
+      "original_occurrences": 2,
+      "lossy_occurrences": 3,
+      "shuffled_occurrences": 2
+    }
+  ],
+  "promoted_candidate_count": 4,
+  "top_repeated_short_tokens": [
+    {
+      "token": "EEE",
+      "original_paths": 14,
+      "lossy_paths": 12,
+      "shuffled_paths": 10
+    },
+    {
+      "token": "SEE",
+      "original_paths": 11,
+      "lossy_paths": 11,
+      "shuffled_paths": 7
+    },
+    {
+      "token": "SSS",
+      "original_paths": 11,
+      "lossy_paths": 9,
+      "shuffled_paths": 0
+    },
+    {
+      "token": "EAE",
+      "original_paths": 7,
+      "lossy_paths": 9,
+      "shuffled_paths": 3
+    },
+    {
+      "token": "SES",
+      "original_paths": 5,
+      "lossy_paths": 3,
+      "shuffled_paths": 4
+    },
+    {
+      "token": "SSE",
+      "original_paths": 4,
+      "lossy_paths": 2,
+      "shuffled_paths": 1
+    },
+    {
+      "token": "EAS",
+      "original_paths": 4,
+      "lossy_paths": 2,
+      "shuffled_paths": 1
+    },
+    {
+      "token": "EES",
+      "original_paths": 3,
+      "lossy_paths": 3,
+      "shuffled_paths": 2
+    },
+    {
+      "token": "SEES",
+      "original_paths": 3,
+      "lossy_paths": 3,
+      "shuffled_paths": 3
+    },
+    {
+      "token": "ESS",
+      "original_paths": 3,
+      "lossy_paths": 2,
+      "shuffled_paths": 4
+    },
+    {
+      "token": "ETE",
+      "original_paths": 3,
+      "lossy_paths": 1,
+      "shuffled_paths": 0
+    },
+    {
+      "token": "SEN",
+      "original_paths": 3,
+      "lossy_paths": 2,
+      "shuffled_paths": 2
+    },
+    {
+      "token": "SSN",
+      "original_paths": 3,
+      "lossy_paths": 2,
+      "shuffled_paths": 0
+    },
+    {
+      "token": "204",
+      "original_paths": 3,
+      "lossy_paths": 0,
+      "shuffled_paths": 0
+    },
+    {
+      "token": "RAT",
+      "original_paths": 3,
+      "lossy_paths": 0,
+      "shuffled_paths": 0
+    },
+    {
+      "token": "ASS",
+      "original_paths": 3,
+      "lossy_paths": 2,
+      "shuffled_paths": 4
+    },
+    {
+      "token": "ONE",
+      "original_paths": 3,
+      "lossy_paths": 0,
+      "shuffled_paths": 0
+    },
+    {
+      "token": "BEE",
+      "original_paths": 2,
+      "lossy_paths": 3,
+      "shuffled_paths": 6
+    },
+    {
+      "token": "IES",
+      "original_paths": 2,
+      "lossy_paths": 3,
+      "shuffled_paths": 2
+    },
+    {
+      "token": "EEL",
+      "original_paths": 2,
+      "lossy_paths": 1,
+      "shuffled_paths": 3
+    },
+    {
+      "token": "ASE",
+      "original_paths": 2,
+      "lossy_paths": 1,
+      "shuffled_paths": 3
+    },
+    {
+      "token": "ESCAEVAEE",
+      "original_paths": 2,
+      "lossy_paths": 0,
+      "shuffled_paths": 0
+    },
+    {
+      "token": "ISS",
+      "original_paths": 2,
+      "lossy_paths": 1,
+      "shuffled_paths": 0
+    },
+    {
+      "token": "TWITTER.COM/ARWEAVEP",
+      "original_paths": 2,
+      "lossy_paths": 2,
+      "shuffled_paths": 0
+    },
+    {
+      "token": "IIT",
+      "original_paths": 2,
+      "lossy_paths": 0,
+      "shuffled_paths": 1
+    },
+    {
+      "token": "PEE",
+      "original_paths": 2,
+      "lossy_paths": 1,
+      "shuffled_paths": 3
+    },
+    {
+      "token": "DEAEANTY/WOSDAIMY",
+      "original_paths": 2,
+      "lossy_paths": 0,
+      "shuffled_paths": 0
+    },
+    {
+      "token": "ERY",
+      "original_paths": 2,
+      "lossy_paths": 0,
+      "shuffled_paths": 1
+    },
+    {
+      "token": "SERE",
+      "original_paths": 2,
+      "lossy_paths": 2,
+      "shuffled_paths": 1
+    },
+    {
+      "token": "YEY",
+      "original_paths": 2,
+      "lossy_paths": 0,
+      "shuffled_paths": 0
+    },
+    {
+      "token": "AID",
+      "original_paths": 2,
+      "lossy_paths": 0,
+      "shuffled_paths": 1
+    },
+    {
+      "token": "WALLY",
+      "original_paths": 2,
+      "lossy_paths": 0,
+      "shuffled_paths": 0
+    },
+    {
+      "token": "AIR",
+      "original_paths": 2,
+      "lossy_paths": 0,
+      "shuffled_paths": 0
+    },
+    {
+      "token": "IST",
+      "original_paths": 2,
+      "lossy_paths": 2,
+      "shuffled_paths": 1
+    },
+    {
+      "token": "WALL",
+      "original_paths": 2,
+      "lossy_paths": 0,
+      "shuffled_paths": 0
+    },
+    {
+      "token": "REY",
+      "original_paths": 2,
+      "lossy_paths": 1,
+      "shuffled_paths": 2
+    },
+    {
+      "token": "SAL",
+      "original_paths": 2,
+      "lossy_paths": 0,
+      "shuffled_paths": 2
+    },
+    {
+      "token": "MIEKA",
+      "original_paths": 2,
+      "lossy_paths": 0,
+      "shuffled_paths": 0
+    },
+    {
+      "token": "SOE",
+      "original_paths": 2,
+      "lossy_paths": 3,
+      "shuffled_paths": 0
+    },
+    {
+      "token": "AIE",
+      "original_paths": 2,
+      "lossy_paths": 2,
+      "shuffled_paths": 5
+    }
+  ],
+  "promotion_rule": "Puzzle9 positive controls pass; token length 3..20; same token appears in >=2 preprocessing transforms for one Puzzle11 region+rotation, reappears after JPEG85+resize in that same region+rotation, and is absent from the matched shuffled control",
+  "promoted": false,
+  "safety_guard": "Raw OCR is not persisted. Tokens >20 chars are not persisted. 64-hex-like strings are ignored. No key candidate is constructed or verified."
+}
