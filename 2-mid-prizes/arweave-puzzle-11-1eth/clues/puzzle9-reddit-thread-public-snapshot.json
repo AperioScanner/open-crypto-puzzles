@@ -1,0 +1,69 @@
+{
+  "schema": "puzzle9-reddit-public-snapshot-v1",
+  "verified_at_utc": "2026-10-12T17:22:00Z",
+  "canonical_url": "https://www.reddit.com/r/ethtrader/comments/ersf73/100_dai_hidden_in_this_image/",
+  "thread_id": "ersf73",
+  "title": "100 DAI hidden in this image",
+  "author": "webgene",
+  "published_date_utc": "2020-01-21",
+  "arweave_url": "https://arweave.net/1--NRFY3naNwTlxBSRjzDPNUq-Cn1yLG2RmgGHZem9c",
+  "provenance": {
+    "method": "Direct retrieval of canonical Reddit HTML by the research controller; runner-side Reddit JSON/CDX access was blocked.",
+    "note": "Snapshot intentionally stores only mechanism-relevant public comments visible on the canonical thread, not the entire page.",
+    "canonical_page_evidence": [
+      "thread title and OP visible on canonical Reddit page",
+      "Arweave link visible in post body",
+      "comment permalinks expose stable Reddit comment IDs"
+    ]
+  },
+  "comments": [
+    {
+      "id": "ff6kf2y",
+      "author": "roamingandy",
+      "phase": "pre_solve",
+      "body": "The date is the 05,04(April),2012 and the time is 13:00. Then there's some more shit going on. Let me know if you get there."
+    },
+    {
+      "id": "ff87ik3",
+      "author": "trump_sucks_we_know",
+      "phase": "pre_solve",
+      "body": "The orange bird is at 1:00. It is the only bird facing left. Yet 1:00 in April is 2:00. Plus Orwell... The previous events must be called into question. 1984? I don’t know."
+    },
+    {
+      "id": "ff65x96",
+      "author": "heathbar24",
+      "phase": "pre_solve",
+      "body": "Is it something to do with the angle of each of the green leaves and ‘thirteen’?"
+    },
+    {
+      "id": "ff6ik2z",
+      "author": "IGsbrnk",
+      "phase": "pre_solve",
+      "body": "OP, invisible 9 lines on picture is mean something?"
+    },
+    {
+      "id": "ff7m11p",
+      "author": "[deleted]",
+      "phase": "pre_solve",
+      "body": "Decrypt using the least significant bit"
+    },
+    {
+      "id": "ftgcd6k",
+      "author": "kid1elvis",
+      "phase": "post_solve",
+      "body": "Someone Solved this challenge."
+    },
+    {
+      "id": "ff6q15a",
+      "author": "roberto250b",
+      "phase": "pre_solve",
+      "body": "Can be steganography but its probebly much simpler than that."
+    },
+    {
+      "id": "ffa1856",
+      "author": "d4f6",
+      "phase": "pre_solve",
+      "body": "It's part of a series: https://twitter.com/ArweaveP about half of them are solved already."
+    }
+  ]
+}
