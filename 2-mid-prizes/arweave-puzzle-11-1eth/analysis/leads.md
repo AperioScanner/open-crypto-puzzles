@@ -1,10 +1,10 @@
 # Open leads, ranked
 
-## 1. Three-level building density structure (active)
+## 1. Central 5|7 skyline delimiter (active)
 
-Stage 107 broke the Stage-106 binary split, but the failures were highly structured: buildings **5, 6 and 12** consistently sit between the clearly light and clearly dark groups.
+The 12-building skyline has a conspicuously wide gap after building 5. Stage 91 classified the historical 5/7 split as only PARTIAL, so it remains legitimately untested as a robust structural delimiter.
 
-Stage 108 tests a light/medium/dark model across the same aggressive perturbations and requires k=3 to outperform k=2.
+Stage 109 tests whether this gap is independently detectable, dominant, central and invariant under lossy transforms.
 
 ## 2. Image-only multi-step semantic prior
 
@@ -14,12 +14,13 @@ Puzzle #9 is primary-verified as a four-step image puzzle, but no concrete step 
 
 Still supported by Stage 31 and the archived "format does not matter" statement.
 
-## Closed / downgraded
+## Closed / deprioritized
 
-- Binary density split: Stage 107 fails robustness (9/12 only); not accepted.
+- Building density coding: Stage 108 fails adversarial label stability.
 - Small-sail spoke count: detector controls failed twice; unresolved/deprioritized.
 - Building topology / roof profiles: rejected.
 - Small-sail L/R: rejected.
 - Literal OCR branch: retired.
 - Direct 16-gray-mode alphabet: rejected.
 - Large-sail one-stroke-per-symbol carrier: rejected.
+- Pier Roman / source-photo / CryptoCanvas: closed.
