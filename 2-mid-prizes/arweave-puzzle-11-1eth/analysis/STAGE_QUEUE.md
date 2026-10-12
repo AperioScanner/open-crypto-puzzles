@@ -8,48 +8,58 @@ Do **not** reopen a hypothesis classified COVERED, RETIRED, or independently fal
 1. a concrete implementation defect is demonstrated; or
 2. genuinely new independent evidence changes the hypothesis.
 
-## Review through Stage 108
+## Review through corrected Stage 109
 
-Stage 108 completed successfully, but the tri-modal density hypothesis **failed its predeclared stability gate**.
+Stage 109 tested the historical 5|7 skyline split.
 
-### Stage-108 result
+Geometry alone is striking:
+- dominant inter-building gap: after building 5
+- width: **102 px**
+- second-largest gap: **4 px**
+- ratio: **25.5×**
+- midpoint only **2.1%** of image width from canvas center
+- exchangeable-gap null p ≈ **5e-6**
 
-- synthetic light/medium/dark controls: **PASS**
-- k=3 beats k=2: **171/180 = 95%**
-- dominant sequence: **DDLLMMLLDMLM**
-- class counts: **L=5, M=4, D=3**
-- buildings stable >=90%: **9/12**
-- unstable: buildings **3, 5, 12**
-- promotion required >=10/12 stable: **FAIL**
+However, independent image detectors could not be calibrated cleanly:
+- literal-blank detector failed because horizon strokes cross the gap;
+- full-height relative occupancy detector failed its synthetic negative control because building height itself creates low-occupancy corridors;
+- lower-band relative detector still failed its synthetic control and only matched the target at thresholds 140/180, not 100.
 
 ### Hypothesis decision
 
-**Building density coding = RETIRED.**
+**5|7 delimiter = NOT PROMOTED.**
 
-Although a 3-level model often fits better statistically, its labels are too crop-sensitive to treat as an intentional discrete code. Do not continue density clustering.
+Retain the 102 px geometry fact, but do not treat it as an intentional delimiter without a validated independent detector. Do not spend further cycles tuning this family absent new evidence.
 
 ## Next stage
 
-**Stage 109 — central skyline gap / 5|7 delimiter audit.**
+**Stage 110 — building stroke-tone / pencil-pressure audit.**
 
 Motivation:
-- Stage 91 marked the historical **5/7 skyline split** as PARTIAL, not covered or retired.
-- Geometry shows the twelve buildings may be separated after building 5 by a conspicuously wide central gap.
-- This is a distinct visible structural hypothesis, independent of H/V, density, roof and topology tests.
+- density amount was tested and retired, but conditional stroke darkness/tone is a distinct feature;
+- the drawing visibly contains darker and lighter pencil strokes;
+- stroke tone should survive ordinary JPEG/resampling if deliberate;
+- no prior stage tested per-building ink tone as a discrete channel.
 
 Bounded design:
-1. Use the fixed 12 building x-ranges from `geometry.json`.
-2. Measure all 11 inter-building gaps and the largest-gap/second-largest ratio.
-3. Independently detect empty vertical runs from the lower skyline band (y=240..295) after thresholding and horizontal closing.
-4. Repeat on original, JPEG85, JPEG70 and resize at thresholds 100/140/180.
-5. Require the independently detected dominant gap to overlap the geometry gap after building 5 in every condition.
-6. Require dominant gap width >=5× the second-largest inter-building gap and midpoint within 10% of image center.
-7. Calibrate concentration of empty-space into one gap against an exchangeable Dirichlet null conditioned on 11 gaps.
+1. Reuse the 12 fixed Stage-12 building interiors.
+2. Perturb crop margins (8/14/20%) and x/y by ±4 px across original/JPEG85/JPEG70/resize.
+3. Two independent tone measures:
+   - median darkness of Otsu-selected ink pixels;
+   - median darkness sampled on Canny edge pixels.
+4. For every condition, compare k=2 vs k=3 one-dimensional cluster models using BIC.
+5. Synthetic binary-tone and ternary-tone hatch controls validate model selection independently of hatch orientation/density.
+6. Promote only if:
+   - synthetic controls recover the correct model and labels;
+   - one model (k=2 or k=3) wins in >=80% of real conditions for both metrics;
+   - >=10/12 buildings retain the same ordered tone class in >=90% of conditions;
+   - each class has >=2 members;
+   - labels are not nearly identical to H/V or the retired density labels.
 
-A positive result promotes only **5|7 as a robust visible delimiter**, not any numeric/key interpretation.
+A positive result establishes only a robust visible stroke-tone channel. No secret/key mapping is attempted.
 
 ## Status
 
-- Stages 1–108: completed.
-- Stage 108: COMPLETED + REVIEWED — density coding retired.
-- Stage 109: selected for launch.
+- Stages 1–109: completed.
+- Stage 109: COMPLETED + REVIEWED — 5|7 geometry notable but delimiter not validated.
+- Stage 110: selected for launch.
