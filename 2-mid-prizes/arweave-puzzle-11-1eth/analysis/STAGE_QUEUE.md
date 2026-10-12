@@ -8,58 +8,59 @@ Do **not** reopen a hypothesis classified COVERED, RETIRED, or independently fal
 1. a concrete implementation defect is demonstrated; or
 2. genuinely new independent evidence changes the hypothesis.
 
-## Review through corrected Stage 109
+## Review through corrected Stage 110
 
-Stage 109 tested the historical 5|7 skyline split.
+Stage 110 was repaired twice under the same stage number:
+- quantization-aware BIC removed binary-control overfitting;
+- synthetic control evaluation was aligned with the real per-object stability criterion.
 
-Geometry alone is striking:
-- dominant inter-building gap: after building 5
-- width: **102 px**
-- second-largest gap: **4 px**
-- ratio: **25.5×**
-- midpoint only **2.1%** of image width from canvas center
-- exchangeable-gap null p ≈ **5e-6**
+### Valid Stage-110 result
 
-However, independent image detectors could not be calibrated cleanly:
-- literal-blank detector failed because horizon strokes cross the gap;
-- full-height relative occupancy detector failed its synthetic negative control because building height itself creates low-occupancy corridors;
-- lower-band relative detector still failed its synthetic control and only matched the target at thresholds 140/180, not 100.
+Controls:
+- binary tone control: **PASS**
+- ternary tone control: **PASS**
+
+Real image:
+- both independent tone metrics choose **k=3 in 60/60 conditions each**
+- modal tone sequence: **DDLLMMLLDMLM**
+- class sizes: 5 / 4 / 3
+- not redundant with H/V or retired density labels
+- but only **7/12 buildings** retain the same tone class in >=90% of perturbations
+
+Promotion required >=10/12 stable buildings.
 
 ### Hypothesis decision
 
-**5|7 delimiter = NOT PROMOTED.**
+**Building stroke-tone / pencil-pressure coding = RETIRED.**
 
-Retain the 102 px geometry fact, but do not treat it as an intentional delimiter without a validated independent detector. Do not spend further cycles tuning this family absent new evidence.
+The apparent 3-class structure is real enough to cluster, but not stable enough per building to support a deliberate discrete carrier.
 
 ## Next stage
 
-**Stage 110 — building stroke-tone / pencil-pressure audit.**
+**Stage 111 — small-sail ↔ skyline vertical-alignment audit.**
 
 Motivation:
-- density amount was tested and retired, but conditional stroke darkness/tone is a distinct feature;
-- the drawing visibly contains darker and lighter pencil strokes;
-- stroke tone should survive ordinary JPEG/resampling if deliberate;
-- no prior stage tested per-building ink tone as a discrete channel.
+- the five right-hand sailboats form a repeated semantic object class;
+- visually they sit below the right-hand skyline and may correspond to five consecutive buildings;
+- no prior stage tested cross-object vertical alignment/correspondence;
+- this is format-invariant and independent of width, direction, spoke count, density, tone and H/V texture.
 
 Bounded design:
-1. Reuse the 12 fixed Stage-12 building interiors.
-2. Perturb crop margins (8/14/20%) and x/y by ±4 px across original/JPEG85/JPEG70/resize.
-3. Two independent tone measures:
-   - median darkness of Otsu-selected ink pixels;
-   - median darkness sampled on Canny edge pixels.
-4. For every condition, compare k=2 vs k=3 one-dimensional cluster models using BIC.
-5. Synthetic binary-tone and ternary-tone hatch controls validate model selection independently of hatch orientation/density.
-6. Promote only if:
-   - synthetic controls recover the correct model and labels;
-   - one model (k=2 or k=3) wins in >=80% of real conditions for both metrics;
-   - >=10/12 buildings retain the same ordered tone class in >=90% of conditions;
-   - each class has >=2 members;
-   - labels are not nearly identical to H/V or the retired density labels.
+1. Re-detect the five sail centers inside the fixed right-hand band x=900..1585 on original/JPEG85/JPEG70/resize using the corrected Stage-105 detector.
+2. Use the 12 fixed skyline building centers from `geometry.json`.
+3. Test all **8 consecutive blocks of five buildings**.
+4. Statistic: direct same-canvas x-alignment RMS; **no fitted translation or scale**.
+5. Require the same best building block across all image variants and sail-center drift <=8 px.
+6. Two familywise nulls:
+   - translation-preserving null: shift the observed five-sail pattern within the allowed band, preserving all internal gaps;
+   - spacing-constrained null: draw five sorted centers uniformly in the band with minimum 70 px spacing.
+7. Synthetic aligned coordinate control must identify its known five-building block.
+8. Promote only if both null p-values <=0.05 and the same block survives all variants.
 
-A positive result establishes only a robust visible stroke-tone channel. No secret/key mapping is attempted.
+A positive result would establish only a visible cross-object correspondence. No key/secret mapping is attempted.
 
 ## Status
 
-- Stages 1–109: completed.
-- Stage 109: COMPLETED + REVIEWED — 5|7 geometry notable but delimiter not validated.
-- Stage 110: selected for launch.
+- Stages 1–110: completed.
+- Stage 110: COMPLETED + REVIEWED — stroke-tone coding retired.
+- Stage 111: selected for launch.
