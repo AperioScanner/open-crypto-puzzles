@@ -28,7 +28,7 @@ OUT=ROOT/"analysis"/"runs"/"stage109-skyline-5-7-delimiter"
 OUT.mkdir(parents=True,exist_ok=True)
 
 THRESHOLDS=(100,140,180)
-SKY_BAND=(20,300)
+SKY_BAND=(240,295)
 X_RANGE=(220,1595)
 LOW_OCC=0.025
 SMOOTH=7
@@ -193,7 +193,7 @@ def main():
 
     result={
         "experiment_id":"A11-EXP-109",
-        "implementation_correction":"Replaced literal-blank lower-band detector, then replaced an invalid absolute occupancy cutoff with a relative 2-cluster low/high occupancy split because the horizon line crosses the true visual gap.",
+        "implementation_correction":"Replaced literal blank columns with a relative low/high occupancy split in the common lower building-body band y=240..295. A full-height relative detector was rejected because synthetic controls showed confounding by building height.",
         "scope":"robustness and salience of the central inter-building gap producing a 5|7 skyline split; no private-key operations",
         "geometry_gaps":gaps,
         "dominant_geometry_gap":top,
