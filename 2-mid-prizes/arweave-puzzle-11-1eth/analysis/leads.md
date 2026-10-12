@@ -1,8 +1,10 @@
 # Open leads, ranked
 
-## 1. Building enclosed-space topology (active)
+## 1. Small-sail radial spoke counts (active)
 
-Stage 12 counted dark components but not enclosed white holes/windows. Stage 104 tests whether the 12 buildings carry a robust visible count sequence through enclosed-space topology.
+The five small sails visibly contain multiple apex-to-base rays. Width/gap/direction families were tested; internal spoke counts were not.
+
+Stage 105 tests whether those counts form a robust visible sequence across lossy re-encoding using Hough and radial-profile estimators.
 
 ## 2. Image-only multi-step semantic prior
 
@@ -14,12 +16,12 @@ Still supported by Stage 31 and the archived "format does not matter" statement.
 
 ## Closed / do not recycle
 
-- Building roof-profile coding: Stage 103 only 2/12 stable.
-- Small-sail L/R direction: Stage 102 only 3/5 stable.
+- Building enclosed topology: Stage 104 stable 0/12.
+- Building roof profiles: Stage 103 stable 2/12.
+- Small-sail L/R direction: Stage 102 stable 3/5.
 - Literal OCR branch: retired.
 - Direct 16-gray-mode alphabet: rejected.
 - Large-sail 64/256 one-stroke-per-symbol carrier: rejected.
 - Pier X/IX/XI: rejected.
 - Source-photo pool: rejected.
 - CryptoCanvas: post-publication mirror only.
-- Alpha halo / first row / tested H/V interpretations: closed or unconfirmed.
