@@ -263,3 +263,12 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Direct inspection of the saved BEE crop shows dense mostly-horizontal line hatching, not obvious human-readable B/E/E glyphs. This is critical: spatially stable OCR is still not proof of text.
 - Stage 101 selected as an adversarial literal-text test: crop jitter, six Tesseract PSM modes, four image variants, matched line-art controls, rendered BEE positives and independent stroke-orientation balance.
 - No semantic interpretation of BEE is permitted unless Stage 101 survives.
+
+
+## 2026-10-12 — adaptive review of corrected Stage 110
+
+- Initial Stage 110 failed synthetic controls due model-selection precision/criterion mismatch; repaired under the same stage number.
+- Valid controls now pass: binary model selection 96.7% with minimum per-patch stability 96.7%; ternary 100% with minimum per-patch stability 93.3%.
+- Both real tone metrics prefer three classes in every tested condition, producing modal sequence DDLLMMLLDMLM, but only 7/12 buildings retain their class in >=90% of perturbations.
+- Decision: retire stroke-tone/pencil-pressure as a deliberate discrete carrier; the clustering exists but lacks per-building robustness.
+- Stage 111 selected as a genuinely different cross-object semantic test: direct x alignment between the five right-hand sailboats and consecutive five-building skyline blocks, with no fitted translation/scale and two familywise null models.
