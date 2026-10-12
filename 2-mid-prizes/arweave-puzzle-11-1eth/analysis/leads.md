@@ -1,20 +1,16 @@
 # Open leads, ranked
 
-## 1. Spatially localized short OCR candidates (active)
+## 1. BEE localized OCR phenomenon (active, adversarial validation)
 
-Corrected Stage 99 has valid Puzzle #9 positive controls and produced four short Puzzle #11 OCR candidates.
+Stage 100 eliminated SSS, EAE and IES because their OCR repetitions came from different physical locations.
 
-Rank before localization:
-1. **SSS** — 11 original / 9 lossy / 0 shuffled; strongest.
-2. **EAE** — 7 / 9 / 3; weaker.
-3. **BEE** — 2 / 3 / 6; likely generic OCR hallucination unless spatially exceptional.
-4. **IES** — 2 / 3 / 2; weak.
+BEE alone co-localizes at approximately `[803, 520.5, 883, 545]` across original/lossy gray and Otsu paths, with no equally persistent shuffled-control cluster.
 
-Stage 100 tests whether repeated OCR paths actually point to the same physical glyph location. Region-level repetition alone is insufficient.
+However, the saved diagnostic crop visually resembles horizontal hatching rather than obvious letters. Stage 101 therefore treats BEE as a likely OCR hallucination until it survives perturbation, PSM diversity, matched line-art controls and glyph-orientation calibration.
 
 ## 2. Image-only multi-step semantic prior
 
-Puzzle #9 is primary-verified as a four-step image puzzle. Its visible semantic/numeric anchors are robust under re-encoding, but no concrete #9 solve step was recovered from the primary thread.
+Puzzle #9 is primary-verified as a four-step image puzzle. No concrete #9 solve step was recovered.
 
 ## 3. General format-invariant visible / semantic mechanism
 
@@ -22,6 +18,7 @@ Still strongly supported by #11 Stage 31 and the archived "format does not matte
 
 ## Closed / do not recycle
 
+- Stage-100 SSS/EAE/IES: failed spatial co-localization.
 - Stage-98 `order`: contextual false positive.
 - Direct 16-gray-mode alphabet: rejected.
 - Large-sail 64/256 one-stroke-per-symbol carrier: rejected.
