@@ -1,0 +1,215 @@
+{
+  "experiment_id": "A11-EXP-117",
+  "scope": "recurrent support for Stage-116 inspiration-grammar operations in Stage-11 solved Arweave mechanisms; no Puzzle #11 decoding",
+  "stage116_shared_operations": [
+    "cross_domain_conversion",
+    "ordering_or_traversal",
+    "visible_text_or_symbol_reading"
+  ],
+  "predeclared_class_support": {
+    "visible_text_or_symbol_reading": [
+      "medium-translation",
+      "secondary-detail-rebus",
+      "sequence-pattern",
+      "small-detail-counting",
+      "symbol-identification",
+      "visual-number-extraction"
+    ],
+    "ordering_or_traversal": [
+      "sequence-pattern"
+    ],
+    "cross_domain_conversion": [
+      "art-reference",
+      "biographical-rebus",
+      "cross-domain-reference",
+      "cultural-reference",
+      "franchise-reference",
+      "literature-reference",
+      "medium-translation",
+      "reference-to-number",
+      "secondary-detail-rebus",
+      "symbol-identification",
+      "technical-context"
+    ]
+  },
+  "synthetic_control_pass": true,
+  "validation_errors": [],
+  "source_control_pass": true,
+  "operation_results": {
+    "cross_domain_conversion": {
+      "supporting_mechanism_count": 15,
+      "supporting_puzzles": [
+        5,
+        7,
+        8
+      ],
+      "supporting_classes": [
+        "art-reference",
+        "biographical-rebus",
+        "cross-domain-reference",
+        "cultural-reference",
+        "franchise-reference",
+        "literature-reference",
+        "medium-translation",
+        "reference-to-number",
+        "secondary-detail-rebus",
+        "symbol-identification",
+        "technical-context"
+      ],
+      "support_examples": [
+        {
+          "puzzle": 5,
+          "class": "medium-translation",
+          "answer_type": "non_numeric"
+        },
+        {
+          "puzzle": 5,
+          "class": "cultural-reference",
+          "answer_type": "non_numeric"
+        },
+        {
+          "puzzle": 5,
+          "class": "symbol-identification",
+          "answer_type": "non_numeric"
+        },
+        {
+          "puzzle": 5,
+          "class": "franchise-reference",
+          "answer_type": "non_numeric"
+        },
+        {
+          "puzzle": 5,
+          "class": "secondary-detail-rebus",
+          "answer_type": "non_numeric"
+        },
+        {
+          "puzzle": 5,
+          "class": "art-reference",
+          "answer_type": "non_numeric"
+        },
+        {
+          "puzzle": 7,
+          "class": "cultural-reference",
+          "answer_type": "non_numeric"
+        },
+        {
+          "puzzle": 7,
+          "class": "reference-to-number",
+          "answer_type": "numeric"
+        },
+        {
+          "puzzle": 7,
+          "class": "technical-context",
+          "answer_type": "non_numeric"
+        },
+        {
+          "puzzle": 7,
+          "class": "literature-reference",
+          "answer_type": "non_numeric"
+        },
+        {
+          "puzzle": 7,
+          "class": "literature-reference",
+          "answer_type": "non_numeric"
+        },
+        {
+          "puzzle": 7,
+          "class": "cross-domain-reference",
+          "answer_type": "non_numeric"
+        },
+        {
+          "puzzle": 8,
+          "class": "biographical-rebus",
+          "answer_type": "non_numeric"
+        },
+        {
+          "puzzle": 8,
+          "class": "biographical-rebus",
+          "answer_type": "non_numeric"
+        },
+        {
+          "puzzle": 8,
+          "class": "biographical-rebus",
+          "answer_type": "non_numeric"
+        }
+      ],
+      "author_series_recurrent": true
+    },
+    "ordering_or_traversal": {
+      "supporting_mechanism_count": 1,
+      "supporting_puzzles": [
+        7
+      ],
+      "supporting_classes": [
+        "sequence-pattern"
+      ],
+      "support_examples": [
+        {
+          "puzzle": 7,
+          "class": "sequence-pattern",
+          "answer_type": "numeric"
+        }
+      ],
+      "author_series_recurrent": false
+    },
+    "visible_text_or_symbol_reading": {
+      "supporting_mechanism_count": 6,
+      "supporting_puzzles": [
+        5,
+        7
+      ],
+      "supporting_classes": [
+        "medium-translation",
+        "secondary-detail-rebus",
+        "sequence-pattern",
+        "small-detail-counting",
+        "symbol-identification",
+        "visual-number-extraction"
+      ],
+      "support_examples": [
+        {
+          "puzzle": 5,
+          "class": "medium-translation",
+          "answer_type": "non_numeric"
+        },
+        {
+          "puzzle": 5,
+          "class": "small-detail-counting",
+          "answer_type": "numeric"
+        },
+        {
+          "puzzle": 5,
+          "class": "symbol-identification",
+          "answer_type": "non_numeric"
+        },
+        {
+          "puzzle": 5,
+          "class": "secondary-detail-rebus",
+          "answer_type": "non_numeric"
+        },
+        {
+          "puzzle": 7,
+          "class": "sequence-pattern",
+          "answer_type": "numeric"
+        },
+        {
+          "puzzle": 7,
+          "class": "visual-number-extraction",
+          "answer_type": "numeric"
+        }
+      ],
+      "author_series_recurrent": true
+    }
+  },
+  "promoted_recurrent_operations": [
+    "cross_domain_conversion",
+    "visible_text_or_symbol_reading"
+  ],
+  "weak_or_nonrecurrent_operations": [
+    "ordering_or_traversal"
+  ],
+  "decision": "AUTHOR_SERIES_INTERSECTION",
+  "promotion_rule": "operation must have >=2 Stage-11 supporting mechanisms occurring across >=2 distinct solved Arweave puzzles; mapping is predeclared and conservative",
+  "interpretation_guard": "Promotion establishes only an author-series design prior. It does not prove Puzzle #11 uses the operation or identify any payload.",
+  "safety_guard": "No private key, ordered secret candidate, derivation, verification, or wallet access is performed."
+}
