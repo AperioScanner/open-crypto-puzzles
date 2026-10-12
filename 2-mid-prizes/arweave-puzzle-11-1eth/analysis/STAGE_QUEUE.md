@@ -8,75 +8,71 @@ Do **not** reopen a hypothesis classified COVERED, RETIRED, or independently fal
 1. a concrete implementation defect is demonstrated; or
 2. genuinely new independent evidence changes the hypothesis.
 
-## Review through corrected Stage 113
+## Review through corrected Stage 114
 
-Stage 113 initially failed its positive control and was repaired under the same stage number. The final synthetic positive and negative controls both pass.
+The first Stage-114 run failed source recovery because GitHub-hosted runners received HTTP 403 from Reddit and no Wayback CDX rows. That was an implementation/source-access failure, not a negative result.
 
-### Valid Stage-113 result
+Stage 114 was repaired under the **same stage number** using a bounded, controller-verified snapshot of the canonical Reddit page. The snapshot stores only public mechanism-relevant comments with stable Reddit comment IDs and the canonical post metadata.
 
-Exact dimensional hypothesis:
-`1600 px = 64 private-key hex positions × 25 px`.
+### Valid Stage-114 result
 
-Validated harness:
-- positive control: **PASS**
-- negative control: **PASS**
+Source controls:
+- canonical Reddit thread recovered: **PASS**
+- title: **"100 DAI hidden in this image"**
+- OP: **webgene**
+- Arweave Puzzle #9 link: **PASS**
+- mechanism-relevant public comments recovered: **8**
+- pre-solve / post-solve: **7 / 1**
 
-Puzzle #11:
-- phase-0 rank: **21 / 25**
-- k=16 silhouette: **0.3499**
-- cross-variant k=16 stability: **0.9948**
-- occupied states: **16/16**
-- singleton states: **3**
-- best k by silhouette: **8**
-- k=16 rank among k=2..20: **14 / 19**
-- k=16 effectively tied with best: **False**
-- structural promotion gate: **False**
+Evidence classification:
+- mechanism-specific OP/author replies: **0**
+- independently corroborated community solve paths: **0**
+- decision: **NO_CORROBORATED_MECHANISM**
+- promotion: **False**
 
-### Hypothesis decision
+The thread preserves useful contemporaneous speculation (date/time, birds, Orwell, angles/lines, LSB), but none may be treated as a Puzzle #9 step.
 
-**Simple one-hex-symbol-per-25px vertical-cell encoding = RETIRED.**
+## New author-specific evidence family
 
-The exact 25-px boundary is not exceptional and a 16-state alphabet is not the preferred discrete structure.
+The 2019-10-10 official Arweave interview **Community Spotlight: Meeting Tiamat** contains a primary statement from Tiamat that he liked tangible puzzles (e.g. Hanayama), then **saw a Bitcoin puzzle on Reddit** and realized the permaweb was a good immutable place to store puzzles.
 
-## New external evidence
+Because Tiamat's Arweave puzzle series had already started by late May 2019, the inspiring Reddit Bitcoin puzzle must predate the series launch.
 
-A fresh primary public source was identified outside the prior Twitter-focused Puzzle #9 audit:
+A bounded candidate audit found two especially relevant pre-launch Reddit image puzzles from May 2018:
+1. r/Bitcoin `8kk0pa` — **"1 BTC is hidden in this puzzle. Good luck!"**
+2. r/Bitcoin `8krbd3` — **"*Prize inside* 2.5mBTC. Private key in puzzle."**
 
-**Original Reddit thread:** r/ethtrader, 2020-01-21, “100 DAI hidden in this image”
-`https://www.reddit.com/r/ethtrader/comments/ersf73`
-
-The indexed thread contains pre-solve mechanism discussion absent from the current branch, including:
-- green-leaf/bird angle + “thirteen” speculation;
-- “invisible 9 lines” observation;
-- a concrete comment interpreting the image as **05/04/2012 and 13:00**, followed by “there's some more ... going on”;
-- orange bird facing left + Orwell/1984 discussion;
-- LSB suggestion;
-- a post-solve comment on 2020-06-09 noting the challenge had been solved.
-
-These are community comments, not yet author-confirmed clues. Their value is that they are contemporaneous and may preserve the missing Puzzle #9 solving path.
+Later 2019 image/private-key puzzles are chronologically incapable of being the original inspiration.
 
 ## Next stage
 
-**Stage 114 — original Puzzle #9 Reddit-thread reconstruction.**
+**Stage 115 — Tiamat Reddit-inspiration candidate audit.**
 
-Bounded archival design:
-1. Recover the Reddit thread via public Reddit JSON/HTML and Internet Archive snapshots where available.
-2. Preserve comment hierarchy, timestamps, authors when public, and OP/author identity.
-3. Separate:
-   - OP/author replies;
-   - pre-solve community hypotheses;
-   - post-solve comments after the 2020-06-08 prize sweep.
-4. Search a fixed mechanism vocabulary: date/time, 05/04/2012, 13:00/thirteen, birds/colors/direction, angles, lines, Orwell/1984, LSB/steganography.
-5. Compare any concrete multi-step claim against the primary-verified author statement that Puzzle #9 required four steps.
-6. Promotion requires either:
-   - a mechanism-specific OP/author reply; or
-   - a concrete pre-solve multi-step path independently corroborated by a post-solve/author source.
-7. Community speculation alone is recorded but **not promoted**.
+Question:
+> Can primary chronology and puzzle-construction features narrow the unnamed Bitcoin Reddit puzzle that inspired Tiamat, and if not, what mechanism traits are safe to transfer as a family prior?
 
-No secret/key candidates are constructed or verified.
+Bounded design:
+1. Validate the official interview date and wording from a checked public-source snapshot.
+2. Use the first Arweave-puzzle publication date as a hard chronology cutoff.
+3. Evaluate the fixed candidate set in `clues/tiamat-reddit-inspiration-candidates.json`.
+4. Score only pre-cutoff candidates on predeclared construction traits:
+   - image-based;
+   - funded crypto reward;
+   - direct key/wallet unlock;
+   - multi-step;
+   - visible semantic encoding;
+   - brute-force ambiguity;
+   - public hints/solution.
+5. Post-launch candidates are excluded before scoring.
+6. Promotion rules:
+   - exact-inspiration identification requires one candidate to dominate all others by >=2 independent evidence points **and** have a direct link/mention by Tiamat; otherwise exact identity remains unresolved;
+   - shared family traits may be promoted only if present in every top pre-launch candidate.
+7. Do not infer any Puzzle #11 payload from a candidate-specific trick.
+
+No private-key operations.
 
 ## Status
 
-- Stages 1–113: completed and reviewed.
-- Stage 113: VALID NEGATIVE — 64×25 equal-cell carrier retired.
-- Stage 114: selected for launch.
+- Stages 1–114: completed and reviewed.
+- Stage 114: VALID NEGATIVE — Reddit thread provides historical context but no corroborated solve path.
+- Stage 115: selected for launch.
