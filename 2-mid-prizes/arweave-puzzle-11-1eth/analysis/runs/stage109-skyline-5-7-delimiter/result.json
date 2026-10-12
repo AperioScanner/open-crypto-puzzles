@@ -1,5 +1,6 @@
 {
   "experiment_id": "A11-EXP-109",
+  "implementation_correction": "Replaced literal-blank lower-band detector with low-occupancy skyline detector over y=20..300 because sparse horizon/detail strokes cross the true visual gap.",
   "scope": "robustness and salience of the central inter-building gap producing a 5|7 skyline split; no private-key operations",
   "geometry_gaps": [
     {
@@ -98,6 +99,23 @@
   "dominant_fraction_of_total_gap_space": 0.796875,
   "normalized_distance_of_gap_midpoint_from_canvas_center": 0.020625,
   "dirichlet_exchangeable_null_p": 4.9999750001249995e-06,
+  "detector": {
+    "sky_band": [
+      20,
+      300
+    ],
+    "x_range": [
+      220,
+      1595
+    ],
+    "low_occupancy_cutoff": 0.025,
+    "smooth_px": 7
+  },
+  "synthetic_controls": {
+    "positive_best_width": 94,
+    "negative_best_width": 0,
+    "pass": true
+  },
   "detection_rows": [
     {
       "variant": "original",
@@ -173,7 +191,7 @@
     }
   ],
   "all_variant_threshold_detections_match": false,
-  "promotion_rule": "largest geometry gap is after building 5; width >=5x second-largest; midpoint within 10% of canvas center; independent lower-skyline detector overlaps it in all 12 variant\u00d7threshold conditions; Dirichlet concentration p<=0.01",
+  "promotion_rule": "synthetic central-gap control passes; largest geometry gap is after building 5; width >=5x second-largest; midpoint within 10% canvas center; independent low-occupancy detector overlaps it in all 12 variant\u00d7threshold conditions; Dirichlet concentration p<=0.01",
   "promoted": false,
   "interpretation_guard": "Promotion establishes only a robust 5|7 visual delimiter, not any numeric or secret-key interpretation."
 }
