@@ -1,0 +1,132 @@
+{
+  "schema": "tiamat-reddit-inspiration-candidates-v1",
+  "verified_at_utc": "2026-10-12T17:31:00Z",
+  "primary_interview": {
+    "url": "https://arweave.medium.com/community-spotlight-meeting-tiamat-e484655b25e0",
+    "published": "2019-10-10",
+    "quote_summary": "Tiamat said he liked tangible puzzles such as Hanayama, then saw a Bitcoin puzzle on Reddit and realized the permaweb was a good immutable place to store puzzles.",
+    "first_arweave_puzzle_cutoff": "2019-05-22",
+    "cutoff_rationale": "Tiamat's Arweave puzzle series was already underway by late May 2019, so an inspiration that triggered the series must predate the series launch."
+  },
+  "candidates": [
+    {
+      "id": "8kk0pa",
+      "url": "https://www.reddit.com/r/Bitcoin/comments/8kk0pa/1_btc_is_hidden_in_this_puzzle_good_luck/",
+      "date": "2018-05-19",
+      "chronology": "pre_series",
+      "author": "cryptogreetings",
+      "title": "1 BTC is hidden in this puzzle. Good luck!",
+      "image_based": true,
+      "funded_crypto_reward": true,
+      "key_or_wallet_unlock": true,
+      "multi_step": true,
+      "visible_semantic": true,
+      "exact_pixel_dependency": false,
+      "format_fragility_discussed": false,
+      "brute_force_component": true,
+      "public_solution_or_detailed_hints": true,
+      "notes": [
+        "Large image-based Bitcoin puzzle with 1 BTC prize.",
+        "OP described treasure as hidden in plain sight and released a chain of visual/semantic hints.",
+        "Thread solution work used words, positions, angles, pairing and ordering; puzzle was later simplified by removing one major step.",
+        "OP cross-linked the 2.5mBTC private-key puzzle."
+      ]
+    },
+    {
+      "id": "8krbd3",
+      "url": "https://www.reddit.com/r/Bitcoin/comments/8krbd3/prize_inside_25mbtc_private_key_in_puzzle/",
+      "publication_bound": "on_or_before_2018-05-20",
+      "chronology": "pre_series",
+      "author": "koljBmHs",
+      "title": "*Prize inside* 2.5mBTC. Private key in puzzle.",
+      "image_based": true,
+      "funded_crypto_reward": true,
+      "key_or_wallet_unlock": true,
+      "multi_step": true,
+      "visible_semantic": true,
+      "exact_pixel_dependency": false,
+      "format_fragility_discussed": false,
+      "brute_force_component": true,
+      "public_solution_or_detailed_hints": true,
+      "notes": [
+        "Image encodes a private key through a made-up visible character system.",
+        "Solvers used phonetic/letter and numeral interpretation; remaining case uncertainty could be brute-forced.",
+        "The author acknowledged design ambiguities and errors after solve."
+      ]
+    },
+    {
+      "id": "bzerrz",
+      "url": "https://www.reddit.com/r/Bitcoin/comments/bzerrz/everyone_who_can_decrypt_our_crypto_puzzle_is/",
+      "date": "2019-06-11",
+      "chronology": "post_series_launch",
+      "title": "Everyone who can decrypt our Crypto Puzzle is FREE to get into the wallet and take 0.15 BTC",
+      "image_based": true,
+      "funded_crypto_reward": true,
+      "key_or_wallet_unlock": true,
+      "multi_step": true,
+      "visible_semantic": true,
+      "exact_pixel_dependency": false,
+      "format_fragility_discussed": false,
+      "brute_force_component": false,
+      "public_solution_or_detailed_hints": true
+    },
+    {
+      "id": "cl52zn",
+      "url": "https://www.reddit.com/r/Bitcoin/comments/cl52zn/i_launched_a_clothing_line_that_accepts_crypto_to/",
+      "date": "2019-08-02",
+      "chronology": "post_series_launch",
+      "author": "8A8",
+      "title": "I launched a clothing line that accepts crypto! ... here's 0.1 BTC to whoever can solve the image.",
+      "image_based": true,
+      "funded_crypto_reward": true,
+      "key_or_wallet_unlock": true,
+      "multi_step": true,
+      "visible_semantic": true,
+      "exact_pixel_dependency": true,
+      "format_fragility_discussed": true,
+      "brute_force_component": false,
+      "public_solution_or_detailed_hints": true,
+      "notes": [
+        "Explicitly warned that image compression could make the puzzle unsolvable.",
+        "Published solution used coordinates, color values, Morse, base conversions, pixel-line extraction and a final two-state sequence."
+      ]
+    },
+    {
+      "id": "corwdf",
+      "url": "https://www.reddit.com/r/bitcoinpuzzles/comments/corwdf",
+      "date": "2019-08-11",
+      "chronology": "post_series_launch",
+      "title": "Haven't seen a good bitcoin puzzle in a while, thought I'd make one.",
+      "image_based": true,
+      "funded_crypto_reward": true,
+      "key_or_wallet_unlock": true,
+      "multi_step": false,
+      "visible_semantic": false,
+      "exact_pixel_dependency": true,
+      "format_fragility_discussed": true,
+      "brute_force_component": true,
+      "public_solution_or_detailed_hints": true,
+      "notes": [
+        "Private key had been appended to image Base64; Reddit compression broke the intended carrier.",
+        "Creator concluded the solve may instead have been brute-forced."
+      ]
+    },
+    {
+      "id": "d2dc4t",
+      "url": "https://www.reddit.com/r/bitcoinpuzzles/comments/d2dc4t",
+      "date": "2019-09-10",
+      "chronology": "post_series_launch",
+      "title": "Bitcoin Puzzle ... Free money to the first to solve it :-)",
+      "image_based": false,
+      "funded_crypto_reward": true,
+      "key_or_wallet_unlock": true,
+      "multi_step": true,
+      "visible_semantic": false,
+      "exact_pixel_dependency": false,
+      "format_fragility_discussed": false,
+      "brute_force_component": false,
+      "public_solution_or_detailed_hints": false
+    }
+  ],
+  "interpretation_guard": "Candidate similarity cannot identify the exact puzzle Tiamat saw. Chronology can only exclude post-launch candidates and define a pre-launch candidate family."
+}
