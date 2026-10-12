@@ -29,6 +29,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"analysis"/"runs"/"stage114-puzzle9-reddit-thread"
 OUT.mkdir(parents=True,exist_ok=True)
+SNAPSHOT=ROOT/"clues"/"puzzle9-reddit-thread-public-snapshot.json"
 
 THREAD_ID="ersf73"
 THREAD_URL=f"https://www.reddit.com/r/ethtrader/comments/{THREAD_ID}"
@@ -68,6 +69,50 @@ def flatten_reddit(children,out,parent=None):
         rep=d.get("replies")
         if isinstance(rep,dict):
             flatten_reddit(rep.get("data",{}).get("children",[]),out,row["id"])
+
+def verified_snapshot():
+    """Load the controller-verified canonical Reddit snapshot.
+
+    GitHub-hosted runners can be blocked by Reddit/Wayback even when the
+    canonical page is publicly retrievable. The checked-in snapshot records
+    only public mechanism-relevant comments and stable comment IDs verified
+    against the canonical Reddit HTML. This is a source-recovery fallback, not
+    a claim that the comments are author clues.
+    """
+    try:
+        s=json.loads(SNAPSHOT.read_text())
+        if s.get("thread_id")!=THREAD_ID:
+            raise ValueError("snapshot thread id mismatch")
+        comments=[]
+        for x in s.get("comments",[]):
+            comments.append({
+                "id":x.get("id"),
+                "parent_id":None,
+                "author":x.get("author"),
+                "body":x.get("body") or "",
+                "created_utc":None,
+                "score":None,
+                "permalink":f"/r/ethtrader/comments/{THREAD_ID}/comment/{x.get('id')}/",
+                "phase":x.get("phase"),
+            })
+        return {
+            "ok":True,
+            "source_mode":"verified_public_snapshot",
+            "source_url":s.get("canonical_url"),
+            "submission":{
+                "id":THREAD_ID,
+                "title":s.get("title"),
+                "author":s.get("author"),
+                "created_utc":None,
+                "url":s.get("arweave_url"),
+                "selftext":s.get("arweave_url") or "",
+                "permalink":f"/r/ethtrader/comments/{THREAD_ID}/",
+            },
+            "comments":comments,
+            "snapshot_verified_at":s.get("verified_at_utc"),
+        }
+    except Exception as e:
+        return {"ok":False,"error":f"{type(e).__name__}: {e}","comments":[]}
 
 def reddit_json():
     urls=[
@@ -150,7 +195,13 @@ def clean_text(s,maxlen=1200):
     return s[:maxlen]
 
 def main():
-    rj=reddit_json()
+    live=reddit_json()
+    if live.get("ok"):
+        rj=live
+        rj["source_mode"]="live_reddit_json"
+    else:
+        rj=verified_snapshot()
+        rj["live_reddit_errors"]=live.get("errors",[])
     wb=wayback_snapshots()
 
     submission=rj.get("submission") or {}
@@ -164,7 +215,7 @@ def main():
         if not cats:
             continue
         ts=c.get("created_utc")
-        phase="post_solve" if ts and float(ts)>=SOLVE_TS else "pre_solve"
+        phase=c.get("phase") or ("post_solve" if ts and float(ts)>=SOLVE_TS else "pre_solve")
         relevant.append({
             "id":c.get("id"),
             "parent_id":c.get("parent_id"),
@@ -215,7 +266,7 @@ def main():
         json.dumps([x.get("body","") for x in comments[:200]])
     ])
     arweave_ok=EXPECTED_ARWEAVE in url_blob
-    source_control=bool(rj.get("ok") and title_ok and arweave_ok)
+    source_control=bool(rj.get("ok") and title_ok and arweave_ok and len(comments)>=6)
 
     promoted=bool(source_control and (op_mechanism or corroborated))
     decision=(
@@ -229,8 +280,12 @@ def main():
         "experiment_id":"A11-EXP-114",
         "scope":"reconstruction of original Puzzle #9 Reddit discussion and mechanism-evidence classification; no private-key operations",
         "thread_url":THREAD_URL,
-        "reddit_json_ok":bool(rj.get("ok")),
+        "source_recovered":bool(rj.get("ok")),
+        "source_mode":rj.get("source_mode"),
         "reddit_source_url":rj.get("source_url"),
+        "live_reddit_json_ok":bool(live.get("ok")),
+        "live_reddit_errors":live.get("errors",[]),
+        "snapshot_verified_at":rj.get("snapshot_verified_at"),
         "submission":{
             "title":submission.get("title"),
             "author":submission.get("author"),
@@ -250,7 +305,8 @@ def main():
             for x in wb.get("snapshots",[])
         ],
         "source_control":{
-            "reddit_json_ok":bool(rj.get("ok")),
+            "source_recovered":bool(rj.get("ok")),
+            "source_mode":rj.get("source_mode"),
             "title_ok":title_ok,
             "arweave_tx_ok":arweave_ok,
             "passed":source_control,
@@ -268,7 +324,7 @@ def main():
         "",
         "**Experiment:** A11-EXP-114",
         "",
-        f"- Reddit JSON recovered: **{rj.get('ok',False)}**",
+        f"- source recovered: **{rj.get('ok',False)}** ({rj.get('source_mode')})",
         f"- source control passed: **{source_control}**",
         f"- thread author/OP: **{op}**",
         f"- comments recovered: **{len(comments)}**",
@@ -294,7 +350,7 @@ def main():
 
     md += ["","## Interpretation",""]
     if not source_control:
-        md.append("The primary thread could not be recovered with the expected title and Arweave link. Stage 114 is an implementation/source-recovery failure and must be repaired before interpretation.")
+        md.append("The primary thread could not be recovered with the expected title, Arweave link, and minimum verified comment set. Stage 114 is an implementation/source-recovery failure and must be repaired before interpretation.")
     elif op_mechanism:
         md.append("At least one mechanism-specific OP reply was recovered. Treat it as new primary evidence and reconcile it against Puzzle #11 only after contextual review.")
     elif corroborated:
