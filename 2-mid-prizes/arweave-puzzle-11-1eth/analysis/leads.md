@@ -1,35 +1,34 @@
 # Open leads, ranked
 
-## 1. Puzzle #9 four-step primary thread reconstruction (active, highest priority)
+## 1. Visible alphanumeric / instruction anchors in Puzzle #11 (active)
 
-Stage 97 primary-verifies the author's archived statement that solved sibling Puzzle #9 **required four steps** and that the anonymous solver may have brute-forced one.
+Puzzle #9's quote and numeric stamp are robust visible anchors, and the author's solved-puzzle grammar often uses human-readable semantics.
 
-The canonical #9 image also contains multiple robust visible anchors (literary quote, numeric stamp, five distinct bird colors), and official Arweave material says everything needed was hidden in the image.
+Puzzle #11 has not yet had a bounded whole-image OCR audit across its main semantic regions and cardinal rotations. Stage 99 tests this directly with Puzzle #9 positive controls and block-shuffled negatives.
 
-Stage 98 now searches the contemporaneous primary Twitter thread for actual mechanism language before transferring any concrete four-step model to #11.
+## 2. Image-only multi-step semantic prior (promoted)
 
-## 2. Image-only, multi-step semantic prior (promoted)
+Primary evidence now supports only the broad transfer from Puzzle #9:
+- image-only;
+- multi-step;
+- one bounded ambiguity may have been brute-forced.
 
-The defensible transfer from #9 is broad:
-- everything required was inside the image;
-- the solve required multiple steps;
-- several obvious visible anchors survive ordinary re-encoding.
-
-This supports semantic/visible pipelines for #11 but does **not** prove four visible clue objects or any specific ordering.
+Stage 98 did **not** recover any concrete Puzzle #9 step from the surrounding primary thread. The apparent word `order` was only from a tweet ranking puzzle difficulty and is rejected.
 
 ## 3. General format-invariant visible / semantic mechanism
 
-Still strongly supported by #11 Stage 31 and the author's "format does not matter" wording.
+Still strongly supported by #11 Stage 31 and the author's archived "format does not matter" statement.
 
 ## Closed / do not recycle
 
-- Direct 16-gray-mode symbol alphabet: corrected Stage 95 rejects all fixed regions.
-- Large-sail 64/256 one-stroke-per-symbol carrier: calibrated Stage 94 rejects both.
-- Pier X/IX/XI: p=0.4107 against matched line-rich windows.
-- Source-photo Courageous Sailing/Boston pool: 0 strong / 0 interesting matches.
-- CryptoCanvas: confirmed post-publication mirror only.
-- Alpha halo: compositing/anti-aliasing.
+- Stage-98 `order` clue: contextual false positive, not a mechanism statement.
+- Direct 16-gray-mode alphabet: rejected.
+- Large-sail 64/256 one-stroke-per-symbol carrier: rejected.
+- Pier X/IX/XI: rejected.
+- Source-photo Courageous Sailing/Boston pool: rejected.
+- CryptoCanvas: post-publication mirror only.
+- Alpha halo: anti-aliasing/compositing.
 - First row: covered.
-- H/V interpretations tested so far: independently unconfirmed.
-- Superbatch nominal hits: all failed Stage 88.
-- Arweave ID -> 32 bytes: covered in Stage 3.
+- Tested H/V interpretations: independently unconfirmed.
+- Superbatch nominal hits: failed replication.
+- Arweave ID -> 32 bytes: covered.
