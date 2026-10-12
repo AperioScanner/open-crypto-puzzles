@@ -8,69 +8,60 @@ Do **not** reopen a hypothesis classified COVERED, RETIRED, or independently fal
 1. a concrete implementation defect is demonstrated; or
 2. genuinely new independent evidence changes the hypothesis.
 
-Historical popularity alone is not a reason to retest an exhausted idea.
+## Review through Stage 101
 
-## Review through Stage 100
+Stage 101 completed successfully.
 
-Stage 100 completed with both spatial-localization controls passing.
+### Stage-101 result
 
-### Stage-100 result
+The localized `BEE` OCR reading from Stage 100 fails every adversarial literal-text gate:
 
-Retired as region-level OCR hallucinations:
-- **SSS** — no original/lossy co-localized box.
-- **EAE** — no original/lossy co-localized box.
-- **IES** — no original/lossy co-localized box.
-
-One token survived the predeclared spatial rule:
-
-**BEE**
-- canonical box: approximately **x=803..883, y=520.5..545**
-- 2 original preprocessing transforms: gray + Otsu
-- 2 lossy preprocessing transforms: gray + Otsu
-- mean OCR confidence: **54.6**
-- original/lossy crop correlation: **0.969**
-- qualifying shuffled co-localized clusters: **0**
-
-### Direct visual validation
-
-The saved Stage-100 diagnostic crop was inspected directly. It does **not** look like obvious printed/handwritten `BEE`; it looks like a compact patch of dense, mostly horizontal line hatching.
-
-Therefore Stage 100 establishes a reproducible **OCR phenomenon**, not readable plaintext.
+- target BEE hit rate: **4 / 360 = 1.1%**
+- rendered BEE controls: **100%**
+- target PSM support: **2 / 6**
+- target crop-jitter support: **2 / 5**
+- target vertical-stem fraction: **0.115** vs weakest real-BEE control **0.359**
+- target gradient balance: **0.181** vs weakest real-BEE control **0.647**
+- rate gate: FAIL
+- diversity gate: FAIL
+- glyph gate: FAIL
 
 ### Hypothesis decision
 
-- SSS / EAE / IES: **RETIRED**
-- literal `BEE` text: **UNCONFIRMED and visually suspect**
-- exact BEE location: deserves one adversarial glyph-validity test before semantic interpretation
+**Literal BEE = RETIRED as stable-hatching OCR hallucination.**
+
+This closes the Stage-99/100 OCR branch:
+- SSS / EAE / IES: retired by spatial localization
+- BEE: retired by adversarial glyph validation
 
 ## Next stage
 
-**Stage 101 — BEE adversarial glyph-validity and perturbation audit.**
+**Stage 102 — five-small-sail directional-orientation audit.**
 
-Question:
-> Is the Stage-100 BEE location behaving like genuine text, or is Tesseract consistently hallucinating letters from hatching?
+Motivation:
+- Puzzle #9 supports a visible, multi-step semantic prior.
+- #11's five small sailboats are a distinct repeated object class.
+- Prior small-sail stages tested width/area/gap relationships, but **not sail lean/direction**.
+- Direction is human-visible and format-invariant, fitting the active route without recycling prior negatives.
 
 Bounded design:
-1. Fixed target box from Stage 100, with small predeclared crop jitters/padding.
-2. Variants: original, JPEG85, JPEG70, 0.75x resize roundtrip.
-3. Transforms: gray, Otsu, adaptive.
-4. Tesseract PSM modes: 6, 7, 8, 10, 11, 13.
-5. Measure exact `BEE` recovery rate across PSM/transform/variant/crop perturbations.
-6. Positive controls: rendered `BEE` using several ordinary system font families, subjected to the same lossy transformations.
-7. Negative controls: same-size line-art windows selected by similar ink density and horizontal/vertical edge-energy balance, excluding the target.
-8. Independently measure vertical/horizontal stroke-energy balance. Standard B/E glyphs require both vertical stems and horizontal arms; pure horizontal hatching should separate from rendered BEE controls.
-9. Save a target-only contact sheet for direct review.
+1. Reuse the five independently measured Stage-19 sail x-ranges.
+2. Fixed y band: **360..480**.
+3. Two independent direction estimators:
+   - signed diagonal Hough-line energy
+   - Sobel tangent-orientation signed energy
+4. Fixed grayscale thresholds for Hough: 100, 140, 180.
+5. Repeat on original, JPEG85, JPEG70 and 0.75x resize roundtrip.
+6. Synthetic left-lean / right-lean sail controls validate both estimators.
+7. Promote only if:
+   - >=4/5 sails have a stable direction across all variants;
+   - the two estimators agree;
+   - both direction classes are present, yielding a nontrivial visible sequence.
 
-Promotion requires:
-- recovery under multiple independent PSM modes;
-- persistence across at least 3 image variants;
-- recovery materially above matched line-art controls;
-- glyph-orientation balance within the calibrated positive-control range.
-
-A failure retires literal `BEE` as an OCR hallucination. No semantic use of the word is allowed before this test.
+This stage only establishes a robust L/R visual sequence. It does not map that sequence to secret material.
 
 ## Status
 
-- Stages 1–100: completed.
-- Stage 100: COMPLETED + REVIEWED — BEE is the only localized OCR survivor.
-- Stage 101: selected for launch.
+- Stages 1–101: completed.
+- Stage 101: COMPLETED + REVIEWED — OCR text branch closed.
+- Stage 102: selected for launch.
