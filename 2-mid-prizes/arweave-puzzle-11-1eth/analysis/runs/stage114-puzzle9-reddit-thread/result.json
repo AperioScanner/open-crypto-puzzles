@@ -1,0 +1,32 @@
+{
+  "experiment_id": "A11-EXP-114",
+  "scope": "reconstruction of original Puzzle #9 Reddit discussion and mechanism-evidence classification; no private-key operations",
+  "thread_url": "https://www.reddit.com/r/ethtrader/comments/ersf73",
+  "reddit_json_ok": false,
+  "reddit_source_url": null,
+  "submission": {
+    "title": null,
+    "author": null,
+    "created_iso": null,
+    "url": null
+  },
+  "comment_count": 0,
+  "relevant_comment_count": 0,
+  "pre_solve_relevant": 0,
+  "post_solve_relevant": 0,
+  "op_mechanism_comment_ids": [],
+  "corroborated_paths": [],
+  "wayback_cdx_ok": false,
+  "wayback_snapshot_count": 0,
+  "wayback_snapshots": [],
+  "source_control": {
+    "reddit_json_ok": false,
+    "title_ok": false,
+    "arweave_tx_ok": false,
+    "passed": false
+  },
+  "decision": "NO_CORROBORATED_MECHANISM",
+  "promoted": false,
+  "promotion_rule": "source control passes and either a mechanism-specific OP/author reply exists or a pre-solve >=3-category community path is independently corroborated by a same-author post-solve solve-status comment",
+  "interpretation_guard": "Uncorroborated Reddit comments remain community hypotheses, not author clues or proven Puzzle #9 steps."
+}
