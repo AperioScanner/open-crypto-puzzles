@@ -262,10 +262,11 @@ def synthetic_positive(h=320):
 
     for i,s in enumerate(labels.tolist()):
         x0=i*CELL_W
-        img[:,x0:x0+CELL_W]=tones[s]
-        # Same low-frequency fiducial in every state; it tests re-encoding
-        # stability without itself carrying the state label.
-        cv2.line(img,(x0+3,40),(x0+21,h-40),max(0,int(tones[s])-18),2,cv2.LINE_AA)
+        # Common guard bands isolate each state from resampling/JPEG bleed at
+        # neighboring 25-px boundaries. Only the broad 17-px interior carries
+        # the synthetic state.
+        img[:,x0:x0+CELL_W]=245
+        img[:,x0+4:x0+21]=tones[s]
     return img
 
 def synthetic_negative(h=320):
