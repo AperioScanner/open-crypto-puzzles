@@ -1,25 +1,24 @@
 # Open leads, ranked
 
-## 1. Tiamat's unnamed Bitcoin Reddit inspiration (active)
+## 1. Shared mechanism grammar of the two pre-launch inspiration candidates (active)
 
-Primary author interview: Tiamat said a Bitcoin puzzle on Reddit inspired him to use the permaweb for puzzles.
+Stage 115 cannot identify which Reddit puzzle inspired Tiamat: `8kk0pa` and `8krbd3` tie and neither is directly linked by Tiamat.
 
-Chronology excludes all Reddit candidates posted after the Arweave puzzle series began. Two May-2018 image puzzles remain especially plausible:
-- `8kk0pa` — 1 BTC image puzzle, multi-step visible/semantic construction.
-- `8krbd3` — 2.5mBTC image with a private key encoded through a custom visible character system.
+Stage 116 therefore asks a narrower, defensible question: which concrete decoding operations are independently evidenced in **both** candidate puzzles?
 
-Stage 115 tests whether the exact inspiration can be narrowed or only a shared design-family prior can be justified.
+Only the strict intersection may become a mechanism-family prior for Puzzle #11.
 
 ## 2. General format-invariant visible / semantic mechanism
 
-Still supported by Stage 31 and the archived "format does not matter" statement.
+Still supported by Stage 31 and the archived “format does not matter” statement.
 
 ## 3. Puzzle #9 true four-step method
 
-Primary verified as four-step, but still unknown. Stage 114 found no corroborated method in the original Reddit discussion.
+Primary verified as four-step, but still unknown. Stage 114 found no corroborated solve method in the original Reddit discussion.
 
 ## Closed / deprioritized
 
+- Exact identity of Tiamat's Reddit inspiration: unresolved; do not assert one candidate.
 - Puzzle #9 original Reddit comments: historical context only; no corroborated mechanism.
 - Exact 64×25 one-hex-per-cell carrier: rejected.
 - Corrected five-sail +26/+26 width progression: rejected.
