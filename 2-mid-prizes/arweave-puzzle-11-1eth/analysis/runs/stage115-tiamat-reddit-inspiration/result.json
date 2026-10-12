@@ -1,0 +1,78 @@
+{
+  "experiment_id": "A11-EXP-115",
+  "scope": "author-interview chronology + fixed Reddit Bitcoin-puzzle candidate comparison; no Puzzle #11 decoding and no private-key operations",
+  "primary_interview": {
+    "url": "https://arweave.medium.com/community-spotlight-meeting-tiamat-e484655b25e0",
+    "published": "2019-10-10",
+    "first_series_cutoff": "2019-05-22",
+    "statement_summary": "Tiamat said he liked tangible puzzles such as Hanayama, then saw a Bitcoin puzzle on Reddit and realized the permaweb was a good immutable place to store puzzles."
+  },
+  "candidate_count": 6,
+  "prelaunch_candidate_count": 2,
+  "prelaunch_ranked": [
+    {
+      "id": "8kk0pa",
+      "title": "1 BTC is hidden in this puzzle. Good luck!",
+      "date": "2018-05-19",
+      "publication_bound": null,
+      "score": 6
+    },
+    {
+      "id": "8krbd3",
+      "title": "*Prize inside* 2.5mBTC. Private key in puzzle.",
+      "date": null,
+      "publication_bound": "on_or_before_2018-05-20",
+      "score": 6
+    }
+  ],
+  "postlaunch_excluded": [
+    {
+      "id": "bzerrz",
+      "date": "2019-06-11",
+      "title": "Everyone who can decrypt our Crypto Puzzle is FREE to get into the wallet and take 0.15 BTC"
+    },
+    {
+      "id": "cl52zn",
+      "date": "2019-08-02",
+      "title": "I launched a clothing line that accepts crypto! ... here's 0.1 BTC to whoever can solve the image."
+    },
+    {
+      "id": "corwdf",
+      "date": "2019-08-11",
+      "title": "Haven't seen a good bitcoin puzzle in a while, thought I'd make one."
+    },
+    {
+      "id": "d2dc4t",
+      "date": "2019-09-10",
+      "title": "Bitcoin Puzzle ... Free money to the first to solve it :-)"
+    }
+  ],
+  "top_candidate_ids": [
+    "8kk0pa",
+    "8krbd3"
+  ],
+  "top_score": 6,
+  "score_lead_over_runner_up": 0,
+  "direct_tiamat_reference_hits": [],
+  "direct_tiamat_link": false,
+  "exact_inspiration_identified": false,
+  "shared_top_candidate_traits": [
+    "image_based",
+    "funded_crypto_reward",
+    "key_or_wallet_unlock",
+    "multi_step",
+    "visible_semantic",
+    "public_solution_or_detailed_hints"
+  ],
+  "promoted_family_prior": [
+    "image_based",
+    "funded_crypto_reward",
+    "key_or_wallet_unlock",
+    "multi_step",
+    "visible_semantic",
+    "public_solution_or_detailed_hints"
+  ],
+  "decision": "EXACT_IDENTITY_UNRESOLVED_FAMILY_PRIOR_ONLY",
+  "interpretation_guard": "Shared traits are only a broad author-inspiration family prior. Candidate-specific tricks must not be transferred to Puzzle #11 without independent evidence.",
+  "safety_guard": "No private key or ordered secret candidate is generated, reconstructed, enumerated, or verified."
+}
