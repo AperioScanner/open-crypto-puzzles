@@ -291,3 +291,12 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - First-three AP errors are 9 and 11 px; permutation p=0.20 for both methods; the Stage-18 qualitative profile is not reproduced.
 - Decision: retire the +26,+26 sail-width lead as a measurement/object-association artifact.
 - Stage 113 selected from an exact untested dimensional relation: 1600 px image width = 64 private-key hex characters × 25 px. It tests only whether 64 fixed visual cells support a stable 16-state carrier, with all 25 phase offsets, synthetic controls, lossy replication and no ordered secret sequence persisted.
+
+
+## 2026-10-12 — corrected Stage 113 review and new Reddit evidence
+
+- Stage 113 was repaired until both synthetic controls passed. Final target result is negative: phase 0 ranks only 21/25; best cluster count is k=8; k=16 ranks 14/19 and is not tied with the best model.
+- Decision: retire simple 64×25 vertical-cell / one-hex-symbol-per-cell encoding.
+- Fresh public research surfaced the original 2020-01-21 r/ethtrader Puzzle #9 thread, which was not covered by the prior Twitter reconstruction.
+- The indexed comments include several contemporaneous concrete hypotheses, especially a date/time path (05/04/2012 and 13:00), bird/color/direction observations, Orwell/1984, “invisible 9 lines”, and LSB suggestions; a 2020-06-09 comment notes the challenge was solved.
+- Stage 114 selected to reconstruct the primary Reddit thread and distinguish OP/author replies, pre-solve hypotheses, and post-solve evidence. Community speculation is not promoted without corroboration.
