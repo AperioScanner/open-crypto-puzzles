@@ -8,59 +8,47 @@ Do **not** reopen a hypothesis classified COVERED, RETIRED, or independently fal
 1. a concrete implementation defect is demonstrated; or
 2. genuinely new independent evidence changes the hypothesis.
 
-## Review through Stage 102
+## Review through Stage 103
 
-Stage 102 completed successfully.
+Stage 103 completed successfully.
 
-### Stage-102 result
+### Stage-103 result
 
-Synthetic left/right sail controls passed, but only **3/5** real small sails were stable across both independent estimators and all lossy variants.
-
-Observed sequence:
-- sail 1: R — stable
-- sail 2: ? — Hough/Sobel disagree
-- sail 3: L — stable
-- sail 4: ? — Sobel too weak for consensus
-- sail 5: L — stable
-
-Visible sequence: **R?L?L**
-
-Promotion required >=4/5 stable sails. It failed.
+- synthetic roof controls: PASS
+- stable buildings: **2/12**
+- roof sequence: **?????-?-????**
+- only category represented: flat (`-`)
+- promotion: **False**
 
 ### Hypothesis decision
 
-**Small-sail L/R direction coding = RETIRED.**
+**Building roof-profile coding = RETIRED.**
 
-Do not try to fill the two unknowns post hoc.
+The two estimators disagree on most real buildings, especially after lossy transforms.
 
 ## Next stage
 
-**Stage 103 — 12-building roof-profile category audit.**
+**Stage 104 — enclosed-white-space / window-topology audit across 12 buildings.**
 
-Motivation:
-- the 12 buildings are the strongest repeated object family in the image;
-- H/V interior hatching has already been exhausted as an organizing clue;
-- roof/silhouette shape is a separate, human-visible and format-invariant feature family;
-- prior geometry stages used roof y/height/width numerically but did not classify roof-profile direction.
+Why:
+- solved siblings favor secondary visible details/counting;
+- Stage 12 counted dark connected components/perimeter occupancy, but did **not** count enclosed white holes/windows;
+- topology is format-invariant and distinct from H/V texture, roof slope, height/width and prior component-density tests.
 
 Bounded design:
-1. Reuse the 12 fixed building x-ranges and roof_y values from `geometry.json`.
-2. For each building, analyze only a narrow roof band around the recorded roof_y.
-3. Two independent estimators:
-   - robust top-envelope slope from the uppermost dark pixels;
-   - near-horizontal Hough roof-line slope.
-4. Predeclared categories:
-   - `/` = rises to the right
-   - `-` = approximately flat
-   - `\\` = falls to the right
-5. Repeat on original, JPEG85, JPEG70 and 0.75x resize roundtrip.
-6. Synthetic flat/rising/falling roof controls validate both estimators.
-7. Promote only if >=10/12 buildings receive the same category across both estimators and all four variants, with at least two categories represented.
+1. Reuse the 12 fixed building interiors from Stage 12.
+2. Threshold at 100/130/160/190.
+3. Flood-fill exterior white; count only enclosed white components.
+4. Exclude tiny antialias holes (<9 px) and very large openings (>15% crop area).
+5. Repeat on original, JPEG85, JPEG70 and 0.75x resize.
+6. Require stable count per building across thresholds and variants.
+7. Synthetic 0/1/2/3-hole building controls validate the detector.
+8. Promote only if >=9/12 buildings yield stable counts and at least 3 distinct count values are represented.
 
-A positive result establishes only a robust visible roof-category sequence. No key mapping is attempted.
+No mapping from counts to secret material is attempted.
 
 ## Status
 
-- Stages 1–102: completed.
-- Stage 102: COMPLETED + REVIEWED — small-sail direction retired.
-- Stage 103: selected for launch.
+- Stages 1–103: completed.
+- Stage 103: COMPLETED + REVIEWED — roof-profile coding retired.
+- Stage 104: selected for launch.
