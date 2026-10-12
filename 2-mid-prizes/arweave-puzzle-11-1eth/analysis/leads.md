@@ -1,31 +1,32 @@
 # Open leads, ranked
 
-## 1. Visible alphanumeric / instruction anchors in Puzzle #11 (active)
+## 1. Spatially localized short OCR candidates (active)
 
-Puzzle #9's quote and numeric stamp are robust visible anchors, and the author's solved-puzzle grammar often uses human-readable semantics.
+Corrected Stage 99 has valid Puzzle #9 positive controls and produced four short Puzzle #11 OCR candidates.
 
-Puzzle #11 has not yet had a bounded whole-image OCR audit across its main semantic regions and cardinal rotations. Stage 99 tests this directly with Puzzle #9 positive controls and block-shuffled negatives.
+Rank before localization:
+1. **SSS** — 11 original / 9 lossy / 0 shuffled; strongest.
+2. **EAE** — 7 / 9 / 3; weaker.
+3. **BEE** — 2 / 3 / 6; likely generic OCR hallucination unless spatially exceptional.
+4. **IES** — 2 / 3 / 2; weak.
 
-## 2. Image-only multi-step semantic prior (promoted)
+Stage 100 tests whether repeated OCR paths actually point to the same physical glyph location. Region-level repetition alone is insufficient.
 
-Primary evidence now supports only the broad transfer from Puzzle #9:
-- image-only;
-- multi-step;
-- one bounded ambiguity may have been brute-forced.
+## 2. Image-only multi-step semantic prior
 
-Stage 98 did **not** recover any concrete Puzzle #9 step from the surrounding primary thread. The apparent word `order` was only from a tweet ranking puzzle difficulty and is rejected.
+Puzzle #9 is primary-verified as a four-step image puzzle. Its visible semantic/numeric anchors are robust under re-encoding, but no concrete #9 solve step was recovered from the primary thread.
 
 ## 3. General format-invariant visible / semantic mechanism
 
-Still strongly supported by #11 Stage 31 and the author's archived "format does not matter" statement.
+Still strongly supported by #11 Stage 31 and the archived "format does not matter" statement.
 
 ## Closed / do not recycle
 
-- Stage-98 `order` clue: contextual false positive, not a mechanism statement.
+- Stage-98 `order`: contextual false positive.
 - Direct 16-gray-mode alphabet: rejected.
 - Large-sail 64/256 one-stroke-per-symbol carrier: rejected.
 - Pier X/IX/XI: rejected.
-- Source-photo Courageous Sailing/Boston pool: rejected.
+- Courageous Sailing/Boston photo pool: rejected.
 - CryptoCanvas: post-publication mirror only.
 - Alpha halo: anti-aliasing/compositing.
 - First row: covered.
