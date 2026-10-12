@@ -3,9 +3,9 @@
 **Experiment:** A11-EXP-113
 
 - exact relation: **1600 = 64 × 25**
-- positive control pass: **False**
+- positive control pass: **True**
 - negative control pass: **True**
-- controls pass: **False**
+- controls pass: **True**
 - real phase-0 rank: **21/25**
 - real k=16 silhouette: **0.3499**
 - real k=16 cross-variant stability: **0.9948**
@@ -29,7 +29,7 @@
 
 ## Interpretation
 
-The carrier-structure harness failed its synthetic controls. Stage 113 is an implementation failure and must be repaired under the same stage number before interpreting Puzzle #11.
+The exact 64×25 partition does not satisfy the predeclared carrier-structure gates. Retire simple one-hex-symbol-per-25px vertical-cell encoding.
 
 No ordered 64-cell symbol sequence is stored or printed.
 No private-key material was generated, reconstructed or tested.

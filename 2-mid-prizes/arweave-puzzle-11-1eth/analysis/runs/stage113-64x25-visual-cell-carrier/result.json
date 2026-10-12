@@ -16,14 +16,14 @@
     "component_density"
   ],
   "positive_control": {
-    "passed": false,
+    "passed": true,
     "phase0": {
       "phase": 0,
       "silhouette_k16": 1.0,
-      "cross_variant_stability": 0.5104166666666666,
+      "cross_variant_stability": 0.9791666666666666,
       "occupied_states": 16,
       "singleton_states": 0,
-      "score": 0.5104166666666666
+      "score": 0.9791666666666666
     },
     "phase0_rank": 1,
     "best_k": {
@@ -56,7 +56,7 @@
     "k16_tied": false,
     "structural_gate": false
   },
-  "controls_pass": false,
+  "controls_pass": true,
   "real": {
     "phase0": {
       "phase": 0,
