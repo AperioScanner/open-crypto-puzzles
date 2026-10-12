@@ -1,0 +1,385 @@
+{
+  "experiment_id": "A11-EXP-102",
+  "scope": "five small-sail left/right visible orientation stability; no private-key operations",
+  "band_y": [
+    360,
+    480
+  ],
+  "boxes": [
+    [
+      628,
+      360,
+      723,
+      480
+    ],
+    [
+      1025,
+      360,
+      1069,
+      480
+    ],
+    [
+      1109,
+      360,
+      1180,
+      480
+    ],
+    [
+      1220,
+      360,
+      1319,
+      480
+    ],
+    [
+      1311,
+      360,
+      1411,
+      480
+    ]
+  ],
+  "thresholds": [
+    100,
+    140,
+    180
+  ],
+  "synthetic_controls": {
+    "L": {
+      "hough_scores": [
+        -0.9999999999937581,
+        -0.9999999999949141,
+        -0.9999999999954678
+      ],
+      "hough_median": -0.9999999999949141,
+      "sobel_score": -0.5483355763564006,
+      "hough_direction": "L",
+      "sobel_direction": "L",
+      "consensus": "L"
+    },
+    "R": {
+      "hough_scores": [
+        0.9999999999933984,
+        0.9999999999936092,
+        0.9999999999951128
+      ],
+      "hough_median": 0.9999999999936092,
+      "sobel_score": 0.5478507574412043,
+      "hough_direction": "R",
+      "sobel_direction": "R",
+      "consensus": "R"
+    }
+  },
+  "controls_pass": true,
+  "sails": [
+    {
+      "id": 1,
+      "box": [
+        628,
+        360,
+        723,
+        480
+      ],
+      "variants": {
+        "original": {
+          "hough_scores": [
+            0.9999999999886906,
+            0.9999999999736477,
+            0.28317851308024045
+          ],
+          "hough_median": 0.9999999999736477,
+          "sobel_score": 0.32752750563850164,
+          "hough_direction": "R",
+          "sobel_direction": "R",
+          "consensus": "R"
+        },
+        "jpeg85": {
+          "hough_scores": [
+            0.29948314204447524,
+            0.771106562097427,
+            0.9999999999880969
+          ],
+          "hough_median": 0.771106562097427,
+          "sobel_score": 0.3237660582562623,
+          "hough_direction": "R",
+          "sobel_direction": "R",
+          "consensus": "R"
+        },
+        "jpeg70": {
+          "hough_scores": [
+            0.9999999999848042,
+            0.999999999989707,
+            0.9999999999880362
+          ],
+          "hough_median": 0.9999999999880362,
+          "sobel_score": 0.3153402108011068,
+          "hough_direction": "R",
+          "sobel_direction": "R",
+          "consensus": "R"
+        },
+        "down75_up": {
+          "hough_scores": [
+            0.9999999999870882,
+            0.9999999999884279,
+            0.31882367275653234
+          ],
+          "hough_median": 0.9999999999870882,
+          "sobel_score": 0.335582590337693,
+          "hough_direction": "R",
+          "sobel_direction": "R",
+          "consensus": "R"
+        }
+      },
+      "stable": true,
+      "direction": "R"
+    },
+    {
+      "id": 2,
+      "box": [
+        1025,
+        360,
+        1069,
+        480
+      ],
+      "variants": {
+        "original": {
+          "hough_scores": [
+            -0.42608834164132897,
+            -0.16400871349836246,
+            0.09403335496973238
+          ],
+          "hough_median": -0.16400871349836246,
+          "sobel_score": 0.13045255518681892,
+          "hough_direction": "L",
+          "sobel_direction": "R",
+          "consensus": "?"
+        },
+        "jpeg85": {
+          "hough_scores": [
+            -0.7308269873817014,
+            -0.046075296408795006,
+            0.09567349990832874
+          ],
+          "hough_median": -0.046075296408795006,
+          "sobel_score": 0.12780811466008316,
+          "hough_direction": "?",
+          "sobel_direction": "R",
+          "consensus": "?"
+        },
+        "jpeg70": {
+          "hough_scores": [
+            -0.4187264582841725,
+            -0.003721748702818043,
+            0.033717865343819285
+          ],
+          "hough_median": -0.003721748702818043,
+          "sobel_score": 0.1258148292092267,
+          "hough_direction": "?",
+          "sobel_direction": "R",
+          "consensus": "?"
+        },
+        "down75_up": {
+          "hough_scores": [
+            -0.48248942177642834,
+            -0.0840109226084029,
+            -0.5287959031479955
+          ],
+          "hough_median": -0.48248942177642834,
+          "sobel_score": 0.12152079057606081,
+          "hough_direction": "L",
+          "sobel_direction": "R",
+          "consensus": "?"
+        }
+      },
+      "stable": false,
+      "direction": "?"
+    },
+    {
+      "id": 3,
+      "box": [
+        1109,
+        360,
+        1180,
+        480
+      ],
+      "variants": {
+        "original": {
+          "hough_scores": [
+            -0.07022409371752772,
+            -0.6528424541666165,
+            -0.6216938607524368
+          ],
+          "hough_median": -0.6216938607524368,
+          "sobel_score": -0.3034148379962029,
+          "hough_direction": "L",
+          "sobel_direction": "L",
+          "consensus": "L"
+        },
+        "jpeg85": {
+          "hough_scores": [
+            -0.42661673764118924,
+            -0.6360806880249482,
+            -0.6610158223606458
+          ],
+          "hough_median": -0.6360806880249482,
+          "sobel_score": -0.3011533394571012,
+          "hough_direction": "L",
+          "sobel_direction": "L",
+          "consensus": "L"
+        },
+        "jpeg70": {
+          "hough_scores": [
+            -0.5840141079578983,
+            -0.5595638426489458,
+            -0.23123666289660297
+          ],
+          "hough_median": -0.5595638426489458,
+          "sobel_score": -0.2992480488717281,
+          "hough_direction": "L",
+          "sobel_direction": "L",
+          "consensus": "L"
+        },
+        "down75_up": {
+          "hough_scores": [
+            -0.6004227732378168,
+            -0.1496687282485892,
+            -0.9999999999941349
+          ],
+          "hough_median": -0.6004227732378168,
+          "sobel_score": -0.31343926650568027,
+          "hough_direction": "L",
+          "sobel_direction": "L",
+          "consensus": "L"
+        }
+      },
+      "stable": true,
+      "direction": "L"
+    },
+    {
+      "id": 4,
+      "box": [
+        1220,
+        360,
+        1319,
+        480
+      ],
+      "variants": {
+        "original": {
+          "hough_scores": [
+            -0.4570768223563205,
+            -0.43243185973940984,
+            -0.4957140051171497
+          ],
+          "hough_median": -0.4570768223563205,
+          "sobel_score": -0.0718201246147291,
+          "hough_direction": "L",
+          "sobel_direction": "?",
+          "consensus": "?"
+        },
+        "jpeg85": {
+          "hough_scores": [
+            -0.3953775513562002,
+            -0.5678492694974763,
+            -0.37702295630939764
+          ],
+          "hough_median": -0.3953775513562002,
+          "sobel_score": -0.06996637023947451,
+          "hough_direction": "L",
+          "sobel_direction": "?",
+          "consensus": "?"
+        },
+        "jpeg70": {
+          "hough_scores": [
+            -0.44046485218226394,
+            -0.3094828798890873,
+            -0.4866332819049601
+          ],
+          "hough_median": -0.44046485218226394,
+          "sobel_score": -0.06753479443940365,
+          "hough_direction": "L",
+          "sobel_direction": "?",
+          "consensus": "?"
+        },
+        "down75_up": {
+          "hough_scores": [
+            -0.74451015648091,
+            -0.5229430368249789,
+            -0.502281500859883
+          ],
+          "hough_median": -0.5229430368249789,
+          "sobel_score": -0.08376165916560954,
+          "hough_direction": "L",
+          "sobel_direction": "?",
+          "consensus": "?"
+        }
+      },
+      "stable": false,
+      "direction": "?"
+    },
+    {
+      "id": 5,
+      "box": [
+        1311,
+        360,
+        1411,
+        480
+      ],
+      "variants": {
+        "original": {
+          "hough_scores": [
+            -0.5700111086403638,
+            -0.3021592908574151,
+            -0.6062513023392245
+          ],
+          "hough_median": -0.5700111086403638,
+          "sobel_score": -0.24646506630060272,
+          "hough_direction": "L",
+          "sobel_direction": "L",
+          "consensus": "L"
+        },
+        "jpeg85": {
+          "hough_scores": [
+            -0.6114767233214639,
+            -0.710222093720182,
+            -0.24168788265472946
+          ],
+          "hough_median": -0.6114767233214639,
+          "sobel_score": -0.24646255583070958,
+          "hough_direction": "L",
+          "sobel_direction": "L",
+          "consensus": "L"
+        },
+        "jpeg70": {
+          "hough_scores": [
+            -0.2512596369989048,
+            -0.48176334732260584,
+            0.005101241532121761
+          ],
+          "hough_median": -0.2512596369989048,
+          "sobel_score": -0.24404477695218715,
+          "hough_direction": "L",
+          "sobel_direction": "L",
+          "consensus": "L"
+        },
+        "down75_up": {
+          "hough_scores": [
+            -0.700753281915257,
+            -0.6179721908716517,
+            -0.43121296183833147
+          ],
+          "hough_median": -0.6179721908716517,
+          "sobel_score": -0.2582170999938862,
+          "hough_direction": "L",
+          "sobel_direction": "L",
+          "consensus": "L"
+        }
+      },
+      "stable": true,
+      "direction": "L"
+    }
+  ],
+  "stable_sails": 3,
+  "visible_direction_sequence": "R?L?L",
+  "both_direction_classes_present": true,
+  "promotion_rule": "synthetic L/R controls pass; >=4/5 sails have same Hough+Sobel consensus direction in all four image variants; both L and R appear",
+  "promoted": false,
+  "interpretation_guard": "Promotion establishes only a robust visible L/R object sequence, not a key mapping."
+}
