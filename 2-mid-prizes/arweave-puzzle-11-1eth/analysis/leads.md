@@ -1,23 +1,22 @@
 # Open leads, ranked
 
-## 1. Exact 64 × 25 px private-key cell geometry (active)
+## 1. Puzzle #9 original Reddit solve-path evidence (active)
 
-The image is exactly 1600 px wide and a raw Ethereum private key is conventionally 64 hex characters:
+A newly surfaced contemporaneous Reddit thread from January 2020 contains concrete Puzzle #9 mechanism discussion that was not part of Stages 96–98, which focused on the image and Twitter.
 
-`1600 = 64 × 25`.
-
-This exact dimensional relation has not been tested. Stage 113 tests only whether the image supports a robust phase-aligned 16-state visual-cell carrier. It will not output or verify any ordered secret-like sequence.
+Stage 114 reconstructs the thread, distinguishes author replies from community speculation, and tests whether any multi-step claim is corroborated by primary/post-solve evidence.
 
 ## 2. General format-invariant visible / semantic mechanism
 
 Still supported by Stage 31 and the archived "format does not matter" statement.
 
-## 3. Image-only multi-step semantic prior
+## 3. Puzzle #9 multi-step prior
 
-Puzzle #9 is primary-verified as a four-step image puzzle, but no concrete solve step was recovered.
+Primary verified: #9 required four steps; author guessed the anonymous solver found three and brute-forced one. Actual four-step method remains unknown.
 
 ## Closed / deprioritized
 
+- Exact 64×25 one-hex-per-cell carrier: Stage 113 valid negative.
 - Corrected five-sail +26/+26 width progression: Stage 112 valid negative.
 - Direct sail↔skyline alignment: Stage 111 rejected.
 - Building stroke tone / density / topology / roof profile: rejected.
