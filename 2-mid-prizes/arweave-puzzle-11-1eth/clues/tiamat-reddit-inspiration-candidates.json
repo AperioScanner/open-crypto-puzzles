@@ -23,7 +23,7 @@
       "visible_semantic": true,
       "exact_pixel_dependency": false,
       "format_fragility_discussed": false,
-      "brute_force_component": true,
+      "brute_force_component": false,
       "public_solution_or_detailed_hints": true,
       "notes": [
         "Large image-based Bitcoin puzzle with 1 BTC prize.",
