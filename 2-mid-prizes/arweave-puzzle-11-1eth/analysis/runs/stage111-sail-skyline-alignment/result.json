@@ -1,0 +1,166 @@
+{
+  "experiment_id": "A11-EXP-111",
+  "scope": "same-canvas x alignment between five right-hand small sails and all eight consecutive five-building skyline blocks; no fitted target translation/scale and no private-key operations",
+  "search_band": [
+    900,
+    345,
+    1585,
+    500
+  ],
+  "building_centers": [
+    278.0,
+    369.0,
+    458.0,
+    589.0,
+    730.0,
+    931.0,
+    1060.0,
+    1200.0,
+    1304.0,
+    1401.0,
+    1482.0,
+    1553.0
+  ],
+  "variant_results": {
+    "original": {
+      "sail_centers": [
+        1042,
+        1148,
+        1282,
+        1372,
+        1490
+      ],
+      "best_building_block": [
+        7,
+        11
+      ],
+      "best_rms": 29.722045690026114,
+      "all_block_rms": [
+        782.330109352823,
+        653.2875324082038,
+        517.2276094718843,
+        370.02108048055857,
+        227.11098608389688,
+        88.6949829471769,
+        29.722045690026114,
+        126.11899143269423
+      ]
+    },
+    "jpeg85": {
+      "sail_centers": [
+        1042,
+        1148,
+        1282,
+        1372,
+        1490
+      ],
+      "best_building_block": [
+        7,
+        11
+      ],
+      "best_rms": 29.722045690026114,
+      "all_block_rms": [
+        782.330109352823,
+        653.2875324082038,
+        517.2276094718843,
+        370.02108048055857,
+        227.11098608389688,
+        88.6949829471769,
+        29.722045690026114,
+        126.11899143269423
+      ]
+    },
+    "jpeg70": {
+      "sail_centers": [
+        1042,
+        1148,
+        1282,
+        1372,
+        1490
+      ],
+      "best_building_block": [
+        7,
+        11
+      ],
+      "best_rms": 29.722045690026114,
+      "all_block_rms": [
+        782.330109352823,
+        653.2875324082038,
+        517.2276094718843,
+        370.02108048055857,
+        227.11098608389688,
+        88.6949829471769,
+        29.722045690026114,
+        126.11899143269423
+      ]
+    },
+    "down75_up": {
+      "sail_centers": [
+        1042,
+        1150,
+        1280,
+        1372,
+        1490
+      ],
+      "best_building_block": [
+        7,
+        11
+      ],
+      "best_rms": 29.34280150224242,
+      "all_block_rms": [
+        782.308123439863,
+        653.2869201200955,
+        517.234569610346,
+        370.09566330882615,
+        227.1057022621845,
+        88.73105431583691,
+        29.34280150224242,
+        126.00793625799925
+      ]
+    }
+  },
+  "same_best_block_all_variants": true,
+  "max_sail_center_drift_px": 2.0,
+  "observed_best_block": [
+    7,
+    11
+  ],
+  "observed_best_rms_px": 29.722045690026114,
+  "nulls": {
+    "translation_preserving": {
+      "n": 40000,
+      "p_familywise": 0.4133396665083373,
+      "median_best_rms": 34.09590340830823,
+      "q05_best_rms": 15.122862305464189
+    },
+    "spacing_constrained": {
+      "n": 50000,
+      "minimum_spacing_px": 70,
+      "p_familywise": 0.05969880602387952,
+      "median_best_rms": 63.79980567792663,
+      "q05_best_rms": 28.070219106762544
+    }
+  },
+  "synthetic_aligned_control": {
+    "known_block": [
+      7,
+      11
+    ],
+    "centers": [
+      1056.0,
+      1203.0,
+      1302.0,
+      1406.0,
+      1479.0
+    ],
+    "recovered_block": [
+      7,
+      11
+    ],
+    "rms_px": 3.5496478698597698,
+    "pass": true
+  },
+  "promotion_rule": "synthetic aligned control passes; same best consecutive 5-building block across original/JPEG85/JPEG70/resize; max sail-center drift <=8 px; familywise p<=0.05 under both translation-preserving and spacing-constrained nulls",
+  "promoted": false,
+  "interpretation_guard": "Promotion would establish only a visible cross-object correspondence, not a mapping to secret material."
+}
