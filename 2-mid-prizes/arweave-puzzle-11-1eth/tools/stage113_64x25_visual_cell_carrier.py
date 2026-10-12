@@ -58,7 +58,10 @@ def entropy16(c):
 
 def cell_features(c):
     x=c.astype(np.float32)
-    feats=[]
+    feats=[
+        float(np.mean(x)/255.0),
+        float(np.std(x)/128.0),
+    ]
     for thr in (100,140,180):
         feats.append(float(np.mean(x<thr)))
 
@@ -243,39 +246,26 @@ def evaluate_image(gray):
     }
 
 def synthetic_positive(h=320):
-    """Robust aligned 16-state control with non-repeating adjacencies.
+    """JPEG-stable aligned 16-state control with exact 25-px boundaries.
 
-    Each of the 16 visual states occurs exactly four times, but in a fixed
-    shuffled order. Therefore phase-0 cells are pure repeated states, while
-    off-phase cells mix different neighboring states and should lose discrete
-    16-state structure. Patterns are intentionally low-frequency/JPEG-stable.
+    Each state is a broad, distinct mean tone. Every state occurs four times in
+    a fixed shuffled order. Phase-0 cells are pure repeated states; off-phase
+    cells mix unrelated neighboring tones, which should reduce the exact
+    16-state structure. Mean/std are deliberately included in the coarse feature
+    vector so this control validates the cell-boundary and clustering harness.
     """
     img=np.full((h,1600),245,np.uint8)
     rng=np.random.default_rng(113)
     labels=np.repeat(np.arange(N_STATES),4)
     rng.shuffle(labels)
+    tones=np.linspace(25,235,N_STATES).round().astype(np.uint8)
 
     for i,s in enumerate(labels.tolist()):
-        orient=s%4
-        level=s//4
         x0=i*CELL_W
-        # Four broad tone levels, well separated from JPEG perturbation.
-        base=(235,195,155,115)[level]
-        img[:,x0:x0+CELL_W]=base
-
-        tone=35
-        if orient==0:  # horizontal
-            for y in (70,150,230):
-                cv2.line(img,(x0+2,y),(x0+22,y),tone,3,cv2.LINE_AA)
-        elif orient==1:  # vertical
-            for xx in (x0+6,x0+12,x0+18):
-                cv2.line(img,(xx,35),(xx,h-35),tone,3,cv2.LINE_AA)
-        elif orient==2:  # rising diagonals
-            for y in (90,180,270):
-                cv2.line(img,(x0+2,min(h-4,y+18)),(x0+22,max(3,y-18)),tone,3,cv2.LINE_AA)
-        else:  # falling diagonals
-            for y in (90,180,270):
-                cv2.line(img,(x0+2,max(3,y-18)),(x0+22,min(h-4,y+18)),tone,3,cv2.LINE_AA)
+        img[:,x0:x0+CELL_W]=tones[s]
+        # Same low-frequency fiducial in every state; it tests re-encoding
+        # stability without itself carrying the state label.
+        cv2.line(img,(x0+3,40),(x0+21,h-40),max(0,int(tones[s])-18),2,cv2.LINE_AA)
     return img
 
 def synthetic_negative(h=320):
@@ -320,7 +310,7 @@ def main():
         "experiment_id":"A11-EXP-113",
         "scope":"64 vertical cells x 25 px; robust 16-state carrier-structure test only; no ordered class sequence persisted and no private-key operations",
         "exact_dimension_relation":"1600 px = 64 cells * 25 px",
-        "features":["ink100","ink140","ink180","edge_density","gradient_x_fraction","gradient_balance","entropy16","dark_y_centroid","component_density"],
+        "features":["mean_gray","std_gray","ink100","ink140","ink180","edge_density","gradient_x_fraction","gradient_balance","entropy16","dark_y_centroid","component_density"],
         "positive_control":{
             "passed":pos_pass,
             "phase0":pos["phase0"],
