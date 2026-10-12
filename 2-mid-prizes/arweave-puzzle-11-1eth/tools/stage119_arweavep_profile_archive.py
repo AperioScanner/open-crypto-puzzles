@@ -40,46 +40,71 @@ def text_fetch(url):
     return fetch(url).decode("utf-8","replace")
 
 def cdx_urls():
+    """Bounded archive lookup with documented, exact 2020 timestamp anchors.
+
+    The former code overwrote the statuscode filter and discarded May captures
+    while the CDX itself can timeout; the known tweet archives are fallbacks.
+    """
     targets=[
-        "twitter.com/ArweaveP",
-        "twitter.com/ArweaveP/",
-        "twitter.com/ArweaveP/with_replies",
+        "https://twitter.com/ArweaveP",
+        "https://twitter.com/arweavep",
+        "https://twitter.com/ArweaveP/with_replies",
     ]
-    rows=[]
+    found=[]
     errors=[]
     for target in targets:
-        q=urllib.parse.urlencode({
-            "url":target,
-            "from":FROM[:4],
-            "to":TO[:4],
-            "output":"json",
-            "filter":"statuscode:200",
-            "filter":"timestamp:"+FROM[:6]+"*",
-            "collapse":"digest",
-        },doseq=True)
+        q=urllib.parse.urlencode([
+            ("url",target),
+            ("from",FROM),
+            ("to",TO),
+            ("output","json"),
+            ("filter","statuscode:200"),
+            ("fl","timestamp,original,statuscode,digest"),
+            ("collapse","digest"),
+            ("limit","60"),
+        ])
         url="https://web.archive.org/cdx/search/cdx?"+q
         try:
-            obj=json.loads(text_fetch(url))
+            obj=json.loads(fetch(url,timeout=12).decode("utf-8","replace"))
             if len(obj)>=2:
                 hdr=obj[0]
                 for row in obj[1:]:
                     d=dict(zip(hdr,row))
                     ts=d.get("timestamp","")
                     if FROM<=ts[:8]<=TO:
-                        rows.append(d)
+                        d["source_type"]="profile"
+                        found.append(d)
         except Exception as e:
             errors.append({"url":url,"error":type(e).__name__})
-    # de-dup by timestamp+original
-    seen=set(); out=[]
-    for r in sorted(rows,key=lambda x:x.get("timestamp","")):
-        k=(r.get("timestamp"),r.get("original"))
-        if k in seen: continue
-        seen.add(k); out.append(r)
-    return out[:MAX_SNAPSHOTS],errors
+
+    # Snapshot URLs independently documented in Stage 98.
+    # These are tweet pages, not evidence of entire profile/header coverage.
+    # Tweet media are deliberately excluded from image comparisons.
+    known=[
+        ("20200430185132","https://twitter.com/ArweaveP/status/1253354733911359491"),
+        ("20200430210602","https://twitter.com/ArweaveP/status/1253375599323856896"),
+        ("20200501121921","https://twitter.com/ArweaveP/status/1253253461828931584"),
+        ("20200502173835","https://twitter.com/ArweaveP/status/1252961944807641090"),
+    ]
+    seeds=[{"timestamp":ts,"original":u,"source_type":"tweet_witness"}
+           for ts,u in known if FROM<=ts[:8]<=TO]
+    seen=set()
+    chosen=[]
+    for row in sorted(found,key=lambda x:x.get("timestamp","")):
+        k=(row.get("timestamp"),row.get("original","").lower().rstrip("/"))
+        if k not in seen and len(chosen)<MAX_SNAPSHOTS-len(seeds):
+            seen.add(k);chosen.append(row)
+    for row in seeds:
+        k=(row["timestamp"],row["original"].lower().rstrip("/"))
+        if k not in seen:
+            seen.add(k);chosen.append(row)
+    return sorted(chosen,key=lambda x:x.get("timestamp","")),errors
 
 def extract_meta(html):
+    import html as html_lib
+    markup=html_lib.unescape(html).replace("\\/","/").replace("\\u002F","/")
     title=""
-    m=re.search(r"<title[^>]*>(.*?)</title>",html,re.I|re.S)
+    m=re.search(r"<title[^>]*>(.*?)</title>",markup,re.I|re.S)
     if m:
         title=re.sub(r"\s+"," ",re.sub("<[^>]+>","",m.group(1))).strip()[:300]
     desc=[]
@@ -87,24 +112,19 @@ def extract_meta(html):
         r'<meta[^>]+(?:name|property)=["\'](?:description|og:description|twitter:description)["\'][^>]+content=["\']([^"\']+)',
         r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:name|property)=["\'](?:description|og:description|twitter:description)["\']',
     ]:
-        desc += re.findall(pat,html,re.I|re.S)
+        desc += re.findall(pat,markup,re.I|re.S)
     desc=[re.sub(r"\s+"," ",x).strip()[:500] for x in desc]
 
     urls=set()
-    # Profile/header CDN references and social card images.
-    for u in re.findall(r'https?://[^"\'<>\s]+',html):
-        uu=u.replace("&amp;","&")
-        if ("pbs.twimg.com/profile_images/" in uu or
-            "pbs.twimg.com/profile_banners/" in uu or
-            "pbs.twimg.com/media/" in uu):
-            urls.add(uu)
-    for pat in [
-        r'<meta[^>]+(?:property|name)=["\'](?:og:image|twitter:image(?::src)?)["\'][^>]+content=["\']([^"\']+)',
-        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\'](?:og:image|twitter:image(?::src)?)["\']',
-    ]:
-        for u in re.findall(pat,html,re.I|re.S):
-            if u.startswith("http"):
-                urls.add(u.replace("&amp;","&"))
+    # Restrict *profile* experiment to avatars/banners. Tweet media could
+    # contain the Puzzle #11 artwork itself: a tautological false positive.
+    for u in re.findall(r'https?://[^"\'<>\s]+',markup):
+        u=u.rstrip(");,\\")
+        host=urllib.parse.urlparse(u).netloc.lower()
+        if host=="pbs.twimg.com" and (
+            "/profile_images/" in u or "/profile_banners/" in u
+        ):
+            urls.add(u)
     return title,desc,sorted(urls)
 
 def archive_asset_url(ts,url):
@@ -167,15 +187,20 @@ def main():
             html=text_fetch(way)
         except Exception as e:
             snapshot_rows.append({
-                "timestamp":ts,"original":orig,"fetch_ok":False,
+                "timestamp":ts,"original":orig,"source_type":s.get("source_type"),"fetch_ok":False,
                 "error":type(e).__name__,
             })
             continue
         title,desc,imgurls=extract_meta(html)
-        exact_handle=bool(re.search(r"ArweaveP",title+" "+" ".join(desc)+" "+html[:200000],re.I))
+        plain=re.sub(r"<[^>]+>"," ",html[:200000])
+        exact_handle=bool(re.search(
+            r'Arweave\s+Puzzle\s*@\s*ArweaveP\b|data-screen-name=["\']ArweaveP["\']|ArweaveP.s profile',
+            title+" "+" ".join(desc)+" "+plain,re.I,
+        ))
         snapshot_rows.append({
             "timestamp":ts,
             "original":orig,
+            "source_type":s.get("source_type"),
             "fetch_ok":True,
             "title":title,
             "descriptions":desc[:5],
@@ -183,18 +208,18 @@ def main():
             "image_url_count":len(imgurls),
         })
         for u in imgurls:
-            assets.append((ts,u))
+            assets.append((ts,u,s.get("source_type")))
 
     # de-dup candidate assets
     seen=set(); uniq=[]
-    for ts,u in assets:
+    for ts,u,source_type in assets:
         key=re.sub(r"[?&](?:format|name)=[^&]+","",u)
         if key in seen: continue
-        seen.add(key); uniq.append((ts,u))
+        seen.add(key); uniq.append((ts,u,source_type))
     uniq=uniq[:MAX_IMAGES]
 
     image_results=[]
-    for i,(ts,u) in enumerate(uniq):
+    for i,(ts,u,source_type) in enumerate(uniq):
         candidates=[archive_asset_url(ts,u),u]
         data=None; src=None
         for cu in candidates:
@@ -205,17 +230,19 @@ def main():
             except Exception:
                 pass
         if data is None:
-            image_results.append({"index":i,"url":u[:500],"fetch_ok":False})
+            image_results.append({"index":i,"url":u[:500],"role":"banner" if "/profile_banners/" in u else "avatar","source_type":source_type,"fetch_ok":False})
             continue
         im=decode_image(data)
         if im is None:
-            image_results.append({"index":i,"url":u[:500],"fetch_ok":False,"decode":False})
+            image_results.append({"index":i,"url":u[:500],"role":"banner" if "/profile_banners/" in u else "avatar","source_type":source_type,"fetch_ok":False,"decode":False})
             continue
         score=orb_score(ref,im)
         strong=bool(score["inliers"]>=25 and score["inlier_fraction"]>=0.35)
         image_results.append({
             "index":i,
             "url":u[:500],
+            "role":"banner" if "/profile_banners/" in u else "avatar",
+            "source_type":source_type,
             "fetch_ok":True,
             "shape":list(im.shape[:2]),
             **score,
@@ -223,16 +250,21 @@ def main():
         })
 
     recovered=[x for x in snapshot_rows if x.get("fetch_ok") and x.get("exact_handle_seen")]
-    source_control_pass=bool(recovered)
-    strong_assets=[x for x in image_results if x.get("strong_derivative")]
+    profile_witnesses=[x for x in recovered if x.get("source_type")=="profile"]
+    tweet_witnesses=[x for x in recovered if x.get("source_type")=="tweet_witness"]
+    tested=[x for x in image_results if x.get("fetch_ok")]
+    avatar_tested=sum(x.get("role")=="avatar" for x in tested)
+    banner_tested=sum(x.get("role")=="banner" for x in tested)
+    source_control_pass=bool(recovered and tested)
+    strong_assets=[x for x in tested if x.get("strong_derivative")]
     promoted=bool(source_control_pass and control_pass and strong_assets)
+    full_coverage=bool(profile_witnesses and avatar_tested and banner_tested)
 
     decision=(
-        "PROFILE_VISUAL_DERIVATIVE"
-        if promoted else
-        "SOURCE_FAILURE"
-        if not source_control_pass else
-        "NO_PROFILE_VISUAL_DERIVATIVE"
+        "PROFILE_VISUAL_DERIVATIVE" if promoted else
+        "SOURCE_FAILURE" if not source_control_pass else
+        "NO_PROFILE_VISUAL_DERIVATIVE" if full_coverage else
+        "PARTIAL_PROFILE_COVERAGE"
     )
 
     result={
@@ -243,6 +275,11 @@ def main():
         "snapshots_found":len(snaps),
         "snapshot_rows":snapshot_rows,
         "source_control_pass":source_control_pass,
+        "profile_witness_count":len(profile_witnesses),
+        "tweet_witness_count":len(tweet_witnesses),
+        "avatar_assets_tested":avatar_tested,
+        "banner_assets_tested":banner_tested,
+        "full_profile_header_coverage":full_coverage,
         "orb_positive_control":control,
         "orb_control_pass":control_pass,
         "candidate_profile_assets":len(uniq),
@@ -250,7 +287,7 @@ def main():
         "strong_derivative_count":len(strong_assets),
         "decision":decision,
         "promoted":promoted,
-        "promotion_rule":"timestamped exact-handle archive snapshot recovered; transformed-canonical ORB control passes; at least one contemporaneous profile/header/media asset has >=25 RANSAC inliers and >=0.35 inlier fraction to canonical Puzzle #11",
+        "promotion_rule":"timestamped archived profile or author-tweet witness; avatar/banner image decoded; ORB control passes; >=25 RANSAC inliers and >=0.35 inlier fraction; tweet media excluded",
         "interpretation_guard":"A negative only retires direct profile/header visual reuse, not all external semantic references.",
         "safety_guard":"Public profile metadata and image similarity only. No private-key material generated or tested.",
     }
@@ -261,7 +298,10 @@ def main():
         "",
         "**Experiment:** A11-EXP-119",
         "",
-        f"- snapshots found: **{len(snaps)}**",
+        f"- snapshots attempted: **{len(snaps)}**",
+        f"- authenticated profile snapshots: **{len(profile_witnesses)}**",
+        f"- authenticated tweet-page witnesses: **{len(tweet_witnesses)}**",
+        f"- avatar/banner images decoded: **{avatar_tested}/{banner_tested}**",
         f"- exact-handle source control: **{source_control_pass}**",
         f"- ORB positive control: **{control_pass}** ({control['inliers']} inliers, {control['inlier_fraction']:.3f})",
         f"- profile/header/media assets tested: **{len(uniq)}**",
@@ -273,19 +313,19 @@ def main():
     ]
     if snapshot_rows:
         for x in snapshot_rows:
-            md.append(f"- {x.get('timestamp','?')} fetch={x.get('fetch_ok')} handle={x.get('exact_handle_seen')} title={x.get('title','')!r}")
+            md.append(f"- {x.get('timestamp','?')} type={x.get('source_type')} fetch={x.get('fetch_ok')} handle={x.get('exact_handle_seen')} title={x.get('title','')!r}")
     else:
         md.append("- none")
 
     md += ["","## Image comparisons",""]
     if image_results:
         md += [
-            "| idx | fetched | inliers | fraction | strong |",
-            "|---:|:---:|---:|---:|:---:|",
+            "| idx | role | fetched | inliers | fraction | strong |",
+            "|---:|:---|:---:|---:|---:|:---:|",
         ]
         for x in image_results:
             md.append(
-                f"| {x['index']} | {x.get('fetch_ok',False)} | {x.get('inliers',0)} | "
+                f"| {x['index']} | {x.get('role')} | {x.get('fetch_ok',False)} | {x.get('inliers',0)} | "
                 f"{x.get('inlier_fraction',0.0):.3f} | {x.get('strong_derivative',False)} |"
             )
     else:
@@ -296,8 +336,10 @@ def main():
         md.append("Archive source recovery failed. Do not interpret this as a negative; repair Stage 119 under the same stage number.")
     elif promoted:
         md.append("A contemporaneous @ArweaveP profile/header asset is a strong geometric derivative of Puzzle #11. This materially promotes the watermark-directed external-context route.")
+    elif not full_coverage:
+        md.append("Partial coverage: only observed profile assets assessed. Do not retire unobserved profile/header layers; keep Stage 119 open unless independently corroborated.")
     else:
-        md.append("The contemporaneous profile archive was recovered, but no profile/header asset is a strong visual derivative of Puzzle #11. Retire direct profile/header visual reuse while keeping broader cross-domain semantics open.")
+        md.append("Authenticated period profile, avatar and banner recovered; no strong Puzzle #11 derivative detected. Retire direct visual reuse only, not broader cross-domain semantics.")
 
     md += ["","No private-key material was generated or tested.",""]
     (OUT/"REPORT.md").write_text("\n".join(md))
@@ -308,6 +350,8 @@ def main():
         "source_control_pass":source_control_pass,
         "orb_control_pass":control_pass,
         "assets":len(uniq),
+        "avatar_tested":avatar_tested,
+        "banner_tested":banner_tested,
         "strong":len(strong_assets),
         "decision":decision,
     }))
