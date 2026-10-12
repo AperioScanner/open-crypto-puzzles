@@ -122,8 +122,13 @@ def optimal_1d_labels(values,k):
         st=en
     labels=np.empty(n,dtype=int)
     labels[order]=labels_sorted
-    # Common-variance Gaussian-like BIC with ~2k effective parameters
-    bic=float(n*math.log(max(sse/n,1e-12)) + (2*k)*math.log(n))
+    # Common-variance Gaussian-like BIC with a quantization-aware variance
+    # floor. The tone metrics are medians of 8-bit grayscale values, so treating
+    # sub-quantization residuals as arbitrarily precise lets k=3 overfit a true
+    # binary control by splitting nearly identical values. A 2-level grayscale
+    # noise floor is conservative and still far below the synthetic class gaps.
+    var_floor=(2.0/255.0)**2
+    bic=float(n*math.log(max(sse/n,var_floor)) + (2*k)*math.log(n))
     return {
         "k":k,
         "labels":labels.tolist(),
