@@ -312,3 +312,13 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Chronology is powerful: since Tiamat's series already existed by late May 2019, later 2019 Reddit puzzles cannot be the inspiration.
 - Two May-2018 Reddit image puzzles are the strongest pre-launch candidates identified so far: 8kk0pa (1 BTC image treasure hunt) and 8krbd3 (2.5mBTC private key encoded in a visible custom character system).
 - Stage 115 selected to score the fixed pre-launch candidates, require a direct Tiamat link for exact identification, and otherwise extract only shared construction traits as a family prior.
+
+
+## 2026-10-12 — Stage 115 review and Stage 116 rationale
+
+- Stage 115 completed cleanly. Chronology leaves two top pre-launch Reddit image puzzles, 8kk0pa and 8krbd3, tied at 6/6 broad construction traits.
+- No direct Tiamat link identifies either candidate as the exact inspiration. Decision: EXACT_IDENTITY_UNRESOLVED_FAMILY_PRIOR_ONLY.
+- Safe broad common traits are image-based, funded crypto reward, direct wallet/key unlock, multi-step, visible-semantic construction and availability of public hints/solution material.
+- Candidate-specific tricks must not be transferred.
+- Public-source mechanism evidence for both candidates was distilled into a fixed 11-operation vocabulary in clues/tiamat-inspiration-solution-grammar.json. No secret/key strings are stored.
+- Stage 116 selected to compute only the strict intersection of confirmed mechanism operations across the two independent candidates. This is intended to sharpen the author-inspiration prior without inventing a solution for Puzzle #11.
