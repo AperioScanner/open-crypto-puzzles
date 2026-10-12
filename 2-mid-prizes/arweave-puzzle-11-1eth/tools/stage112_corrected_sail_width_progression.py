@@ -80,62 +80,84 @@ def crop(a,b):
     x0,y0,x1,y1=b
     return a[y0:y1,x0:x1]
 
-def apex(c):
-    bw=c<185
-    h,w=bw.shape
-    xa=max(2,int(.06*w)); xb=min(w-2,int(.94*w))
-    ys,xs=np.where(bw[:int(.68*h),xa:xb])
-    if len(ys)==0:
-        return w/2,8.0
-    xs=xs+xa
-    ymin=int(np.min(ys))
-    m=ys<=ymin+9
-    return float(np.median(xs[m])),float(ymin+2)
+def smooth_binary_1d(active,gap=5):
+    a=(np.asarray(active,dtype=np.uint8)*255)[None,:]
+    k=np.ones((1,gap),np.uint8)
+    return (cv2.morphologyEx(a,cv2.MORPH_CLOSE,k,iterations=1)[0]>0)
 
-def row_envelope_width(binary,ax,ay):
+def projection_width(binary,cx):
+    """Width of the center-anchored sail-support band.
+
+    Earlier Stage-112 versions tried to infer an apex from the topmost dark
+    pixel. In the real scene the upper part of the crop contains skyline/water
+    strokes, so that apex was frequently unrelated to the sail and caused None
+    widths. Here we instead use the vertical projection of dark/edge support and
+    select the contiguous active run containing (or nearest to) the independently
+    detected sail center.
+    """
     h,w=binary.shape
-    y0=max(0,int(round(ay+10)))
-    y1=min(h,int(round(ay+92)),int(.74*h))
-    vals=[]
-    for y in range(y0,y1):
-        xs=np.flatnonzero(binary[y])
-        # Two boundary pixels are enough for an outline-only sail. Requiring
-        # four pixels biased the estimator toward sails with internal spokes
-        # and made the first two real sails unmeasurable.
-        if len(xs)<2:
-            continue
-        # Keep only a generous local cone around the detected apex.
-        xs=xs[np.abs(xs-ax)<=.48*w]
-        if len(xs)<2:
-            continue
-        lo=float(np.percentile(xs,5))
-        hi=float(np.percentile(xs,95))
-        span=hi-lo+1
-        if span>=5:
-            vals.append(span)
-    if len(vals)<6:
+    # Exclude only the extreme crop edges; retain the full vertical sail body.
+    y0=max(0,int(.06*h))
+    y1=min(h,int(.88*h))
+    p=np.sum(binary[y0:y1].astype(float),axis=0)
+    p=smooth1(p,5)
+    lo=float(np.percentile(p,20))
+    local0=max(0,int(round(cx-.44*w)))
+    local1=min(w,int(round(cx+.44*w))+1)
+    peak=float(np.max(p[local0:local1])) if local1>local0 else float(np.max(p))
+    if peak<=lo+1e-9:
         return None
-    # Near-base width without allowing a single hull/clutter row to dominate.
-    return float(np.percentile(vals,90))
+    cut=lo+0.24*(peak-lo)
+    active=smooth_binary_1d(p>=cut,5)
 
-def mask_width(c):
-    ax,ay=apex(c)
+    # Enumerate active runs.
+    runs=[]
+    i=0
+    while i<w:
+        if not active[i]:
+            i+=1; continue
+        j=i+1
+        while j<w and active[j]:
+            j+=1
+        runs.append((i,j))
+        i=j
+    if not runs:
+        return None
+
+    # Prefer the run containing cx; otherwise the nearest run within 18 px.
+    cx=float(cx)
+    containing=[r for r in runs if r[0]-1<=cx<=r[1]+1]
+    if containing:
+        r=max(containing,key=lambda z:z[1]-z[0])
+    else:
+        def dist(r):
+            if cx<r[0]: return r[0]-cx
+            if cx>r[1]: return cx-r[1]
+            return 0
+        r=min(runs,key=dist)
+        if dist(r)>18:
+            return None
+    width=float(r[1]-r[0])
+    return width if width>=4 else None
+
+def mask_width(c,cx):
     vals=[]
     for thr in MASK_THRESHOLDS:
         dark=(c<thr).astype(np.uint8)
         dark=cv2.morphologyEx(dark,cv2.MORPH_CLOSE,np.ones((2,2),np.uint8),iterations=1)
-        v=row_envelope_width(dark>0,ax,ay)
+        v=projection_width(dark>0,cx)
         if v is not None:
             vals.append(v)
     return float(np.median(vals)) if vals else None
 
-def edge_width(c):
-    ax,ay=apex(c)
+def edge_width(c,cx):
     e=cv2.Canny(c,45,135)>0
-    return row_envelope_width(e,ax,ay)
+    return projection_width(e,cx)
 
-def measure(c):
-    return {"mask":mask_width(c),"edge":edge_width(c)}
+def measure(c,cx=None):
+    if cx is None:
+        cx=(c.shape[1]-1)/2
+    return {"mask":mask_width(c,cx),"edge":edge_width(c,cx)}
 
 def ap_stats(widths):
     w=np.asarray(widths,float)
@@ -183,7 +205,7 @@ def eval_synthetic(widths):
     for method in ("mask","edge"):
         vals=[]
         for c in crops:
-            m=measure(c)[method]
+            m=measure(c,(c.shape[1]-1)/2)[method]
             vals.append(float(m) if m is not None else None)
         ok=all(v is not None for v in vals)
         out[method]={
@@ -209,8 +231,9 @@ def main():
     for v in VARIANTS:
         boxes=boxes_from_centers(centers[v],vv[v].shape[1])
         rows=[]
-        for b in boxes:
-            rows.append(measure(crop(vv[v],b)))
+        for i,b in enumerate(boxes):
+            local_cx=float(centers[v][i]-b[0])
+            rows.append(measure(crop(vv[v],b),local_cx))
         mask=[r["mask"] for r in rows]
         edge=[r["edge"] for r in rows]
         per_variant[v]={
