@@ -322,3 +322,14 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Candidate-specific tricks must not be transferred.
 - Public-source mechanism evidence for both candidates was distilled into a fixed 11-operation vocabulary in clues/tiamat-inspiration-solution-grammar.json. No secret/key strings are stored.
 - Stage 116 selected to compute only the strict intersection of confirmed mechanism operations across the two independent candidates. This is intended to sharpen the author-inspiration prior without inventing a solution for Puzzle #11.
+
+
+## 2026-10-12 — Stage 116 review and Stage 117 rationale
+
+- Stage 116 passed its synthetic intersection and source/schema controls.
+- Strict intersection across both plausible pre-launch inspiration puzzles contains exactly three confirmed operations: visible_text_or_symbol_reading, ordering_or_traversal, and cross_domain_conversion.
+- Selection/filtering, pairing, known-text reference and geometry are specific to 8kk0pa; custom alphabet, numeral-system mapping and final brute-force ambiguity are specific to 8krbd3. These remain blocked from transfer.
+- Decision: NARROW_SHARED_GRAMMAR.
+- Before applying those operations to Puzzle #11, Stage 117 will check whether they recur in Tiamat's own solved Arweave puzzle mechanisms from Stage 11.
+- The mapping is deliberately conservative: ordering/traversal receives support only from an explicit sequence-pattern class, while visible-symbol reading and cross-domain conversion use fixed Stage-11 class allowlists.
+- Promotion requires >=2 supporting mechanisms across >=2 solved puzzles, preventing one isolated solved clue from defining the author-wide prior.
