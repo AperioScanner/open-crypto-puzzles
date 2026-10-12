@@ -10,57 +10,67 @@ Do **not** reopen a hypothesis classified COVERED, RETIRED, or independently fal
 
 Historical popularity alone is not a reason to retest an exhausted idea.
 
-## Review through corrected Stage 99
+## Review through Stage 100
 
-Stage 99 initially failed its Puzzle #9 APRIL control for a parsing reason: OCR recovered strings such as `APRILANDTHECLOCKSWER`, but the harness required `APRIL` as a standalone token. The control logic was fixed under the same stage number to accept the known anchor as a substring inside a recovered OCR word.
+Stage 100 completed with both spatial-localization controls passing.
 
-### Valid Stage-99 result
+### Stage-100 result
 
-Positive controls:
-- Puzzle #9 APRIL: **PASS** in all 3 original and all 3 lossy preprocessing paths.
-- Puzzle #9 numeric `12:05.04`: **PASS** in all 3 original and all 3 lossy paths.
+Retired as region-level OCR hallucinations:
+- **SSS** — no original/lossy co-localized box.
+- **EAE** — no original/lossy co-localized box.
+- **IES** — no original/lossy co-localized box.
 
-Puzzle #11 short OCR candidates meeting the Stage-99 region-level replication rule:
-- **SSS** — strongest: 11 original paths, 9 lossy paths, 0 shuffled occurrences.
-- **EAE** — 7 original, 9 lossy, 3 shuffled.
-- **BEE** — 2 original, 3 lossy, 6 shuffled.
-- **IES** — 2 original, 3 lossy, 2 shuffled.
+One token survived the predeclared spatial rule:
+
+**BEE**
+- canonical box: approximately **x=803..883, y=520.5..545**
+- 2 original preprocessing transforms: gray + Otsu
+- 2 lossy preprocessing transforms: gray + Otsu
+- mean OCR confidence: **54.6**
+- original/lossy crop correlation: **0.969**
+- qualifying shuffled co-localized clusters: **0**
+
+### Direct visual validation
+
+The saved Stage-100 diagnostic crop was inspected directly. It does **not** look like obvious printed/handwritten `BEE`; it looks like a compact patch of dense, mostly horizontal line hatching.
+
+Therefore Stage 100 establishes a reproducible **OCR phenomenon**, not readable plaintext.
 
 ### Hypothesis decision
 
-Stage 99 **promotes only a localization question**, not readable plaintext.
-
-The current rule proves that a token can recur within the same semantic region/rotation, but it does **not** prove that independent OCR paths are reading the **same physical glyph location**. Line art can generate repeated OCR hallucinations at different places.
-
-Therefore:
-- `SSS` is the strongest candidate because it has zero shuffled occurrences.
-- `EAE` is weaker.
-- `BEE` and `IES` are weak because the same tokens are common in shuffled controls.
-- none is accepted as intended text until spatial co-localization is demonstrated.
+- SSS / EAE / IES: **RETIRED**
+- literal `BEE` text: **UNCONFIRMED and visually suspect**
+- exact BEE location: deserves one adversarial glyph-validity test before semantic interpretation
 
 ## Next stage
 
-**Stage 100 — spatial localization and glyph-consistency audit of Stage-99 OCR survivors.**
+**Stage 101 — BEE adversarial glyph-validity and perturbation audit.**
 
-Bounded scope:
-1. Candidate set fixed in advance: `SSS`, `EAE`, `BEE`, `IES`.
-2. Re-run Tesseract in TSV/bounding-box mode on the exact Stage-99 region+rotation paths only.
-3. Map every occurrence back to canonical Puzzle #11 coordinates.
-4. Cluster occurrences by physical location.
-5. Require a candidate to have:
-   - the **same physical box/location** in at least 2 original preprocessing transforms;
-   - a matching lossy occurrence at the same location;
-   - center displacement <= 18 px after canonical mapping;
-   - substantial box overlap or size agreement;
-   - no equally persistent co-localized occurrence in matched shuffled controls.
-6. Validate localization using Puzzle #9 APRIL and `12:05.04` crops.
-7. Save only small diagnostic crops around co-localized short tokens; never save long OCR strings or key-shaped output.
-8. Rank survivors by spatial replication + OCR confidence + crop correlation.
+Question:
+> Is the Stage-100 BEE location behaving like genuine text, or is Tesseract consistently hallucinating letters from hatching?
 
-A candidate that fails co-localization is retired as OCR hallucination. A candidate that survives becomes eligible for direct visual inspection/rebus interpretation in the next adaptive stage.
+Bounded design:
+1. Fixed target box from Stage 100, with small predeclared crop jitters/padding.
+2. Variants: original, JPEG85, JPEG70, 0.75x resize roundtrip.
+3. Transforms: gray, Otsu, adaptive.
+4. Tesseract PSM modes: 6, 7, 8, 10, 11, 13.
+5. Measure exact `BEE` recovery rate across PSM/transform/variant/crop perturbations.
+6. Positive controls: rendered `BEE` using several ordinary system font families, subjected to the same lossy transformations.
+7. Negative controls: same-size line-art windows selected by similar ink density and horizontal/vertical edge-energy balance, excluding the target.
+8. Independently measure vertical/horizontal stroke-energy balance. Standard B/E glyphs require both vertical stems and horizontal arms; pure horizontal hatching should separate from rendered BEE controls.
+9. Save a target-only contact sheet for direct review.
+
+Promotion requires:
+- recovery under multiple independent PSM modes;
+- persistence across at least 3 image variants;
+- recovery materially above matched line-art controls;
+- glyph-orientation balance within the calibrated positive-control range.
+
+A failure retires literal `BEE` as an OCR hallucination. No semantic use of the word is allowed before this test.
 
 ## Status
 
-- Stages 1–99: completed.
-- Corrected Stage 99: COMPLETED + REVIEWED — four short OCR localization leads, no plaintext conclusion.
-- Stage 100: selected for launch.
+- Stages 1–100: completed.
+- Stage 100: COMPLETED + REVIEWED — BEE is the only localized OCR survivor.
+- Stage 101: selected for launch.
