@@ -1,14 +1,14 @@
 # Open leads, ranked
 
-## 1. Small-sail visible direction sequence (active)
+## 1. Building roof-profile categories (active)
 
-The five small sailboats are a natural repeated object class. Width/area/gap hypotheses were tested previously, but left/right sail orientation was not.
+The 12 buildings are the strongest repeated visual object family. Interior H/V hatching has been tested heavily, but roof/silhouette direction has not.
 
-Stage 102 tests whether their lean directions form a robust visible L/R sequence across lossy re-encoding using two independent orientation estimators.
+Stage 103 tests whether roof profiles form a stable visible category sequence using two independent estimators and lossy replication.
 
 ## 2. Image-only multi-step semantic prior
 
-Puzzle #9 is primary-verified as a four-step image puzzle, but no concrete #9 step was recovered.
+Puzzle #9 is primary-verified as a four-step image puzzle, but no concrete step was recovered.
 
 ## 3. General format-invariant visible / semantic mechanism
 
@@ -16,7 +16,8 @@ Still supported by Stage 31 and the author's archived "format does not matter" s
 
 ## Closed / do not recycle
 
-- Literal OCR text branch: Stage 101 retires BEE; SSS/EAE/IES already retired.
+- Small-sail L/R direction: Stage 102 failed stability (3/5 only).
+- Literal OCR text branch: retired.
 - Direct 16-gray-mode alphabet: rejected.
 - Large-sail 64/256 one-stroke-per-symbol carrier: rejected.
 - Pier X/IX/XI: rejected.
