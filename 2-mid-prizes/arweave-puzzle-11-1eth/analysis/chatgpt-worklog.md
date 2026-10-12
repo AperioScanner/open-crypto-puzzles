@@ -280,3 +280,14 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Important implementation correction discovered during review: the corrected Stage-105/111 right-hand sail centers are [1042,1148,1282,1372,1490], while Stage 19 used [675.5,1046.5,1144.5,1269.5,1361.0]. Stage 19 therefore included a non-sail x≈675 track and omitted the true rightmost sail.
 - This invalidates Stage 19 as a replication of Stage 18's five-sail width sequence. The anti-recycling exception is satisfied by a concrete object-association defect.
 - Stage 112 selected to remeasure the true five sails with two independent width estimators and synthetic positive/negative controls. It tests only whether Stage 18's +26,+26 first-three progression is genuinely visible and robust; no alphabet/modulo/key interpretation is attempted.
+
+
+## 2026-10-12 — corrected Stage 112 review
+
+- The first Stage-112 result was not interpretable: synthetic controls failed and the first two real sails were unmeasurable.
+- Repaired the same stage rather than advancing. The final estimator uses center-anchored vertical-support projections for mask and Canny-edge representations and validates on synthetic positive/negative sail-width profiles.
+- Final controls pass. True sail centers are [1042,1148,1282,1372,1490] with <=2 px drift under lossy transforms.
+- Real median widths are mask [24,49,65,60,64] and edge [31,53,64,54.5,75.5].
+- First-three AP errors are 9 and 11 px; permutation p=0.20 for both methods; the Stage-18 qualitative profile is not reproduced.
+- Decision: retire the +26,+26 sail-width lead as a measurement/object-association artifact.
+- Stage 113 selected from an exact untested dimensional relation: 1600 px image width = 64 private-key hex characters × 25 px. It tests only whether 64 fixed visual cells support a stable 16-state carrier, with all 25 phase offsets, synthetic controls, lossy replication and no ordered secret sequence persisted.
