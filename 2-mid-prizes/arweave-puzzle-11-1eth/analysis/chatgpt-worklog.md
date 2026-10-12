@@ -272,3 +272,11 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Both real tone metrics prefer three classes in every tested condition, producing modal sequence DDLLMMLLDMLM, but only 7/12 buildings retain their class in >=90% of perturbations.
 - Decision: retire stroke-tone/pencil-pressure as a deliberate discrete carrier; the clustering exists but lacks per-building robustness.
 - Stage 111 selected as a genuinely different cross-object semantic test: direct x alignment between the five right-hand sailboats and consecutive five-building skyline blocks, with no fitted translation/scale and two familywise null models.
+
+
+## 2026-10-12 — adaptive review of Stage 111
+
+- Stage 111 finds the same best skyline block (buildings 7–11) across all lossy variants, but the correspondence is not exceptional under both predeclared nulls: p=0.41334 translation-preserving and p=0.05970 spacing-constrained. Direct sail↔skyline alignment is retired.
+- Important implementation correction discovered during review: the corrected Stage-105/111 right-hand sail centers are [1042,1148,1282,1372,1490], while Stage 19 used [675.5,1046.5,1144.5,1269.5,1361.0]. Stage 19 therefore included a non-sail x≈675 track and omitted the true rightmost sail.
+- This invalidates Stage 19 as a replication of Stage 18's five-sail width sequence. The anti-recycling exception is satisfied by a concrete object-association defect.
+- Stage 112 selected to remeasure the true five sails with two independent width estimators and synthetic positive/negative controls. It tests only whether Stage 18's +26,+26 first-three progression is genuinely visible and robust; no alphabet/modulo/key interpretation is attempted.
