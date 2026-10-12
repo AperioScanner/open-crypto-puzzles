@@ -1,6 +1,6 @@
 {
   "experiment_id": "A11-EXP-109",
-  "implementation_correction": "Replaced literal-blank lower-band detector with low-occupancy skyline detector over y=20..300 because sparse horizon/detail strokes cross the true visual gap.",
+  "implementation_correction": "Replaced literal-blank lower-band detector, then replaced an invalid absolute occupancy cutoff with a relative 2-cluster low/high occupancy split because the horizon line crosses the true visual gap.",
   "scope": "robustness and salience of the central inter-building gap producing a 5|7 skyline split; no private-key operations",
   "geometry_gaps": [
     {
@@ -108,89 +108,209 @@
       220,
       1595
     ],
-    "low_occupancy_cutoff": 0.025,
+    "classification": "relative 2-cluster split of smoothed per-column dark occupancy",
     "smooth_px": 7
   },
   "synthetic_controls": {
-    "positive_best_width": 94,
-    "negative_best_width": 0,
-    "pass": true
+    "positive_best_width": 168,
+    "negative_best_width": 168,
+    "pass": false
   },
   "detection_rows": [
     {
       "variant": "original",
       "threshold": 100,
-      "best_gap": null,
-      "matches_geometry_gap": false
+      "best_gap": {
+        "x0": 777,
+        "x1": 983,
+        "width": 206,
+        "mean_occupancy": 0.08701703982563899,
+        "occupancy_centers": [
+          0.1509329593906528,
+          0.34169639578196315
+        ],
+        "overlap_px": 102
+      },
+      "matches_geometry_gap": true
     },
     {
       "variant": "original",
       "threshold": 140,
-      "best_gap": null,
-      "matches_geometry_gap": false
+      "best_gap": {
+        "x0": 777,
+        "x1": 981,
+        "width": 204,
+        "mean_occupancy": 0.10078781512605042,
+        "occupancy_centers": [
+          0.17546219167939284,
+          0.3781036552552055
+        ],
+        "overlap_px": 102
+      },
+      "matches_geometry_gap": true
     },
     {
       "variant": "original",
       "threshold": 180,
-      "best_gap": null,
-      "matches_geometry_gap": false
+      "best_gap": {
+        "x0": 777,
+        "x1": 982,
+        "width": 205,
+        "mean_occupancy": 0.11591587854654059,
+        "occupancy_centers": [
+          0.2049799303607699,
+          0.42907010261731804
+        ],
+        "overlap_px": 102
+      },
+      "matches_geometry_gap": true
     },
     {
       "variant": "jpeg85",
       "threshold": 100,
-      "best_gap": null,
-      "matches_geometry_gap": false
+      "best_gap": {
+        "x0": 776,
+        "x1": 983,
+        "width": 207,
+        "mean_occupancy": 0.08808291432515032,
+        "occupancy_centers": [
+          0.1512296433725005,
+          0.3428173866949377
+        ],
+        "overlap_px": 102
+      },
+      "matches_geometry_gap": true
     },
     {
       "variant": "jpeg85",
       "threshold": 140,
-      "best_gap": null,
-      "matches_geometry_gap": false
+      "best_gap": {
+        "x0": 777,
+        "x1": 982,
+        "width": 205,
+        "mean_occupancy": 0.10161772025883523,
+        "occupancy_centers": [
+          0.17602098401437324,
+          0.37911919368974584
+        ],
+        "overlap_px": 102
+      },
+      "matches_geometry_gap": true
     },
     {
       "variant": "jpeg85",
       "threshold": 180,
-      "best_gap": null,
-      "matches_geometry_gap": false
+      "best_gap": {
+        "x0": 778,
+        "x1": 982,
+        "width": 204,
+        "mean_occupancy": 0.11467837134853943,
+        "occupancy_centers": [
+          0.20473752297127382,
+          0.42906529843575847
+        ],
+        "overlap_px": 102
+      },
+      "matches_geometry_gap": true
     },
     {
       "variant": "jpeg70",
       "threshold": 100,
-      "best_gap": null,
-      "matches_geometry_gap": false
+      "best_gap": {
+        "x0": 776,
+        "x1": 983,
+        "width": 207,
+        "mean_occupancy": 0.0876737651582372,
+        "occupancy_centers": [
+          0.1503475603439345,
+          0.3413566195709053
+        ],
+        "overlap_px": 102
+      },
+      "matches_geometry_gap": true
     },
     {
       "variant": "jpeg70",
       "threshold": 140,
-      "best_gap": null,
-      "matches_geometry_gap": false
+      "best_gap": {
+        "x0": 777,
+        "x1": 982,
+        "width": 205,
+        "mean_occupancy": 0.10168491786958685,
+        "occupancy_centers": [
+          0.1762134583563155,
+          0.37955726438419307
+        ],
+        "overlap_px": 102
+      },
+      "matches_geometry_gap": true
     },
     {
       "variant": "jpeg70",
       "threshold": 180,
-      "best_gap": null,
-      "matches_geometry_gap": false
+      "best_gap": {
+        "x0": 778,
+        "x1": 982,
+        "width": 204,
+        "mean_occupancy": 0.11506102440976392,
+        "occupancy_centers": [
+          0.2053471566562568,
+          0.4294029077796531
+        ],
+        "overlap_px": 102
+      },
+      "matches_geometry_gap": true
     },
     {
       "variant": "down75_up",
       "threshold": 100,
-      "best_gap": null,
-      "matches_geometry_gap": false
+      "best_gap": {
+        "x0": 775,
+        "x1": 983,
+        "width": 208,
+        "mean_occupancy": 0.08660714285714287,
+        "occupancy_centers": [
+          0.14750976562499998,
+          0.3458238851095994
+        ],
+        "overlap_px": 102
+      },
+      "matches_geometry_gap": true
     },
     {
       "variant": "down75_up",
       "threshold": 140,
-      "best_gap": null,
-      "matches_geometry_gap": false
+      "best_gap": {
+        "x0": 777,
+        "x1": 982,
+        "width": 205,
+        "mean_occupancy": 0.10422100547536088,
+        "occupancy_centers": [
+          0.18080573087022617,
+          0.3878020533366721
+        ],
+        "overlap_px": 102
+      },
+      "matches_geometry_gap": true
     },
     {
       "variant": "down75_up",
       "threshold": 180,
-      "best_gap": null,
-      "matches_geometry_gap": false
+      "best_gap": {
+        "x0": 778,
+        "x1": 982,
+        "width": 204,
+        "mean_occupancy": 0.12312675070028012,
+        "occupancy_centers": [
+          0.2183078334614526,
+          0.44943341467021586
+        ],
+        "overlap_px": 102
+      },
+      "matches_geometry_gap": true
     }
   ],
-  "all_variant_threshold_detections_match": false,
+  "all_variant_threshold_detections_match": true,
   "promotion_rule": "synthetic central-gap control passes; largest geometry gap is after building 5; width >=5x second-largest; midpoint within 10% canvas center; independent low-occupancy detector overlaps it in all 12 variant\u00d7threshold conditions; Dirichlet concentration p<=0.01",
   "promoted": false,
   "interpretation_guard": "Promotion establishes only a robust 5|7 visual delimiter, not any numeric or secret-key interpretation."
