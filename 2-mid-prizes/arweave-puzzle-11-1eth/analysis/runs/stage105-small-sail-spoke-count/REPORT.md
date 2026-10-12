@@ -1,24 +1,24 @@
-# Stage 105 — five-small-sail radial-spoke count audit
+# Stage 105 — corrected small-sail radial-spoke audit
 
-**Experiment:** A11-EXP-105
-
-- synthetic controls pass: **False**
-- synthetic detected sequence for drawn 3..7 spokes: **[None, None, None, 4, 4]**
-- stable real sails: **3/5**
-- stable spoke sequence: **0 0 0 ? ?**
-- distinct stable counts: **[0]**
+- detected sail centers: **[1042, 1148, 1282, 1372, 1490]**
+- synthetic annulus counts 3..7: **[3, 4, 3, 3, 2]**
+- synthetic scanline counts 3..7: **[3, 4, 5, 6, 2]**
+- controls pass: **False**
+- stable real sails: **2/5**
+- stable sequence: **0 ? ? 0 ?**
+- distinct counts: **[0]**
 - promoted: **False**
 
-| sail | stable count | stable | orig Hough | orig radial |
-|---:|---:|:---:|---:|---:|
-| 1 | 0 | True | 0 | 0 |
-| 2 | 0 | True | 0 | 0 |
-| 3 | 0 | True | 0 | 0 |
-| 4 |  | False | 3 | 0 |
-| 5 |  | False | 4 | 0 |
+| sail | box | count | stable | original annulus | original scanline |
+|---:|:---|---:|:---:|---:|---:|
+| 1 | [987, 345, 1095, 500] | 0 | True | 1 | 0 |
+| 2 | [1095, 345, 1215, 500] |  | False | 2 | 0 |
+| 3 | [1215, 345, 1327, 500] |  | False | 2 | 4 |
+| 4 | [1327, 345, 1431, 500] | 0 | True | 0 | 0 |
+| 5 | [1431, 345, 1550, 500] |  | False | 1 | 5 |
 
 ## Interpretation
 
-The synthetic spoke-count controls do not validate the detector. This is an implementation failure and must be fixed under Stage 105.
+The corrected detector still fails synthetic controls. Stage 105 remains an implementation failure; do not interpret real-sail counts.
 
 No private-key material was generated or tested.
