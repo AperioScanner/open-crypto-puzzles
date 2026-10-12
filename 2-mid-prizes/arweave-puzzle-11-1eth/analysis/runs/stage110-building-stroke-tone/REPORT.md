@@ -1,6 +1,6 @@
 # Stage 110 — building stroke-tone / pencil-pressure audit
 
-- synthetic binary control pass: **False**
+- synthetic binary control pass: **True**
 - synthetic ternary control pass: **False**
 - real dominant models: **{'otsu_ink_median_darkness': {'k': 3, 'win_fraction': 1.0, 'counts': {'2': 0, '3': 60}}, 'edge_median_darkness': {'k': 3, 'win_fraction': 1.0, 'counts': {'2': 0, '3': 60}}}**
 - same dominant k across both metrics: **True**
@@ -12,7 +12,7 @@
 
 ## Synthetic controls
 
-- binary correct-model fraction: 0.200, label accuracy: 0.997
+- binary correct-model fraction: 0.967, label accuracy: 0.997
 - ternary correct-model fraction: 1.000, label accuracy: 0.974
 
 ## Per-building stability

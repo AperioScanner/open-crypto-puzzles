@@ -42,9 +42,9 @@
     "binary": {
       "k": 2,
       "conditions": 120,
-      "correct_model_fraction": 0.2,
+      "correct_model_fraction": 0.9666666666666667,
       "label_accuracy": 0.9972222222222222,
-      "pass": false
+      "pass": true
     },
     "ternary": {
       "k": 3,
