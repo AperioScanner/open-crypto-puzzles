@@ -1,6 +1,6 @@
 # Arweave Puzzle #11 — adaptive controller
 
-Last updated: 2026-10-11
+Last updated: 2026-10-12
 
 ## Anti-recycling rule
 
@@ -8,58 +8,48 @@ Do **not** reopen a hypothesis classified COVERED, RETIRED, or independently fal
 1. a concrete implementation defect is demonstrated; or
 2. genuinely new independent evidence changes the hypothesis.
 
-## Review through Stage 107
+## Review through Stage 108
 
-Stage 107 completed successfully and **did not confirm the binary density channel as originally defined**.
+Stage 108 completed successfully, but the tri-modal density hypothesis **failed its predeclared stability gate**.
 
-### Stage-107 result
+### Stage-108 result
 
-- synthetic perturbation controls: PASS
-- conditions tested: **180**
-- buildings reproducing Stage-106 label >=90%: **9/12**
-- median Hamming distance vs Stage 106: **3**
-- exactly the unstable buildings are **5, 6, 12**
-- their Stage-106 darkness values were tightly grouped around **0.436–0.440**
-- the clearly dense buildings (1,2,9) were much darker, while the sparse group was much lighter
-- density vs H/V exact association p: **0.5455**
-- therefore density is not redundant with H/V, but the forced binary split is unstable
+- synthetic light/medium/dark controls: **PASS**
+- k=3 beats k=2: **171/180 = 95%**
+- dominant sequence: **DDLLMMLLDMLM**
+- class counts: **L=5, M=4, D=3**
+- buildings stable >=90%: **9/12**
+- unstable: buildings **3, 5, 12**
+- promotion required >=10/12 stable: **FAIL**
 
 ### Hypothesis decision
 
-**Binary sparse/dense channel = DOWNGRADED / NOT VALIDATED.**
+**Building density coding = RETIRED.**
 
-However, Stage 107 reveals a new, specific pattern: the three unstable buildings form a coherent **intermediate-density group**, suggesting that the real structure may be tri-modal rather than binary.
-
-This is new evidence produced by the adversarial failure itself, so testing it does not violate the anti-recycling rule.
+Although a 3-level model often fits better statistically, its labels are too crop-sensitive to treat as an intentional discrete code. Do not continue density clustering.
 
 ## Next stage
 
-**Stage 108 — three-level building density audit.**
+**Stage 109 — central skyline gap / 5|7 delimiter audit.**
 
-Predeclared model:
-- light
-- medium
-- dark
+Motivation:
+- Stage 91 marked the historical **5/7 skyline split** as PARTIAL, not covered or retired.
+- Geometry shows the twelve buildings may be separated after building 5 by a conspicuously wide central gap.
+- This is a distinct visible structural hypothesis, independent of H/V, density, roof and topology tests.
 
 Bounded design:
-1. Reuse the 12 fixed building interiors.
-2. Metrics: mean darkness, ink<140, ink<160.
-3. Fit k=2 and k=3 1D clusters under:
-   - original/JPEG85/JPEG70/resize;
-   - margins 8%, 14%, 20%;
-   - jitters ±4 px.
-4. Synthetic light/medium/dark hatch controls validate k=3 recovery.
-5. Require:
-   - >=10/12 buildings stable in one of 3 labels across >=90% conditions;
-   - all three classes present with >=2 members each;
-   - k=3 materially better than k=2 by silhouette/BIC-like score in most conditions;
-   - labels not reducible to H/V.
-6. Expected failure-driven pattern to test, without forcing it: buildings 5/6/12 may form the medium class.
+1. Use the fixed 12 building x-ranges from `geometry.json`.
+2. Measure all 11 inter-building gaps and the largest-gap/second-largest ratio.
+3. Independently detect empty vertical runs from the lower skyline band (y=240..295) after thresholding and horizontal closing.
+4. Repeat on original, JPEG85, JPEG70 and resize at thresholds 100/140/180.
+5. Require the independently detected dominant gap to overlap the geometry gap after building 5 in every condition.
+6. Require dominant gap width >=5× the second-largest inter-building gap and midpoint within 10% of image center.
+7. Calibrate concentration of empty-space into one gap against an exchangeable Dirichlet null conditioned on 11 gaps.
 
-A positive result establishes only a robust three-level visual density channel. No secret mapping is attempted.
+A positive result promotes only **5|7 as a robust visible delimiter**, not any numeric/key interpretation.
 
 ## Status
 
-- Stages 1–107: completed.
-- Stage 107: COMPLETED + REVIEWED — binary density not validated; tri-modal density promoted as the next hypothesis.
-- Stage 108: selected for launch.
+- Stages 1–108: completed.
+- Stage 108: COMPLETED + REVIEWED — density coding retired.
+- Stage 109: selected for launch.
