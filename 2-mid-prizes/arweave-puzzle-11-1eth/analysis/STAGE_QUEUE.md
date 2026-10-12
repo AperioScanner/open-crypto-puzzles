@@ -8,50 +8,52 @@ Do **not** reopen a hypothesis classified COVERED, RETIRED, or independently fal
 1. a concrete implementation defect is demonstrated; or
 2. genuinely new independent evidence changes the hypothesis.
 
-## Review through Stage 105
+## Review through Stage 106
 
-Stage 105 did **not** produce a valid hypothesis result.
+Stage 106 produced the strongest new direct image result in several stages.
 
-Two independently implemented spoke-count detectors both failed their synthetic controls:
-- first Hough/radial detector: controls non-monotonic
-- corrected skeleton-annulus/scanline detector: controls still non-monotonic at higher spoke counts
+### Stage-106 result
 
-The corrected run did improve object localization: the five actual right-hand sail centers were recovered at approximately **[1042, 1148, 1282, 1372, 1490]**, confirming the earlier Stage-19 x=675 track was not a real small sail.
+- synthetic sparse/dense controls: **PASS**
+- all four real-image variant gates: **PASS**
+- metric agreement: **12/12** in every variant
+- stable buildings: **12/12**
+- cluster sizes: **6 sparse / 6 dense**
+- separation: about **3.2–3.4 pooled SD**
+- density sequence: **DDSSDDSSDSSD**
+- nearly identical to H/V or inverse: **False**
+- promotion: **True**
 
 ### Hypothesis decision
 
-**Small-sail spoke-count coding = UNRESOLVED / ABANDONED FOR NOW.**
+**A robust building fill-density binary channel is promoted.**
 
-Do not interpret the real counts because the detector is unvalidated. Do not spend further cycles repairing this family without new evidence.
+This is not yet evidence of author intent. Stage 106 used fixed building crops, so the next step must test whether the same binary labels survive crop/margin perturbations and whether the split is independent of the already-known H/V channel rather than a crop artifact.
 
 ## Next stage
 
-**Stage 106 — building fill-density bimodality audit.**
-
-Motivation:
-- the 12 buildings remain the strongest repeated object family;
-- roof/topology/count families have failed;
-- H/V interior orientation is real but its tested meanings failed;
-- mean fill density / darkness is a separate visible feature and has not been tested as a discrete second channel.
+**Stage 107 — adversarial replication + independence audit of building density channel.**
 
 Bounded design:
-1. Reuse the 12 fixed Stage-12 building interiors.
-2. Two independent visible-density measures:
-   - mean darkness
-   - threshold-140 ink fraction
-3. Fit two 1D clusters per metric on each of four image variants.
-4. Require:
-   - >=10/12 agreement between the two metrics;
-   - stable labels across original/JPEG85/JPEG70/resize;
-   - balanced clusters (3..9 members);
-   - strong separation (>=1.5 pooled SD).
-5. Synthetic sparse/dense hatch buildings validate the detector.
-6. Compare the final density labels against the known H/V sequence; if nearly identical to H/V or its inverse, classify as redundant rather than a new channel.
+1. Fixed reference labels from Stage 106: `DDSSDDSSDSSD`.
+2. Recompute labels across:
+   - original / JPEG85 / JPEG70 / resize;
+   - inner margins 8%, 14%, 20%;
+   - crop jitters ±4 px in x/y;
+   - three density measures: mean darkness, ink<140, ink<160.
+3. Align every two-cluster split as sparse/dense by cluster center.
+4. Require >=10/12 buildings to reproduce the Stage-106 label in >=90% of all perturbation conditions.
+5. Synthetic sparse/dense hatch controls validate the perturbation harness.
+6. Exact 6-of-12 permutation test against fixed H/V labels quantifies association; classify the new channel as:
+   - redundant,
+   - associated-but-distinct,
+   - or statistically independent.
+7. Report the four-state H/V×density sequence only if the density channel replicates; do not interpret the states as secret symbols.
 
-No mapping to secret material is attempted.
+No private-key mapping is attempted.
 
 ## Status
 
-- Stages 1–105: completed.
-- Stage 105: detector family unresolved after repeated control failure; no real-sail inference accepted.
-- Stage 106: selected for launch.
+- Stages 1–106: completed.
+- Stage 106: COMPLETED + REVIEWED — density channel promoted provisionally.
+- Stage 107: selected for launch.
