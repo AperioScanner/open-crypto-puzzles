@@ -99,18 +99,21 @@ def row_envelope_width(binary,ax,ay):
     vals=[]
     for y in range(y0,y1):
         xs=np.flatnonzero(binary[y])
-        if len(xs)<4:
+        # Two boundary pixels are enough for an outline-only sail. Requiring
+        # four pixels biased the estimator toward sails with internal spokes
+        # and made the first two real sails unmeasurable.
+        if len(xs)<2:
             continue
         # Keep only a generous local cone around the detected apex.
         xs=xs[np.abs(xs-ax)<=.48*w]
-        if len(xs)<4:
+        if len(xs)<2:
             continue
         lo=float(np.percentile(xs,5))
         hi=float(np.percentile(xs,95))
         span=hi-lo+1
         if span>=5:
             vals.append(span)
-    if len(vals)<8:
+    if len(vals)<6:
         return None
     # Near-base width without allowing a single hull/clutter row to dominate.
     return float(np.percentile(vals,90))
