@@ -1,8 +1,14 @@
 # Open leads, ranked
 
-## 1. Building fill-density categories (active)
+## 1. Building fill-density binary channel (promoted, under adversarial replication)
 
-The 12 building interiors visibly differ in how densely they are shaded. Stage 106 tests whether that forms a robust low/high sequence independent of the already-known H/V hatch orientation.
+Stage 106 found a 12/12 stable sparse/dense split:
+
+`DDSSDDSSDSSD`
+
+It survives JPEG/resizing, two independent density metrics, balanced 6/6 clustering and strong separation. It is not a copy of the H/V hatch sequence.
+
+Stage 107 now tests crop/margin/jitter robustness and exact association with H/V before treating it as a genuine second channel.
 
 ## 2. Image-only multi-step semantic prior
 
@@ -15,12 +21,9 @@ Still supported by Stage 31 and the archived "format does not matter" statement.
 ## Closed / deprioritized
 
 - Small-sail spoke count: detector controls failed twice; unresolved and abandoned pending new evidence.
-- Building enclosed topology: stable 0/12.
-- Building roof profiles: stable 2/12.
-- Small-sail L/R direction: stable 3/5.
+- Building topology / roof profiles: rejected.
+- Small-sail L/R: rejected.
 - Literal OCR branch: retired.
 - Direct 16-gray-mode alphabet: rejected.
-- Large-sail 64/256 one-stroke-per-symbol carrier: rejected.
-- Pier X/IX/XI: rejected.
-- Source-photo pool: rejected.
-- CryptoCanvas: post-publication mirror only.
+- Large-sail one-stroke-per-symbol carrier: rejected.
+- Pier Roman / source-photo / CryptoCanvas: closed.
