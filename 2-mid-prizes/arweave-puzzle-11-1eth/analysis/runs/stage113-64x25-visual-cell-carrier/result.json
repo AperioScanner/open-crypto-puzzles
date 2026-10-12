@@ -17,21 +17,21 @@
     "passed": false,
     "phase0": {
       "phase": 0,
-      "silhouette_k16": 1.0,
-      "cross_variant_stability": 0.75,
+      "silhouette_k16": 0.9531681974964207,
+      "cross_variant_stability": 0.5625,
       "occupied_states": 16,
-      "singleton_states": 0,
-      "score": 0.75
+      "singleton_states": 2,
+      "score": 0.4467975925764472
     },
-    "phase0_rank": 23,
+    "phase0_rank": 8,
     "best_k": {
-      "k": 16,
-      "silhouette": 1.0,
-      "occupied": 16,
-      "inertia": 0.0
+      "k": 10,
+      "silhouette": 0.993825051363509,
+      "occupied": 10,
+      "inertia": 0.04341415830267053
     },
-    "k16_rank": 1,
-    "k16_tied": true
+    "k16_rank": 11,
+    "k16_tied": false
   },
   "negative_control": {
     "passed": true,
