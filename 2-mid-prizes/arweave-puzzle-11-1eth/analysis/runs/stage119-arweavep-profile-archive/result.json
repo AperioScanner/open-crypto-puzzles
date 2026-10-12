@@ -1,0 +1,31 @@
+{
+  "experiment_id": "A11-EXP-119",
+  "scope": "Wayback audit of @ArweaveP profile/header visual context around Puzzle #11 publication; no secret/key operations",
+  "date_window": [
+    "20200420",
+    "20200502"
+  ],
+  "cdx_errors": [
+    {
+      "url": "https://web.archive.org/cdx/search/cdx?url=twitter.com%2FArweaveP%2Fwith_replies&from=2020&to=2020&output=json&filter=timestamp%3A202004%2A&collapse=digest",
+      "error": "TimeoutError"
+    }
+  ],
+  "snapshots_found": 0,
+  "snapshot_rows": [],
+  "source_control_pass": false,
+  "orb_positive_control": {
+    "good_matches": 700,
+    "inliers": 681,
+    "inlier_fraction": 0.9728571428571429
+  },
+  "orb_control_pass": true,
+  "candidate_profile_assets": 0,
+  "image_results": [],
+  "strong_derivative_count": 0,
+  "decision": "SOURCE_FAILURE",
+  "promoted": false,
+  "promotion_rule": "timestamped exact-handle archive snapshot recovered; transformed-canonical ORB control passes; at least one contemporaneous profile/header/media asset has >=25 RANSAC inliers and >=0.35 inlier fraction to canonical Puzzle #11",
+  "interpretation_guard": "A negative only retires direct profile/header visual reuse, not all external semantic references.",
+  "safety_guard": "Public profile metadata and image similarity only. No private-key material generated or tested."
+}
