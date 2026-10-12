@@ -48,33 +48,33 @@
   "positive_control": {
     "mask": {
       "widths": [
-        28.0,
-        49.800000000000004,
-        75.3,
-        78.4,
-        49.800000000000004
+        27.0,
+        51.0,
+        77.0,
+        81.0,
+        51.0
       ],
       "ap": {
-        "d1": 21.800000000000004,
-        "d2": 25.499999999999993,
-        "error": 3.6999999999999886,
-        "mean_step": 23.65
+        "d1": 24.0,
+        "d2": 26.0,
+        "error": 2.0,
+        "mean_step": 25.0
       },
       "profile_gate": true
     },
     "edge": {
       "widths": [
-        26.84999999999999,
-        48.849999999999994,
-        75.8,
-        79.54999999999998,
-        48.849999999999994
+        27.0,
+        45.0,
+        37.0,
+        73.0,
+        45.0
       ],
       "ap": {
-        "d1": 22.000000000000004,
-        "d2": 26.950000000000003,
-        "error": 4.949999999999999,
-        "mean_step": 24.475
+        "d1": 18.0,
+        "d2": -8.0,
+        "error": 26.0,
+        "mean_step": 5.0
       },
       "profile_gate": false
     }
@@ -82,33 +82,33 @@
   "negative_control": {
     "mask": {
       "widths": [
-        28.0,
-        49.800000000000004,
-        65.9,
-        78.4,
-        49.800000000000004
+        27.0,
+        51.0,
+        67.0,
+        81.0,
+        51.0
       ],
       "ap": {
-        "d1": 21.800000000000004,
-        "d2": 16.1,
-        "error": 5.700000000000003,
-        "mean_step": 18.950000000000003
+        "d1": 24.0,
+        "d2": 16.0,
+        "error": 8.0,
+        "mean_step": 20.0
       },
       "profile_gate": false
     },
     "edge": {
       "widths": [
-        26.84999999999999,
-        48.849999999999994,
-        64.85,
-        79.54999999999998,
-        48.849999999999994
+        27.0,
+        45.0,
+        33.0,
+        73.0,
+        45.0
       ],
       "ap": {
-        "d1": 22.000000000000004,
-        "d2": 16.0,
-        "error": 6.0000000000000036,
-        "mean_step": 19.0
+        "d1": 18.0,
+        "d2": -12.0,
+        "error": 30.0,
+        "mean_step": 3.0
       },
       "profile_gate": false
     }
@@ -156,21 +156,31 @@
         ]
       ],
       "mask_widths": [
-        null,
-        null,
-        54.24,
-        45.03999999999999,
-        85.56
+        24.0,
+        49.0,
+        65.0,
+        60.0,
+        64.0
       ],
       "edge_widths": [
-        null,
-        null,
-        72.55499999999998,
-        46.31999999999999,
-        84.5
+        31.0,
+        49.0,
+        62.0,
+        50.0,
+        74.0
       ],
-      "mask_ap": null,
-      "edge_ap": null,
+      "mask_ap": {
+        "d1": 25.0,
+        "d2": 16.0,
+        "error": 9.0,
+        "mean_step": 20.5
+      },
+      "edge_ap": {
+        "d1": 18.0,
+        "d2": 13.0,
+        "error": 5.0,
+        "mean_step": 15.5
+      },
       "mask_gate": false,
       "edge_gate": false
     },
@@ -215,21 +225,31 @@
         ]
       ],
       "mask_widths": [
-        null,
-        null,
-        54.15999999999999,
-        45.03999999999999,
-        86.23000000000002
+        24.0,
+        49.0,
+        65.0,
+        60.0,
+        64.0
       ],
       "edge_widths": [
-        null,
-        17.949999999999996,
-        73.06999999999996,
-        46.4,
-        84.39999999999999
+        30.0,
+        49.0,
+        62.0,
+        54.0,
+        74.0
       ],
-      "mask_ap": null,
-      "edge_ap": null,
+      "mask_ap": {
+        "d1": 25.0,
+        "d2": 16.0,
+        "error": 9.0,
+        "mean_step": 20.5
+      },
+      "edge_ap": {
+        "d1": 19.0,
+        "d2": 13.0,
+        "error": 6.0,
+        "mean_step": 16.0
+      },
       "mask_gate": false,
       "edge_gate": false
     },
@@ -274,21 +294,31 @@
         ]
       ],
       "mask_widths": [
-        null,
-        null,
-        54.25,
-        45.30999999999999,
-        86.41000000000001
+        23.0,
+        49.0,
+        65.0,
+        60.0,
+        64.0
       ],
       "edge_widths": [
-        null,
-        null,
-        70.32499999999999,
-        45.470000000000006,
-        83.97999999999999
+        30.0,
+        50.0,
+        62.0,
+        52.0,
+        75.0
       ],
-      "mask_ap": null,
-      "edge_ap": null,
+      "mask_ap": {
+        "d1": 26.0,
+        "d2": 16.0,
+        "error": 10.0,
+        "mean_step": 21.0
+      },
+      "edge_ap": {
+        "d1": 20.0,
+        "d2": 12.0,
+        "error": 8.0,
+        "mean_step": 16.0
+      },
       "mask_gate": false,
       "edge_gate": false
     },
@@ -333,54 +363,64 @@
         ]
       ],
       "mask_widths": [
-        null,
-        null,
-        53.39,
-        45.22,
-        86.36000000000001
+        25.0,
+        49.0,
+        65.0,
+        60.0,
+        64.0
       ],
       "edge_widths": [
-        null,
-        null,
-        58.50999999999998,
-        44.0,
-        84.98
+        31.0,
+        50.0,
+        65.0,
+        50.0,
+        74.0
       ],
-      "mask_ap": null,
-      "edge_ap": null,
+      "mask_ap": {
+        "d1": 24.0,
+        "d2": 16.0,
+        "error": 8.0,
+        "mean_step": 20.0
+      },
+      "edge_ap": {
+        "d1": 19.0,
+        "d2": 15.0,
+        "error": 4.0,
+        "mean_step": 17.0
+      },
       "mask_gate": false,
       "edge_gate": false
     }
   },
   "median_mask_widths": [
-    NaN,
-    NaN,
-    54.199999999999996,
-    45.129999999999995,
-    86.29500000000002
+    24.0,
+    49.0,
+    65.0,
+    60.0,
+    64.0
   ],
   "median_edge_widths": [
-    NaN,
-    NaN,
-    71.43999999999998,
-    45.894999999999996,
-    84.44999999999999
+    30.5,
+    49.5,
+    62.0,
+    51.0,
+    74.0
   ],
   "median_mask_ap": {
-    "d1": NaN,
-    "d2": NaN,
-    "error": NaN,
-    "mean_step": NaN
+    "d1": 25.0,
+    "d2": 16.0,
+    "error": 9.0,
+    "mean_step": 20.5
   },
   "median_edge_ap": {
-    "d1": NaN,
-    "d2": NaN,
-    "error": NaN,
-    "mean_step": NaN
+    "d1": 19.0,
+    "d2": 12.5,
+    "error": 6.5,
+    "mean_step": 15.75
   },
-  "permutation_p_mask": 0.0,
-  "permutation_p_edge": 0.0,
-  "cross_method_profile_correlation": 0.0,
+  "permutation_p_mask": 0.2,
+  "permutation_p_edge": 0.16666666666666666,
+  "cross_method_profile_correlation": 0.8986400639948087,
   "qualitative_stage18_shape_pass": false,
   "all_real_variant_method_gates_pass": false,
   "promotion_rule": "positive/negative synthetic controls behave correctly; sail-center drift<=8px; both estimators in all four variants reproduce first-three AP error<=4px with positive mean step 18..34px; median profiles reproduce Stage-18 qualitative shape; cross-method profile correlation>=0.90; both fixed-order permutation p<=0.05",

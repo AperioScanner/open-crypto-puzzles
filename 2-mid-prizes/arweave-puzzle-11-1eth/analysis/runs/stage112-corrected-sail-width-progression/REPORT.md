@@ -4,22 +4,22 @@
 - max center drift: **2.0 px**
 - centers original: **[1042, 1148, 1282, 1372, 1490]**
 - synthetic controls pass: **False**
-- median mask widths: **[np.float64(nan), np.float64(nan), np.float64(54.2), np.float64(45.13), np.float64(86.3)]**
-- median edge widths: **[np.float64(nan), np.float64(nan), np.float64(71.44), np.float64(45.9), np.float64(84.45)]**
-- mask first-three AP: **{'d1': nan, 'd2': nan, 'error': nan, 'mean_step': nan}**
-- edge first-three AP: **{'d1': nan, 'd2': nan, 'error': nan, 'mean_step': nan}**
-- permutation p (mask/edge): **0.00000 / 0.00000**
-- cross-method profile correlation: **0.000**
+- median mask widths: **[np.float64(24.0), np.float64(49.0), np.float64(65.0), np.float64(60.0), np.float64(64.0)]**
+- median edge widths: **[np.float64(30.5), np.float64(49.5), np.float64(62.0), np.float64(51.0), np.float64(74.0)]**
+- mask first-three AP: **{'d1': 25.0, 'd2': 16.0, 'error': 9.0, 'mean_step': 20.5}**
+- edge first-three AP: **{'d1': 19.0, 'd2': 12.5, 'error': 6.5, 'mean_step': 15.75}**
+- permutation p (mask/edge): **0.20000 / 0.16667**
+- cross-method profile correlation: **0.899**
 - Stage-18 qualitative profile reproduced: **False**
 - all real variant/method AP gates pass: **False**
 - promoted: **False**
 
 | variant | mask widths | mask AP err | edge widths | edge AP err |
 |:---|:---|---:|:---|---:|
-| original | [None, None, 54.2, 45.0, 85.6] | nan | [None, None, 72.6, 46.3, 84.5] | nan |
-| jpeg85 | [None, None, 54.2, 45.0, 86.2] | nan | [None, 17.9, 73.1, 46.4, 84.4] | nan |
-| jpeg70 | [None, None, 54.2, 45.3, 86.4] | nan | [None, None, 70.3, 45.5, 84.0] | nan |
-| down75_up | [None, None, 53.4, 45.2, 86.4] | nan | [None, None, 58.5, 44.0, 85.0] | nan |
+| original | [24.0, 49.0, 65.0, 60.0, 64.0] | 9.00 | [31.0, 49.0, 62.0, 50.0, 74.0] | 5.00 |
+| jpeg85 | [24.0, 49.0, 65.0, 60.0, 64.0] | 9.00 | [30.0, 49.0, 62.0, 54.0, 74.0] | 6.00 |
+| jpeg70 | [23.0, 49.0, 65.0, 60.0, 64.0] | 10.00 | [30.0, 50.0, 62.0, 52.0, 75.0] | 8.00 |
+| down75_up | [25.0, 49.0, 65.0, 60.0, 64.0] | 8.00 | [31.0, 50.0, 65.0, 50.0, 74.0] | 4.00 |
 
 ## Interpretation
 
