@@ -151,7 +151,11 @@ def mask_width(c,cx):
     return float(np.median(vals)) if vals else None
 
 def edge_width(c,cx):
-    e=cv2.Canny(c,45,135)>0
+    e=cv2.Canny(c,45,135)
+    # Join the two anti-aliased edge traces of the same sail strokes before
+    # projection; otherwise thin Canny fragments split a single triangular
+    # support band into unrelated narrow runs in the synthetic controls.
+    e=cv2.dilate(e,np.ones((1,5),np.uint8),iterations=1)>0
     return projection_width(e,cx)
 
 def measure(c,cx=None):
