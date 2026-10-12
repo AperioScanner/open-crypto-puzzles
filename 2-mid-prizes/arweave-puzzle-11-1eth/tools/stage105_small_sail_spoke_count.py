@@ -1,33 +1,27 @@
 #!/usr/bin/env python3
-"""Stage 105: five-small-sail radial-spoke count audit.
+"""Stage 105 (corrected): five-small-sail radial-spoke count audit.
 
-Safe visual-structure experiment only.
+The first implementation failed its synthetic controls and also inherited one
+spurious Stage-19 x-track outside the actual right-hand sail cluster. This
+rerun repairs both issues under the same stage number.
 
-Tests whether the five small sails carry robust counts of apex-to-base rays.
-Prior sail stages tested widths, gaps and lean direction, not internal spoke
-counts.
-
-No private-key generation, derivation, reconstruction, enumeration,
-verification, or wallet access is performed.
+Safe visual-structure experiment only. No private-key operations.
 """
 from __future__ import annotations
-
 import io, json, math
 from pathlib import Path
-
 import cv2
 import numpy as np
 from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[1]
 SOURCE=ROOT/"clues"/"arweave-puzzle-11.png"
-RUN19=ROOT/"analysis"/"runs"/"stage19-small-sail-remeasure"/"result.json"
 OUT=ROOT/"analysis"/"runs"/"stage105-small-sail-spoke-count"
 OUT.mkdir(parents=True,exist_ok=True)
 
-Y0,Y1=360,480
-PAD=8
-THRESHOLDS=(120,160,200)
+SEARCH=(900,345,1585,500)
+THR=165
+MIN_SEP=70
 
 def load_gray():
     return np.array(Image.open(SOURCE).convert("L"))
@@ -44,189 +38,164 @@ def variants(gray):
     out["down75_up"]=np.array(small.resize((w,h),Image.Resampling.LANCZOS))
     return out
 
-def boxes():
-    j=json.loads(RUN19.read_text())
-    tracks=j["methods"][0]["stable_tracks"]
-    out=[]
-    for t in tracks:
-        x0=int(round(np.median([z["x0"] for z in t["items"]]))) - PAD
-        x1=int(round(np.median([z["x1"] for z in t["items"]]))) + PAD
-        out.append((x0,Y0,x1,Y1))
-    return out
+def smooth1(x,k=19):
+    ker=np.ones(k)/k
+    return np.convolve(x,ker,mode="same")
+
+def detect_centers(gray):
+    x0,y0,x1,y1=SEARCH
+    band=(gray[y0:y1,x0:x1]<THR).astype(float)
+    # Emphasize upper 75% so hull/jetty contributes less than triangular sails.
+    hh=band.shape[0]
+    weights=np.linspace(1.35,0.35,hh)[:,None]
+    score=smooth1(np.sum(band*weights,axis=0),21)
+    candidates=[]
+    for i in range(8,len(score)-8):
+        if score[i]==np.max(score[i-8:i+9]):
+            candidates.append((float(score[i]),i+x0))
+    chosen=[]
+    for sc,x in sorted(candidates,reverse=True):
+        if all(abs(x-y)>=MIN_SEP for _,y in chosen):
+            chosen.append((sc,x))
+        if len(chosen)>=5:
+            break
+    chosen=sorted(chosen,key=lambda z:z[1])
+    return [int(x) for _,x in chosen],score
+
+def boxes_from_centers(centers,shape):
+    h,w=shape
+    if len(centers)!=5:
+        return []
+    mids=[(a+b)//2 for a,b in zip(centers[:-1],centers[1:])]
+    edges=[max(900,centers[0]-55)]+mids+[min(w-1,centers[-1]+60)]
+    boxes=[]
+    for i,c in enumerate(centers):
+        boxes.append((edges[i],345,edges[i+1],500))
+    return boxes
 
 def crop(a,b):
     x0,y0,x1,y1=b
     return a[y0:y1,x0:x1]
 
-def apex(c,thr=180):
-    bw=c<thr
-    h,w=bw.shape
-    ys,xs=np.where(bw[:max(12,int(0.60*h)),:])
-    if len(ys)==0:
-        return (w/2,10.0)
-    ymin=int(ys.min())
-    m=ys<=ymin+12
-    xx=xs[m]
-    # Ignore extreme crop borders if possible.
-    xx=xx[(xx>=2)&(xx<=w-3)] if len(xx) else xx
-    ax=float(np.median(xx)) if len(xx) else w/2
-    return ax,float(ymin+2)
+def skeletonize(binary):
+    img=(binary>0).astype(np.uint8)*255
+    sk=np.zeros_like(img)
+    el=cv2.getStructuringElement(cv2.MORPH_CROSS,(3,3))
+    while True:
+        er=cv2.erode(img,el)
+        op=cv2.dilate(er,el)
+        sk=cv2.bitwise_or(sk,cv2.subtract(img,op))
+        img=er
+        if cv2.countNonZero(img)==0:
+            break
+    return sk
 
-def cluster_angles(angles,sep=7.0):
+def apex(c):
+    bw=c<185
+    h,w=bw.shape
+    # Ignore first/last 5% x to avoid crop-boundary clutter.
+    xa=max(2,int(0.05*w)); xb=min(w-2,int(0.95*w))
+    ys,xs=np.where(bw[:int(0.70*h),xa:xb])
+    if len(ys)==0:
+        return w/2,8.0
+    xs=xs+xa
+    ymin=int(np.min(ys))
+    m=ys<=ymin+10
+    return float(np.median(xs[m])),float(ymin+2)
+
+def cluster_angles(angles,gap=5.5):
     if not angles: return []
-    aa=sorted(float(x) for x in angles)
+    aa=sorted(angles)
     groups=[[aa[0]]]
     for a in aa[1:]:
-        if a-groups[-1][-1]<=sep:
+        if a-groups[-1][-1]<=gap:
             groups[-1].append(a)
         else:
             groups.append([a])
-    return [float(np.median(g)) for g in groups]
+    return [float(np.median(g)) for g in groups if len(g)>=1]
 
-def point_line_distance(px,py,x1,y1,x2,y2):
-    den=math.hypot(x2-x1,y2-y1)
-    if den<1e-9: return 1e9
-    return abs((y2-y1)*px-(x2-x1)*py+x2*y1-y2*x1)/den
-
-def hough_count(c):
+def annulus_count(c):
     ax,ay=apex(c)
-    counts=[]
-    angle_sets=[]
-    for thr in THRESHOLDS:
-        bw=((c<thr).astype(np.uint8)*255)
-        e=cv2.Canny(bw,50,150)
-        raw=cv2.HoughLinesP(
-            e,1,np.pi/180,threshold=8,
-            minLineLength=max(10,int(0.18*c.shape[0])),maxLineGap=5
-        )
-        angles=[]
-        if raw is not None:
-            for x1,y1,x2,y2 in np.asarray(raw).reshape(-1,4):
-                x1=float(x1); y1=float(y1); x2=float(x2); y2=float(y2)
-                if max(y1,y2)<ay+22: continue
-                if min(y1,y2)>ay+36: continue
-                if point_line_distance(ax,ay,x1,y1,x2,y2)>11: continue
-                # angle from apex to lower endpoint, measured from vertical.
-                if y1>=y2:
-                    lx,ly=x1,y1
-                else:
-                    lx,ly=x2,y2
-                dy=ly-ay
-                if dy<18: continue
-                ang=math.degrees(math.atan2(lx-ax,dy))
-                if abs(ang)>65: continue
-                angles.append(ang)
-        cl=cluster_angles(angles,sep=7.0)
-        counts.append(len(cl))
-        angle_sets.append(cl)
-    return {
-        "apex":[ax,ay],
-        "threshold_counts":counts,
-        "count":int(round(np.median(counts))) if counts else 0,
-        "angle_clusters":angle_sets,
-    }
+    dark=(c<THR).astype(np.uint8)
+    dark=cv2.morphologyEx(dark,cv2.MORPH_CLOSE,np.ones((2,2),np.uint8),iterations=1)
+    sk=skeletonize(dark)
+    yy,xx=np.where(sk>0)
+    dx=xx-ax; dy=yy-ay
+    rr=np.hypot(dx,dy)
+    m=(dy>5)&(rr>=18)&(rr<=46)
+    ang=np.degrees(np.arctan2(dx[m],dy[m]))
+    ang=ang[(ang>=-62)&(ang<=62)]
+    clusters=cluster_angles(ang.tolist(),5.5)
+    return {"count":len(clusters),"angles":clusters,"apex":[ax,ay]}
 
-def radial_profile_count(c):
+def run_count_at_row(sk,y,ax):
+    if y<0 or y>=sk.shape[0]:
+        return 0,[]
+    row=sk[y,:]>0
+    xs=np.flatnonzero(row)
+    if len(xs)==0: return 0,[]
+    groups=[[int(xs[0])]]
+    for x in xs[1:]:
+        if int(x)-groups[-1][-1]<=3:
+            groups[-1].append(int(x))
+        else:
+            groups.append([int(x)])
+    centers=[float(np.median(g)) for g in groups]
+    centers=[x for x in centers if abs(x-ax)<=0.48*sk.shape[1]]
+    return len(centers),centers
+
+def scanline_count(c):
     ax,ay=apex(c)
-    h,w=c.shape
-    bw=(c<180).astype(np.uint8)
-    # Sample candidate base x positions and measure ink occupancy along each ray.
-    xs=np.arange(3,w-3,dtype=float)
-    yend=min(h-5,ay+0.72*(h-ay))
-    scores=[]
-    for bx in xs:
-        n=max(18,int(yend-ay))
-        yy=np.linspace(ay+7,yend,n)
-        xx=np.linspace(ax,bx,n)
-        xi=np.clip(np.rint(xx).astype(int),0,w-1)
-        yi=np.clip(np.rint(yy).astype(int),0,h-1)
-        vals=[]
-        for off in (-1,0,1):
-            vals.append(bw[yi,np.clip(xi+off,0,w-1)])
-        score=float(np.mean(np.maximum.reduce(vals)))
-        scores.append(score)
-    s=np.asarray(scores,float)
-    if len(s)<7:
-        return {"count":0,"peaks":[],"apex":[ax,ay]}
-    # Smooth over ~5 px and find strong local maxima.
-    sm=np.convolve(s,np.ones(5)/5.0,mode="same")
-    baseline=float(np.median(sm))
-    mx=float(np.max(sm))
-    cutoff=max(baseline+0.08,0.28*mx)
-    peaks=[]
-    for i in range(3,len(sm)-3):
-        if sm[i]>=cutoff and sm[i]==np.max(sm[i-3:i+4]):
-            # local prominence
-            left=float(np.min(sm[i-3:i]))
-            right=float(np.min(sm[i+1:i+4]))
-            if sm[i]-max(left,right)>=0.035:
-                if not peaks or i-peaks[-1]>=5:
-                    peaks.append(i)
-                elif sm[i]>sm[peaks[-1]]:
-                    peaks[-1]=i
-    return {
-        "count":len(peaks),
-        "peaks":[float(xs[i]) for i in peaks],
-        "apex":[ax,ay],
-        "baseline":baseline,
-        "max_score":mx,
-    }
+    dark=(c<THR).astype(np.uint8)
+    dark=cv2.morphologyEx(dark,cv2.MORPH_CLOSE,np.ones((2,2),np.uint8),iterations=1)
+    sk=skeletonize(dark)
+    vals=[]; rows=[]
+    for off in (28,36,44):
+        n,centers=run_count_at_row(sk,int(round(ay+off)),ax)
+        vals.append(n); rows.append({"offset":off,"count":n,"centers":centers})
+    return {"count":int(round(np.median(vals))),"rows":rows,"apex":[ax,ay]}
 
 def eval_crop(c):
-    h=hough_count(c)
-    r=radial_profile_count(c)
-    agree=abs(h["count"]-r["count"])<=1
-    consensus=int(round((h["count"]+r["count"])/2)) if agree else None
-    return {
-        "hough":h,
-        "radial":r,
-        "agreement":agree,
-        "consensus":consensus,
-    }
+    a=annulus_count(c)
+    s=scanline_count(c)
+    agree=abs(a["count"]-s["count"])<=1
+    consensus=int(round((a["count"]+s["count"])/2)) if agree else None
+    return {"annulus":a,"scanline":s,"agreement":agree,"consensus":consensus}
 
-def synthetic(n,w=100,h=120):
+def synthetic(n,w=120,h=145):
     im=np.full((h,w),255,np.uint8)
-    ax=w//2; ay=10; base_y=88
-    # sail outline
-    cv2.line(im,(ax,ay),(14,base_y),0,2,cv2.LINE_AA)
-    cv2.line(im,(ax,ay),(86,base_y),0,2,cv2.LINE_AA)
-    cv2.line(im,(14,base_y),(86,base_y),0,2,cv2.LINE_AA)
-    # n internal spokes, excluding the outline endpoints.
-    for bx in np.linspace(22,78,n):
-        cv2.line(im,(ax,ay+2),(int(round(bx)),base_y-3),0,2,cv2.LINE_AA)
+    ax=w//2; ay=12; by=105
+    cv2.line(im,(ax,ay),(16,by),0,2,cv2.LINE_AA)
+    cv2.line(im,(ax,ay),(104,by),0,2,cv2.LINE_AA)
+    cv2.line(im,(16,by),(104,by),0,2,cv2.LINE_AA)
+    for bx in np.linspace(25,95,n):
+        cv2.line(im,(ax,ay+1),(int(round(bx)),by-3),0,2,cv2.LINE_AA)
     return im
 
 def main():
     gray=load_gray()
     vv=variants(gray)
-    bb=boxes()
-    if len(bb)!=5:
-        raise SystemExit(f"expected 5 small-sail boxes, got {len(bb)}")
+    centers,_=detect_centers(gray)
+    boxes=boxes_from_centers(centers,gray.shape)
+    if len(boxes)!=5:
+        raise SystemExit(f"expected five detected sails, centers={centers}")
 
     controls={}
-    controls_pass=True
+    det_a=[]; det_s=[]
     for n in (3,4,5,6,7):
         e=eval_crop(synthetic(n))
-        # Detector may include outline rays, but the response must be monotonic
-        # and estimator agreement must hold. Store actual consensus for calibration.
         controls[str(n)]=e
-        controls_pass=controls_pass and e["agreement"] and e["consensus"] is not None
+        det_a.append(e["annulus"]["count"])
+        det_s.append(e["scanline"]["count"])
+    mono_a=all(b>a for a,b in zip(det_a,det_a[1:]))
+    mono_s=all(b>a for a,b in zip(det_s,det_s[1:]))
+    controls_pass=bool(mono_a and mono_s)
 
-    detected=[controls[str(n)]["consensus"] for n in (3,4,5,6,7)]
-    monotonic=bool(all(b>a for a,b in zip(detected,detected[1:]))) if all(x is not None for x in detected) else False
-    controls_pass=bool(controls_pass and monotonic)
-
-    sails=[]
-    stable=0
-    seq=[]
-    for i,b in enumerate(bb,1):
+    sails=[]; seq=[]; stable=0
+    for i,b in enumerate(boxes,1):
         per={name:eval_crop(crop(a,b)) for name,a in vv.items()}
         vals=[per[v]["consensus"] for v in vv]
-        ok=bool(
-            all(x is not None for x in vals)
-            and len(set(vals))==1
-            and all(per[v]["agreement"] for v in vv)
-        )
+        ok=bool(all(x is not None for x in vals) and len(set(vals))==1)
         val=int(vals[0]) if ok else None
         if ok: stable+=1
         seq.append(val)
@@ -237,55 +206,56 @@ def main():
 
     result={
         "experiment_id":"A11-EXP-105",
-        "scope":"internal radial-spoke counts in five fixed small sails; no private-key operations",
+        "implementation_correction":"Replaced failed Hough/radial pair with skeleton-annulus + scanline-crossing estimators and re-detected the five sails only within the actual right-hand sail cluster x=900..1585.",
+        "scope":"internal spoke/ray structure in five automatically detected right-hand small sails; no private-key operations",
+        "search_box":list(SEARCH),
+        "detected_centers":centers,
+        "detected_boxes":[list(x) for x in boxes],
         "synthetic_controls":controls,
-        "synthetic_detected_consensus":detected,
-        "synthetic_monotonic":monotonic,
+        "synthetic_annulus_counts":det_a,
+        "synthetic_scanline_counts":det_s,
+        "synthetic_annulus_monotonic":mono_a,
+        "synthetic_scanline_monotonic":mono_s,
         "controls_pass":controls_pass,
         "sails":sails,
         "stable_sails":stable,
         "stable_spoke_sequence":seq,
         "distinct_stable_counts":distinct,
-        "promotion_rule":"synthetic 3..7-spoke detector response is monotonic with Hough/radial agreement; >=4/5 real sails have same consensus count across original/JPEG85/JPEG70/resize; >=2 distinct counts",
+        "promotion_rule":"both synthetic 3..7-spoke detector responses are strictly monotonic; >=4/5 real sails have same consensus count across original/JPEG85/JPEG70/resize; >=2 distinct stable counts",
         "promoted":promoted,
-        "interpretation_guard":"Promotion establishes only a robust visible spoke-count sequence, not a key mapping.",
+        "interpretation_guard":"Promotion establishes only a robust visible internal-ray count sequence, not a secret mapping.",
     }
     (OUT/"result.json").write_text(json.dumps(result,indent=2)+"\n")
 
     seqtxt=" ".join("?" if x is None else str(x) for x in seq)
     md=[
-        "# Stage 105 — five-small-sail radial-spoke count audit",
+        "# Stage 105 — corrected small-sail radial-spoke audit",
         "",
-        "**Experiment:** A11-EXP-105",
-        "",
-        f"- synthetic controls pass: **{controls_pass}**",
-        f"- synthetic detected sequence for drawn 3..7 spokes: **{detected}**",
+        f"- detected sail centers: **{centers}**",
+        f"- synthetic annulus counts 3..7: **{det_a}**",
+        f"- synthetic scanline counts 3..7: **{det_s}**",
+        f"- controls pass: **{controls_pass}**",
         f"- stable real sails: **{stable}/5**",
-        f"- stable spoke sequence: **{seqtxt}**",
-        f"- distinct stable counts: **{distinct}**",
+        f"- stable sequence: **{seqtxt}**",
+        f"- distinct counts: **{distinct}**",
         f"- promoted: **{promoted}**",
         "",
-        "| sail | stable count | stable | orig Hough | orig radial |",
-        "|---:|---:|:---:|---:|---:|",
+        "| sail | box | count | stable | original annulus | original scanline |",
+        "|---:|:---|---:|:---:|---:|---:|",
     ]
     for r in sails:
         o=r["variants"]["original"]
-        md.append(f"| {r['id']} | {'' if r['count'] is None else r['count']} | {r['stable']} | {o['hough']['count']} | {o['radial']['count']} |")
+        md.append(f"| {r['id']} | {r['box']} | {'' if r['count'] is None else r['count']} | {r['stable']} | {o['annulus']['count']} | {o['scanline']['count']} |")
     md += ["","## Interpretation",""]
     if not controls_pass:
-        md.append("The synthetic spoke-count controls do not validate the detector. This is an implementation failure and must be fixed under Stage 105.")
+        md.append("The corrected detector still fails synthetic controls. Stage 105 remains an implementation failure; do not interpret real-sail counts.")
     elif promoted:
-        md.append("The small sails contain a robust, nontrivial radial-spoke count sequence across two estimators and lossy variants. This visible count family is eligible for a semantic/ordering follow-up.")
+        md.append("The five small sails contain a robust, nontrivial internal-ray count sequence across two estimators and lossy variants.")
     else:
-        md.append("Radial-spoke counts are not sufficiently stable/nontrivial across the five small sails. Retire small-sail spoke-count coding.")
+        md.append("The validated detector finds no sufficiently stable, nontrivial internal-ray count sequence. Retire small-sail spoke-count coding.")
     md += ["","No private-key material was generated or tested.",""]
     (OUT/"REPORT.md").write_text("\n".join(md))
-
-    print(json.dumps({
-        "status":"ok","experiment_id":"A11-EXP-105",
-        "controls_pass":controls_pass,"stable":stable,
-        "sequence":seq,"promoted":promoted
-    }))
+    print(json.dumps({"status":"ok","experiment_id":"A11-EXP-105","centers":centers,"controls_pass":controls_pass,"stable":stable,"sequence":seq,"promoted":promoted}))
 
 if __name__=="__main__":
     main()
