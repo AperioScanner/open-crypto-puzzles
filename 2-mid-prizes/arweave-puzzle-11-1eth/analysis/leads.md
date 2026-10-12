@@ -1,14 +1,10 @@
 # Open leads, ranked
 
-## 1. Building fill-density binary channel (promoted, under adversarial replication)
+## 1. Three-level building density structure (active)
 
-Stage 106 found a 12/12 stable sparse/dense split:
+Stage 107 broke the Stage-106 binary split, but the failures were highly structured: buildings **5, 6 and 12** consistently sit between the clearly light and clearly dark groups.
 
-`DDSSDDSSDSSD`
-
-It survives JPEG/resizing, two independent density metrics, balanced 6/6 clustering and strong separation. It is not a copy of the H/V hatch sequence.
-
-Stage 107 now tests crop/margin/jitter robustness and exact association with H/V before treating it as a genuine second channel.
+Stage 108 tests a light/medium/dark model across the same aggressive perturbations and requires k=3 to outperform k=2.
 
 ## 2. Image-only multi-step semantic prior
 
@@ -18,12 +14,12 @@ Puzzle #9 is primary-verified as a four-step image puzzle, but no concrete step 
 
 Still supported by Stage 31 and the archived "format does not matter" statement.
 
-## Closed / deprioritized
+## Closed / downgraded
 
-- Small-sail spoke count: detector controls failed twice; unresolved and abandoned pending new evidence.
+- Binary density split: Stage 107 fails robustness (9/12 only); not accepted.
+- Small-sail spoke count: detector controls failed twice; unresolved/deprioritized.
 - Building topology / roof profiles: rejected.
 - Small-sail L/R: rejected.
 - Literal OCR branch: retired.
 - Direct 16-gray-mode alphabet: rejected.
 - Large-sail one-stroke-per-symbol carrier: rejected.
-- Pier Roman / source-photo / CryptoCanvas: closed.
