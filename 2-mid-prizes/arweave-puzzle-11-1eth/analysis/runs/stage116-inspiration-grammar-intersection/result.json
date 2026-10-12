@@ -1,0 +1,58 @@
+{
+  "experiment_id": "A11-EXP-116",
+  "scope": "strict intersection of confirmed public-source mechanism operations across Stage-115 top inspiration candidates; no Puzzle #11 secret decoding",
+  "top_candidate_ids": [
+    "8kk0pa",
+    "8krbd3"
+  ],
+  "vocabulary": [
+    "visible_text_or_symbol_reading",
+    "selection_or_filtering",
+    "pairing",
+    "ordering_or_traversal",
+    "custom_alphabet_or_symbol_mapping",
+    "numeral_system_mapping",
+    "external_reference_known_text",
+    "position_or_geometry",
+    "cross_domain_conversion",
+    "final_ambiguity_or_bruteforce",
+    "exact_pixel_dependency"
+  ],
+  "synthetic_intersection_control_pass": true,
+  "validation_errors": [],
+  "source_control_pass": true,
+  "shared_confirmed_operations": [
+    "visible_text_or_symbol_reading",
+    "ordering_or_traversal",
+    "cross_domain_conversion"
+  ],
+  "candidate_specific_confirmed_operations": {
+    "selection_or_filtering": [
+      "8kk0pa"
+    ],
+    "pairing": [
+      "8kk0pa"
+    ],
+    "custom_alphabet_or_symbol_mapping": [
+      "8krbd3"
+    ],
+    "numeral_system_mapping": [
+      "8krbd3"
+    ],
+    "external_reference_known_text": [
+      "8kk0pa"
+    ],
+    "position_or_geometry": [
+      "8kk0pa"
+    ],
+    "final_ambiguity_or_bruteforce": [
+      "8krbd3"
+    ]
+  },
+  "shared_count": 3,
+  "decision": "NARROW_SHARED_GRAMMAR",
+  "promoted": true,
+  "promotion_rule": "operation must be marked confirmed in every Stage-115 top candidate; not_confirmed is never treated as absence; source schema and synthetic intersection control must pass",
+  "interpretation_guard": "The shared operations are only an author-inspiration family prior. They do not establish that Puzzle #11 uses any candidate-specific mechanism or reveal any secret material.",
+  "safety_guard": "No private key, candidate key string, ordered secret, derivation, wallet verification, or wallet access is performed."
+}
