@@ -1,0 +1,42 @@
+name: Arweave 11 research stage 117 author series grammar reuse
+
+on:
+  push:
+    branches:
+      - research/arweave11-chatgpt
+    paths:
+      - ".github/workflows/arweave11-stage117-author-series-grammar-reuse.yml"
+      - "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage117_author_series_grammar_reuse.py"
+      - "2-mid-prizes/arweave-puzzle-11-1eth/analysis/runs/stage11-solved-puzzle-grammar/result.json"
+      - "2-mid-prizes/arweave-puzzle-11-1eth/analysis/runs/stage116-inspiration-grammar-intersection/result.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  author-series-grammar-reuse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PZL: 2-mid-prizes/arweave-puzzle-11-1eth
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/arweave11-chatgpt
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run Stage 117
+        run: python "$PZL/tools/stage117_author_series_grammar_reuse.py"
+      - name: Commit public non-secret results
+        if: success()
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$PZL/analysis/runs/stage117-author-series-grammar-reuse"
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "research: stage 117 author-series grammar results [skip ci]"
+          git pull --rebase origin research/arweave11-chatgpt
+          git push origin HEAD:research/arweave11-chatgpt
