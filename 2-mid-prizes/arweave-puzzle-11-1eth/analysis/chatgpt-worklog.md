@@ -243,3 +243,13 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - The useful primary evidence remains broad: Puzzle #9 required four steps; Puzzle #11's author says format does not matter, the private key is hidden in the image, and the public address is also included somewhere in the image.
 - Since #9 visibly uses robust text/numeric anchors and Stage 36 explicitly avoided OCR, Stage 99 is a bounded whole-image visible alphanumeric audit over fixed #11 regions, transforms and cardinal rotations, with Puzzle #9 positive controls and shuffled negatives.
 - The hourly adaptive controller was found disabled again and was re-enabled.
+
+
+## 2026-10-11 — adaptive review of corrected Stage 99
+
+- Initial Stage 99 was an implementation failure because the APRIL control looked for a standalone token even though Tesseract correctly recovered merged strings such as `APRILANDTHECLOCKSWER`.
+- Fixed the same stage to count APRIL as a substring within the known quote OCR output. Both Puzzle #9 controls then pass across original and lossy transforms.
+- Valid Stage-99 survivors: SSS (11 original, 9 lossy, 0 shuffled), EAE (7/9/3), BEE (2/3/6), IES (2/3/2).
+- Interpretation is intentionally conservative: Stage 99 only establishes region-level OCR repetition. It does not show that different transforms read the same physical location.
+- SSS is the only strong lead before localization because it is absent from shuffled controls; BEE and IES are especially suspect because shuffled controls produce them frequently.
+- Stage 100 selected to require canonical-coordinate co-localization across preprocessing and lossy variants, with Puzzle #9 anchor boxes as positive controls.
