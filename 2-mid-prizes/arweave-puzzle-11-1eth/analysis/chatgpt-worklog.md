@@ -233,3 +233,13 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - The official Arweave newsletter could not be fetched by the GitHub runner because Medium returns 403, but the public indexed official article independently confirms that everything needed for #9 was hidden in the image.
 - Promoted prior: #9 was an image-only multi-step puzzle with multiple robust visible anchors. Guardrail: four steps do not imply four visible objects.
 - Stage 98 selected to reconstruct the primary Twitter conversation around the #9 solve and look for explicit step/mechanism language before inventing any transfer to #11.
+
+
+## 2026-10-11 — adaptive review of Stage 98
+
+- Stage 98 recovered 10 primary archived status pages but no concrete Puzzle #9 solve step.
+- Its automatic classifier promoted the term `order` from a tweet saying the unsolved puzzles were "ordered by difficulty" (3,9,8,5,7). Manual contextual review rejects this as a mechanism clue.
+- Corrected Stage-98 decision: NO_NEW_MECHANISM.
+- The useful primary evidence remains broad: Puzzle #9 required four steps; Puzzle #11's author says format does not matter, the private key is hidden in the image, and the public address is also included somewhere in the image.
+- Since #9 visibly uses robust text/numeric anchors and Stage 36 explicitly avoided OCR, Stage 99 is a bounded whole-image visible alphanumeric audit over fixed #11 regions, transforms and cardinal rotations, with Puzzle #9 positive controls and shuffled negatives.
+- The hourly adaptive controller was found disabled again and was re-enabled.
