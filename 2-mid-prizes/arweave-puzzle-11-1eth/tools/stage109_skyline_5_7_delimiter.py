@@ -73,6 +73,24 @@ def runs(mask,min_width=2):
         out.append((st,len(mask),len(mask)-st))
     return out
 
+def _kmeans2_labels(x):
+    x=np.asarray(x,float)
+    c=np.array([float(np.min(x)),float(np.max(x))])
+    for _ in range(50):
+        lab=np.argmin(np.abs(x[:,None]-c[None,:]),axis=1)
+        new=c.copy()
+        for j in (0,1):
+            if np.any(lab==j):
+                new[j]=float(np.mean(x[lab==j]))
+        new=np.sort(new)
+        if np.max(np.abs(new-c))<1e-12:
+            c=new
+            break
+        c=new
+    lab=np.argmin(np.abs(x[:,None]-c[None,:]),axis=1)
+    # label 0 is the lower-occupancy skyline corridor class
+    return lab,c
+
 def low_occupancy_detector(gray,thr):
     y0,y1=SKY_BAND; xlo,xhi=X_RANGE
     c=gray[y0:y1,xlo:xhi]
@@ -80,16 +98,21 @@ def low_occupancy_detector(gray,thr):
     occ=dark.mean(axis=0)
     ker=np.ones(SMOOTH)/SMOOTH
     occ_s=np.convolve(occ,ker,mode="same")
-    low=occ_s<LOW_OCC
+
+    # The previous absolute 2.5% cutoff was still invalid because the horizon
+    # line alone can push a visually empty corridor above that occupancy.
+    # Use a relative two-cluster split instead: low vs building-occupied columns.
+    lab,centers=_kmeans2_labels(occ_s)
+    low=(lab==0)
     rr=runs(low,min_width=3)
-    # Convert back to canonical x and ignore runs touching the search boundaries.
+
     vals=[]
     for a,b,w in rr:
-        if a<=1 or b>=len(low)-1: 
+        if a<=1 or b>=len(low)-1:
             continue
         vals.append((a+xlo,b+xlo,w,float(np.mean(occ_s[a:b]))))
     vals.sort(key=lambda z:z[2],reverse=True)
-    return vals,occ_s
+    return vals,occ_s,centers
 
 def overlap(a0,a1,b0,b1):
     return max(0,min(a1,b1)-max(a0,b0))
@@ -147,7 +170,7 @@ def main():
     all_overlap=True
     for v,a in vv.items():
         for thr in THRESHOLDS:
-            rr,_=low_occupancy_detector(a,thr)
+            rr,_,centers=low_occupancy_detector(a,thr)
             best=rr[0] if rr else None
             if best is None:
                 ok=False; rec=None
@@ -155,7 +178,7 @@ def main():
                 x0,x1,w,meanocc=best
                 ov=overlap(x0,x1,top["x0"],top["x1"])
                 ok=bool(ov>=0.60*min(w,top["width"]))
-                rec={"x0":x0,"x1":x1,"width":w,"mean_occupancy":meanocc,"overlap_px":ov}
+                rec={"x0":x0,"x1":x1,"width":w,"mean_occupancy":meanocc,"occupancy_centers":[float(centers[0]),float(centers[1])],"overlap_px":ov}
             rows.append({"variant":v,"threshold":thr,"best_gap":rec,"matches_geometry_gap":ok})
             all_overlap &= ok
 
@@ -170,7 +193,7 @@ def main():
 
     result={
         "experiment_id":"A11-EXP-109",
-        "implementation_correction":"Replaced literal-blank lower-band detector with low-occupancy skyline detector over y=20..300 because sparse horizon/detail strokes cross the true visual gap.",
+        "implementation_correction":"Replaced literal-blank lower-band detector, then replaced an invalid absolute occupancy cutoff with a relative 2-cluster low/high occupancy split because the horizon line crosses the true visual gap.",
         "scope":"robustness and salience of the central inter-building gap producing a 5|7 skyline split; no private-key operations",
         "geometry_gaps":gaps,
         "dominant_geometry_gap":top,
@@ -179,7 +202,7 @@ def main():
         "dominant_fraction_of_total_gap_space":frac,
         "normalized_distance_of_gap_midpoint_from_canvas_center":center_dist,
         "dirichlet_exchangeable_null_p":null_p,
-        "detector":{"sky_band":list(SKY_BAND),"x_range":list(X_RANGE),"low_occupancy_cutoff":LOW_OCC,"smooth_px":SMOOTH},
+        "detector":{"sky_band":list(SKY_BAND),"x_range":list(X_RANGE),"classification":"relative 2-cluster split of smoothed per-column dark occupancy","smooth_px":SMOOTH},
         "synthetic_controls":controls,
         "detection_rows":rows,
         "all_variant_threshold_detections_match":all_overlap,
