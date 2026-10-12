@@ -194,8 +194,13 @@ def positive_controls():
                     "digits_projection":digits[:24],
                 })
         if kind=="quote":
-            orig=sum("APRIL" in r["tokens"] for r in rows if r["variant"]=="original")
-            lossy=sum("APRIL" in r["tokens"] for r in rows if r["variant"]=="lossy")
+            # Tesseract commonly merges neighboring words in the quote crop
+            # (e.g. APRILANDTHECLOCKSWER). The control is about recovering the
+            # visible anchor APRIL, not about whitespace segmentation.
+            def april_hit(r):
+                return any("APRIL" in tok for tok in r["tokens"])
+            orig=sum(april_hit(r) for r in rows if r["variant"]=="original")
+            lossy=sum(april_hit(r) for r in rows if r["variant"]=="lossy")
             passed=orig>=1 and lossy>=1
             detail={"original_april_paths":orig,"lossy_april_paths":lossy}
         else:
