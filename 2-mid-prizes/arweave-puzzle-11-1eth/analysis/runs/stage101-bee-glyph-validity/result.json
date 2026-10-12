@@ -1,0 +1,694 @@
+{
+  "experiment_id": "A11-EXP-101",
+  "scope": "adversarial literal-glyph validation of the single Stage-100 BEE location; no raw OCR persistence and no private-key operations",
+  "target_token": "BEE",
+  "stage100_box": [
+    803,
+    520.5,
+    883,
+    545
+  ],
+  "target_window": [
+    785,
+    502,
+    901,
+    563
+  ],
+  "jitter_offsets": [
+    [
+      0,
+      0
+    ],
+    [
+      -6,
+      0
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      0,
+      -6
+    ],
+    [
+      0,
+      6
+    ]
+  ],
+  "transforms": [
+    "gray",
+    "otsu",
+    "adaptive"
+  ],
+  "psm_modes": [
+    6,
+    7,
+    8,
+    10,
+    11,
+    13
+  ],
+  "variants": [
+    "original",
+    "jpeg85",
+    "jpeg70",
+    "down75_up"
+  ],
+  "target_ocr": {
+    "jobs": 360,
+    "hits": 4,
+    "hit_rate": 0.011111111111111112,
+    "variants_with_hit": 3,
+    "psm_modes_with_hit": 2,
+    "transforms_with_hit": 2,
+    "jitters_with_hit": 2,
+    "variant_hits": {
+      "original": 1,
+      "jpeg85": 2,
+      "jpeg70": 0,
+      "down75_up": 1
+    },
+    "psm_hits": {
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "10": 2,
+      "11": 2,
+      "13": 0
+    },
+    "transform_hits": {
+      "gray": 1,
+      "otsu": 3,
+      "adaptive": 0
+    },
+    "jitter_hits": {
+      "-6,0": 0,
+      "0,-6": 0,
+      "0,0": 0,
+      "0,6": 3,
+      "6,0": 1
+    },
+    "mean_hit_conf": 43.400405,
+    "max_hit_conf": 50.773998
+  },
+  "target_glyph": {
+    "vertical_stem_fraction": 0.11475409836065574,
+    "horizontal_run_fraction": 0.19827586206896552,
+    "gradient_balance": 0.18127288628054694,
+    "vertical_edge_energy_fraction": 0.15345555492373797,
+    "ink_fraction": 0.1855568117580554,
+    "edge_density": 0.18668739400791406
+  },
+  "positive_controls": {
+    "DejaVuSans.ttf": {
+      "ocr": {
+        "jobs": 72,
+        "hits": 72,
+        "hit_rate": 1.0,
+        "variants_with_hit": 4,
+        "psm_modes_with_hit": 6,
+        "transforms_with_hit": 3,
+        "jitters_with_hit": 1,
+        "variant_hits": {
+          "original": 18,
+          "jpeg85": 18,
+          "jpeg70": 18,
+          "down75_up": 18
+        },
+        "psm_hits": {
+          "6": 12,
+          "7": 12,
+          "8": 12,
+          "10": 12,
+          "11": 12,
+          "13": 12
+        },
+        "transform_hits": {
+          "gray": 24,
+          "otsu": 24,
+          "adaptive": 24
+        },
+        "jitter_hits": {
+          "0,0": 72
+        },
+        "mean_hit_conf": 71.60965819444444,
+        "max_hit_conf": 96.814034
+      },
+      "glyph": {
+        "vertical_stem_fraction": 0.359375,
+        "horizontal_run_fraction": 0.125,
+        "gradient_balance": 0.6837851202384211,
+        "vertical_edge_energy_fraction": 0.4060999898500103,
+        "ink_fraction": 0.07213541666666666,
+        "edge_density": 0.04609375
+      }
+    },
+    "DejaVuSerif.ttf": {
+      "ocr": {
+        "jobs": 72,
+        "hits": 72,
+        "hit_rate": 1.0,
+        "variants_with_hit": 4,
+        "psm_modes_with_hit": 6,
+        "transforms_with_hit": 3,
+        "jitters_with_hit": 1,
+        "variant_hits": {
+          "original": 18,
+          "jpeg85": 18,
+          "jpeg70": 18,
+          "down75_up": 18
+        },
+        "psm_hits": {
+          "6": 12,
+          "7": 12,
+          "8": 12,
+          "10": 12,
+          "11": 12,
+          "13": 12
+        },
+        "transform_hits": {
+          "gray": 24,
+          "otsu": 24,
+          "adaptive": 24
+        },
+        "jitter_hits": {
+          "0,0": 72
+        },
+        "mean_hit_conf": 64.68048011111111,
+        "max_hit_conf": 96.806
+      },
+      "glyph": {
+        "vertical_stem_fraction": 0.359375,
+        "horizontal_run_fraction": 0.15,
+        "gradient_balance": 0.6887008575161618,
+        "vertical_edge_energy_fraction": 0.4078288078381997,
+        "ink_fraction": 0.07109375,
+        "edge_density": 0.04778645833333333
+      }
+    },
+    "DejaVuSansMono.ttf": {
+      "ocr": {
+        "jobs": 72,
+        "hits": 72,
+        "hit_rate": 1.0,
+        "variants_with_hit": 4,
+        "psm_modes_with_hit": 6,
+        "transforms_with_hit": 3,
+        "jitters_with_hit": 1,
+        "variant_hits": {
+          "original": 18,
+          "jpeg85": 18,
+          "jpeg70": 18,
+          "down75_up": 18
+        },
+        "psm_hits": {
+          "6": 12,
+          "7": 12,
+          "8": 12,
+          "10": 12,
+          "11": 12,
+          "13": 12
+        },
+        "transform_hits": {
+          "gray": 24,
+          "otsu": 24,
+          "adaptive": 24
+        },
+        "jitter_hits": {
+          "0,0": 72
+        },
+        "mean_hit_conf": 65.09852991666668,
+        "max_hit_conf": 96.990295
+      },
+      "glyph": {
+        "vertical_stem_fraction": 0.359375,
+        "horizontal_run_fraction": 0.11666666666666667,
+        "gradient_balance": 0.7284295492206708,
+        "vertical_edge_energy_fraction": 0.42144011571030554,
+        "ink_fraction": 0.07018229166666666,
+        "edge_density": 0.04388020833333333
+      }
+    },
+    "DejaVuSans-Bold.ttf": {
+      "ocr": {
+        "jobs": 72,
+        "hits": 72,
+        "hit_rate": 1.0,
+        "variants_with_hit": 4,
+        "psm_modes_with_hit": 6,
+        "transforms_with_hit": 3,
+        "jitters_with_hit": 1,
+        "variant_hits": {
+          "original": 18,
+          "jpeg85": 18,
+          "jpeg70": 18,
+          "down75_up": 18
+        },
+        "psm_hits": {
+          "6": 12,
+          "7": 12,
+          "8": 12,
+          "10": 12,
+          "11": 12,
+          "13": 12
+        },
+        "transform_hits": {
+          "gray": 24,
+          "otsu": 24,
+          "adaptive": 24
+        },
+        "jitter_hits": {
+          "0,0": 72
+        },
+        "mean_hit_conf": 75.02033677777779,
+        "max_hit_conf": 96.880501
+      },
+      "glyph": {
+        "vertical_stem_fraction": 0.359375,
+        "horizontal_run_fraction": 0.15,
+        "gradient_balance": 0.6469578334012709,
+        "vertical_edge_energy_fraction": 0.39281991334604116,
+        "ink_fraction": 0.10794270833333333,
+        "edge_density": 0.04505208333333333
+      }
+    }
+  },
+  "positive_controls_valid": true,
+  "positive_median_hit_rate": 1.0,
+  "positive_min_vertical_stem_fraction": 0.359375,
+  "positive_min_gradient_balance": 0.6469578334012709,
+  "matched_lineart_controls": [
+    {
+      "index": 0,
+      "box": [
+        560,
+        350,
+        676,
+        411
+      ],
+      "ocr": {
+        "jobs": 72,
+        "hits": 0,
+        "hit_rate": 0.0,
+        "variants_with_hit": 0,
+        "psm_modes_with_hit": 0,
+        "transforms_with_hit": 0,
+        "jitters_with_hit": 0,
+        "variant_hits": {
+          "original": 0,
+          "jpeg85": 0,
+          "jpeg70": 0,
+          "down75_up": 0
+        },
+        "psm_hits": {
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "10": 0,
+          "11": 0,
+          "13": 0
+        },
+        "transform_hits": {
+          "gray": 0,
+          "otsu": 0,
+          "adaptive": 0
+        },
+        "jitter_hits": {
+          "0,0": 0
+        },
+        "mean_hit_conf": -1.0,
+        "max_hit_conf": -1.0
+      },
+      "glyph": {
+        "vertical_stem_fraction": 0.13114754098360656,
+        "horizontal_run_fraction": 0.28448275862068967,
+        "gradient_balance": 0.18675503706843655,
+        "vertical_edge_energy_fraction": 0.1573661212593336,
+        "ink_fraction": 0.1855568117580554,
+        "edge_density": 0.18301300169587337
+      }
+    },
+    {
+      "index": 1,
+      "box": [
+        70,
+        980,
+        186,
+        1041
+      ],
+      "ocr": {
+        "jobs": 72,
+        "hits": 0,
+        "hit_rate": 0.0,
+        "variants_with_hit": 0,
+        "psm_modes_with_hit": 0,
+        "transforms_with_hit": 0,
+        "jitters_with_hit": 0,
+        "variant_hits": {
+          "original": 0,
+          "jpeg85": 0,
+          "jpeg70": 0,
+          "down75_up": 0
+        },
+        "psm_hits": {
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "10": 0,
+          "11": 0,
+          "13": 0
+        },
+        "transform_hits": {
+          "gray": 0,
+          "otsu": 0,
+          "adaptive": 0
+        },
+        "jitter_hits": {
+          "0,0": 0
+        },
+        "mean_hit_conf": -1.0,
+        "max_hit_conf": -1.0
+      },
+      "glyph": {
+        "vertical_stem_fraction": 0.11475409836065574,
+        "horizontal_run_fraction": 0.43103448275862066,
+        "gradient_balance": 0.1688112886606754,
+        "vertical_edge_energy_fraction": 0.14442989240300197,
+        "ink_fraction": 0.19643866591294518,
+        "edge_density": 0.18810062182023743
+      }
+    },
+    {
+      "index": 2,
+      "box": [
+        140,
+        980,
+        256,
+        1041
+      ],
+      "ocr": {
+        "jobs": 72,
+        "hits": 0,
+        "hit_rate": 0.0,
+        "variants_with_hit": 0,
+        "psm_modes_with_hit": 0,
+        "transforms_with_hit": 0,
+        "jitters_with_hit": 0,
+        "variant_hits": {
+          "original": 0,
+          "jpeg85": 0,
+          "jpeg70": 0,
+          "down75_up": 0
+        },
+        "psm_hits": {
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "10": 0,
+          "11": 0,
+          "13": 0
+        },
+        "transform_hits": {
+          "gray": 0,
+          "otsu": 0,
+          "adaptive": 0
+        },
+        "jitter_hits": {
+          "0,0": 0
+        },
+        "mean_hit_conf": -1.0,
+        "max_hit_conf": -1.0
+      },
+      "glyph": {
+        "vertical_stem_fraction": 0.13114754098360656,
+        "horizontal_run_fraction": 0.2413793103448276,
+        "gradient_balance": 0.15957670796615117,
+        "vertical_edge_energy_fraction": 0.137616344714307,
+        "ink_fraction": 0.1998304126625212,
+        "edge_density": 0.18287167891464104
+      }
+    },
+    {
+      "index": 3,
+      "box": [
+        490,
+        350,
+        606,
+        411
+      ],
+      "ocr": {
+        "jobs": 72,
+        "hits": 0,
+        "hit_rate": 0.0,
+        "variants_with_hit": 0,
+        "psm_modes_with_hit": 0,
+        "transforms_with_hit": 0,
+        "jitters_with_hit": 0,
+        "variant_hits": {
+          "original": 0,
+          "jpeg85": 0,
+          "jpeg70": 0,
+          "down75_up": 0
+        },
+        "psm_hits": {
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "10": 0,
+          "11": 0,
+          "13": 0
+        },
+        "transform_hits": {
+          "gray": 0,
+          "otsu": 0,
+          "adaptive": 0
+        },
+        "jitter_hits": {
+          "0,0": 0
+        },
+        "mean_hit_conf": -1.0,
+        "max_hit_conf": -1.0
+      },
+      "glyph": {
+        "vertical_stem_fraction": 0.11475409836065574,
+        "horizontal_run_fraction": 0.3275862068965517,
+        "gradient_balance": 0.15316641733064948,
+        "vertical_edge_energy_fraction": 0.1328224747345654,
+        "ink_fraction": 0.21240814019219897,
+        "edge_density": 0.1909270774448841
+      }
+    },
+    {
+      "index": 4,
+      "box": [
+        140,
+        280,
+        256,
+        341
+      ],
+      "ocr": {
+        "jobs": 72,
+        "hits": 0,
+        "hit_rate": 0.0,
+        "variants_with_hit": 0,
+        "psm_modes_with_hit": 0,
+        "transforms_with_hit": 0,
+        "jitters_with_hit": 0,
+        "variant_hits": {
+          "original": 0,
+          "jpeg85": 0,
+          "jpeg70": 0,
+          "down75_up": 0
+        },
+        "psm_hits": {
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "10": 0,
+          "11": 0,
+          "13": 0
+        },
+        "transform_hits": {
+          "gray": 0,
+          "otsu": 0,
+          "adaptive": 0
+        },
+        "jitter_hits": {
+          "0,0": 0
+        },
+        "mean_hit_conf": -1.0,
+        "max_hit_conf": -1.0
+      },
+      "glyph": {
+        "vertical_stem_fraction": 0.11475409836065574,
+        "horizontal_run_fraction": 0.1896551724137931,
+        "gradient_balance": 0.15224782059685088,
+        "vertical_edge_energy_fraction": 0.13213114216869448,
+        "ink_fraction": 0.21113623516110797,
+        "edge_density": 0.180751837196156
+      }
+    },
+    {
+      "index": 5,
+      "box": [
+        280,
+        350,
+        396,
+        411
+      ],
+      "ocr": {
+        "jobs": 72,
+        "hits": 0,
+        "hit_rate": 0.0,
+        "variants_with_hit": 0,
+        "psm_modes_with_hit": 0,
+        "transforms_with_hit": 0,
+        "jitters_with_hit": 0,
+        "variant_hits": {
+          "original": 0,
+          "jpeg85": 0,
+          "jpeg70": 0,
+          "down75_up": 0
+        },
+        "psm_hits": {
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "10": 0,
+          "11": 0,
+          "13": 0
+        },
+        "transform_hits": {
+          "gray": 0,
+          "otsu": 0,
+          "adaptive": 0
+        },
+        "jitter_hits": {
+          "0,0": 0
+        },
+        "mean_hit_conf": -1.0,
+        "max_hit_conf": -1.0
+      },
+      "glyph": {
+        "vertical_stem_fraction": 0.13114754098360656,
+        "horizontal_run_fraction": 0.21551724137931033,
+        "gradient_balance": 0.2280548344861516,
+        "vertical_edge_energy_fraction": 0.1857041135965035,
+        "ink_fraction": 0.19884115319389487,
+        "edge_density": 0.1671848501978519
+      }
+    },
+    {
+      "index": 6,
+      "box": [
+        1120,
+        280,
+        1236,
+        341
+      ],
+      "ocr": {
+        "jobs": 72,
+        "hits": 0,
+        "hit_rate": 0.0,
+        "variants_with_hit": 0,
+        "psm_modes_with_hit": 0,
+        "transforms_with_hit": 0,
+        "jitters_with_hit": 0,
+        "variant_hits": {
+          "original": 0,
+          "jpeg85": 0,
+          "jpeg70": 0,
+          "down75_up": 0
+        },
+        "psm_hits": {
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "10": 0,
+          "11": 0,
+          "13": 0
+        },
+        "transform_hits": {
+          "gray": 0,
+          "otsu": 0,
+          "adaptive": 0
+        },
+        "jitter_hits": {
+          "0,0": 0
+        },
+        "mean_hit_conf": -1.0,
+        "max_hit_conf": -1.0
+      },
+      "glyph": {
+        "vertical_stem_fraction": 0.09836065573770492,
+        "horizontal_run_fraction": 0.3017241379310345,
+        "gradient_balance": 0.23676157466951708,
+        "vertical_edge_energy_fraction": 0.1914367162747465,
+        "ink_fraction": 0.18781797625777275,
+        "edge_density": 0.21028829847371397
+      }
+    },
+    {
+      "index": 7,
+      "box": [
+        0,
+        980,
+        116,
+        1041
+      ],
+      "ocr": {
+        "jobs": 72,
+        "hits": 0,
+        "hit_rate": 0.0,
+        "variants_with_hit": 0,
+        "psm_modes_with_hit": 0,
+        "transforms_with_hit": 0,
+        "jitters_with_hit": 0,
+        "variant_hits": {
+          "original": 0,
+          "jpeg85": 0,
+          "jpeg70": 0,
+          "down75_up": 0
+        },
+        "psm_hits": {
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "10": 0,
+          "11": 0,
+          "13": 0
+        },
+        "transform_hits": {
+          "gray": 0,
+          "otsu": 0,
+          "adaptive": 0
+        },
+        "jitter_hits": {
+          "0,0": 0
+        },
+        "mean_hit_conf": -1.0,
+        "max_hit_conf": -1.0
+      },
+      "glyph": {
+        "vertical_stem_fraction": 0.11475409836065574,
+        "horizontal_run_fraction": 0.47413793103448276,
+        "gradient_balance": 0.14106793524782127,
+        "vertical_edge_energy_fraction": 0.1236279899646673,
+        "ink_fraction": 0.20944036178631995,
+        "edge_density": 0.19799321650650084
+      }
+    }
+  ],
+  "max_matched_control_hit_rate": 0.0,
+  "median_matched_control_hit_rate": 0.0,
+  "gates": {
+    "rate_gate": false,
+    "diversity_gate": false,
+    "glyph_gate": false
+  },
+  "promotion_rule": "rendered BEE controls valid; target hit rate >=35% of positive median and >= max matched-control rate +0.10; target hits in >=3 variants, >=3 PSM modes, >=3 crop jitters; vertical-stem fraction and gradient balance each >=55% of the weakest rendered BEE control",
+  "promoted": false,
+  "interpretation_guard": "Promotion means only that the patch behaves like literal BEE text under adversarial tests; it does not establish semantic relevance.",
+  "safety_guard": "Raw OCR is discarded. Only BEE hit/no-hit/confidence aggregates are persisted. No key candidate is constructed or verified."
+}
