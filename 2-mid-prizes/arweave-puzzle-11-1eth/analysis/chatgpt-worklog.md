@@ -253,3 +253,13 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Interpretation is intentionally conservative: Stage 99 only establishes region-level OCR repetition. It does not show that different transforms read the same physical location.
 - SSS is the only strong lead before localization because it is absent from shuffled controls; BEE and IES are especially suspect because shuffled controls produce them frequently.
 - Stage 100 selected to require canonical-coordinate co-localization across preprocessing and lossy variants, with Puzzle #9 anchor boxes as positive controls.
+
+
+## 2026-10-11 — adaptive review of Stage 100
+
+- Both Puzzle #9 spatial-localization controls passed.
+- SSS, EAE and IES fail original/lossy physical co-localization and are retired as OCR hallucinations.
+- BEE alone survives at canonical box ~[803,520.5,883,545], with gray+Otsu support in original and lossy variants, mean OCR confidence 54.6, crop correlation 0.969, and zero qualifying shuffled clusters.
+- Direct inspection of the saved BEE crop shows dense mostly-horizontal line hatching, not obvious human-readable B/E/E glyphs. This is critical: spatially stable OCR is still not proof of text.
+- Stage 101 selected as an adversarial literal-text test: crop jitter, six Tesseract PSM modes, four image variants, matched line-art controls, rendered BEE positives and independent stroke-orientation balance.
+- No semantic interpretation of BEE is permitted unless Stage 101 survives.
