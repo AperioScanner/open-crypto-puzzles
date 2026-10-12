@@ -141,8 +141,8 @@ def synthetic_skyline(special=True,w=1600,h=320):
 def control_check():
     pos=synthetic_skyline(True)
     neg=synthetic_skyline(False)
-    pos_runs,_=low_occupancy_detector(pos,140)
-    neg_runs,_=low_occupancy_detector(neg,140)
+    pos_runs,_,_=low_occupancy_detector(pos,140)
+    neg_runs,_,_=low_occupancy_detector(neg,140)
     posw=pos_runs[0][2] if pos_runs else 0
     negw=neg_runs[0][2] if neg_runs else 0
     # Positive special gap should be unmistakably larger than anything in equal-gap control.
