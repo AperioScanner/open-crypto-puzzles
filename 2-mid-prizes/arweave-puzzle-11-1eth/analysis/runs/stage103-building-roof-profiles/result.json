@@ -1,0 +1,537 @@
+{
+  "experiment_id": "A11-EXP-103",
+  "scope": "12-building roof-profile category stability independent of H/V hatching; no private-key operations",
+  "thresholds": [
+    110,
+    150,
+    190
+  ],
+  "slope_dead_zone": 0.08,
+  "synthetic_controls": {
+    "/": {
+      "envelope_slope": -0.22045287187039792,
+      "hough_slope": -0.23076923076923078,
+      "envelope_category": "/",
+      "hough_category": "/",
+      "consensus": "/"
+    },
+    "-": {
+      "envelope_slope": -1.4266762097014436e-16,
+      "hough_slope": 0.0,
+      "envelope_category": "-",
+      "hough_category": "-",
+      "consensus": "-"
+    },
+    "\\": {
+      "envelope_slope": 0.2204528718703975,
+      "hough_slope": 0.2079207920792079,
+      "envelope_category": "\\",
+      "hough_category": "\\",
+      "consensus": "\\"
+    }
+  },
+  "controls_pass": true,
+  "buildings": [
+    {
+      "id": 1,
+      "box": [
+        234,
+        149,
+        322,
+        213
+      ],
+      "variants": {
+        "original": {
+          "envelope_slope": -0.03587869930580925,
+          "hough_slope": -0.0975609756097561,
+          "envelope_category": "-",
+          "hough_category": "/",
+          "consensus": "?"
+        },
+        "jpeg85": {
+          "envelope_slope": -0.03587869930580925,
+          "hough_slope": -0.0851063829787234,
+          "envelope_category": "-",
+          "hough_category": "/",
+          "consensus": "?"
+        },
+        "jpeg70": {
+          "envelope_slope": -0.035878699305809274,
+          "hough_slope": -0.08695652173913043,
+          "envelope_category": "-",
+          "hough_category": "/",
+          "consensus": "?"
+        },
+        "down75_up": {
+          "envelope_slope": -0.036024844720496906,
+          "hough_slope": -0.10416666666666667,
+          "envelope_category": "-",
+          "hough_category": "/",
+          "consensus": "?"
+        }
+      },
+      "stable": false,
+      "category": "?"
+    },
+    {
+      "id": 2,
+      "box": [
+        326,
+        66,
+        412,
+        130
+      ],
+      "variants": {
+        "original": {
+          "envelope_slope": -0.08002799405126419,
+          "hough_slope": -0.1,
+          "envelope_category": "/",
+          "hough_category": "/",
+          "consensus": "/"
+        },
+        "jpeg85": {
+          "envelope_slope": -0.08120024494794863,
+          "hough_slope": 0.075,
+          "envelope_category": "/",
+          "hough_category": "-",
+          "consensus": "?"
+        },
+        "jpeg70": {
+          "envelope_slope": -0.07451666520864315,
+          "hough_slope": -0.14634146341463414,
+          "envelope_category": "-",
+          "hough_category": "/",
+          "consensus": "?"
+        },
+        "down75_up": {
+          "envelope_slope": -0.07530399790044617,
+          "hough_slope": -0.15517241379310345,
+          "envelope_category": "-",
+          "hough_category": "/",
+          "consensus": "?"
+        }
+      },
+      "stable": false,
+      "category": "?"
+    },
+    {
+      "id": 3,
+      "box": [
+        416,
+        171,
+        500,
+        235
+      ],
+      "variants": {
+        "original": {
+          "envelope_slope": -0.021586441195556607,
+          "hough_slope": -0.15517241379310345,
+          "envelope_category": "-",
+          "hough_category": "/",
+          "consensus": "?"
+        },
+        "jpeg85": {
+          "envelope_slope": -0.02305607512310565,
+          "hough_slope": 0.0,
+          "envelope_category": "-",
+          "hough_category": "-",
+          "consensus": "-"
+        },
+        "jpeg70": {
+          "envelope_slope": -0.019964118028781834,
+          "hough_slope": 0.10869565217391304,
+          "envelope_category": "-",
+          "hough_category": "\\",
+          "consensus": "?"
+        },
+        "down75_up": {
+          "envelope_slope": -0.015383440852005888,
+          "hough_slope": -0.3333333333333333,
+          "envelope_category": "-",
+          "hough_category": "/",
+          "consensus": "?"
+        }
+      },
+      "stable": false,
+      "category": "?"
+    },
+    {
+      "id": 4,
+      "box": [
+        502,
+        95,
+        676,
+        159
+      ],
+      "variants": {
+        "original": {
+          "envelope_slope": -0.05579366294198683,
+          "hough_slope": 0.19727891156462585,
+          "envelope_category": "-",
+          "hough_category": "\\",
+          "consensus": "?"
+        },
+        "jpeg85": {
+          "envelope_slope": -0.05561654020248847,
+          "hough_slope": -0.1,
+          "envelope_category": "-",
+          "hough_category": "/",
+          "consensus": "?"
+        },
+        "jpeg70": {
+          "envelope_slope": -0.05524480111959065,
+          "hough_slope": 0.0,
+          "envelope_category": "-",
+          "hough_category": "-",
+          "consensus": "-"
+        },
+        "down75_up": {
+          "envelope_slope": -0.05251361221053554,
+          "hough_slope": -0.0273972602739726,
+          "envelope_category": "-",
+          "hough_category": "-",
+          "consensus": "-"
+        }
+      },
+      "stable": false,
+      "category": "?"
+    },
+    {
+      "id": 5,
+      "box": [
+        678,
+        8,
+        782,
+        72
+      ],
+      "variants": {
+        "original": {
+          "envelope_slope": -0.006205709152609983,
+          "hough_slope": -0.09090909090909091,
+          "envelope_category": "-",
+          "hough_category": "/",
+          "consensus": "?"
+        },
+        "jpeg85": {
+          "envelope_slope": -0.006205709152609983,
+          "hough_slope": -0.4605263157894737,
+          "envelope_category": "-",
+          "hough_category": "/",
+          "consensus": "?"
+        },
+        "jpeg70": {
+          "envelope_slope": -0.006070133413181554,
+          "hough_slope": -0.26666666666666666,
+          "envelope_category": "-",
+          "hough_category": "/",
+          "consensus": "?"
+        },
+        "down75_up": {
+          "envelope_slope": 0.000610464278185565,
+          "hough_slope": 0.046875,
+          "envelope_category": "-",
+          "hough_category": "-",
+          "consensus": "-"
+        }
+      },
+      "stable": false,
+      "category": "?"
+    },
+    {
+      "id": 6,
+      "box": [
+        884,
+        189,
+        978,
+        253
+      ],
+      "variants": {
+        "original": {
+          "envelope_slope": -0.045208475734791496,
+          "hough_slope": -0.017241379310344827,
+          "envelope_category": "-",
+          "hough_category": "-",
+          "consensus": "-"
+        },
+        "jpeg85": {
+          "envelope_slope": -0.045208475734791496,
+          "hough_slope": -0.016129032258064516,
+          "envelope_category": "-",
+          "hough_category": "-",
+          "consensus": "-"
+        },
+        "jpeg70": {
+          "envelope_slope": -0.046958304853041706,
+          "hough_slope": 0.0,
+          "envelope_category": "-",
+          "hough_category": "-",
+          "consensus": "-"
+        },
+        "down75_up": {
+          "envelope_slope": -0.04663021189336978,
+          "hough_slope": 0.0,
+          "envelope_category": "-",
+          "hough_category": "-",
+          "consensus": "-"
+        }
+      },
+      "stable": true,
+      "category": "-"
+    },
+    {
+      "id": 7,
+      "box": [
+        980,
+        60,
+        1140,
+        124
+      ],
+      "variants": {
+        "original": {
+          "envelope_slope": -0.01572003577817526,
+          "hough_slope": -0.0684931506849315,
+          "envelope_category": "-",
+          "hough_category": "-",
+          "consensus": "-"
+        },
+        "jpeg85": {
+          "envelope_slope": -0.01540138640429323,
+          "hough_slope": -0.16129032258064516,
+          "envelope_category": "-",
+          "hough_category": "/",
+          "consensus": "?"
+        },
+        "jpeg70": {
+          "envelope_slope": -0.01572003577817526,
+          "hough_slope": -0.06097560975609756,
+          "envelope_category": "-",
+          "hough_category": "-",
+          "consensus": "-"
+        },
+        "down75_up": {
+          "envelope_slope": -0.013919946332736959,
+          "hough_slope": 0.08450704225352113,
+          "envelope_category": "-",
+          "hough_category": "\\",
+          "consensus": "?"
+        }
+      },
+      "stable": false,
+      "category": "?"
+    },
+    {
+      "id": 8,
+      "box": [
+        1142,
+        89,
+        1258,
+        153
+      ],
+      "variants": {
+        "original": {
+          "envelope_slope": 0.042733807752049977,
+          "hough_slope": 0.03389830508474576,
+          "envelope_category": "-",
+          "hough_category": "-",
+          "consensus": "-"
+        },
+        "jpeg85": {
+          "envelope_slope": 0.042733807752049977,
+          "hough_slope": 0.046511627906976744,
+          "envelope_category": "-",
+          "hough_category": "-",
+          "consensus": "-"
+        },
+        "jpeg70": {
+          "envelope_slope": 0.04498067405989237,
+          "hough_slope": -0.06060606060606061,
+          "envelope_category": "-",
+          "hough_category": "-",
+          "consensus": "-"
+        },
+        "down75_up": {
+          "envelope_slope": 0.04578261026622838,
+          "hough_slope": 0.023255813953488372,
+          "envelope_category": "-",
+          "hough_category": "-",
+          "consensus": "-"
+        }
+      },
+      "stable": true,
+      "category": "-"
+    },
+    {
+      "id": 9,
+      "box": [
+        1260,
+        164,
+        1348,
+        228
+      ],
+      "variants": {
+        "original": {
+          "envelope_slope": -0.03310502283105022,
+          "hough_slope": -0.3048780487804878,
+          "envelope_category": "-",
+          "hough_category": "/",
+          "consensus": "?"
+        },
+        "jpeg85": {
+          "envelope_slope": -0.033201492057366985,
+          "hough_slope": -0.023809523809523808,
+          "envelope_category": "-",
+          "hough_category": "-",
+          "consensus": "-"
+        },
+        "jpeg70": {
+          "envelope_slope": -0.0333461958968422,
+          "hough_slope": 0.37735849056603776,
+          "envelope_category": "-",
+          "hough_category": "\\",
+          "consensus": "?"
+        },
+        "down75_up": {
+          "envelope_slope": -0.03583831757669298,
+          "hough_slope": -0.17777777777777778,
+          "envelope_category": "-",
+          "hough_category": "/",
+          "consensus": "?"
+        }
+      },
+      "stable": false,
+      "category": "?"
+    },
+    {
+      "id": 10,
+      "box": [
+        1350,
+        93,
+        1452,
+        157
+      ],
+      "variants": {
+        "original": {
+          "envelope_slope": -0.05519796659037168,
+          "hough_slope": -0.15789473684210525,
+          "envelope_category": "-",
+          "hough_category": "/",
+          "consensus": "?"
+        },
+        "jpeg85": {
+          "envelope_slope": -0.054274839084965706,
+          "hough_slope": 0.08108108108108109,
+          "envelope_category": "-",
+          "hough_category": "\\",
+          "consensus": "?"
+        },
+        "jpeg70": {
+          "envelope_slope": -0.05369314230073728,
+          "hough_slope": -0.3870967741935484,
+          "envelope_category": "-",
+          "hough_category": "/",
+          "consensus": "?"
+        },
+        "down75_up": {
+          "envelope_slope": -0.05972974394027017,
+          "hough_slope": 0.0,
+          "envelope_category": "-",
+          "hough_category": "-",
+          "consensus": "-"
+        }
+      },
+      "stable": false,
+      "category": "?"
+    },
+    {
+      "id": 11,
+      "box": [
+        1454,
+        151,
+        1510,
+        215
+      ],
+      "variants": {
+        "original": {
+          "envelope_slope": -0.08251618871415366,
+          "hough_slope": 0.018867924528301886,
+          "envelope_category": "/",
+          "hough_category": "-",
+          "consensus": "?"
+        },
+        "jpeg85": {
+          "envelope_slope": -0.08220783225408579,
+          "hough_slope": 0.0,
+          "envelope_category": "/",
+          "hough_category": "-",
+          "consensus": "?"
+        },
+        "jpeg70": {
+          "envelope_slope": -0.08362627197039783,
+          "hough_slope": -0.07692307692307693,
+          "envelope_category": "/",
+          "hough_category": "-",
+          "consensus": "?"
+        },
+        "down75_up": {
+          "envelope_slope": -0.08801054018445335,
+          "hough_slope": -0.13157894736842105,
+          "envelope_category": "/",
+          "hough_category": "/",
+          "consensus": "/"
+        }
+      },
+      "stable": false,
+      "category": "?"
+    },
+    {
+      "id": 12,
+      "box": [
+        1514,
+        62,
+        1592,
+        126
+      ],
+      "variants": {
+        "original": {
+          "envelope_slope": -0.0788966683896433,
+          "hough_slope": 0.6,
+          "envelope_category": "-",
+          "hough_category": "\\",
+          "consensus": "?"
+        },
+        "jpeg85": {
+          "envelope_slope": -0.07660589258023595,
+          "hough_slope": 0.42105263157894735,
+          "envelope_category": "-",
+          "hough_category": "\\",
+          "consensus": "?"
+        },
+        "jpeg70": {
+          "envelope_slope": -0.07492599032000374,
+          "hough_slope": -0.30434782608695654,
+          "envelope_category": "-",
+          "hough_category": "/",
+          "consensus": "?"
+        },
+        "down75_up": {
+          "envelope_slope": -0.07798549430413475,
+          "hough_slope": 0.2702702702702703,
+          "envelope_category": "-",
+          "hough_category": "\\",
+          "consensus": "?"
+        }
+      },
+      "stable": false,
+      "category": "?"
+    }
+  ],
+  "stable_buildings": 2,
+  "roof_sequence": "?????-?-????",
+  "categories_present": [
+    "-"
+  ],
+  "nontrivial": false,
+  "promotion_rule": "synthetic /,-,\\ controls pass; >=10/12 buildings have same envelope+Hough consensus category across original/JPEG85/JPEG70/resize; >=2 categories represented",
+  "promoted": false,
+  "interpretation_guard": "Promotion establishes only a robust visible roof-category sequence, not a key mapping."
+}
