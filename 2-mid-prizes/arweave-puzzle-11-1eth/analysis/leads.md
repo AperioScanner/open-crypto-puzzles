@@ -1,12 +1,16 @@
 # Open leads, ranked
 
-## 1. Shared mechanism grammar of the two pre-launch inspiration candidates (active)
+## 1. Shared inspiration grammar, pending author-series confirmation (active)
 
-Stage 115 cannot identify which Reddit puzzle inspired Tiamat: `8kk0pa` and `8krbd3` tie and neither is directly linked by Tiamat.
+Stage 116 found a strict three-operation intersection across both plausible pre-launch Reddit inspirations:
 
-Stage 116 therefore asks a narrower, defensible question: which concrete decoding operations are independently evidenced in **both** candidate puzzles?
+- visible text/symbol reading
+- ordering/traversal
+- cross-domain conversion
 
-Only the strict intersection may become a mechanism-family prior for Puzzle #11.
+Stage 117 now asks which of these are genuinely recurrent in **Tiamat's own solved Arweave puzzles**, using the Stage-11 solved-mechanism catalog.
+
+Only operations supported across at least two solved puzzles will remain strong enough to guide a new Puzzle #11 test.
 
 ## 2. General format-invariant visible / semantic mechanism
 
@@ -18,8 +22,9 @@ Primary verified as four-step, but still unknown. Stage 114 found no corroborate
 
 ## Closed / deprioritized
 
-- Exact identity of Tiamat's Reddit inspiration: unresolved; do not assert one candidate.
-- Puzzle #9 original Reddit comments: historical context only; no corroborated mechanism.
+- Candidate-specific Reddit-inspiration tricks: blocked by Stage 116.
+- Exact identity of Tiamat's Reddit inspiration: unresolved.
+- Puzzle #9 original Reddit comments: historical context only.
 - Exact 64×25 one-hex-per-cell carrier: rejected.
 - Corrected five-sail +26/+26 width progression: rejected.
 - Direct sail↔skyline alignment: rejected.
