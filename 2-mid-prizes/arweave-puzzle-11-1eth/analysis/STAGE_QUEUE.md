@@ -8,72 +8,88 @@ Do **not** reopen a hypothesis classified COVERED, RETIRED, or independently fal
 1. a concrete implementation defect is demonstrated; or
 2. genuinely new independent evidence changes the hypothesis.
 
-## Review through Stage 115
+## Review through Stage 116
 
-Stage 115 completed successfully and its evidence gates are valid.
+Stage 116 completed successfully with both the synthetic intersection control and source/schema validation passing.
 
-### Stage-115 result
+### Stage-116 result
 
-Primary author context:
-- Tiamat said in the official 2019-10-10 Arweave interview that a Bitcoin puzzle on Reddit inspired his use of the permaweb for puzzles.
-- chronology requires that inspiration to predate the Arweave puzzle series.
+Top pre-launch inspiration candidates remain:
+- `8kk0pa`
+- `8krbd3`
 
-Fixed candidate audit:
-- pre-launch candidates: **2**
-- `8kk0pa` — “1 BTC is hidden in this puzzle. Good luck!”
-- `8krbd3` — “*Prize inside* 2.5mBTC. Private key in puzzle.”
-- both score **6/6** on the predeclared broad construction traits.
-- direct Tiamat reference to either candidate: **none**
-- exact inspiration identified: **False**
-- decision: **EXACT_IDENTITY_UNRESOLVED_FAMILY_PRIOR_ONLY**
+Strict intersection of **confirmed** decoding operations:
 
-Safe shared broad prior:
-- image-based
-- funded crypto reward
-- key/wallet unlock
-- multi-step
-- visible semantic construction
-- public hints/solution material
+1. **visible_text_or_symbol_reading**
+2. **ordering_or_traversal**
+3. **cross_domain_conversion**
+
+Candidate-specific and therefore blocked from transfer:
+- selection/filtering — 8kk0pa only
+- pairing — 8kk0pa only
+- external known-text reference — 8kk0pa only
+- position/geometry — 8kk0pa only
+- custom alphabet — 8krbd3 only
+- numeral-system mapping — 8krbd3 only
+- final ambiguity/brute-force — 8krbd3 only
+
+Decision: **NARROW_SHARED_GRAMMAR**
 
 ### Hypothesis decision
 
-Do **not** claim either Reddit puzzle is the exact inspiration.
+The author-inspiration evidence now supports a narrower family prior than Stage 115, but it is still not evidence that Puzzle #11 uses any candidate-specific trick.
 
-Candidate-specific mechanisms are not transferable to Puzzle #11 without independent evidence.
+Before applying this prior to the #11 image, test whether these same operations actually recur in **Tiamat's own solved Arweave puzzles**. This avoids transferring a generic Bitcoin-puzzle convention that the author may never have reused.
 
 ## Next stage
 
-**Stage 116 — intersection of the two pre-launch solution grammars.**
+**Stage 117 — author-series reuse of the Stage-116 shared grammar.**
 
 Question:
-> Beyond the broad Stage-115 traits, which concrete mechanism operations are independently evidenced in **both** top pre-launch Reddit puzzles?
+> Which Stage-116 operations are independently visible in Tiamat's solved Arweave puzzle mechanisms catalogued in Stage 11?
 
-Fixed vocabulary:
-1. visible text/symbol reading
-2. selection/filtering
-3. pairing
-4. ordering/traversal
-5. custom alphabet/symbol mapping
-6. numeral-system mapping
-7. external reference/known text
-8. position/geometry
-9. cross-domain conversion
-10. final ambiguity/brute-force
-11. exact-pixel dependency
+Conservative predeclared mapping over Stage-11 mechanism classes:
 
-Bounded design:
-1. Use only candidates `8kk0pa` and `8krbd3`, fixed by Stage 115.
-2. Use the checked public-source summaries in `clues/tiamat-inspiration-solution-grammar.json`.
-3. Validate that every vocabulary operation has exactly one evidence record per candidate and that the Stage-115 top candidate IDs match.
-4. Promote an operation only when it is marked **confirmed in both independent candidates**.
-5. Candidate-specific operations are reported but explicitly non-transferable.
-6. “not_confirmed” is not treated as evidence of absence.
-7. No ordered secret text, private key, or wallet candidate is stored or reconstructed.
+### visible_text_or_symbol_reading
+Supported by:
+- medium-translation
+- small-detail-counting
+- symbol-identification
+- secondary-detail-rebus
+- sequence-pattern
+- visual-number-extraction
 
-A useful positive result is a narrow intersection (not the whole grammar) that can guide one future Puzzle #11 visual test. A null result means the inspiration evidence supports only the broad Stage-115 prior.
+### ordering_or_traversal
+Supported only by:
+- sequence-pattern
+
+This intentionally does **not** count generic counting or contextual references as traversal.
+
+### cross_domain_conversion
+Supported by:
+- medium-translation
+- cultural-reference
+- symbol-identification
+- franchise-reference
+- secondary-detail-rebus
+- art-reference
+- reference-to-number
+- technical-context
+- literature-reference
+- cross-domain-reference
+- biographical-rebus
+
+Promotion rule for an operation:
+- Stage-11 source/control structure is intact;
+- at least **2 solved mechanisms** support the operation;
+- those mechanisms occur in at least **2 distinct solved puzzles**.
+
+One-puzzle/single-mechanism support is reported as weak, not promoted.
+
+No Puzzle #11 payload is decoded and no private-key operations are performed.
 
 ## Status
 
-- Stages 1–115: completed and reviewed.
-- Stage 115: VALID — exact inspiration unresolved; broad family prior only.
-- Stage 116: selected for launch.
+- Stages 1–116: completed and reviewed.
+- Stage 116: VALID POSITIVE FAMILY PRIOR — 3 shared operations.
+- Stage 117: selected for launch.
