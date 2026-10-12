@@ -3,6 +3,8 @@
   "scope": "64 vertical cells x 25 px; robust 16-state carrier-structure test only; no ordered class sequence persisted and no private-key operations",
   "exact_dimension_relation": "1600 px = 64 cells * 25 px",
   "features": [
+    "mean_gray",
+    "std_gray",
     "ink100",
     "ink140",
     "ink180",
@@ -17,40 +19,40 @@
     "passed": false,
     "phase0": {
       "phase": 0,
-      "silhouette_k16": 0.9531681974964207,
-      "cross_variant_stability": 0.5625,
+      "silhouette_k16": 1.0,
+      "cross_variant_stability": 0.5104166666666666,
       "occupied_states": 16,
-      "singleton_states": 2,
-      "score": 0.4467975925764472
+      "singleton_states": 0,
+      "score": 0.5104166666666666
     },
-    "phase0_rank": 8,
+    "phase0_rank": 1,
     "best_k": {
-      "k": 10,
-      "silhouette": 0.993825051363509,
-      "occupied": 10,
-      "inertia": 0.04341415830267053
+      "k": 16,
+      "silhouette": 1.0,
+      "occupied": 16,
+      "inertia": 0.0
     },
-    "k16_rank": 11,
-    "k16_tied": false
+    "k16_rank": 1,
+    "k16_tied": true
   },
   "negative_control": {
     "passed": true,
     "phase0": {
       "phase": 0,
-      "silhouette_k16": 0.3083849826007091,
-      "cross_variant_stability": 0.8229166666666666,
+      "silhouette_k16": 0.2925469408002774,
+      "cross_variant_stability": 0.8385416666666666,
       "occupied_states": 16,
-      "singleton_states": 0,
-      "score": 0.25377514193183354
+      "singleton_states": 1,
+      "score": 0.22487006604049098
     },
-    "phase0_rank": 1,
+    "phase0_rank": 3,
     "best_k": {
       "k": 2,
-      "silhouette": 0.447106463420519,
+      "silhouette": 0.4204826315976321,
       "occupied": 2,
-      "inertia": 356.1867419834343
+      "inertia": 437.8410225149653
     },
-    "k16_rank": 10,
+    "k16_rank": 8,
     "k16_tied": false,
     "structural_gate": false
   },
@@ -58,62 +60,62 @@
   "real": {
     "phase0": {
       "phase": 0,
-      "silhouette_k16": 0.30457155419118825,
-      "cross_variant_stability": 0.9895833333333334,
+      "silhouette_k16": 0.34986768521636524,
+      "cross_variant_stability": 0.9947916666666666,
       "occupied_states": 16,
-      "singleton_states": 2,
-      "score": 0.2511657781958584
+      "singleton_states": 3,
+      "score": 0.26103409326689747
     },
-    "phase0_rank": 23,
+    "phase0_rank": 21,
     "top_phase_scores": [
       {
-        "phase": 9,
-        "silhouette_k16": 0.3434455279427251,
-        "cross_variant_stability": 1.0,
+        "phase": 7,
+        "silhouette_k16": 0.36495252845884374,
+        "cross_variant_stability": 0.9895833333333334,
         "occupied_states": 16,
-        "singleton_states": 0,
-        "score": 0.3434455279427251
-      },
-      {
-        "phase": 2,
-        "silhouette_k16": 0.3368958745631677,
-        "cross_variant_stability": 0.9791666666666666,
-        "occupied_states": 16,
-        "singleton_states": 0,
-        "score": 0.32987721050976837
+        "singleton_states": 1,
+        "score": 0.3310550279856699
       },
       {
         "phase": 8,
-        "silhouette_k16": 0.3443693990924047,
+        "silhouette_k16": 0.36088593125390067,
         "cross_variant_stability": 0.9895833333333334,
         "occupied_states": 16,
         "singleton_states": 1,
-        "score": 0.31238369969753726
+        "score": 0.3273661442363943
       },
       {
-        "phase": 1,
-        "silhouette_k16": 0.34277020786072887,
-        "cross_variant_stability": 0.9895833333333334,
+        "phase": 4,
+        "silhouette_k16": 0.3515790851022185,
+        "cross_variant_stability": 0.9947916666666666,
         "occupied_states": 16,
         "singleton_states": 1,
-        "score": 0.310933044456998
+        "score": 0.3206022820311463
       },
       {
-        "phase": 10,
-        "silhouette_k16": 0.30721896917743097,
+        "phase": 2,
+        "silhouette_k16": 0.311880157732127,
         "cross_variant_stability": 0.9895833333333334,
         "occupied_states": 16,
         "singleton_states": 0,
-        "score": 0.3040187715818327
+        "score": 0.308631406089084
+      },
+      {
+        "phase": 10,
+        "silhouette_k16": 0.33664967288814396,
+        "cross_variant_stability": 0.9947916666666666,
+        "occupied_states": 16,
+        "singleton_states": 1,
+        "score": 0.3069882650772528
       }
     ],
     "best_k": {
       "k": 8,
-      "silhouette": 0.4121668883269201,
+      "silhouette": 0.3987078823289263,
       "occupied": 8,
-      "inertia": 89.59220877717186
+      "inertia": 103.96552634777903
     },
-    "k16_silhouette_rank": 18,
+    "k16_silhouette_rank": 14,
     "k16_effectively_tied_best": false,
     "structural_gate": false
   },

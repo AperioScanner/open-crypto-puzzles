@@ -6,13 +6,13 @@
 - positive control pass: **False**
 - negative control pass: **True**
 - controls pass: **False**
-- real phase-0 rank: **23/25**
-- real k=16 silhouette: **0.3046**
-- real k=16 cross-variant stability: **0.9896**
+- real phase-0 rank: **21/25**
+- real k=16 silhouette: **0.3499**
+- real k=16 cross-variant stability: **0.9948**
 - occupied k=16 states: **16/16**
-- singleton states: **2**
+- singleton states: **3**
 - best k by silhouette: **8**
-- k=16 silhouette rank: **18/19**
+- k=16 silhouette rank: **14/19**
 - k=16 effectively tied with best: **False**
 - real structural gate: **False**
 - promoted: **False**
@@ -21,11 +21,11 @@
 
 | rank | phase | score | silhouette16 | stability | occupied | singletons |
 |---:|---:|---:|---:|---:|---:|---:|
-| 1 | 9 | 0.34345 | 0.3434 | 1.0000 | 16 | 0 |
-| 2 | 2 | 0.32988 | 0.3369 | 0.9792 | 16 | 0 |
-| 3 | 8 | 0.31238 | 0.3444 | 0.9896 | 16 | 1 |
-| 4 | 1 | 0.31093 | 0.3428 | 0.9896 | 16 | 1 |
-| 5 | 10 | 0.30402 | 0.3072 | 0.9896 | 16 | 0 |
+| 1 | 7 | 0.33106 | 0.3650 | 0.9896 | 16 | 1 |
+| 2 | 8 | 0.32737 | 0.3609 | 0.9896 | 16 | 1 |
+| 3 | 4 | 0.32060 | 0.3516 | 0.9948 | 16 | 1 |
+| 4 | 2 | 0.30863 | 0.3119 | 0.9896 | 16 | 0 |
+| 5 | 10 | 0.30699 | 0.3366 | 0.9948 | 16 | 1 |
 
 ## Interpretation
 
