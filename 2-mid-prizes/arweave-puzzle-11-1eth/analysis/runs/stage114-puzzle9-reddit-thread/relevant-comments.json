@@ -1,1 +1,126 @@
-[]
+[
+  {
+    "id": "ff6kf2y",
+    "parent_id": null,
+    "author": "roamingandy",
+    "is_op": false,
+    "phase": "pre_solve",
+    "created_utc": null,
+    "created_iso": null,
+    "score": null,
+    "categories": [
+      "date_time"
+    ],
+    "body": "The date is the 05,04(April),2012 and the time is 13:00. Then there's some more shit going on. Let me know if you get there.",
+    "permalink": "/r/ethtrader/comments/ersf73/comment/ff6kf2y/"
+  },
+  {
+    "id": "ff87ik3",
+    "parent_id": null,
+    "author": "trump_sucks_we_know",
+    "is_op": false,
+    "phase": "pre_solve",
+    "created_utc": null,
+    "created_iso": null,
+    "score": null,
+    "categories": [
+      "birds_colors",
+      "literary"
+    ],
+    "body": "The orange bird is at 1:00. It is the only bird facing left. Yet 1:00 in April is 2:00. Plus Orwell... The previous events must be called into question. 1984? I don’t know.",
+    "permalink": "/r/ethtrader/comments/ersf73/comment/ff87ik3/"
+  },
+  {
+    "id": "ff65x96",
+    "parent_id": null,
+    "author": "heathbar24",
+    "is_op": false,
+    "phase": "pre_solve",
+    "created_utc": null,
+    "created_iso": null,
+    "score": null,
+    "categories": [
+      "date_time",
+      "birds_colors",
+      "lines_geometry"
+    ],
+    "body": "Is it something to do with the angle of each of the green leaves and ‘thirteen’?",
+    "permalink": "/r/ethtrader/comments/ersf73/comment/ff65x96/"
+  },
+  {
+    "id": "ff6ik2z",
+    "parent_id": null,
+    "author": "IGsbrnk",
+    "is_op": false,
+    "phase": "pre_solve",
+    "created_utc": null,
+    "created_iso": null,
+    "score": null,
+    "categories": [
+      "lines_geometry"
+    ],
+    "body": "OP, invisible 9 lines on picture is mean something?",
+    "permalink": "/r/ethtrader/comments/ersf73/comment/ff6ik2z/"
+  },
+  {
+    "id": "ff7m11p",
+    "parent_id": null,
+    "author": "[deleted]",
+    "is_op": false,
+    "phase": "pre_solve",
+    "created_utc": null,
+    "created_iso": null,
+    "score": null,
+    "categories": [
+      "stego_pixel",
+      "solve_status"
+    ],
+    "body": "Decrypt using the least significant bit",
+    "permalink": "/r/ethtrader/comments/ersf73/comment/ff7m11p/"
+  },
+  {
+    "id": "ftgcd6k",
+    "parent_id": null,
+    "author": "kid1elvis",
+    "is_op": false,
+    "phase": "post_solve",
+    "created_utc": null,
+    "created_iso": null,
+    "score": null,
+    "categories": [
+      "solve_status"
+    ],
+    "body": "Someone Solved this challenge.",
+    "permalink": "/r/ethtrader/comments/ersf73/comment/ftgcd6k/"
+  },
+  {
+    "id": "ff6q15a",
+    "parent_id": null,
+    "author": "roberto250b",
+    "is_op": false,
+    "phase": "pre_solve",
+    "created_utc": null,
+    "created_iso": null,
+    "score": null,
+    "categories": [
+      "stego_pixel"
+    ],
+    "body": "Can be steganography but its probebly much simpler than that.",
+    "permalink": "/r/ethtrader/comments/ersf73/comment/ff6q15a/"
+  },
+  {
+    "id": "ffa1856",
+    "parent_id": null,
+    "author": "d4f6",
+    "is_op": false,
+    "phase": "pre_solve",
+    "created_utc": null,
+    "created_iso": null,
+    "score": null,
+    "categories": [
+      "solve_status"
+    ],
+    "body": "It's part of a series: https://twitter.com/ArweaveP about half of them are solved already.",
+    "permalink": "/r/ethtrader/comments/ersf73/comment/ffa1856/"
+  }
+]
