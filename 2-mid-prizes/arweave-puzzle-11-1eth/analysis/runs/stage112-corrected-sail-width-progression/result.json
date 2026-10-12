@@ -64,19 +64,19 @@
     },
     "edge": {
       "widths": [
-        27.0,
-        45.0,
-        37.0,
-        73.0,
-        45.0
+        31.0,
+        49.0,
+        69.0,
+        71.0,
+        49.0
       ],
       "ap": {
         "d1": 18.0,
-        "d2": -8.0,
-        "error": 26.0,
-        "mean_step": 5.0
+        "d2": 20.0,
+        "error": 2.0,
+        "mean_step": 19.0
       },
-      "profile_gate": false
+      "profile_gate": true
     }
   },
   "negative_control": {
@@ -98,22 +98,22 @@
     },
     "edge": {
       "widths": [
-        27.0,
-        45.0,
-        33.0,
-        73.0,
-        45.0
+        31.0,
+        49.0,
+        61.0,
+        71.0,
+        49.0
       ],
       "ap": {
         "d1": 18.0,
-        "d2": -12.0,
-        "error": 30.0,
-        "mean_step": 3.0
+        "d2": 12.0,
+        "error": 6.0,
+        "mean_step": 15.0
       },
       "profile_gate": false
     }
   },
-  "controls_pass": false,
+  "controls_pass": true,
   "variants": {
     "original": {
       "centers": [
@@ -164,10 +164,10 @@
       ],
       "edge_widths": [
         31.0,
-        49.0,
-        62.0,
-        50.0,
-        74.0
+        53.0,
+        64.0,
+        54.0,
+        75.0
       ],
       "mask_ap": {
         "d1": 25.0,
@@ -176,10 +176,10 @@
         "mean_step": 20.5
       },
       "edge_ap": {
-        "d1": 18.0,
-        "d2": 13.0,
-        "error": 5.0,
-        "mean_step": 15.5
+        "d1": 22.0,
+        "d2": 11.0,
+        "error": 11.0,
+        "mean_step": 16.5
       },
       "mask_gate": false,
       "edge_gate": false
@@ -232,11 +232,11 @@
         64.0
       ],
       "edge_widths": [
-        30.0,
-        49.0,
-        62.0,
-        54.0,
-        74.0
+        32.0,
+        53.0,
+        64.0,
+        55.0,
+        75.0
       ],
       "mask_ap": {
         "d1": 25.0,
@@ -245,9 +245,9 @@
         "mean_step": 20.5
       },
       "edge_ap": {
-        "d1": 19.0,
-        "d2": 13.0,
-        "error": 6.0,
+        "d1": 21.0,
+        "d2": 11.0,
+        "error": 10.0,
         "mean_step": 16.0
       },
       "mask_gate": false,
@@ -301,11 +301,11 @@
         64.0
       ],
       "edge_widths": [
-        30.0,
-        50.0,
-        62.0,
-        52.0,
-        75.0
+        31.0,
+        53.0,
+        64.0,
+        54.0,
+        76.0
       ],
       "mask_ap": {
         "d1": 26.0,
@@ -314,10 +314,10 @@
         "mean_step": 21.0
       },
       "edge_ap": {
-        "d1": 20.0,
-        "d2": 12.0,
-        "error": 8.0,
-        "mean_step": 16.0
+        "d1": 22.0,
+        "d2": 11.0,
+        "error": 11.0,
+        "mean_step": 16.5
       },
       "mask_gate": false,
       "edge_gate": false
@@ -371,10 +371,10 @@
       ],
       "edge_widths": [
         31.0,
-        50.0,
-        65.0,
-        50.0,
-        74.0
+        53.0,
+        64.0,
+        55.0,
+        76.0
       ],
       "mask_ap": {
         "d1": 24.0,
@@ -383,10 +383,10 @@
         "mean_step": 20.0
       },
       "edge_ap": {
-        "d1": 19.0,
-        "d2": 15.0,
-        "error": 4.0,
-        "mean_step": 17.0
+        "d1": 22.0,
+        "d2": 11.0,
+        "error": 11.0,
+        "mean_step": 16.5
       },
       "mask_gate": false,
       "edge_gate": false
@@ -400,11 +400,11 @@
     64.0
   ],
   "median_edge_widths": [
-    30.5,
-    49.5,
-    62.0,
-    51.0,
-    74.0
+    31.0,
+    53.0,
+    64.0,
+    54.5,
+    75.5
   ],
   "median_mask_ap": {
     "d1": 25.0,
@@ -413,14 +413,14 @@
     "mean_step": 20.5
   },
   "median_edge_ap": {
-    "d1": 19.0,
-    "d2": 12.5,
-    "error": 6.5,
-    "mean_step": 15.75
+    "d1": 22.0,
+    "d2": 11.0,
+    "error": 11.0,
+    "mean_step": 16.5
   },
   "permutation_p_mask": 0.2,
-  "permutation_p_edge": 0.16666666666666666,
-  "cross_method_profile_correlation": 0.8986400639948087,
+  "permutation_p_edge": 0.2,
+  "cross_method_profile_correlation": 0.921891801277638,
   "qualitative_stage18_shape_pass": false,
   "all_real_variant_method_gates_pass": false,
   "promotion_rule": "positive/negative synthetic controls behave correctly; sail-center drift<=8px; both estimators in all four variants reproduce first-three AP error<=4px with positive mean step 18..34px; median profiles reproduce Stage-18 qualitative shape; cross-method profile correlation>=0.90; both fixed-order permutation p<=0.05",
