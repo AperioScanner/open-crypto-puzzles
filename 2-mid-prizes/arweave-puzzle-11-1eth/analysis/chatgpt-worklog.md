@@ -300,3 +300,15 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Fresh public research surfaced the original 2020-01-21 r/ethtrader Puzzle #9 thread, which was not covered by the prior Twitter reconstruction.
 - The indexed comments include several contemporaneous concrete hypotheses, especially a date/time path (05/04/2012 and 13:00), bird/color/direction observations, Orwell/1984, “invisible 9 lines”, and LSB suggestions; a 2020-06-09 comment notes the challenge was solved.
 - Stage 114 selected to reconstruct the primary Reddit thread and distinguish OP/author replies, pre-solve hypotheses, and post-solve evidence. Community speculation is not promoted without corroboration.
+
+
+## 2026-10-12 — corrected Stage 114 review and Stage 115 rationale
+
+- Initial Stage 114 could not access Reddit JSON or Wayback from the GitHub runner, so it was correctly treated as source-recovery failure rather than a negative.
+- Repaired Stage 114 under the same number using a bounded public snapshot independently verified against the canonical Reddit thread. Source controls then passed.
+- Valid result: 8 mechanism-relevant comments, 7 pre-solve and 1 post-solve; zero mechanism-specific OP replies and zero independently corroborated community paths. Decision: NO_CORROBORATED_MECHANISM.
+- The Reddit date/time, bird, Orwell, angle/line and LSB comments remain community hypotheses only.
+- Fresh primary author evidence from the official 2019-10-10 "Community Spotlight: Meeting Tiamat" interview says Tiamat saw a Bitcoin puzzle on Reddit and then recognized the permaweb as a good immutable home for puzzles.
+- Chronology is powerful: since Tiamat's series already existed by late May 2019, later 2019 Reddit puzzles cannot be the inspiration.
+- Two May-2018 Reddit image puzzles are the strongest pre-launch candidates identified so far: 8kk0pa (1 BTC image treasure hunt) and 8krbd3 (2.5mBTC private key encoded in a visible custom character system).
+- Stage 115 selected to score the fixed pre-launch candidates, require a direct Tiamat link for exact identification, and otherwise extract only shared construction traits as a family prior.
