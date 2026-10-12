@@ -1,0 +1,1566 @@
+{
+  "experiment_id": "A11-EXP-110",
+  "scope": "per-building conditional stroke-tone classes under crop/loss perturbations; no private-key operations",
+  "metrics": [
+    "otsu_ink_median_darkness",
+    "edge_median_darkness"
+  ],
+  "margins": [
+    0.08,
+    0.14,
+    0.2
+  ],
+  "jitters": [
+    [
+      0,
+      0
+    ],
+    [
+      -4,
+      0
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      0,
+      -4
+    ],
+    [
+      0,
+      4
+    ]
+  ],
+  "variants": [
+    "original",
+    "jpeg85",
+    "jpeg70",
+    "down75_up"
+  ],
+  "synthetic_controls": {
+    "binary": {
+      "k": 2,
+      "conditions": 120,
+      "correct_model_fraction": 0.2,
+      "label_accuracy": 0.9972222222222222,
+      "pass": false
+    },
+    "ternary": {
+      "k": 3,
+      "conditions": 120,
+      "correct_model_fraction": 1.0,
+      "label_accuracy": 0.9743055555555555,
+      "pass": false
+    }
+  },
+  "controls_pass": false,
+  "winner_counts": {
+    "otsu_ink_median_darkness": {
+      "3": 60
+    },
+    "edge_median_darkness": {
+      "3": 60
+    }
+  },
+  "dominant_model_by_metric": {
+    "otsu_ink_median_darkness": {
+      "k": 3,
+      "win_fraction": 1.0,
+      "counts": {
+        "2": 0,
+        "3": 60
+      }
+    },
+    "edge_median_darkness": {
+      "k": 3,
+      "win_fraction": 1.0,
+      "counts": {
+        "2": 0,
+        "3": 60
+      }
+    }
+  },
+  "same_dominant_k": true,
+  "dominant_k": 3,
+  "dominant_labels": [
+    2,
+    2,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    2,
+    1,
+    0,
+    1
+  ],
+  "per_building_stability": [
+    1.0,
+    1.0,
+    0.9916666666666667,
+    0.625,
+    0.875,
+    0.6166666666666667,
+    1.0,
+    1.0,
+    0.8583333333333333,
+    0.9583333333333334,
+    1.0,
+    0.5833333333333334
+  ],
+  "buildings_ge_90pct": 7,
+  "class_counts": {
+    "0": 5,
+    "1": 4,
+    "2": 3
+  },
+  "redundant_with_hv_or_retired_density": false,
+  "promotion_rule": "binary and ternary synthetic tone controls pass; both real metrics choose the same k in >=80% of conditions; >=10/12 buildings retain the same ordered tone class in >=90% of all metric\u00d7variant\u00d7margin\u00d7jitter conditions; every class has >=2 members; binary result not within 1 bit of H/V or retired density labels",
+  "promoted": false,
+  "condition_summary": [
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -71.41036628579164,
+      "bic3": -76.0115690812523
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -66.6581989997687,
+      "bic3": -74.89522905408518
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -71.69372505800865,
+      "bic3": -76.45045985575968
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -65.69246625701733,
+      "bic3": -72.90894567174729
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -71.6109343884854,
+      "bic3": -75.80531429436485
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -66.59579242936329,
+      "bic3": -75.47494476818963
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -70.68502542192599,
+      "bic3": -75.4109955215994
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -67.50658098506631,
+      "bic3": -75.3629006927205
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -71.1566924105339,
+      "bic3": -77.42027526087688
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -66.9503018931371,
+      "bic3": -75.20524923100342
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -68.44997736776412,
+      "bic3": -78.31550259360819
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -64.34960356634419,
+      "bic3": -74.05793349816926
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -67.72341724659961,
+      "bic3": -77.93874888827995
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.19147088472119,
+      "bic3": -70.9569605887786
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -67.98395112270615,
+      "bic3": -78.51418768972411
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -66.34988983660848,
+      "bic3": -74.53911916975278
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -67.78637075616685,
+      "bic3": -75.82746860125849
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.623101879650726,
+      "bic3": -74.49449877779881
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -69.24756745953415,
+      "bic3": -79.20825003375862
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.10295815908653,
+      "bic3": -71.01984570422556
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -66.35825600467213,
+      "bic3": -75.6896705054451
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.42075393397406,
+      "bic3": -73.50177122844977
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -66.07479897841374,
+      "bic3": -74.10234387399206
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.33248006122603,
+      "bic3": -68.12957990620922
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -66.48189091279919,
+      "bic3": -74.49449877779881
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.216850116276056,
+      "bic3": -75.76002543240577
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -66.09711165141252,
+      "bic3": -77.12732697500815
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -62.81206618901424,
+      "bic3": -71.03966840572122
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -67.96240810797113,
+      "bic3": -80.0187757853891
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.49503329874518,
+      "bic3": -72.54363224057295
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -72.79506062471214,
+      "bic3": -80.69280351475206
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -67.44325844189113,
+      "bic3": -76.7367191897732
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -74.62801721407858,
+      "bic3": -83.04963189556005
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -65.99863966457175,
+      "bic3": -73.56159533960178
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -73.51635248373762,
+      "bic3": -79.93556180349856
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -68.15030138583599,
+      "bic3": -76.64247232338991
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -73.14084671743689,
+      "bic3": -80.25998905047652
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -67.72839116812432,
+      "bic3": -76.31010737860137
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -72.87118691088996,
+      "bic3": -79.795854871574
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -67.03765441717191,
+      "bic3": -77.55438648156863
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -71.69702221423218,
+      "bic3": -84.47166148814264
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -64.9514975051138,
+      "bic3": -75.61500451518884
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -70.68696536454024,
+      "bic3": -83.29683845654392
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.13747897743625,
+      "bic3": -72.7720790402463
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -70.01428860980936,
+      "bic3": -81.34748369424426
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -67.10615259296893,
+      "bic3": -77.61142623151619
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -71.5926137742398,
+      "bic3": -81.34748369424423
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.74050292517972,
+      "bic3": -76.4872376099818
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -72.0402181111983,
+      "bic3": -82.94841082736889
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.94427237948296,
+      "bic3": -73.12926413189746
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -68.8041516589369,
+      "bic3": -80.53274240455565
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.390737218280286,
+      "bic3": -73.76443561392301
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -68.92917883703586,
+      "bic3": -82.10130411363767
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.67577916880885,
+      "bic3": -70.50573691250148
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -68.3870827019641,
+      "bic3": -77.39329506308567
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.536489409638484,
+      "bic3": -76.95558002371433
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -69.00677522148362,
+      "bic3": -82.1087872249143
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.90100484360588,
+      "bic3": -73.30368580732681
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -71.3110460863526,
+      "bic3": -85.30641376946397
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.631055044638636,
+      "bic3": -74.08059739917675
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -74.66343288169355,
+      "bic3": -84.60327497162342
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -67.19801666113756,
+      "bic3": -76.40745741352305
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -75.17980390297393,
+      "bic3": -84.07742409656024
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -66.00043443282564,
+      "bic3": -74.0512382851613
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -75.70649466641653,
+      "bic3": -85.83692368222168
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -67.13984959754981,
+      "bic3": -76.07843210490054
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -75.7484809829678,
+      "bic3": -84.43551117166393
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -67.445282835843,
+      "bic3": -77.0698044379634
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -74.41986251679904,
+      "bic3": -83.42307403126921
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -66.42127385866081,
+      "bic3": -77.237662434193
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -72.47188018751571,
+      "bic3": -86.39673101032912
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.91641007298748,
+      "bic3": -76.51029737812061
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -71.52586611587432,
+      "bic3": -85.3946775045055
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.03274121109737,
+      "bic3": -72.70550876178578
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -71.8440862328115,
+      "bic3": -83.8955508579063
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -67.31306365862754,
+      "bic3": -79.03705015622745
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -73.18748337754654,
+      "bic3": -85.61404186373352
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -62.859079236415745,
+      "bic3": -76.54791332602778
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -72.20885595902396,
+      "bic3": -84.0461052630254
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.58842210553045,
+      "bic3": -74.71748154971354
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -71.18430783211974,
+      "bic3": -83.0343492774702
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.4507588417087,
+      "bic3": -74.76339136153462
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -70.04597270581924,
+      "bic3": -81.41087859139978
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -62.99872960619529,
+      "bic3": -73.0003837356256
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -71.22127375097338,
+      "bic3": -80.16854481704473
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -62.721351440520955,
+      "bic3": -82.36348105701975
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -70.38385080695582,
+      "bic3": -84.84633434771706
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.10153830708682,
+      "bic3": -74.04486536284969
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -72.96382186395078,
+      "bic3": -85.21987233245093
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -63.767295129362005,
+      "bic3": -75.94333498523298
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -71.3996653252815,
+      "bic3": -78.84795920616722
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -68.33879033536347,
+      "bic3": -75.25212795301769
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -71.29206139112675,
+      "bic3": -78.01966446596413
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -66.55230550610415,
+      "bic3": -72.44992405651305
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -71.48780961461475,
+      "bic3": -80.68319849007278
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -68.21381400240426,
+      "bic3": -75.75818803211942
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -70.89692783348383,
+      "bic3": -80.5218071345179
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -67.89253312995056,
+      "bic3": -75.5445296545418
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -72.09497467877932,
+      "bic3": -78.89877175231643
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -68.16595456281095,
+      "bic3": -76.53379352399341
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -70.00466220544256,
+      "bic3": -78.04809207771899
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -67.87018256585003,
+      "bic3": -74.15238225930733
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -69.0079875370293,
+      "bic3": -79.9275841176007
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -66.12728417313679,
+      "bic3": -70.78797298889339
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -69.47689039928073,
+      "bic3": -77.37366017405995
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -66.62676603716663,
+      "bic3": -77.90252144942377
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -68.50323010266185,
+      "bic3": -77.89256707307527
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -66.55436762751664,
+      "bic3": -73.6270507911567
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -70.16240445954264,
+      "bic3": -76.85692052869484
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -65.37276955870172,
+      "bic3": -73.89459959351655
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -69.0806333209839,
+      "bic3": -78.61260216783083
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -65.07523678409694,
+      "bic3": -72.17165817650911
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -66.7395921693293,
+      "bic3": -76.82796220923879
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -66.37081620331418,
+      "bic3": -69.8327481286494
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -68.83216941623634,
+      "bic3": -74.86665286828904
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -65.11193367869159,
+      "bic3": -73.8193327776631
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -69.45257827597483,
+      "bic3": -77.71132633482179
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -64.08850423461077,
+      "bic3": -73.15635095663475
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "otsu_ink_median_darkness",
+      "winner": 3,
+      "bic2": -69.48610244118733,
+      "bic3": -80.02786325269196
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "edge_median_darkness",
+      "winner": 3,
+      "bic2": -65.42731801735422,
+      "bic3": -73.88820448579719
+    }
+  ],
+  "interpretation_guard": "Promotion validates only a visible stroke-tone channel. No class-to-secret mapping is attempted."
+}
