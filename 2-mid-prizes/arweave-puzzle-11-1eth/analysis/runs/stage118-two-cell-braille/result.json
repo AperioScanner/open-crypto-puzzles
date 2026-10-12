@@ -1,0 +1,106 @@
+{
+  "experiment_id": "A11-EXP-118",
+  "scope": "exact standard-Braille 6+6 audit of fixed 12-building H/V sequence; no sliding windows or arbitrary code sweep",
+  "sequence": "HHVVHHVHHHHV",
+  "symbol_counts": {
+    "H": 8,
+    "V": 4
+  },
+  "readings": {
+    "ltr_H_raised": {
+      "cell1_dots": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "cell2_dots": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "cell1_letter": null,
+      "cell2_letter": "T",
+      "both_letters": false,
+      "decoded_pair": "?T"
+    },
+    "ltr_V_raised": {
+      "cell1_dots": [
+        3,
+        4
+      ],
+      "cell2_dots": [
+        1,
+        6
+      ],
+      "cell1_letter": null,
+      "cell2_letter": null,
+      "both_letters": false,
+      "decoded_pair": "??"
+    },
+    "rtl_H_raised": {
+      "cell1_dots": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "cell2_dots": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "cell1_letter": "T",
+      "cell2_letter": null,
+      "both_letters": false,
+      "decoded_pair": "T?"
+    },
+    "rtl_V_raised": {
+      "cell1_dots": [
+        1,
+        6
+      ],
+      "cell2_dots": [
+        3,
+        4
+      ],
+      "cell1_letter": null,
+      "cell2_letter": null,
+      "both_letters": false,
+      "decoded_pair": "??"
+    }
+  },
+  "positive_control": {
+    "pair": "AR",
+    "encoded": "HVVVVVHHHVHV",
+    "decoded": {
+      "cell1_dots": [
+        1
+      ],
+      "cell2_dots": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "cell1_letter": "A",
+      "cell2_letter": "R",
+      "both_letters": true,
+      "decoded_pair": "AR"
+    },
+    "passed": true
+  },
+  "count_matched_null": {
+    "total_sequences": 495,
+    "expected_total": 495,
+    "sequences_with_any_two_letter_reading": 242,
+    "familywise_probability": 0.4888888888888889
+  },
+  "any_two_letter_reading": false,
+  "promotion_rule": "positive control passes; at least one of exactly four standard direction/polarity readings yields two alphabetic Braille letters; count-matched familywise probability <=0.05",
+  "promoted": false,
+  "interpretation_guard": "A positive result would only support a standard two-cell Braille reading of the visible H/V sequence, not any secret/key derivation.",
+  "safety_guard": "No secret candidate is generated, derived or verified."
+}
