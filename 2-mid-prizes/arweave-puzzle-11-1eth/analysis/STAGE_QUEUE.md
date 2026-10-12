@@ -8,88 +8,63 @@ Do **not** reopen a hypothesis classified COVERED, RETIRED, or independently fal
 1. a concrete implementation defect is demonstrated; or
 2. genuinely new independent evidence changes the hypothesis.
 
-## Review through Stage 116
+## Review through Stage 117
 
-Stage 116 completed successfully with both the synthetic intersection control and source/schema validation passing.
+Stage 117 completed successfully. Both source/schema and synthetic controls passed.
 
-### Stage-116 result
+### Stage-117 result
 
-Top pre-launch inspiration candidates remain:
-- `8kk0pa`
-- `8krbd3`
+The strict Stage-116 inspiration grammar had three operations:
+- visible_text_or_symbol_reading
+- ordering_or_traversal
+- cross_domain_conversion
 
-Strict intersection of **confirmed** decoding operations:
+Testing those against Tiamat's own solved Arweave puzzles leaves only two recurrent author-series operations:
 
-1. **visible_text_or_symbol_reading**
-2. **ordering_or_traversal**
-3. **cross_domain_conversion**
+1. **cross_domain_conversion**
+   - 15 supporting mechanisms
+   - appears in solved puzzles 5, 7 and 8
+2. **visible_text_or_symbol_reading**
+   - 6 supporting mechanisms
+   - appears in solved puzzles 5 and 7
 
-Candidate-specific and therefore blocked from transfer:
-- selection/filtering — 8kk0pa only
-- pairing — 8kk0pa only
-- external known-text reference — 8kk0pa only
-- position/geometry — 8kk0pa only
-- custom alphabet — 8krbd3 only
-- numeral-system mapping — 8krbd3 only
-- final ambiguity/brute-force — 8krbd3 only
+`ordering_or_traversal` appears in only one solved puzzle and is not promoted.
 
-Decision: **NARROW_SHARED_GRAMMAR**
+Decision: **AUTHOR_SERIES_INTERSECTION**.
 
 ### Hypothesis decision
 
-The author-inspiration evidence now supports a narrower family prior than Stage 115, but it is still not evidence that Puzzle #11 uses any candidate-specific trick.
+This is genuinely new independent evidence. It permits one narrowly predeclared revisit of a previously observed visible symbol family, but not generic H/V mining.
 
-Before applying this prior to the #11 image, test whether these same operations actually recur in **Tiamat's own solved Arweave puzzles**. This avoids transferring a generic Bitcoin-puzzle convention that the author may never have reused.
+The 12 building interiors form the stable visible binary sequence `HHVVHHVHHHHV`. Twelve binary symbols have an exact, standard human-readable cross-domain fit to **two 6-dot Braille cells**. Braille has not previously been tested in the repository.
+
+This exact dimensional fit plus Stage-117's recurrent visible-symbol + cross-domain prior satisfies the anti-recycling exception for one bounded test.
 
 ## Next stage
 
-**Stage 117 — author-series reuse of the Stage-116 shared grammar.**
+**Stage 118 — exact two-cell Braille audit of the 12 building H/V sequence.**
 
-Question:
-> Which Stage-116 operations are independently visible in Tiamat's solved Arweave puzzle mechanisms catalogued in Stage 11?
+Bounded design:
+1. Fixed sequence: `HHVVHHVHHHHV`; do not alter/re-segment buildings.
+2. Standard Braille dot numbering only (1,2,3,4,5,6).
+3. Exactly four predeclared readings:
+   - left→right, H=raised
+   - left→right, V=raised
+   - right→left, H=raised
+   - right→left, V=raised
+4. Split only as 6+6; no sliding windows.
+5. Positive control encodes/decodes two known Braille letters.
+6. Null calibration enumerates all 12-bit strings with the same H/V counts as the observed sequence.
+7. Promotion requires:
+   - both cells decode to standard alphabetic Braille letters in a predeclared reading;
+   - the all-letter outcome is familywise exceptional under the count-matched null (p<=0.05).
 
-Conservative predeclared mapping over Stage-11 mechanism classes:
+If no reading produces two letters, or the result is not exceptional, retire standard two-cell Braille. Do not expand to arbitrary binary alphabets after a negative.
 
-### visible_text_or_symbol_reading
-Supported by:
-- medium-translation
-- small-detail-counting
-- symbol-identification
-- secondary-detail-rebus
-- sequence-pattern
-- visual-number-extraction
-
-### ordering_or_traversal
-Supported only by:
-- sequence-pattern
-
-This intentionally does **not** count generic counting or contextual references as traversal.
-
-### cross_domain_conversion
-Supported by:
-- medium-translation
-- cultural-reference
-- symbol-identification
-- franchise-reference
-- secondary-detail-rebus
-- art-reference
-- reference-to-number
-- technical-context
-- literature-reference
-- cross-domain-reference
-- biographical-rebus
-
-Promotion rule for an operation:
-- Stage-11 source/control structure is intact;
-- at least **2 solved mechanisms** support the operation;
-- those mechanisms occur in at least **2 distinct solved puzzles**.
-
-One-puzzle/single-mechanism support is reported as weak, not promoted.
-
-No Puzzle #11 payload is decoded and no private-key operations are performed.
+No private-key material is generated or tested.
 
 ## Status
 
-- Stages 1–116: completed and reviewed.
-- Stage 116: VALID POSITIVE FAMILY PRIOR — 3 shared operations.
-- Stage 117: selected for launch.
+- Stages 1–117: completed and reviewed.
+- Stage 117: VALID AUTHOR-SERIES PRIOR — cross-domain conversion + visible symbol reading.
+- Stage 118: selected for launch.
