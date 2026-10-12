@@ -1,0 +1,179 @@
+{
+  "experiment_id": "A11-EXP-109",
+  "scope": "robustness and salience of the central inter-building gap producing a 5|7 skyline split; no private-key operations",
+  "geometry_gaps": [
+    {
+      "after_building": 1,
+      "x0": 322,
+      "x1": 326,
+      "width": 4,
+      "mid": 324.0
+    },
+    {
+      "after_building": 2,
+      "x0": 412,
+      "x1": 416,
+      "width": 4,
+      "mid": 414.0
+    },
+    {
+      "after_building": 3,
+      "x0": 500,
+      "x1": 502,
+      "width": 2,
+      "mid": 501.0
+    },
+    {
+      "after_building": 4,
+      "x0": 676,
+      "x1": 678,
+      "width": 2,
+      "mid": 677.0
+    },
+    {
+      "after_building": 5,
+      "x0": 782,
+      "x1": 884,
+      "width": 102,
+      "mid": 833.0
+    },
+    {
+      "after_building": 6,
+      "x0": 978,
+      "x1": 980,
+      "width": 2,
+      "mid": 979.0
+    },
+    {
+      "after_building": 7,
+      "x0": 1140,
+      "x1": 1142,
+      "width": 2,
+      "mid": 1141.0
+    },
+    {
+      "after_building": 8,
+      "x0": 1258,
+      "x1": 1260,
+      "width": 2,
+      "mid": 1259.0
+    },
+    {
+      "after_building": 9,
+      "x0": 1348,
+      "x1": 1350,
+      "width": 2,
+      "mid": 1349.0
+    },
+    {
+      "after_building": 10,
+      "x0": 1452,
+      "x1": 1454,
+      "width": 2,
+      "mid": 1453.0
+    },
+    {
+      "after_building": 11,
+      "x0": 1510,
+      "x1": 1514,
+      "width": 4,
+      "mid": 1512.0
+    }
+  ],
+  "dominant_geometry_gap": {
+    "after_building": 5,
+    "x0": 782,
+    "x1": 884,
+    "width": 102,
+    "mid": 833.0
+  },
+  "second_largest_gap": {
+    "after_building": 1,
+    "x0": 322,
+    "x1": 326,
+    "width": 4,
+    "mid": 324.0
+  },
+  "dominant_to_second_ratio": 25.5,
+  "dominant_fraction_of_total_gap_space": 0.796875,
+  "normalized_distance_of_gap_midpoint_from_canvas_center": 0.020625,
+  "dirichlet_exchangeable_null_p": 4.9999750001249995e-06,
+  "detection_rows": [
+    {
+      "variant": "original",
+      "threshold": 100,
+      "best_gap": null,
+      "matches_geometry_gap": false
+    },
+    {
+      "variant": "original",
+      "threshold": 140,
+      "best_gap": null,
+      "matches_geometry_gap": false
+    },
+    {
+      "variant": "original",
+      "threshold": 180,
+      "best_gap": null,
+      "matches_geometry_gap": false
+    },
+    {
+      "variant": "jpeg85",
+      "threshold": 100,
+      "best_gap": null,
+      "matches_geometry_gap": false
+    },
+    {
+      "variant": "jpeg85",
+      "threshold": 140,
+      "best_gap": null,
+      "matches_geometry_gap": false
+    },
+    {
+      "variant": "jpeg85",
+      "threshold": 180,
+      "best_gap": null,
+      "matches_geometry_gap": false
+    },
+    {
+      "variant": "jpeg70",
+      "threshold": 100,
+      "best_gap": null,
+      "matches_geometry_gap": false
+    },
+    {
+      "variant": "jpeg70",
+      "threshold": 140,
+      "best_gap": null,
+      "matches_geometry_gap": false
+    },
+    {
+      "variant": "jpeg70",
+      "threshold": 180,
+      "best_gap": null,
+      "matches_geometry_gap": false
+    },
+    {
+      "variant": "down75_up",
+      "threshold": 100,
+      "best_gap": null,
+      "matches_geometry_gap": false
+    },
+    {
+      "variant": "down75_up",
+      "threshold": 140,
+      "best_gap": null,
+      "matches_geometry_gap": false
+    },
+    {
+      "variant": "down75_up",
+      "threshold": 180,
+      "best_gap": null,
+      "matches_geometry_gap": false
+    }
+  ],
+  "all_variant_threshold_detections_match": false,
+  "promotion_rule": "largest geometry gap is after building 5; width >=5x second-largest; midpoint within 10% of canvas center; independent lower-skyline detector overlaps it in all 12 variant\u00d7threshold conditions; Dirichlet concentration p<=0.01",
+  "promoted": false,
+  "interpretation_guard": "Promotion establishes only a robust 5|7 visual delimiter, not any numeric or secret-key interpretation."
+}
