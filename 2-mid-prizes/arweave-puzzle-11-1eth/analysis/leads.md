@@ -1,10 +1,8 @@
 # Open leads, ranked
 
-## 1. Small-sail radial spoke counts (active)
+## 1. Building fill-density categories (active)
 
-The five small sails visibly contain multiple apex-to-base rays. Width/gap/direction families were tested; internal spoke counts were not.
-
-Stage 105 tests whether those counts form a robust visible sequence across lossy re-encoding using Hough and radial-profile estimators.
+The 12 building interiors visibly differ in how densely they are shaded. Stage 106 tests whether that forms a robust low/high sequence independent of the already-known H/V hatch orientation.
 
 ## 2. Image-only multi-step semantic prior
 
@@ -14,11 +12,12 @@ Puzzle #9 is primary-verified as a four-step image puzzle, but no concrete step 
 
 Still supported by Stage 31 and the archived "format does not matter" statement.
 
-## Closed / do not recycle
+## Closed / deprioritized
 
-- Building enclosed topology: Stage 104 stable 0/12.
-- Building roof profiles: Stage 103 stable 2/12.
-- Small-sail L/R direction: Stage 102 stable 3/5.
+- Small-sail spoke count: detector controls failed twice; unresolved and abandoned pending new evidence.
+- Building enclosed topology: stable 0/12.
+- Building roof profiles: stable 2/12.
+- Small-sail L/R direction: stable 3/5.
 - Literal OCR branch: retired.
 - Direct 16-gray-mode alphabet: rejected.
 - Large-sail 64/256 one-stroke-per-symbol carrier: rejected.
