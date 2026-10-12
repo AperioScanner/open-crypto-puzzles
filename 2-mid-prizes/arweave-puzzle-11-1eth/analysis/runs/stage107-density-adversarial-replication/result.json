@@ -1,0 +1,2583 @@
+{
+  "experiment_id": "A11-EXP-107",
+  "scope": "adversarial crop/margin/jitter replication of Stage106 density labels plus exact association audit vs H/V; no private-key operations",
+  "stage106_reference_labels": [
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1
+  ],
+  "stage106_reference_sequence": "DDSSDDSSDSSD",
+  "controls": {
+    "pass": true,
+    "conditions": 36,
+    "failures": []
+  },
+  "conditions_tested": 180,
+  "per_building_match_rate": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.37777777777777777,
+    0.35,
+    1.0,
+    1.0,
+    1.0,
+    0.9944444444444445,
+    1.0,
+    0.4666666666666667
+  ],
+  "buildings_ge_90pct": 9,
+  "buildings_ge_95pct": 9,
+  "median_condition_hamming_vs_stage106": 3.0,
+  "max_condition_hamming_vs_stage106": 3,
+  "per_metric_median_hamming": {
+    "mean_darkness": 3.0,
+    "ink140": 3.0,
+    "ink160": 3.0
+  },
+  "hv_sequence": "HHVVHHVHHHHV",
+  "density_vs_hv_abs_phi": 0.35355339059327373,
+  "density_vs_hv_exact_p": 0.5454545454545454,
+  "exact_permutations": 924,
+  "hamming_to_hv": 8,
+  "hamming_to_inverse_hv": 4,
+  "redundant_with_hv": false,
+  "relation_to_hv": "STATISTICALLY_INDEPENDENT_AT_THIS_SAMPLE_SIZE",
+  "joint_state_sequence": null,
+  "joint_state_counts": null,
+  "condition_summary": [
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3192110924710076,
+        0.4976051727877664
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3345152876523528,
+        0.5248552949143198
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3722482967153462,
+        0.5617492558032885
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.31420867570645833,
+        0.49387537632722306
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.32884478443545867,
+        0.5210656581850442
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.36570216525530713,
+        0.5584543000119208
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3283433601909731,
+        0.4933957755994054
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.34506880418188096,
+        0.5208515149718739
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.38309271973178866,
+        0.557122114807378
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3278754244233297,
+        0.5095608208303806
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3436198766636043,
+        0.5374146225312443
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.382295271870067,
+        0.5746601789723154
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3124571848746221,
+        0.4851292096181616
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.32757834172672473,
+        0.5119401179261599
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3644372659932615,
+        0.5482774961847171
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3697044295591472,
+        0.5715793279775317
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3878064332072173,
+        0.6063509746158192
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.4276318408074403,
+        0.6415071019757149
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.36066592171389755,
+        0.5758708660371364
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3772643147424438,
+        0.6113214769299011
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.4168665143018773,
+        0.6455590700974733
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 2,
+      "cluster_centers": [
+        0.3636723248112366,
+        0.5445434013000023
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 2,
+      "cluster_centers": [
+        0.3816148725934937,
+        0.5771896816441744
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 2,
+      "cluster_centers": [
+        0.4210036344460348,
+        0.6141192697762835
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3741536888724771,
+        0.5818535276965765
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3926567099314729,
+        0.6169544532643377
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.43279537971514,
+        0.6519656124054306
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 1,
+      "cluster_centers": [
+        0.33930290571258787,
+        0.5100272572472755
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 2,
+      "cluster_centers": [
+        0.3689151282495207,
+        0.55785287407993
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3787638744893711,
+        0.5621712476927209
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.36917083361496816,
+        0.5950125655403885
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.38635327476290626,
+        0.6301922120961061
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.42795802708551256,
+        0.6665064397077654
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.35874449201106506,
+        0.6007799023422981
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3740161865907845,
+        0.6366728929728102
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.4150194599762801,
+        0.6724592402902262
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3704121556218121,
+        0.5823214943922386
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.388517959965444,
+        0.6164371469458462
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.4293121458134252,
+        0.6534995355376465
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.375807787667154,
+        0.6119890379992724
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.39319076200749636,
+        0.6495044563279858
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.43538405817604353,
+        0.6863817127363109
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3681485077778186,
+        0.5797433332299554
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3857600276716629,
+        0.6149538801436067
+      ]
+    },
+    {
+      "variant": "original",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.4264408917114151,
+        0.651010419020361
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3215718094344397,
+        0.497547265773737
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3349706587804682,
+        0.5251242669538996
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3728220199692956,
+        0.5614628256430579
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.31662192705942377,
+        0.49390581208192413
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3292719285688411,
+        0.5216300406682564
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.36609564734841055,
+        0.5580102834472752
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.33058856668985614,
+        0.49335184589676584
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3456449615857325,
+        0.5209742392953812
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.38365987531234297,
+        0.5565616934046634
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.33017444125412526,
+        0.5093799461023311
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.34419921269410225,
+        0.5375264615033163
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.38295605593825227,
+        0.574430982344108
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.31491364384079906,
+        0.4851938445650863
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3280868657837592,
+        0.5118689737266032
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.36504954707657805,
+        0.5480734894989425
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3715432954138131,
+        0.5704616091021986
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3881631793078248,
+        0.6071578039937607
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.42801503302578425,
+        0.6411923374203455
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.36262576978686384,
+        0.5747083401279601
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.37760406304748906,
+        0.6116429636559304
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.4171863862406659,
+        0.6449054753262314
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 2,
+      "cluster_centers": [
+        0.36554252286567385,
+        0.5438343386485602
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 2,
+      "cluster_centers": [
+        0.38215230816132206,
+        0.5776716017776028
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 2,
+      "cluster_centers": [
+        0.4218092618246912,
+        0.6135135941658303
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.37593584159664567,
+        0.5806394733966393
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3930221322351562,
+        0.6175400976514723
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.43307023508290077,
+        0.6516623522684767
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 1,
+      "cluster_centers": [
+        0.34147502412820224,
+        0.5098730955467068
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 2,
+      "cluster_centers": [
+        0.36954498095871186,
+        0.5581600708586699
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.37960335692568364,
+        0.5615300392412672
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3709809804371727,
+        0.5936524675577846
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.38653980989626996,
+        0.6312018779342723
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.4281637576285837,
+        0.6652975822851548
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.36070570233257215,
+        0.5993259830627539
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3743678797063634,
+        0.6371982124475911
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.41485359361898955,
+        0.6714352639903592
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.37222238083135717,
+        0.5811042460277023
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3890274622312147,
+        0.6175099796640807
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.42971091647196474,
+        0.6527319926690266
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3775473114634888,
+        0.6105097637518516
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3932155170578929,
+        0.6505110592252265
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.4358664805854937,
+        0.685140769752203
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3699727153208394,
+        0.5785854614176267
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.38584803192591755,
+        0.6155894654917025
+      ]
+    },
+    {
+      "variant": "jpeg85",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.42679254547516093,
+        0.6499653034068942
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3230940434144223,
+        0.4973825100000762
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3341525998597872,
+        0.5262716120529579
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3736331530379222,
+        0.5613282700765679
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.31816066317844477,
+        0.49379074045577176
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.328576527670419,
+        0.5223213691500709
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.36735399524529755,
+        0.5581000746284578
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.33203680163675786,
+        0.4931540388354813
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.34463822170346375,
+        0.5219433907875634
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3846876947669393,
+        0.5567647707577771
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3316266939199241,
+        0.5091277328411367
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.34339200802901654,
+        0.5388362189266107
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.38365942488808374,
+        0.574458736952082
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.31648230834476876,
+        0.48511797411487106
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3271173126904045,
+        0.5129955602974255
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3656751174227388,
+        0.547788128824943
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.37265020017439165,
+        0.5692398217370384
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.38808346487163153,
+        0.6074943082324199
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.42832765766407926,
+        0.6419597699560279
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3637962637433787,
+        0.5735753980336077
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.377752684377869,
+        0.6120275364817703
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.4176352248871231,
+        0.646383030635388
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 2,
+      "cluster_centers": [
+        0.36665213889411474,
+        0.5432353944806791
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 2,
+      "cluster_centers": [
+        0.3820396987728697,
+        0.5781167307845569
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 2,
+      "cluster_centers": [
+        0.4222786041450397,
+        0.6135298062413328
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.37698236199471613,
+        0.5793584390336075
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3927297987409108,
+        0.6182670958239397
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.4336049561880688,
+        0.6524814485220949
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 1,
+      "cluster_centers": [
+        0.3427526997338192,
+        0.509583284409336
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 2,
+      "cluster_centers": [
+        0.3693500473157304,
+        0.5586645363752555
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3800400527923617,
+        0.561933174779013
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3722116300209017,
+        0.5921423705351186
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.38674445304644334,
+        0.6319414024252467
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.4283084462168123,
+        0.6675510029876227
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.36200999606222944,
+        0.5977582419053836
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3747040139176788,
+        0.6384966985513795
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.4153604921641717,
+        0.6729702995154527
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3734164407197513,
+        0.5797644502926828
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.38881493699887565,
+        0.6181792071502096
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.4299171353936392,
+        0.6537432150837288
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3786690297918014,
+        0.60887307797011
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.39346038068186157,
+        0.6506310160427807
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.43608349843781924,
+        0.6874802540734604
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3711898928321115,
+        0.5771816946205561
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.385738651710224,
+        0.6167522281639929
+      ]
+    },
+    {
+      "variant": "jpeg70",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.42697495733628216,
+        0.6518130601792573
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3264730148810752,
+        0.4975896960448978
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3423928259663527,
+        0.5387326465018545
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.39396161689370307,
+        0.5839230937265057
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.32172640129557434,
+        0.4940646740547656
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.33699624996820504,
+        0.5345099260095773
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3886974931891464,
+        0.5808256658884449
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.33558750314487634,
+        0.49343171243423817
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3534413696552002,
+        0.5343256965476707
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 1,
+      "cluster_centers": [
+        0.38851869046540966,
+        0.5658890411473897
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.33497999486385405,
+        0.509146425500762
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3516351837976486,
+        0.5514125598997276
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.4042331357225805,
+        0.5970621585625294
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.31986746625611606,
+        0.4854672983021107
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.3352403047261165,
+        0.5254641542599763
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.08,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 0,
+      "cluster_centers": [
+        0.38620716450118264,
+        0.5698550129793171
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3757301027418933,
+        0.5681433005171748
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3968538079272881,
+        0.6227543739591311
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.44962899963314357,
+        0.6679097132856682
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3669099024384767,
+        0.5724833790018076
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.38623442079557296,
+        0.6266511578999282
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.4387345660722206,
+        0.6718668326893223
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 2,
+      "cluster_centers": [
+        0.3696431310235623,
+        0.54295154585363
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 2,
+      "cluster_centers": [
+        0.39018710259613165,
+        0.59191223204272
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 2,
+      "cluster_centers": [
+        0.4436427055192052,
+        0.6362451746906004
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3798419865886966,
+        0.5778816221479387
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.4017864675065586,
+        0.6336952013401103
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.45471826066533416,
+        0.678596323904005
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 1,
+      "cluster_centers": [
+        0.345967696716555,
+        0.5099229996580493
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 2,
+      "cluster_centers": [
+        0.37752148487118287,
+        0.5719787147908517
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.14,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 1,
+      "cluster_centers": [
+        0.41660719857926626,
+        0.599431539557598
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.37536122490385604,
+        0.5902442279414841
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3949503363114322,
+        0.6462023549496623
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.44961664666149825,
+        0.6930121764454822
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3653601956773968,
+        0.5959604007323097
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3823944880734559,
+        0.6533772187492155
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        -4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.4368134935803047,
+        0.6986813286133916
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3765002697079115,
+        0.5778557771289581
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3966940087400922,
+        0.6342211845045317
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        4,
+        0
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.4507831630900556,
+        0.6797312645929051
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.38160471402344076,
+        0.6067647563898648
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.4025698470125505,
+        0.6654193467399764
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        -4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.4577186902694742,
+        0.7132760412743844
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "mean_darkness",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3744882532818288,
+        0.5750746377956671
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink140",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.3938541612838039,
+        0.6301333634606211
+      ]
+    },
+    {
+      "variant": "down75_up",
+      "margin": 0.2,
+      "jitter": [
+        0,
+        4
+      ],
+      "metric": "ink160",
+      "hamming_vs_stage106": 3,
+      "cluster_centers": [
+        0.4479763548997899,
+        0.6750661545027742
+      ]
+    }
+  ],
+  "promotion_rule": "synthetic perturbation controls pass; >=10/12 buildings reproduce Stage106 label in >=90% of 180 perturbation conditions; median condition Hamming<=1; not within 1 bit of H/V or inverse",
+  "promoted": false,
+  "interpretation_guard": "Promotion validates a second visible building channel only. Joint H/V\u00d7density states are not mapped to secret symbols."
+}
