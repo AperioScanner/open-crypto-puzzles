@@ -243,29 +243,39 @@ def evaluate_image(gray):
     }
 
 def synthetic_positive(h=320):
+    """Robust aligned 16-state control with non-repeating adjacencies.
+
+    Each of the 16 visual states occurs exactly four times, but in a fixed
+    shuffled order. Therefore phase-0 cells are pure repeated states, while
+    off-phase cells mix different neighboring states and should lose discrete
+    16-state structure. Patterns are intentionally low-frequency/JPEG-stable.
+    """
     img=np.full((h,1600),245,np.uint8)
-    for i in range(N_CELLS):
-        s=i%N_STATES
+    rng=np.random.default_rng(113)
+    labels=np.repeat(np.arange(N_STATES),4)
+    rng.shuffle(labels)
+
+    for i,s in enumerate(labels.tolist()):
         orient=s%4
-        density=s//4+1
+        level=s//4
         x0=i*CELL_W
-        # common faint baseline keeps all cells image-like
-        for q in range(density):
-            off=3+q*4
-            if orient==0:
-                for y in range(35+q*8,h-25,45):
-                    cv2.line(img,(x0+2,y),(x0+22,y),40+q*18,1,cv2.LINE_AA)
-            elif orient==1:
-                for x in range(x0+3+q*3,x0+23,7):
-                    cv2.line(img,(x,25),(x,h-25),40+q*18,1,cv2.LINE_AA)
-            elif orient==2:
-                step=max(20,55-q*7)
-                for y in range(20,h-20,step):
-                    cv2.line(img,(x0+1,min(h-2,y+20)),(x0+23,max(1,y-20)),40+q*18,1,cv2.LINE_AA)
-            else:
-                step=max(20,55-q*7)
-                for y in range(20,h-20,step):
-                    cv2.line(img,(x0+1,max(1,y-20)),(x0+23,min(h-2,y+20)),40+q*18,1,cv2.LINE_AA)
+        # Four broad tone levels, well separated from JPEG perturbation.
+        base=(235,195,155,115)[level]
+        img[:,x0:x0+CELL_W]=base
+
+        tone=35
+        if orient==0:  # horizontal
+            for y in (70,150,230):
+                cv2.line(img,(x0+2,y),(x0+22,y),tone,3,cv2.LINE_AA)
+        elif orient==1:  # vertical
+            for xx in (x0+6,x0+12,x0+18):
+                cv2.line(img,(xx,35),(xx,h-35),tone,3,cv2.LINE_AA)
+        elif orient==2:  # rising diagonals
+            for y in (90,180,270):
+                cv2.line(img,(x0+2,min(h-4,y+18)),(x0+22,max(3,y-18)),tone,3,cv2.LINE_AA)
+        else:  # falling diagonals
+            for y in (90,180,270):
+                cv2.line(img,(x0+2,max(3,y-18)),(x0+22,min(h-4,y+18)),tone,3,cv2.LINE_AA)
     return img
 
 def synthetic_negative(h=320):
