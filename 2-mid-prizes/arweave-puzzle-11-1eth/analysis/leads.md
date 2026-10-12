@@ -1,8 +1,12 @@
 # Open leads, ranked
 
-## 1. Small-sail ↔ skyline vertical alignment (active)
+## 1. Corrected true-five-sail width progression (active)
 
-The five right-hand sailboats may correspond vertically to one consecutive run of five skyline buildings. Stage 111 tests this directly with same-canvas x coordinates, lossy re-detection and two familywise null models.
+Stage 18 found widths `27,53,79,83,51`, with an exact +26,+26 progression in the first three sails.
+
+Stage 19 appeared to refute it, but Stage 105/111 later proved Stage 19 used the wrong object set: it included a false x≈675 track and omitted the true rightmost sail at x≈1490.
+
+Stage 112 is therefore a justified confirmatory remeasurement on the corrected five-sail cluster.
 
 ## 2. General format-invariant visible / semantic mechanism
 
@@ -14,13 +18,10 @@ Puzzle #9 is primary-verified as a four-step image puzzle, but no concrete step 
 
 ## Closed / deprioritized
 
-- Building stroke tone: Stage 110 valid controls, only 7/12 stable.
-- 5|7 skyline delimiter: striking geometry, independent detector not validated.
-- Building density coding: adversarial stability failed.
+- Direct sail↔skyline alignment: Stage 111 p=0.413 / 0.0597; rejected.
+- Building stroke tone / density / topology / roof profile: rejected.
+- 5|7 skyline delimiter: detector validation failed.
 - Small-sail spoke count: detector controls failed.
-- Building topology / roof profiles: rejected.
 - Small-sail L/R direction: rejected.
 - Literal OCR branch: retired.
-- Direct 16-gray-mode alphabet: rejected.
-- Large-sail one-stroke-per-symbol carrier: rejected.
-- Pier Roman / source-photo / CryptoCanvas: closed.
+- Large-sail direct carriers / Roman pier / source-photo / CryptoCanvas: closed.
