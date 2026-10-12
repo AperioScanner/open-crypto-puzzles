@@ -7,25 +7,323 @@
   ],
   "cdx_errors": [
     {
-      "url": "https://web.archive.org/cdx/search/cdx?url=twitter.com%2FArweaveP%2Fwith_replies&from=2020&to=2020&output=json&filter=timestamp%3A202004%2A&collapse=digest",
+      "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Ftwitter.com%2FArweaveP%2Fwith_replies&from=20200420&to=20200502&output=json&filter=statuscode%3A200&fl=timestamp%2Coriginal%2Cstatuscode%2Cdigest&collapse=digest&limit=60",
       "error": "TimeoutError"
     }
   ],
-  "snapshots_found": 0,
-  "snapshot_rows": [],
-  "source_control_pass": false,
+  "snapshots_found": 4,
+  "snapshot_rows": [
+    {
+      "timestamp": "20200430185132",
+      "original": "https://twitter.com/ArweaveP/status/1253354733911359491",
+      "source_type": "tweet_witness",
+      "fetch_ok": true,
+      "title": "Arweave Puzzle on Twitter: \"Like I specified, the private key is hidden in the image. One way to try is MEW: Access by Private Key \ud83e\udd10 good luck!\u2026 \"",
+      "descriptions": [
+        "\u201c@Kevin34755400 Like I specified, the private key is hidden in the image. One way to try is MEW: Access by Private Key \ud83e\udd10 good luck!\u201d"
+      ],
+      "exact_handle_seen": true,
+      "image_url_count": 4
+    },
+    {
+      "timestamp": "20200430210602",
+      "original": "https://twitter.com/ArweaveP/status/1253375599323856896",
+      "source_type": "tweet_witness",
+      "fetch_ok": true,
+      "title": "Arweave Puzzle on Twitter: \"format does not matter\u2026 \"",
+      "descriptions": [
+        "\u201c@afronomad_ format does not matter\u201d"
+      ],
+      "exact_handle_seen": true,
+      "image_url_count": 5
+    },
+    {
+      "timestamp": "20200501121921",
+      "original": "https://twitter.com/ArweaveP/status/1253253461828931584",
+      "source_type": "tweet_witness",
+      "fetch_ok": true,
+      "title": "Arweave Puzzle on Twitter: \"0xFF2142E98E09b5344994F9bEB9C56C95506B9F17 it is also included somewhere in the image \ud83e\uddd0\u2026 \"",
+      "descriptions": [
+        "\u201c@SamuelKilelemb4 0xFF2142E98E09b5344994F9bEB9C56C95506B9F17 it is also included somewhere in the image \ud83e\uddd0\u201d"
+      ],
+      "exact_handle_seen": true,
+      "image_url_count": 8
+    },
+    {
+      "timestamp": "20200502173835",
+      "original": "https://twitter.com/ArweaveP/status/1252961944807641090",
+      "source_type": "tweet_witness",
+      "fetch_ok": true,
+      "title": "Arweave Puzzle on Twitter: \"There is 1 ETH hidden in https://t.co/wyyxPDtXDH Puzzle 11 \ud83e\udde9. Please retweet to make more of these possible! #puzzle #steganography #arweave #cryptopuzzle\u2026 https://t.co/8llFe3yvq9\"",
+      "descriptions": [
+        "\u201cThere is 1 ETH hidden in https://t.co/wyyxPDtXDH Puzzle 11 \ud83e\udde9. Please retweet to make more of these possible! #puzzle #steganography #arweave #cryptopuzzle\u201d"
+      ],
+      "exact_handle_seen": true,
+      "image_url_count": 18
+    }
+  ],
+  "source_control_pass": true,
+  "profile_witness_count": 0,
+  "tweet_witness_count": 4,
+  "avatar_assets_tested": 12,
+  "banner_assets_tested": 0,
+  "full_profile_header_coverage": false,
   "orb_positive_control": {
     "good_matches": 700,
     "inliers": 681,
     "inlier_fraction": 0.9728571428571429
   },
   "orb_control_pass": true,
-  "candidate_profile_assets": 0,
-  "image_results": [],
+  "candidate_profile_assets": 21,
+  "image_results": [
+    {
+      "index": 0,
+      "url": "https://pbs.twimg.com/profile_images/1237005644236021762/96eUIs7D.png",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": true,
+      "shape": [
+        256,
+        256
+      ],
+      "good_matches": 35,
+      "inliers": 11,
+      "inlier_fraction": 0.3142857142857143,
+      "strong_derivative": false
+    },
+    {
+      "index": 1,
+      "url": "https://pbs.twimg.com/profile_images/1237005644236021762/96eUIs7D_400x400.png",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": true,
+      "shape": [
+        256,
+        256
+      ],
+      "good_matches": 35,
+      "inliers": 11,
+      "inlier_fraction": 0.3142857142857143,
+      "strong_derivative": false
+    },
+    {
+      "index": 2,
+      "url": "https://pbs.twimg.com/profile_images/1237005644236021762/96eUIs7D_bigger.png",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": true,
+      "shape": [
+        73,
+        73
+      ],
+      "good_matches": 0,
+      "inliers": 0,
+      "inlier_fraction": 0.0,
+      "strong_derivative": false
+    },
+    {
+      "index": 3,
+      "url": "https://pbs.twimg.com/profile_images/1237005644236021762/96eUIs7D_normal.png",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": true,
+      "shape": [
+        48,
+        48
+      ],
+      "good_matches": 0,
+      "inliers": 0,
+      "inlier_fraction": 0.0,
+      "strong_derivative": false
+    },
+    {
+      "index": 4,
+      "url": "https://pbs.twimg.com/profile_images/1200090030280196098/CcZuUjHv_bigger.jpg",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": false
+    },
+    {
+      "index": 5,
+      "url": "https://pbs.twimg.com/profile_images/1195324292608798720/-jXIym--_bigger.jpg",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": false
+    },
+    {
+      "index": 6,
+      "url": "https://pbs.twimg.com/profile_images/1240652278077493248/ov34A01Z_bigger.jpg",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": false
+    },
+    {
+      "index": 7,
+      "url": "https://pbs.twimg.com/profile_images/1240652278077493248/ov34A01Z_normal.jpg",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": false
+    },
+    {
+      "index": 8,
+      "url": "https://pbs.twimg.com/profile_images/1253806886408916992/Qd6rKOM8_bigger.jpg",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": false
+    },
+    {
+      "index": 9,
+      "url": "https://pbs.twimg.com/profile_images/1005175591241277440/WXuSbP5z_bigger.jpg",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": false
+    },
+    {
+      "index": 10,
+      "url": "https://pbs.twimg.com/profile_images/1025455091946610693/WXeYzL_j_normal.jpg",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": false
+    },
+    {
+      "index": 11,
+      "url": "https://pbs.twimg.com/profile_images/1043879945443987456/FvCvcwrY_bigger.jpg",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": false
+    },
+    {
+      "index": 12,
+      "url": "https://pbs.twimg.com/profile_images/1087075661410418688/Axd7iDN6_bigger.jpg",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": false
+    },
+    {
+      "index": 13,
+      "url": "https://pbs.twimg.com/profile_images/1119936010203226113/vQBQw8Oe_normal.jpg",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": true,
+      "shape": [
+        265,
+        600
+      ],
+      "good_matches": 26,
+      "inliers": 6,
+      "inlier_fraction": 0.23076923076923078,
+      "strong_derivative": false
+    },
+    {
+      "index": 14,
+      "url": "https://pbs.twimg.com/profile_images/1166672823315812353/WbPJlec__normal.jpg",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": true,
+      "shape": [
+        48,
+        48
+      ],
+      "good_matches": 0,
+      "inliers": 0,
+      "inlier_fraction": 0.0,
+      "strong_derivative": false
+    },
+    {
+      "index": 15,
+      "url": "https://pbs.twimg.com/profile_images/1199738956176338945/FRbSXF_2_normal.png",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": true,
+      "shape": [
+        48,
+        48
+      ],
+      "good_matches": 0,
+      "inliers": 0,
+      "inlier_fraction": 0.0,
+      "strong_derivative": false
+    },
+    {
+      "index": 16,
+      "url": "https://pbs.twimg.com/profile_images/1200090030280196098/CcZuUjHv_normal.jpg",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": true,
+      "shape": [
+        48,
+        48
+      ],
+      "good_matches": 0,
+      "inliers": 0,
+      "inlier_fraction": 0.0,
+      "strong_derivative": false
+    },
+    {
+      "index": 17,
+      "url": "https://pbs.twimg.com/profile_images/1226265744129871872/QQcSmflp_normal.jpg",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": true,
+      "shape": [
+        48,
+        48
+      ],
+      "good_matches": 0,
+      "inliers": 0,
+      "inlier_fraction": 0.0,
+      "strong_derivative": false
+    },
+    {
+      "index": 18,
+      "url": "https://pbs.twimg.com/profile_images/1256360141458477062/EOrlaOdL_normal.jpg",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": true,
+      "shape": [
+        48,
+        48
+      ],
+      "good_matches": 0,
+      "inliers": 0,
+      "inlier_fraction": 0.0,
+      "strong_derivative": false
+    },
+    {
+      "index": 19,
+      "url": "https://pbs.twimg.com/profile_images/659608142150434817/XUWXb40k_normal.jpg",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": true,
+      "shape": [
+        48,
+        48
+      ],
+      "good_matches": 0,
+      "inliers": 0,
+      "inlier_fraction": 0.0,
+      "strong_derivative": false
+    },
+    {
+      "index": 20,
+      "url": "https://pbs.twimg.com/profile_images/934147386779275265/VesFBs94_normal.jpg",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": true,
+      "shape": [
+        48,
+        48
+      ],
+      "good_matches": 0,
+      "inliers": 0,
+      "inlier_fraction": 0.0,
+      "strong_derivative": false
+    }
+  ],
   "strong_derivative_count": 0,
-  "decision": "SOURCE_FAILURE",
+  "decision": "PARTIAL_PROFILE_COVERAGE",
   "promoted": false,
-  "promotion_rule": "timestamped exact-handle archive snapshot recovered; transformed-canonical ORB control passes; at least one contemporaneous profile/header/media asset has >=25 RANSAC inliers and >=0.35 inlier fraction to canonical Puzzle #11",
+  "promotion_rule": "timestamped archived profile or author-tweet witness; avatar/banner image decoded; ORB control passes; >=25 RANSAC inliers and >=0.35 inlier fraction; tweet media excluded",
   "interpretation_guard": "A negative only retires direct profile/header visual reuse, not all external semantic references.",
   "safety_guard": "Public profile metadata and image similarity only. No private-key material generated or tested."
 }
