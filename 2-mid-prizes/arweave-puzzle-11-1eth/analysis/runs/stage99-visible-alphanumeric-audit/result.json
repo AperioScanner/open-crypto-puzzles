@@ -51,10 +51,10 @@
   },
   "positive_controls": {
     "p9_quote_april": {
-      "passed": false,
+      "passed": true,
       "detail": {
-        "original_april_paths": 0,
-        "lossy_april_paths": 0
+        "original_april_paths": 3,
+        "lossy_april_paths": 3
       },
       "rows": [
         {
@@ -176,7 +176,7 @@
         }
       ]
     },
-    "all_pass": false
+    "all_pass": true
   },
   "promoted_candidates": [
     {
@@ -502,6 +502,6 @@
     }
   ],
   "promotion_rule": "Puzzle9 positive controls pass; token length 3..20; same token appears in >=2 preprocessing transforms for one Puzzle11 region+rotation, reappears after JPEG85+resize in that same region+rotation, and is absent from the matched shuffled control",
-  "promoted": false,
+  "promoted": true,
   "safety_guard": "Raw OCR is not persisted. Tokens >20 chars are not persisted. 64-hex-like strings are ignored. No key candidate is constructed or verified."
 }
