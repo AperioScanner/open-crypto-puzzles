@@ -1,0 +1,165 @@
+{
+  "schema": "tiamat-inspiration-solution-grammar-v1",
+  "verified_at_utc": "2026-10-12T17:36:00Z",
+  "guard": "Public-source mechanism summaries only. No private keys, candidate secret strings, or wallet-access material are stored.",
+  "vocabulary": [
+    "visible_text_or_symbol_reading",
+    "selection_or_filtering",
+    "pairing",
+    "ordering_or_traversal",
+    "custom_alphabet_or_symbol_mapping",
+    "numeral_system_mapping",
+    "external_reference_known_text",
+    "position_or_geometry",
+    "cross_domain_conversion",
+    "final_ambiguity_or_bruteforce",
+    "exact_pixel_dependency"
+  ],
+  "candidates": {
+    "8kk0pa": {
+      "url": "https://www.reddit.com/r/Bitcoin/comments/8kk0pa/1_btc_is_hidden_in_this_puzzle_good_luck/",
+      "title": "1 BTC is hidden in this puzzle. Good luck!",
+      "evidence": [
+        {
+          "operation": "visible_text_or_symbol_reading",
+          "status": "confirmed",
+          "authority": "OP",
+          "summary": "The OP describes a work made from Satoshi whitepaper words with a treasure hunt hidden in plain sight; clues explicitly act on visible words."
+        },
+        {
+          "operation": "selection_or_filtering",
+          "status": "confirmed",
+          "authority": "OP",
+          "summary": "One published clue tells solvers that at least half of the visible words can be discarded."
+        },
+        {
+          "operation": "pairing",
+          "status": "confirmed",
+          "authority": "OP",
+          "summary": "The OP repeatedly publishes the clue 'Think in pairs'."
+        },
+        {
+          "operation": "ordering_or_traversal",
+          "status": "confirmed",
+          "authority": "solver+OP-clues",
+          "summary": "Public solve work uses start points, segmented regions, directions and ordered paths through visible words; the OP's positional clues support an ordered spatial reading."
+        },
+        {
+          "operation": "custom_alphabet_or_symbol_mapping",
+          "status": "not_confirmed",
+          "authority": "public_thread",
+          "summary": "No made-up character alphabet comparable to 8krbd3 is established in the public thread."
+        },
+        {
+          "operation": "numeral_system_mapping",
+          "status": "not_confirmed",
+          "authority": "public_thread",
+          "summary": "Numbers appear in clues, but no custom numeral alphabet is established as a confirmed mechanism."
+        },
+        {
+          "operation": "external_reference_known_text",
+          "status": "confirmed",
+          "authority": "OP",
+          "summary": "The image is explicitly constructed from Satoshi Nakamoto's whitepaper words and multiple clues/solver observations use that known source text."
+        },
+        {
+          "operation": "position_or_geometry",
+          "status": "confirmed",
+          "authority": "OP+solver",
+          "summary": "Published clues include a marked start/home concept and spatial instructions; solver work explicitly tests positions, regions, angles and paths."
+        },
+        {
+          "operation": "cross_domain_conversion",
+          "status": "confirmed",
+          "authority": "public_solution_work",
+          "summary": "Visible linguistic/spatial information is transformed through several interpretive steps into wallet-unlocking material."
+        },
+        {
+          "operation": "final_ambiguity_or_bruteforce",
+          "status": "not_confirmed",
+          "authority": "public_thread",
+          "summary": "The OP reduced one major step for difficulty, but a final brute-force step is not established in the public evidence used here."
+        },
+        {
+          "operation": "exact_pixel_dependency",
+          "status": "not_confirmed",
+          "authority": "public_thread",
+          "summary": "The public mechanism discussion centers on visible words, positions and clues rather than exact pixel values."
+        }
+      ]
+    },
+    "8krbd3": {
+      "url": "https://www.reddit.com/r/Bitcoin/comments/8krbd3/prize_inside_25mbtc_private_key_in_puzzle/",
+      "title": "*Prize inside* 2.5mBTC. Private key in puzzle.",
+      "evidence": [
+        {
+          "operation": "visible_text_or_symbol_reading",
+          "status": "confirmed",
+          "authority": "OP+solver",
+          "summary": "The puzzle visibly presents a made-up character set that solvers translate as letters/phonetic sounds and number symbols."
+        },
+        {
+          "operation": "selection_or_filtering",
+          "status": "not_confirmed",
+          "authority": "public_thread",
+          "summary": "No separate discard/filter stage comparable to 8kk0pa is established."
+        },
+        {
+          "operation": "pairing",
+          "status": "not_confirmed",
+          "authority": "public_thread",
+          "summary": "Upper/lowercase sharing a keyboard key is discussed, but no general pair-selection step is established."
+        },
+        {
+          "operation": "ordering_or_traversal",
+          "status": "confirmed",
+          "authority": "solver",
+          "summary": "The visible custom symbols are read in their displayed order to reconstruct the encoded wallet-key text."
+        },
+        {
+          "operation": "custom_alphabet_or_symbol_mapping",
+          "status": "confirmed",
+          "authority": "OP",
+          "summary": "The OP explicitly calls it a made-up character set and explains a typo involving symbols bound to upper/lowercase on the same key."
+        },
+        {
+          "operation": "numeral_system_mapping",
+          "status": "confirmed",
+          "authority": "OP+solver",
+          "summary": "Solvers separately infer number symbols using arithmetic examples; the OP confirms the symbols represent whole numbers."
+        },
+        {
+          "operation": "external_reference_known_text",
+          "status": "not_confirmed",
+          "authority": "public_thread",
+          "summary": "No external canonical text is required as a confirmed decoding source."
+        },
+        {
+          "operation": "position_or_geometry",
+          "status": "not_confirmed",
+          "authority": "public_thread",
+          "summary": "The confirmed work is symbol translation rather than coordinate or geometric extraction."
+        },
+        {
+          "operation": "cross_domain_conversion",
+          "status": "confirmed",
+          "authority": "OP+solver",
+          "summary": "Visible invented glyphs are converted through phonetic/letter and numeral interpretations into wallet-key text."
+        },
+        {
+          "operation": "final_ambiguity_or_bruteforce",
+          "status": "confirmed",
+          "authority": "solver",
+          "summary": "A solver reports brute-forcing remaining allowed case switches after most symbols were decoded."
+        },
+        {
+          "operation": "exact_pixel_dependency",
+          "status": "not_confirmed",
+          "authority": "public_thread",
+          "summary": "The mechanism is based on human-readable drawn glyphs; exact source-pixel values are not established as required."
+        }
+      ]
+    }
+  },
+  "transfer_rule": "Only operations marked confirmed in both independent top pre-launch candidates may be promoted as a mechanism-family prior. Candidate-specific operations remain non-transferable."
+}
