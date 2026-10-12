@@ -1,0 +1,1752 @@
+{
+  "experiment_id": "A11-EXP-104",
+  "scope": "enclosed-white-space topology counts in 12 fixed building interiors; no private-key operations",
+  "thresholds": [
+    100,
+    130,
+    160,
+    190
+  ],
+  "min_area": 9,
+  "max_area_fraction": 0.15,
+  "synthetic_controls": {
+    "0": {
+      "thresholds": [
+        {
+          "threshold": 100,
+          "cc_count": 0,
+          "contour_count": 0,
+          "agreement": true
+        },
+        {
+          "threshold": 130,
+          "cc_count": 0,
+          "contour_count": 0,
+          "agreement": true
+        },
+        {
+          "threshold": 160,
+          "cc_count": 0,
+          "contour_count": 0,
+          "agreement": true
+        },
+        {
+          "threshold": 190,
+          "cc_count": 0,
+          "contour_count": 0,
+          "agreement": true
+        }
+      ],
+      "consensus": 0,
+      "support": 4
+    },
+    "1": {
+      "thresholds": [
+        {
+          "threshold": 100,
+          "cc_count": 1,
+          "contour_count": 1,
+          "agreement": true
+        },
+        {
+          "threshold": 130,
+          "cc_count": 1,
+          "contour_count": 1,
+          "agreement": true
+        },
+        {
+          "threshold": 160,
+          "cc_count": 1,
+          "contour_count": 1,
+          "agreement": true
+        },
+        {
+          "threshold": 190,
+          "cc_count": 1,
+          "contour_count": 1,
+          "agreement": true
+        }
+      ],
+      "consensus": 1,
+      "support": 4
+    },
+    "2": {
+      "thresholds": [
+        {
+          "threshold": 100,
+          "cc_count": 2,
+          "contour_count": 2,
+          "agreement": true
+        },
+        {
+          "threshold": 130,
+          "cc_count": 2,
+          "contour_count": 2,
+          "agreement": true
+        },
+        {
+          "threshold": 160,
+          "cc_count": 2,
+          "contour_count": 2,
+          "agreement": true
+        },
+        {
+          "threshold": 190,
+          "cc_count": 2,
+          "contour_count": 2,
+          "agreement": true
+        }
+      ],
+      "consensus": 2,
+      "support": 4
+    },
+    "3": {
+      "thresholds": [
+        {
+          "threshold": 100,
+          "cc_count": 3,
+          "contour_count": 3,
+          "agreement": true
+        },
+        {
+          "threshold": 130,
+          "cc_count": 3,
+          "contour_count": 3,
+          "agreement": true
+        },
+        {
+          "threshold": 160,
+          "cc_count": 3,
+          "contour_count": 3,
+          "agreement": true
+        },
+        {
+          "threshold": 190,
+          "cc_count": 3,
+          "contour_count": 3,
+          "agreement": true
+        }
+      ],
+      "consensus": 3,
+      "support": 4
+    }
+  },
+  "controls_pass": true,
+  "buildings": [
+    {
+      "name": "building_01",
+      "box": [
+        241,
+        174,
+        315,
+        315
+      ],
+      "variants": {
+        "original": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 26,
+              "contour_count": 26,
+              "agreement": true
+            },
+            {
+              "threshold": 130,
+              "cc_count": 25,
+              "contour_count": 26,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 28,
+              "contour_count": 28,
+              "agreement": true
+            },
+            {
+              "threshold": 190,
+              "cc_count": 19,
+              "contour_count": 19,
+              "agreement": true
+            }
+          ],
+          "consensus": 19,
+          "support": 1
+        },
+        "jpeg85": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 29,
+              "contour_count": 29,
+              "agreement": true
+            },
+            {
+              "threshold": 130,
+              "cc_count": 27,
+              "contour_count": 28,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 28,
+              "contour_count": 28,
+              "agreement": true
+            },
+            {
+              "threshold": 190,
+              "cc_count": 22,
+              "contour_count": 22,
+              "agreement": true
+            }
+          ],
+          "consensus": 22,
+          "support": 1
+        },
+        "jpeg70": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 28,
+              "contour_count": 28,
+              "agreement": true
+            },
+            {
+              "threshold": 130,
+              "cc_count": 26,
+              "contour_count": 27,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 28,
+              "contour_count": 28,
+              "agreement": true
+            },
+            {
+              "threshold": 190,
+              "cc_count": 22,
+              "contour_count": 22,
+              "agreement": true
+            }
+          ],
+          "consensus": 28,
+          "support": 2
+        },
+        "down75_up": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 29,
+              "contour_count": 29,
+              "agreement": true
+            },
+            {
+              "threshold": 130,
+              "cc_count": 28,
+              "contour_count": 29,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 27,
+              "contour_count": 27,
+              "agreement": true
+            },
+            {
+              "threshold": 190,
+              "cc_count": 23,
+              "contour_count": 23,
+              "agreement": true
+            }
+          ],
+          "consensus": 23,
+          "support": 1
+        }
+      },
+      "stable": false,
+      "count": null
+    },
+    {
+      "name": "building_02",
+      "box": [
+        332,
+        97,
+        406,
+        304
+      ],
+      "variants": {
+        "original": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 36,
+              "contour_count": 36,
+              "agreement": true
+            },
+            {
+              "threshold": 130,
+              "cc_count": 30,
+              "contour_count": 30,
+              "agreement": true
+            },
+            {
+              "threshold": 160,
+              "cc_count": 29,
+              "contour_count": 29,
+              "agreement": true
+            },
+            {
+              "threshold": 190,
+              "cc_count": 14,
+              "contour_count": 15,
+              "agreement": false
+            }
+          ],
+          "consensus": 29,
+          "support": 1
+        },
+        "jpeg85": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 39,
+              "contour_count": 39,
+              "agreement": true
+            },
+            {
+              "threshold": 130,
+              "cc_count": 33,
+              "contour_count": 33,
+              "agreement": true
+            },
+            {
+              "threshold": 160,
+              "cc_count": 26,
+              "contour_count": 26,
+              "agreement": true
+            },
+            {
+              "threshold": 190,
+              "cc_count": 13,
+              "contour_count": 14,
+              "agreement": false
+            }
+          ],
+          "consensus": 26,
+          "support": 1
+        },
+        "jpeg70": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 35,
+              "contour_count": 36,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 33,
+              "contour_count": 33,
+              "agreement": true
+            },
+            {
+              "threshold": 160,
+              "cc_count": 30,
+              "contour_count": 30,
+              "agreement": true
+            },
+            {
+              "threshold": 190,
+              "cc_count": 17,
+              "contour_count": 17,
+              "agreement": true
+            }
+          ],
+          "consensus": 17,
+          "support": 1
+        },
+        "down75_up": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 47,
+              "contour_count": 47,
+              "agreement": true
+            },
+            {
+              "threshold": 130,
+              "cc_count": 31,
+              "contour_count": 31,
+              "agreement": true
+            },
+            {
+              "threshold": 160,
+              "cc_count": 27,
+              "contour_count": 27,
+              "agreement": true
+            },
+            {
+              "threshold": 190,
+              "cc_count": 13,
+              "contour_count": 13,
+              "agreement": true
+            }
+          ],
+          "consensus": 13,
+          "support": 1
+        }
+      },
+      "stable": false,
+      "count": null
+    },
+    {
+      "name": "building_03",
+      "box": [
+        422,
+        194,
+        494,
+        316
+      ],
+      "variants": {
+        "original": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 20,
+              "contour_count": 22,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 31,
+              "contour_count": 31,
+              "agreement": true
+            },
+            {
+              "threshold": 160,
+              "cc_count": 31,
+              "contour_count": 31,
+              "agreement": true
+            },
+            {
+              "threshold": 190,
+              "cc_count": 28,
+              "contour_count": 28,
+              "agreement": true
+            }
+          ],
+          "consensus": 31,
+          "support": 2
+        },
+        "jpeg85": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 22,
+              "contour_count": 25,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 31,
+              "contour_count": 31,
+              "agreement": true
+            },
+            {
+              "threshold": 160,
+              "cc_count": 28,
+              "contour_count": 28,
+              "agreement": true
+            },
+            {
+              "threshold": 190,
+              "cc_count": 25,
+              "contour_count": 25,
+              "agreement": true
+            }
+          ],
+          "consensus": 25,
+          "support": 1
+        },
+        "jpeg70": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 21,
+              "contour_count": 24,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 33,
+              "contour_count": 33,
+              "agreement": true
+            },
+            {
+              "threshold": 160,
+              "cc_count": 30,
+              "contour_count": 30,
+              "agreement": true
+            },
+            {
+              "threshold": 190,
+              "cc_count": 26,
+              "contour_count": 26,
+              "agreement": true
+            }
+          ],
+          "consensus": 26,
+          "support": 1
+        },
+        "down75_up": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 16,
+              "contour_count": 17,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 30,
+              "contour_count": 30,
+              "agreement": true
+            },
+            {
+              "threshold": 160,
+              "cc_count": 31,
+              "contour_count": 31,
+              "agreement": true
+            },
+            {
+              "threshold": 190,
+              "cc_count": 24,
+              "contour_count": 24,
+              "agreement": true
+            }
+          ],
+          "consensus": 24,
+          "support": 1
+        }
+      },
+      "stable": false,
+      "count": null
+    },
+    {
+      "name": "building_04",
+      "box": [
+        515,
+        123,
+        663,
+        303
+      ],
+      "variants": {
+        "original": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 18,
+              "contour_count": 20,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 30,
+              "contour_count": 32,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 43,
+              "contour_count": 44,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 63,
+              "contour_count": 63,
+              "agreement": true
+            }
+          ],
+          "consensus": 63,
+          "support": 1
+        },
+        "jpeg85": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 18,
+              "contour_count": 20,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 27,
+              "contour_count": 29,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 46,
+              "contour_count": 47,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 66,
+              "contour_count": 67,
+              "agreement": false
+            }
+          ],
+          "consensus": null,
+          "support": 0
+        },
+        "jpeg70": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 20,
+              "contour_count": 23,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 29,
+              "contour_count": 32,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 45,
+              "contour_count": 47,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 66,
+              "contour_count": 67,
+              "agreement": false
+            }
+          ],
+          "consensus": null,
+          "support": 0
+        },
+        "down75_up": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 14,
+              "contour_count": 15,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 22,
+              "contour_count": 23,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 43,
+              "contour_count": 44,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 64,
+              "contour_count": 64,
+              "agreement": true
+            }
+          ],
+          "consensus": 64,
+          "support": 1
+        }
+      },
+      "stable": false,
+      "count": null
+    },
+    {
+      "name": "building_05",
+      "box": [
+        686,
+        43,
+        774,
+        289
+      ],
+      "variants": {
+        "original": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 44,
+              "contour_count": 46,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 53,
+              "contour_count": 56,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 58,
+              "contour_count": 59,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 48,
+              "contour_count": 50,
+              "agreement": false
+            }
+          ],
+          "consensus": null,
+          "support": 0
+        },
+        "jpeg85": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 42,
+              "contour_count": 44,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 53,
+              "contour_count": 56,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 58,
+              "contour_count": 61,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 47,
+              "contour_count": 49,
+              "agreement": false
+            }
+          ],
+          "consensus": null,
+          "support": 0
+        },
+        "jpeg70": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 43,
+              "contour_count": 45,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 52,
+              "contour_count": 54,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 48,
+              "contour_count": 49,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 45,
+              "contour_count": 46,
+              "agreement": false
+            }
+          ],
+          "consensus": null,
+          "support": 0
+        },
+        "down75_up": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 43,
+              "contour_count": 45,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 49,
+              "contour_count": 50,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 48,
+              "contour_count": 50,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 44,
+              "contour_count": 46,
+              "agreement": false
+            }
+          ],
+          "consensus": null,
+          "support": 0
+        }
+      },
+      "stable": false,
+      "count": null
+    },
+    {
+      "name": "building_06",
+      "box": [
+        891,
+        209,
+        971,
+        299
+      ],
+      "variants": {
+        "original": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 20,
+              "contour_count": 22,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 24,
+              "contour_count": 24,
+              "agreement": true
+            },
+            {
+              "threshold": 160,
+              "cc_count": 16,
+              "contour_count": 17,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 13,
+              "contour_count": 14,
+              "agreement": false
+            }
+          ],
+          "consensus": 24,
+          "support": 1
+        },
+        "jpeg85": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 21,
+              "contour_count": 22,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 21,
+              "contour_count": 21,
+              "agreement": true
+            },
+            {
+              "threshold": 160,
+              "cc_count": 19,
+              "contour_count": 21,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 14,
+              "contour_count": 15,
+              "agreement": false
+            }
+          ],
+          "consensus": 21,
+          "support": 1
+        },
+        "jpeg70": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 22,
+              "contour_count": 23,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 25,
+              "contour_count": 25,
+              "agreement": true
+            },
+            {
+              "threshold": 160,
+              "cc_count": 20,
+              "contour_count": 20,
+              "agreement": true
+            },
+            {
+              "threshold": 190,
+              "cc_count": 14,
+              "contour_count": 15,
+              "agreement": false
+            }
+          ],
+          "consensus": 20,
+          "support": 1
+        },
+        "down75_up": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 23,
+              "contour_count": 24,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 22,
+              "contour_count": 22,
+              "agreement": true
+            },
+            {
+              "threshold": 160,
+              "cc_count": 20,
+              "contour_count": 21,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 15,
+              "contour_count": 15,
+              "agreement": true
+            }
+          ],
+          "consensus": 15,
+          "support": 1
+        }
+      },
+      "stable": false,
+      "count": null
+    },
+    {
+      "name": "building_07",
+      "box": [
+        992,
+        92,
+        1128,
+        302
+      ],
+      "variants": {
+        "original": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 49,
+              "contour_count": 59,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 76,
+              "contour_count": 79,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 95,
+              "contour_count": 97,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 103,
+              "contour_count": 106,
+              "agreement": false
+            }
+          ],
+          "consensus": null,
+          "support": 0
+        },
+        "jpeg85": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 50,
+              "contour_count": 60,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 77,
+              "contour_count": 83,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 97,
+              "contour_count": 100,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 105,
+              "contour_count": 108,
+              "agreement": false
+            }
+          ],
+          "consensus": null,
+          "support": 0
+        },
+        "jpeg70": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 48,
+              "contour_count": 56,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 74,
+              "contour_count": 77,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 96,
+              "contour_count": 98,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 104,
+              "contour_count": 107,
+              "agreement": false
+            }
+          ],
+          "consensus": null,
+          "support": 0
+        },
+        "down75_up": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 37,
+              "contour_count": 43,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 76,
+              "contour_count": 78,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 91,
+              "contour_count": 91,
+              "agreement": true
+            },
+            {
+              "threshold": 190,
+              "cc_count": 94,
+              "contour_count": 94,
+              "agreement": true
+            }
+          ],
+          "consensus": 91,
+          "support": 1
+        }
+      },
+      "stable": false,
+      "count": null
+    },
+    {
+      "name": "building_08",
+      "box": [
+        1151,
+        118,
+        1249,
+        304
+      ],
+      "variants": {
+        "original": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 44,
+              "contour_count": 47,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 40,
+              "contour_count": 44,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 40,
+              "contour_count": 43,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 45,
+              "contour_count": 48,
+              "agreement": false
+            }
+          ],
+          "consensus": null,
+          "support": 0
+        },
+        "jpeg85": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 46,
+              "contour_count": 48,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 42,
+              "contour_count": 46,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 39,
+              "contour_count": 42,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 41,
+              "contour_count": 44,
+              "agreement": false
+            }
+          ],
+          "consensus": null,
+          "support": 0
+        },
+        "jpeg70": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 44,
+              "contour_count": 47,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 46,
+              "contour_count": 47,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 40,
+              "contour_count": 43,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 47,
+              "contour_count": 48,
+              "agreement": false
+            }
+          ],
+          "consensus": null,
+          "support": 0
+        },
+        "down75_up": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 28,
+              "contour_count": 30,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 43,
+              "contour_count": 44,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 37,
+              "contour_count": 39,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 41,
+              "contour_count": 42,
+              "agreement": false
+            }
+          ],
+          "consensus": null,
+          "support": 0
+        }
+      },
+      "stable": false,
+      "count": null
+    },
+    {
+      "name": "building_09",
+      "box": [
+        1267,
+        186,
+        1341,
+        303
+      ],
+      "variants": {
+        "original": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 30,
+              "contour_count": 31,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 25,
+              "contour_count": 26,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 17,
+              "contour_count": 18,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 15,
+              "contour_count": 15,
+              "agreement": true
+            }
+          ],
+          "consensus": 15,
+          "support": 1
+        },
+        "jpeg85": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 30,
+              "contour_count": 31,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 25,
+              "contour_count": 26,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 18,
+              "contour_count": 19,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 14,
+              "contour_count": 14,
+              "agreement": true
+            }
+          ],
+          "consensus": 14,
+          "support": 1
+        },
+        "jpeg70": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 31,
+              "contour_count": 32,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 25,
+              "contour_count": 26,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 20,
+              "contour_count": 21,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 13,
+              "contour_count": 13,
+              "agreement": true
+            }
+          ],
+          "consensus": 13,
+          "support": 1
+        },
+        "down75_up": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 37,
+              "contour_count": 38,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 28,
+              "contour_count": 29,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 19,
+              "contour_count": 19,
+              "agreement": true
+            },
+            {
+              "threshold": 190,
+              "cc_count": 14,
+              "contour_count": 14,
+              "agreement": true
+            }
+          ],
+          "consensus": 14,
+          "support": 1
+        }
+      },
+      "stable": false,
+      "count": null
+    },
+    {
+      "name": "building_10",
+      "box": [
+        1358,
+        121,
+        1444,
+        297
+      ],
+      "variants": {
+        "original": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 41,
+              "contour_count": 45,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 42,
+              "contour_count": 45,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 36,
+              "contour_count": 38,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 26,
+              "contour_count": 26,
+              "agreement": true
+            }
+          ],
+          "consensus": 26,
+          "support": 1
+        },
+        "jpeg85": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 40,
+              "contour_count": 44,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 42,
+              "contour_count": 45,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 34,
+              "contour_count": 35,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 29,
+              "contour_count": 30,
+              "agreement": false
+            }
+          ],
+          "consensus": null,
+          "support": 0
+        },
+        "jpeg70": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 41,
+              "contour_count": 44,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 46,
+              "contour_count": 47,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 37,
+              "contour_count": 38,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 34,
+              "contour_count": 34,
+              "agreement": true
+            }
+          ],
+          "consensus": 34,
+          "support": 1
+        },
+        "down75_up": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 36,
+              "contour_count": 38,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 44,
+              "contour_count": 45,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 38,
+              "contour_count": 39,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 26,
+              "contour_count": 26,
+              "agreement": true
+            }
+          ],
+          "consensus": 26,
+          "support": 1
+        }
+      },
+      "stable": false,
+      "count": null
+    },
+    {
+      "name": "building_11",
+      "box": [
+        1458,
+        174,
+        1506,
+        296
+      ],
+      "variants": {
+        "original": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 5,
+              "contour_count": 5,
+              "agreement": true
+            },
+            {
+              "threshold": 130,
+              "cc_count": 6,
+              "contour_count": 6,
+              "agreement": true
+            },
+            {
+              "threshold": 160,
+              "cc_count": 7,
+              "contour_count": 8,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 9,
+              "contour_count": 9,
+              "agreement": true
+            }
+          ],
+          "consensus": 5,
+          "support": 1
+        },
+        "jpeg85": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 5,
+              "contour_count": 5,
+              "agreement": true
+            },
+            {
+              "threshold": 130,
+              "cc_count": 6,
+              "contour_count": 6,
+              "agreement": true
+            },
+            {
+              "threshold": 160,
+              "cc_count": 7,
+              "contour_count": 8,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 6,
+              "contour_count": 6,
+              "agreement": true
+            }
+          ],
+          "consensus": 6,
+          "support": 2
+        },
+        "jpeg70": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 5,
+              "contour_count": 6,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 7,
+              "contour_count": 7,
+              "agreement": true
+            },
+            {
+              "threshold": 160,
+              "cc_count": 7,
+              "contour_count": 7,
+              "agreement": true
+            },
+            {
+              "threshold": 190,
+              "cc_count": 8,
+              "contour_count": 8,
+              "agreement": true
+            }
+          ],
+          "consensus": 7,
+          "support": 2
+        },
+        "down75_up": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 3,
+              "contour_count": 3,
+              "agreement": true
+            },
+            {
+              "threshold": 130,
+              "cc_count": 5,
+              "contour_count": 5,
+              "agreement": true
+            },
+            {
+              "threshold": 160,
+              "cc_count": 7,
+              "contour_count": 7,
+              "agreement": true
+            },
+            {
+              "threshold": 190,
+              "cc_count": 8,
+              "contour_count": 9,
+              "agreement": false
+            }
+          ],
+          "consensus": 3,
+          "support": 1
+        }
+      },
+      "stable": false,
+      "count": null
+    },
+    {
+      "name": "building_12",
+      "box": [
+        1520,
+        92,
+        1586,
+        282
+      ],
+      "variants": {
+        "original": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 33,
+              "contour_count": 35,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 36,
+              "contour_count": 38,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 36,
+              "contour_count": 37,
+              "agreement": false
+            },
+            {
+              "threshold": 190,
+              "cc_count": 41,
+              "contour_count": 42,
+              "agreement": false
+            }
+          ],
+          "consensus": null,
+          "support": 0
+        },
+        "jpeg85": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 31,
+              "contour_count": 33,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 38,
+              "contour_count": 38,
+              "agreement": true
+            },
+            {
+              "threshold": 160,
+              "cc_count": 37,
+              "contour_count": 37,
+              "agreement": true
+            },
+            {
+              "threshold": 190,
+              "cc_count": 41,
+              "contour_count": 42,
+              "agreement": false
+            }
+          ],
+          "consensus": 37,
+          "support": 1
+        },
+        "jpeg70": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 29,
+              "contour_count": 31,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 35,
+              "contour_count": 36,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 35,
+              "contour_count": 35,
+              "agreement": true
+            },
+            {
+              "threshold": 190,
+              "cc_count": 39,
+              "contour_count": 39,
+              "agreement": true
+            }
+          ],
+          "consensus": 35,
+          "support": 1
+        },
+        "down75_up": {
+          "thresholds": [
+            {
+              "threshold": 100,
+              "cc_count": 31,
+              "contour_count": 33,
+              "agreement": false
+            },
+            {
+              "threshold": 130,
+              "cc_count": 30,
+              "contour_count": 31,
+              "agreement": false
+            },
+            {
+              "threshold": 160,
+              "cc_count": 33,
+              "contour_count": 33,
+              "agreement": true
+            },
+            {
+              "threshold": 190,
+              "cc_count": 42,
+              "contour_count": 42,
+              "agreement": true
+            }
+          ],
+          "consensus": 33,
+          "support": 1
+        }
+      },
+      "stable": false,
+      "count": null
+    }
+  ],
+  "stable_buildings": 0,
+  "stable_count_sequence": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "distinct_stable_counts": [],
+  "promotion_rule": "synthetic 0/1/2/3-hole controls pass; >=9/12 buildings have same count across original/JPEG85/JPEG70/resize with >=3/4 threshold support and connected-component/contour agreement; >=3 distinct count values",
+  "promoted": false,
+  "interpretation_guard": "Promotion establishes only a robust visible topological count sequence, not a mapping to secret material."
+}
