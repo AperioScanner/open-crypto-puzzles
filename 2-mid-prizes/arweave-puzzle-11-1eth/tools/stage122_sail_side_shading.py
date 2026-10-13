@@ -146,6 +146,35 @@ def control_suite():
     return {"cases":len(seen)*len(LABELS),"controls":seen,
             "failures":failures,"passed":len(failures)==0}
 
+
+def save_site_contact(gray,rows):
+    """Save mask contact sheet to check the exact actual image regions."""
+    from PIL import ImageDraw
+    width,height=470,326
+    contact=Image.new("RGB",(width*3,height*2),"white")
+    d=ImageDraw.Draw(contact)
+    index={x["site"]:x for x in rows}
+    for i,site in enumerate(SITES):
+        c,m=get_patch_and_masks(gray,site)
+        im=np.repeat(c[:,:,None],3,axis=2).astype(np.float32)
+        for key,color in (
+            ("outer_left",(255,220,0)),("outer_right",(255,220,0)),
+            ("inner_left",(30,160,250)),("inner_right",(240,70,130)),
+        ):
+            mask=m[key]
+            im[mask]=im[mask]*.68+np.asarray(color)*.32
+        im=Image.fromarray(np.clip(im,0,255).astype(np.uint8))
+        scale=min((width-24)/im.width,(height-70)/im.height)
+        im=im.resize((int(im.width*scale),int(im.height*scale)),Image.Resampling.NEAREST)
+        x=i%3*width
+        y=i//3*height
+        row=index[site[0]]["per_variant"]["original"]
+        d.text((x+10,y+7),site[0]+"  left=blue right=pink outside=yellow",fill=(0,0,0))
+        d.text((x+10,y+24),f"raw {row['raw_contrast']:+.3f}; exterior {row['outside_contrast']:+.3f}",fill=(0,0,0))
+        contact.paste(im,(x+10,y+48))
+    contact.save(OUT/"mask-contact.png")
+
+
 def main():
     sha=hashlib.sha256(SOURCE.read_bytes()).hexdigest()
     if sha!=EXPECTED_SHA:
@@ -203,6 +232,7 @@ def main():
         "coverage_limit":"Approximate fixed visual anchor sites, not semantic sail segmentation. Even a stable mixed pattern does not identify an encoding, word, key, or intentionally placed clue.",
         "safety_guard":"No secret/key/mnemonic enumeration, derivation, validation, wallet calls or transaction operations.",
     }
+    save_site_contact(gray,rows)
     (OUT/"result.json").write_text(json.dumps(result,indent=2)+"\n")
     lines=[
         "# Stage 122 — image-only six-sail signed shading asymmetry",
