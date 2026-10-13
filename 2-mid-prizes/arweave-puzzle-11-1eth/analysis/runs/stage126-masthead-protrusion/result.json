@@ -1,0 +1,636 @@
+{
+  "experiment_id": "A11-EXP-126",
+  "hypothesis": "Visible tiny mast extensions above the five triangular sail tips might create a mixed present/absent sequence independent from shading/widths/ray counts.",
+  "scope": "5 predeclared small-sail masthead windows x \u00b12px; RGB-to-grayscale; original/JPEG85/JPEG70/resize; no secret extraction",
+  "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "sites_predeclared": [
+    [
+      "sail_1",
+      1042,
+      448,
+      98,
+      35
+    ],
+    [
+      "sail_2",
+      1148,
+      433,
+      99,
+      38
+    ],
+    [
+      "sail_3",
+      1282,
+      411,
+      103,
+      44
+    ],
+    [
+      "sail_4",
+      1372,
+      397,
+      101,
+      42
+    ],
+    [
+      "sail_5",
+      1490,
+      357,
+      106,
+      47
+    ]
+  ],
+  "apex_strip_relative_y": [
+    3,
+    18
+  ],
+  "gates": {
+    "binary_ink_rows_min": 10,
+    "edge_rows_min": 9,
+    "contiguous_min": 8,
+    "absence_max_rows": 3
+  },
+  "controls": {
+    "cases": 180,
+    "passes": 180,
+    "passed": true,
+    "failures": []
+  },
+  "sites": [
+    {
+      "site": "sail_1",
+      "stable_class": "EXTENDED",
+      "observations": [
+        {
+          "format": "original",
+          "dx": -2,
+          "classification": "EXTENDED",
+          "ink_rows": 10,
+          "edge_rows": 12,
+          "ink_longest_run": 10,
+          "edge_longest_run": 11
+        },
+        {
+          "format": "original",
+          "dx": 0,
+          "classification": "EXTENDED",
+          "ink_rows": 11,
+          "edge_rows": 12,
+          "ink_longest_run": 11,
+          "edge_longest_run": 11
+        },
+        {
+          "format": "original",
+          "dx": 2,
+          "classification": "EXTENDED",
+          "ink_rows": 11,
+          "edge_rows": 13,
+          "ink_longest_run": 11,
+          "edge_longest_run": 11
+        },
+        {
+          "format": "jpeg85",
+          "dx": -2,
+          "classification": "EXTENDED",
+          "ink_rows": 10,
+          "edge_rows": 12,
+          "ink_longest_run": 10,
+          "edge_longest_run": 11
+        },
+        {
+          "format": "jpeg85",
+          "dx": 0,
+          "classification": "EXTENDED",
+          "ink_rows": 11,
+          "edge_rows": 12,
+          "ink_longest_run": 11,
+          "edge_longest_run": 11
+        },
+        {
+          "format": "jpeg85",
+          "dx": 2,
+          "classification": "EXTENDED",
+          "ink_rows": 11,
+          "edge_rows": 14,
+          "ink_longest_run": 11,
+          "edge_longest_run": 11
+        },
+        {
+          "format": "jpeg70",
+          "dx": -2,
+          "classification": "EXTENDED",
+          "ink_rows": 10,
+          "edge_rows": 12,
+          "ink_longest_run": 10,
+          "edge_longest_run": 11
+        },
+        {
+          "format": "jpeg70",
+          "dx": 0,
+          "classification": "EXTENDED",
+          "ink_rows": 11,
+          "edge_rows": 12,
+          "ink_longest_run": 11,
+          "edge_longest_run": 11
+        },
+        {
+          "format": "jpeg70",
+          "dx": 2,
+          "classification": "EXTENDED",
+          "ink_rows": 11,
+          "edge_rows": 13,
+          "ink_longest_run": 11,
+          "edge_longest_run": 11
+        },
+        {
+          "format": "down75_up",
+          "dx": -2,
+          "classification": "EXTENDED",
+          "ink_rows": 10,
+          "edge_rows": 12,
+          "ink_longest_run": 10,
+          "edge_longest_run": 11
+        },
+        {
+          "format": "down75_up",
+          "dx": 0,
+          "classification": "EXTENDED",
+          "ink_rows": 11,
+          "edge_rows": 12,
+          "ink_longest_run": 11,
+          "edge_longest_run": 11
+        },
+        {
+          "format": "down75_up",
+          "dx": 2,
+          "classification": "EXTENDED",
+          "ink_rows": 11,
+          "edge_rows": 15,
+          "ink_longest_run": 11,
+          "edge_longest_run": 15
+        }
+      ]
+    },
+    {
+      "site": "sail_2",
+      "stable_class": "EXTENDED",
+      "observations": [
+        {
+          "format": "original",
+          "dx": -2,
+          "classification": "EXTENDED",
+          "ink_rows": 12,
+          "edge_rows": 13,
+          "ink_longest_run": 12,
+          "edge_longest_run": 13
+        },
+        {
+          "format": "original",
+          "dx": 0,
+          "classification": "EXTENDED",
+          "ink_rows": 13,
+          "edge_rows": 13,
+          "ink_longest_run": 13,
+          "edge_longest_run": 13
+        },
+        {
+          "format": "original",
+          "dx": 2,
+          "classification": "EXTENDED",
+          "ink_rows": 13,
+          "edge_rows": 13,
+          "ink_longest_run": 13,
+          "edge_longest_run": 13
+        },
+        {
+          "format": "jpeg85",
+          "dx": -2,
+          "classification": "EXTENDED",
+          "ink_rows": 12,
+          "edge_rows": 13,
+          "ink_longest_run": 12,
+          "edge_longest_run": 13
+        },
+        {
+          "format": "jpeg85",
+          "dx": 0,
+          "classification": "EXTENDED",
+          "ink_rows": 13,
+          "edge_rows": 13,
+          "ink_longest_run": 13,
+          "edge_longest_run": 13
+        },
+        {
+          "format": "jpeg85",
+          "dx": 2,
+          "classification": "EXTENDED",
+          "ink_rows": 13,
+          "edge_rows": 13,
+          "ink_longest_run": 13,
+          "edge_longest_run": 13
+        },
+        {
+          "format": "jpeg70",
+          "dx": -2,
+          "classification": "EXTENDED",
+          "ink_rows": 12,
+          "edge_rows": 13,
+          "ink_longest_run": 12,
+          "edge_longest_run": 13
+        },
+        {
+          "format": "jpeg70",
+          "dx": 0,
+          "classification": "EXTENDED",
+          "ink_rows": 13,
+          "edge_rows": 13,
+          "ink_longest_run": 13,
+          "edge_longest_run": 13
+        },
+        {
+          "format": "jpeg70",
+          "dx": 2,
+          "classification": "EXTENDED",
+          "ink_rows": 13,
+          "edge_rows": 13,
+          "ink_longest_run": 13,
+          "edge_longest_run": 13
+        },
+        {
+          "format": "down75_up",
+          "dx": -2,
+          "classification": "EXTENDED",
+          "ink_rows": 13,
+          "edge_rows": 13,
+          "ink_longest_run": 13,
+          "edge_longest_run": 13
+        },
+        {
+          "format": "down75_up",
+          "dx": 0,
+          "classification": "EXTENDED",
+          "ink_rows": 13,
+          "edge_rows": 13,
+          "ink_longest_run": 13,
+          "edge_longest_run": 13
+        },
+        {
+          "format": "down75_up",
+          "dx": 2,
+          "classification": "EXTENDED",
+          "ink_rows": 12,
+          "edge_rows": 13,
+          "ink_longest_run": 10,
+          "edge_longest_run": 13
+        }
+      ]
+    },
+    {
+      "site": "sail_3",
+      "stable_class": null,
+      "observations": [
+        {
+          "format": "original",
+          "dx": -2,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 15,
+          "ink_longest_run": 15,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "original",
+          "dx": 0,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 12,
+          "ink_longest_run": 15,
+          "edge_longest_run": 9
+        },
+        {
+          "format": "original",
+          "dx": 2,
+          "classification": "?",
+          "ink_rows": 15,
+          "edge_rows": 12,
+          "ink_longest_run": 15,
+          "edge_longest_run": 7
+        },
+        {
+          "format": "jpeg85",
+          "dx": -2,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 15,
+          "ink_longest_run": 15,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "jpeg85",
+          "dx": 0,
+          "classification": "?",
+          "ink_rows": 15,
+          "edge_rows": 12,
+          "ink_longest_run": 15,
+          "edge_longest_run": 7
+        },
+        {
+          "format": "jpeg85",
+          "dx": 2,
+          "classification": "?",
+          "ink_rows": 15,
+          "edge_rows": 12,
+          "ink_longest_run": 15,
+          "edge_longest_run": 7
+        },
+        {
+          "format": "jpeg70",
+          "dx": -2,
+          "classification": "?",
+          "ink_rows": 15,
+          "edge_rows": 14,
+          "ink_longest_run": 15,
+          "edge_longest_run": 7
+        },
+        {
+          "format": "jpeg70",
+          "dx": 0,
+          "classification": "?",
+          "ink_rows": 15,
+          "edge_rows": 11,
+          "ink_longest_run": 15,
+          "edge_longest_run": 7
+        },
+        {
+          "format": "jpeg70",
+          "dx": 2,
+          "classification": "?",
+          "ink_rows": 15,
+          "edge_rows": 11,
+          "ink_longest_run": 15,
+          "edge_longest_run": 7
+        },
+        {
+          "format": "down75_up",
+          "dx": -2,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 15,
+          "ink_longest_run": 15,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "down75_up",
+          "dx": 0,
+          "classification": "?",
+          "ink_rows": 15,
+          "edge_rows": 11,
+          "ink_longest_run": 15,
+          "edge_longest_run": 7
+        },
+        {
+          "format": "down75_up",
+          "dx": 2,
+          "classification": "?",
+          "ink_rows": 15,
+          "edge_rows": 12,
+          "ink_longest_run": 15,
+          "edge_longest_run": 7
+        }
+      ]
+    },
+    {
+      "site": "sail_4",
+      "stable_class": "EXTENDED",
+      "observations": [
+        {
+          "format": "original",
+          "dx": -2,
+          "classification": "EXTENDED",
+          "ink_rows": 13,
+          "edge_rows": 15,
+          "ink_longest_run": 11,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "original",
+          "dx": 0,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 15,
+          "ink_longest_run": 15,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "original",
+          "dx": 2,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 15,
+          "ink_longest_run": 15,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "jpeg85",
+          "dx": -2,
+          "classification": "EXTENDED",
+          "ink_rows": 13,
+          "edge_rows": 15,
+          "ink_longest_run": 11,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "jpeg85",
+          "dx": 0,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 15,
+          "ink_longest_run": 15,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "jpeg85",
+          "dx": 2,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 15,
+          "ink_longest_run": 15,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "jpeg70",
+          "dx": -2,
+          "classification": "EXTENDED",
+          "ink_rows": 13,
+          "edge_rows": 15,
+          "ink_longest_run": 11,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "jpeg70",
+          "dx": 0,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 15,
+          "ink_longest_run": 15,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "jpeg70",
+          "dx": 2,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 15,
+          "ink_longest_run": 15,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "down75_up",
+          "dx": -2,
+          "classification": "EXTENDED",
+          "ink_rows": 13,
+          "edge_rows": 15,
+          "ink_longest_run": 11,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "down75_up",
+          "dx": 0,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 15,
+          "ink_longest_run": 15,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "down75_up",
+          "dx": 2,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 15,
+          "ink_longest_run": 15,
+          "edge_longest_run": 15
+        }
+      ]
+    },
+    {
+      "site": "sail_5",
+      "stable_class": "EXTENDED",
+      "observations": [
+        {
+          "format": "original",
+          "dx": -2,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 15,
+          "ink_longest_run": 15,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "original",
+          "dx": 0,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 15,
+          "ink_longest_run": 15,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "original",
+          "dx": 2,
+          "classification": "EXTENDED",
+          "ink_rows": 14,
+          "edge_rows": 15,
+          "ink_longest_run": 9,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "jpeg85",
+          "dx": -2,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 15,
+          "ink_longest_run": 15,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "jpeg85",
+          "dx": 0,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 15,
+          "ink_longest_run": 15,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "jpeg85",
+          "dx": 2,
+          "classification": "EXTENDED",
+          "ink_rows": 14,
+          "edge_rows": 15,
+          "ink_longest_run": 9,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "jpeg70",
+          "dx": -2,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 15,
+          "ink_longest_run": 15,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "jpeg70",
+          "dx": 0,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 15,
+          "ink_longest_run": 15,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "jpeg70",
+          "dx": 2,
+          "classification": "EXTENDED",
+          "ink_rows": 14,
+          "edge_rows": 14,
+          "ink_longest_run": 9,
+          "edge_longest_run": 10
+        },
+        {
+          "format": "down75_up",
+          "dx": -2,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 15,
+          "ink_longest_run": 15,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "down75_up",
+          "dx": 0,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 15,
+          "ink_longest_run": 15,
+          "edge_longest_run": 15
+        },
+        {
+          "format": "down75_up",
+          "dx": 2,
+          "classification": "EXTENDED",
+          "ink_rows": 15,
+          "edge_rows": 15,
+          "ink_longest_run": 15,
+          "edge_longest_run": 15
+        }
+      ]
+    }
+  ],
+  "stable_site_count": 4,
+  "mixed_states": false,
+  "decision": "UNIFORM_MASTHEAD_STATE",
+  "coverage_guard": "Calibrated on straight-line synthetic drawings with same apex/height. An ambiguous original masthead remains inconclusive; unobserved smaller flags or separate glyphs not covered.",
+  "safety_guard": "Visual measurements only. No mnemonic/key/address candidates, wallet calls or transactions."
+}
