@@ -1,0 +1,483 @@
+{
+  "experiment_id": "A11-EXP-128",
+  "hypothesis": "closed, elliptical pencil ripples are a consistent distinct visible subdetail across multiple water groups, not just open freehand strokes",
+  "evidence": "the canonical picture visibly contains curved/loop-shaped water marks outside sails and buildings; previous closed-contour experiment focused on building facades rather than water",
+  "scope": "four fixed water ROIs; two independently implemented enclosure detectors; JPEG85/JPEG70/resampling and three fixed thresholds, no secret material",
+  "sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "rois": {
+    "skyline_reflection": [
+      180,
+      275,
+      730,
+      378
+    ],
+    "central_open_water": [
+      495,
+      555,
+      855,
+      850
+    ],
+    "largeboat_lower_wake": [
+      10,
+      925,
+      420,
+      1090
+    ],
+    "right_lower_water": [
+      1010,
+      815,
+      1530,
+      1060
+    ]
+  },
+  "thresholds": [
+    130,
+    175,
+    210
+  ],
+  "controls": {
+    "passed": true,
+    "positive_closed_range": [
+      4,
+      4
+    ],
+    "negative_open_range": [
+      0,
+      0
+    ],
+    "cases": 48,
+    "positive": {
+      "by_variant": {
+        "original": {
+          "130": {
+            "contours": 4,
+            "floodfill": 4
+          },
+          "175": {
+            "contours": 4,
+            "floodfill": 4
+          },
+          "210": {
+            "contours": 4,
+            "floodfill": 4
+          }
+        },
+        "jpeg85": {
+          "130": {
+            "contours": 4,
+            "floodfill": 4
+          },
+          "175": {
+            "contours": 4,
+            "floodfill": 4
+          },
+          "210": {
+            "contours": 4,
+            "floodfill": 4
+          }
+        },
+        "jpeg70": {
+          "130": {
+            "contours": 4,
+            "floodfill": 4
+          },
+          "175": {
+            "contours": 4,
+            "floodfill": 4
+          },
+          "210": {
+            "contours": 4,
+            "floodfill": 4
+          }
+        },
+        "down75_up": {
+          "130": {
+            "contours": 4,
+            "floodfill": 4
+          },
+          "175": {
+            "contours": 4,
+            "floodfill": 4
+          },
+          "210": {
+            "contours": 4,
+            "floodfill": 4
+          }
+        }
+      },
+      "stable": true,
+      "stable_count": 4,
+      "count_range": [
+        4,
+        4
+      ]
+    },
+    "negative": {
+      "by_variant": {
+        "original": {
+          "130": {
+            "contours": 0,
+            "floodfill": 0
+          },
+          "175": {
+            "contours": 0,
+            "floodfill": 0
+          },
+          "210": {
+            "contours": 0,
+            "floodfill": 0
+          }
+        },
+        "jpeg85": {
+          "130": {
+            "contours": 0,
+            "floodfill": 0
+          },
+          "175": {
+            "contours": 0,
+            "floodfill": 0
+          },
+          "210": {
+            "contours": 0,
+            "floodfill": 0
+          }
+        },
+        "jpeg70": {
+          "130": {
+            "contours": 0,
+            "floodfill": 0
+          },
+          "175": {
+            "contours": 0,
+            "floodfill": 0
+          },
+          "210": {
+            "contours": 0,
+            "floodfill": 0
+          }
+        },
+        "down75_up": {
+          "130": {
+            "contours": 0,
+            "floodfill": 0
+          },
+          "175": {
+            "contours": 0,
+            "floodfill": 0
+          },
+          "210": {
+            "contours": 0,
+            "floodfill": 0
+          }
+        }
+      },
+      "stable": true,
+      "stable_count": 0,
+      "count_range": [
+        0,
+        0
+      ]
+    }
+  },
+  "regions": {
+    "skyline_reflection": {
+      "box": [
+        180,
+        275,
+        730,
+        378
+      ],
+      "pixels": 56650,
+      "by_variant": {
+        "original": {
+          "130": {
+            "contours": 3,
+            "floodfill": 2
+          },
+          "175": {
+            "contours": 7,
+            "floodfill": 6
+          },
+          "210": {
+            "contours": 10,
+            "floodfill": 7
+          }
+        },
+        "jpeg85": {
+          "130": {
+            "contours": 2,
+            "floodfill": 1
+          },
+          "175": {
+            "contours": 7,
+            "floodfill": 6
+          },
+          "210": {
+            "contours": 10,
+            "floodfill": 7
+          }
+        },
+        "jpeg70": {
+          "130": {
+            "contours": 3,
+            "floodfill": 1
+          },
+          "175": {
+            "contours": 7,
+            "floodfill": 6
+          },
+          "210": {
+            "contours": 10,
+            "floodfill": 7
+          }
+        },
+        "down75_up": {
+          "130": {
+            "contours": 3,
+            "floodfill": 0
+          },
+          "175": {
+            "contours": 6,
+            "floodfill": 4
+          },
+          "210": {
+            "contours": 9,
+            "floodfill": 4
+          }
+        }
+      },
+      "stable": false,
+      "stable_count": null,
+      "count_range": [
+        0,
+        10
+      ]
+    },
+    "central_open_water": {
+      "box": [
+        495,
+        555,
+        855,
+        850
+      ],
+      "pixels": 106200,
+      "by_variant": {
+        "original": {
+          "130": {
+            "contours": 1,
+            "floodfill": 0
+          },
+          "175": {
+            "contours": 2,
+            "floodfill": 0
+          },
+          "210": {
+            "contours": 4,
+            "floodfill": 1
+          }
+        },
+        "jpeg85": {
+          "130": {
+            "contours": 2,
+            "floodfill": 0
+          },
+          "175": {
+            "contours": 2,
+            "floodfill": 0
+          },
+          "210": {
+            "contours": 4,
+            "floodfill": 1
+          }
+        },
+        "jpeg70": {
+          "130": {
+            "contours": 1,
+            "floodfill": 0
+          },
+          "175": {
+            "contours": 2,
+            "floodfill": 0
+          },
+          "210": {
+            "contours": 3,
+            "floodfill": 0
+          }
+        },
+        "down75_up": {
+          "130": {
+            "contours": 1,
+            "floodfill": 0
+          },
+          "175": {
+            "contours": 2,
+            "floodfill": 0
+          },
+          "210": {
+            "contours": 3,
+            "floodfill": 0
+          }
+        }
+      },
+      "stable": false,
+      "stable_count": null,
+      "count_range": [
+        0,
+        4
+      ]
+    },
+    "largeboat_lower_wake": {
+      "box": [
+        10,
+        925,
+        420,
+        1090
+      ],
+      "pixels": 67650,
+      "by_variant": {
+        "original": {
+          "130": {
+            "contours": 5,
+            "floodfill": 5
+          },
+          "175": {
+            "contours": 11,
+            "floodfill": 7
+          },
+          "210": {
+            "contours": 16,
+            "floodfill": 10
+          }
+        },
+        "jpeg85": {
+          "130": {
+            "contours": 5,
+            "floodfill": 4
+          },
+          "175": {
+            "contours": 11,
+            "floodfill": 7
+          },
+          "210": {
+            "contours": 18,
+            "floodfill": 11
+          }
+        },
+        "jpeg70": {
+          "130": {
+            "contours": 6,
+            "floodfill": 5
+          },
+          "175": {
+            "contours": 12,
+            "floodfill": 8
+          },
+          "210": {
+            "contours": 18,
+            "floodfill": 11
+          }
+        },
+        "down75_up": {
+          "130": {
+            "contours": 2,
+            "floodfill": 2
+          },
+          "175": {
+            "contours": 11,
+            "floodfill": 6
+          },
+          "210": {
+            "contours": 15,
+            "floodfill": 9
+          }
+        }
+      },
+      "stable": false,
+      "stable_count": null,
+      "count_range": [
+        2,
+        18
+      ]
+    },
+    "right_lower_water": {
+      "box": [
+        1010,
+        815,
+        1530,
+        1060
+      ],
+      "pixels": 127400,
+      "by_variant": {
+        "original": {
+          "130": {
+            "contours": 4,
+            "floodfill": 3
+          },
+          "175": {
+            "contours": 10,
+            "floodfill": 5
+          },
+          "210": {
+            "contours": 13,
+            "floodfill": 10
+          }
+        },
+        "jpeg85": {
+          "130": {
+            "contours": 4,
+            "floodfill": 3
+          },
+          "175": {
+            "contours": 10,
+            "floodfill": 5
+          },
+          "210": {
+            "contours": 12,
+            "floodfill": 9
+          }
+        },
+        "jpeg70": {
+          "130": {
+            "contours": 5,
+            "floodfill": 3
+          },
+          "175": {
+            "contours": 9,
+            "floodfill": 5
+          },
+          "210": {
+            "contours": 13,
+            "floodfill": 9
+          }
+        },
+        "down75_up": {
+          "130": {
+            "contours": 5,
+            "floodfill": 4
+          },
+          "175": {
+            "contours": 9,
+            "floodfill": 4
+          },
+          "210": {
+            "contours": 10,
+            "floodfill": 8
+          }
+        }
+      },
+      "stable": false,
+      "stable_count": null,
+      "count_range": [
+        3,
+        13
+      ]
+    }
+  },
+  "stable_regions": 0,
+  "regions_with_stable_loops": 0,
+  "promoted": false,
+  "decision": "UNSTABLE_OR_ABSENT_CLOSED_WATER_LOOPS",
+  "stopping_rule": "synthetic controls must recover 3..4 closed ovals and zero open arcs; require >=3/4 stable ROIs and >=2 with stable nonzero loop count to promote as a visible secondary mark; otherwise narrow non-promotion",
+  "scope_limit": "Does not test implicit open wave symbolism, transformations that close gaps, or outlines elsewhere. A stable loop count is visual evidence only, never an encoded word, number or secret.",
+  "safety_guard": "No keys, word lists, wallet, transaction or social-reference work."
+}
