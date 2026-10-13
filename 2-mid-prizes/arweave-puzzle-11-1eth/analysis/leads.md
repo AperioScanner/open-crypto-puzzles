@@ -62,3 +62,8 @@ Stage 123: strong controls, 0/180 real cross-region 64px patch copies. No equiva
 
 ## Stage 125 closed; Stage 126 new direct-image cue (2026-10-13)
 Stage 125 failed to confirm a uniquely isolated rightmost offset: 0/216 real configs met fixed joint gates, although the rightmost silhouette ranked most negative 209/216. Neither interpretation should be inflated into a symbolic code. New Stage126 investigates a human-visible *masthead extension mark* above each of the five correct small sail tips, distinct from previous sail outline, shading, line-count or copy-detection tests. No mnemonic or wallet operations.
+
+
+## Stage 126 closed, Stage 127 active
+
+Stage126 valid negative: 4/5 consistently extended masthead marks, fifth ambiguous, no mixed binary mast-tip markers. Stage127 tests a separate visible component: signed hull/waterline angle under each of the five small sailboats, using two detectors and source-ROI contact sheet. Not related to sail tilt, hull shape decoding, or secret candidates.
