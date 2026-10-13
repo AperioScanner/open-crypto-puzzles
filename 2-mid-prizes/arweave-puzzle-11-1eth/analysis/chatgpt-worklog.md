@@ -402,3 +402,10 @@ Selected exactly one follow-up based on a concrete unresolved object-association
 GitHub confirmed Stage 127 run #38482080263 success. Verified canonical hash, positive mixed-slope control and level+decoy negative both pass. Real hulls: 0/5 receive a stable classification, with contradictory Hough median slopes under lossy transforms and two detectors. The stored hull ROI contact image visibly overlaps sails/pier, invalidating strong per-hull waterline attribution. Verdict INSUFFICIENT_HULL_ISOLATION, do not retire hull semantics or claim negative results.
 
 Stage 128 selected as a distinct image-only test: explicit closed-water-ripple topology across four fixed water ROIs, not the previously tested closed building topology, reflection directions, boat widths, or image-text OCR. Fixed thresholds, two detectors, lossy variants and calibrated closed ellipse/open arc synthetic controls. No secret/key/wallet/source-history operations.
+
+
+## 2026-10-13 — Stage128 result and Stage129 handoff
+
+Stage128 #38484785422 completed successfully while being checked. Synthetic closed/open control families passed; the four actual fixed ripple regions yielded 0 stable closed-loop counts across two methods x three thresholds x four lossies. Conclusion narrow negative for this closure topology, not for all image semantics.
+
+Stage129 selected to correct Stage102's proved object association defect (not general recycled search): five actual sail interiors, diagonal line orientation only. Predeclared Sobel/Hough two-measure method, neutral/positive/negative controls, four image variants, >=4/5 reproducible classes and both signs required. Research remains restricted to public canonical image; no secrets or social media.
