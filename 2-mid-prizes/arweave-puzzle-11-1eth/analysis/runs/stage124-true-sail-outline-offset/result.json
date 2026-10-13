@@ -1,0 +1,616 @@
+{
+  "experiment_id": "A11-EXP-124",
+  "hypothesis": "the five true triangular sails have robustly mixed outline base-center offsets relative to their apices, unlike simple perspective/shading",
+  "evidence": "Visible five separate small triangle outlines; Stage 102 tracked a wrong fifth sail, a documented object-association defect.",
+  "scope": "fixed five true sail sites, two simple outline-envelope detectors across 4 image variants; not hatch orientation, widths, internal stroke counts or secrets",
+  "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "sites_predeclared": [
+    [
+      "small_1",
+      1042,
+      448,
+      98,
+      35
+    ],
+    [
+      "small_2",
+      1148,
+      433,
+      99,
+      38
+    ],
+    [
+      "small_3",
+      1282,
+      411,
+      103,
+      44
+    ],
+    [
+      "small_4",
+      1372,
+      397,
+      101,
+      42
+    ],
+    [
+      "small_5",
+      1490,
+      357,
+      106,
+      47
+    ]
+  ],
+  "thresholds": {
+    "ink": 175,
+    "lead_fraction": 0.28,
+    "neutral_fraction": 0.16,
+    "min_row_support": 0.55,
+    "wedge_search_fraction": 0.56
+  },
+  "controls": {
+    "case_count": 120,
+    "passes": 120,
+    "passed": true,
+    "failures": [],
+    "sample_cases": [
+      {
+        "site": "small_1",
+        "expected": "L",
+        "variant": "original",
+        "method": "ink",
+        "observed": "L",
+        "score": -0.69188,
+        "passed": true
+      },
+      {
+        "site": "small_1",
+        "expected": "L",
+        "variant": "original",
+        "method": "edge",
+        "observed": "L",
+        "score": -0.70119,
+        "passed": true
+      },
+      {
+        "site": "small_1",
+        "expected": "L",
+        "variant": "jpeg85",
+        "method": "ink",
+        "observed": "L",
+        "score": -0.69301,
+        "passed": true
+      },
+      {
+        "site": "small_1",
+        "expected": "L",
+        "variant": "jpeg85",
+        "method": "edge",
+        "observed": "L",
+        "score": -0.70197,
+        "passed": true
+      },
+      {
+        "site": "small_1",
+        "expected": "L",
+        "variant": "jpeg70",
+        "method": "ink",
+        "observed": "L",
+        "score": -0.69188,
+        "passed": true
+      },
+      {
+        "site": "small_1",
+        "expected": "L",
+        "variant": "jpeg70",
+        "method": "edge",
+        "observed": "L",
+        "score": -0.70046,
+        "passed": true
+      },
+      {
+        "site": "small_1",
+        "expected": "L",
+        "variant": "down75_up",
+        "method": "ink",
+        "observed": "L",
+        "score": -0.69435,
+        "passed": true
+      },
+      {
+        "site": "small_1",
+        "expected": "L",
+        "variant": "down75_up",
+        "method": "edge",
+        "observed": "L",
+        "score": -0.70197,
+        "passed": true
+      },
+      {
+        "site": "small_1",
+        "expected": "N",
+        "variant": "original",
+        "method": "ink",
+        "observed": "N",
+        "score": 0.0,
+        "passed": true
+      },
+      {
+        "site": "small_1",
+        "expected": "N",
+        "variant": "original",
+        "method": "edge",
+        "observed": "N",
+        "score": 0.0,
+        "passed": true
+      },
+      {
+        "site": "small_1",
+        "expected": "N",
+        "variant": "jpeg85",
+        "method": "ink",
+        "observed": "N",
+        "score": 0.0,
+        "passed": true
+      },
+      {
+        "site": "small_1",
+        "expected": "N",
+        "variant": "jpeg85",
+        "method": "edge",
+        "observed": "N",
+        "score": 0.0,
+        "passed": true
+      }
+    ]
+  },
+  "real_sites": [
+    {
+      "sail": "small_1",
+      "apex_site": [
+        1042,
+        448
+      ],
+      "apparent_height": 98,
+      "half_base_width": 35,
+      "variants": {
+        "original": {
+          "ink": {
+            "method": "ink",
+            "valid_rows": 33,
+            "total_rows": 33,
+            "support": 1.0,
+            "normalized_base_offset": 0.09468,
+            "valid": true
+          },
+          "edge": {
+            "method": "edge",
+            "valid_rows": 33,
+            "total_rows": 33,
+            "support": 1.0,
+            "normalized_base_offset": 0.09524,
+            "valid": true
+          }
+        },
+        "jpeg85": {
+          "ink": {
+            "method": "ink",
+            "valid_rows": 33,
+            "total_rows": 33,
+            "support": 1.0,
+            "normalized_base_offset": 0.09694,
+            "valid": true
+          },
+          "edge": {
+            "method": "edge",
+            "valid_rows": 33,
+            "total_rows": 33,
+            "support": 1.0,
+            "normalized_base_offset": 0.09524,
+            "valid": true
+          }
+        },
+        "jpeg70": {
+          "ink": {
+            "method": "ink",
+            "valid_rows": 33,
+            "total_rows": 33,
+            "support": 1.0,
+            "normalized_base_offset": 0.09694,
+            "valid": true
+          },
+          "edge": {
+            "method": "edge",
+            "valid_rows": 33,
+            "total_rows": 33,
+            "support": 1.0,
+            "normalized_base_offset": 0.09524,
+            "valid": true
+          }
+        },
+        "down75_up": {
+          "ink": {
+            "method": "ink",
+            "valid_rows": 33,
+            "total_rows": 33,
+            "support": 1.0,
+            "normalized_base_offset": 0.09524,
+            "valid": true
+          },
+          "edge": {
+            "method": "edge",
+            "valid_rows": 33,
+            "total_rows": 33,
+            "support": 1.0,
+            "normalized_base_offset": 0.09048,
+            "valid": true
+          }
+        }
+      },
+      "range": [
+        0.09048,
+        0.09694
+      ],
+      "stable_class": "N"
+    },
+    {
+      "sail": "small_2",
+      "apex_site": [
+        1148,
+        433
+      ],
+      "apparent_height": 99,
+      "half_base_width": 38,
+      "variants": {
+        "original": {
+          "ink": {
+            "method": "ink",
+            "valid_rows": 34,
+            "total_rows": 34,
+            "support": 1.0,
+            "normalized_base_offset": -0.25015,
+            "valid": true
+          },
+          "edge": {
+            "method": "edge",
+            "valid_rows": 34,
+            "total_rows": 34,
+            "support": 1.0,
+            "normalized_base_offset": -0.2382,
+            "valid": true
+          }
+        },
+        "jpeg85": {
+          "ink": {
+            "method": "ink",
+            "valid_rows": 34,
+            "total_rows": 34,
+            "support": 1.0,
+            "normalized_base_offset": -0.2523,
+            "valid": true
+          },
+          "edge": {
+            "method": "edge",
+            "valid_rows": 34,
+            "total_rows": 34,
+            "support": 1.0,
+            "normalized_base_offset": -0.2382,
+            "valid": true
+          }
+        },
+        "jpeg70": {
+          "ink": {
+            "method": "ink",
+            "valid_rows": 34,
+            "total_rows": 34,
+            "support": 1.0,
+            "normalized_base_offset": -0.2523,
+            "valid": true
+          },
+          "edge": {
+            "method": "edge",
+            "valid_rows": 34,
+            "total_rows": 34,
+            "support": 1.0,
+            "normalized_base_offset": -0.2382,
+            "valid": true
+          }
+        },
+        "down75_up": {
+          "ink": {
+            "method": "ink",
+            "valid_rows": 34,
+            "total_rows": 34,
+            "support": 1.0,
+            "normalized_base_offset": -0.2453,
+            "valid": true
+          },
+          "edge": {
+            "method": "edge",
+            "valid_rows": 34,
+            "total_rows": 34,
+            "support": 1.0,
+            "normalized_base_offset": -0.2382,
+            "valid": true
+          }
+        }
+      },
+      "range": [
+        -0.2523,
+        -0.2382
+      ],
+      "stable_class": null
+    },
+    {
+      "sail": "small_3",
+      "apex_site": [
+        1282,
+        411
+      ],
+      "apparent_height": 103,
+      "half_base_width": 44,
+      "variants": {
+        "original": {
+          "ink": {
+            "method": "ink",
+            "valid_rows": 35,
+            "total_rows": 35,
+            "support": 1.0,
+            "normalized_base_offset": 0.02066,
+            "valid": true
+          },
+          "edge": {
+            "method": "edge",
+            "valid_rows": 34,
+            "total_rows": 35,
+            "support": 0.9714,
+            "normalized_base_offset": 0.02024,
+            "valid": true
+          }
+        },
+        "jpeg85": {
+          "ink": {
+            "method": "ink",
+            "valid_rows": 35,
+            "total_rows": 35,
+            "support": 1.0,
+            "normalized_base_offset": 0.02066,
+            "valid": true
+          },
+          "edge": {
+            "method": "edge",
+            "valid_rows": 34,
+            "total_rows": 35,
+            "support": 0.9714,
+            "normalized_base_offset": 0.02024,
+            "valid": true
+          }
+        },
+        "jpeg70": {
+          "ink": {
+            "method": "ink",
+            "valid_rows": 35,
+            "total_rows": 35,
+            "support": 1.0,
+            "normalized_base_offset": 0.02066,
+            "valid": true
+          },
+          "edge": {
+            "method": "edge",
+            "valid_rows": 34,
+            "total_rows": 35,
+            "support": 0.9714,
+            "normalized_base_offset": 0.00931,
+            "valid": true
+          }
+        },
+        "down75_up": {
+          "ink": {
+            "method": "ink",
+            "valid_rows": 35,
+            "total_rows": 35,
+            "support": 1.0,
+            "normalized_base_offset": 0.02066,
+            "valid": true
+          },
+          "edge": {
+            "method": "edge",
+            "valid_rows": 34,
+            "total_rows": 35,
+            "support": 0.9714,
+            "normalized_base_offset": 0.00931,
+            "valid": true
+          }
+        }
+      },
+      "range": [
+        0.00931,
+        0.02066
+      ],
+      "stable_class": "N"
+    },
+    {
+      "sail": "small_4",
+      "apex_site": [
+        1372,
+        397
+      ],
+      "apparent_height": 101,
+      "half_base_width": 42,
+      "variants": {
+        "original": {
+          "ink": {
+            "method": "ink",
+            "valid_rows": 34,
+            "total_rows": 34,
+            "support": 1.0,
+            "normalized_base_offset": -0.01947,
+            "valid": true
+          },
+          "edge": {
+            "method": "edge",
+            "valid_rows": 34,
+            "total_rows": 34,
+            "support": 1.0,
+            "normalized_base_offset": -0.03135,
+            "valid": true
+          }
+        },
+        "jpeg85": {
+          "ink": {
+            "method": "ink",
+            "valid_rows": 34,
+            "total_rows": 34,
+            "support": 1.0,
+            "normalized_base_offset": -0.01947,
+            "valid": true
+          },
+          "edge": {
+            "method": "edge",
+            "valid_rows": 34,
+            "total_rows": 34,
+            "support": 1.0,
+            "normalized_base_offset": -0.02334,
+            "valid": true
+          }
+        },
+        "jpeg70": {
+          "ink": {
+            "method": "ink",
+            "valid_rows": 34,
+            "total_rows": 34,
+            "support": 1.0,
+            "normalized_base_offset": -0.01947,
+            "valid": true
+          },
+          "edge": {
+            "method": "edge",
+            "valid_rows": 34,
+            "total_rows": 34,
+            "support": 1.0,
+            "normalized_base_offset": -0.03135,
+            "valid": true
+          }
+        },
+        "down75_up": {
+          "ink": {
+            "method": "ink",
+            "valid_rows": 34,
+            "total_rows": 34,
+            "support": 1.0,
+            "normalized_base_offset": -0.01838,
+            "valid": true
+          },
+          "edge": {
+            "method": "edge",
+            "valid_rows": 34,
+            "total_rows": 34,
+            "support": 1.0,
+            "normalized_base_offset": -0.03739,
+            "valid": true
+          }
+        }
+      },
+      "range": [
+        -0.03739,
+        -0.01838
+      ],
+      "stable_class": "N"
+    },
+    {
+      "sail": "small_5",
+      "apex_site": [
+        1490,
+        357
+      ],
+      "apparent_height": 106,
+      "half_base_width": 47,
+      "variants": {
+        "original": {
+          "ink": {
+            "method": "ink",
+            "valid_rows": 36,
+            "total_rows": 36,
+            "support": 1.0,
+            "normalized_base_offset": -0.32976,
+            "valid": true
+          },
+          "edge": {
+            "method": "edge",
+            "valid_rows": 36,
+            "total_rows": 36,
+            "support": 1.0,
+            "normalized_base_offset": -0.33706,
+            "valid": true
+          }
+        },
+        "jpeg85": {
+          "ink": {
+            "method": "ink",
+            "valid_rows": 36,
+            "total_rows": 36,
+            "support": 1.0,
+            "normalized_base_offset": -0.32976,
+            "valid": true
+          },
+          "edge": {
+            "method": "edge",
+            "valid_rows": 36,
+            "total_rows": 36,
+            "support": 1.0,
+            "normalized_base_offset": -0.34182,
+            "valid": true
+          }
+        },
+        "jpeg70": {
+          "ink": {
+            "method": "ink",
+            "valid_rows": 36,
+            "total_rows": 36,
+            "support": 1.0,
+            "normalized_base_offset": -0.32976,
+            "valid": true
+          },
+          "edge": {
+            "method": "edge",
+            "valid_rows": 36,
+            "total_rows": 36,
+            "support": 1.0,
+            "normalized_base_offset": -0.34182,
+            "valid": true
+          }
+        },
+        "down75_up": {
+          "ink": {
+            "method": "ink",
+            "valid_rows": 36,
+            "total_rows": 36,
+            "support": 1.0,
+            "normalized_base_offset": -0.32976,
+            "valid": true
+          },
+          "edge": {
+            "method": "edge",
+            "valid_rows": 36,
+            "total_rows": 36,
+            "support": 1.0,
+            "normalized_base_offset": -0.33403,
+            "valid": true
+          }
+        }
+      },
+      "range": [
+        -0.34182,
+        -0.32976
+      ],
+      "stable_class": "L"
+    }
+  ],
+  "stable_site_count": 4,
+  "signed_leaning_site_count": 1,
+  "both_signs": false,
+  "promoted": false,
+  "decision": "NO_FIVE_SAIL_OUTLINE_OFFSET_CODE",
+  "coverage_guard": "A synthetic control failure invalidates any real inference; insufficient real-site outline support remains INCONCLUSIVE. Only fixed apex-to-base offset, not the meaning of sails or other codes.",
+  "security_guard": "Only public image features. No private key, mnemonic, candidate word, Ethereum address or wallet operations."
+}
