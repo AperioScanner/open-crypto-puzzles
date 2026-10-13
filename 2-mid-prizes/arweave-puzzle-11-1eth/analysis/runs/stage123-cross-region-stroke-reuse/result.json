@@ -1,0 +1,1675 @@
+{
+  "experiment_id": "A11-EXP-123",
+  "date": "2026-10-13",
+  "hypothesis": "an actual near-identical pencil motif may have been copied between different visible scene layers (skyline, large boat/water, small-boat pier)",
+  "evidence": "Pencil hatch marks occur in skyline, foreground water and pier, but exact cross-layer raster duplication has not been tested.",
+  "scope": "nonoverlapping semantic regions, original 64x64 patches on fixed 32px grid, strict cross-region comparisons only; no rotated/scaled/sub-grid copies tested",
+  "sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "thresholds": {
+    "window": 64,
+    "stride": 32,
+    "occupancy": [
+      0.07,
+      0.8
+    ],
+    "min_original_corr": 0.95,
+    "min_lossy_corr": 0.91,
+    "min_ink_iou": 0.82,
+    "candidate_pool_per_region_pair": 60
+  },
+  "control_copy": {
+    "eligible_grid_windows": {
+      "skyline": 5,
+      "water_largeboat": 5,
+      "pier_smallboats": 0
+    },
+    "pairs_considered": 25,
+    "replicated_pair_count": 5,
+    "replicated_pairs": [
+      {
+        "regions": [
+          "skyline",
+          "water_largeboat"
+        ],
+        "at": [
+          [
+            294,
+            64
+          ],
+          [
+            144,
+            342
+          ]
+        ],
+        "coarse_corr": 1.000002,
+        "scores": {
+          "original": {
+            "correlation": 1.0,
+            "ink_iou": 1.0,
+            "ink_fractions": [
+              0.1016,
+              0.1016
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.999029,
+            "ink_iou": 0.985782,
+            "ink_fractions": [
+              0.1021,
+              0.1025
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.996787,
+            "ink_iou": 0.967366,
+            "ink_fractions": [
+              0.103,
+              0.103
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.996625,
+            "ink_iou": 0.960526,
+            "ink_fractions": [
+              0.1091,
+              0.1091
+            ]
+          }
+        },
+        "replicated": true
+      },
+      {
+        "regions": [
+          "skyline",
+          "water_largeboat"
+        ],
+        "at": [
+          [
+            262,
+            32
+          ],
+          [
+            112,
+            310
+          ]
+        ],
+        "coarse_corr": 1.0,
+        "scores": {
+          "original": {
+            "correlation": 1.0,
+            "ink_iou": 1.0,
+            "ink_fractions": [
+              0.115,
+              0.115
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.999035,
+            "ink_iou": 0.983299,
+            "ink_fractions": [
+              0.116,
+              0.116
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.996498,
+            "ink_iou": 0.971074,
+            "ink_fractions": [
+              0.1165,
+              0.1165
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.996721,
+            "ink_iou": 0.966926,
+            "ink_fractions": [
+              0.1243,
+              0.1226
+            ]
+          }
+        },
+        "replicated": true
+      },
+      {
+        "regions": [
+          "skyline",
+          "water_largeboat"
+        ],
+        "at": [
+          [
+            262,
+            64
+          ],
+          [
+            112,
+            342
+          ]
+        ],
+        "coarse_corr": 1.0,
+        "scores": {
+          "original": {
+            "correlation": 1.0,
+            "ink_iou": 1.0,
+            "ink_fractions": [
+              0.2346,
+              0.2346
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.998918,
+            "ink_iou": 0.986639,
+            "ink_fractions": [
+              0.2356,
+              0.2363
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.996107,
+            "ink_iou": 0.975635,
+            "ink_fractions": [
+              0.2371,
+              0.238
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.99646,
+            "ink_iou": 0.971264,
+            "ink_fractions": [
+              0.2517,
+              0.2507
+            ]
+          }
+        },
+        "replicated": true
+      },
+      {
+        "regions": [
+          "skyline",
+          "water_largeboat"
+        ],
+        "at": [
+          [
+            230,
+            64
+          ],
+          [
+            80,
+            342
+          ]
+        ],
+        "coarse_corr": 1.0,
+        "scores": {
+          "original": {
+            "correlation": 1.0,
+            "ink_iou": 1.0,
+            "ink_fractions": [
+              0.1331,
+              0.1331
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.999096,
+            "ink_iou": 0.987296,
+            "ink_fractions": [
+              0.1335,
+              0.1338
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.99655,
+            "ink_iou": 0.982014,
+            "ink_fractions": [
+              0.134,
+              0.135
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.997261,
+            "ink_iou": 0.979592,
+            "ink_fractions": [
+              0.1426,
+              0.1416
+            ]
+          }
+        },
+        "replicated": true
+      },
+      {
+        "regions": [
+          "skyline",
+          "water_largeboat"
+        ],
+        "at": [
+          [
+            262,
+            96
+          ],
+          [
+            112,
+            374
+          ]
+        ],
+        "coarse_corr": 0.999999,
+        "scores": {
+          "original": {
+            "correlation": 1.0,
+            "ink_iou": 1.0,
+            "ink_fractions": [
+              0.1196,
+              0.1196
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.999101,
+            "ink_iou": 0.989879,
+            "ink_fractions": [
+              0.1196,
+              0.1204
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.996813,
+            "ink_iou": 0.98004,
+            "ink_fractions": [
+              0.1206,
+              0.1216
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.99724,
+            "ink_iou": 0.975472,
+            "ink_fractions": [
+              0.1274,
+              0.1282
+            ]
+          }
+        },
+        "replicated": true
+      }
+    ],
+    "top_candidates": [
+      {
+        "regions": [
+          "skyline",
+          "water_largeboat"
+        ],
+        "at": [
+          [
+            294,
+            64
+          ],
+          [
+            144,
+            342
+          ]
+        ],
+        "coarse_corr": 1.000002,
+        "scores": {
+          "original": {
+            "correlation": 1.0,
+            "ink_iou": 1.0,
+            "ink_fractions": [
+              0.1016,
+              0.1016
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.999029,
+            "ink_iou": 0.985782,
+            "ink_fractions": [
+              0.1021,
+              0.1025
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.996787,
+            "ink_iou": 0.967366,
+            "ink_fractions": [
+              0.103,
+              0.103
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.996625,
+            "ink_iou": 0.960526,
+            "ink_fractions": [
+              0.1091,
+              0.1091
+            ]
+          }
+        },
+        "replicated": true
+      },
+      {
+        "regions": [
+          "skyline",
+          "water_largeboat"
+        ],
+        "at": [
+          [
+            262,
+            32
+          ],
+          [
+            112,
+            310
+          ]
+        ],
+        "coarse_corr": 1.0,
+        "scores": {
+          "original": {
+            "correlation": 1.0,
+            "ink_iou": 1.0,
+            "ink_fractions": [
+              0.115,
+              0.115
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.999035,
+            "ink_iou": 0.983299,
+            "ink_fractions": [
+              0.116,
+              0.116
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.996498,
+            "ink_iou": 0.971074,
+            "ink_fractions": [
+              0.1165,
+              0.1165
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.996721,
+            "ink_iou": 0.966926,
+            "ink_fractions": [
+              0.1243,
+              0.1226
+            ]
+          }
+        },
+        "replicated": true
+      },
+      {
+        "regions": [
+          "skyline",
+          "water_largeboat"
+        ],
+        "at": [
+          [
+            262,
+            64
+          ],
+          [
+            112,
+            342
+          ]
+        ],
+        "coarse_corr": 1.0,
+        "scores": {
+          "original": {
+            "correlation": 1.0,
+            "ink_iou": 1.0,
+            "ink_fractions": [
+              0.2346,
+              0.2346
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.998918,
+            "ink_iou": 0.986639,
+            "ink_fractions": [
+              0.2356,
+              0.2363
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.996107,
+            "ink_iou": 0.975635,
+            "ink_fractions": [
+              0.2371,
+              0.238
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.99646,
+            "ink_iou": 0.971264,
+            "ink_fractions": [
+              0.2517,
+              0.2507
+            ]
+          }
+        },
+        "replicated": true
+      }
+    ]
+  },
+  "control_independent": {
+    "eligible_grid_windows": {
+      "skyline": 5,
+      "water_largeboat": 5,
+      "pier_smallboats": 0
+    },
+    "pairs_considered": 25,
+    "replicated_pair_count": 0,
+    "replicated_pairs": [],
+    "top_candidates": [
+      {
+        "regions": [
+          "skyline",
+          "water_largeboat"
+        ],
+        "at": [
+          [
+            230,
+            64
+          ],
+          [
+            80,
+            342
+          ]
+        ],
+        "coarse_corr": 0.670382,
+        "scores": {
+          "original": {
+            "correlation": 0.51432,
+            "ink_iou": 0.395013,
+            "ink_fractions": [
+              0.1331,
+              0.1265
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.517686,
+            "ink_iou": 0.393229,
+            "ink_fractions": [
+              0.1335,
+              0.1277
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.5224,
+            "ink_iou": 0.397135,
+            "ink_fractions": [
+              0.134,
+              0.1279
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.553991,
+            "ink_iou": 0.423559,
+            "ink_fractions": [
+              0.1426,
+              0.1348
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "skyline",
+          "water_largeboat"
+        ],
+        "at": [
+          [
+            262,
+            96
+          ],
+          [
+            112,
+            374
+          ]
+        ],
+        "coarse_corr": 0.598188,
+        "scores": {
+          "original": {
+            "correlation": 0.459872,
+            "ink_iou": 0.345238,
+            "ink_fractions": [
+              0.1196,
+              0.1287
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.46321,
+            "ink_iou": 0.342556,
+            "ink_fractions": [
+              0.1196,
+              0.1292
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.467008,
+            "ink_iou": 0.343342,
+            "ink_fractions": [
+              0.1206,
+              0.1306
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.496284,
+            "ink_iou": 0.37,
+            "ink_fractions": [
+              0.1274,
+              0.1401
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "skyline",
+          "water_largeboat"
+        ],
+        "at": [
+          [
+            262,
+            32
+          ],
+          [
+            112,
+            310
+          ]
+        ],
+        "coarse_corr": 0.551613,
+        "scores": {
+          "original": {
+            "correlation": 0.400529,
+            "ink_iou": 0.310935,
+            "ink_fractions": [
+              0.115,
+              0.1279
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.406298,
+            "ink_iou": 0.312418,
+            "ink_fractions": [
+              0.116,
+              0.1292
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.411387,
+            "ink_iou": 0.312827,
+            "ink_fractions": [
+              0.1165,
+              0.1284
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.439426,
+            "ink_iou": 0.34717,
+            "ink_fractions": [
+              0.1243,
+              0.1372
+            ]
+          }
+        },
+        "replicated": false
+      }
+    ]
+  },
+  "controls_pass": true,
+  "real": {
+    "eligible_grid_windows": {
+      "skyline": 228,
+      "water_largeboat": 265,
+      "pier_smallboats": 230
+    },
+    "pairs_considered": 180,
+    "replicated_pair_count": 0,
+    "replicated_pairs": [],
+    "top_candidates": [
+      {
+        "regions": [
+          "water_largeboat",
+          "pier_smallboats"
+        ],
+        "at": [
+          [
+            144,
+            438
+          ],
+          [
+            1410,
+            365
+          ]
+        ],
+        "coarse_corr": 0.889724,
+        "scores": {
+          "original": {
+            "correlation": 0.674888,
+            "ink_iou": 0.558097,
+            "ink_fractions": [
+              0.1865,
+              0.2292
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.677234,
+            "ink_iou": 0.554128,
+            "ink_fractions": [
+              0.1851,
+              0.2285
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.681671,
+            "ink_iou": 0.556062,
+            "ink_fractions": [
+              0.1868,
+              0.23
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.716315,
+            "ink_iou": 0.568996,
+            "ink_fractions": [
+              0.1909,
+              0.2366
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "water_largeboat",
+          "pier_smallboats"
+        ],
+        "at": [
+          [
+            176,
+            374
+          ],
+          [
+            1186,
+            429
+          ]
+        ],
+        "coarse_corr": 0.870233,
+        "scores": {
+          "original": {
+            "correlation": 0.640423,
+            "ink_iou": 0.542538,
+            "ink_fractions": [
+              0.1177,
+              0.1523
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.643826,
+            "ink_iou": 0.530471,
+            "ink_fractions": [
+              0.1165,
+              0.1533
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.649159,
+            "ink_iou": 0.54242,
+            "ink_fractions": [
+              0.116,
+              0.1548
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.68186,
+            "ink_iou": 0.582313,
+            "ink_fractions": [
+              0.1228,
+              0.1611
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "skyline",
+          "water_largeboat"
+        ],
+        "at": [
+          [
+            1286,
+            128
+          ],
+          [
+            816,
+            470
+          ]
+        ],
+        "coarse_corr": 0.832073,
+        "scores": {
+          "original": {
+            "correlation": 0.52812,
+            "ink_iou": 0.358025,
+            "ink_fractions": [
+              0.1733,
+              0.1221
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.532137,
+            "ink_iou": 0.356502,
+            "ink_fractions": [
+              0.1736,
+              0.1218
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.535322,
+            "ink_iou": 0.363535,
+            "ink_fractions": [
+              0.1741,
+              0.1235
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.603198,
+            "ink_iou": 0.398528,
+            "ink_fractions": [
+              0.1821,
+              0.1426
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "skyline",
+          "pier_smallboats"
+        ],
+        "at": [
+          [
+            870,
+            160
+          ],
+          [
+            930,
+            525
+          ]
+        ],
+        "coarse_corr": 0.829745,
+        "scores": {
+          "original": {
+            "correlation": 0.638761,
+            "ink_iou": 0.509018,
+            "ink_fractions": [
+              0.175,
+              0.1926
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.641141,
+            "ink_iou": 0.513568,
+            "ink_fractions": [
+              0.1746,
+              0.1931
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.644113,
+            "ink_iou": 0.518109,
+            "ink_fractions": [
+              0.1758,
+              0.1926
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.684053,
+            "ink_iou": 0.555019,
+            "ink_fractions": [
+              0.1931,
+              0.2002
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "skyline",
+          "water_largeboat"
+        ],
+        "at": [
+          [
+            1414,
+            96
+          ],
+          [
+            496,
+            790
+          ]
+        ],
+        "coarse_corr": 0.826456,
+        "scores": {
+          "original": {
+            "correlation": 0.620443,
+            "ink_iou": 0.568017,
+            "ink_fractions": [
+              0.3159,
+              0.4214
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.622753,
+            "ink_iou": 0.56987,
+            "ink_fractions": [
+              0.3164,
+              0.4214
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.623629,
+            "ink_iou": 0.568546,
+            "ink_fractions": [
+              0.3171,
+              0.4231
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.651031,
+            "ink_iou": 0.597329,
+            "ink_fractions": [
+              0.3306,
+              0.4287
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "water_largeboat",
+          "pier_smallboats"
+        ],
+        "at": [
+          [
+            496,
+            694
+          ],
+          [
+            1154,
+            429
+          ]
+        ],
+        "coarse_corr": 0.815847,
+        "scores": {
+          "original": {
+            "correlation": 0.641076,
+            "ink_iou": 0.511194,
+            "ink_fractions": [
+              0.1418,
+              0.1548
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.643873,
+            "ink_iou": 0.516169,
+            "ink_fractions": [
+              0.1421,
+              0.1555
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.649101,
+            "ink_iou": 0.516129,
+            "ink_fractions": [
+              0.1423,
+              0.156
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.669635,
+            "ink_iou": 0.539855,
+            "ink_fractions": [
+              0.1475,
+              0.1638
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "skyline",
+          "water_largeboat"
+        ],
+        "at": [
+          [
+            294,
+            64
+          ],
+          [
+            144,
+            438
+          ]
+        ],
+        "coarse_corr": 0.815009,
+        "scores": {
+          "original": {
+            "correlation": 0.596518,
+            "ink_iou": 0.494924,
+            "ink_fractions": [
+              0.2449,
+              0.1865
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.599046,
+            "ink_iou": 0.494477,
+            "ink_fractions": [
+              0.2444,
+              0.1851
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.601525,
+            "ink_iou": 0.493232,
+            "ink_fractions": [
+              0.2441,
+              0.1868
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.637419,
+            "ink_iou": 0.513739,
+            "ink_fractions": [
+              0.2529,
+              0.1909
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "skyline",
+          "pier_smallboats"
+        ],
+        "at": [
+          [
+            966,
+            32
+          ],
+          [
+            930,
+            525
+          ]
+        ],
+        "coarse_corr": 0.802809,
+        "scores": {
+          "original": {
+            "correlation": 0.580755,
+            "ink_iou": 0.480507,
+            "ink_fractions": [
+              0.1782,
+              0.1926
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.583095,
+            "ink_iou": 0.484375,
+            "ink_fractions": [
+              0.178,
+              0.1931
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.586796,
+            "ink_iou": 0.477028,
+            "ink_fractions": [
+              0.1763,
+              0.1926
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.630736,
+            "ink_iou": 0.518061,
+            "ink_fractions": [
+              0.1897,
+              0.2002
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "water_largeboat",
+          "pier_smallboats"
+        ],
+        "at": [
+          [
+            176,
+            374
+          ],
+          [
+            1314,
+            365
+          ]
+        ],
+        "coarse_corr": 0.800061,
+        "scores": {
+          "original": {
+            "correlation": 0.613481,
+            "ink_iou": 0.459941,
+            "ink_fractions": [
+              0.1177,
+              0.1226
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.617403,
+            "ink_iou": 0.465465,
+            "ink_fractions": [
+              0.1165,
+              0.1218
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.623356,
+            "ink_iou": 0.465569,
+            "ink_fractions": [
+              0.116,
+              0.123
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.646989,
+            "ink_iou": 0.478448,
+            "ink_fractions": [
+              0.1228,
+              0.1284
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "water_largeboat",
+          "pier_smallboats"
+        ],
+        "at": [
+          [
+            272,
+            406
+          ],
+          [
+            1090,
+            781
+          ]
+        ],
+        "coarse_corr": 0.796458,
+        "scores": {
+          "original": {
+            "correlation": 0.619657,
+            "ink_iou": 0.469136,
+            "ink_fractions": [
+              0.1653,
+              0.1543
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.621609,
+            "ink_iou": 0.464646,
+            "ink_fractions": [
+              0.1638,
+              0.1548
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.622773,
+            "ink_iou": 0.477427,
+            "ink_fractions": [
+              0.1646,
+              0.155
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.647977,
+            "ink_iou": 0.498894,
+            "ink_fractions": [
+              0.1697,
+              0.1611
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "water_largeboat",
+          "pier_smallboats"
+        ],
+        "at": [
+          [
+            176,
+            406
+          ],
+          [
+            1090,
+            429
+          ]
+        ],
+        "coarse_corr": 0.794203,
+        "scores": {
+          "original": {
+            "correlation": 0.593578,
+            "ink_iou": 0.565928,
+            "ink_fractions": [
+              0.3489,
+              0.3064
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.595701,
+            "ink_iou": 0.567916,
+            "ink_fractions": [
+              0.3472,
+              0.3066
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.599294,
+            "ink_iou": 0.561844,
+            "ink_fractions": [
+              0.3469,
+              0.3066
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.618533,
+            "ink_iou": 0.594579,
+            "ink_fractions": [
+              0.3633,
+              0.3118
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "water_largeboat",
+          "pier_smallboats"
+        ],
+        "at": [
+          [
+            144,
+            438
+          ],
+          [
+            1090,
+            429
+          ]
+        ],
+        "coarse_corr": 0.792654,
+        "scores": {
+          "original": {
+            "correlation": 0.604987,
+            "ink_iou": 0.487841,
+            "ink_fractions": [
+              0.1865,
+              0.3064
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.607081,
+            "ink_iou": 0.485251,
+            "ink_fractions": [
+              0.1851,
+              0.3066
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.611263,
+            "ink_iou": 0.484938,
+            "ink_fractions": [
+              0.1868,
+              0.3066
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.634471,
+            "ink_iou": 0.48987,
+            "ink_fractions": [
+              0.1909,
+              0.3118
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "skyline",
+          "water_largeboat"
+        ],
+        "at": [
+          [
+            390,
+            32
+          ],
+          [
+            304,
+            438
+          ]
+        ],
+        "coarse_corr": 0.790935,
+        "scores": {
+          "original": {
+            "correlation": 0.661805,
+            "ink_iou": 0.476954,
+            "ink_fractions": [
+              0.0894,
+              0.0906
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.664328,
+            "ink_iou": 0.480808,
+            "ink_fractions": [
+              0.0889,
+              0.0901
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.667471,
+            "ink_iou": 0.486708,
+            "ink_fractions": [
+              0.0874,
+              0.0901
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.689935,
+            "ink_iou": 0.48728,
+            "ink_fractions": [
+              0.0938,
+              0.0918
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "water_largeboat",
+          "pier_smallboats"
+        ],
+        "at": [
+          [
+            176,
+            406
+          ],
+          [
+            1314,
+            397
+          ]
+        ],
+        "coarse_corr": 0.790228,
+        "scores": {
+          "original": {
+            "correlation": 0.577776,
+            "ink_iou": 0.560298,
+            "ink_fractions": [
+              0.3489,
+              0.4187
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.579846,
+            "ink_iou": 0.559381,
+            "ink_fractions": [
+              0.3472,
+              0.4158
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.584265,
+            "ink_iou": 0.559642,
+            "ink_fractions": [
+              0.3469,
+              0.4192
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.612531,
+            "ink_iou": 0.587634,
+            "ink_fractions": [
+              0.3633,
+              0.4329
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "water_largeboat",
+          "pier_smallboats"
+        ],
+        "at": [
+          [
+            144,
+            438
+          ],
+          [
+            1186,
+            429
+          ]
+        ],
+        "coarse_corr": 0.789269,
+        "scores": {
+          "original": {
+            "correlation": 0.591666,
+            "ink_iou": 0.461053,
+            "ink_fractions": [
+              0.1865,
+              0.1523
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.595415,
+            "ink_iou": 0.462025,
+            "ink_fractions": [
+              0.1851,
+              0.1533
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.598231,
+            "ink_iou": 0.467996,
+            "ink_fractions": [
+              0.1868,
+              0.1548
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.632954,
+            "ink_iou": 0.49121,
+            "ink_fractions": [
+              0.1909,
+              0.1611
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "water_largeboat",
+          "pier_smallboats"
+        ],
+        "at": [
+          [
+            144,
+            438
+          ],
+          [
+            1218,
+            397
+          ]
+        ],
+        "coarse_corr": 0.788032,
+        "scores": {
+          "original": {
+            "correlation": 0.584711,
+            "ink_iou": 0.483444,
+            "ink_fractions": [
+              0.1865,
+              0.251
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.587917,
+            "ink_iou": 0.479668,
+            "ink_fractions": [
+              0.1851,
+              0.2502
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.592285,
+            "ink_iou": 0.488797,
+            "ink_fractions": [
+              0.1868,
+              0.2512
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.632151,
+            "ink_iou": 0.512136,
+            "ink_fractions": [
+              0.1909,
+              0.2654
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "skyline",
+          "pier_smallboats"
+        ],
+        "at": [
+          [
+            294,
+            64
+          ],
+          [
+            1410,
+            365
+          ]
+        ],
+        "coarse_corr": 0.782371,
+        "scores": {
+          "original": {
+            "correlation": 0.627109,
+            "ink_iou": 0.54127,
+            "ink_fractions": [
+              0.2449,
+              0.2292
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.629455,
+            "ink_iou": 0.542197,
+            "ink_fractions": [
+              0.2444,
+              0.2285
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.633037,
+            "ink_iou": 0.54127,
+            "ink_fractions": [
+              0.2441,
+              0.23
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.658176,
+            "ink_iou": 0.567631,
+            "ink_fractions": [
+              0.2529,
+              0.2366
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "skyline",
+          "pier_smallboats"
+        ],
+        "at": [
+          [
+            326,
+            32
+          ],
+          [
+            930,
+            525
+          ]
+        ],
+        "coarse_corr": 0.780859,
+        "scores": {
+          "original": {
+            "correlation": 0.650154,
+            "ink_iou": 0.517463,
+            "ink_fractions": [
+              0.2104,
+              0.1926
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.651667,
+            "ink_iou": 0.517972,
+            "ink_fractions": [
+              0.209,
+              0.1931
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.653177,
+            "ink_iou": 0.516636,
+            "ink_fractions": [
+              0.208,
+              0.1926
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.689322,
+            "ink_iou": 0.544969,
+            "ink_fractions": [
+              0.2234,
+              0.2002
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "skyline",
+          "pier_smallboats"
+        ],
+        "at": [
+          [
+            1414,
+            64
+          ],
+          [
+            1346,
+            365
+          ]
+        ],
+        "coarse_corr": 0.778613,
+        "scores": {
+          "original": {
+            "correlation": 0.564813,
+            "ink_iou": 0.452954,
+            "ink_fractions": [
+              0.1555,
+              0.1687
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.567772,
+            "ink_iou": 0.448087,
+            "ink_fractions": [
+              0.1558,
+              0.1677
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.570528,
+            "ink_iou": 0.45,
+            "ink_fractions": [
+              0.1558,
+              0.1699
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.594099,
+            "ink_iou": 0.479365,
+            "ink_fractions": [
+              0.1663,
+              0.175
+            ]
+          }
+        },
+        "replicated": false
+      },
+      {
+        "regions": [
+          "water_largeboat",
+          "pier_smallboats"
+        ],
+        "at": [
+          [
+            144,
+            438
+          ],
+          [
+            994,
+            429
+          ]
+        ],
+        "coarse_corr": 0.778467,
+        "scores": {
+          "original": {
+            "correlation": 0.566756,
+            "ink_iou": 0.449848,
+            "ink_fractions": [
+              0.1865,
+              0.1628
+            ]
+          },
+          "jpeg85": {
+            "correlation": 0.569858,
+            "ink_iou": 0.455193,
+            "ink_fractions": [
+              0.1851,
+              0.1638
+            ]
+          },
+          "jpeg70": {
+            "correlation": 0.572193,
+            "ink_iou": 0.449393,
+            "ink_fractions": [
+              0.1868,
+              0.1628
+            ]
+          },
+          "down75_up": {
+            "correlation": 0.605085,
+            "ink_iou": 0.479561,
+            "ink_fractions": [
+              0.1909,
+              0.1714
+            ]
+          }
+        },
+        "replicated": false
+      }
+    ]
+  },
+  "coverage_pass": true,
+  "decision": "NO_FIXED_GRID_CROSS_REGION_COPY",
+  "promotion_rule": "synthetic copied-patch positive and separately drawn negative must pass; each region has >=15 eligible patches; a cross-region pair must clear full-resolution corr and IoU in all four variants",
+  "interpretation_guard": "No candidate private key or code constructed. A visual duplication would require manual confirmation and a second scale/grid before any intentional-clue inference.",
+  "safety_guard": "Reads only a canonical public picture. No wallet or mnemonic operations."
+}
