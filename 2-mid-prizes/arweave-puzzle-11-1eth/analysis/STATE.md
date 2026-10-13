@@ -88,3 +88,8 @@ Stop and request review if:
 2. a planned scope becomes computationally unreasonable without justified reduction;
 3. a proposed experiment would duplicate an exhausted scope;
 4. the next step would require generating, deriving, reconstructing, enumerating, or verifying candidate private keys or attempting wallet access.
+
+
+## 2026-10-13 — superseding operating scope
+
+The user instructed: stop exploring Twitter/external social references, concentrate strictly on the image. Stage 119 archival-source partial coverage is shelved rather than called a negative. Stage 120 tests only repeated stroke templates among five independently localized small-sail regions in the canonical image. Preserve previous negative scopes and controls. Do not enumerate, derive, test, validate or reconstruct BIP39 mnemonic phrases, private keys or funded-wallet access.
