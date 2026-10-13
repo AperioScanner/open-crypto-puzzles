@@ -70,3 +70,21 @@ No private-key material is generated or tested.
 - Stages 1–118: completed and reviewed.
 - Stage 118: VALID NEGATIVE — standard Braille retired.
 - Stage 119: selected for launch.
+
+
+## 2026-10-13 — image-only user scope directive (supersedes older Stage 119 priority)
+
+**No new Twitter, profile, header, social-archive, or external biography experiments.** The user redirected this research explicitly to the canonical puzzle image. Stage 119 is an archived, source-limited result and NOT a validated negative on missing historical profile/header material. It is shelved by scope, not completed as a scientific negative.
+
+**Current experiment: Stage 120 — small-sail exact stroke-template reuse.**
+
+- Input: canonical puzzle PNG, SHA256 `c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1`.
+- Scope: five correctly detected right-hand sails, comparing entire normalized visible motifs by ORB/RANSAC, including horizontal reflection and JPEG/resampling replication.
+- Tests whether the drawn internal strokes originate from a replicated image template. Different from retired sail widths, L/R, spoke-count, and sail-skyline alignments.
+- Positive controls: repeated template under affine transform, JPG70 and mirror; negative controls: independently drawn synthetic sails with matched outer silhouettes.
+- A matching pair must pass fixed minimum 25 inliers, calibrated fraction gate, all four transforms and mirror consistency.
+- If controls fail: fix Stage 120 without advancing; if source/recovery fails: keep INCONCLUSIVE; if valid negative: retire *exact duplicated stroke template* only.
+- Do not infer BIP39 words, keys or any secret from visible silhouettes.
+- After Stage 120 result is audited, select exactly **one** further novel image-only experiment under the anti-recycling rule.
+
+Run: https://github.com/AperioScanner/open-crypto-puzzles/actions/runs/38424534898
