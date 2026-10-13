@@ -192,3 +192,12 @@ Script: tools/stage127_hull_waterline_slope.py. Artifacts: analysis/runs/stage12
 - Two fixed hole detectors (contour hierarchy and white-component floodfill); 3 grayscale thresholds (130/175/210); original/JPEG85/JPEG70/75%-resampled; 4 predeclared water ROIs.
 - Positive control: 4 thick closed ellipses (>=3 detected across all settings); negative: 4 incomplete arcs (0 detected in all settings). If controls fail, repair **Stage 128**; otherwise positive promotion only if >=3/4 regions yield exactly repeatable counts across 2 methods x 3 thresholds x 4 formats, including >=2 with a nonzero loop count. In all outcomes do not infer keys, BIP39, semantic words or external references.
 - Files: tools/stage128_water_ripple_loops.py, analysis/runs/stage128-water-ripple-loops/.
+
+
+## 2026-10-13 — Stage128 audited; Stage129 precommitted
+
+Stage128 run #38484785422 successfully completed. SHA matched, closed-vs-open synthetic controls passed (closed: 4/4 over all tests, open: 0). Real image 0/4 water ROIs had counts simultaneously stable across two enclosure detectors, three thresholds and four lossy formats; count ranges [0,10], [0,4], [2,18], [3,13]. Narrow valid non-promotion of the fixed closed-water-loop count hypothesis only.
+
+Stage129 selected under documented anti-recycling implementation-error exception: Stage102 used a falsely identified sail near x~675 and omitted the true fifth sail x~1490; Stage112 proved the object association defect. Stage129 rechecks *internal diagonal pencil hatch direction* with five correct small sails. Excludes exterior sail outline base-offsets (Stages124-125), darkness-side asymmetry (Stage122), exact hatch counts (Stage121), size/width/copy tests (Stages112/120), and hull-waterline slopes (Stage127).
+Precommitted fixed triangular masks, independent Sobel-gradient tangent and Hough diagonal-line sign checks, four image formats, five positive/negative/neutral synthetic controls per sail. Both algorithms must agree in all four variants on >=4/5 true sails, with both signs present, to promote merely a visual mixed-direction observation. Control failure: fix SAME Stage129; insufficient real coverage: inconclusive, not negative. No key, BIP39, wallet or Twitter operations.
+Script: tools/stage129_corrected_sail_hatch_direction.py.
