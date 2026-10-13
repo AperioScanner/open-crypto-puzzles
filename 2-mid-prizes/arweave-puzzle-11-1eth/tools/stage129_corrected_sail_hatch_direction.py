@@ -41,9 +41,12 @@ INNER_MIN_FRAC=.20
 INNER_MAX_FRAC=.73
 CLASS_GATE=.23
 MIN_SOBEL_ENERGY=1800.
-MIN_HOUGH_LENGTH=22.
-MAX_ANGLE_FROM_HORIZ=76.
-MIN_ANGLE_FROM_HORIZ=16.
+# Old clipped-mask Hough detector failed 26/60 synthetic references.
+# New independent raw ink autocorrelation, without altering original sign gate.
+LAG_DX=(3,5,7)
+LAG_SLOPE=.72
+MIN_LAG_OVERLAP=45
+MIN_INK_STD=.03
 
 def get_patch(img,site):
     _,cx,top,h,half=site
@@ -80,33 +83,48 @@ def sobel_score(a,mask):
     return {"score":round(value,6) if energy>=MIN_SOBEL_ENERGY else None,
             "energy":round(energy,2)}
 
-def hough_score(a,mask):
-    edges=cv2.Canny(a,55,145)
-    edges[mask==0]=0
-    lines=cv2.HoughLinesP(edges,1,np.pi/180,threshold=6,
-                          minLineLength=9,maxLineGap=3)
-    positive=negative=0.
-    if lines is not None:
-        for x1,y1,x2,y2 in np.asarray(lines).reshape(-1,4):
-            dx=float(x2-x1);dy=float(y2-y1)
-            if abs(dx)<3:continue
-            angle=math.degrees(math.atan2(dy,dx))
-            while angle>90:angle-=180
-            while angle<=-90:angle+=180
-            if not(MIN_ANGLE_FROM_HORIZ<=abs(angle)<=MAX_ANGLE_FROM_HORIZ):
-                continue
-            length=math.hypot(dx,dy)
-            if angle>0:positive+=length
-            else:negative+=length
-    total=positive+negative
-    return {"score":round((positive-negative)/total,6)
-            if total>=MIN_HOUGH_LENGTH else None,
-            "length":round(total,2)}
+def diagonal_lag_score(a,mask):
+    """Directional raw-ink lag autocorrelation inside the same triangular mask.
+
+    Uses original 3/5/7 px x-lags and a fixed ±0.72 expected pencil
+    slope. It does not require any Hough lines surviving clipped masks.
+    """
+    ink=(255.0-a.astype(np.float32))/255.0
+    inside=mask.astype(bool)
+    per_sign=[]
+    support=[]
+    for sign in (1,-1):
+        correlations=[]
+        for dx in LAG_DX:
+            dy=sign*int(round(LAG_SLOPE*dx))
+            if dy>=0:
+                x1,x2=ink[:-dy,:-dx],ink[dy:,dx:]
+                m1,m2=inside[:-dy,:-dx],inside[dy:,dx:]
+            else:
+                x1,x2=ink[-dy:,:-dx],ink[:dy,dx:]
+                m1,m2=inside[-dy:,:-dx],inside[:dy,dx:]
+            overlap=m1&m2
+            n=int(overlap.sum())
+            support.append(n)
+            if n<MIN_LAG_OVERLAP:continue
+            v1,v2=x1[overlap],x2[overlap]
+            sd1,sd2=float(v1.std()),float(v2.std())
+            if min(sd1,sd2)<MIN_INK_STD:continue
+            corr=float(np.mean((v1-v1.mean())*(v2-v2.mean()))/(sd1*sd2))
+            correlations.append(corr)
+        per_sign.append(float(np.mean(correlations)) if correlations else None)
+    if any(x is None for x in per_sign):
+        return {"score":None,"pair_min":min(support) if support else 0}
+    plus,minus=per_sign
+    score=(plus-minus)/(abs(plus)+abs(minus)+0.0001)
+    return {"score":round(float(score),6),"pair_min":min(support),
+            "plus_corr":round(plus,6),"minus_corr":round(minus,6)}
+
 
 def inspect_patch(p,half):
     m=mask_for_shape(p.shape,half)
     s=sobel_score(p,m)
-    h=hough_score(p,m)
+    h=diagonal_lag_score(p,m)
     if s["score"] is None or h["score"] is None:
         classification=None
     elif s["score"]>=CLASS_GATE and h["score"]>=CLASS_GATE:
@@ -115,7 +133,7 @@ def inspect_patch(p,half):
         classification="NEG"
     else:
         classification=None
-    return {"sobel":s,"hough":h,"class":classification,
+    return {"sobel":s,"lag_autocorrelation":h,"class":classification,
             "mask_pixels":int(m.sum())}
 
 def control_patch(site,kind):
@@ -153,7 +171,7 @@ def suite_controls():
                 case={"site":site[0],"kind":expected,
                       "variant":variant,"observed":observed,
                       "sobel":reading["sobel"]["score"],
-                      "hough":reading["hough"]["score"],
+                      "hough":reading["lag_autocorrelation"]["score"],
                       "passed":bool(passed)}
                 cases.append(case)
                 if not passed:errors.append(case)
@@ -194,12 +212,14 @@ def main():
         "experiment_id":"A11-EXP-129",
         "hypothesis":"five genuine small sail interiors contain a replicated mixed signed diagonal hatch-orientation sequence",
         "evidence":"Stage 102 reused Stage19 mis-associated sail boxes; Stage112 showed that x~675 was not a sail and x~1490 was omitted. This is the corrected-object retry of interior-hatch polarity, not outline leaning.",
-        "scope":"five true visible triangular sail interiors; Sobel gradient tangents versus Hough diagonal segments; original/JPEG85/JPEG70/75%-resampled",
+        "scope":"five true visible triangular sail interiors; Sobel gradient tangents and independent raw-ink diagonal lag autocorrelation; original/JPEG85/JPEG70/75%-resampled",
         "canonical_sha256":sha,
         "sites":[list(x) for x in SITES],
         "gates":{"class_abs_score":CLASS_GATE,"sobel_min_energy":MIN_SOBEL_ENERGY,
-                 "hough_min_diagonal_length":MIN_HOUGH_LENGTH,
+                 "lag_dx":list(LAG_DX),"lag_slope":LAG_SLOPE,
+                 "lag_min_overlap":MIN_LAG_OVERLAP,
                  "min_stable_sites":4,"both_signs_required":True},
+        "repair":"Clipped-mask Hough controls failed 26/60; replace it with raw-ink direction autocorrelation, leaving original geometric ROI, Sobel threshold and signed decision gate unchanged.",
         "controls":controls,
         "real":real,"stable_count":len(stable),
         "stable_classes":stable,"mixed":mixed,"decision":decision,
@@ -210,17 +230,18 @@ def main():
     (OUT/"result.json").write_text(json.dumps(result,indent=2)+"\n")
     md=[
         "# Stage 129 — corrected true-five-sail interior hatch direction","",
+        "- Repair: use raw ink autocorrelation after clipped-mask Hough line detector failed 26/60 synthetic references.",
         f"- SHA256 verified: **{sha==EXPECTED_SHA}**",
         f"- Synthetic controls: **{controls['passed_cases']}/{controls['cases']}**",
         f"- Stable real sail classes: **{len(stable)}/5**",
         f"- Both signs found: **{mixed}**",
         f"- Decision: **{decision}**","",
-        "| sail | class | original Sobel | original Hough |",
+        "| sail | class | original Sobel | original lag autocorrelation |",
         "|---|---|---:|---:|",
     ]
     for r in real:
         a=r["per_variant"]["original"]
-        md.append(f"| {r['site']} | {r['stable'] or '?'} | {a['sobel']['score']} | {a['hough']['score']} |")
+        md.append(f"| {r['site']} | {r['stable'] or '?'} | {a['sobel']['score']} | {a['lag_autocorrelation']['score']} |")
     md+=["","## Interpretation",""]
     if not controls["pass"]:
         md.append("Synthetic controls failed, fix Stage129; no real conclusion.")
