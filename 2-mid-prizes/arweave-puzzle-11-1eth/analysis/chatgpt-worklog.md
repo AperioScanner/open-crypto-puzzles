@@ -333,3 +333,12 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Before applying those operations to Puzzle #11, Stage 117 will check whether they recur in Tiamat's own solved Arweave puzzle mechanisms from Stage 11.
 - The mapping is deliberately conservative: ordering/traversal receives support only from an explicit sequence-pattern class, while visible-symbol reading and cross-domain conversion use fixed Stage-11 class allowlists.
 - Promotion requires >=2 supporting mechanisms across >=2 solved puzzles, preventing one isolated solved clue from defining the author-wide prior.
+
+
+## 2026-10-13 — switch to image-only Stage 120
+
+- User explicitly prohibited further Twitter directions; Stage 119 source-limited research is shelved without an unjustified negative inference.
+- Reviewed Stages 18/102/105/111/112 and superbatch to avoid repetition. Exact pairwise geometric reuse of *interior sail strokes* had not been audited; the prior experiments addressed widths, directions, spokes or x-alignments, not internal template identity.
+- Created `tools/stage120_sail_motif_reuse.py` and GitHub Actions workflow `arweave11-stage120-sail-motif-reuse.yml` on `research/arweave11-chatgpt`.
+- Stage 120 uses canonical PNG only, synthetic copy/mirror positives, independent hand-drawn silhouette-matched negatives, ORB/RANSAC and 4 lossy variants. No secret data operations.
+- Run: https://github.com/AperioScanner/open-crypto-puzzles/actions/runs/38424534898. Await final result and audit controls before interpretation or choosing a later stage.
