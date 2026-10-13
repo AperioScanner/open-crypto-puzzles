@@ -1,0 +1,549 @@
+{
+  "experiment_id": "A11-EXP-121",
+  "scope": "image-only per-building long hatch-line counts, not per-pixel bits or mnemonic/key guesses",
+  "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "known_orientation_only_for_measurement": "HHVVHHVHHHHV",
+  "fixed_crop_margin_fraction": 0.12,
+  "ink_threshold": 170,
+  "controls": {
+    "synthetic_counts": {
+      "H_5": {
+        "original": {
+          "projection": 5,
+          "morphology": 5
+        },
+        "jpeg85": {
+          "projection": 5,
+          "morphology": 5
+        },
+        "jpeg70": {
+          "projection": 5,
+          "morphology": 5
+        },
+        "down75_up": {
+          "projection": 5,
+          "morphology": 5
+        }
+      },
+      "H_7": {
+        "original": {
+          "projection": 7,
+          "morphology": 7
+        },
+        "jpeg85": {
+          "projection": 7,
+          "morphology": 7
+        },
+        "jpeg70": {
+          "projection": 7,
+          "morphology": 7
+        },
+        "down75_up": {
+          "projection": 7,
+          "morphology": 7
+        }
+      },
+      "H_10": {
+        "original": {
+          "projection": 10,
+          "morphology": 10
+        },
+        "jpeg85": {
+          "projection": 10,
+          "morphology": 10
+        },
+        "jpeg70": {
+          "projection": 10,
+          "morphology": 10
+        },
+        "down75_up": {
+          "projection": 10,
+          "morphology": 10
+        }
+      },
+      "H_13": {
+        "original": {
+          "projection": 13,
+          "morphology": 13
+        },
+        "jpeg85": {
+          "projection": 13,
+          "morphology": 13
+        },
+        "jpeg70": {
+          "projection": 13,
+          "morphology": 13
+        },
+        "down75_up": {
+          "projection": 13,
+          "morphology": 13
+        }
+      },
+      "H_16": {
+        "original": {
+          "projection": 16,
+          "morphology": 16
+        },
+        "jpeg85": {
+          "projection": 16,
+          "morphology": 16
+        },
+        "jpeg70": {
+          "projection": 16,
+          "morphology": 16
+        },
+        "down75_up": {
+          "projection": 16,
+          "morphology": 16
+        }
+      },
+      "V_5": {
+        "original": {
+          "projection": 5,
+          "morphology": 5
+        },
+        "jpeg85": {
+          "projection": 5,
+          "morphology": 5
+        },
+        "jpeg70": {
+          "projection": 5,
+          "morphology": 5
+        },
+        "down75_up": {
+          "projection": 5,
+          "morphology": 5
+        }
+      },
+      "V_7": {
+        "original": {
+          "projection": 7,
+          "morphology": 7
+        },
+        "jpeg85": {
+          "projection": 7,
+          "morphology": 7
+        },
+        "jpeg70": {
+          "projection": 7,
+          "morphology": 7
+        },
+        "down75_up": {
+          "projection": 7,
+          "morphology": 7
+        }
+      },
+      "V_10": {
+        "original": {
+          "projection": 10,
+          "morphology": 10
+        },
+        "jpeg85": {
+          "projection": 10,
+          "morphology": 10
+        },
+        "jpeg70": {
+          "projection": 10,
+          "morphology": 10
+        },
+        "down75_up": {
+          "projection": 10,
+          "morphology": 10
+        }
+      },
+      "V_13": {
+        "original": {
+          "projection": 13,
+          "morphology": 13
+        },
+        "jpeg85": {
+          "projection": 13,
+          "morphology": 13
+        },
+        "jpeg70": {
+          "projection": 13,
+          "morphology": 13
+        },
+        "down75_up": {
+          "projection": 13,
+          "morphology": 13
+        }
+      },
+      "V_16": {
+        "original": {
+          "projection": 15,
+          "morphology": 16
+        },
+        "jpeg85": {
+          "projection": 15,
+          "morphology": 16
+        },
+        "jpeg70": {
+          "projection": 15,
+          "morphology": 16
+        },
+        "down75_up": {
+          "projection": 15,
+          "morphology": 15
+        }
+      }
+    },
+    "nonline_dot_control": {
+      "H": {
+        "projection": 0,
+        "morphology": 0
+      },
+      "V": {
+        "projection": 0,
+        "morphology": 0
+      }
+    },
+    "cases": 82,
+    "controls_pass": true
+  },
+  "building_results": [
+    {
+      "building": 1,
+      "orientation": "H",
+      "counts": {
+        "original": {
+          "projection": 5,
+          "morphology": 16
+        },
+        "jpeg85": {
+          "projection": 5,
+          "morphology": 16
+        },
+        "jpeg70": {
+          "projection": 5,
+          "morphology": 15
+        },
+        "down75_up": {
+          "projection": 4,
+          "morphology": 12
+        }
+      },
+      "stable": false,
+      "stable_count": null,
+      "count_range": [
+        4,
+        16
+      ]
+    },
+    {
+      "building": 2,
+      "orientation": "H",
+      "counts": {
+        "original": {
+          "projection": 16,
+          "morphology": 22
+        },
+        "jpeg85": {
+          "projection": 16,
+          "morphology": 21
+        },
+        "jpeg70": {
+          "projection": 16,
+          "morphology": 22
+        },
+        "down75_up": {
+          "projection": 18,
+          "morphology": 21
+        }
+      },
+      "stable": false,
+      "stable_count": null,
+      "count_range": [
+        16,
+        22
+      ]
+    },
+    {
+      "building": 3,
+      "orientation": "V",
+      "counts": {
+        "original": {
+          "projection": 9,
+          "morphology": 3
+        },
+        "jpeg85": {
+          "projection": 8,
+          "morphology": 3
+        },
+        "jpeg70": {
+          "projection": 9,
+          "morphology": 3
+        },
+        "down75_up": {
+          "projection": 8,
+          "morphology": 6
+        }
+      },
+      "stable": false,
+      "stable_count": null,
+      "count_range": [
+        3,
+        9
+      ]
+    },
+    {
+      "building": 4,
+      "orientation": "V",
+      "counts": {
+        "original": {
+          "projection": 17,
+          "morphology": 1
+        },
+        "jpeg85": {
+          "projection": 17,
+          "morphology": 1
+        },
+        "jpeg70": {
+          "projection": 17,
+          "morphology": 1
+        },
+        "down75_up": {
+          "projection": 17,
+          "morphology": 1
+        }
+      },
+      "stable": false,
+      "stable_count": null,
+      "count_range": [
+        1,
+        17
+      ]
+    },
+    {
+      "building": 5,
+      "orientation": "H",
+      "counts": {
+        "original": {
+          "projection": 16,
+          "morphology": 33
+        },
+        "jpeg85": {
+          "projection": 16,
+          "morphology": 34
+        },
+        "jpeg70": {
+          "projection": 16,
+          "morphology": 33
+        },
+        "down75_up": {
+          "projection": 16,
+          "morphology": 29
+        }
+      },
+      "stable": false,
+      "stable_count": null,
+      "count_range": [
+        16,
+        34
+      ]
+    },
+    {
+      "building": 6,
+      "orientation": "H",
+      "counts": {
+        "original": {
+          "projection": 6,
+          "morphology": 11
+        },
+        "jpeg85": {
+          "projection": 6,
+          "morphology": 9
+        },
+        "jpeg70": {
+          "projection": 7,
+          "morphology": 9
+        },
+        "down75_up": {
+          "projection": 7,
+          "morphology": 12
+        }
+      },
+      "stable": false,
+      "stable_count": null,
+      "count_range": [
+        6,
+        12
+      ]
+    },
+    {
+      "building": 7,
+      "orientation": "V",
+      "counts": {
+        "original": {
+          "projection": 13,
+          "morphology": 3
+        },
+        "jpeg85": {
+          "projection": 13,
+          "morphology": 4
+        },
+        "jpeg70": {
+          "projection": 13,
+          "morphology": 3
+        },
+        "down75_up": {
+          "projection": 13,
+          "morphology": 3
+        }
+      },
+      "stable": false,
+      "stable_count": null,
+      "count_range": [
+        3,
+        13
+      ]
+    },
+    {
+      "building": 8,
+      "orientation": "H",
+      "counts": {
+        "original": {
+          "projection": 15,
+          "morphology": 11
+        },
+        "jpeg85": {
+          "projection": 16,
+          "morphology": 11
+        },
+        "jpeg70": {
+          "projection": 16,
+          "morphology": 11
+        },
+        "down75_up": {
+          "projection": 16,
+          "morphology": 16
+        }
+      },
+      "stable": false,
+      "stable_count": null,
+      "count_range": [
+        11,
+        16
+      ]
+    },
+    {
+      "building": 9,
+      "orientation": "H",
+      "counts": {
+        "original": {
+          "projection": 5,
+          "morphology": 16
+        },
+        "jpeg85": {
+          "projection": 5,
+          "morphology": 16
+        },
+        "jpeg70": {
+          "projection": 5,
+          "morphology": 16
+        },
+        "down75_up": {
+          "projection": 5,
+          "morphology": 13
+        }
+      },
+      "stable": false,
+      "stable_count": null,
+      "count_range": [
+        5,
+        16
+      ]
+    },
+    {
+      "building": 10,
+      "orientation": "H",
+      "counts": {
+        "original": {
+          "projection": 12,
+          "morphology": 18
+        },
+        "jpeg85": {
+          "projection": 13,
+          "morphology": 19
+        },
+        "jpeg70": {
+          "projection": 13,
+          "morphology": 18
+        },
+        "down75_up": {
+          "projection": 13,
+          "morphology": 21
+        }
+      },
+      "stable": false,
+      "stable_count": null,
+      "count_range": [
+        12,
+        21
+      ]
+    },
+    {
+      "building": 11,
+      "orientation": "H",
+      "counts": {
+        "original": {
+          "projection": 11,
+          "morphology": 8
+        },
+        "jpeg85": {
+          "projection": 11,
+          "morphology": 7
+        },
+        "jpeg70": {
+          "projection": 11,
+          "morphology": 10
+        },
+        "down75_up": {
+          "projection": 11,
+          "morphology": 11
+        }
+      },
+      "stable": false,
+      "stable_count": null,
+      "count_range": [
+        7,
+        11
+      ]
+    },
+    {
+      "building": 12,
+      "orientation": "V",
+      "counts": {
+        "original": {
+          "projection": 6,
+          "morphology": 10
+        },
+        "jpeg85": {
+          "projection": 6,
+          "morphology": 10
+        },
+        "jpeg70": {
+          "projection": 6,
+          "morphology": 10
+        },
+        "down75_up": {
+          "projection": 6,
+          "morphology": 9
+        }
+      },
+      "stable": false,
+      "stable_count": null,
+      "count_range": [
+        6,
+        10
+      ]
+    }
+  ],
+  "stable_buildings": 0,
+  "distinct_stable_counts": [],
+  "decision": "NO_ROBUST_EXACT_HATCH_COUNT_CHANNEL",
+  "promoted": false,
+  "promotion_rule": "synthetic 5/7/10/13/16-stroke controls in both orientations pass \u00b11 for two independent estimators and four image variants; >=10/12 real buildings show exact cross-estimator and cross-variant counts within one stroke; >=4 distinct integer counts",
+  "coverage_guard": "Failure retires only a precise long-hatch-count channel. Arbitrary building semantics, word interpretations, and other visual clues remain untested.",
+  "safety_guard": "No keys, mnemonic words, candidate values or wallet operations generated or evaluated."
+}
