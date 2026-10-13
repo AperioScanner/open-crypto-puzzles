@@ -88,3 +88,20 @@ No private-key material is generated or tested.
 - After Stage 120 result is audited, select exactly **one** further novel image-only experiment under the anti-recycling rule.
 
 Run: https://github.com/AperioScanner/open-crypto-puzzles/actions/runs/38424534898
+
+
+## 2026-10-13 — reviewed image-only Stages 120 and 121
+
+### Stage 120 — REPLICATED CONTROL PASS, NEGATIVE WITH NARROW SCOPE
+- Run: https://github.com/AperioScanner/open-crypto-puzzles/actions/runs/38424534898
+- Canonical SHA256 verified; ORB exact-duplication and mirror positives pass with 205 inliers / 0.3198 fraction; 24 independent redraw negatives max 0.0514.
+- All five sail centers stable (<=2 px); ten pair comparisons each have 0/4 transformed variants crossing the required calibrated threshold (>=25 RANSAC inliers and >=0.18 fraction).
+- Decision: retire *identical reused interior pen-stroke template among five small sails*, not all common triangular symbolism or sail meanings.
+
+### Stage 121 — CALIBRATION PASS, NEGATIVE / MEASUREMENT AMBIGUITY
+- Run: https://github.com/AperioScanner/open-crypto-puzzles/actions/runs/38425779620
+- Synthetic line-count controls pass 82/82 (two orientations, 5 known stroke counts, four variants, plus dot controls).
+- Real facades: 0/12 stable integer hatch-line counts across the two independently predeclared counting estimators and lossy variants.
+- Decision: no supported *precise, individual long-hatch count* sequence. Manual re-interpretation or looser thresholds must not be presented as evidence. This is not a negative for arbitrary semantic or BIP39 mappings.
+
+**Next:** no more Twitter. Before the next Stage, propose one genuinely new image-only hypothesis with independent evidence, positive/negative controls and a precommitted stopping rule. Do not recycle exact sail duplication, precise facade hatch counts, density, tone, roofs, Braille, or previous covered image carriers. Never generate or test secret keys/mnemonics.
