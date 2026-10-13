@@ -81,3 +81,7 @@ Stage128 had calibrated closed-loop positive and open-arc negative controls; zer
 
 ## Stage129 repaired; Stage130 active image-only lead
 Stage129 first control failure repaired, second run 60/60 controls passed, 0/5 real global sail directions classifiable: overall Sobel near zero but paired-pixel lag scores sometimes near ±1. This may reflect canceling or conflicting hatch orientations within triangular subpanels, not a key. Stage130 tests LEFT vs RIGHT side hatch *angles*, not darkness or sail silhouette, with 100 precommitted controls and the old unchanged ±0.23 sign gate. No Twitter/secret searches.
+
+
+## Stage130 inconclusive; Stage131 direct-image test (2026-10-13)
+Stage130 synthetic panel-classification controls passed 100/100 but real five-sail classifications were 0/5; cannot infer signed coding or its absence. New Stage131 independently checks whether sparse ink marks in four blank-sky regions are reliably drawn short dashes rather than scanner speckles. Source positions must survive lossy transforms and two connected-shape methods, with synthetic 3-dash vs 1-pixel noise controls. This does not reuse water loops, sail panels or the top 0..48 strip census.
