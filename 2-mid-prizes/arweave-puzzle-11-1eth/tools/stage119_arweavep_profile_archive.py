@@ -182,6 +182,41 @@ def small_avatar_control(ref):
     return score, bool(score["inliers"]>=25 and score["inlier_fraction"]>=0.35)
 
 
+def source_resolution_variants(url):
+    """Test the same owner-attributed Twitter avatar at archived resolutions.
+
+    Earlier Stage 119 recovered an unadorned 256x256 asset with the same
+    immutable image identifier; the '_bigger' 73x73 derivative alone has too
+    little detail to establish a negative.
+    """
+    variants=[url]
+    if re.search(r"/profile_images/",url):
+        main=re.sub(r"_(?:mini|normal|bigger|400x400)(?=\.(?:png|jpe?g)(?:\?|$))","",url,flags=re.I)
+        if main!=url:
+            variants.insert(0,main)
+    return variants
+
+
+def resolution_control(ref,hw):
+    """Positive ORB witness at exactly the target asset pixel dimensions."""
+    h,w=map(int,hw)
+    rh,rw=ref.shape[:2]
+    if h<10 or w<10:
+        return {"good_matches":0,"inliers":0,"inlier_fraction":0.0},False
+    # Preserve aspect ratio by taking a center crop before downsampling.
+    if rw*h>rh*w:
+        crop_w=max(1,int(round(rh*w/h)))
+        left=(rw-crop_w)//2
+        crop=ref[:,left:left+crop_w]
+    else:
+        crop_h=max(1,int(round(rw*h/w)))
+        top=(rh-crop_h)//2
+        crop=ref[top:top+crop_h,:]
+    synth=cv2.resize(crop,(w,h),interpolation=cv2.INTER_AREA)
+    score=orb_score(ref,synth)
+    return score,bool(score["inliers"]>=25 and score["inlier_fraction"]>=0.35)
+
+
 def archive_asset_url(ts,url):
     # Strip an existing Wayback wrapper if present.
     m=re.search(r"https?://web\.archive\.org/web/\d+(?:[a-z_]+)?/(https?://.*)",url)
@@ -273,7 +308,8 @@ def main():
             "owner_tweet_context_count":len(owner_contexts),
         })
         for u in imgurls:
-            assets.append((ts,u,s.get("source_type")))
+            for candidate in source_resolution_variants(u):
+                assets.append((ts,candidate,s.get("source_type")))
 
     # de-dup candidate assets
     seen=set(); uniq=[]
@@ -302,7 +338,8 @@ def main():
             image_results.append({"index":i,"url":u[:500],"role":"banner" if "/profile_banners/" in u else "avatar","source_type":source_type,"fetch_ok":False,"decode":False})
             continue
         score=orb_score(ref,im)
-        strong=bool(score["inliers"]>=25 and score["inlier_fraction"]>=0.35)
+        at_resolution,resolution_pass=resolution_control(ref,im.shape[:2])
+        strong=bool(resolution_pass and score["inliers"]>=25 and score["inlier_fraction"]>=0.35)
         image_results.append({
             "index":i,
             "url":u[:500],
@@ -310,6 +347,8 @@ def main():
             "source_type":source_type,
             "fetch_ok":True,
             "shape":list(im.shape[:2]),
+            "resolution_control_pass":resolution_pass,
+            "resolution_positive_control":at_resolution,
             **score,
             "strong_derivative":strong,
         })
@@ -317,11 +356,12 @@ def main():
     recovered=[x for x in snapshot_rows if x.get("fetch_ok") and x.get("exact_handle_seen")]
     profile_witnesses=[x for x in recovered if x.get("source_type")=="profile"]
     tweet_witnesses=[x for x in recovered if x.get("source_type")=="tweet_witness"]
-    tested=[x for x in image_results if x.get("fetch_ok")]
+    decoded=[x for x in image_results if x.get("fetch_ok")]
+    tested=[x for x in decoded if x.get("resolution_control_pass")]
     avatar_tested=sum(x.get("role")=="avatar" for x in tested)
     banner_tested=sum(x.get("role")=="banner" for x in tested)
-    source_control_pass=bool(recovered and tested and attribution_control_pass)
-    strong_assets=[x for x in tested if x.get("strong_derivative") and (x.get("role")=="banner" or avatar_control_pass)]
+    source_control_pass=bool(recovered and decoded and attribution_control_pass)
+    strong_assets=[x for x in tested if x.get("strong_derivative")]
     promoted=bool(source_control_pass and control_pass and strong_assets)
     full_coverage=bool(profile_witnesses and avatar_tested and banner_tested and avatar_control_pass)
 
@@ -346,11 +386,13 @@ def main():
         "profile_witness_count":len(profile_witnesses),
         "tweet_witness_count":len(tweet_witnesses),
         "avatar_assets_tested":avatar_tested,
+        "avatar_assets_decoded":sum(x.get("role")=="avatar" for x in decoded),
         "banner_assets_tested":banner_tested,
         "full_profile_header_coverage":full_coverage,
         "orb_positive_control":control,
         "orb_control_pass":control_pass,
         "candidate_profile_assets":len(uniq),
+        "resolution_calibrated_assets":len(tested),
         "image_results":image_results,
         "strong_derivative_count":len(strong_assets),
         "decision":decision,
@@ -369,13 +411,17 @@ def main():
         f"- snapshots attempted: **{len(snaps)}**",
         f"- authenticated profile snapshots: **{len(profile_witnesses)}**",
         f"- authenticated tweet-page witnesses: **{len(tweet_witnesses)}**",
-        f"- avatar/banner images decoded: **{avatar_tested}/{banner_tested}**",
+        f"- avatar/banner images decoded: **{sum(x.get('role')=='avatar' for x in decoded)}/{sum(x.get('role')=='banner' for x in decoded)}**",
+        f"- calibrated avatar/banner comparisons: **{avatar_tested}/{banner_tested}**",
+
         f"- exact-handle source control: **{source_control_pass}**",
         f"- author-attribution synthetic control: **{attribution_control_pass}**",
         f"- 256px avatar ORB positive control: **{avatar_control_pass}** ({avatar_control['inliers']} inliers)",
 
         f"- ORB positive control: **{control_pass}** ({control['inliers']} inliers, {control['inlier_fraction']:.3f})",
         f"- owner-attributed profile/header assets attempted: **{len(uniq)}**",
+        f"- image-size calibrated comparisons: **{len(tested)}**",
+
         f"- strong Puzzle #11 derivatives: **{len(strong_assets)}**",
         f"- decision: **{decision}**",
         "",
@@ -391,12 +437,12 @@ def main():
     md += ["","## Image comparisons",""]
     if image_results:
         md += [
-            "| idx | role | fetched | inliers | fraction | strong |",
-            "|---:|:---|:---:|---:|---:|:---:|",
+            "| idx | role | fetched | calibrated | inliers | fraction | strong |",
+            "|---:|:---|:---:|:---:|---:|---:|:---:|",
         ]
         for x in image_results:
             md.append(
-                f"| {x['index']} | {x.get('role')} | {x.get('fetch_ok',False)} | {x.get('inliers',0)} | "
+                f"| {x['index']} | {x.get('role')} | {x.get('fetch_ok',False)} | {x.get('resolution_control_pass',False)} | {x.get('inliers',0)} | "
                 f"{x.get('inlier_fraction',0.0):.3f} | {x.get('strong_derivative',False)} |"
             )
     else:
@@ -425,6 +471,7 @@ def main():
         "assets":len(uniq),
         "avatar_tested":avatar_tested,
         "banner_tested":banner_tested,
+        "decoded_assets":len(decoded),
         "strong":len(strong_assets),
         "decision":decision,
     }))
