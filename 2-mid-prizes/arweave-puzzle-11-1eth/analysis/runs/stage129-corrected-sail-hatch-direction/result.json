@@ -1,0 +1,571 @@
+{
+  "experiment_id": "A11-EXP-129",
+  "hypothesis": "five genuine small sail interiors contain a replicated mixed signed diagonal hatch-orientation sequence",
+  "evidence": "Stage 102 reused Stage19 mis-associated sail boxes; Stage112 showed that x~675 was not a sail and x~1490 was omitted. This is the corrected-object retry of interior-hatch polarity, not outline leaning.",
+  "scope": "five true visible triangular sail interiors; Sobel gradient tangents versus Hough diagonal segments; original/JPEG85/JPEG70/75%-resampled",
+  "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "sites": [
+    [
+      "small_1",
+      1042,
+      448,
+      98,
+      35
+    ],
+    [
+      "small_2",
+      1148,
+      433,
+      99,
+      38
+    ],
+    [
+      "small_3",
+      1282,
+      411,
+      103,
+      44
+    ],
+    [
+      "small_4",
+      1372,
+      397,
+      101,
+      42
+    ],
+    [
+      "small_5",
+      1490,
+      357,
+      106,
+      47
+    ]
+  ],
+  "gates": {
+    "class_abs_score": 0.23,
+    "sobel_min_energy": 1800.0,
+    "hough_min_diagonal_length": 22.0,
+    "min_stable_sites": 4,
+    "both_signs_required": true
+  },
+  "controls": {
+    "pass": false,
+    "cases": 60,
+    "passed_cases": 34,
+    "failures": [
+      {
+        "site": "small_1",
+        "kind": "POS",
+        "variant": "original",
+        "observed": null,
+        "sobel": 0.846844,
+        "hough": -0.826692,
+        "passed": false
+      },
+      {
+        "site": "small_1",
+        "kind": "POS",
+        "variant": "jpeg85",
+        "observed": null,
+        "sobel": 0.845582,
+        "hough": -0.384168,
+        "passed": false
+      },
+      {
+        "site": "small_1",
+        "kind": "POS",
+        "variant": "jpeg70",
+        "observed": null,
+        "sobel": 0.84802,
+        "hough": -0.102466,
+        "passed": false
+      },
+      {
+        "site": "small_1",
+        "kind": "POS",
+        "variant": "down75_up",
+        "observed": null,
+        "sobel": 0.844874,
+        "hough": 0.068714,
+        "passed": false
+      },
+      {
+        "site": "small_1",
+        "kind": "NEG",
+        "variant": "original",
+        "observed": null,
+        "sobel": -0.861788,
+        "hough": 0.18697,
+        "passed": false
+      },
+      {
+        "site": "small_1",
+        "kind": "NEG",
+        "variant": "jpeg70",
+        "observed": null,
+        "sobel": -0.860872,
+        "hough": 0.530434,
+        "passed": false
+      },
+      {
+        "site": "small_2",
+        "kind": "POS",
+        "variant": "jpeg85",
+        "observed": null,
+        "sobel": 0.867278,
+        "hough": 0.188753,
+        "passed": false
+      },
+      {
+        "site": "small_2",
+        "kind": "POS",
+        "variant": "jpeg70",
+        "observed": null,
+        "sobel": 0.866706,
+        "hough": -0.432684,
+        "passed": false
+      },
+      {
+        "site": "small_2",
+        "kind": "POS",
+        "variant": "down75_up",
+        "observed": null,
+        "sobel": 0.86294,
+        "hough": 0.079188,
+        "passed": false
+      },
+      {
+        "site": "small_2",
+        "kind": "NEG",
+        "variant": "jpeg85",
+        "observed": null,
+        "sobel": -0.876869,
+        "hough": -0.218806,
+        "passed": false
+      },
+      {
+        "site": "small_2",
+        "kind": "NEG",
+        "variant": "jpeg70",
+        "observed": null,
+        "sobel": -0.87632,
+        "hough": -0.087943,
+        "passed": false
+      },
+      {
+        "site": "small_2",
+        "kind": "NEG",
+        "variant": "down75_up",
+        "observed": null,
+        "sobel": -0.868953,
+        "hough": 0.535497,
+        "passed": false
+      },
+      {
+        "site": "small_3",
+        "kind": "POS",
+        "variant": "original",
+        "observed": null,
+        "sobel": 0.886756,
+        "hough": -0.634646,
+        "passed": false
+      },
+      {
+        "site": "small_3",
+        "kind": "POS",
+        "variant": "jpeg85",
+        "observed": null,
+        "sobel": 0.886828,
+        "hough": -0.167085,
+        "passed": false
+      },
+      {
+        "site": "small_3",
+        "kind": "POS",
+        "variant": "jpeg70",
+        "observed": null,
+        "sobel": 0.885976,
+        "hough": 0.167189,
+        "passed": false
+      },
+      {
+        "site": "small_3",
+        "kind": "POS",
+        "variant": "down75_up",
+        "observed": null,
+        "sobel": 0.88584,
+        "hough": -0.349018,
+        "passed": false
+      },
+      {
+        "site": "small_3",
+        "kind": "NEG",
+        "variant": "original",
+        "observed": null,
+        "sobel": -0.891952,
+        "hough": 0.249431,
+        "passed": false
+      },
+      {
+        "site": "small_3",
+        "kind": "NEG",
+        "variant": "jpeg70",
+        "observed": null,
+        "sobel": -0.894038,
+        "hough": 0.014349,
+        "passed": false
+      },
+      {
+        "site": "small_3",
+        "kind": "NEG",
+        "variant": "down75_up",
+        "observed": null,
+        "sobel": -0.89027,
+        "hough": -0.083349,
+        "passed": false
+      },
+      {
+        "site": "small_4",
+        "kind": "POS",
+        "variant": "original",
+        "observed": null,
+        "sobel": 0.887091,
+        "hough": -0.134439,
+        "passed": false
+      },
+      {
+        "site": "small_4",
+        "kind": "NEG",
+        "variant": "original",
+        "observed": null,
+        "sobel": -0.882721,
+        "hough": -0.170272,
+        "passed": false
+      },
+      {
+        "site": "small_4",
+        "kind": "NEG",
+        "variant": "jpeg70",
+        "observed": null,
+        "sobel": -0.880713,
+        "hough": -0.160651,
+        "passed": false
+      },
+      {
+        "site": "small_5",
+        "kind": "POS",
+        "variant": "original",
+        "observed": null,
+        "sobel": 0.892517,
+        "hough": -0.094224,
+        "passed": false
+      },
+      {
+        "site": "small_5",
+        "kind": "POS",
+        "variant": "jpeg85",
+        "observed": null,
+        "sobel": 0.892982,
+        "hough": -0.531665,
+        "passed": false
+      },
+      {
+        "site": "small_5",
+        "kind": "POS",
+        "variant": "jpeg70",
+        "observed": null,
+        "sobel": 0.893094,
+        "hough": -0.334259,
+        "passed": false
+      },
+      {
+        "site": "small_5",
+        "kind": "NEG",
+        "variant": "jpeg85",
+        "observed": null,
+        "sobel": -0.890069,
+        "hough": 0.037862,
+        "passed": false
+      }
+    ]
+  },
+  "real": [
+    {
+      "site": "small_1",
+      "stable": null,
+      "per_variant": {
+        "original": {
+          "sobel": {
+            "score": 0.063223,
+            "energy": 377544.19
+          },
+          "hough": {
+            "score": -0.172036,
+            "length": 75.96
+          },
+          "class": null,
+          "mask_pixels": 1028
+        },
+        "jpeg85": {
+          "sobel": {
+            "score": 0.061923,
+            "energy": 371892.88
+          },
+          "hough": {
+            "score": -0.126225,
+            "length": 73.71
+          },
+          "class": null,
+          "mask_pixels": 1028
+        },
+        "jpeg70": {
+          "sobel": {
+            "score": 0.063214,
+            "energy": 368392.5
+          },
+          "hough": {
+            "score": 1.0,
+            "length": 75.09
+          },
+          "class": null,
+          "mask_pixels": 1028
+        },
+        "down75_up": {
+          "sobel": {
+            "score": 0.071756,
+            "energy": 340186.56
+          },
+          "hough": {
+            "score": 0.144939,
+            "length": 68.13
+          },
+          "class": null,
+          "mask_pixels": 1028
+        }
+      }
+    },
+    {
+      "site": "small_2",
+      "stable": null,
+      "per_variant": {
+        "original": {
+          "sobel": {
+            "score": 0.057986,
+            "energy": 467468.94
+          },
+          "hough": {
+            "score": -0.575456,
+            "length": 53.71
+          },
+          "class": null,
+          "mask_pixels": 1148
+        },
+        "jpeg85": {
+          "sobel": {
+            "score": 0.05672,
+            "energy": 463859.25
+          },
+          "hough": {
+            "score": 0.034798,
+            "length": 167.86
+          },
+          "class": null,
+          "mask_pixels": 1148
+        },
+        "jpeg70": {
+          "sobel": {
+            "score": 0.05941,
+            "energy": 458655.69
+          },
+          "hough": {
+            "score": 0.381496,
+            "length": 97.28
+          },
+          "class": null,
+          "mask_pixels": 1148
+        },
+        "down75_up": {
+          "sobel": {
+            "score": 0.06369,
+            "energy": 421752.75
+          },
+          "hough": {
+            "score": -0.277451,
+            "length": 149.59
+          },
+          "class": null,
+          "mask_pixels": 1148
+        }
+      }
+    },
+    {
+      "site": "small_3",
+      "stable": null,
+      "per_variant": {
+        "original": {
+          "sobel": {
+            "score": -0.003755,
+            "energy": 493247.44
+          },
+          "hough": {
+            "score": -0.347084,
+            "length": 106.6
+          },
+          "class": null,
+          "mask_pixels": 1384
+        },
+        "jpeg85": {
+          "sobel": {
+            "score": -0.005145,
+            "energy": 486702.06
+          },
+          "hough": {
+            "score": -0.217513,
+            "length": 77.97
+          },
+          "class": null,
+          "mask_pixels": 1384
+        },
+        "jpeg70": {
+          "sobel": {
+            "score": -0.004879,
+            "energy": 483403.75
+          },
+          "hough": {
+            "score": -0.660998,
+            "length": 136.22
+          },
+          "class": null,
+          "mask_pixels": 1384
+        },
+        "down75_up": {
+          "sobel": {
+            "score": -0.01164,
+            "energy": 429445.62
+          },
+          "hough": {
+            "score": -0.407074,
+            "length": 174.78
+          },
+          "class": null,
+          "mask_pixels": 1384
+        }
+      }
+    },
+    {
+      "site": "small_4",
+      "stable": null,
+      "per_variant": {
+        "original": {
+          "sobel": {
+            "score": 0.085921,
+            "energy": 500310.94
+          },
+          "hough": {
+            "score": -0.637314,
+            "length": 157.51
+          },
+          "class": null,
+          "mask_pixels": 1274
+        },
+        "jpeg85": {
+          "sobel": {
+            "score": 0.084587,
+            "energy": 494600.25
+          },
+          "hough": {
+            "score": 0.200053,
+            "length": 212.91
+          },
+          "class": null,
+          "mask_pixels": 1274
+        },
+        "jpeg70": {
+          "sobel": {
+            "score": 0.077425,
+            "energy": 492414.84
+          },
+          "hough": {
+            "score": 0.428268,
+            "length": 175.41
+          },
+          "class": null,
+          "mask_pixels": 1274
+        },
+        "down75_up": {
+          "sobel": {
+            "score": 0.066449,
+            "energy": 450410.03
+          },
+          "hough": {
+            "score": -0.097554,
+            "length": 98.46
+          },
+          "class": null,
+          "mask_pixels": 1274
+        }
+      }
+    },
+    {
+      "site": "small_5",
+      "stable": null,
+      "per_variant": {
+        "original": {
+          "sobel": {
+            "score": -0.041935,
+            "energy": 633920.0
+          },
+          "hough": {
+            "score": -0.245486,
+            "length": 217.04
+          },
+          "class": null,
+          "mask_pixels": 1504
+        },
+        "jpeg85": {
+          "sobel": {
+            "score": -0.041218,
+            "energy": 625538.88
+          },
+          "hough": {
+            "score": 0.129463,
+            "length": 301.35
+          },
+          "class": null,
+          "mask_pixels": 1504
+        },
+        "jpeg70": {
+          "sobel": {
+            "score": -0.038539,
+            "energy": 621028.75
+          },
+          "hough": {
+            "score": 0.419064,
+            "length": 157.03
+          },
+          "class": null,
+          "mask_pixels": 1504
+        },
+        "down75_up": {
+          "sobel": {
+            "score": -0.01572,
+            "energy": 580221.25
+          },
+          "hough": {
+            "score": -0.094075,
+            "length": 186.59
+          },
+          "class": null,
+          "mask_pixels": 1504
+        }
+      }
+    }
+  ],
+  "stable_count": 0,
+  "stable_classes": [],
+  "mixed": false,
+  "decision": "CONTROL_FAILURE",
+  "stop": "control failure => repair Stage129; <4/5 real stable => INCONCLUSIVE; >=4/5 but no mix => narrow negative; mixed => independent visual validation needed, not a cipher",
+  "scope_limit": "Only texture tangent directions in fixed mask inside five correctly localized sails; does not assess arbitrary semantic symbols, precise stroke counts or cryptographic mappings.",
+  "safety": "No key, mnemonic, wallet, address or outside-image operation."
+}
