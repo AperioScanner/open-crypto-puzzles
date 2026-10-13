@@ -366,3 +366,10 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 Initial Stage 122 #38458484692 returned controls 72/72 PASS, 3/6 stable side classifications, but contact sheet from follow-up #38458745501 showed the exterior left/right masks intersected multiple neighboring sails and the pier. The "corrected" differences were dominated by that irrelevant background (up to ~0.70 absolute), sometimes reversing the within-sail sign. No valid inference may be drawn from that background subtraction.
 
 Actual triangle interiors were visually located correctly; repaired *same* Stage 122 in commit 1deef3d7c33689d47cdc36650efe3ee49c709987 to drop exterior subtraction while preserving all six masks and predeclared gates. Verification run #38458971789 was launched. It remains image-only and carries no secret/key functionality.
+
+
+## 2026-10-13 — Stage 122 final review and Stage 123 handoff
+
+- Stage 122 final repaired run #38458971789: 72/72 synthetic controls passed; 3/6 six-sail shading polarities stable (large, small_3 and small_5 right-darker). Other three undecidable under unchanged raw contrast gates. No usable mixed-side pattern and no key material.
+- Pivoted from direct object measurements to a new, bounded pixel-template question: do pencil strokes directly repeat between distinct foreground/background illustration regions? Stage 123 searches cross-region fixed-grid local 64px patches, with identical-patch vs independently drawn synthetic controls, lossy re-encoding, coverage check and strict correlation/IoU.
+- This does not reopen Stage 120's within-five-sail copy tests; exactly one novel image-only experiment selected and preregistered.
