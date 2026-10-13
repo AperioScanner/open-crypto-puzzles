@@ -77,3 +77,7 @@ Stage 127 hull-line angle test: controls passed, but 0/5 real hulls isolated sta
 ## Stage128 closed; Stage129 corrected-object image-only test
 
 Stage128 had calibrated closed-loop positive and open-arc negative controls; zero water regions yielded a stable inter-method/threshold/lossy count. Do not recycle that exact encoding. Stage129 exploits the independent known source-detection defect in Stage102: 5 correctly located small sail interiors have never had their **diagonal hatch tangent directions** reevaluated after replacement of the spurious x~675 object and restoration of the real rightmost x~1490. No secret extraction.
+
+
+## Stage129 repaired; Stage130 active image-only lead
+Stage129 first control failure repaired, second run 60/60 controls passed, 0/5 real global sail directions classifiable: overall Sobel near zero but paired-pixel lag scores sometimes near ±1. This may reflect canceling or conflicting hatch orientations within triangular subpanels, not a key. Stage130 tests LEFT vs RIGHT side hatch *angles*, not darkness or sail silhouette, with 100 precommitted controls and the old unchanged ±0.23 sign gate. No Twitter/secret searches.
