@@ -1,0 +1,80 @@
+{
+  "experiment_id": "A11-EXP-125",
+  "hypothesis": "Stage 124's single left-leaning rightmost sail is a genuine stand-out geometry signal rather than nearby-object contamination or apex anchoring jitter",
+  "scope": "five correct small sails, \u00b14px x / \u00b13px y anchor jitter, three fixed ink thresholds, local binary+Canny envelope, four re-encodings; image only",
+  "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "gates": {
+    "x_jitter": [
+      -4,
+      0,
+      4
+    ],
+    "y_jitter": [
+      -3,
+      0,
+      3
+    ],
+    "thresholds": [
+      155,
+      175,
+      195
+    ],
+    "min_second_best_gap": 0.16,
+    "rightmost_max_offset": -0.28,
+    "min_fraction": 0.9,
+    "min_source_coverage": 0.9
+  },
+  "control_fifth_left": {
+    "cases": 216,
+    "valid_cases": 216,
+    "valid_fraction": 1.0,
+    "rightmost_strong_outlier": 216,
+    "rightmost_strong_fraction": 1.0,
+    "min_rightmost_offset": -0.88667,
+    "max_rightmost_offset": -0.49713,
+    "winner_counts": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 216
+    }
+  },
+  "control_all_neutral": {
+    "cases": 216,
+    "valid_cases": 216,
+    "valid_fraction": 1.0,
+    "rightmost_strong_outlier": 0,
+    "rightmost_strong_fraction": 0.0,
+    "min_rightmost_offset": -0.16086,
+    "max_rightmost_offset": 0.16386,
+    "winner_counts": {
+      "1": 144,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 72
+    }
+  },
+  "controls_pass": true,
+  "real": {
+    "cases": 216,
+    "valid_cases": 216,
+    "valid_fraction": 1.0,
+    "rightmost_strong_outlier": 0,
+    "rightmost_strong_fraction": 0.0,
+    "min_rightmost_offset": -0.49362,
+    "max_rightmost_offset": -0.15653,
+    "winner_counts": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 7,
+      "5": 209
+    }
+  },
+  "coverage_pass": true,
+  "decision": "UNREPLICATED_RIGHTMOST_OUTLIER",
+  "interpretation_guard": "Only one visual outlier diagnostic. Nothing is mapped to a symbol, secret, wallet, or BIP39 word. A negative is not a negative for all other picture semantics.",
+  "safety_guard": "No key generation, enumeration, verification, wallet access, or external social research."
+}
