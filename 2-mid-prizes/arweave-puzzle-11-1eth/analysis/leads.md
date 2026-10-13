@@ -45,3 +45,7 @@ Primary verified as four-step, but still unknown. Stage 114 found no corroborate
 - Stage 121: two independent estimators do not consistently count facade hatch lines on any of the twelve buildings, despite 82/82 synthetic controls; retire only exact line-count-channel interpretation.
 - Historical Twitter line remains shelved at user request. Do not reactivate it.
 - Further image-only proposals need a concrete untested visual cue; no speculative BIP39 word enumeration.
+
+
+## Stage 122 selected (2026-10-13)
+Current unique observable: **side-specific relative ink darkness across six sail triangles**, rather than sail direction, widths, height, exact duplicated strokes or building hatch counts. Precommitted interior-versus-outside correction and dark-right/dark-left/neutral controls are in `tools/stage122_sail_side_shading.py`. Interpret an all-same-side finding as an ordinary shading convention; an apparent mixed-sided finding is only a candidate visual observation requiring further corroboration. Do not map results to secret material.
