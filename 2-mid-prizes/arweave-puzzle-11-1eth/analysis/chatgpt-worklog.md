@@ -389,3 +389,9 @@ Selected exactly one follow-up based on a concrete unresolved object-association
 - Run #38479304077 completed successfully; recorded canonical hash verified; 216/216 artificial-left positive controls, 0/216 all-neutral positives; all 216 real source configs usable.
 - Rightmost is lowest measured outline offset in 209/216 configs, but never achieves *both* preregistered offset <= -0.28 and runner-up gap >= 0.16. Result UNREPLICATED_RIGHTMOST_OUTLIER; do not retune.
 - Selected exactly one independent visual-detail question: are narrow mast tips explicitly extended above some of the five true sail apices? Stage126 uses fixed windows, four lossy renderings, ±2px lateral jitter, binarized-ink and Canny continuity, and mast/no-mast/side-decoy synthetic controls. No secret or off-image operations.
+
+
+## 2026-10-13 — Stage 126 validated, Stage 127 selected
+
+- Stage126 Actions #38480951073 verified completed; SHA and 180/180 synthetic mast-present/absent/off-axis line controls passed. Real results 4 stable EXTENDED and 1 unknown; no mixed pattern; uniform masthead extensions not an encoded binary sequence by this test.
+- One new bounded feature from the drawing itself: five small hull waterline slopes (below sail tips), not sail triangle orientation or ray counts. Predetermined hull strips, independent Canny/binary Hough slope estimators, four image variants, positive signed/neutral+decoy synthetic controls and conservative coverage gate; image-only and no secret reconstruction.
