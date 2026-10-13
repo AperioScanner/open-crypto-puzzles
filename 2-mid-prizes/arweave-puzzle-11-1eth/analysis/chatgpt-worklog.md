@@ -342,3 +342,11 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Created `tools/stage120_sail_motif_reuse.py` and GitHub Actions workflow `arweave11-stage120-sail-motif-reuse.yml` on `research/arweave11-chatgpt`.
 - Stage 120 uses canonical PNG only, synthetic copy/mirror positives, independent hand-drawn silhouette-matched negatives, ORB/RANSAC and 4 lossy variants. No secret data operations.
 - Run: https://github.com/AperioScanner/open-crypto-puzzles/actions/runs/38424534898. Await final result and audit controls before interpretation or choosing a later stage.
+
+
+## 2026-10-13 — image-only Stages 120 and 121 result reviews
+
+- Stage120 Actions run #38424534898 completed successfully; canonical hash and all controls passed. Original 5 sail centers [1042,1148,1282,1372,1490] drift <=2px across original/JPEG85/JPEG70/down75_up. All ten pairs of small sails had 0/4 variants meeting >=25 inliers, >=0.18 fraction; zero replicated internal-stroke templates. Closed narrow copy/paste hypothesis.
+- Stage121 Actions run #38425779620 completed successfully; exact source hash; synthetic controls 82/82 passed; zero of twelve real building facades produced a robust two-estimator, four-variant count of long hatch strokes. No image-supported exact facade stroke-count sequence.
+- Both tests were strictly visual and recorded reproducible JSON+REPORT; no secret candidates, BIP39 word lists, key derivations, or wallet access.
+- Further investigation must remain image-only by user directive; do not repeat retired visual scopes or resume Twitter.
