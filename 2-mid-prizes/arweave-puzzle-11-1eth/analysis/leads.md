@@ -38,3 +38,10 @@ Primary verified as four-step, but still unknown. Stage 114 found no corroborate
 - Literal OCR branch: retired.
 - Large-sail direct carriers / Roman pier / source-photo / CryptoCanvas: closed.
 - Other H/V interpretations remain unconfirmed and must not be recycled without new evidence.
+
+
+## 2026-10-13 — image-only result updates
+- Stage 120: no identical interior pen-stroke template was reused among the five correctly localized small sails; calibrated negative.
+- Stage 121: two independent estimators do not consistently count facade hatch lines on any of the twelve buildings, despite 82/82 synthetic controls; retire only exact line-count-channel interpretation.
+- Historical Twitter line remains shelved at user request. Do not reactivate it.
+- Further image-only proposals need a concrete untested visual cue; no speculative BIP39 word enumeration.
