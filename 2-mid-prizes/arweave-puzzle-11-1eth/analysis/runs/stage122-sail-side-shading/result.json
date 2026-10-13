@@ -3,7 +3,7 @@
   "date": "2026-10-13",
   "hypothesis": "six sail triangles may show a deliberate alternating left/right ink-fill polarity rather than one natural common light-direction convention",
   "evidence": "The canonical scene has one large sail and five smaller, each with visibly hatched and unhatched triangular sectors.",
-  "scope": "predeclared symmetric triangular interior wedges, corrected for nearby outside-ink asymmetry, four re-encoding variants; image only",
+  "scope": "predeclared symmetric triangular interior wedges, without contaminated outside subtraction, four re-encoding variants; image only",
   "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
   "anchors_predeclared": [
     [
@@ -55,110 +55,110 @@
       {
         "site": "large",
         "control": "right",
-        "min_corrected": 0.641514,
-        "max_corrected": 0.779398
+        "min_corrected": 0.6346,
+        "max_corrected": 0.762343
       },
       {
         "site": "large",
         "control": "left",
-        "min_corrected": -0.777153,
-        "max_corrected": -0.635614
+        "min_corrected": -0.775078,
+        "max_corrected": -0.631466
       },
       {
         "site": "large",
         "control": "neutral",
-        "min_corrected": -0.032451,
-        "max_corrected": -0.018277
+        "min_corrected": -0.007445,
+        "max_corrected": -0.005486
       },
       {
         "site": "small_1",
         "control": "right",
-        "min_corrected": 0.698347,
-        "max_corrected": 0.829422
+        "min_corrected": 0.670863,
+        "max_corrected": 0.791367
       },
       {
         "site": "small_1",
         "control": "left",
-        "min_corrected": -0.778461,
-        "max_corrected": -0.654045
+        "min_corrected": -0.780576,
+        "max_corrected": -0.658273
       },
       {
         "site": "small_1",
         "control": "neutral",
-        "min_corrected": 0.026001,
-        "max_corrected": 0.026853
+        "min_corrected": -0.003597,
+        "max_corrected": 0.003597
       },
       {
         "site": "small_2",
         "control": "right",
-        "min_corrected": 0.628817,
-        "max_corrected": 0.759059
+        "min_corrected": 0.625,
+        "max_corrected": 0.741883
       },
       {
         "site": "small_2",
         "control": "left",
-        "min_corrected": -0.754238,
-        "max_corrected": -0.655101
+        "min_corrected": -0.801948,
+        "max_corrected": -0.681818
       },
       {
         "site": "small_2",
         "control": "neutral",
-        "min_corrected": 0.027114,
-        "max_corrected": 0.063857
+        "min_corrected": 0.019481,
+        "max_corrected": 0.027597
       },
       {
         "site": "small_3",
         "control": "right",
-        "min_corrected": 0.625456,
-        "max_corrected": 0.737778
+        "min_corrected": 0.641304,
+        "max_corrected": 0.766304
       },
       {
         "site": "small_3",
         "control": "left",
-        "min_corrected": -0.774678,
-        "max_corrected": -0.63428
+        "min_corrected": -0.754076,
+        "max_corrected": -0.616848
       },
       {
         "site": "small_3",
         "control": "neutral",
-        "min_corrected": -0.013126,
-        "max_corrected": 0.020385
+        "min_corrected": 0.021739,
+        "max_corrected": 0.039402
       },
       {
         "site": "small_4",
         "control": "right",
-        "min_corrected": 0.64109,
-        "max_corrected": 0.75199
+        "min_corrected": 0.651471,
+        "max_corrected": 0.777941
       },
       {
         "site": "small_4",
         "control": "left",
-        "min_corrected": -0.781661,
-        "max_corrected": -0.647924
+        "min_corrected": -0.805882,
+        "max_corrected": -0.661765
       },
       {
         "site": "small_4",
         "control": "neutral",
-        "min_corrected": -0.073529,
-        "max_corrected": -0.035121
+        "min_corrected": -0.044118,
+        "max_corrected": -0.026471
       },
       {
         "site": "small_5",
         "control": "right",
-        "min_corrected": 0.607192,
-        "max_corrected": 0.762286
+        "min_corrected": 0.611663,
+        "max_corrected": 0.759305
       },
       {
         "site": "small_5",
         "control": "left",
-        "min_corrected": -0.787115,
-        "max_corrected": -0.631763
+        "min_corrected": -0.769231,
+        "max_corrected": -0.630273
       },
       {
         "site": "small_5",
         "control": "neutral",
-        "min_corrected": -0.082899,
-        "max_corrected": -0.045429
+        "min_corrected": -0.062035,
+        "max_corrected": -0.026055
       }
     ],
     "failures": [],
@@ -166,6 +166,7 @@
   },
   "raw_ink_threshold": 175,
   "corrected_contrast_gate": 0.14,
+  "method_repair": "Exterior sidebands cross other objects: leave them diagnostic only; keep fixed inner wedges and original thresholds.",
   "raw_contrast_gate": 0.13,
   "sites": [
     {
@@ -192,7 +193,7 @@
           },
           "raw_contrast": 0.193966,
           "outside_contrast": 0.035953,
-          "corrected_contrast": 0.158013,
+          "corrected_contrast": 0.193966,
           "mean_inside_dark": 0.288989,
           "coverage_valid": true
         },
@@ -211,7 +212,7 @@
           },
           "raw_contrast": 0.195925,
           "outside_contrast": 0.035953,
-          "corrected_contrast": 0.159972,
+          "corrected_contrast": 0.195925,
           "mean_inside_dark": 0.288597,
           "coverage_valid": true
         },
@@ -230,7 +231,7 @@
           },
           "raw_contrast": 0.19279,
           "outside_contrast": 0.035723,
-          "corrected_contrast": 0.157067,
+          "corrected_contrast": 0.19279,
           "mean_inside_dark": 0.289381,
           "coverage_valid": true
         },
@@ -249,17 +250,17 @@
           },
           "raw_contrast": 0.195925,
           "outside_contrast": 0.036875,
-          "corrected_contrast": 0.15905,
+          "corrected_contrast": 0.195925,
           "mean_inside_dark": 0.298589,
           "coverage_valid": true
         }
       },
       "coverage_valid": true,
       "stable_polarity": "R",
-      "mean_corrected": 0.158525,
+      "mean_corrected": 0.194652,
       "range_corrected": [
-        0.157067,
-        0.159972
+        0.19279,
+        0.195925
       ]
     },
     {
@@ -286,7 +287,7 @@
           },
           "raw_contrast": 0.07554,
           "outside_contrast": 0.334038,
-          "corrected_contrast": -0.258498,
+          "corrected_contrast": 0.07554,
           "mean_inside_dark": 0.789568,
           "coverage_valid": true
         },
@@ -305,7 +306,7 @@
           },
           "raw_contrast": 0.077338,
           "outside_contrast": 0.331924,
-          "corrected_contrast": -0.254586,
+          "corrected_contrast": 0.077338,
           "mean_inside_dark": 0.788669,
           "coverage_valid": true
         },
@@ -324,7 +325,7 @@
           },
           "raw_contrast": 0.070144,
           "outside_contrast": 0.325581,
-          "corrected_contrast": -0.255438,
+          "corrected_contrast": 0.070144,
           "mean_inside_dark": 0.788669,
           "coverage_valid": true
         },
@@ -343,17 +344,17 @@
           },
           "raw_contrast": 0.066547,
           "outside_contrast": 0.317125,
-          "corrected_contrast": -0.250578,
+          "corrected_contrast": 0.066547,
           "mean_inside_dark": 0.813849,
           "coverage_valid": true
         }
       },
       "coverage_valid": true,
       "stable_polarity": null,
-      "mean_corrected": -0.254775,
+      "mean_corrected": 0.072392,
       "range_corrected": [
-        -0.258498,
-        -0.250578
+        0.066547,
+        0.077338
       ]
     },
     {
@@ -380,7 +381,7 @@
           },
           "raw_contrast": -0.150974,
           "outside_contrast": -0.419847,
-          "corrected_contrast": 0.268873,
+          "corrected_contrast": -0.150974,
           "mean_inside_dark": 0.818994,
           "coverage_valid": true
         },
@@ -399,7 +400,7 @@
           },
           "raw_contrast": -0.147727,
           "outside_contrast": -0.410305,
-          "corrected_contrast": 0.262578,
+          "corrected_contrast": -0.147727,
           "mean_inside_dark": 0.823864,
           "coverage_valid": true
         },
@@ -418,7 +419,7 @@
           },
           "raw_contrast": -0.154221,
           "outside_contrast": -0.398855,
-          "corrected_contrast": 0.244634,
+          "corrected_contrast": -0.154221,
           "mean_inside_dark": 0.828734,
           "coverage_valid": true
         },
@@ -437,17 +438,17 @@
           },
           "raw_contrast": -0.125,
           "outside_contrast": -0.412214,
-          "corrected_contrast": 0.287214,
+          "corrected_contrast": -0.125,
           "mean_inside_dark": 0.849838,
           "coverage_valid": true
         }
       },
       "coverage_valid": true,
       "stable_polarity": null,
-      "mean_corrected": 0.265825,
+      "mean_corrected": -0.144481,
       "range_corrected": [
-        0.244634,
-        0.287214
+        -0.154221,
+        -0.125
       ]
     },
     {
@@ -474,7 +475,7 @@
           },
           "raw_contrast": 0.210598,
           "outside_contrast": -0.437401,
-          "corrected_contrast": 0.647999,
+          "corrected_contrast": 0.210598,
           "mean_inside_dark": 0.830842,
           "coverage_valid": true
         },
@@ -493,7 +494,7 @@
           },
           "raw_contrast": 0.210598,
           "outside_contrast": -0.438986,
-          "corrected_contrast": 0.649584,
+          "corrected_contrast": 0.210598,
           "mean_inside_dark": 0.829484,
           "coverage_valid": true
         },
@@ -512,7 +513,7 @@
           },
           "raw_contrast": 0.213315,
           "outside_contrast": -0.445325,
-          "corrected_contrast": 0.65864,
+          "corrected_contrast": 0.213315,
           "mean_inside_dark": 0.832201,
           "coverage_valid": true
         },
@@ -531,17 +532,17 @@
           },
           "raw_contrast": 0.19837,
           "outside_contrast": -0.461173,
-          "corrected_contrast": 0.659542,
+          "corrected_contrast": 0.19837,
           "mean_inside_dark": 0.85462,
           "coverage_valid": true
         }
       },
       "coverage_valid": true,
       "stable_polarity": "R",
-      "mean_corrected": 0.653941,
+      "mean_corrected": 0.20822,
       "range_corrected": [
-        0.647999,
-        0.659542
+        0.19837,
+        0.213315
       ]
     },
     {
@@ -568,7 +569,7 @@
           },
           "raw_contrast": 0.088235,
           "outside_contrast": -0.472318,
-          "corrected_contrast": 0.560554,
+          "corrected_contrast": 0.088235,
           "mean_inside_dark": 0.789706,
           "coverage_valid": true
         },
@@ -587,7 +588,7 @@
           },
           "raw_contrast": 0.088235,
           "outside_contrast": -0.475779,
-          "corrected_contrast": 0.564014,
+          "corrected_contrast": 0.088235,
           "mean_inside_dark": 0.786765,
           "coverage_valid": true
         },
@@ -606,7 +607,7 @@
           },
           "raw_contrast": 0.080882,
           "outside_contrast": -0.482699,
-          "corrected_contrast": 0.563581,
+          "corrected_contrast": 0.080882,
           "mean_inside_dark": 0.790441,
           "coverage_valid": true
         },
@@ -625,17 +626,17 @@
           },
           "raw_contrast": 0.089706,
           "outside_contrast": -0.50692,
-          "corrected_contrast": 0.596626,
+          "corrected_contrast": 0.089706,
           "mean_inside_dark": 0.815441,
           "coverage_valid": true
         }
       },
       "coverage_valid": true,
       "stable_polarity": null,
-      "mean_corrected": 0.571194,
+      "mean_corrected": 0.086764,
       "range_corrected": [
-        0.560554,
-        0.596626
+        0.080882,
+        0.089706
       ]
     },
     {
@@ -662,7 +663,7 @@
           },
           "raw_contrast": 0.143921,
           "outside_contrast": -0.698957,
-          "corrected_contrast": 0.842877,
+          "corrected_contrast": 0.143921,
           "mean_inside_dark": 0.780397,
           "coverage_valid": true
         },
@@ -681,7 +682,7 @@
           },
           "raw_contrast": 0.145161,
           "outside_contrast": -0.701937,
-          "corrected_contrast": 0.847099,
+          "corrected_contrast": 0.145161,
           "mean_inside_dark": 0.781017,
           "coverage_valid": true
         },
@@ -700,7 +701,7 @@
           },
           "raw_contrast": 0.150124,
           "outside_contrast": -0.703428,
-          "corrected_contrast": 0.853552,
+          "corrected_contrast": 0.150124,
           "mean_inside_dark": 0.781017,
           "coverage_valid": true
         },
@@ -719,17 +720,17 @@
           },
           "raw_contrast": 0.16129,
           "outside_contrast": -0.71386,
-          "corrected_contrast": 0.87515,
+          "corrected_contrast": 0.16129,
           "mean_inside_dark": 0.818859,
           "coverage_valid": true
         }
       },
       "coverage_valid": true,
       "stable_polarity": "R",
-      "mean_corrected": 0.85467,
+      "mean_corrected": 0.150124,
       "range_corrected": [
-        0.842877,
-        0.87515
+        0.143921,
+        0.16129
       ]
     }
   ],

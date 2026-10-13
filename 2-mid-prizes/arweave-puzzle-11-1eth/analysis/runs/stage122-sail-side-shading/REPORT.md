@@ -1,19 +1,20 @@
 # Stage 122 — image-only six-sail signed shading asymmetry
 
 - Input: canonical 1600x1105 image; SHA256 verified.
+- Repair: external reference zones intersect other objects and were excluded from scoring.
 - Synthetic paired dark-side / neutral controls: **72**, pass=**True**
 - Stable, image-supported signed sides: **3/6**
 - Nontrivial mixed sides: **False**
 - Decision: **NO_STABLE_SIX_SAIL_SIDE_PATTERN**
 
-| sail | right−left corrected (original) | coverage | stable side |
+| sail | right−left INNER contrast (original) | coverage | stable side |
 |---|---:|:---:|:---:|
-| large | +0.158 | True | R |
-| small_1 | -0.258 | True | ? |
-| small_2 | +0.269 | True | ? |
-| small_3 | +0.648 | True | R |
-| small_4 | +0.561 | True | ? |
-| small_5 | +0.843 | True | R |
+| large | +0.194 | True | R |
+| small_1 | +0.076 | True | ? |
+| small_2 | -0.151 | True | ? |
+| small_3 | +0.211 | True | R |
+| small_4 | +0.088 | True | ? |
+| small_5 | +0.144 | True | R |
 
 ## Interpretation
 
