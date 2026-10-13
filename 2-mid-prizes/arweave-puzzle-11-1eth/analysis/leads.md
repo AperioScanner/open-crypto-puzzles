@@ -67,3 +67,8 @@ Stage 125 failed to confirm a uniquely isolated rightmost offset: 0/216 real con
 ## Stage 126 closed, Stage 127 active
 
 Stage126 valid negative: 4/5 consistently extended masthead marks, fifth ambiguous, no mixed binary mast-tip markers. Stage127 tests a separate visible component: signed hull/waterline angle under each of the five small sailboats, using two detectors and source-ROI contact sheet. Not related to sail tilt, hull shape decoding, or secret candidates.
+
+
+## Stage 127 inconclusive; Stage 128 image-only water topology (2026-10-13)
+
+Stage 127 hull-line angle test: controls passed, but 0/5 real hulls isolated stably; the fixed crops intersect the neighboring vessel/pier strokes. This is **insufficient source isolation**, not a negative. Stage 128 instead audits closed water-ripple loops (4 source ROIs, 2 independent detectors, 3 thresholds and 4 image variants) with synthetic open-arc vs closed-oval controls. No secrets or off-image research.
