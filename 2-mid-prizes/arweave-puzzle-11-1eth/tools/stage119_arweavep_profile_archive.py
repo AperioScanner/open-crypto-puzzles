@@ -127,6 +127,61 @@ def extract_meta(html):
             urls.add(u)
     return title,desc,sorted(urls)
 
+def author_assets_from_tweet(markup):
+    """Only owner-avatar evidence, not avatars of commenters or recommendations.
+
+    Historic Twitter tweet HTML marks author tweet containers by
+    data-screen-name="ArweaveP". The *first* avatar in the start of such a
+    container can be attributed to the author; generic profile_images URLs
+    found anywhere on the page cannot. Keep this conservative.
+    """
+    import html as html_lib
+    content=html_lib.unescape(markup).replace("\\/","/")
+    images=[]
+    witnesses=[]
+    for tag in re.finditer(r'<[^>]{0,1500}\bdata-screen-name\s*=\s*["\']ArweaveP["\'][^>]*>',content,re.I):
+        tail=content[tag.end():tag.end()+2600]
+        other=re.search(r'\bdata-screen-name\s*=\s*["\'](?!ArweaveP\b)[A-Za-z0-9_]+["\']',tail,re.I)
+        if other:
+            tail=tail[:other.start()]
+        found=None
+        for img in re.finditer(r'<img\b[^>]*>',tail,re.I):
+            cls=re.search(r'\bclass\s*=\s*["\']([^"\']+)',img.group(0),re.I)
+            if cls and not re.search(r'(?:^|\s)(?:avatar|js-action-profile-avatar|ProfileAvatar-image)(?:\s|$)',cls.group(1),re.I):
+                continue
+            u=re.search(r'https?://pbs\.twimg\.com/profile_images/[^"\'<>\s]+',img.group(0),re.I)
+            if u:
+                found=u.group(0).rstrip(");,\\")
+                break
+        witnesses.append({"owner_context_found":True,"avatar_found":bool(found)})
+        if found:
+            images.append(found)
+    return sorted(set(images)),witnesses
+
+
+def attribution_control():
+    a="https://pbs.twimg.com/profile_images/123/owner.png"
+    b="https://pbs.twimg.com/profile_images/234/commenter.png"
+    markup=(
+        '<div class="tweet" data-screen-name="ArweaveP">'
+        '<img class="avatar" src="'+a+'"></div>'
+        '<div class="tweet" data-screen-name="Other">'
+        '<img class="avatar" src="'+b+'"></div>'
+    )
+    found,_=author_assets_from_tweet(markup)
+    absent,_=author_assets_from_tweet('<div data-screen-name="Other"><img class="avatar" src="'+b+'"></div>')
+    return found==[a] and not absent
+
+
+def small_avatar_control(ref):
+    # ORB negative at small resolutions is uninterpretable unless this passes.
+    h,w=ref.shape[:2]
+    center=ref[:,(w-h)//2:(w+h)//2] if w>=h else ref[(h-w)//2:(h+w)//2,:]
+    img=cv2.resize(center,(256,256),interpolation=cv2.INTER_AREA)
+    score=orb_score(ref,img)
+    return score, bool(score["inliers"]>=25 and score["inlier_fraction"]>=0.35)
+
+
 def archive_asset_url(ts,url):
     # Strip an existing Wayback wrapper if present.
     m=re.search(r"https?://web\.archive\.org/web/\d+(?:[a-z_]+)?/(https?://.*)",url)
@@ -175,6 +230,8 @@ def main():
     ref=np.array(Image.open(P11).convert("RGB"))
     control=positive_control(ref)
     control_pass=bool(control["inliers"]>=25 and control["inlier_fraction"]>=0.35)
+    avatar_control,avatar_control_pass=small_avatar_control(ref)
+    attribution_control_pass=attribution_control()
 
     snaps,cdx_errors=cdx_urls()
     snapshot_rows=[]
@@ -191,7 +248,13 @@ def main():
                 "error":type(e).__name__,
             })
             continue
-        title,desc,imgurls=extract_meta(html)
+        title,desc,page_imgurls=extract_meta(html)
+        is_profile=s.get("source_type")=="profile"
+        if is_profile:
+            imgurls=page_imgurls
+            owner_contexts=[]
+        else:
+            imgurls,owner_contexts=author_assets_from_tweet(html)
         plain=re.sub(r"<[^>]+>"," ",html[:200000])
         exact_handle=bool(re.search(
             r'Arweave\s+Puzzle\s*@\s*ArweaveP\b|data-screen-name=["\']ArweaveP["\']|ArweaveP.s profile',
@@ -206,6 +269,8 @@ def main():
             "descriptions":desc[:5],
             "exact_handle_seen":exact_handle,
             "image_url_count":len(imgurls),
+            "all_profile_urls_unattributed":len(page_imgurls),
+            "owner_tweet_context_count":len(owner_contexts),
         })
         for u in imgurls:
             assets.append((ts,u,s.get("source_type")))
@@ -255,10 +320,10 @@ def main():
     tested=[x for x in image_results if x.get("fetch_ok")]
     avatar_tested=sum(x.get("role")=="avatar" for x in tested)
     banner_tested=sum(x.get("role")=="banner" for x in tested)
-    source_control_pass=bool(recovered and tested)
-    strong_assets=[x for x in tested if x.get("strong_derivative")]
+    source_control_pass=bool(recovered and tested and attribution_control_pass)
+    strong_assets=[x for x in tested if x.get("strong_derivative") and (x.get("role")=="banner" or avatar_control_pass)]
     promoted=bool(source_control_pass and control_pass and strong_assets)
-    full_coverage=bool(profile_witnesses and avatar_tested and banner_tested)
+    full_coverage=bool(profile_witnesses and avatar_tested and banner_tested and avatar_control_pass)
 
     decision=(
         "PROFILE_VISUAL_DERIVATIVE" if promoted else
@@ -275,6 +340,9 @@ def main():
         "snapshots_found":len(snaps),
         "snapshot_rows":snapshot_rows,
         "source_control_pass":source_control_pass,
+        "attribution_control_pass":attribution_control_pass,
+        "small_avatar_control_pass":avatar_control_pass,
+        "small_avatar_control":avatar_control,
         "profile_witness_count":len(profile_witnesses),
         "tweet_witness_count":len(tweet_witnesses),
         "avatar_assets_tested":avatar_tested,
@@ -287,7 +355,7 @@ def main():
         "strong_derivative_count":len(strong_assets),
         "decision":decision,
         "promoted":promoted,
-        "promotion_rule":"timestamped archived profile or author-tweet witness; avatar/banner image decoded; ORB control passes; >=25 RANSAC inliers and >=0.35 inlier fraction; tweet media excluded",
+        "promotion_rule":"author-attributed avatar or contemporaneous exact-handle profile/banner; small-avatar and ORB positive controls pass; >=25 RANSAC inliers and >=0.35 inlier fraction; tweet media/commenter avatars excluded",
         "interpretation_guard":"A negative only retires direct profile/header visual reuse, not all external semantic references.",
         "safety_guard":"Public profile metadata and image similarity only. No private-key material generated or tested.",
     }
@@ -303,8 +371,11 @@ def main():
         f"- authenticated tweet-page witnesses: **{len(tweet_witnesses)}**",
         f"- avatar/banner images decoded: **{avatar_tested}/{banner_tested}**",
         f"- exact-handle source control: **{source_control_pass}**",
+        f"- author-attribution synthetic control: **{attribution_control_pass}**",
+        f"- 256px avatar ORB positive control: **{avatar_control_pass}** ({avatar_control['inliers']} inliers)",
+
         f"- ORB positive control: **{control_pass}** ({control['inliers']} inliers, {control['inlier_fraction']:.3f})",
-        f"- profile/header/media assets tested: **{len(uniq)}**",
+        f"- owner-attributed profile/header assets attempted: **{len(uniq)}**",
         f"- strong Puzzle #11 derivatives: **{len(strong_assets)}**",
         f"- decision: **{decision}**",
         "",
@@ -313,7 +384,7 @@ def main():
     ]
     if snapshot_rows:
         for x in snapshot_rows:
-            md.append(f"- {x.get('timestamp','?')} type={x.get('source_type')} fetch={x.get('fetch_ok')} handle={x.get('exact_handle_seen')} title={x.get('title','')!r}")
+            md.append(f"- {x.get('timestamp','?')} type={x.get('source_type')} fetch={x.get('fetch_ok')} handle={x.get('exact_handle_seen')} attributed={x.get('image_url_count')} unaudited_urls={x.get('all_profile_urls_unattributed')} title={x.get('title','')!r}")
     else:
         md.append("- none")
 
@@ -348,7 +419,9 @@ def main():
         "status":"ok",
         "experiment_id":"A11-EXP-119",
         "source_control_pass":source_control_pass,
+        "attribution_control_pass":attribution_control_pass,
         "orb_control_pass":control_pass,
+        "avatar_control_pass":avatar_control_pass,
         "assets":len(uniq),
         "avatar_tested":avatar_tested,
         "banner_tested":banner_tested,
