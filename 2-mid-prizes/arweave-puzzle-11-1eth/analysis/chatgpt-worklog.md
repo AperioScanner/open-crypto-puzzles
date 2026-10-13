@@ -378,3 +378,8 @@ Actual triangle interiors were visually located correctly; repaired *same* Stage
 ## 2026-10-13 — Stage 123 review / Stage 124 selected
 Confirmed GitHub Actions Stage123 run #38459664096 successful, canonical digest correct. Positive synthetic cloned patches produced 5 replicates; independent synthetic redraws produced 0; region coverage 228/265/230 patches; 0 of 180 top pairwise candidates passed the strict original/JPEG85/JPEG70/downsample correlation and IoU gates. Narrow valid negative.
 Selected exactly one follow-up based on a concrete unresolved object-association defect: Stage 102 measured L/R on one spurious x~675 track and omitted rightmost x~1490 sail. Stage124 tests a *distinct* geometry (five corrected apex-to-outline-base-center lateral offsets) with fixed visible sail sites, two detectors, four lossy variants, strong positive/neutral synthetic controls. No secret interpretation.
+
+
+## 2026-10-13 — Stage 124 result and Stage 125 plan
+- Stage124 #38478839142 finished; 120/120 synthetic controls, original hash verified. Correctly localized five sails after fixing old Stage-102/19 object defect. Real lean classes N,?,N,N,L, with only rightmost sailor showing a reliable signed left offset; no mixed-sign coding pattern.
+- Stage125 selected based solely on that newly observed single silhouette outlier: 216 fixed jitter/threshold/detector/format configs, positive fifth-left vs all-neutral synthetic controls, strong gap/offset gates, no key/mnemonic/address operations. Launch as workflow and audit controls before classifying.
