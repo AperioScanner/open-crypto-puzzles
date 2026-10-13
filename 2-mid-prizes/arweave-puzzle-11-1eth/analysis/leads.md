@@ -54,3 +54,7 @@ Current unique observable: **side-specific relative ink darkness across six sail
 ## Stage 123 (new fixed-scope image-only hypothesis)
 
 Test near-identical raster pencil motifs *across* skyline/left-boat-water/right-pier regions, not repeated small-sail shapes, sail-side shading or building hatch counts. Strict 64×64 fixed-grid comparisons with controls and 4 lossy variants; no secret material. Stage 122, after the corrected source-mask test, was a narrow valid negative with 3/6 stable sail-side polarity observations.
+
+
+## Stage 123 closed; Stage 124 image-only experiment (2026-10-13)
+Stage 123: strong controls, 0/180 real cross-region 64px patch copies. No equivalent raster templates at this fixed scale/grid. Stage 124 audits left/right *outline apex-versus-base displacement* of five true small sails, explicitly correcting the proven Stage-102/19 wrong-object defect. Control-driven test of geometry only; no return to speculative alphabet/BIP39 or social research.
