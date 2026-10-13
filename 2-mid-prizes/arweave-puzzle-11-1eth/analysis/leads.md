@@ -49,3 +49,8 @@ Primary verified as four-step, but still unknown. Stage 114 found no corroborate
 
 ## Stage 122 selected (2026-10-13)
 Current unique observable: **side-specific relative ink darkness across six sail triangles**, rather than sail direction, widths, height, exact duplicated strokes or building hatch counts. Precommitted interior-versus-outside correction and dark-right/dark-left/neutral controls are in `tools/stage122_sail_side_shading.py`. Interpret an all-same-side finding as an ordinary shading convention; an apparent mixed-sided finding is only a candidate visual observation requiring further corroboration. Do not map results to secret material.
+
+
+## Stage 123 (new fixed-scope image-only hypothesis)
+
+Test near-identical raster pencil motifs *across* skyline/left-boat-water/right-pier regions, not repeated small-sail shapes, sail-side shading or building hatch counts. Strict 64×64 fixed-grid comparisons with controls and 4 lossy variants; no secret material. Stage 122, after the corrected source-mask test, was a narrow valid negative with 3/6 stable sail-side polarity observations.
