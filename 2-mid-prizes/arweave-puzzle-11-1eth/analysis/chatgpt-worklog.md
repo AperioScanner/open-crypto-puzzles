@@ -350,3 +350,12 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Stage121 Actions run #38425779620 completed successfully; exact source hash; synthetic controls 82/82 passed; zero of twelve real building facades produced a robust two-estimator, four-variant count of long hatch strokes. No image-supported exact facade stroke-count sequence.
 - Both tests were strictly visual and recorded reproducible JSON+REPORT; no secret candidates, BIP39 word lists, key derivations, or wallet access.
 - Further investigation must remain image-only by user directive; do not repeat retired visual scopes or resume Twitter.
+
+
+## 2026-10-13 — Stage 121 audit and Stage 122 selection
+
+- Direct GitHub Actions check: Stage 121 #38425779620 completed with success.
+- Read complete JSON and REPORT: true canonical hash, 82 synthetic pass cases with tolerance ±1 (some V16 synthetic estimates were 15), 0/12 real facades yielded an exact stable cross-estimator/cross-image integer count. This is a valid negative for the predeclared exact counting method, not a negative for arbitrary image codes.
+- Read current STAGE_QUEUE, STATE, tested ledger, leads, stage120 result, and Stages 36/94/102/105/112 and 37–86 manifest; geometric sail heights, widths, x order and direct duplication had already been tested. Therefore Stage 122 changes the observable rather than recycling them: six-sail *signed side-shading* after correction by outside ink.
+- Fixed image-specific ROI geometry, exact gates and positive, negative and neutral synthetic controls were recorded in Stage 122 script before launching workflow.
+- Experiment is strictly image-only: no key, mnemonic, wallet or other secret processing. User-directed abandonment of Twitter remains in force.
