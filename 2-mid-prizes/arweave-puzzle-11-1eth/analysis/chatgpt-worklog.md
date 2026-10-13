@@ -383,3 +383,9 @@ Selected exactly one follow-up based on a concrete unresolved object-association
 ## 2026-10-13 — Stage 124 result and Stage 125 plan
 - Stage124 #38478839142 finished; 120/120 synthetic controls, original hash verified. Correctly localized five sails after fixing old Stage-102/19 object defect. Real lean classes N,?,N,N,L, with only rightmost sailor showing a reliable signed left offset; no mixed-sign coding pattern.
 - Stage125 selected based solely on that newly observed single silhouette outlier: 216 fixed jitter/threshold/detector/format configs, positive fifth-left vs all-neutral synthetic controls, strong gap/offset gates, no key/mnemonic/address operations. Launch as workflow and audit controls before classifying.
+
+
+## 2026-10-13 — Stage 125 audited, Stage 126 prepared
+- Run #38479304077 completed successfully; recorded canonical hash verified; 216/216 artificial-left positive controls, 0/216 all-neutral positives; all 216 real source configs usable.
+- Rightmost is lowest measured outline offset in 209/216 configs, but never achieves *both* preregistered offset <= -0.28 and runner-up gap >= 0.16. Result UNREPLICATED_RIGHTMOST_OUTLIER; do not retune.
+- Selected exactly one independent visual-detail question: are narrow mast tips explicitly extended above some of the five true sail apices? Stage126 uses fixed windows, four lossy renderings, ±2px lateral jitter, binarized-ink and Canny continuity, and mast/no-mast/side-decoy synthetic controls. No secret or off-image operations.
