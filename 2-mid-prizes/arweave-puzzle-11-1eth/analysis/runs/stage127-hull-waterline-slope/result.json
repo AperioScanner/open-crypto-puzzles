@@ -1,0 +1,1272 @@
+{
+  "experiment_id": "A11-EXP-127",
+  "hypothesis": "small-boat hull waterlines show stable opposite-sign slopes across boats rather than a consistent drawing/perspective convention",
+  "scope": "five predeclared hull bands below five corrected sail tips; binary-edge and Canny Hough on four variants; excludes sail panel, masts and isolated tilted strokes",
+  "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "hull_sites": [
+    [
+      "sail_1",
+      1042,
+      448,
+      98,
+      35
+    ],
+    [
+      "sail_2",
+      1148,
+      433,
+      99,
+      38
+    ],
+    [
+      "sail_3",
+      1282,
+      411,
+      103,
+      44
+    ],
+    [
+      "sail_4",
+      1372,
+      397,
+      101,
+      42
+    ],
+    [
+      "sail_5",
+      1490,
+      357,
+      106,
+      47
+    ]
+  ],
+  "thresholds": {
+    "min_segments": 2,
+    "min_line_length_sum": 48.0,
+    "up_down_gate": 0.12,
+    "neutral_gate": 0.055,
+    "max_abs_slope": 0.58
+  },
+  "controls": {
+    "positive_mixed_pass": true,
+    "negative_level_with_decoy_pass": true,
+    "pass": true,
+    "mixed_classes": {
+      "sail_1": "DOWN_RIGHT",
+      "sail_2": "UP_RIGHT",
+      "sail_3": "DOWN_RIGHT",
+      "sail_4": "UP_RIGHT",
+      "sail_5": "LEVEL"
+    },
+    "neutral_classes": {
+      "sail_1": "LEVEL",
+      "sail_2": "LEVEL",
+      "sail_3": "LEVEL",
+      "sail_4": "LEVEL",
+      "sail_5": "LEVEL"
+    }
+  },
+  "real": [
+    {
+      "site": "sail_1",
+      "stable_class": null,
+      "readings": [
+        {
+          "variant": "original",
+          "method": "edge",
+          "valid": true,
+          "segments": 33,
+          "total_length": 1134.517,
+          "median_slope": -0.04762,
+          "class": "LEVEL",
+          "segments_first3": [
+            [
+              51,
+              3,
+              106,
+              15
+            ],
+            [
+              28,
+              23,
+              52,
+              23
+            ],
+            [
+              15,
+              22,
+              55,
+              30
+            ]
+          ]
+        },
+        {
+          "variant": "original",
+          "method": "binary",
+          "valid": true,
+          "segments": 18,
+          "total_length": 425.784,
+          "median_slope": 0.10345,
+          "class": null,
+          "segments_first3": [
+            [
+              30,
+              26,
+              49,
+              29
+            ],
+            [
+              85,
+              18,
+              106,
+              23
+            ],
+            [
+              51,
+              15,
+              76,
+              23
+            ]
+          ]
+        },
+        {
+          "variant": "jpeg85",
+          "method": "edge",
+          "valid": true,
+          "segments": 33,
+          "total_length": 1232.667,
+          "median_slope": -0.15789,
+          "class": "UP_RIGHT",
+          "segments_first3": [
+            [
+              9,
+              13,
+              105,
+              37
+            ],
+            [
+              57,
+              22,
+              106,
+              3
+            ],
+            [
+              45,
+              28,
+              106,
+              10
+            ]
+          ]
+        },
+        {
+          "variant": "jpeg85",
+          "method": "binary",
+          "valid": true,
+          "segments": 23,
+          "total_length": 598.259,
+          "median_slope": 0.0,
+          "class": "LEVEL",
+          "segments_first3": [
+            [
+              1,
+              23,
+              42,
+              9
+            ],
+            [
+              50,
+              22,
+              72,
+              18
+            ],
+            [
+              25,
+              16,
+              48,
+              22
+            ]
+          ]
+        },
+        {
+          "variant": "jpeg70",
+          "method": "edge",
+          "valid": true,
+          "segments": 34,
+          "total_length": 1067.793,
+          "median_slope": -0.09804,
+          "class": null,
+          "segments_first3": [
+            [
+              66,
+              22,
+              103,
+              16
+            ],
+            [
+              52,
+              14,
+              90,
+              6
+            ],
+            [
+              12,
+              3,
+              43,
+              9
+            ]
+          ]
+        },
+        {
+          "variant": "jpeg70",
+          "method": "binary",
+          "valid": true,
+          "segments": 22,
+          "total_length": 561.928,
+          "median_slope": -0.06897,
+          "class": null,
+          "segments_first3": [
+            [
+              32,
+              18,
+              97,
+              34
+            ],
+            [
+              5,
+              21,
+              41,
+              12
+            ],
+            [
+              48,
+              23,
+              78,
+              18
+            ]
+          ]
+        },
+        {
+          "variant": "down75_up",
+          "method": "edge",
+          "valid": true,
+          "segments": 33,
+          "total_length": 980.743,
+          "median_slope": -0.1,
+          "class": null,
+          "segments_first3": [
+            [
+              9,
+              12,
+              42,
+              17
+            ],
+            [
+              2,
+              31,
+              38,
+              25
+            ],
+            [
+              20,
+              13,
+              42,
+              11
+            ]
+          ]
+        },
+        {
+          "variant": "down75_up",
+          "method": "binary",
+          "valid": true,
+          "segments": 13,
+          "total_length": 306.552,
+          "median_slope": -0.07143,
+          "class": null,
+          "segments_first3": [
+            [
+              57,
+              26,
+              76,
+              25
+            ],
+            [
+              9,
+              12,
+              38,
+              17
+            ],
+            [
+              61,
+              27,
+              103,
+              24
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "site": "sail_2",
+      "stable_class": null,
+      "readings": [
+        {
+          "variant": "original",
+          "method": "edge",
+          "valid": true,
+          "segments": 23,
+          "total_length": 975.462,
+          "median_slope": 0.06897,
+          "class": null,
+          "segments_first3": [
+            [
+              5,
+              40,
+              88,
+              0
+            ],
+            [
+              69,
+              13,
+              92,
+              16
+            ],
+            [
+              1,
+              14,
+              39,
+              19
+            ]
+          ]
+        },
+        {
+          "variant": "original",
+          "method": "binary",
+          "valid": true,
+          "segments": 14,
+          "total_length": 410.592,
+          "median_slope": -0.18919,
+          "class": "UP_RIGHT",
+          "segments_first3": [
+            [
+              18,
+              30,
+              55,
+              23
+            ],
+            [
+              23,
+              20,
+              50,
+              25
+            ],
+            [
+              56,
+              13,
+              86,
+              27
+            ]
+          ]
+        },
+        {
+          "variant": "jpeg85",
+          "method": "edge",
+          "valid": true,
+          "segments": 31,
+          "total_length": 1140.314,
+          "median_slope": -0.16,
+          "class": "UP_RIGHT",
+          "segments_first3": [
+            [
+              50,
+              16,
+              109,
+              6
+            ],
+            [
+              39,
+              30,
+              98,
+              11
+            ],
+            [
+              27,
+              12,
+              102,
+              0
+            ]
+          ]
+        },
+        {
+          "variant": "jpeg85",
+          "method": "binary",
+          "valid": true,
+          "segments": 10,
+          "total_length": 244.219,
+          "median_slope": -0.26316,
+          "class": "UP_RIGHT",
+          "segments_first3": [
+            [
+              4,
+              14,
+              34,
+              23
+            ],
+            [
+              13,
+              7,
+              38,
+              15
+            ],
+            [
+              43,
+              33,
+              73,
+              19
+            ]
+          ]
+        },
+        {
+          "variant": "jpeg70",
+          "method": "edge",
+          "valid": true,
+          "segments": 25,
+          "total_length": 1032.34,
+          "median_slope": 0.02703,
+          "class": "LEVEL",
+          "segments_first3": [
+            [
+              4,
+              14,
+              81,
+              40
+            ],
+            [
+              38,
+              23,
+              94,
+              0
+            ],
+            [
+              30,
+              15,
+              75,
+              31
+            ]
+          ]
+        },
+        {
+          "variant": "jpeg70",
+          "method": "binary",
+          "valid": true,
+          "segments": 17,
+          "total_length": 505.651,
+          "median_slope": 0.1,
+          "class": null,
+          "segments_first3": [
+            [
+              40,
+              20,
+              62,
+              25
+            ],
+            [
+              29,
+              30,
+              94,
+              24
+            ],
+            [
+              52,
+              15,
+              76,
+              24
+            ]
+          ]
+        },
+        {
+          "variant": "down75_up",
+          "method": "edge",
+          "valid": true,
+          "segments": 29,
+          "total_length": 1075.332,
+          "median_slope": -0.16667,
+          "class": "UP_RIGHT",
+          "segments_first3": [
+            [
+              1,
+              31,
+              70,
+              16
+            ],
+            [
+              4,
+              14,
+              34,
+              23
+            ],
+            [
+              20,
+              40,
+              83,
+              13
+            ]
+          ]
+        },
+        {
+          "variant": "down75_up",
+          "method": "binary",
+          "valid": true,
+          "segments": 17,
+          "total_length": 514.717,
+          "median_slope": 0.22449,
+          "class": "DOWN_RIGHT",
+          "segments_first3": [
+            [
+              11,
+              20,
+              54,
+              34
+            ],
+            [
+              1,
+              11,
+              57,
+              28
+            ],
+            [
+              90,
+              12,
+              109,
+              7
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "site": "sail_3",
+      "stable_class": null,
+      "readings": [
+        {
+          "variant": "original",
+          "method": "edge",
+          "valid": true,
+          "segments": 31,
+          "total_length": 1079.203,
+          "median_slope": -0.03226,
+          "class": "LEVEL",
+          "segments_first3": [
+            [
+              8,
+              7,
+              30,
+              12
+            ],
+            [
+              18,
+              11,
+              61,
+              21
+            ],
+            [
+              17,
+              0,
+              84,
+              19
+            ]
+          ]
+        },
+        {
+          "variant": "original",
+          "method": "binary",
+          "valid": true,
+          "segments": 19,
+          "total_length": 601.321,
+          "median_slope": 0.34211,
+          "class": "DOWN_RIGHT",
+          "segments_first3": [
+            [
+              63,
+              19,
+              83,
+              24
+            ],
+            [
+              8,
+              0,
+              34,
+              10
+            ],
+            [
+              59,
+              12,
+              103,
+              24
+            ]
+          ]
+        },
+        {
+          "variant": "jpeg85",
+          "method": "edge",
+          "valid": true,
+          "segments": 32,
+          "total_length": 950.064,
+          "median_slope": 0.0,
+          "class": "LEVEL",
+          "segments_first3": [
+            [
+              22,
+              15,
+              87,
+              19
+            ],
+            [
+              95,
+              11,
+              124,
+              13
+            ],
+            [
+              0,
+              25,
+              27,
+              25
+            ]
+          ]
+        },
+        {
+          "variant": "jpeg85",
+          "method": "binary",
+          "valid": true,
+          "segments": 10,
+          "total_length": 326.469,
+          "median_slope": 0.30952,
+          "class": "DOWN_RIGHT",
+          "segments_first3": [
+            [
+              7,
+              0,
+              64,
+              23
+            ],
+            [
+              69,
+              22,
+              92,
+              20
+            ],
+            [
+              40,
+              6,
+              82,
+              19
+            ]
+          ]
+        },
+        {
+          "variant": "jpeg70",
+          "method": "edge",
+          "valid": true,
+          "segments": 38,
+          "total_length": 1254.713,
+          "median_slope": -0.15217,
+          "class": "UP_RIGHT",
+          "segments_first3": [
+            [
+              48,
+              6,
+              87,
+              6
+            ],
+            [
+              94,
+              13,
+              111,
+              9
+            ],
+            [
+              1,
+              31,
+              80,
+              12
+            ]
+          ]
+        },
+        {
+          "variant": "jpeg70",
+          "method": "binary",
+          "valid": true,
+          "segments": 20,
+          "total_length": 497.727,
+          "median_slope": 0.05882,
+          "class": null,
+          "segments_first3": [
+            [
+              11,
+              11,
+              67,
+              32
+            ],
+            [
+              89,
+              23,
+              124,
+              27
+            ],
+            [
+              61,
+              18,
+              78,
+              22
+            ]
+          ]
+        },
+        {
+          "variant": "down75_up",
+          "method": "edge",
+          "valid": true,
+          "segments": 31,
+          "total_length": 879.419,
+          "median_slope": 0.03279,
+          "class": "LEVEL",
+          "segments_first3": [
+            [
+              63,
+              4,
+              124,
+              6
+            ],
+            [
+              55,
+              16,
+              81,
+              17
+            ],
+            [
+              51,
+              31,
+              91,
+              25
+            ]
+          ]
+        },
+        {
+          "variant": "down75_up",
+          "method": "binary",
+          "valid": true,
+          "segments": 14,
+          "total_length": 411.782,
+          "median_slope": 0.39437,
+          "class": "DOWN_RIGHT",
+          "segments_first3": [
+            [
+              1,
+              7,
+              72,
+              35
+            ],
+            [
+              44,
+              17,
+              62,
+              22
+            ],
+            [
+              37,
+              1,
+              82,
+              20
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "site": "sail_4",
+      "stable_class": null,
+      "readings": [
+        {
+          "variant": "original",
+          "method": "edge",
+          "valid": true,
+          "segments": 28,
+          "total_length": 976.327,
+          "median_slope": -0.11111,
+          "class": null,
+          "segments_first3": [
+            [
+              16,
+              2,
+              86,
+              29
+            ],
+            [
+              24,
+              31,
+              97,
+              9
+            ],
+            [
+              24,
+              29,
+              97,
+              4
+            ]
+          ]
+        },
+        {
+          "variant": "original",
+          "method": "binary",
+          "valid": true,
+          "segments": 17,
+          "total_length": 503.46,
+          "median_slope": 0.18421,
+          "class": "DOWN_RIGHT",
+          "segments_first3": [
+            [
+              54,
+              25,
+              102,
+              27
+            ],
+            [
+              54,
+              16,
+              76,
+              22
+            ],
+            [
+              3,
+              0,
+              54,
+              24
+            ]
+          ]
+        },
+        {
+          "variant": "jpeg85",
+          "method": "edge",
+          "valid": true,
+          "segments": 34,
+          "total_length": 1153.913,
+          "median_slope": -0.08475,
+          "class": null,
+          "segments_first3": [
+            [
+              70,
+              26,
+              97,
+              28
+            ],
+            [
+              37,
+              16,
+              101,
+              7
+            ],
+            [
+              28,
+              30,
+              97,
+              10
+            ]
+          ]
+        },
+        {
+          "variant": "jpeg85",
+          "method": "binary",
+          "valid": true,
+          "segments": 16,
+          "total_length": 532.437,
+          "median_slope": 0.05556,
+          "class": null,
+          "segments_first3": [
+            [
+              59,
+              8,
+              91,
+              6
+            ],
+            [
+              80,
+              25,
+              119,
+              33
+            ],
+            [
+              2,
+              28,
+              36,
+              21
+            ]
+          ]
+        },
+        {
+          "variant": "jpeg70",
+          "method": "edge",
+          "valid": true,
+          "segments": 32,
+          "total_length": 1195.626,
+          "median_slope": -0.2069,
+          "class": "UP_RIGHT",
+          "segments_first3": [
+            [
+              20,
+              21,
+              81,
+              5
+            ],
+            [
+              71,
+              27,
+              103,
+              27
+            ],
+            [
+              10,
+              35,
+              100,
+              6
+            ]
+          ]
+        },
+        {
+          "variant": "jpeg70",
+          "method": "binary",
+          "valid": true,
+          "segments": 21,
+          "total_length": 520.751,
+          "median_slope": 0.2069,
+          "class": "DOWN_RIGHT",
+          "segments_first3": [
+            [
+              53,
+              14,
+              80,
+              24
+            ],
+            [
+              23,
+              5,
+              42,
+              9
+            ],
+            [
+              13,
+              24,
+              46,
+              26
+            ]
+          ]
+        },
+        {
+          "variant": "down75_up",
+          "method": "edge",
+          "valid": true,
+          "segments": 23,
+          "total_length": 996.429,
+          "median_slope": 0.16949,
+          "class": "DOWN_RIGHT",
+          "segments_first3": [
+            [
+              1,
+              27,
+              97,
+              15
+            ],
+            [
+              1,
+              19,
+              90,
+              36
+            ],
+            [
+              8,
+              0,
+              95,
+              19
+            ]
+          ]
+        },
+        {
+          "variant": "down75_up",
+          "method": "binary",
+          "valid": true,
+          "segments": 10,
+          "total_length": 248.755,
+          "median_slope": 0.26829,
+          "class": "DOWN_RIGHT",
+          "segments_first3": [
+            [
+              5,
+              0,
+              46,
+              11
+            ],
+            [
+              73,
+              17,
+              97,
+              8
+            ],
+            [
+              11,
+              4,
+              29,
+              12
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "site": "sail_5",
+      "stable_class": null,
+      "readings": [
+        {
+          "variant": "original",
+          "method": "edge",
+          "valid": true,
+          "segments": 20,
+          "total_length": 757.036,
+          "median_slope": -0.0102,
+          "class": "LEVEL",
+          "segments_first3": [
+            [
+              2,
+              29,
+              100,
+              28
+            ],
+            [
+              34,
+              11,
+              68,
+              6
+            ],
+            [
+              0,
+              23,
+              28,
+              26
+            ]
+          ]
+        },
+        {
+          "variant": "original",
+          "method": "binary",
+          "valid": true,
+          "segments": 7,
+          "total_length": 185.46,
+          "median_slope": 0.0,
+          "class": "LEVEL",
+          "segments_first3": [
+            [
+              44,
+              31,
+              63,
+              26
+            ],
+            [
+              22,
+              8,
+              70,
+              8
+            ],
+            [
+              11,
+              19,
+              34,
+              16
+            ]
+          ]
+        },
+        {
+          "variant": "jpeg85",
+          "method": "edge",
+          "valid": true,
+          "segments": 26,
+          "total_length": 783.0,
+          "median_slope": -0.13846,
+          "class": "UP_RIGHT",
+          "segments_first3": [
+            [
+              0,
+              2,
+              29,
+              10
+            ],
+            [
+              1,
+              36,
+              48,
+              21
+            ],
+            [
+              2,
+              26,
+              32,
+              25
+            ]
+          ]
+        },
+        {
+          "variant": "jpeg85",
+          "method": "binary",
+          "valid": true,
+          "segments": 7,
+          "total_length": 222.392,
+          "median_slope": 0.23256,
+          "class": "DOWN_RIGHT",
+          "segments_first3": [
+            [
+              47,
+              12,
+              66,
+              1
+            ],
+            [
+              37,
+              21,
+              80,
+              31
+            ],
+            [
+              47,
+              10,
+              72,
+              20
+            ]
+          ]
+        },
+        {
+          "variant": "jpeg70",
+          "method": "edge",
+          "valid": true,
+          "segments": 30,
+          "total_length": 935.149,
+          "median_slope": -0.24242,
+          "class": "UP_RIGHT",
+          "segments_first3": [
+            [
+              17,
+              29,
+              70,
+              8
+            ],
+            [
+              0,
+              23,
+              33,
+              15
+            ],
+            [
+              17,
+              11,
+              50,
+              7
+            ]
+          ]
+        },
+        {
+          "variant": "jpeg70",
+          "method": "binary",
+          "valid": true,
+          "segments": 11,
+          "total_length": 266.068,
+          "median_slope": -0.06667,
+          "class": null,
+          "segments_first3": [
+            [
+              13,
+              8,
+              43,
+              6
+            ],
+            [
+              32,
+              9,
+              75,
+              4
+            ],
+            [
+              59,
+              27,
+              76,
+              29
+            ]
+          ]
+        },
+        {
+          "variant": "down75_up",
+          "method": "edge",
+          "valid": true,
+          "segments": 32,
+          "total_length": 1005.998,
+          "median_slope": -0.18056,
+          "class": "UP_RIGHT",
+          "segments_first3": [
+            [
+              2,
+              6,
+              28,
+              4
+            ],
+            [
+              2,
+              29,
+              48,
+              19
+            ],
+            [
+              7,
+              16,
+              50,
+              13
+            ]
+          ]
+        },
+        {
+          "variant": "down75_up",
+          "method": "binary",
+          "valid": true,
+          "segments": 10,
+          "total_length": 218.534,
+          "median_slope": 0.22222,
+          "class": "DOWN_RIGHT",
+          "segments_first3": [
+            [
+              51,
+              3,
+              71,
+              14
+            ],
+            [
+              29,
+              14,
+              48,
+              24
+            ],
+            [
+              47,
+              8,
+              66,
+              6
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "stable_sites": 0,
+  "real_classes": {
+    "UP_RIGHT": 0,
+    "LEVEL": 0,
+    "DOWN_RIGHT": 0
+  },
+  "mixed": false,
+  "decision": "INSUFFICIENT_HULL_ISOLATION",
+  "stopping_rule": "Fail synthetic copied opposite-sign hull and level-with-pier-decoy controls => repair Stage127; if <4/5 real hulls classify stably => inconclusive; if both UP/DOWN stable and >=4/5 => visual candidate to verify; otherwise narrow negative.",
+  "scope_limit": "This tests only keel/hull waterline inclination in these exact windows. Unseen symbols, arbitrary hull silhouettes and perspective are not ruled out.",
+  "safety_guard": "No seed phrases, private keys, BIP39, wallet operations or outside-image references."
+}
