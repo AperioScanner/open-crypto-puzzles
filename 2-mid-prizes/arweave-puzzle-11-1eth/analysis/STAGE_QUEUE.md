@@ -146,3 +146,12 @@ Stage 122 run #38458971789 completed with canonical image check and all 72 synth
 - No external references, no wallet/key/mnemonic operations. Do not reuse Stages 120–122 interpretations.
 
 Script: `tools/stage123_cross_region_stroke_reuse.py`
+
+
+## 2026-10-13 — Stage 123 audited; Stage 124 preregistered
+
+- Stage 123 run #38459664096 completed, controls PASS (5 copied-patch hits, 0 independently drawn negatives); canonical image checked; 180 top cross-region patch pairs evaluated across four formats and **0 reproduced**. Coverage valid (228/265/230 eligible patches across skyline/left boat-water/right pier). Retire only *exact, unrotated, same-scale, fixed-grid 64×64 duplicated raster motifs across these three regions*. Do not expand into arbitrary transformed copies without new evidence.
+- Stage 124 now selected under the anti-recycling *implementation defect* exception: previous Stage 102 tested sail directions based on Stage 19 boxes at x~675,1046,1144,1269,1361, thus including one non-sail and omitting the real fifth rightmost sail at ~1490. Stage 112 independently documented the error.
+- Different observable: fixed true-five-sail apex-to-base outline midpoint offset, not Hough/Sobel hatch direction, widths, ray counts, shade darkness, or cryptographic values.
+- Exactly five immutable apex sites inherited from Stage 122; two image methods (binary ink and Canny edges); original/JPEG85/JPEG70/75% resize; preregistered support and sign thresholds; synthetic L/N/R controls at all five sites. Require >=4 resolvable objects and strongly signed BOTH directions for promotion. Control failure => repair Stage 124, insufficient outlines => INCONCLUSIVE, else negative only for this explicit silhouette criterion.
+- Image only. No off-image research or secrets/wallet activity. Script: tools/stage124_true_sail_outline_offset.py
