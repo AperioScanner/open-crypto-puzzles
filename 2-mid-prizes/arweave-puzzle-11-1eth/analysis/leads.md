@@ -72,3 +72,8 @@ Stage126 valid negative: 4/5 consistently extended masthead marks, fifth ambiguo
 ## Stage 127 inconclusive; Stage 128 image-only water topology (2026-10-13)
 
 Stage 127 hull-line angle test: controls passed, but 0/5 real hulls isolated stably; the fixed crops intersect the neighboring vessel/pier strokes. This is **insufficient source isolation**, not a negative. Stage 128 instead audits closed water-ripple loops (4 source ROIs, 2 independent detectors, 3 thresholds and 4 image variants) with synthetic open-arc vs closed-oval controls. No secrets or off-image research.
+
+
+## Stage128 closed; Stage129 corrected-object image-only test
+
+Stage128 had calibrated closed-loop positive and open-arc negative controls; zero water regions yielded a stable inter-method/threshold/lossy count. Do not recycle that exact encoding. Stage129 exploits the independent known source-detection defect in Stage102: 5 correctly located small sail interiors have never had their **diagonal hatch tangent directions** reevaluated after replacement of the spurious x~675 object and restoration of the real rightmost x~1490. No secret extraction.
