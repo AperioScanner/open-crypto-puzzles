@@ -7,7 +7,15 @@
   ],
   "cdx_errors": [
     {
+      "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Ftwitter.com%2FArweaveP&from=20200420&to=20200502&output=json&filter=statuscode%3A200&fl=timestamp%2Coriginal%2Cstatuscode%2Cdigest&collapse=digest&limit=60",
+      "error": "TimeoutError"
+    },
+    {
       "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Ftwitter.com%2Farweavep&from=20200420&to=20200502&output=json&filter=statuscode%3A200&fl=timestamp%2Coriginal%2Cstatuscode%2Cdigest&collapse=digest&limit=60",
+      "error": "TimeoutError"
+    },
+    {
+      "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Ftwitter.com%2FArweaveP%2Fwith_replies&from=20200420&to=20200502&output=json&filter=statuscode%3A200&fl=timestamp%2Coriginal%2Cstatuscode%2Cdigest&collapse=digest&limit=60",
       "error": "TimeoutError"
     }
   ],
@@ -31,22 +39,43 @@
       "timestamp": "20200430210602",
       "original": "https://twitter.com/ArweaveP/status/1253375599323856896",
       "source_type": "tweet_witness",
-      "fetch_ok": false,
-      "error": "URLError"
+      "fetch_ok": true,
+      "title": "Arweave Puzzle on Twitter: \"format does not matter\u2026 \"",
+      "descriptions": [
+        "\u201c@afronomad_ format does not matter\u201d"
+      ],
+      "exact_handle_seen": true,
+      "image_url_count": 1,
+      "all_profile_urls_unattributed": 5,
+      "owner_tweet_context_count": 3
     },
     {
       "timestamp": "20200501121921",
       "original": "https://twitter.com/ArweaveP/status/1253253461828931584",
       "source_type": "tweet_witness",
-      "fetch_ok": false,
-      "error": "URLError"
+      "fetch_ok": true,
+      "title": "Arweave Puzzle on Twitter: \"0xFF2142E98E09b5344994F9bEB9C56C95506B9F17 it is also included somewhere in the image \ud83e\uddd0\u2026 \"",
+      "descriptions": [
+        "\u201c@SamuelKilelemb4 0xFF2142E98E09b5344994F9bEB9C56C95506B9F17 it is also included somewhere in the image \ud83e\uddd0\u201d"
+      ],
+      "exact_handle_seen": true,
+      "image_url_count": 1,
+      "all_profile_urls_unattributed": 8,
+      "owner_tweet_context_count": 3
     },
     {
       "timestamp": "20200502173835",
       "original": "https://twitter.com/ArweaveP/status/1252961944807641090",
       "source_type": "tweet_witness",
-      "fetch_ok": false,
-      "error": "URLError"
+      "fetch_ok": true,
+      "title": "Arweave Puzzle on Twitter: \"There is 1 ETH hidden in https://t.co/wyyxPDtXDH Puzzle 11 \ud83e\udde9. Please retweet to make more of these possible! #puzzle #steganography #arweave #cryptopuzzle\u2026 https://t.co/8llFe3yvq9\"",
+      "descriptions": [
+        "\u201cThere is 1 ETH hidden in https://t.co/wyyxPDtXDH Puzzle 11 \ud83e\udde9. Please retweet to make more of these possible! #puzzle #steganography #arweave #cryptopuzzle\u201d"
+      ],
+      "exact_handle_seen": true,
+      "image_url_count": 1,
+      "all_profile_urls_unattributed": 18,
+      "owner_tweet_context_count": 4
     }
   ],
   "source_control_pass": true,
@@ -58,8 +87,9 @@
     "inlier_fraction": 0.6140350877192983
   },
   "profile_witness_count": 0,
-  "tweet_witness_count": 1,
+  "tweet_witness_count": 4,
   "avatar_assets_tested": 1,
+  "avatar_assets_decoded": 2,
   "banner_assets_tested": 0,
   "full_profile_header_coverage": false,
   "orb_positive_control": {
@@ -68,10 +98,32 @@
     "inlier_fraction": 0.9728571428571429
   },
   "orb_control_pass": true,
-  "candidate_profile_assets": 1,
+  "candidate_profile_assets": 2,
+  "resolution_calibrated_assets": 1,
   "image_results": [
     {
       "index": 0,
+      "url": "https://pbs.twimg.com/profile_images/1237005644236021762/96eUIs7D.png",
+      "role": "avatar",
+      "source_type": "tweet_witness",
+      "fetch_ok": true,
+      "shape": [
+        256,
+        256
+      ],
+      "resolution_control_pass": true,
+      "resolution_positive_control": {
+        "good_matches": 57,
+        "inliers": 35,
+        "inlier_fraction": 0.6140350877192983
+      },
+      "good_matches": 35,
+      "inliers": 11,
+      "inlier_fraction": 0.3142857142857143,
+      "strong_derivative": false
+    },
+    {
+      "index": 1,
       "url": "https://pbs.twimg.com/profile_images/1237005644236021762/96eUIs7D_bigger.png",
       "role": "avatar",
       "source_type": "tweet_witness",
@@ -80,6 +132,12 @@
         73,
         73
       ],
+      "resolution_control_pass": false,
+      "resolution_positive_control": {
+        "good_matches": 0,
+        "inliers": 0,
+        "inlier_fraction": 0.0
+      },
       "good_matches": 0,
       "inliers": 0,
       "inlier_fraction": 0.0,
