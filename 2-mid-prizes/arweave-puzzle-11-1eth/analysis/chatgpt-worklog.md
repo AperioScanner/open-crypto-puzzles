@@ -373,3 +373,8 @@ Actual triangle interiors were visually located correctly; repaired *same* Stage
 - Stage 122 final repaired run #38458971789: 72/72 synthetic controls passed; 3/6 six-sail shading polarities stable (large, small_3 and small_5 right-darker). Other three undecidable under unchanged raw contrast gates. No usable mixed-side pattern and no key material.
 - Pivoted from direct object measurements to a new, bounded pixel-template question: do pencil strokes directly repeat between distinct foreground/background illustration regions? Stage 123 searches cross-region fixed-grid local 64px patches, with identical-patch vs independently drawn synthetic controls, lossy re-encoding, coverage check and strict correlation/IoU.
 - This does not reopen Stage 120's within-five-sail copy tests; exactly one novel image-only experiment selected and preregistered.
+
+
+## 2026-10-13 — Stage 123 review / Stage 124 selected
+Confirmed GitHub Actions Stage123 run #38459664096 successful, canonical digest correct. Positive synthetic cloned patches produced 5 replicates; independent synthetic redraws produced 0; region coverage 228/265/230 patches; 0 of 180 top pairwise candidates passed the strict original/JPEG85/JPEG70/downsample correlation and IoU gates. Narrow valid negative.
+Selected exactly one follow-up based on a concrete unresolved object-association defect: Stage 102 measured L/R on one spurious x~675 track and omitted rightmost x~1490 sail. Stage124 tests a *distinct* geometry (five corrected apex-to-outline-base-center lateral offsets) with fixed visible sail sites, two detectors, four lossy variants, strong positive/neutral synthetic controls. No secret interpretation.
