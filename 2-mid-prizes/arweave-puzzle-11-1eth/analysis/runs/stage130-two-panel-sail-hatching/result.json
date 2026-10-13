@@ -1,0 +1,426 @@
+{
+  "experiment_id": "A11-EXP-130",
+  "date": "2026-10-13",
+  "hypothesis": "whole-sail orientation cancels because two internal sail panels carry opposed diagonal pencil hatching, potentially with distinct left/right sign-order across five sails",
+  "evidence": "Stage129 real whole-sail Sobel scores cluster near zero while independent signed lag-scores differ; visible small sails have distinct half-panels separated by the mast",
+  "scope": "same five corrected real sail interiors, split into fixed left/right panel masks; gradient and independent raw-ink lag; four image formats; image-only",
+  "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "gates": {
+    "sign_threshold": 0.23,
+    "min_stable_sails": 4,
+    "opposite_order_sails_required": 4,
+    "both_opposite_orders_required": true
+  },
+  "controls": {
+    "passed": true,
+    "cases": 100,
+    "passed_cases": 100,
+    "failures": [],
+    "patterns": {
+      "L_POS_R_NEG": 20,
+      "L_NEG_R_POS": 20,
+      "BOTH_POS": 20,
+      "BOTH_NEG": 20,
+      "BOTH_HORIZONTAL": 20
+    }
+  },
+  "sails": [
+    {
+      "sail": "small_1",
+      "stable_pair": null,
+      "formats": {
+        "original": {
+          "left": {
+            "classification": "NEG",
+            "sobel_score": -0.337609,
+            "lag_score": -0.406098,
+            "sobel_energy": 192922.5,
+            "lag_pair_min": 127,
+            "pixels": 514
+          },
+          "right": {
+            "classification": null,
+            "sobel_score": 0.501776,
+            "lag_score": -0.675173,
+            "sobel_energy": 184621.67,
+            "lag_pair_min": 127,
+            "pixels": 514
+          }
+        },
+        "jpeg85": {
+          "left": {
+            "classification": "NEG",
+            "sobel_score": -0.340871,
+            "lag_score": -0.396058,
+            "sobel_energy": 190115.0,
+            "lag_pair_min": 127,
+            "pixels": 514
+          },
+          "right": {
+            "classification": null,
+            "sobel_score": 0.505963,
+            "lag_score": -0.702362,
+            "sobel_energy": 181777.89,
+            "lag_pair_min": 127,
+            "pixels": 514
+          }
+        },
+        "jpeg70": {
+          "left": {
+            "classification": "NEG",
+            "sobel_score": -0.338909,
+            "lag_score": -0.413626,
+            "sobel_energy": 188459.31,
+            "lag_pair_min": 127,
+            "pixels": 514
+          },
+          "right": {
+            "classification": null,
+            "sobel_score": 0.502141,
+            "lag_score": -0.650355,
+            "sobel_energy": 179933.19,
+            "lag_pair_min": 127,
+            "pixels": 514
+          }
+        },
+        "down75_up": {
+          "left": {
+            "classification": "NEG",
+            "sobel_score": -0.353561,
+            "lag_score": -0.958742,
+            "sobel_energy": 174184.31,
+            "lag_pair_min": 127,
+            "pixels": 514
+          },
+          "right": {
+            "classification": null,
+            "sobel_score": 0.526191,
+            "lag_score": -0.753197,
+            "sobel_energy": 166002.25,
+            "lag_pair_min": 127,
+            "pixels": 514
+          }
+        }
+      }
+    },
+    {
+      "sail": "small_2",
+      "stable_pair": null,
+      "formats": {
+        "original": {
+          "left": {
+            "classification": "NEG",
+            "sobel_score": -0.436403,
+            "lag_score": -0.485099,
+            "sobel_energy": 212236.42,
+            "lag_pair_min": 166,
+            "pixels": 574
+          },
+          "right": {
+            "classification": null,
+            "sobel_score": 0.4573,
+            "lag_score": -0.377912,
+            "sobel_energy": 255232.52,
+            "lag_pair_min": 166,
+            "pixels": 574
+          }
+        },
+        "jpeg85": {
+          "left": {
+            "classification": "NEG",
+            "sobel_score": -0.43586,
+            "lag_score": -0.504028,
+            "sobel_energy": 210370.17,
+            "lag_pair_min": 166,
+            "pixels": 574
+          },
+          "right": {
+            "classification": null,
+            "sobel_score": 0.453973,
+            "lag_score": -0.415886,
+            "sobel_energy": 253489.08,
+            "lag_pair_min": 166,
+            "pixels": 574
+          }
+        },
+        "jpeg70": {
+          "left": {
+            "classification": "NEG",
+            "sobel_score": -0.438432,
+            "lag_score": -0.464902,
+            "sobel_energy": 207284.16,
+            "lag_pair_min": 166,
+            "pixels": 574
+          },
+          "right": {
+            "classification": null,
+            "sobel_score": 0.454022,
+            "lag_score": -0.424495,
+            "sobel_energy": 251371.52,
+            "lag_pair_min": 166,
+            "pixels": 574
+          }
+        },
+        "down75_up": {
+          "left": {
+            "classification": "NEG",
+            "sobel_score": -0.458308,
+            "lag_score": -0.591669,
+            "sobel_energy": 191228.56,
+            "lag_pair_min": 166,
+            "pixels": 574
+          },
+          "right": {
+            "classification": null,
+            "sobel_score": 0.486356,
+            "lag_score": -0.563357,
+            "sobel_energy": 230524.19,
+            "lag_pair_min": 166,
+            "pixels": 574
+          }
+        }
+      }
+    },
+    {
+      "sail": "small_3",
+      "stable_pair": null,
+      "formats": {
+        "original": {
+          "left": {
+            "classification": null,
+            "sobel_score": -0.164766,
+            "lag_score": -0.867564,
+            "sobel_energy": 347020.69,
+            "lag_pair_min": 247,
+            "pixels": 692
+          },
+          "right": {
+            "classification": "POS",
+            "sobel_score": 0.344897,
+            "lag_score": 0.673092,
+            "sobel_energy": 146226.78,
+            "lag_pair_min": 247,
+            "pixels": 692
+          }
+        },
+        "jpeg85": {
+          "left": {
+            "classification": null,
+            "sobel_score": -0.16623,
+            "lag_score": -0.82984,
+            "sobel_energy": 342131.78,
+            "lag_pair_min": 247,
+            "pixels": 692
+          },
+          "right": {
+            "classification": "POS",
+            "sobel_score": 0.34279,
+            "lag_score": 0.660148,
+            "sobel_energy": 144570.31,
+            "lag_pair_min": 247,
+            "pixels": 692
+          }
+        },
+        "jpeg70": {
+          "left": {
+            "classification": null,
+            "sobel_score": -0.167294,
+            "lag_score": -0.906356,
+            "sobel_energy": 337993.03,
+            "lag_pair_min": 247,
+            "pixels": 692
+          },
+          "right": {
+            "classification": "POS",
+            "sobel_score": 0.344027,
+            "lag_score": 0.689053,
+            "sobel_energy": 145410.72,
+            "lag_pair_min": 247,
+            "pixels": 692
+          }
+        },
+        "down75_up": {
+          "left": {
+            "classification": null,
+            "sobel_score": -0.16504,
+            "lag_score": -0.671662,
+            "sobel_energy": 300977.84,
+            "lag_pair_min": 247,
+            "pixels": 692
+          },
+          "right": {
+            "classification": "POS",
+            "sobel_score": 0.315234,
+            "lag_score": 0.633724,
+            "sobel_energy": 128467.78,
+            "lag_pair_min": 247,
+            "pixels": 692
+          }
+        }
+      }
+    },
+    {
+      "sail": "small_4",
+      "stable_pair": null,
+      "formats": {
+        "original": {
+          "left": {
+            "classification": null,
+            "sobel_score": -0.131237,
+            "lag_score": 0.103543,
+            "sobel_energy": 258927.0,
+            "lag_pair_min": 213,
+            "pixels": 637
+          },
+          "right": {
+            "classification": null,
+            "sobel_score": 0.322812,
+            "lag_score": -0.169496,
+            "sobel_energy": 241383.97,
+            "lag_pair_min": 213,
+            "pixels": 637
+          }
+        },
+        "jpeg85": {
+          "left": {
+            "classification": null,
+            "sobel_score": -0.13221,
+            "lag_score": 0.081122,
+            "sobel_energy": 256379.12,
+            "lag_pair_min": 213,
+            "pixels": 637
+          },
+          "right": {
+            "classification": null,
+            "sobel_score": 0.323288,
+            "lag_score": -0.180241,
+            "sobel_energy": 238221.12,
+            "lag_pair_min": 213,
+            "pixels": 637
+          }
+        },
+        "jpeg70": {
+          "left": {
+            "classification": null,
+            "sobel_score": -0.132064,
+            "lag_score": 0.100563,
+            "sobel_energy": 255060.12,
+            "lag_pair_min": 213,
+            "pixels": 637
+          },
+          "right": {
+            "classification": null,
+            "sobel_score": 0.302925,
+            "lag_score": -0.181016,
+            "sobel_energy": 237354.72,
+            "lag_pair_min": 213,
+            "pixels": 637
+          }
+        },
+        "down75_up": {
+          "left": {
+            "classification": null,
+            "sobel_score": -0.162602,
+            "lag_score": 0.167483,
+            "sobel_energy": 234438.19,
+            "lag_pair_min": 213,
+            "pixels": 637
+          },
+          "right": {
+            "classification": null,
+            "sobel_score": 0.327261,
+            "lag_score": -0.139906,
+            "sobel_energy": 215971.83,
+            "lag_pair_min": 213,
+            "pixels": 637
+          }
+        }
+      }
+    },
+    {
+      "sail": "small_5",
+      "stable_pair": null,
+      "formats": {
+        "original": {
+          "left": {
+            "classification": null,
+            "sobel_score": -0.31648,
+            "lag_score": -0.043188,
+            "sobel_energy": 359222.94,
+            "lag_pair_min": 291,
+            "pixels": 752
+          },
+          "right": {
+            "classification": null,
+            "sobel_score": 0.271015,
+            "lag_score": 0.221036,
+            "sobel_energy": 274697.06,
+            "lag_pair_min": 291,
+            "pixels": 752
+          }
+        },
+        "jpeg85": {
+          "left": {
+            "classification": null,
+            "sobel_score": -0.313886,
+            "lag_score": -0.044438,
+            "sobel_energy": 354319.38,
+            "lag_pair_min": 291,
+            "pixels": 752
+          },
+          "right": {
+            "classification": "POS",
+            "sobel_score": 0.268981,
+            "lag_score": 0.239411,
+            "sobel_energy": 271219.5,
+            "lag_pair_min": 291,
+            "pixels": 752
+          }
+        },
+        "jpeg70": {
+          "left": {
+            "classification": null,
+            "sobel_score": -0.312873,
+            "lag_score": -0.052241,
+            "sobel_energy": 351268.31,
+            "lag_pair_min": 291,
+            "pixels": 752
+          },
+          "right": {
+            "classification": null,
+            "sobel_score": 0.276641,
+            "lag_score": 0.224799,
+            "sobel_energy": 269760.38,
+            "lag_pair_min": 291,
+            "pixels": 752
+          }
+        },
+        "down75_up": {
+          "left": {
+            "classification": null,
+            "sobel_score": -0.310906,
+            "lag_score": -0.051547,
+            "sobel_energy": 333832.28,
+            "lag_pair_min": 291,
+            "pixels": 752
+          },
+          "right": {
+            "classification": null,
+            "sobel_score": 0.316638,
+            "lag_score": 0.153062,
+            "sobel_energy": 246388.95,
+            "lag_pair_min": 291,
+            "pixels": 752
+          }
+        }
+      }
+    }
+  ],
+  "stable_sail_pairs": 0,
+  "opposite_pairs": [],
+  "both_orders": false,
+  "promoted": false,
+  "decision": "INSUFFICIENT_PANEL_COVERAGE",
+  "coverage_limit": "Unclassified real panels remain inconclusive. A uniform V-shaped shading geometry is not a code. This measures only hatch angles, not density/widths/keys.",
+  "safety": "Reads public canonical image only; no mnemonic words, private keys, address checks, wallet access or social research."
+}
