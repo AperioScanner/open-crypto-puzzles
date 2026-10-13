@@ -100,6 +100,70 @@ def cdx_urls():
             seen.add(k);chosen.append(row)
     return sorted(chosen,key=lambda x:x.get("timestamp","")),errors
 
+
+def direct_profile_candidates():
+    """Probe fixed Wayback profile URLs when public CDX indexes time out.
+
+    Accept only a timestamped exact-handle 2020 profile. Never promote later
+    redirects or undated Wayback shells as launch-period source controls.
+    """
+    import email.utils
+    from datetime import timezone
+    fixed=[
+        ("20200430210602","https://twitter.com/ArweaveP"),
+        ("20200502173835","https://twitter.com/ArweaveP"),
+        ("20200502173835","https://twitter.com/arweavep"),
+    ]
+    attempts=[]
+    captures=[]
+    for ts,original in fixed:
+        url="https://web.archive.org/web/"+ts+"id_/"+original
+        rec={"requested":url}
+        try:
+            req=urllib.request.Request(url,headers={"User-Agent":UA})
+            with urllib.request.urlopen(req,timeout=16) as r:
+                html=r.read(3000000).decode("utf-8","replace")
+                final_url=r.geturl()
+                mime=r.headers.get("Content-Type","")
+                memento_date=r.headers.get("Memento-Datetime")
+            rec["final_url"]=final_url[:400]
+            rec["mime"]=mime[:100]
+            rec["memento_date"]=memento_date
+            rec["html_bytes"]=len(html)
+            m=re.search(r"/web/(\d{14})(?:id_|im_|if_)?/",final_url)
+            actual=m.group(1) if m else ""
+            if memento_date:
+                try:
+                    dt=email.utils.parsedate_to_datetime(memento_date).astimezone(timezone.utc)
+                    actual=dt.strftime("%Y%m%d%H%M%S")
+                except (ValueError,TypeError,OverflowError):
+                    pass
+            rec["capture_timestamp"]=actual or None
+            if not (FROM<=actual[:8]<=TO):
+                rec["accepted"]=False
+                rec["reason"]="MEMENTO_OUTSIDE_WINDOW_OR_UNDATED"
+            elif "html" not in mime.lower() or len(html)<100:
+                rec["accepted"]=False
+                rec["reason"]="NOT_HTML_PROFILE"
+            else:
+                title,desc,_=extract_meta(html)
+                title_owns_handle=bool(re.search(
+                    r"Arweave\s*Puzzle\s*\(?@ArweaveP\)?",title,re.I))
+                rec["profile_title"]=title[:150]
+                rec["accepted"]=title_owns_handle
+                rec["reason"]="PROFILE_TITLE_MATCH" if title_owns_handle else "WRONG_PROFILE_OR_ARCHIVE_SHELL"
+                if title_owns_handle:
+                    captures.append({
+                        "timestamp":actual,"original":original,
+                        "source_type":"profile_direct","html":html,
+                    })
+        except Exception as e:
+            rec["accepted"]=False
+            rec["reason"]=type(e).__name__
+        attempts.append(rec)
+    return captures,attempts
+
+
 def extract_meta(html):
     import html as html_lib
     markup=html_lib.unescape(html).replace("\\/","/").replace("\\u002F","/")
@@ -269,6 +333,8 @@ def main():
     attribution_control_pass=attribution_control()
 
     snaps,cdx_errors=cdx_urls()
+    direct_captures,direct_profile_attempts=direct_profile_candidates()
+    snaps=snaps+direct_captures
     snapshot_rows=[]
     assets=[]
     for s in snaps:
@@ -276,7 +342,9 @@ def main():
         orig=s.get("original","https://twitter.com/ArweaveP")
         way=f"https://web.archive.org/web/{ts}id_/{orig}"
         try:
-            html=text_fetch(way)
+            html=s.get("html")
+            if html is None:
+                html=text_fetch(way)
         except Exception as e:
             snapshot_rows.append({
                 "timestamp":ts,"original":orig,"source_type":s.get("source_type"),"fetch_ok":False,
@@ -284,7 +352,7 @@ def main():
             })
             continue
         title,desc,page_imgurls=extract_meta(html)
-        is_profile=s.get("source_type")=="profile"
+        is_profile=s.get("source_type") in ("profile","profile_direct")
         if is_profile:
             imgurls=page_imgurls
             owner_contexts=[]
@@ -292,7 +360,7 @@ def main():
             imgurls,owner_contexts=author_assets_from_tweet(html)
         plain=re.sub(r"<[^>]+>"," ",html[:200000])
         exact_handle=bool(re.search(
-            r'Arweave\s+Puzzle\s*@\s*ArweaveP\b|data-screen-name=["\']ArweaveP["\']|ArweaveP.s profile',
+            r'Arweave\s+Puzzle\s*\(?@\s*ArweaveP\b|data-screen-name=["\']ArweaveP["\']|ArweaveP.s profile',
             title+" "+" ".join(desc)+" "+plain,re.I,
         ))
         snapshot_rows.append({
@@ -354,7 +422,7 @@ def main():
         })
 
     recovered=[x for x in snapshot_rows if x.get("fetch_ok") and x.get("exact_handle_seen")]
-    profile_witnesses=[x for x in recovered if x.get("source_type")=="profile"]
+    profile_witnesses=[x for x in recovered if x.get("source_type") in ("profile","profile_direct")]
     tweet_witnesses=[x for x in recovered if x.get("source_type")=="tweet_witness"]
     decoded=[x for x in image_results if x.get("fetch_ok")]
     tested=[x for x in decoded if x.get("resolution_control_pass")]
@@ -377,6 +445,7 @@ def main():
         "scope":"Wayback audit of @ArweaveP profile/header visual context around Puzzle #11 publication; no secret/key operations",
         "date_window":[FROM,TO],
         "cdx_errors":cdx_errors,
+        "direct_profile_attempts":direct_profile_attempts,
         "snapshots_found":len(snaps),
         "snapshot_rows":snapshot_rows,
         "source_control_pass":source_control_pass,
@@ -409,6 +478,8 @@ def main():
         "**Experiment:** A11-EXP-119",
         "",
         f"- snapshots attempted: **{len(snaps)}**",
+        f"- direct dated profile probes: **{len(direct_profile_attempts)}**",
+        f"- direct profile mementos accepted: **{len(direct_captures)}**",
         f"- authenticated profile snapshots: **{len(profile_witnesses)}**",
         f"- authenticated tweet-page witnesses: **{len(tweet_witnesses)}**",
         f"- avatar/banner images decoded: **{sum(x.get('role')=='avatar' for x in decoded)}/{sum(x.get('role')=='banner' for x in decoded)}**",
@@ -434,6 +505,12 @@ def main():
     else:
         md.append("- none")
 
+    md += ["","## Direct profile archive probes",""]
+    for attempt in direct_profile_attempts:
+        md.append(
+            f"- {attempt.get('requested')} accepted={attempt.get('accepted')} "
+            f"capture={attempt.get('capture_timestamp')} reason={attempt.get('reason')}"
+        )
     md += ["","## Image comparisons",""]
     if image_results:
         md += [
@@ -472,6 +549,7 @@ def main():
         "avatar_tested":avatar_tested,
         "banner_tested":banner_tested,
         "decoded_assets":len(decoded),
+        "profile_mementos":len(direct_captures),
         "strong":len(strong_assets),
         "decision":decision,
     }))
