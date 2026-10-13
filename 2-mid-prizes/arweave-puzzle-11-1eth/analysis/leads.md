@@ -1,12 +1,17 @@
 # Open leads, ranked
 
-## 1. Watermark-directed external context (active)
+## 2026-10-13 current priority — canonical image ONLY
+
+Stage 120 tests geometric duplication of the five small sails' detailed pen-stroke fingerprints with synthetic copied-vs-redrawn controls and lossy variants. See STAGE_QUEUE.md. Next experiments must remain entirely image-based and cannot recycle previously retired carriers. The 12-buildings-as-12-BIP39-words suggestion remains an unverified idea, not an authorized secret-reconstruction path.
+
+
+## Archived / shelved — former watermark-directed external context (not active)
 
 Stage 117 promotes visible-symbol reading + cross-domain conversion across Tiamat's own solved puzzles.
 
 Puzzle #11 literally contains `twitter.com/ArweaveP`. Earlier archive stages reconstructed posts/replies, but did not test the contemporaneous profile/header visual layer.
 
-Stage 119 audits that exact external pointer around publication time.
+Stage 119 was inconclusive due incomplete profile/header source coverage, and the user explicitly directed research away from Twitter. Do not pursue it further unless the user specifically reopens it.
 
 ## 2. Recurrent author-series grammar (promoted)
 
