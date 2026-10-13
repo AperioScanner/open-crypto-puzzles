@@ -409,3 +409,9 @@ Stage 128 selected as a distinct image-only test: explicit closed-water-ripple t
 Stage128 #38484785422 completed successfully while being checked. Synthetic closed/open control families passed; the four actual fixed ripple regions yielded 0 stable closed-loop counts across two methods x three thresholds x four lossies. Conclusion narrow negative for this closure topology, not for all image semantics.
 
 Stage129 selected to correct Stage102's proved object association defect (not general recycled search): five actual sail interiors, diagonal line orientation only. Predeclared Sobel/Hough two-measure method, neutral/positive/negative controls, four image variants, >=4/5 reproducible classes and both signs required. Research remains restricted to public canonical image; no secrets or social media.
+
+
+## 2026-10-13 — Stage129 repair and Stage130 selection
+- GitHub Stage129 initial completion was technically successful but CONTROL_FAILURE 34/60; found unstable Hough fragments inside clipped synthetic sail panels. Replaced with raw-ink signed diagonal lag autocorrelation in SAME Stage129, with no shift to decision gate or mask geometry.
+- GitHub Stage129 repaired run #38485582635, controls 60/60 PASS; all five real whole-sail Sobel scores were between -0.042 and +0.086 despite signed lag-correlation of variable direction. Zero cross-method full-sail classifications: INSUFFICIENT_REAL_HATCH_COVERAGE; no generalized negative.
+- Stage130 selected: explicitly test whether cancellation occurs between LEFT/RIGHT subpanels with reversed pencil hatch angles; distinct from prior whole-sail signs (Stage129) and left/right darkness levels (Stage122). Two detectors, four lossies, five synthetic control patterns × five real-site sizes. No cryptographic or off-image operations.
