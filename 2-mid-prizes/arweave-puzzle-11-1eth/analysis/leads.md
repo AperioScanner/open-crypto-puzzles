@@ -58,3 +58,7 @@ Test near-identical raster pencil motifs *across* skyline/left-boat-water/right-
 
 ## Stage 123 closed; Stage 124 image-only experiment (2026-10-13)
 Stage 123: strong controls, 0/180 real cross-region 64px patch copies. No equivalent raster templates at this fixed scale/grid. Stage 124 audits left/right *outline apex-versus-base displacement* of five true small sails, explicitly correcting the proven Stage-102/19 wrong-object defect. Control-driven test of geometry only; no return to speculative alphabet/BIP39 or social research.
+
+
+## Stage 125 closed; Stage 126 new direct-image cue (2026-10-13)
+Stage 125 failed to confirm a uniquely isolated rightmost offset: 0/216 real configs met fixed joint gates, although the rightmost silhouette ranked most negative 209/216. Neither interpretation should be inflated into a symbolic code. New Stage126 investigates a human-visible *masthead extension mark* above each of the five correct small sail tips, distinct from previous sail outline, shading, line-count or copy-detection tests. No mnemonic or wallet operations.
