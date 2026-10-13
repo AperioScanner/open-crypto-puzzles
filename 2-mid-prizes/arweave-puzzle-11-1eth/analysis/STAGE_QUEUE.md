@@ -183,3 +183,12 @@ Stage 127 now selected: genuine different, image-only hull **waterline signed sl
 Predeclared synthetic controls: opposite-sloped hulls (R,L,R,L,level) and all level hulls with an unrelated diagonal decoy below, both 5/5; fail either => CONTROL_FAILURE, do not interpret real data, repair Stage127 under same number. Real <4/5 classified => INCONCLUSIVE; otherwise absent opposite slopes is a narrow negative. Image-only. No BIP39, private-key, wallet, Twitter or external research.
 
 Script: tools/stage127_hull_waterline_slope.py. Artifacts: analysis/runs/stage127-hull-waterline-slope/ including ROI contact PNG.
+
+
+## 2026-10-13 — Stage 127 inconclusive; Stage 128 preregistered
+
+- Stage 127 #38482080263 completed successfully and synthetic mixed vs neutral+decoy controls passed. All 5 real hulls failed the cross-detector/cross-format stable classification (0/5). Examination of hull-roi-contact.png shows the fixed narrow hull strips contain neighboring sail strokes and pier strokes. This is a source-separation failure, **not proof of no hull-slope encoding**. The inconclusive Stage 127 remains archived without promotion or negative extrapolation; no data-driven changes to cutoffs.
+- The user requested a new stage. **One new, nonoverlapping visual question:** Stage 128 tests whether hand-drawn water ripples in four specified water regions form reproducible *closed loop* subdetails rather than open scribbles. Stage 104 tested roof/building topology, not water. Existing reflection-coupling stages tested orientation/correlation, not topological closure.
+- Two fixed hole detectors (contour hierarchy and white-component floodfill); 3 grayscale thresholds (130/175/210); original/JPEG85/JPEG70/75%-resampled; 4 predeclared water ROIs.
+- Positive control: 4 thick closed ellipses (>=3 detected across all settings); negative: 4 incomplete arcs (0 detected in all settings). If controls fail, repair **Stage 128**; otherwise positive promotion only if >=3/4 regions yield exactly repeatable counts across 2 methods x 3 thresholds x 4 formats, including >=2 with a nonzero loop count. In all outcomes do not infer keys, BIP39, semantic words or external references.
+- Files: tools/stage128_water_ripple_loops.py, analysis/runs/stage128-water-ripple-loops/.
