@@ -124,3 +124,10 @@ Run: https://github.com/AperioScanner/open-crypto-puzzles/actions/runs/384245348
 **Restrictions:** no Twitter or off-image reference, no private keys, no BIP39 candidates, no wallet access, no new search over retired widths/roof/hatch counts. Do not promote an image-only contrast as a secret encoding.
 
 Script: `tools/stage122_sail_side_shading.py`; results: `analysis/runs/stage122-sail-side-shading/`.
+
+
+### Stage 122 repair — source-region contamination (same stage number)
+
+The first run passed 72 synthetic controls but the real-data diagnostic exposed large, sign-reversing exterior baselines for small sails; color-marked mask-contact.png confirms exterior reference masks cross *other sailboats and the pier*. Those regions are not valid matched-background controls. Therefore the initial "corrected-contrast" interpretation was **not a valid finding** about sail coding.
+
+Repaired within Stage 122: preserve the exact original 6 interior masks, four image variants and 0.14/0.13 thresholds. Classify ONLY directly observed right-minus-left *within-sail* contrast; keep exterior measurements as contamination diagnostics, not subtraction. No after-the-fact retuning of sensitivity. Repair run: https://github.com/AperioScanner/open-crypto-puzzles/actions/runs/38458971789. Verify controls and real coverage before any conclusion.
