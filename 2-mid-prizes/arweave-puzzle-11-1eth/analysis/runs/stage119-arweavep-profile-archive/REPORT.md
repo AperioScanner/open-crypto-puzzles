@@ -3,8 +3,10 @@
 **Experiment:** A11-EXP-119
 
 - snapshots attempted: **4**
+- direct dated profile probes: **3**
+- direct profile mementos accepted: **0**
 - authenticated profile snapshots: **0**
-- authenticated tweet-page witnesses: **4**
+- authenticated tweet-page witnesses: **1**
 - avatar/banner images decoded: **2/0**
 - calibrated avatar/banner comparisons: **1/0**
 - exact-handle source control: **True**
@@ -19,9 +21,15 @@
 ## Snapshot metadata
 
 - 20200430185132 type=tweet_witness fetch=True handle=True attributed=1 unaudited_urls=4 title='Arweave Puzzle on Twitter: "Like I specified, the private key is hidden in the image. One way to try is MEW: Access by Private Key 🤐 good luck!… "'
-- 20200430210602 type=tweet_witness fetch=True handle=True attributed=1 unaudited_urls=5 title='Arweave Puzzle on Twitter: "format does not matter… "'
-- 20200501121921 type=tweet_witness fetch=True handle=True attributed=1 unaudited_urls=8 title='Arweave Puzzle on Twitter: "0xFF2142E98E09b5344994F9bEB9C56C95506B9F17 it is also included somewhere in the image 🧐… "'
-- 20200502173835 type=tweet_witness fetch=True handle=True attributed=1 unaudited_urls=18 title='Arweave Puzzle on Twitter: "There is 1 ETH hidden in https://t.co/wyyxPDtXDH Puzzle 11 🧩. Please retweet to make more of these possible! #puzzle #steganography #arweave #cryptopuzzle… https://t.co/8llFe3yvq9"'
+- 20200430210602 type=tweet_witness fetch=False handle=None attributed=None unaudited_urls=None title=''
+- 20200501121921 type=tweet_witness fetch=False handle=None attributed=None unaudited_urls=None title=''
+- 20200502173835 type=tweet_witness fetch=False handle=None attributed=None unaudited_urls=None title=''
+
+## Direct profile archive probes
+
+- https://web.archive.org/web/20200430210602id_/https://twitter.com/ArweaveP accepted=False capture=20200912110720 reason=MEMENTO_OUTSIDE_WINDOW_OR_UNDATED
+- https://web.archive.org/web/20200502173835id_/https://twitter.com/ArweaveP accepted=False capture=20200912110720 reason=MEMENTO_OUTSIDE_WINDOW_OR_UNDATED
+- https://web.archive.org/web/20200502173835id_/https://twitter.com/arweavep accepted=False capture=20200912110720 reason=MEMENTO_OUTSIDE_WINDOW_OR_UNDATED
 
 ## Image comparisons
 

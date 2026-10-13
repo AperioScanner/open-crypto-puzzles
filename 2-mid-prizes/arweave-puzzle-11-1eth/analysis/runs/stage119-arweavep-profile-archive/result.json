@@ -13,10 +13,38 @@
     {
       "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Ftwitter.com%2Farweavep&from=20200420&to=20200502&output=json&filter=statuscode%3A200&fl=timestamp%2Coriginal%2Cstatuscode%2Cdigest&collapse=digest&limit=60",
       "error": "TimeoutError"
+    }
+  ],
+  "direct_profile_attempts": [
+    {
+      "requested": "https://web.archive.org/web/20200430210602id_/https://twitter.com/ArweaveP",
+      "final_url": "https://web.archive.org/web/20200912110720id_/https://twitter.com/ArweaveP",
+      "mime": "text/html; charset=utf-8",
+      "memento_date": "Sat, 12 Sep 2020 11:07:20 GMT",
+      "html_bytes": 12511,
+      "capture_timestamp": "20200912110720",
+      "accepted": false,
+      "reason": "MEMENTO_OUTSIDE_WINDOW_OR_UNDATED"
     },
     {
-      "url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Ftwitter.com%2FArweaveP%2Fwith_replies&from=20200420&to=20200502&output=json&filter=statuscode%3A200&fl=timestamp%2Coriginal%2Cstatuscode%2Cdigest&collapse=digest&limit=60",
-      "error": "TimeoutError"
+      "requested": "https://web.archive.org/web/20200502173835id_/https://twitter.com/ArweaveP",
+      "final_url": "https://web.archive.org/web/20200912110720id_/https://twitter.com/ArweaveP",
+      "mime": "text/html; charset=utf-8",
+      "memento_date": "Sat, 12 Sep 2020 11:07:20 GMT",
+      "html_bytes": 12511,
+      "capture_timestamp": "20200912110720",
+      "accepted": false,
+      "reason": "MEMENTO_OUTSIDE_WINDOW_OR_UNDATED"
+    },
+    {
+      "requested": "https://web.archive.org/web/20200502173835id_/https://twitter.com/arweavep",
+      "final_url": "https://web.archive.org/web/20200912110720id_/https://twitter.com/ArweaveP",
+      "mime": "text/html; charset=utf-8",
+      "memento_date": "Sat, 12 Sep 2020 11:07:20 GMT",
+      "html_bytes": 12511,
+      "capture_timestamp": "20200912110720",
+      "accepted": false,
+      "reason": "MEMENTO_OUTSIDE_WINDOW_OR_UNDATED"
     }
   ],
   "snapshots_found": 4,
@@ -39,43 +67,22 @@
       "timestamp": "20200430210602",
       "original": "https://twitter.com/ArweaveP/status/1253375599323856896",
       "source_type": "tweet_witness",
-      "fetch_ok": true,
-      "title": "Arweave Puzzle on Twitter: \"format does not matter\u2026 \"",
-      "descriptions": [
-        "\u201c@afronomad_ format does not matter\u201d"
-      ],
-      "exact_handle_seen": true,
-      "image_url_count": 1,
-      "all_profile_urls_unattributed": 5,
-      "owner_tweet_context_count": 3
+      "fetch_ok": false,
+      "error": "URLError"
     },
     {
       "timestamp": "20200501121921",
       "original": "https://twitter.com/ArweaveP/status/1253253461828931584",
       "source_type": "tweet_witness",
-      "fetch_ok": true,
-      "title": "Arweave Puzzle on Twitter: \"0xFF2142E98E09b5344994F9bEB9C56C95506B9F17 it is also included somewhere in the image \ud83e\uddd0\u2026 \"",
-      "descriptions": [
-        "\u201c@SamuelKilelemb4 0xFF2142E98E09b5344994F9bEB9C56C95506B9F17 it is also included somewhere in the image \ud83e\uddd0\u201d"
-      ],
-      "exact_handle_seen": true,
-      "image_url_count": 1,
-      "all_profile_urls_unattributed": 8,
-      "owner_tweet_context_count": 3
+      "fetch_ok": false,
+      "error": "URLError"
     },
     {
       "timestamp": "20200502173835",
       "original": "https://twitter.com/ArweaveP/status/1252961944807641090",
       "source_type": "tweet_witness",
-      "fetch_ok": true,
-      "title": "Arweave Puzzle on Twitter: \"There is 1 ETH hidden in https://t.co/wyyxPDtXDH Puzzle 11 \ud83e\udde9. Please retweet to make more of these possible! #puzzle #steganography #arweave #cryptopuzzle\u2026 https://t.co/8llFe3yvq9\"",
-      "descriptions": [
-        "\u201cThere is 1 ETH hidden in https://t.co/wyyxPDtXDH Puzzle 11 \ud83e\udde9. Please retweet to make more of these possible! #puzzle #steganography #arweave #cryptopuzzle\u201d"
-      ],
-      "exact_handle_seen": true,
-      "image_url_count": 1,
-      "all_profile_urls_unattributed": 18,
-      "owner_tweet_context_count": 4
+      "fetch_ok": false,
+      "error": "URLError"
     }
   ],
   "source_control_pass": true,
@@ -87,7 +94,7 @@
     "inlier_fraction": 0.6140350877192983
   },
   "profile_witness_count": 0,
-  "tweet_witness_count": 4,
+  "tweet_witness_count": 1,
   "avatar_assets_tested": 1,
   "avatar_assets_decoded": 2,
   "banner_assets_tested": 0,
