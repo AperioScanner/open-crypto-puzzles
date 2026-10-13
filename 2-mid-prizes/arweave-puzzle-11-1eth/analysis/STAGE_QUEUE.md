@@ -131,3 +131,18 @@ Script: `tools/stage122_sail_side_shading.py`; results: `analysis/runs/stage122-
 The first run passed 72 synthetic controls but the real-data diagnostic exposed large, sign-reversing exterior baselines for small sails; color-marked mask-contact.png confirms exterior reference masks cross *other sailboats and the pier*. Those regions are not valid matched-background controls. Therefore the initial "corrected-contrast" interpretation was **not a valid finding** about sail coding.
 
 Repaired within Stage 122: preserve the exact original 6 interior masks, four image variants and 0.14/0.13 thresholds. Classify ONLY directly observed right-minus-left *within-sail* contrast; keep exterior measurements as contamination diagnostics, not subtraction. No after-the-fact retuning of sensitivity. Repair run: https://github.com/AperioScanner/open-crypto-puzzles/actions/runs/38458971789. Verify controls and real coverage before any conclusion.
+
+
+## 2026-10-13 — final Stage 122 audit; image-only Stage 123 preregistered
+
+Stage 122 run #38458971789 completed with canonical image check and all 72 synthetic controls PASS. The initial external-background subtraction was rejected after an actual mask-contact audit because outside wedges crossed other boats and the pier. The corrected, unchanged-threshold inside-wedge method found only **3/6** stable right-side-shaded sail regions; one negative-signed region did not survive all variants and two more were too weak. Decision: **NO_STABLE_SIX_SAIL_SIDE_PATTERN**, retiring only this precommitted within-wedge six-sail shading scheme. Do not broaden to general sail meanings.
+
+**New Stage 123, one experiment only:** inspect 64×64 pencil-stroke fragments on a precommitted 32px grid for near-exact *cross-region* duplication between (1) skyline, (2) left water/large boat, (3) right pier/small boats. Unlike Stage 120, which compared only the five small sails against each other, Stage 123 explicitly excludes within-region sail-to-sail comparisons and seeks direct copied raster motifs crossing different drawn object categories.
+
+- Precommit static masks / grid and restrict ink-occupancy to 0.07..0.80. Select top 60 descriptor pairs per cross-region pair.
+- Thresholds: full-resolution correlation >=0.95 original, >=0.91 each lossy variant; ink-mask IoU >=0.82 in all four; >=15 eligible patches in each region.
+- Positive control: same synthetic stroke patch stamped in two distant region grids, retaining match after JPEG/resampling. Negative: independently drawn similar patches on the same sites must not match.
+- If control fails: repair Stage 123 under same number; if coverage fails: INCONCLUSIVE, not a negative; if match appears: independently confirm before claiming significance. If no match: retire only these fixed-grid translational clones.
+- No external references, no wallet/key/mnemonic operations. Do not reuse Stages 120–122 interpretations.
+
+Script: `tools/stage123_cross_region_stroke_reuse.py`
