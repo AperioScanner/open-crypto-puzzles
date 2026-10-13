@@ -124,9 +124,10 @@ def control_suite():
     for i,site in enumerate(SITES):
         for polarity in ("right","left","neutral"):
             synth=synthetic(site,polarity,seed=122000+i*11+("right","left","neutral").index(polarity))
+            synthetic_variants=variants(synth)
             all_scores=[]
             for v in LABELS:
-                arr=variants(synth)[v] if v!="original" else synth
+                arr=synthetic_variants[v]
                 score=ratios_and_metric(arr,site)
                 all_scores.append(score["corrected_contrast"])
                 if not score["coverage_valid"]:
