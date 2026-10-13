@@ -359,3 +359,10 @@ This file is the append-only coordination log for the `research/arweave11-chatgp
 - Read current STAGE_QUEUE, STATE, tested ledger, leads, stage120 result, and Stages 36/94/102/105/112 and 37–86 manifest; geometric sail heights, widths, x order and direct duplication had already been tested. Therefore Stage 122 changes the observable rather than recycling them: six-sail *signed side-shading* after correction by outside ink.
 - Fixed image-specific ROI geometry, exact gates and positive, negative and neutral synthetic controls were recorded in Stage 122 script before launching workflow.
 - Experiment is strictly image-only: no key, mnemonic, wallet or other secret processing. User-directed abandonment of Twitter remains in force.
+
+
+### Stage 122 source-region audit and reproducible repair
+
+Initial Stage 122 #38458484692 returned controls 72/72 PASS, 3/6 stable side classifications, but contact sheet from follow-up #38458745501 showed the exterior left/right masks intersected multiple neighboring sails and the pier. The "corrected" differences were dominated by that irrelevant background (up to ~0.70 absolute), sometimes reversing the within-sail sign. No valid inference may be drawn from that background subtraction.
+
+Actual triangle interiors were visually located correctly; repaired *same* Stage 122 in commit 1deef3d7c33689d47cdc36650efe3ee49c709987 to drop exterior subtraction while preserving all six masks and predeclared gates. Verification run #38458971789 was launched. It remains image-only and carries no secret/key functionality.
