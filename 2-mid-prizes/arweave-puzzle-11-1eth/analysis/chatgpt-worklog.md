@@ -395,3 +395,10 @@ Selected exactly one follow-up based on a concrete unresolved object-association
 
 - Stage126 Actions #38480951073 verified completed; SHA and 180/180 synthetic mast-present/absent/off-axis line controls passed. Real results 4 stable EXTENDED and 1 unknown; no mixed pattern; uniform masthead extensions not an encoded binary sequence by this test.
 - One new bounded feature from the drawing itself: five small hull waterline slopes (below sail tips), not sail triangle orientation or ray counts. Predetermined hull strips, independent Canny/binary Hough slope estimators, four image variants, positive signed/neutral+decoy synthetic controls and conservative coverage gate; image-only and no secret reconstruction.
+
+
+## 2026-10-13 — Stage 127 scientific audit and Stage 128 handoff
+
+GitHub confirmed Stage 127 run #38482080263 success. Verified canonical hash, positive mixed-slope control and level+decoy negative both pass. Real hulls: 0/5 receive a stable classification, with contradictory Hough median slopes under lossy transforms and two detectors. The stored hull ROI contact image visibly overlaps sails/pier, invalidating strong per-hull waterline attribution. Verdict INSUFFICIENT_HULL_ISOLATION, do not retire hull semantics or claim negative results.
+
+Stage 128 selected as a distinct image-only test: explicit closed-water-ripple topology across four fixed water ROIs, not the previously tested closed building topology, reflection directions, boat widths, or image-text OCR. Fixed thresholds, two detectors, lossy variants and calibrated closed ellipse/open arc synthetic controls. No secret/key/wallet/source-history operations.
