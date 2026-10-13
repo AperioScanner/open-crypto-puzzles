@@ -172,3 +172,14 @@ Stage 125 run #38479304077 finished. Canonical image SHA matched. Synthetic cont
 Controls: synthetic mast extension, no extension, and distracting nearby off-axis line, at all five sites in four formats and three x jitters. Require all synthetic outcomes correct before interpreting real data. A candidate multistate clue needs >=4/5 stable classified apices with BOTH states present; uniform and ambiguous results cannot be promoted. Only source ROI behavior assessed; a failure of synthetic controls requires repair under the same Stage 126, not Stage 127.
 No social sources, words, keys or wallet activity.
 Script: tools/stage126_masthead_protrusion.py
+
+
+## 2026-10-13 — Stage 126 reviewed; Stage 127 preregistered
+
+Stage 126 GitHub Actions run #38480951073 succeeded and canonical PNG matched. 180/180 mast-extended, mast-absent and off-axis decoy controls passed. Real tiny masthead-extension classes were EXTENDED, EXTENDED, ?, EXTENDED, EXTENDED. All four stable labels are alike; no observed mixed present/absent marker. Retire ONLY this five-sail tip-extension binary-code hypothesis.
+
+Stage 127 now selected: genuine different, image-only hull **waterline signed slope**, measured BELOW the five boats, not Stage102 sail lean or Stage124 triangular outline. Five hull bands fixed from the same known sail positions. Two image methods (Canny edges vs thresholded contours), original/JPEG85/JPEG70/75%-resampled. Gate: >=2 detected Hough line segments, >=48px total segment lengths; DOWN_RIGHT slope >=+0.12, UP_RIGHT <=-0.12, LEVEL <=0.055. Require >=4/5 fully stable across both detectors/four variants and BOTH slopes for a nontrivial mixed visual pattern.
+
+Predeclared synthetic controls: opposite-sloped hulls (R,L,R,L,level) and all level hulls with an unrelated diagonal decoy below, both 5/5; fail either => CONTROL_FAILURE, do not interpret real data, repair Stage127 under same number. Real <4/5 classified => INCONCLUSIVE; otherwise absent opposite slopes is a narrow negative. Image-only. No BIP39, private-key, wallet, Twitter or external research.
+
+Script: tools/stage127_hull_waterline_slope.py. Artifacts: analysis/runs/stage127-hull-waterline-slope/ including ROI contact PNG.
