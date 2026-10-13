@@ -79,7 +79,9 @@ def ratios_and_metric(arr,site):
     rats={k:float(dark[mask].mean()) if samples[k] else 0.0 for k,mask in m.items()}
     raw=rats["inner_right"]-rats["inner_left"]
     exterior=rats["outer_right"]-rats["outer_left"]
-    corrected=raw-exterior
+    # Stage 122 repair: exterior wedges intersect the neighboring sailboats/pier.
+    # Visually confirmed in mask-contact.png. Retain outside data for QC only.
+    corrected=raw
     sample_ok=min(samples.values())>=MIN_PIXELS_PER_WEDGE
     interior_ink=(rats["inner_left"]+rats["inner_right"])/2
     valid=bool(sample_ok and interior_ink>=MIN_COMBINED_INTERIOR_INK)
@@ -217,12 +219,13 @@ def main():
         "date":"2026-10-13",
         "hypothesis":"six sail triangles may show a deliberate alternating left/right ink-fill polarity rather than one natural common light-direction convention",
         "evidence":"The canonical scene has one large sail and five smaller, each with visibly hatched and unhatched triangular sectors.",
-        "scope":"predeclared symmetric triangular interior wedges, corrected for nearby outside-ink asymmetry, four re-encoding variants; image only",
+        "scope":"predeclared symmetric triangular interior wedges, without contaminated outside subtraction, four re-encoding variants; image only",
         "canonical_sha256":sha,
         "anchors_predeclared":[list(x) for x in SITES],
         "controls":controls,
         "raw_ink_threshold":INK_CUTOFF,
         "corrected_contrast_gate":ABS_CONTRAST_GATE,
+        "method_repair":"Exterior sidebands cross other objects: leave them diagnostic only; keep fixed inner wedges and original thresholds.",
         "raw_contrast_gate":RAW_CONTRAST_GATE,
         "sites":rows,
         "valid_stable_sites":len(robust),
@@ -238,12 +241,13 @@ def main():
         "# Stage 122 — image-only six-sail signed shading asymmetry",
         "",
         "- Input: canonical 1600x1105 image; SHA256 verified.",
+        "- Repair: external reference zones intersect other objects and were excluded from scoring.",
         f"- Synthetic paired dark-side / neutral controls: **{controls['cases']}**, pass=**{controls['passed']}**",
         f"- Stable, image-supported signed sides: **{len(robust)}/6**",
         f"- Nontrivial mixed sides: **{nontrivial}**",
         f"- Decision: **{decision}**",
         "",
-        "| sail | right−left corrected (original) | coverage | stable side |",
+        "| sail | right−left INNER contrast (original) | coverage | stable side |",
         "|---|---:|:---:|:---:|",
     ]
     for x in rows:
