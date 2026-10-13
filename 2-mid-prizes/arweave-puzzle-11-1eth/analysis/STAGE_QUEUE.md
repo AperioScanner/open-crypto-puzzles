@@ -155,3 +155,10 @@ Script: `tools/stage123_cross_region_stroke_reuse.py`
 - Different observable: fixed true-five-sail apex-to-base outline midpoint offset, not Hough/Sobel hatch direction, widths, ray counts, shade darkness, or cryptographic values.
 - Exactly five immutable apex sites inherited from Stage 122; two image methods (binary ink and Canny edges); original/JPEG85/JPEG70/75% resize; preregistered support and sign thresholds; synthetic L/N/R controls at all five sites. Require >=4 resolvable objects and strongly signed BOTH directions for promotion. Control failure => repair Stage 124, insufficient outlines => INCONCLUSIVE, else negative only for this explicit silhouette criterion.
 - Image only. No off-image research or secrets/wallet activity. Script: tools/stage124_true_sail_outline_offset.py
+
+
+## 2026-10-13 — Stage 124 validated / Stage 125 selected
+
+Stage124 GitHub run #38478839142 completed with success and canonical image hash matched. **120/120 synthetic L/N/R contour controls** passed on five true sail sites, two estimators and four lossy variants. On real pixels, four of five were stably classified: three neutral and one left-offset (rightmost x~1490); small #2 was a stable but borderline -0.25, unclassified under precommitted thresholds. No 4/5 mixed-sign pattern: negative ONLY for that geometry-as-multistate-signal gate.
+
+The sole rightmost left-offset is an actual new empirical lead requiring adversarial replication, not an encoding. Stage125 preregistered: independently test whether rightmost sail is an outlier of all five under source anchor jitter ±4px x / ±3px y, ink threshold 155/175/195, binary and localized Canny, 4 lossy variants. Positive synthetic: fifth offset left, other four centered; negative: all centered. Need >=90% coverage and >=90% source-independent ranked lead fraction with gap >=0.16 and offset <=-0.28. Control failure: repair Stage125 same number; otherwise note limited observation only. No secret operations or Twitter.
