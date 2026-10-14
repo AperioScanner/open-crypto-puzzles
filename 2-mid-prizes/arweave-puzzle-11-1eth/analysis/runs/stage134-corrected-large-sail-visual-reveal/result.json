@@ -54,21 +54,37 @@
     "fraction": 0.66614,
     "pass": true
   },
+  "synthetic_calibration_repair": "Original ABCD fixture covered ~14.2% of ROI x-axis, below the precommitted 15% aligned-x gate. Expanded positive fixture to ABCDEFGH so the existing detector and thresholds can be tested without altering any real-data measurement.",
   "synthetic_text_vs_random_control": {
-    "pass": false,
+    "pass": true,
     "positive": {
       "transforms": 19,
-      "qualified_original": 0,
+      "qualified_original": 10,
       "qualified_by_format": {
-        "original": 0,
-        "jpeg85": 1,
-        "jpeg70": 1,
-        "down75_up": 1
+        "original": 10,
+        "jpeg85": 11,
+        "jpeg70": 10,
+        "down75_up": 10
       },
-      "replicated_transform_count": 0,
-      "replicated_transforms": [],
-      "replicated_families": [],
-      "promotion_rule_pass": false
+      "replicated_transform_count": 9,
+      "replicated_transforms": [
+        "band_0_63",
+        "clahe_thr_128",
+        "line_suppressed_180",
+        "thr_110",
+        "thr_140",
+        "thr_170",
+        "thr_200",
+        "thr_230",
+        "thr_80"
+      ],
+      "replicated_families": [
+        "clahe",
+        "intensity_band",
+        "line_suppression",
+        "threshold"
+      ],
+      "promotion_rule_pass": true
     },
     "negative": {
       "transforms": 19,
@@ -874,7 +890,7 @@
     ],
     "promotion_rule_pass": false
   },
-  "decision": "CONTROL_FAILURE",
+  "decision": "NO_REPLICATED_CORRECTED_SAIL_GLYPH_ALIGNMENT",
   "scope_guard": "A positive is a generic connected-component arrangement that warrants MANUAL image inspection, not demonstrated readable glyphs, word, private key or intent; a negative affects only this registered 19-transform family.",
   "security_guard": "No OCR, guesses, private-key candidates, BIP39, Ethereum verification or off-image research."
 }
