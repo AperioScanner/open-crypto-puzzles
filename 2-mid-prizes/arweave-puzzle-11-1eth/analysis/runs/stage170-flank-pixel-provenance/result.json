@@ -1,0 +1,127 @@
+{
+  "experiment_id": "A11-EXP-170",
+  "original_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "scope": "Readback verification of fixed Stage169 original-source flank pixels and guide-overlay provenance; NO new hypothesis or classifier.",
+  "checks": {
+    "canonical_sha": true,
+    "Stage169_calibration_128": true,
+    "Stage169_predecessor_guards": true,
+    "Stage169_mixed_scientific_decision": true,
+    "Stage168_contact_provenance": true,
+    "unchanged_four_sites": true,
+    "score_exact_replay_sail2_right": true,
+    "pixel_exact_readback_sail2_right": true,
+    "score_exact_replay_sail3_left": true,
+    "pixel_exact_readback_sail3_left": true,
+    "score_exact_replay_sail4_right": true,
+    "pixel_exact_readback_sail4_right": true,
+    "score_exact_replay_sail5_right": true,
+    "pixel_exact_readback_sail5_right": true,
+    "contact_saved": true
+  },
+  "checks_passed": 15,
+  "checks_total": 15,
+  "raw_crop_and_flank_score_replays": [
+    {
+      "site": "sail2_right",
+      "raw_bbox_xyxy": [
+        1128,
+        472,
+        1226,
+        558
+      ],
+      "apex": [
+        1148,
+        433
+      ],
+      "original_foot": [
+        1186,
+        532
+      ],
+      "inward_dx": -8,
+      "raw_pixel_sha256": "a497c4d681f7b4a3a055e5913fd445e98824f2eadb07b67e99ce3cbdf01e53c2",
+      "raw_pixel_exact": true,
+      "replayed_original_contrast": 0.12286096,
+      "replayed_inward_contrast": -0.02544563,
+      "replayed_original_outside_dark": 0.47486631,
+      "replayed_inward_outside_dark": 0.55592692
+    },
+    {
+      "site": "sail3_left",
+      "raw_bbox_xyxy": [
+        1199,
+        452,
+        1299,
+        540
+      ],
+      "apex": [
+        1282,
+        411
+      ],
+      "original_foot": [
+        1238,
+        514
+      ],
+      "inward_dx": 8,
+      "raw_pixel_sha256": "90c4a4e7f92341447079227a5e79fd94f94d36f8f47c13dcf9900377bc4cead5",
+      "raw_pixel_exact": true,
+      "replayed_original_contrast": 0.15124777,
+      "replayed_inward_contrast": -0.01305704,
+      "replayed_original_outside_dark": 0.48213012,
+      "replayed_inward_outside_dark": 0.53573975
+    },
+    {
+      "site": "sail4_right",
+      "raw_bbox_xyxy": [
+        1355,
+        437,
+        1454,
+        524
+      ],
+      "apex": [
+        1372,
+        397
+      ],
+      "original_foot": [
+        1414,
+        498
+      ],
+      "inward_dx": -8,
+      "raw_pixel_sha256": "90210052855c3dd297630ab3192468b3d720f4cab42b11f6a9b1dedf2407252d",
+      "raw_pixel_exact": true,
+      "replayed_original_contrast": 0.33467023,
+      "replayed_inward_contrast": 0.63698752,
+      "replayed_original_outside_dark": 0.38418004,
+      "replayed_inward_outside_dark": 0.03016934
+    },
+    {
+      "site": "sail5_right",
+      "raw_bbox_xyxy": [
+        1476,
+        400,
+        1577,
+        489
+      ],
+      "apex": [
+        1490,
+        357
+      ],
+      "original_foot": [
+        1537,
+        463
+      ],
+      "inward_dx": -8,
+      "raw_pixel_sha256": "e4e14c95aa65ae0775bfd9367aa40da611698c9680b205c62b8f0ce18c9f562d",
+      "raw_pixel_exact": true,
+      "replayed_original_contrast": 0.70338681,
+      "replayed_inward_contrast": 0.34006239,
+      "replayed_original_outside_dark": 0.01118538,
+      "replayed_inward_outside_dark": 0.31550802
+    }
+  ],
+  "guide_color_legend": "Yellow=ray pixels; blue=interior darkness samples; red=exterior whiteness samples. Guides appear ONLY in separate copies, not raw original.",
+  "visual_review_pending": true,
+  "decision": "CONTACT_SHEET_READY_FOR_CRITICAL_VISUAL_REVIEW",
+  "interpretation_guard": "This validates original pixel provenance and the exact Stage169 scorer, not the objective accuracy of any selected outer sail vertex. Nearby hatches/boat hull/rigging can contaminate scored exterior flank.",
+  "safety": "No mnemonic, key, wallet, address comparison, external/social search or OCR."
+}
