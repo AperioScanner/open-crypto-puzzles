@@ -1,0 +1,319 @@
+{
+  "experiment_id": "A11-EXP-132",
+  "question": "Does the legacy large_sailboat rectangular ROI omit most ink from its sail and hull?",
+  "evidence": "Visual source review shows the legacy geometry bbox seems to end halfway down/right of the large ship; prior analysis repeatedly used that box.",
+  "scope": "manual fixed large sail and hull silhouettes + old data/geometry.json ROI, 3 thresholds, original/JPEG85/JPEG70/resampling",
+  "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "legacy_box": [
+    44,
+    320,
+    359,
+    599
+  ],
+  "precommitted_polygon_vertices": {
+    "large_sail": [
+      [
+        242,
+        398
+      ],
+      [
+        56,
+        758
+      ],
+      [
+        512,
+        760
+      ]
+    ],
+    "large_hull": [
+      [
+        25,
+        783
+      ],
+      [
+        525,
+        778
+      ],
+      [
+        480,
+        931
+      ],
+      [
+        75,
+        939
+      ]
+    ]
+  },
+  "thresholds": [
+    110,
+    170,
+    210
+  ],
+  "min_fraction_outside": {
+    "sail": 0.65,
+    "hull": 0.96
+  },
+  "min_ink_pixels": {
+    "sail": 1500,
+    "hull": 1500
+  },
+  "controls": {
+    "passed": true,
+    "cases": 24,
+    "positive_full_shape_passes": 12,
+    "negative_truncated_shape_passes": 12,
+    "synthetic_full_example": {
+      "large_sail": {
+        "ink": 82858,
+        "outside_legacy_ink": 58033,
+        "fraction_outside": 0.700391,
+        "fraction_covered": 0.299609,
+        "ink_density": 1.0
+      },
+      "large_hull": {
+        "ink": 70534,
+        "outside_legacy_ink": 70534,
+        "fraction_outside": 1.0,
+        "fraction_covered": 0.0,
+        "ink_density": 1.0
+      },
+      "sky_background_density": 0.0
+    },
+    "synthetic_truncated_example": {
+      "large_sail": {
+        "ink": 24825,
+        "outside_legacy_ink": 0,
+        "fraction_outside": 0.0,
+        "fraction_covered": 1.0,
+        "ink_density": 0.299609
+      },
+      "large_hull": {
+        "ink": 0,
+        "outside_legacy_ink": 0,
+        "fraction_outside": null,
+        "fraction_covered": null,
+        "ink_density": 0.0
+      },
+      "sky_background_density": 0.0
+    }
+  },
+  "real_pass_cases": 12,
+  "real_total_cases": 12,
+  "real_measurements": {
+    "original": {
+      "110": {
+        "large_sail": {
+          "ink": 44677,
+          "outside_legacy_ink": 29327,
+          "fraction_outside": 0.656423,
+          "fraction_covered": 0.343577,
+          "ink_density": 0.5392
+        },
+        "large_hull": {
+          "ink": 34699,
+          "outside_legacy_ink": 34699,
+          "fraction_outside": 1.0,
+          "fraction_covered": 0.0,
+          "ink_density": 0.491947
+        },
+        "sky_background_density": 0.0
+      },
+      "170": {
+        "large_sail": {
+          "ink": 55195,
+          "outside_legacy_ink": 36824,
+          "fraction_outside": 0.667162,
+          "fraction_covered": 0.332838,
+          "ink_density": 0.66614
+        },
+        "large_hull": {
+          "ink": 41932,
+          "outside_legacy_ink": 41932,
+          "fraction_outside": 1.0,
+          "fraction_covered": 0.0,
+          "ink_density": 0.594493
+        },
+        "sky_background_density": 0.0
+      },
+      "210": {
+        "large_sail": {
+          "ink": 62229,
+          "outside_legacy_ink": 42010,
+          "fraction_outside": 0.675087,
+          "fraction_covered": 0.324913,
+          "ink_density": 0.751032
+        },
+        "large_hull": {
+          "ink": 46308,
+          "outside_legacy_ink": 46308,
+          "fraction_outside": 1.0,
+          "fraction_covered": 0.0,
+          "ink_density": 0.656534
+        },
+        "sky_background_density": 3.6e-05
+      }
+    },
+    "jpeg85": {
+      "110": {
+        "large_sail": {
+          "ink": 44713,
+          "outside_legacy_ink": 29356,
+          "fraction_outside": 0.656543,
+          "fraction_covered": 0.343457,
+          "ink_density": 0.539634
+        },
+        "large_hull": {
+          "ink": 34736,
+          "outside_legacy_ink": 34736,
+          "fraction_outside": 1.0,
+          "fraction_covered": 0.0,
+          "ink_density": 0.492472
+        },
+        "sky_background_density": 0.0
+      },
+      "170": {
+        "large_sail": {
+          "ink": 55177,
+          "outside_legacy_ink": 36806,
+          "fraction_outside": 0.667053,
+          "fraction_covered": 0.332947,
+          "ink_density": 0.665922
+        },
+        "large_hull": {
+          "ink": 41921,
+          "outside_legacy_ink": 41921,
+          "fraction_outside": 1.0,
+          "fraction_covered": 0.0,
+          "ink_density": 0.594337
+        },
+        "sky_background_density": 0.0
+      },
+      "210": {
+        "large_sail": {
+          "ink": 62255,
+          "outside_legacy_ink": 42050,
+          "fraction_outside": 0.675448,
+          "fraction_covered": 0.324552,
+          "ink_density": 0.751346
+        },
+        "large_hull": {
+          "ink": 46307,
+          "outside_legacy_ink": 46307,
+          "fraction_outside": 1.0,
+          "fraction_covered": 0.0,
+          "ink_density": 0.65652
+        },
+        "sky_background_density": 0.0
+      }
+    },
+    "jpeg70": {
+      "110": {
+        "large_sail": {
+          "ink": 44701,
+          "outside_legacy_ink": 29358,
+          "fraction_outside": 0.656764,
+          "fraction_covered": 0.343236,
+          "ink_density": 0.539489
+        },
+        "large_hull": {
+          "ink": 34691,
+          "outside_legacy_ink": 34691,
+          "fraction_outside": 1.0,
+          "fraction_covered": 0.0,
+          "ink_density": 0.491834
+        },
+        "sky_background_density": 0.0
+      },
+      "170": {
+        "large_sail": {
+          "ink": 55316,
+          "outside_legacy_ink": 36935,
+          "fraction_outside": 0.667709,
+          "fraction_covered": 0.332291,
+          "ink_density": 0.6676
+        },
+        "large_hull": {
+          "ink": 41997,
+          "outside_legacy_ink": 41997,
+          "fraction_outside": 1.0,
+          "fraction_covered": 0.0,
+          "ink_density": 0.595415
+        },
+        "sky_background_density": 0.0
+      },
+      "210": {
+        "large_sail": {
+          "ink": 62251,
+          "outside_legacy_ink": 42018,
+          "fraction_outside": 0.674977,
+          "fraction_covered": 0.325023,
+          "ink_density": 0.751297
+        },
+        "large_hull": {
+          "ink": 46374,
+          "outside_legacy_ink": 46374,
+          "fraction_outside": 1.0,
+          "fraction_covered": 0.0,
+          "ink_density": 0.65747
+        },
+        "sky_background_density": 0.0
+      }
+    },
+    "down75_up": {
+      "110": {
+        "large_sail": {
+          "ink": 44434,
+          "outside_legacy_ink": 29016,
+          "fraction_outside": 0.653013,
+          "fraction_covered": 0.346987,
+          "ink_density": 0.536267
+        },
+        "large_hull": {
+          "ink": 34611,
+          "outside_legacy_ink": 34611,
+          "fraction_outside": 1.0,
+          "fraction_covered": 0.0,
+          "ink_density": 0.4907
+        },
+        "sky_background_density": 0.0
+      },
+      "170": {
+        "large_sail": {
+          "ink": 58103,
+          "outside_legacy_ink": 38943,
+          "fraction_outside": 0.670241,
+          "fraction_covered": 0.329759,
+          "ink_density": 0.701236
+        },
+        "large_hull": {
+          "ink": 43480,
+          "outside_legacy_ink": 43480,
+          "fraction_outside": 1.0,
+          "fraction_covered": 0.0,
+          "ink_density": 0.61644
+        },
+        "sky_background_density": 0.0
+      },
+      "210": {
+        "large_sail": {
+          "ink": 66788,
+          "outside_legacy_ink": 45448,
+          "fraction_outside": 0.680482,
+          "fraction_covered": 0.319518,
+          "ink_density": 0.806054
+        },
+        "large_hull": {
+          "ink": 48944,
+          "outside_legacy_ink": 48944,
+          "fraction_outside": 1.0,
+          "fraction_covered": 0.0,
+          "ink_density": 0.693906
+        },
+        "sky_background_density": 0.0
+      }
+    }
+  },
+  "decision": "LEGACY_LARGE_SAILBOAT_BBOX_INCOMPLETE",
+  "scope_guard": "A positive flags a potentially truncated legacy measurement ROI; it does NOT retroactively refute every negative or establish a new encoding.",
+  "safety_guard": "No private keys, mnemonic words, wallet or external site access."
+}
