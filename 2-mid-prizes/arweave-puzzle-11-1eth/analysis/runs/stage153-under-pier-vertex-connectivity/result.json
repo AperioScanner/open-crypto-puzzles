@@ -1,0 +1,939 @@
+{
+  "experiment_id": "A11-EXP-153",
+  "sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "hypothesis": "all three Stage152 ink-supported edges meet as continuous ink at the specified under-pier triangle corners, rather than independent crossed pier strokes",
+  "sites": {
+    "sail1": [
+      [
+        1042,
+        448
+      ],
+      [
+        1007,
+        546
+      ],
+      [
+        1077,
+        546
+      ]
+    ],
+    "sail2": [
+      [
+        1148,
+        433
+      ],
+      [
+        1110,
+        532
+      ],
+      [
+        1186,
+        532
+      ]
+    ],
+    "sail3": [
+      [
+        1282,
+        411
+      ],
+      [
+        1238,
+        514
+      ],
+      [
+        1326,
+        514
+      ]
+    ],
+    "sail4": [
+      [
+        1372,
+        397
+      ],
+      [
+        1330,
+        498
+      ],
+      [
+        1414,
+        498
+      ]
+    ],
+    "sail5": [
+      [
+        1490,
+        357
+      ],
+      [
+        1443,
+        463
+      ],
+      [
+        1537,
+        463
+      ]
+    ],
+    "under_pier": [
+      [
+        1052,
+        633
+      ],
+      [
+        1052,
+        778
+      ],
+      [
+        1280,
+        714
+      ]
+    ]
+  },
+  "gates": {
+    "radius": 13,
+    "threshold": 175,
+    "closing": 3,
+    "sample_arm_range_px": [
+      6,
+      11
+    ],
+    "min_real_sails": 4
+  },
+  "controls": {
+    "pass": true,
+    "passed": 48,
+    "cases": 48,
+    "observations": {
+      "closed:sail1:original": true,
+      "closed:sail1:jpeg85": true,
+      "closed:sail1:jpeg70": true,
+      "closed:sail1:down75_up": true,
+      "closed:sail2:original": true,
+      "closed:sail2:jpeg85": true,
+      "closed:sail2:jpeg70": true,
+      "closed:sail2:down75_up": true,
+      "closed:sail3:original": true,
+      "closed:sail3:jpeg85": true,
+      "closed:sail3:jpeg70": true,
+      "closed:sail3:down75_up": true,
+      "closed:sail4:original": true,
+      "closed:sail4:jpeg85": true,
+      "closed:sail4:jpeg70": true,
+      "closed:sail4:down75_up": true,
+      "closed:sail5:original": true,
+      "closed:sail5:jpeg85": true,
+      "closed:sail5:jpeg70": true,
+      "closed:sail5:down75_up": true,
+      "closed:under_pier:original": true,
+      "closed:under_pier:jpeg85": true,
+      "closed:under_pier:jpeg70": true,
+      "closed:under_pier:down75_up": true,
+      "open_corners:sail1:original": false,
+      "open_corners:sail1:jpeg85": false,
+      "open_corners:sail1:jpeg70": false,
+      "open_corners:sail1:down75_up": false,
+      "open_corners:sail2:original": false,
+      "open_corners:sail2:jpeg85": false,
+      "open_corners:sail2:jpeg70": false,
+      "open_corners:sail2:down75_up": false,
+      "open_corners:sail3:original": false,
+      "open_corners:sail3:jpeg85": false,
+      "open_corners:sail3:jpeg70": false,
+      "open_corners:sail3:down75_up": false,
+      "open_corners:sail4:original": false,
+      "open_corners:sail4:jpeg85": false,
+      "open_corners:sail4:jpeg70": false,
+      "open_corners:sail4:down75_up": false,
+      "open_corners:sail5:original": false,
+      "open_corners:sail5:jpeg85": false,
+      "open_corners:sail5:jpeg70": false,
+      "open_corners:sail5:down75_up": false,
+      "open_corners:under_pier:original": false,
+      "open_corners:under_pier:jpeg85": false,
+      "open_corners:under_pier:jpeg70": false,
+      "open_corners:under_pier:down75_up": false
+    }
+  },
+  "real": {
+    "original": {
+      "sail1": {
+        "corners": [
+          {
+            "pass": false,
+            "component_count": 2,
+            "contacted_common": 0,
+            "arm_contacts": [
+              0,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": false
+      },
+      "sail2": {
+        "corners": [
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": true
+      },
+      "sail3": {
+        "corners": [
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": true
+      },
+      "sail4": {
+        "corners": [
+          {
+            "pass": false,
+            "component_count": 1,
+            "contacted_common": 0,
+            "arm_contacts": [
+              0,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": false,
+            "component_count": 2,
+            "contacted_common": 0,
+            "arm_contacts": [
+              0,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": false
+      },
+      "sail5": {
+        "corners": [
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": false,
+            "component_count": 2,
+            "contacted_common": 0,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": false
+      },
+      "under_pier": {
+        "corners": [
+          {
+            "pass": false,
+            "component_count": 3,
+            "contacted_common": 0,
+            "arm_contacts": [
+              0,
+              1
+            ]
+          },
+          {
+            "pass": false,
+            "component_count": 5,
+            "contacted_common": 0,
+            "arm_contacts": [
+              0,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 2,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": false
+      }
+    },
+    "jpeg85": {
+      "sail1": {
+        "corners": [
+          {
+            "pass": false,
+            "component_count": 2,
+            "contacted_common": 0,
+            "arm_contacts": [
+              0,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": false
+      },
+      "sail2": {
+        "corners": [
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": true
+      },
+      "sail3": {
+        "corners": [
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": true
+      },
+      "sail4": {
+        "corners": [
+          {
+            "pass": false,
+            "component_count": 1,
+            "contacted_common": 0,
+            "arm_contacts": [
+              0,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": false,
+            "component_count": 2,
+            "contacted_common": 0,
+            "arm_contacts": [
+              0,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": false
+      },
+      "sail5": {
+        "corners": [
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": false,
+            "component_count": 2,
+            "contacted_common": 0,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": false
+      },
+      "under_pier": {
+        "corners": [
+          {
+            "pass": false,
+            "component_count": 3,
+            "contacted_common": 0,
+            "arm_contacts": [
+              0,
+              1
+            ]
+          },
+          {
+            "pass": false,
+            "component_count": 5,
+            "contacted_common": 0,
+            "arm_contacts": [
+              0,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": false
+      }
+    },
+    "jpeg70": {
+      "sail1": {
+        "corners": [
+          {
+            "pass": false,
+            "component_count": 2,
+            "contacted_common": 0,
+            "arm_contacts": [
+              0,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": false
+      },
+      "sail2": {
+        "corners": [
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": true
+      },
+      "sail3": {
+        "corners": [
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": true
+      },
+      "sail4": {
+        "corners": [
+          {
+            "pass": false,
+            "component_count": 1,
+            "contacted_common": 0,
+            "arm_contacts": [
+              0,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": false,
+            "component_count": 2,
+            "contacted_common": 0,
+            "arm_contacts": [
+              0,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": false
+      },
+      "sail5": {
+        "corners": [
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": false,
+            "component_count": 2,
+            "contacted_common": 0,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": false
+      },
+      "under_pier": {
+        "corners": [
+          {
+            "pass": false,
+            "component_count": 3,
+            "contacted_common": 0,
+            "arm_contacts": [
+              0,
+              1
+            ]
+          },
+          {
+            "pass": false,
+            "component_count": 5,
+            "contacted_common": 0,
+            "arm_contacts": [
+              0,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 2,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": false
+      }
+    },
+    "down75_up": {
+      "sail1": {
+        "corners": [
+          {
+            "pass": false,
+            "component_count": 1,
+            "contacted_common": 0,
+            "arm_contacts": [
+              0,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": false
+      },
+      "sail2": {
+        "corners": [
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": true
+      },
+      "sail3": {
+        "corners": [
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": true
+      },
+      "sail4": {
+        "corners": [
+          {
+            "pass": false,
+            "component_count": 1,
+            "contacted_common": 0,
+            "arm_contacts": [
+              0,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": false,
+            "component_count": 2,
+            "contacted_common": 0,
+            "arm_contacts": [
+              0,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": false
+      },
+      "sail5": {
+        "corners": [
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 2,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              2
+            ]
+          }
+        ],
+        "all_three_connected": true
+      },
+      "under_pier": {
+        "corners": [
+          {
+            "pass": false,
+            "component_count": 2,
+            "contacted_common": 0,
+            "arm_contacts": [
+              0,
+              1
+            ]
+          },
+          {
+            "pass": false,
+            "component_count": 5,
+            "contacted_common": 0,
+            "arm_contacts": [
+              0,
+              1
+            ]
+          },
+          {
+            "pass": true,
+            "component_count": 1,
+            "contacted_common": 1,
+            "arm_contacts": [
+              1,
+              1
+            ]
+          }
+        ],
+        "all_three_connected": false
+      }
+    }
+  },
+  "real_positive_sails": 2,
+  "under_pier_3_junctions_stable": false,
+  "decision": "INSUFFICIENT_KNOWN_SAIL_JUNCTION_RECOVERY",
+  "scope_limit": "Local connected ink can join incidentally via pier beams; any positive requires adversarial manual inspection and does not prove a sail or intentional symbol.",
+  "safety": "Canonical source pixels only; no wallets, private keys, phrase candidates or external search."
+}
