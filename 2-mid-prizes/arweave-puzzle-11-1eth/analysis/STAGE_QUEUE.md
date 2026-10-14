@@ -321,3 +321,13 @@ Stage137 Actions #38492279979 completed successfully. Canonical SHA matched, pos
 - Synthetic copied-mirror positive and independent pen-redraw same-shaped negative across each of two bands and four image variants, 16 checks total; both control families must PASS before interpreting original. Source failure => INCONCLUSIVE, positive requires all bands × formats and independent visual review, negative retires only exact mirrored hull-pen texture, NOT natural hull-shape symmetry.
 - No private key, BIP39, seed word, address, wallet, Twitter or other off-image investigation.
 - Script: tools/stage141_corrected_hull_bilateral_strokes.py; output analysis/runs/stage141-corrected-hull-bilateral-strokes/.
+
+
+## 2026-10-13 — Stage141 validated; Stage142 preregistered (image only)
+
+- Stage141 GitHub Actions #38495806304 completed SUCCESS with canonical SHA, full source coverage and 16/16 synthetic exact mirror versus redraw controls passing. Original hull upper band interior pencil correlations L/R: smooth ink -0.060 and detail -0.036, lower band smooth +0.333 and detail +0.017, with all four variants similarly weak. Decision NO_EXACT_MIRRORED_HULL_STROKE_FINGERPRINT. This retires only exact horizontal-axis copied pen texture in corrected hull, not approximate shape symbolism.
+- Stage142 tests the OTHER genuinely unmeasured symmetry direction in the corrected hull: original Stage41 sought top-vs-bottom large-boat symmetry but relied on the old ROI that Stage132 proved contained 0 actual hull pixels; Stage141 only checked L/R. Now test UPPER ↔ LOWER pencil stroke copying around predetermined y=860.5, NOT reusing Stage141 x-reflection and NOT interpreting any digits.
+- Immutable Stage132 hull polygon and 7px erosion, two fore/aft windows x95..235 and x315..455; fixed upper y798..847 and lower y875..924, no optimization over axes, formats original/JPEG85/JPEG70/down75_up.
+- Two independent scores for BOTH windows: low-frequency reflected-ink correlation >=.72 and high-pass reflected pencil details >=.56; >=1200 paired mask pixels and ink density >=.075 in both surfaces. Positives are synthetic exact upper-to-lower pixel mirror, negatives are independently sketched lower strokes, 4 formats x 2 windows x 2 families =16 cases. ALL 16 controls must pass; otherwise repair SAME Stage142. Real low coverage => inconclusive; replica in all formats => only manual visual review, not decoded code.
+- Remain image-only: no BIP39, private keys, wallet access or off-image research.
+- Script tools/stage142_corrected_hull_vertical_mirror.py; reports analysis/runs/stage142-true-hull-vertical-mirror/.
