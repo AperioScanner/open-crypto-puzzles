@@ -458,3 +458,10 @@ Selected Stage136 to condition on left/right side and ask for *new vertical vari
 Stage136 #38491300004 finished success; canonical SHA and source table reproduction PASS, all natural-V/reversal/balanced null synthetic controls PASS. All four formats show no vertical sign effect after conditioning on left/right shading: p=.75769/.62998/1.0/.27117, vertical delta <=.1154. Stage135's p floor 0.00005 had an unrealistic global exchangeability null for illustrated triangular hatching and cannot support encoded meaning.
 
 Stage137 chosen as one image-only, ROI-defect-justified question: compare reflection of large boat's fully visible hull with directly below wake. Earlier skyline reflection studies do not specifically cover this hull, entirely outside the old ROI. Predeclared matched 520x120 source windows, ink and edge metrics and four variant replication, full/independent synthetic controls, lateral shift negatives. No ordered codes/secrets/wallet or social sources.
+
+
+## 2026-10-13 — Stage137 result and Stage138 handoff
+
+Stage137 GitHub #38492279979 SUCCESS. SHA/control/source passed; two independent metrics across four image formats show near-zero direct mirrored hull/wake pencil template correlations, worse than all shifted-null baselines. Clear, scope-limited negative, not a global claim about reflections or the image.
+
+Noticed a concrete, unaddressed consequence of Stage132's verified incorrect boat box: Stage35's building↔reflection test omitted buildings 1 and 2 due to claimed overlapping old boat bbox in reflection band y330..360, but Stage132's real sail top y398 does not intersect this band. Selected Stage138 as calibrated repair of Stage35 cohort without changing its statistic or H/V labels; exact 4-of-12 test, source-coverage gate, four format replication and positive/negative synthetic orientation patterns. No cryptographic material produced.
