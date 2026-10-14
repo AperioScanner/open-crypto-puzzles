@@ -1,0 +1,291 @@
+{
+  "experiment_id": "A11-EXP-137",
+  "hypothesis": "actual whole-boat hull pencilling is reproduced with vertical mirror symmetry in the wake below, instead of merely loosely sketched water",
+  "reason": "Stage132 discovered all large-hull ink was omitted by the former large_sailboat ROI. This target was not covered by prior skyline reflection studies.",
+  "scope": "fixed full-large-hull and lower wake apertures, non-secret blended ink/edge statistics over four image formats; \u00b180/130px lateral-shift nulls",
+  "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "source_apertures": {
+    "x": [
+      15,
+      535
+    ],
+    "hull_y": [
+      818,
+      938
+    ],
+    "wake_y": [
+      942,
+      1062
+    ]
+  },
+  "gates": {
+    "min_ink_corr": 0.73,
+    "min_edge_corr": 0.57,
+    "min_shift_improvement": 0.19,
+    "min_hull_density": 0.08,
+    "min_wake_density": 0.04,
+    "lateral_nulls": [
+      -130,
+      -80,
+      80,
+      130
+    ]
+  },
+  "controls": {
+    "pass": true,
+    "positive_pass": true,
+    "negative_pass": true,
+    "cases": 8,
+    "positive": {
+      "original": {
+        "density": {
+          "hull": 0.1667,
+          "wake": 0.1667
+        },
+        "raw_correlations": {
+          "ink": 1.0,
+          "edge": 1.0
+        },
+        "shift_null_max": {
+          "ink": 0.324696,
+          "edge": 0.3854
+        },
+        "improvement_over_shifted_wake": {
+          "ink": 0.675304,
+          "edge": 0.6146
+        },
+        "valid_source_coverage": true,
+        "strong_mirror_match": true
+      },
+      "jpeg85": {
+        "density": {
+          "hull": 0.16739,
+          "wake": 0.16739
+        },
+        "raw_correlations": {
+          "ink": 1.0,
+          "edge": 1.0
+        },
+        "shift_null_max": {
+          "ink": 0.324487,
+          "edge": 0.383884
+        },
+        "improvement_over_shifted_wake": {
+          "ink": 0.675513,
+          "edge": 0.616116
+        },
+        "valid_source_coverage": true,
+        "strong_mirror_match": true
+      },
+      "jpeg70": {
+        "density": {
+          "hull": 0.1687,
+          "wake": 0.1687
+        },
+        "raw_correlations": {
+          "ink": 1.0,
+          "edge": 1.0
+        },
+        "shift_null_max": {
+          "ink": 0.32857,
+          "edge": 0.386563
+        },
+        "improvement_over_shifted_wake": {
+          "ink": 0.67143,
+          "edge": 0.613437
+        },
+        "valid_source_coverage": true,
+        "strong_mirror_match": true
+      },
+      "down75_up": {
+        "density": {
+          "hull": 0.18308,
+          "wake": 0.18168
+        },
+        "raw_correlations": {
+          "ink": 0.997607,
+          "edge": 0.998976
+        },
+        "shift_null_max": {
+          "ink": 0.333152,
+          "edge": 0.39124
+        },
+        "improvement_over_shifted_wake": {
+          "ink": 0.664455,
+          "edge": 0.607736
+        },
+        "valid_source_coverage": true,
+        "strong_mirror_match": true
+      }
+    },
+    "negative": {
+      "original": {
+        "density": {
+          "hull": 0.1667,
+          "wake": 0.15295
+        },
+        "raw_correlations": {
+          "ink": 0.338038,
+          "edge": 0.408055
+        },
+        "shift_null_max": {
+          "ink": 0.305984,
+          "edge": 0.355543
+        },
+        "improvement_over_shifted_wake": {
+          "ink": 0.032054,
+          "edge": 0.052513
+        },
+        "valid_source_coverage": true,
+        "strong_mirror_match": false
+      },
+      "jpeg85": {
+        "density": {
+          "hull": 0.16739,
+          "wake": 0.15346
+        },
+        "raw_correlations": {
+          "ink": 0.338432,
+          "edge": 0.408544
+        },
+        "shift_null_max": {
+          "ink": 0.304691,
+          "edge": 0.357592
+        },
+        "improvement_over_shifted_wake": {
+          "ink": 0.033741,
+          "edge": 0.050952
+        },
+        "valid_source_coverage": true,
+        "strong_mirror_match": false
+      },
+      "jpeg70": {
+        "density": {
+          "hull": 0.1687,
+          "wake": 0.15449
+        },
+        "raw_correlations": {
+          "ink": 0.338322,
+          "edge": 0.41174
+        },
+        "shift_null_max": {
+          "ink": 0.304297,
+          "edge": 0.3582
+        },
+        "improvement_over_shifted_wake": {
+          "ink": 0.034025,
+          "edge": 0.05354
+        },
+        "valid_source_coverage": true,
+        "strong_mirror_match": false
+      },
+      "down75_up": {
+        "density": {
+          "hull": 0.18308,
+          "wake": 0.17218
+        },
+        "raw_correlations": {
+          "ink": 0.352295,
+          "edge": 0.415072
+        },
+        "shift_null_max": {
+          "ink": 0.30384,
+          "edge": 0.353129
+        },
+        "improvement_over_shifted_wake": {
+          "ink": 0.048455,
+          "edge": 0.061943
+        },
+        "valid_source_coverage": true,
+        "strong_mirror_match": false
+      }
+    }
+  },
+  "real": {
+    "original": {
+      "density": {
+        "hull": 0.52535,
+        "wake": 0.16399
+      },
+      "raw_correlations": {
+        "ink": 0.023119,
+        "edge": 0.231329
+      },
+      "shift_null_max": {
+        "ink": 0.220734,
+        "edge": 0.424502
+      },
+      "improvement_over_shifted_wake": {
+        "ink": -0.197615,
+        "edge": -0.193173
+      },
+      "valid_source_coverage": true,
+      "strong_mirror_match": false
+    },
+    "jpeg85": {
+      "density": {
+        "hull": 0.52583,
+        "wake": 0.16362
+      },
+      "raw_correlations": {
+        "ink": 0.023409,
+        "edge": 0.233883
+      },
+      "shift_null_max": {
+        "ink": 0.223566,
+        "edge": 0.424083
+      },
+      "improvement_over_shifted_wake": {
+        "ink": -0.200157,
+        "edge": -0.190201
+      },
+      "valid_source_coverage": true,
+      "strong_mirror_match": false
+    },
+    "jpeg70": {
+      "density": {
+        "hull": 0.52631,
+        "wake": 0.16394
+      },
+      "raw_correlations": {
+        "ink": 0.026124,
+        "edge": 0.23023
+      },
+      "shift_null_max": {
+        "ink": 0.222045,
+        "edge": 0.415819
+      },
+      "improvement_over_shifted_wake": {
+        "ink": -0.195921,
+        "edge": -0.185589
+      },
+      "valid_source_coverage": true,
+      "strong_mirror_match": false
+    },
+    "down75_up": {
+      "density": {
+        "hull": 0.54923,
+        "wake": 0.18037
+      },
+      "raw_correlations": {
+        "ink": 0.038578,
+        "edge": 0.226163
+      },
+      "shift_null_max": {
+        "ink": 0.232832,
+        "edge": 0.407647
+      },
+      "improvement_over_shifted_wake": {
+        "ink": -0.194254,
+        "edge": -0.181485
+      },
+      "valid_source_coverage": true,
+      "strong_mirror_match": false
+    }
+  },
+  "all_source_coverage": true,
+  "all_mirror_matches": false,
+  "decision": "NO_EXACT_LARGE_HULL_WAKE_MIRROR",
+  "interpretation_guard": "A mirror match is visual structure, not steganographic information. A negative retires only direct large-hull-to-wake vertical reflected patch alignment at these fixed apertures.",
+  "safety_guard": "No private keys, mnemonic words, codes, wallet operations or social research."
+}
