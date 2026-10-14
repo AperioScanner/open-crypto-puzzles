@@ -1,0 +1,205 @@
+{
+  "experiment_id": "A11-EXP-162",
+  "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "source_defect": "Stage95 sail_mask used old truncated large_sailboat bbox documented by Stage132",
+  "full_sail_vertices": [
+    [
+      242,
+      398
+    ],
+    [
+      56,
+      758
+    ],
+    [
+      512,
+      760
+    ]
+  ],
+  "full_sail_erosion_5x5_once": true,
+  "original_stage95_sail_replay": {
+    "original": {
+      "score": 0.6142268235839198,
+      "expected": 0.6142268235839198,
+      "absolute_delta": 0.0,
+      "samples": 11785,
+      "pass": true
+    },
+    "jpeg85": {
+      "score": 0.5741163101451676,
+      "expected": 0.5741163101451676,
+      "absolute_delta": 0.0,
+      "samples": 11838,
+      "pass": true
+    },
+    "jpeg70": {
+      "score": 0.5651712813325157,
+      "expected": 0.5651712813325157,
+      "absolute_delta": 0.0,
+      "samples": 12020,
+      "pass": true
+    },
+    "down75_up": {
+      "score": 0.5537451734946751,
+      "expected": 0.5537451734946751,
+      "absolute_delta": 0.0,
+      "samples": 12310,
+      "pass": true
+    }
+  },
+  "archived_Stage95_synthetic_controls": {
+    "original": {
+      "positive_score": 1.0,
+      "negative_score": 0.46834816251271394,
+      "archived_positive": 1.0,
+      "archived_negative": 0.46834816251271394,
+      "positive_replay_pass": true,
+      "negative_replay_pass": true,
+      "calibrated_separation_pass": true
+    },
+    "jpeg85": {
+      "positive_score": 0.9200820742608826,
+      "negative_score": 0.46772432030700484,
+      "archived_positive": 0.9200820742608826,
+      "archived_negative": 0.46772432030700484,
+      "positive_replay_pass": true,
+      "negative_replay_pass": true,
+      "calibrated_separation_pass": true
+    },
+    "jpeg70": {
+      "positive_score": 0.8860958268148275,
+      "negative_score": 0.4679831094858842,
+      "archived_positive": 0.8860958268148275,
+      "archived_negative": 0.4679831094858842,
+      "positive_replay_pass": true,
+      "negative_replay_pass": true,
+      "calibrated_separation_pass": true
+    },
+    "down75_up": {
+      "positive_score": 0.8376660085832993,
+      "negative_score": 0.46842478958284384,
+      "archived_positive": 0.8376660085832993,
+      "archived_negative": 0.46842478958284384,
+      "positive_replay_pass": true,
+      "negative_replay_pass": true,
+      "calibrated_separation_pass": true
+    }
+  },
+  "corrected_polygon_controls": {
+    "original": {
+      "discrete_positive_score": 1.0,
+      "smooth_negative_score": 0.48831058639613656,
+      "pass": true
+    },
+    "jpeg85": {
+      "discrete_positive_score": 0.9342089637292513,
+      "smooth_negative_score": 0.47772740208596554,
+      "pass": true
+    },
+    "jpeg70": {
+      "discrete_positive_score": 0.9196993819931378,
+      "smooth_negative_score": 0.48442168659468676,
+      "pass": true
+    },
+    "down75_up": {
+      "discrete_positive_score": 0.6431742055049935,
+      "smooth_negative_score": 0.48634253123125804,
+      "pass": false
+    }
+  },
+  "controls": {
+    "pass": false,
+    "passed": 21,
+    "cases": 22,
+    "checks": {
+      "canonical_sha_verified": true,
+      "old_legacy_sail_replay": {
+        "original": true,
+        "jpeg85": true,
+        "jpeg70": true,
+        "down75_up": true
+      },
+      "synthetic_original_positive_replay": {
+        "original": true,
+        "jpeg85": true,
+        "jpeg70": true,
+        "down75_up": true
+      },
+      "synthetic_original_negative_replay": {
+        "original": true,
+        "jpeg85": true,
+        "jpeg70": true,
+        "down75_up": true
+      },
+      "original_synthetic_separation": {
+        "original": true,
+        "jpeg85": true,
+        "jpeg70": true,
+        "down75_up": true
+      },
+      "new_polygon_control_separation": {
+        "original": true,
+        "jpeg85": true,
+        "jpeg70": true,
+        "down75_up": false
+      },
+      "corrected_source_sample_sufficient": true
+    }
+  },
+  "source_by_format": {
+    "original": {
+      "sampled_sail_ink_pixels": 66337,
+      "corrected_score": 0.5779433214349959,
+      "legacy_stage95_score": 0.6142268235839198,
+      "positive_similarity_against_archived_anchors": 0.20614084480598238,
+      "beating_archived_puzzle5": false,
+      "close_to_positive": false,
+      "occupied_ge_0p3pct": 16,
+      "modes_occupancy_ok": true,
+      "rmse_normalized": 0.015968646171473134,
+      "mode_concentration_pm2": 0.4593514931335454
+    },
+    "jpeg85": {
+      "sampled_sail_ink_pixels": 66829,
+      "corrected_score": 0.5487919572040448,
+      "legacy_stage95_score": 0.5741163101451676,
+      "positive_similarity_against_archived_anchors": 0.1792113348084791,
+      "beating_archived_puzzle5": false,
+      "close_to_positive": false,
+      "occupied_ge_0p3pct": 16,
+      "modes_occupancy_ok": true,
+      "rmse_normalized": 0.01659312689073206,
+      "mode_concentration_pm2": 0.40545272262041926
+    },
+    "jpeg70": {
+      "sampled_sail_ink_pixels": 68141,
+      "corrected_score": 0.5449356380539062,
+      "legacy_stage95_score": 0.5651712813325157,
+      "positive_similarity_against_archived_anchors": 0.18404732833677695,
+      "beating_archived_puzzle5": false,
+      "close_to_positive": false,
+      "occupied_ge_0p3pct": 16,
+      "modes_occupancy_ok": true,
+      "rmse_normalized": 0.016786951158611847,
+      "mode_concentration_pm2": 0.39559149410780586
+    },
+    "down75_up": {
+      "sampled_sail_ink_pixels": 72401,
+      "corrected_score": 0.47739127176827023,
+      "legacy_stage95_score": 0.5537451734946751,
+      "positive_similarity_against_archived_anchors": 0.024283535326036648,
+      "beating_archived_puzzle5": false,
+      "close_to_positive": false,
+      "occupied_ge_0p3pct": 16,
+      "modes_occupancy_ok": true,
+      "rmse_normalized": 0.017568254853536445,
+      "mode_concentration_pm2": 0.2663775362218754
+    }
+  },
+  "positive_comparator_close_variants": 0,
+  "author_style_control_beaten_variants": 0,
+  "occupied_14_modes_variants": 4,
+  "decision": "CONTROL_FAILURE",
+  "scope_limit": "Only Stage95 legacy LARGE SAIL ROI corrected, not the jetty, skyline or whole-frame metrics. Archived Puzzle5 scores reused without accessing external media; grayscale mode inference is not a code or proof of authorship.",
+  "safety": "No wallet, address, key, BIP39, textual payload derivation or social/web research."
+}
