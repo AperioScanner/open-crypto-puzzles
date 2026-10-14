@@ -1,0 +1,236 @@
+{
+  "experiment_id": "A11-EXP-136",
+  "hypothesis": "Stage135 side-vs-hatch association is potentially ordinary mirror V-shading; a distinctive visual design must show upper/lower modulation AFTER holding x-side constant.",
+  "input": "same canonical source and immutable Stage132/135 geometry/Stage94 detector; all four image formats; independent recomputation checked against Stage135 counts",
+  "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "statistic": "exact conditional 2\u00d72 Pearson-tail under independent within-side hypergeometric label exchangeability, jointly enumerating upper POS counts for left and right sides",
+  "controls": {
+    "passed": true,
+    "natural_v_shading_negative": {
+      "count_table": {
+        "upper_left": [
+          2,
+          18
+        ],
+        "upper_right": [
+          18,
+          2
+        ],
+        "lower_left": [
+          2,
+          18
+        ],
+        "lower_right": [
+          18,
+          2
+        ]
+      },
+      "side_specific_vertical_delta": {
+        "left": 0.0,
+        "right": 0.0
+      },
+      "conditional_chi_square": 0.0,
+      "exact_side_conditioned_p": 1.0,
+      "conditional_table_count": 25,
+      "eligible": true,
+      "passes_new_structure_gate": false
+    },
+    "vertical_reversal_positive": {
+      "count_table": {
+        "upper_left": [
+          18,
+          2
+        ],
+        "upper_right": [
+          2,
+          18
+        ],
+        "lower_left": [
+          2,
+          18
+        ],
+        "lower_right": [
+          18,
+          2
+        ]
+      },
+      "side_specific_vertical_delta": {
+        "left": 0.8,
+        "right": -0.8
+      },
+      "conditional_chi_square": 51.2,
+      "exact_side_conditioned_p": 0.0,
+      "conditional_table_count": 441,
+      "eligible": true,
+      "passes_new_structure_gate": true
+    },
+    "balanced_negative": {
+      "count_table": {
+        "upper_left": [
+          10,
+          10
+        ],
+        "upper_right": [
+          10,
+          10
+        ],
+        "lower_left": [
+          10,
+          10
+        ],
+        "lower_right": [
+          10,
+          10
+        ]
+      },
+      "side_specific_vertical_delta": {
+        "left": 0.0,
+        "right": 0.0
+      },
+      "conditional_chi_square": 0.0,
+      "exact_side_conditioned_p": 1.0,
+      "conditional_table_count": 441,
+      "eligible": true,
+      "passes_new_structure_gate": false
+    }
+  },
+  "stage135_aggregate_reproduction_pass": true,
+  "source_variants": {
+    "original": {
+      "count_table": {
+        "upper_left": [
+          3,
+          9
+        ],
+        "upper_right": [
+          13,
+          0
+        ],
+        "lower_left": [
+          3,
+          19
+        ],
+        "lower_right": [
+          26,
+          1
+        ]
+      },
+      "side_specific_vertical_delta": {
+        "left": 0.113636,
+        "right": 0.037037
+      },
+      "conditional_chi_square": 1.183762,
+      "exact_side_conditioned_p": 0.7576903259,
+      "conditional_table_count": 14,
+      "eligible": true,
+      "passes_new_structure_gate": false,
+      "prior_source_reproduction_pass": true,
+      "classifiable": 80,
+      "excluded_seam_midline": 6
+    },
+    "jpeg85": {
+      "count_table": {
+        "upper_left": [
+          1,
+          12
+        ],
+        "upper_right": [
+          6,
+          0
+        ],
+        "lower_left": [
+          4,
+          18
+        ],
+        "lower_right": [
+          23,
+          0
+        ]
+      },
+      "side_specific_vertical_delta": {
+        "left": -0.104895,
+        "right": 0.0
+      },
+      "conditional_chi_square": 0.734266,
+      "exact_side_conditioned_p": 0.6299810247,
+      "conditional_table_count": 6,
+      "eligible": true,
+      "passes_new_structure_gate": false,
+      "prior_source_reproduction_pass": true,
+      "classifiable": 76,
+      "excluded_seam_midline": 12
+    },
+    "jpeg70": {
+      "count_table": {
+        "upper_left": [
+          1,
+          6
+        ],
+        "upper_right": [
+          10,
+          0
+        ],
+        "lower_left": [
+          3,
+          27
+        ],
+        "lower_right": [
+          31,
+          0
+        ]
+      },
+      "side_specific_vertical_delta": {
+        "left": 0.042857,
+        "right": 0.0
+      },
+      "conditional_chi_square": 0.108117,
+      "exact_side_conditioned_p": 1.0,
+      "conditional_table_count": 5,
+      "eligible": true,
+      "passes_new_structure_gate": false,
+      "prior_source_reproduction_pass": true,
+      "classifiable": 90,
+      "excluded_seam_midline": 12
+    },
+    "down75_up": {
+      "count_table": {
+        "upper_left": [
+          0,
+          8
+        ],
+        "upper_right": [
+          9,
+          1
+        ],
+        "lower_left": [
+          3,
+          23
+        ],
+        "lower_right": [
+          21,
+          0
+        ]
+      },
+      "side_specific_vertical_delta": {
+        "left": -0.115385,
+        "right": -0.1
+      },
+      "conditional_chi_square": 3.182407,
+      "exact_side_conditioned_p": 0.2711747456,
+      "conditional_table_count": 8,
+      "eligible": true,
+      "passes_new_structure_gate": false,
+      "prior_source_reproduction_pass": true,
+      "classifiable": 77,
+      "excluded_seam_midline": 12
+    }
+  },
+  "all_adequate": true,
+  "all_strong": false,
+  "direction_consistency": false,
+  "replicated_additional_structure": false,
+  "decision": "SIDE_DEPENDENCE_EXPLAINS_PREVIOUS_ASSOCIATION",
+  "stop_rule": "If controls/source reproduction fail do not interpret target; require all 4 versions p<=.01, top-vs-bottom signed contrast >=.25 in at least one side and consistent directions to promote. Otherwise a natural left/right sail convention suffices for the measured association.",
+  "scope_limit": "This does not establish normal artist intent; it only checks whether there is evidence beyond left/right V-shading. Multiple-puzzle/look-elsewhere selection is not accounted for; four renderings are correlated observations, not independent experimental replications.",
+  "security": "No ordered strokes, text extraction, words, private keys, mnemonics, wallet addresses or transactions."
+}
