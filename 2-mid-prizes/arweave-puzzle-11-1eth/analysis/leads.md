@@ -120,3 +120,8 @@ Stage136 matched Stage135's source exactly and its conditioned left/right null s
 ## Stage137 closed; Stage138 restored 12-building reflection cohort
 
 Stage137: literal mirrored lower-wake relation negative with successful reflected/independent synthetic controls and full real-source coverage (real ink corr .023–.039). Stage138 instead audits the proved **source-exclusion error** in Stage35: buildings 1 and 2 were omitted from y330..360 skyline reflection due to an incorrect boat rectangle, though the real sail begins below at y398. Restore all 12 H/V building regions, keep original Sobel/Fourier metrics, use 495 label permutations, calibration and JPEG invariance. No wallet/key operations.
+
+
+## Stage138 closed; Stage139 verifies source adequacy of reflection crops
+
+Stage138 reproduced Stage35's original 10 measurements exactly, restored buildings #1/#2, and found no association in all 12 (Sobel negative V-H, Fourier p>.32). But Stage138's archive reports water-band mean darkness just 0.40 at building #6 and 0.83 at #11, versus the 2.0-source gate applied only to newly included buildings. Stage139 is a quality-controlled retest using identical old estimator, same all-site threshold 2.0 (NOT fitted to p) and exact permutation on actually drawn reflection patches, plus original-data and synthetic positive/reversal controls. No key/phrase decoding.
