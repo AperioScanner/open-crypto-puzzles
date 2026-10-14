@@ -1,0 +1,139 @@
+{
+  "experiment_id": "A11-EXP-148",
+  "question": "Does ordinary skyline building width/height/aspect/area explain the stable H/V pencil-hatching sequence instead of independent intentional binary marks?",
+  "motivation": "The source H/V marker is robust, unlike user-generated mirrored chess/needle illusions. Test a plausible ordinary-art confound before treating the 0x321 visual reading as author intent.",
+  "scope": "12 canonical facade geometry annotations plus Stage10 source-verified H/V orientations; exact C(12,4) conditional permutations; joint max-standardized-statistic multiple-feature protection; 4 image variants for source only.",
+  "sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "baseline_sequence": "HHVVHHVHHHHV",
+  "predictors": [
+    "facade_width",
+    "facade_height",
+    "height_to_width_ratio",
+    "facade_area"
+  ],
+  "controls": {
+    "pass": true,
+    "wide_facades_positive_p": 0.0020202,
+    "tall_facades_positive_p": 0.0020202,
+    "all_equal_null_p": 1.0,
+    "cases": 3
+  },
+  "source_replicated_in_four_formats": true,
+  "source_variants": {
+    "original": {
+      "observed_HV_labels": "HHVVHHVHHHHV",
+      "matches_stage10": true,
+      "roofline_pixels_supported": 12,
+      "orientation_scores": [
+        -0.4672738,
+        -0.429687,
+        0.1914936,
+        0.4230747,
+        -0.5200656,
+        -0.4714317,
+        0.3277549,
+        -0.5004749,
+        -0.3924493,
+        -0.4696373,
+        -0.4055999,
+        0.4788262
+      ]
+    },
+    "jpeg85": {
+      "observed_HV_labels": "HHVVHHVHHHHV",
+      "matches_stage10": true,
+      "roofline_pixels_supported": 12,
+      "orientation_scores": [
+        -0.4668445,
+        -0.4288017,
+        0.1904499,
+        0.4210328,
+        -0.5196149,
+        -0.4715463,
+        0.3276034,
+        -0.4993462,
+        -0.3920576,
+        -0.4693538,
+        -0.4050673,
+        0.4781442
+      ]
+    },
+    "jpeg70": {
+      "observed_HV_labels": "HHVVHHVHHHHV",
+      "matches_stage10": true,
+      "roofline_pixels_supported": 12,
+      "orientation_scores": [
+        -0.4660993,
+        -0.4285428,
+        0.1924006,
+        0.4217288,
+        -0.519786,
+        -0.4707208,
+        0.3277035,
+        -0.498692,
+        -0.3912563,
+        -0.4690667,
+        -0.4045148,
+        0.4776415
+      ]
+    },
+    "down75_up": {
+      "observed_HV_labels": "HHVVHHVHHHHV",
+      "matches_stage10": true,
+      "roofline_pixels_supported": 12,
+      "orientation_scores": [
+        -0.4688332,
+        -0.427278,
+        0.1879122,
+        0.4132884,
+        -0.5206761,
+        -0.4743925,
+        0.3285559,
+        -0.5012233,
+        -0.3934999,
+        -0.4668217,
+        -0.3971349,
+        0.4720162
+      ]
+    }
+  },
+  "shape_permutation_test": {
+    "observed_H_mean": {
+      "facade_width": 91.75,
+      "facade_height": 189.875,
+      "height_to_width_ratio": 2.093241,
+      "facade_area": 17869.25
+    },
+    "observed_V_mean": {
+      "facade_width": 124.0,
+      "facade_height": 208.0,
+      "height_to_width_ratio": 1.848153,
+      "facade_area": 26653.0
+    },
+    "V_minus_H": {
+      "facade_width": 32.25,
+      "facade_height": 18.125,
+      "height_to_width_ratio": -0.245088,
+      "facade_area": 8783.75
+    },
+    "standardized_difference": {
+      "facade_width": 1.563958,
+      "facade_height": 0.530516,
+      "height_to_width_ratio": -0.635183,
+      "facade_area": 1.361623
+    },
+    "exact_two_sided_per_feature_p": {
+      "facade_width": 0.12727273,
+      "facade_height": 0.5979798,
+      "height_to_width_ratio": 0.53737374,
+      "facade_area": 0.17979798
+    },
+    "max_standardized_feature_difference": 1.563958,
+    "familywise_exact_permutation_p": 0.2989899,
+    "permutations": 495,
+    "geometry_association_familywise": false
+  },
+  "decision": "NO_SIMPLE_BUILDING_SHAPE_EXPLANATION_FOR_HV",
+  "interpretation_limit": "A positive says common building proportions may explain painting direction, not intentional bits. A negative says these four mundane shape covariates alone do NOT account for V vs H, but DOES NOT establish that 001100100001 / 0x321 was intended as an instruction. Multiple prior puzzle hypotheses remain unadjusted.",
+  "safety": "Public original image and geometry only; no private-key generation, BIP39, wallets, addresses, transactions or external clues."
+}
