@@ -1,0 +1,308 @@
+{
+  "experiment_id": "A11-EXP-135",
+  "hypothesis": "the now fully visible large sail's diagonal stroke signs are organized by top/bottom \u00d7 left/right geometric sectors, not randomly interleaved",
+  "reason": "Stage132 proved an ROI defect; Stage133 recovered 76-90 full-sail classifiable strokes, mixed signed orientations; their spatial grouping was not tested in Stage94.",
+  "scope": "fixed Stage132 triangle and Stage94 full-size stroke detector, four sectors; conditional sign-label permutation; original and three lossy variants; no ordered sign sequence persisted",
+  "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "quadrant_definition": {
+    "apex": [
+      242.0,
+      398.0
+    ],
+    "left_foot": [
+      56.0,
+      758.0
+    ],
+    "right_foot": [
+      512.0,
+      760.0
+    ],
+    "seam_margin_px": 8.0,
+    "horizontal_midline_margin_px": 12.0
+  },
+  "thresholds": {
+    "min_tracks": 40,
+    "min_per_quadrant": 4,
+    "min_sector_retained_fraction": 0.55,
+    "max_permutation_p": 0.01,
+    "min_cramers_v": 0.35,
+    "min_majority_margin": 0.1,
+    "permutations": 20000
+  },
+  "synthetic_controls": {
+    "passed": true,
+    "structured_positive": {
+      "counts_by_quadrant": {
+        "upper_left": [
+          18,
+          2
+        ],
+        "upper_right": [
+          2,
+          18
+        ],
+        "lower_left": [
+          2,
+          18
+        ],
+        "lower_right": [
+          18,
+          2
+        ]
+      },
+      "quadrant_total": {
+        "upper_left": 20,
+        "upper_right": 20,
+        "lower_left": 20,
+        "lower_right": 20
+      },
+      "positive_fractions": {
+        "upper_left": 0.9,
+        "upper_right": 0.1,
+        "lower_left": 0.1,
+        "lower_right": 0.9
+      },
+      "majority_by_quadrant": {
+        "upper_left": "POS",
+        "upper_right": "NEG",
+        "lower_left": "NEG",
+        "lower_right": "POS"
+      },
+      "chi_square": 51.2,
+      "cramers_v": 0.8,
+      "fixed_conditional_permutation_p": 5e-05
+    },
+    "balanced_negative": {
+      "counts_by_quadrant": {
+        "upper_left": [
+          10,
+          10
+        ],
+        "upper_right": [
+          10,
+          10
+        ],
+        "lower_left": [
+          10,
+          10
+        ],
+        "lower_right": [
+          10,
+          10
+        ]
+      },
+      "quadrant_total": {
+        "upper_left": 20,
+        "upper_right": 20,
+        "lower_left": 20,
+        "lower_right": 20
+      },
+      "positive_fractions": {
+        "upper_left": 0.5,
+        "upper_right": 0.5,
+        "lower_left": 0.5,
+        "lower_right": 0.5
+      },
+      "majority_by_quadrant": {
+        "upper_left": "AMBIGUOUS",
+        "upper_right": "AMBIGUOUS",
+        "lower_left": "AMBIGUOUS",
+        "lower_right": "AMBIGUOUS"
+      },
+      "chi_square": 0.0,
+      "cramers_v": 0.0,
+      "fixed_conditional_permutation_p": 1.0
+    }
+  },
+  "by_variant": {
+    "original": {
+      "classifiable_tracks": 80,
+      "near_seam_or_midline_excluded": 6,
+      "aggregate_count": 74,
+      "adequate": true,
+      "passes_strong_gate": true,
+      "counts_by_quadrant": {
+        "upper_left": [
+          3,
+          9
+        ],
+        "upper_right": [
+          13,
+          0
+        ],
+        "lower_left": [
+          3,
+          19
+        ],
+        "lower_right": [
+          26,
+          1
+        ]
+      },
+      "quadrant_total": {
+        "upper_left": 12,
+        "upper_right": 13,
+        "lower_left": 22,
+        "lower_right": 27
+      },
+      "positive_fractions": {
+        "upper_left": 0.25,
+        "upper_right": 1.0,
+        "lower_left": 0.136364,
+        "lower_right": 0.962963
+      },
+      "majority_by_quadrant": {
+        "upper_left": "NEG",
+        "upper_right": "POS",
+        "lower_left": "NEG",
+        "lower_right": "POS"
+      },
+      "chi_square": 49.645974,
+      "cramers_v": 0.81908,
+      "fixed_conditional_permutation_p": 5e-05
+    },
+    "jpeg85": {
+      "classifiable_tracks": 76,
+      "near_seam_or_midline_excluded": 12,
+      "aggregate_count": 64,
+      "adequate": true,
+      "passes_strong_gate": true,
+      "counts_by_quadrant": {
+        "upper_left": [
+          1,
+          12
+        ],
+        "upper_right": [
+          6,
+          0
+        ],
+        "lower_left": [
+          4,
+          18
+        ],
+        "lower_right": [
+          23,
+          0
+        ]
+      },
+      "quadrant_total": {
+        "upper_left": 13,
+        "upper_right": 6,
+        "lower_left": 22,
+        "lower_right": 23
+      },
+      "positive_fractions": {
+        "upper_left": 0.076923,
+        "upper_right": 1.0,
+        "lower_left": 0.181818,
+        "lower_right": 1.0
+      },
+      "majority_by_quadrant": {
+        "upper_left": "NEG",
+        "upper_right": "POS",
+        "lower_left": "NEG",
+        "lower_right": "POS"
+      },
+      "chi_square": 47.150967,
+      "cramers_v": 0.858332,
+      "fixed_conditional_permutation_p": 5e-05
+    },
+    "jpeg70": {
+      "classifiable_tracks": 90,
+      "near_seam_or_midline_excluded": 12,
+      "aggregate_count": 78,
+      "adequate": true,
+      "passes_strong_gate": true,
+      "counts_by_quadrant": {
+        "upper_left": [
+          1,
+          6
+        ],
+        "upper_right": [
+          10,
+          0
+        ],
+        "lower_left": [
+          3,
+          27
+        ],
+        "lower_right": [
+          31,
+          0
+        ]
+      },
+      "quadrant_total": {
+        "upper_left": 7,
+        "upper_right": 10,
+        "lower_left": 30,
+        "lower_right": 31
+      },
+      "positive_fractions": {
+        "upper_left": 0.142857,
+        "upper_right": 1.0,
+        "lower_left": 0.1,
+        "lower_right": 1.0
+      },
+      "majority_by_quadrant": {
+        "upper_left": "NEG",
+        "upper_right": "POS",
+        "lower_left": "NEG",
+        "lower_right": "POS"
+      },
+      "chi_square": 63.426494,
+      "cramers_v": 0.901754,
+      "fixed_conditional_permutation_p": 5e-05
+    },
+    "down75_up": {
+      "classifiable_tracks": 77,
+      "near_seam_or_midline_excluded": 12,
+      "aggregate_count": 65,
+      "adequate": true,
+      "passes_strong_gate": true,
+      "counts_by_quadrant": {
+        "upper_left": [
+          0,
+          8
+        ],
+        "upper_right": [
+          9,
+          1
+        ],
+        "lower_left": [
+          3,
+          23
+        ],
+        "lower_right": [
+          21,
+          0
+        ]
+      },
+      "quadrant_total": {
+        "upper_left": 8,
+        "upper_right": 10,
+        "lower_left": 26,
+        "lower_right": 21
+      },
+      "positive_fractions": {
+        "upper_left": 0.0,
+        "upper_right": 0.9,
+        "lower_left": 0.115385,
+        "lower_right": 1.0
+      },
+      "majority_by_quadrant": {
+        "upper_left": "NEG",
+        "upper_right": "POS",
+        "lower_left": "NEG",
+        "lower_right": "POS"
+      },
+      "chi_square": 50.78125,
+      "cramers_v": 0.883883,
+      "fixed_conditional_permutation_p": 5e-05
+    }
+  },
+  "replicated_majorities": true,
+  "promoted": true,
+  "decision": "REPLICATED_SPATIAL_STROKE_ASSOCIATION_NEEDS_VISUAL_REVIEW",
+  "limit": "Exploratory structural association in one manually fixed four-sector sail geometry; p value conditions on observed stroke locations but DOES NOT adjust for all historically explored puzzle hypotheses. Association cannot establish intent, decoding or secret data.",
+  "safety": "No ordered target strokes saved; no private key, mnemonic, address, wallet or external source used."
+}
