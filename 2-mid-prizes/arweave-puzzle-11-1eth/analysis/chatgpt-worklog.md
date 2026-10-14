@@ -451,3 +451,10 @@ Stage135 selected based on independently established real 76–90 corrected full
 
 Stage135 run #38490812973 completed success, source SHA passed, synthetic patterned and balanced control passed; 4/4 real variant tables show V-shaped x-side association, original p floor 1/20001, V=.819, all formats p<=.00005 and V~.82-.90. Crucially majority direction is LEFT NEG, RIGHT POS at both top and bottom. A normal illustration with mirrored hatching violates global permutation's assumption. No decoded message.
 Selected Stage136 to condition on left/right side and ask for *new vertical variation* beyond normal V shading; uses exact conditional enumeration of 2x2 counts on each side and source-reproduction audit; precommitted natural-V negative, top-bottom inversion positive, balanced negative. No keys, mnemonic phrases, wallet operation, Twitter or external sources.
+
+
+## 2026-10-13 — Stage136 reviewed, Stage137 launched
+
+Stage136 #38491300004 finished success; canonical SHA and source table reproduction PASS, all natural-V/reversal/balanced null synthetic controls PASS. All four formats show no vertical sign effect after conditioning on left/right shading: p=.75769/.62998/1.0/.27117, vertical delta <=.1154. Stage135's p floor 0.00005 had an unrealistic global exchangeability null for illustrated triangular hatching and cannot support encoded meaning.
+
+Stage137 chosen as one image-only, ROI-defect-justified question: compare reflection of large boat's fully visible hull with directly below wake. Earlier skyline reflection studies do not specifically cover this hull, entirely outside the old ROI. Predeclared matched 520x120 source windows, ink and edge metrics and four variant replication, full/independent synthetic controls, lateral shift negatives. No ordered codes/secrets/wallet or social sources.
