@@ -277,3 +277,17 @@ Script: tools/stage129_corrected_sail_hatch_direction.py.
 - Controls: 130 synthetic strokes with exact vertical mirror positive, independently generated water-strokes negative; negative must remain ink/edge corr <=0.42 and not pass mirror gate. Control failure => repair Stage137 SAME number; real source low coverage => inconclusive, otherwise only fixed-template reflection claim closed or flagged for manual review.
 - No Twitter, wallet, private key, mnemonic, BIP39 or other secret operation.
 - Script: tools/stage137_large_hull_wake_reflection.py; artifacts: analysis/runs/stage137-large-hull-wake-reflection/.
+
+
+## 2026-10-13 — Stage137 closed; Stage138 source-corrected re-audit preregistered
+
+Stage137 Actions #38492279979 completed successfully. Canonical SHA matched, positive reflected vs independent-wake controls 8/8 passed, real hull+lower-wake both covered all 4 JPEG/source variants. Actual large-hull/wake mirror correlations: ink 0.023..0.039 and edge 0.226..0.234; all worse than shifted-water controls; verdict NO_EXACT_LARGE_HULL_WAKE_MIRROR. Retire only those matched fixed windows and two exact mirrored texture metrics.
+
+**One defect-justified new test: Stage138** revisits old Stage35's direct H/V building-facade versus underlying water-reflection orientation. Stage35 excluded first two buildings *because the incorrect large-sailboat bbox* allegedly overlapped their water y330..360; Stage132 instead verified the actual large sail begins y398, outside that reflection band. This is a demonstrable OBJECT GEOMETRY/REGION ASSOCIATION defect, not recycling an exhausted experiment.
+
+- Same Stage35 building x ranges, inner 10% margin, y330..360, Sobel/Fourier orientation estimators and original H/V labels HHVVHHVHHHHV; now all 12 buildings, four V, exact C(12,4)=495 permutations. 4 source/JPEG85/JPEG70/resample variants.
+- Independent controls: the original Stage35 ten crop measurements must reproduce within 1e-6; synthetic V-vertical/H-horizontal positive reflections and inverted negative orientations for all four variants; old excluded-source overlap invalid because real sail begins y398. All calibrations must pass before interpreting image.
+- Added buildings 1 and 2 must each show mean darkness >=2.0 in the fixed reflection aperture across all formats; otherwise INCONCLUSIVE coverage rather than negative.
+- Promotion needs **both** original Stage35 methods V-minus-H positive and one-sided exact p<=.025 each (two-test Bonferroni), surviving all four lossy/original variants. No retuning to get a positive.
+- Never derive keys, mnemonic words, account access or external Twitter content. Source canonical image only.
+- Script tools/stage138_corrected_all_building_reflections.py, outputs analysis/runs/stage138-all-building-reflection-recheck/.
