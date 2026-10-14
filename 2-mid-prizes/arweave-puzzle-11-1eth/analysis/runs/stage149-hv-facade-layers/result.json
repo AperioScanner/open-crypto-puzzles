@@ -1,0 +1,1514 @@
+{
+  "experiment_id": "A11-EXP-149",
+  "hypothesis": "the stable H/V label of each whole source building might mask internally mixed hatch angles in upper/middle/lower subregions, challenging a simple one-symbol-per-building visual reading",
+  "why_new": "Stage10/31 measured aggregate per-building H/V; Stage121 counted exact hatch LINES; Stage148 tested building DIMENSIONS, but no prior test independently classified three disjoint height layers in each source facade.",
+  "scope": "12 fixed native facade boxes x three disjoint interior vertical tiers, original/JPEG85/JPEG70/down75_up, Sobel and directional pixel-lag independent estimators",
+  "sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "original_labels": "HHVVHHVHHHHV",
+  "fixed_gates": {
+    "x_inner_fraction": 0.12,
+    "source_top_fraction": 0.14,
+    "source_bottom_fraction": 0.1,
+    "y_inner_zone_guard_px": 3,
+    "min_source_dark_fraction": 0.065,
+    "sobel_orientation_gate": 0.14,
+    "pixel_lag_orientation_gate": 0.1,
+    "pixels_per_lag": 4,
+    "min_covered_facade_zones": 30,
+    "mixed_buildings_gate": 4,
+    "whole_hv_matching_buildings_gate": 10
+  },
+  "controls": {
+    "pass": true,
+    "passed_cases": 576,
+    "cases": 576,
+    "fixture_scores": {
+      "all_horizontal": {
+        "original": 36,
+        "jpeg85": 36,
+        "jpeg70": 36,
+        "down75_up": 36
+      },
+      "all_vertical": {
+        "original": 36,
+        "jpeg85": 36,
+        "jpeg70": 36,
+        "down75_up": 36
+      },
+      "mixed_HVH": {
+        "original": 36,
+        "jpeg85": 36,
+        "jpeg70": 36,
+        "down75_up": 36
+      },
+      "blank": {
+        "original": 36,
+        "jpeg85": 36,
+        "jpeg70": 36,
+        "down75_up": 36
+      }
+    },
+    "failures": []
+  },
+  "whole_source_HV_reproduction_pass": true,
+  "fully_replicated_zone_count": 35,
+  "all_three_zones_same_as_whole_HV_count": 9,
+  "buildings_with_stably_opposed_zone_directions": 3,
+  "building_summary": {
+    "1": {
+      "whole_facade_stage10": "H",
+      "upper_middle_lower": {
+        "upper": "H",
+        "middle": "H",
+        "lower": "H"
+      },
+      "all_3_stable_and_same_as_original": true,
+      "contains_two_stable_opposite_directions": false
+    },
+    "2": {
+      "whole_facade_stage10": "H",
+      "upper_middle_lower": {
+        "upper": "H",
+        "middle": "H",
+        "lower": "H"
+      },
+      "all_3_stable_and_same_as_original": true,
+      "contains_two_stable_opposite_directions": false
+    },
+    "3": {
+      "whole_facade_stage10": "V",
+      "upper_middle_lower": {
+        "upper": "V",
+        "middle": null,
+        "lower": "H"
+      },
+      "all_3_stable_and_same_as_original": false,
+      "contains_two_stable_opposite_directions": true
+    },
+    "4": {
+      "whole_facade_stage10": "V",
+      "upper_middle_lower": {
+        "upper": "V",
+        "middle": "V",
+        "lower": "H"
+      },
+      "all_3_stable_and_same_as_original": false,
+      "contains_two_stable_opposite_directions": true
+    },
+    "5": {
+      "whole_facade_stage10": "H",
+      "upper_middle_lower": {
+        "upper": "H",
+        "middle": "H",
+        "lower": "H"
+      },
+      "all_3_stable_and_same_as_original": true,
+      "contains_two_stable_opposite_directions": false
+    },
+    "6": {
+      "whole_facade_stage10": "H",
+      "upper_middle_lower": {
+        "upper": "H",
+        "middle": "H",
+        "lower": "H"
+      },
+      "all_3_stable_and_same_as_original": true,
+      "contains_two_stable_opposite_directions": false
+    },
+    "7": {
+      "whole_facade_stage10": "V",
+      "upper_middle_lower": {
+        "upper": "V",
+        "middle": "V",
+        "lower": "H"
+      },
+      "all_3_stable_and_same_as_original": false,
+      "contains_two_stable_opposite_directions": true
+    },
+    "8": {
+      "whole_facade_stage10": "H",
+      "upper_middle_lower": {
+        "upper": "H",
+        "middle": "H",
+        "lower": "H"
+      },
+      "all_3_stable_and_same_as_original": true,
+      "contains_two_stable_opposite_directions": false
+    },
+    "9": {
+      "whole_facade_stage10": "H",
+      "upper_middle_lower": {
+        "upper": "H",
+        "middle": "H",
+        "lower": "H"
+      },
+      "all_3_stable_and_same_as_original": true,
+      "contains_two_stable_opposite_directions": false
+    },
+    "10": {
+      "whole_facade_stage10": "H",
+      "upper_middle_lower": {
+        "upper": "H",
+        "middle": "H",
+        "lower": "H"
+      },
+      "all_3_stable_and_same_as_original": true,
+      "contains_two_stable_opposite_directions": false
+    },
+    "11": {
+      "whole_facade_stage10": "H",
+      "upper_middle_lower": {
+        "upper": "H",
+        "middle": "H",
+        "lower": "H"
+      },
+      "all_3_stable_and_same_as_original": true,
+      "contains_two_stable_opposite_directions": false
+    },
+    "12": {
+      "whole_facade_stage10": "V",
+      "upper_middle_lower": {
+        "upper": "V",
+        "middle": "V",
+        "lower": "V"
+      },
+      "all_3_stable_and_same_as_original": true,
+      "contains_two_stable_opposite_directions": false
+    }
+  },
+  "by_format": {
+    "original": {
+      "1": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.710438,
+          "adequate": true,
+          "sobel_score": -0.421149,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.728501,
+          "adequate": true,
+          "sobel_score": -0.466129,
+          "lag_orientation_score": -1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.204966,
+          "adequate": true,
+          "sobel_score": -0.443359,
+          "lag_orientation_score": -0.704939
+        }
+      },
+      "2": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.774351,
+          "adequate": true,
+          "sobel_score": -0.431813,
+          "lag_orientation_score": -0.965945
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.691388,
+          "adequate": true,
+          "sobel_score": -0.383138,
+          "lag_orientation_score": -0.605301
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.434253,
+          "adequate": true,
+          "sobel_score": -0.416448,
+          "lag_orientation_score": -0.286571
+        }
+      },
+      "3": {
+        "upper": {
+          "class": "V",
+          "dark_fraction": 0.503528,
+          "adequate": true,
+          "sobel_score": 0.648175,
+          "lag_orientation_score": 1.0
+        },
+        "middle": {
+          "class": "V",
+          "dark_fraction": 0.552083,
+          "adequate": true,
+          "sobel_score": 0.197354,
+          "lag_orientation_score": 0.143197
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.292339,
+          "adequate": true,
+          "sobel_score": -0.443797,
+          "lag_orientation_score": -0.939177
+        }
+      },
+      "4": {
+        "upper": {
+          "class": "V",
+          "dark_fraction": 0.382102,
+          "adequate": true,
+          "sobel_score": 0.610422,
+          "lag_orientation_score": 1.0
+        },
+        "middle": {
+          "class": "V",
+          "dark_fraction": 0.309155,
+          "adequate": true,
+          "sobel_score": 0.616448,
+          "lag_orientation_score": 1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.265309,
+          "adequate": true,
+          "sobel_score": -0.169709,
+          "lag_orientation_score": -0.400723
+        }
+      },
+      "5": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.675368,
+          "adequate": true,
+          "sobel_score": -0.494495,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.570772,
+          "adequate": true,
+          "sobel_score": -0.533414,
+          "lag_orientation_score": -1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.361949,
+          "adequate": true,
+          "sobel_score": -0.510222,
+          "lag_orientation_score": -0.82115
+        }
+      },
+      "6": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.679894,
+          "adequate": true,
+          "sobel_score": -0.373446,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.513194,
+          "adequate": true,
+          "sobel_score": -0.484273,
+          "lag_orientation_score": -0.550477
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.433862,
+          "adequate": true,
+          "sobel_score": -0.491418,
+          "lag_orientation_score": -1.0
+        }
+      },
+      "7": {
+        "upper": {
+          "class": "V",
+          "dark_fraction": 0.508772,
+          "adequate": true,
+          "sobel_score": 0.481282,
+          "lag_orientation_score": 1.0
+        },
+        "middle": {
+          "class": "V",
+          "dark_fraction": 0.381289,
+          "adequate": true,
+          "sobel_score": 0.57397,
+          "lag_orientation_score": 1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.327437,
+          "adequate": true,
+          "sobel_score": -0.178295,
+          "lag_orientation_score": -0.56737
+        }
+      },
+      "8": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.456364,
+          "adequate": true,
+          "sobel_score": -0.450744,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.374304,
+          "adequate": true,
+          "sobel_score": -0.498268,
+          "lag_orientation_score": -1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.327273,
+          "adequate": true,
+          "sobel_score": -0.5464,
+          "lag_orientation_score": -1.0
+        }
+      },
+      "9": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.69279,
+          "adequate": true,
+          "sobel_score": -0.318128,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.730519,
+          "adequate": true,
+          "sobel_score": -0.320616,
+          "lag_orientation_score": -1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.245559,
+          "adequate": true,
+          "sobel_score": -0.421755,
+          "lag_orientation_score": -0.547402
+        }
+      },
+      "10": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.64048,
+          "adequate": true,
+          "sobel_score": -0.460517,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.412765,
+          "adequate": true,
+          "sobel_score": -0.498135,
+          "lag_orientation_score": -1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.356792,
+          "adequate": true,
+          "sobel_score": -0.375951,
+          "lag_orientation_score": -0.560795
+        }
+      },
+      "11": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.360215,
+          "adequate": true,
+          "sobel_score": -0.340359,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.309524,
+          "adequate": true,
+          "sobel_score": -0.465866,
+          "lag_orientation_score": -0.806174
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.237327,
+          "adequate": true,
+          "sobel_score": -0.326637,
+          "lag_orientation_score": -0.551172
+        }
+      },
+      "12": {
+        "upper": {
+          "class": "V",
+          "dark_fraction": 0.64902,
+          "adequate": true,
+          "sobel_score": 0.598991,
+          "lag_orientation_score": 0.956686
+        },
+        "middle": {
+          "class": "V",
+          "dark_fraction": 0.552614,
+          "adequate": true,
+          "sobel_score": 0.56713,
+          "lag_orientation_score": 0.935091
+        },
+        "lower": {
+          "class": "V",
+          "dark_fraction": 0.39902,
+          "adequate": true,
+          "sobel_score": 0.228695,
+          "lag_orientation_score": 0.125201
+        }
+      }
+    },
+    "jpeg85": {
+      "1": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.711279,
+          "adequate": true,
+          "sobel_score": -0.420375,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.725635,
+          "adequate": true,
+          "sobel_score": -0.466629,
+          "lag_orientation_score": -1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.208333,
+          "adequate": true,
+          "sobel_score": -0.440597,
+          "lag_orientation_score": -0.68388
+        }
+      },
+      "2": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.775974,
+          "adequate": true,
+          "sobel_score": -0.431031,
+          "lag_orientation_score": -0.966399
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.694046,
+          "adequate": true,
+          "sobel_score": -0.381525,
+          "lag_orientation_score": -0.602902
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.433712,
+          "adequate": true,
+          "sobel_score": -0.41455,
+          "lag_orientation_score": -0.285049
+        }
+      },
+      "3": {
+        "upper": {
+          "class": "V",
+          "dark_fraction": 0.50504,
+          "adequate": true,
+          "sobel_score": 0.648176,
+          "lag_orientation_score": 1.0
+        },
+        "middle": {
+          "class": "V",
+          "dark_fraction": 0.550521,
+          "adequate": true,
+          "sobel_score": 0.196571,
+          "lag_orientation_score": 0.141746
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.294355,
+          "adequate": true,
+          "sobel_score": -0.443415,
+          "lag_orientation_score": -0.92807
+        }
+      },
+      "4": {
+        "upper": {
+          "class": "V",
+          "dark_fraction": 0.382102,
+          "adequate": true,
+          "sobel_score": 0.609631,
+          "lag_orientation_score": 1.0
+        },
+        "middle": {
+          "class": "V",
+          "dark_fraction": 0.309155,
+          "adequate": true,
+          "sobel_score": 0.61478,
+          "lag_orientation_score": 1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.264678,
+          "adequate": true,
+          "sobel_score": -0.171382,
+          "lag_orientation_score": -0.398429
+        }
+      },
+      "5": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.674265,
+          "adequate": true,
+          "sobel_score": -0.494455,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.570956,
+          "adequate": true,
+          "sobel_score": -0.53343,
+          "lag_orientation_score": -1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.361213,
+          "adequate": true,
+          "sobel_score": -0.508887,
+          "lag_orientation_score": -0.816133
+        }
+      },
+      "6": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.673942,
+          "adequate": true,
+          "sobel_score": -0.373303,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.510417,
+          "adequate": true,
+          "sobel_score": -0.48348,
+          "lag_orientation_score": -0.550641
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.434524,
+          "adequate": true,
+          "sobel_score": -0.491658,
+          "lag_orientation_score": -1.0
+        }
+      },
+      "7": {
+        "upper": {
+          "class": "V",
+          "dark_fraction": 0.507478,
+          "adequate": true,
+          "sobel_score": 0.480251,
+          "lag_orientation_score": 1.0
+        },
+        "middle": {
+          "class": "V",
+          "dark_fraction": 0.382702,
+          "adequate": true,
+          "sobel_score": 0.57339,
+          "lag_orientation_score": 1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.328013,
+          "adequate": true,
+          "sobel_score": -0.17739,
+          "lag_orientation_score": -0.563408
+        }
+      },
+      "8": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.455682,
+          "adequate": true,
+          "sobel_score": -0.449488,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.372681,
+          "adequate": true,
+          "sobel_score": -0.496937,
+          "lag_orientation_score": -1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.327955,
+          "adequate": true,
+          "sobel_score": -0.544146,
+          "lag_orientation_score": -1.0
+        }
+      },
+      "9": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.69488,
+          "adequate": true,
+          "sobel_score": -0.317852,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.728896,
+          "adequate": true,
+          "sobel_score": -0.321323,
+          "lag_orientation_score": -1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.246082,
+          "adequate": true,
+          "sobel_score": -0.41845,
+          "lag_orientation_score": -0.54161
+        }
+      },
+      "10": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.642935,
+          "adequate": true,
+          "sobel_score": -0.46064,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.411929,
+          "adequate": true,
+          "sobel_score": -0.498308,
+          "lag_orientation_score": -1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.354883,
+          "adequate": true,
+          "sobel_score": -0.374578,
+          "lag_orientation_score": -0.553926
+        }
+      },
+      "11": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.354839,
+          "adequate": true,
+          "sobel_score": -0.34004,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.305556,
+          "adequate": true,
+          "sobel_score": -0.465187,
+          "lag_orientation_score": -0.79748
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.234255,
+          "adequate": true,
+          "sobel_score": -0.324011,
+          "lag_orientation_score": -0.539826
+        }
+      },
+      "12": {
+        "upper": {
+          "class": "V",
+          "dark_fraction": 0.645752,
+          "adequate": true,
+          "sobel_score": 0.598612,
+          "lag_orientation_score": 0.957818
+        },
+        "middle": {
+          "class": "V",
+          "dark_fraction": 0.553268,
+          "adequate": true,
+          "sobel_score": 0.567381,
+          "lag_orientation_score": 0.938285
+        },
+        "lower": {
+          "class": "V",
+          "dark_fraction": 0.39902,
+          "adequate": true,
+          "sobel_score": 0.227142,
+          "lag_orientation_score": 0.122073
+        }
+      }
+    },
+    "jpeg70": {
+      "1": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.713805,
+          "adequate": true,
+          "sobel_score": -0.421492,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.723587,
+          "adequate": true,
+          "sobel_score": -0.464246,
+          "lag_orientation_score": -1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.209175,
+          "adequate": true,
+          "sobel_score": -0.439176,
+          "lag_orientation_score": -0.668977
+        }
+      },
+      "2": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.776515,
+          "adequate": true,
+          "sobel_score": -0.432452,
+          "lag_orientation_score": -0.958489
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.698299,
+          "adequate": true,
+          "sobel_score": -0.381124,
+          "lag_orientation_score": -0.602937
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.433442,
+          "adequate": true,
+          "sobel_score": -0.413298,
+          "lag_orientation_score": -0.281647
+        }
+      },
+      "3": {
+        "upper": {
+          "class": "V",
+          "dark_fraction": 0.50756,
+          "adequate": true,
+          "sobel_score": 0.649391,
+          "lag_orientation_score": 1.0
+        },
+        "middle": {
+          "class": "V",
+          "dark_fraction": 0.553125,
+          "adequate": true,
+          "sobel_score": 0.197468,
+          "lag_orientation_score": 0.149663
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.291835,
+          "adequate": true,
+          "sobel_score": -0.439981,
+          "lag_orientation_score": -0.914829
+        }
+      },
+      "4": {
+        "upper": {
+          "class": "V",
+          "dark_fraction": 0.383681,
+          "adequate": true,
+          "sobel_score": 0.611622,
+          "lag_orientation_score": 1.0
+        },
+        "middle": {
+          "class": "V",
+          "dark_fraction": 0.309639,
+          "adequate": true,
+          "sobel_score": 0.614221,
+          "lag_orientation_score": 1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.266572,
+          "adequate": true,
+          "sobel_score": -0.17094,
+          "lag_orientation_score": -0.394435
+        }
+      },
+      "5": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.674632,
+          "adequate": true,
+          "sobel_score": -0.494481,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.576471,
+          "adequate": true,
+          "sobel_score": -0.533227,
+          "lag_orientation_score": -1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.359743,
+          "adequate": true,
+          "sobel_score": -0.508765,
+          "lag_orientation_score": -0.814791
+        }
+      },
+      "6": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.676587,
+          "adequate": true,
+          "sobel_score": -0.372441,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.508333,
+          "adequate": true,
+          "sobel_score": -0.480826,
+          "lag_orientation_score": -0.549087
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.437831,
+          "adequate": true,
+          "sobel_score": -0.491306,
+          "lag_orientation_score": -1.0
+        }
+      },
+      "7": {
+        "upper": {
+          "class": "V",
+          "dark_fraction": 0.512223,
+          "adequate": true,
+          "sobel_score": 0.481076,
+          "lag_orientation_score": 1.0
+        },
+        "middle": {
+          "class": "V",
+          "dark_fraction": 0.382561,
+          "adequate": true,
+          "sobel_score": 0.573329,
+          "lag_orientation_score": 1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.326143,
+          "adequate": true,
+          "sobel_score": -0.177644,
+          "lag_orientation_score": -0.554596
+        }
+      },
+      "8": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.458636,
+          "adequate": true,
+          "sobel_score": -0.449418,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.374536,
+          "adequate": true,
+          "sobel_score": -0.495904,
+          "lag_orientation_score": -1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.328636,
+          "adequate": true,
+          "sobel_score": -0.543153,
+          "lag_orientation_score": -1.0
+        }
+      },
+      "9": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.695402,
+          "adequate": true,
+          "sobel_score": -0.319064,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.729978,
+          "adequate": true,
+          "sobel_score": -0.320009,
+          "lag_orientation_score": -1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.246082,
+          "adequate": true,
+          "sobel_score": -0.415091,
+          "lag_orientation_score": -0.531129
+        }
+      },
+      "10": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.644026,
+          "adequate": true,
+          "sobel_score": -0.46165,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.413043,
+          "adequate": true,
+          "sobel_score": -0.496699,
+          "lag_orientation_score": -1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.354883,
+          "adequate": true,
+          "sobel_score": -0.373735,
+          "lag_orientation_score": -0.550425
+        }
+      },
+      "11": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.361751,
+          "adequate": true,
+          "sobel_score": -0.338482,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.310317,
+          "adequate": true,
+          "sobel_score": -0.463138,
+          "lag_orientation_score": -0.800846
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.236559,
+          "adequate": true,
+          "sobel_score": -0.32422,
+          "lag_orientation_score": -0.533734
+        }
+      },
+      "12": {
+        "upper": {
+          "class": "V",
+          "dark_fraction": 0.646078,
+          "adequate": true,
+          "sobel_score": 0.597219,
+          "lag_orientation_score": 0.95727
+        },
+        "middle": {
+          "class": "V",
+          "dark_fraction": 0.556209,
+          "adequate": true,
+          "sobel_score": 0.564539,
+          "lag_orientation_score": 0.93071
+        },
+        "lower": {
+          "class": "V",
+          "dark_fraction": 0.40098,
+          "adequate": true,
+          "sobel_score": 0.228074,
+          "lag_orientation_score": 0.125898
+        }
+      }
+    },
+    "down75_up": {
+      "1": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.747054,
+          "adequate": true,
+          "sobel_score": -0.424505,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.757985,
+          "adequate": true,
+          "sobel_score": -0.47034,
+          "lag_orientation_score": -1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.235269,
+          "adequate": true,
+          "sobel_score": -0.436927,
+          "lag_orientation_score": -0.690958
+        }
+      },
+      "2": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.797078,
+          "adequate": true,
+          "sobel_score": -0.429815,
+          "lag_orientation_score": -0.981436
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.72807,
+          "adequate": true,
+          "sobel_score": -0.381518,
+          "lag_orientation_score": -0.590228
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.455357,
+          "adequate": true,
+          "sobel_score": -0.408267,
+          "lag_orientation_score": -0.26247
+        }
+      },
+      "3": {
+        "upper": {
+          "class": "V",
+          "dark_fraction": 0.535786,
+          "adequate": true,
+          "sobel_score": 0.650514,
+          "lag_orientation_score": 1.0
+        },
+        "middle": {
+          "class": null,
+          "dark_fraction": 0.597396,
+          "adequate": true,
+          "sobel_score": 0.178177,
+          "lag_orientation_score": 0.036064
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.31754,
+          "adequate": true,
+          "sobel_score": -0.441488,
+          "lag_orientation_score": -0.891796
+        }
+      },
+      "4": {
+        "upper": {
+          "class": "V",
+          "dark_fraction": 0.411774,
+          "adequate": true,
+          "sobel_score": 0.602869,
+          "lag_orientation_score": 1.0
+        },
+        "middle": {
+          "class": "V",
+          "dark_fraction": 0.331077,
+          "adequate": true,
+          "sobel_score": 0.608075,
+          "lag_orientation_score": 1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.289931,
+          "adequate": true,
+          "sobel_score": -0.181791,
+          "lag_orientation_score": -0.375815
+        }
+      },
+      "5": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.707904,
+          "adequate": true,
+          "sobel_score": -0.49897,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.596507,
+          "adequate": true,
+          "sobel_score": -0.535457,
+          "lag_orientation_score": -1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.384559,
+          "adequate": true,
+          "sobel_score": -0.505214,
+          "lag_orientation_score": -0.817388
+        }
+      },
+      "6": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.717593,
+          "adequate": true,
+          "sobel_score": -0.383663,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.540972,
+          "adequate": true,
+          "sobel_score": -0.474108,
+          "lag_orientation_score": -0.567112
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.460317,
+          "adequate": true,
+          "sobel_score": -0.495692,
+          "lag_orientation_score": -1.0
+        }
+      },
+      "7": {
+        "upper": {
+          "class": "V",
+          "dark_fraction": 0.538683,
+          "adequate": true,
+          "sobel_score": 0.484977,
+          "lag_orientation_score": 1.0
+        },
+        "middle": {
+          "class": "V",
+          "dark_fraction": 0.401498,
+          "adequate": true,
+          "sobel_score": 0.572457,
+          "lag_orientation_score": 1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.356773,
+          "adequate": true,
+          "sobel_score": -0.181568,
+          "lag_orientation_score": -0.575889
+        }
+      },
+      "8": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.481591,
+          "adequate": true,
+          "sobel_score": -0.451133,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.411178,
+          "adequate": true,
+          "sobel_score": -0.497477,
+          "lag_orientation_score": -1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.355227,
+          "adequate": true,
+          "sobel_score": -0.546731,
+          "lag_orientation_score": -1.0
+        }
+      },
+      "9": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.740857,
+          "adequate": true,
+          "sobel_score": -0.319823,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.780844,
+          "adequate": true,
+          "sobel_score": -0.322746,
+          "lag_orientation_score": -1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.276385,
+          "adequate": true,
+          "sobel_score": -0.41911,
+          "lag_orientation_score": -0.50642
+        }
+      },
+      "10": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.662029,
+          "adequate": true,
+          "sobel_score": -0.459322,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.448161,
+          "adequate": true,
+          "sobel_score": -0.49527,
+          "lag_orientation_score": -1.0
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.385161,
+          "adequate": true,
+          "sobel_score": -0.368583,
+          "lag_orientation_score": -0.546172
+        }
+      },
+      "11": {
+        "upper": {
+          "class": "H",
+          "dark_fraction": 0.383257,
+          "adequate": true,
+          "sobel_score": -0.338114,
+          "lag_orientation_score": -1.0
+        },
+        "middle": {
+          "class": "H",
+          "dark_fraction": 0.338889,
+          "adequate": true,
+          "sobel_score": -0.448834,
+          "lag_orientation_score": -0.748351
+        },
+        "lower": {
+          "class": "H",
+          "dark_fraction": 0.252688,
+          "adequate": true,
+          "sobel_score": -0.322951,
+          "lag_orientation_score": -0.590496
+        }
+      },
+      "12": {
+        "upper": {
+          "class": "V",
+          "dark_fraction": 0.66634,
+          "adequate": true,
+          "sobel_score": 0.596054,
+          "lag_orientation_score": 0.99119
+        },
+        "middle": {
+          "class": "V",
+          "dark_fraction": 0.582353,
+          "adequate": true,
+          "sobel_score": 0.557872,
+          "lag_orientation_score": 0.964329
+        },
+        "lower": {
+          "class": "V",
+          "dark_fraction": 0.419281,
+          "adequate": true,
+          "sobel_score": 0.217884,
+          "lag_orientation_score": 0.122967
+        }
+      }
+    }
+  },
+  "registered_boxes": {
+    "1:upper": [
+      245,
+      187,
+      311,
+      223
+    ],
+    "1:middle": [
+      245,
+      229,
+      311,
+      266
+    ],
+    "1:lower": [
+      245,
+      272,
+      311,
+      308
+    ],
+    "2:upper": [
+      336,
+      115,
+      402,
+      171
+    ],
+    "2:middle": [
+      336,
+      177,
+      402,
+      234
+    ],
+    "2:lower": [
+      336,
+      240,
+      402,
+      296
+    ],
+    "3:upper": [
+      426,
+      206,
+      490,
+      237
+    ],
+    "3:middle": [
+      426,
+      243,
+      490,
+      273
+    ],
+    "3:lower": [
+      426,
+      279,
+      490,
+      310
+    ],
+    "4:upper": [
+      523,
+      140,
+      655,
+      188
+    ],
+    "4:middle": [
+      523,
+      194,
+      655,
+      241
+    ],
+    "4:lower": [
+      523,
+      247,
+      655,
+      295
+    ],
+    "5:upper": [
+      690,
+      64,
+      770,
+      132
+    ],
+    "5:middle": [
+      690,
+      138,
+      770,
+      206
+    ],
+    "5:lower": [
+      690,
+      212,
+      770,
+      280
+    ],
+    "6:upper": [
+      895,
+      219,
+      967,
+      240
+    ],
+    "6:middle": [
+      895,
+      246,
+      967,
+      266
+    ],
+    "6:lower": [
+      895,
+      272,
+      967,
+      293
+    ],
+    "7:upper": [
+      999,
+      110,
+      1121,
+      167
+    ],
+    "7:middle": [
+      999,
+      173,
+      1121,
+      231
+    ],
+    "7:lower": [
+      999,
+      237,
+      1121,
+      294
+    ],
+    "8:upper": [
+      1156,
+      135,
+      1244,
+      185
+    ],
+    "8:middle": [
+      1156,
+      191,
+      1244,
+      240
+    ],
+    "8:lower": [
+      1156,
+      246,
+      1244,
+      296
+    ],
+    "9:upper": [
+      1271,
+      198,
+      1337,
+      227
+    ],
+    "9:middle": [
+      1271,
+      233,
+      1337,
+      261
+    ],
+    "9:lower": [
+      1271,
+      267,
+      1337,
+      296
+    ],
+    "10:upper": [
+      1362,
+      137,
+      1440,
+      184
+    ],
+    "10:middle": [
+      1362,
+      190,
+      1440,
+      236
+    ],
+    "10:lower": [
+      1362,
+      242,
+      1440,
+      289
+    ],
+    "11:upper": [
+      1461,
+      186,
+      1503,
+      217
+    ],
+    "11:middle": [
+      1461,
+      223,
+      1503,
+      253
+    ],
+    "11:lower": [
+      1461,
+      259,
+      1503,
+      290
+    ],
+    "12:upper": [
+      1523,
+      109,
+      1583,
+      160
+    ],
+    "12:middle": [
+      1523,
+      166,
+      1583,
+      217
+    ],
+    "12:lower": [
+      1523,
+      223,
+      1583,
+      274
+    ]
+  },
+  "decision": "FACADES_PARTIALLY_MIXED_OR_SOURCE_AMBIGUOUS",
+  "scope_guard": "Tests only two angle estimators in 3 facades zones; not an exact stroke-count or 0x321 decoding. Uniform H/V does not imply author intended a binary key, mixed zones do not falsify all possible visual symbols. Multiple prior hypotheses mean any surprise is exploratory.",
+  "safety": "Only pixels and public building geometry. No private keys, wallet, addresses, mnemonics, BIP39, derived key or external source."
+}
