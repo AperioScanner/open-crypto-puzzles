@@ -85,3 +85,8 @@ Stage129 first control failure repaired, second run 60/60 controls passed, 0/5 r
 
 ## Stage130 inconclusive; Stage131 direct-image test (2026-10-13)
 Stage130 synthetic panel-classification controls passed 100/100 but real five-sail classifications were 0/5; cannot infer signed coding or its absence. New Stage131 independently checks whether sparse ink marks in four blank-sky regions are reliably drawn short dashes rather than scanner speckles. Source positions must survive lossy transforms and two connected-shape methods, with synthetic 3-dash vs 1-pixel noise controls. This does not reuse water loops, sail panels or the top 0..48 strip census.
+
+
+## Stage131 valid negative; Stage132 geometry-provenance audit
+
+Stage131: 192/192 dash-versus-speckle positive/negative controls pass; no reproducible 12–250-pixel short isolated sky marks in its four fixed sky regions. New Stage132 is a source-quality audit, not a key test: the legacy "large_sailboat" bbox [44,320,359,599] appears to omit most of the visible large triangle and hull in the canonical image. Quantify missing ink across fixed polygons, three thresholds and four lossy variants; controls ensure full-vs-truncated shape distinguishes correct vs incomplete ROI. Do not declare old hypotheses invalid until the measured polygon/ROI boundaries and scope are reviewed.
