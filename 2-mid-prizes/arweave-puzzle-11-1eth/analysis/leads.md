@@ -190,3 +190,8 @@ Stage149 576/576 positive/mixed/blank controls passed, 35/36 real facade zones r
 ## Stage150 V/H basal observation source boundary sensitive; Stage151 under-pier triangle
 
 Stage150 3/3 controlled synthetic patterns calibrate 4 V-facade x/y jitter; source original Stage149 replay passed. Top of all 4 V buildings classified V in 36/36, but bottom labels #4/#7 were only H in 24/36 and #12 V 24/36 due missing classifications, while #3 was H 36/36. Original three lower-H observation did not meet strict 31/36 gate. Stage151 explores a genuinely different original-image visible triangle beneath the right pier around x1052..1280/y633..778 (not one of five known small sails). Test the fixed candidate's affine-normalized interior ink density and fine pen hatching against five known sails, with 48 calibrated filled/hollow synthetic source objects and four rendered formats. No encoded key hypothesis.
+
+
+## Stage151 under-pier not a densely hatched sixth sail; Stage152 outlines
+
+Stage151 canonical/PDF? No, source PNG only. 48/48 hatched/hollow synthetic controls passed and all five true sails recovered across 4 renderings. Candidate hollow under right pier interior dark 15.4% vs genuine sails 76–85%, so under-pier shape is NOT a densely hatched sixth sail. Stage152 checks separate genuine three-side closure under the exact same six fixed candidate/known triangles using predeclared edge ink support and full/missing-base/mast-only synthetic fixtures (72 checks), not image secret decoding.
