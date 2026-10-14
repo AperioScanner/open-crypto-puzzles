@@ -1,0 +1,435 @@
+{
+  "experiment_id": "A11-EXP-157",
+  "source_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "motivation": "Stage155 proved prior Stage12 y-band excluded four genuine sails; Stage156 non-secret count recheck found no stable 321 or 123.",
+  "historical_stage12_lag_replay": {
+    "pass": true,
+    "expected": {
+      "x": {
+        "best_lag": 3,
+        "score": 0.9695535534887672
+      },
+      "y": {
+        "best_lag": 3,
+        "score": 0.9476694601047309
+      }
+    },
+    "measured": {
+      "x": {
+        "best_lag": 3,
+        "score": 0.9695535534887672
+      },
+      "y": {
+        "best_lag": 3,
+        "score": 0.9476694601047309
+      }
+    }
+  },
+  "source_fixed_bbox": [
+    1000,
+    350,
+    1545,
+    554
+  ],
+  "fixed_sail_polygon_source": "Stage153 5 genuine sail polygons",
+  "fixed_gates": {
+    "source_thresholds": [
+      110,
+      140,
+      170
+    ],
+    "source_formats": [
+      "original",
+      "jpeg85",
+      "jpeg70",
+      "down75_up"
+    ],
+    "mask_erosion": 5,
+    "bbox_padding": 7,
+    "control_flat": "x lag 3 and score>=0.80",
+    "control_period12": "x lag 11..13 and score>=0.70",
+    "real_silhouette_compatible": "x lag3 in all 12 with abs real-minus-flat score<=0.30",
+    "nontrivial_source": "same x lag>=6 in all 12 and score>=0.70"
+  },
+  "synthetic_controls": {
+    "pass": true,
+    "passed": 24,
+    "cases": 24,
+    "failed_cases": []
+  },
+  "by_variant": {
+    "original": {
+      "110": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.8609532799854744
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9506146910193107
+        }
+      },
+      "140": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.8770870273245224
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9533974328425892
+        }
+      },
+      "170": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.8975572077920934
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9507111695636983
+        }
+      }
+    },
+    "jpeg85": {
+      "110": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.8606976183981392
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9495294006777193
+        }
+      },
+      "140": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.8789892348494981
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9525085597298014
+        }
+      },
+      "170": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.8984526668900769
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9503483003550034
+        }
+      }
+    },
+    "jpeg70": {
+      "110": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.8604731003730842
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9513358900274956
+        }
+      },
+      "140": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.878183452569566
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9522004275856962
+        }
+      },
+      "170": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.8976718843408426
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9520714526037192
+        }
+      }
+    },
+    "down75_up": {
+      "110": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.856812318626442
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9520999705636282
+        }
+      },
+      "140": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.8820827921765393
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.949516065245025
+        }
+      },
+      "170": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9014074283924495
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9500925866976611
+        }
+      }
+    }
+  },
+  "flat_silhouette_by_variant": {
+    "original": {
+      "110": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9805626359157289
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9386292113592923
+        }
+      },
+      "140": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9805626359157289
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9386292113592923
+        }
+      },
+      "170": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9805626359157289
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9386292113592923
+        }
+      }
+    },
+    "jpeg85": {
+      "110": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9805626359157289
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9386292113592923
+        }
+      },
+      "140": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9805626359157289
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9386292113592923
+        }
+      },
+      "170": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9805626359157289
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9386292113592923
+        }
+      }
+    },
+    "jpeg70": {
+      "110": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9805626359157289
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9386292113592923
+        }
+      },
+      "140": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9805626359157289
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9386292113592923
+        }
+      },
+      "170": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9805626359157289
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9386292113592923
+        }
+      }
+    },
+    "down75_up": {
+      "110": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9805882942749625
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.938900652785406
+        }
+      },
+      "140": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9806238905760994
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.938637018912525
+        }
+      },
+      "170": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9805626359157289
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9386292113592923
+        }
+      }
+    }
+  },
+  "source_vs_flat": [
+    {
+      "format": "original",
+      "threshold": 110,
+      "real_lag": 3,
+      "real_score": 0.8609532799854744,
+      "flat_lag": 3,
+      "flat_score": 0.9805626359157289,
+      "abs_score_diff": 0.11960935593025446
+    },
+    {
+      "format": "original",
+      "threshold": 140,
+      "real_lag": 3,
+      "real_score": 0.8770870273245224,
+      "flat_lag": 3,
+      "flat_score": 0.9805626359157289,
+      "abs_score_diff": 0.10347560859120652
+    },
+    {
+      "format": "original",
+      "threshold": 170,
+      "real_lag": 3,
+      "real_score": 0.8975572077920934,
+      "flat_lag": 3,
+      "flat_score": 0.9805626359157289,
+      "abs_score_diff": 0.08300542812363554
+    },
+    {
+      "format": "jpeg85",
+      "threshold": 110,
+      "real_lag": 3,
+      "real_score": 0.8606976183981392,
+      "flat_lag": 3,
+      "flat_score": 0.9805626359157289,
+      "abs_score_diff": 0.11986501751758971
+    },
+    {
+      "format": "jpeg85",
+      "threshold": 140,
+      "real_lag": 3,
+      "real_score": 0.8789892348494981,
+      "flat_lag": 3,
+      "flat_score": 0.9805626359157289,
+      "abs_score_diff": 0.1015734010662308
+    },
+    {
+      "format": "jpeg85",
+      "threshold": 170,
+      "real_lag": 3,
+      "real_score": 0.8984526668900769,
+      "flat_lag": 3,
+      "flat_score": 0.9805626359157289,
+      "abs_score_diff": 0.08210996902565204
+    },
+    {
+      "format": "jpeg70",
+      "threshold": 110,
+      "real_lag": 3,
+      "real_score": 0.8604731003730842,
+      "flat_lag": 3,
+      "flat_score": 0.9805626359157289,
+      "abs_score_diff": 0.12008953554264468
+    },
+    {
+      "format": "jpeg70",
+      "threshold": 140,
+      "real_lag": 3,
+      "real_score": 0.878183452569566,
+      "flat_lag": 3,
+      "flat_score": 0.9805626359157289,
+      "abs_score_diff": 0.10237918334616292
+    },
+    {
+      "format": "jpeg70",
+      "threshold": 170,
+      "real_lag": 3,
+      "real_score": 0.8976718843408426,
+      "flat_lag": 3,
+      "flat_score": 0.9805626359157289,
+      "abs_score_diff": 0.08289075157488635
+    },
+    {
+      "format": "down75_up",
+      "threshold": 110,
+      "real_lag": 3,
+      "real_score": 0.856812318626442,
+      "flat_lag": 3,
+      "flat_score": 0.9805882942749625,
+      "abs_score_diff": 0.1237759756485205
+    },
+    {
+      "format": "down75_up",
+      "threshold": 140,
+      "real_lag": 3,
+      "real_score": 0.8820827921765393,
+      "flat_lag": 3,
+      "flat_score": 0.9806238905760994,
+      "abs_score_diff": 0.09854109839956016
+    },
+    {
+      "format": "down75_up",
+      "threshold": 170,
+      "real_lag": 3,
+      "real_score": 0.9014074283924495,
+      "flat_lag": 3,
+      "flat_score": 0.9805626359157289,
+      "abs_score_diff": 0.07915520752327942
+    }
+  ],
+  "source_silhouette_compatible": true,
+  "source_nontrivial_consistent": false,
+  "decision": "SOURCE_LAG3_COMPATIBLE_WITH_SILHOUETTE",
+  "interpretation_limit": "Autocorrelation at short lags is a normal consequence of smooth silhouettes and pencil continuity. JPEG variants are image stability tests, not independent replicates; negative of this fixed projection rule cannot exclude other hidden structures.",
+  "safety": "Pure canonical source geometry/stroke diagnostic. No key, BIP39, wallet, address or off-source search."
+}
