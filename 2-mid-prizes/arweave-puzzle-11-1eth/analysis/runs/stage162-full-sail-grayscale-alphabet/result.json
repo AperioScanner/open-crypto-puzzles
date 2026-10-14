@@ -92,24 +92,24 @@
       "pass": true
     },
     "jpeg85": {
-      "discrete_positive_score": 0.9342089637292513,
+      "discrete_positive_score": 0.9315168384149412,
       "smooth_negative_score": 0.47772740208596554,
       "pass": true
     },
     "jpeg70": {
-      "discrete_positive_score": 0.9196993819931378,
+      "discrete_positive_score": 0.9192422579850548,
       "smooth_negative_score": 0.48442168659468676,
       "pass": true
     },
     "down75_up": {
-      "discrete_positive_score": 0.6431742055049935,
+      "discrete_positive_score": 0.7237930814537888,
       "smooth_negative_score": 0.48634253123125804,
-      "pass": false
+      "pass": true
     }
   },
   "controls": {
-    "pass": false,
-    "passed": 21,
+    "pass": true,
+    "passed": 22,
     "cases": 22,
     "checks": {
       "canonical_sha_verified": true,
@@ -141,7 +141,7 @@
         "original": true,
         "jpeg85": true,
         "jpeg70": true,
-        "down75_up": false
+        "down75_up": true
       },
       "corrected_source_sample_sufficient": true
     }
@@ -199,7 +199,7 @@
   "positive_comparator_close_variants": 0,
   "author_style_control_beaten_variants": 0,
   "occupied_14_modes_variants": 4,
-  "decision": "CONTROL_FAILURE",
+  "decision": "NO_ROBUST_FULL_SAIL_16_TONE_ALPHABET",
   "scope_limit": "Only Stage95 legacy LARGE SAIL ROI corrected, not the jetty, skyline or whole-frame metrics. Archived Puzzle5 scores reused without accessing external media; grayscale mode inference is not a code or proof of authorship.",
   "safety": "No wallet, address, key, BIP39, textual payload derivation or social/web research."
 }

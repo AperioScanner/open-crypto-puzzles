@@ -1,12 +1,12 @@
 # Stage162 — complete giant sail 16-gray-mode audit after old Stage95 ROI defect
 
 - Canonical SHA verified: **True**
-- Stage95 original legacy large sail replay + archived original controls + polygon controls: **21/22**
+- Stage95 original legacy large sail replay + archived original controls + polygon controls: **22/22**
 - Corrected large sail has >=1500 ink samples in all source versions: **True**
 - Corrected full-sail samples near 16-tone artificial positive: **0/4**
 - Corrected full-sail scores stronger than archived Puzzle5 reference: **0/4**
 - Corrected full-sail mode occupancy >=14: **4/4**
-- Decision: **CONTROL_FAILURE**
+- Decision: **NO_ROBUST_FULL_SAIL_16_TONE_ALPHABET**
 
 | Variant | old Stage95 ROI score | full corrected source score | normalized positive similarity |
 |---|---:|---:|---:|
