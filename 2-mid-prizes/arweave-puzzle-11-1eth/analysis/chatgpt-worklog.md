@@ -472,3 +472,10 @@ Noticed a concrete, unaddressed consequence of Stage132's verified incorrect boa
 Stage138 GitHub #38492878610 completed SUCCESS; SHA, original Stage35 ten exact values reproduced, 8/8 positive/reversed synthetic controls PASS; first-two new reflection crops show mean darkness 63.31 and 38.13. Full 12-building Sobel V-H negative -0.032 to -0.023, exact p .556..582, Fourier p .327..370, so no confirmed direct facade H/V vs underlying-reflection orientation.
 
 Audit noticed **existing Stage138 cohort had near-empty reflection ROI** in building #6 (0.4) and #11 (0.832), while Stage138 applied min mean-darkness 2.0 only to newly included #1/#2. Those blank areas cannot yield trustworthy orientation estimates. Stage139 precommits uniformly applying Stage138's own 2.0 coverage gate to every building; exact permutation comparison only if >=8 usable, >=3 V, >=4 H and exclusions replicate across all 4 source formats. Synthetic strongly directional positive/inverted negative controls have exact blank #6/#11. Do not re-label original H/V or update any p gate. No external source or private key operation.
+
+
+## 2026-10-13 — Stage139 verified and Stage140 handoff
+
+Stage139 Actions run #38494403165 completed successful. Full synthetic V/H and reversal controls pass, Stage138 12 rows reproduce exactly, real mean-darkness gate 2.0 excludes only buildings 6 and 11 on all four image formats. Both estimator exact p values fail (Sobel .20–.21; Fourier .329–.352). Conclusion negative strictly for direct H/V building-to-water orientation, even after fixing source exclusion and ink quality.
+
+Next Stage140 selected to test previously unmeasured large-sail-to-five-small-sail cross-scale copy-paste of internal pencil marks, not comparable to Stage120's small-sail-to-small-sail repeat or Stage123's exact fixed-grid same-scale patch reuse. Fixed six true triangle anchors, affine rectification, both left/right interior panels, two complementary image estimators and lossiness replication. Synthetic same-template positives and independent same-silhouette negatives in advance. No key, seed, wallet or outside-image research.
