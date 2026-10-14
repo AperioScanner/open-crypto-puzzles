@@ -531,3 +531,10 @@ Stage146 preregistered: compare fixed actual-source upper/lower horizontal band 
 ## 2026-10-13 — Stage146 reviewed; Stage147 independent skyline support started
 
 Stage146 Actions #38501412862 completed SUCCESS. Canonical hash, all 16 artificial source two-line/single-line/no-line controls, and exact Stage145 source-metric replay PASS. Registered native-source top skyline y232..242: long horizontal mask spans 8/8/8/7 of 12 x-bins; lower y252..267 spans 11/12/12/11, under original/JPEG85/JPEG70/75%-resampling. At least 7 or 8 blocks of another band remain after ablating one. This resolves Stage145's 3/4 source component-connectivity result as a resampling merge, but no source-specific chess/tower icon is established. Stage147 preregisters *independent* pixel orientation/line-segment confirmation using Sobel and Canny-Hough, with 16 known two/one/zero native lines fixture checks. No key or wallet ops.
+
+
+## 2026-10-13 — Stage147 validated; Stage148 targeted original H/V marker
+
+Stage147 Actions #38501723077 completed successfully: synthetic four-case source fixtures x four lossy formats 16/16; Stage146 image-source replay exact. Independent Canny/Hough native y232..242 line support 11/12 x-bins, y252..267 12/12; Sobel 7/12 and 10/12, identical across PNG/JPEG/resample. This corroborates two native horizontal shoreline source bands without implying rotated/mirrored 'spire' is an authored code. Archive user mirror-specific branch unless new source-specific evidence.
+
+Stage148 pivots to unmirrored original H/V building fill already robust since Stage10/31: test specific *ordinary building proportions as a confound* for H/V visual directions, NOT repeat coding or original bit-stream search. Fixed width, height, ratio, area extracted from existing geometry.json, exact C(12,4) assignment calibration and FWER max statistic, Stage10 source classifier and Stage143 roof corroboration 4 lossy copies, synthetic large/wide/tall H/V positives and invariant negative. No secret derivations, key candidates, addresses, wallets or Twitter.
