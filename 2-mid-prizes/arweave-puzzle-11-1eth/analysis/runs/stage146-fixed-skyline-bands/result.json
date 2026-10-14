@@ -1,0 +1,247 @@
+{
+  "experiment_id": "A11-EXP-146",
+  "hypothesis": "two nonoverlapping source horizontal-ink row bands that Stage145 saw in 3/4 versions remain physically present when downsampled JPEG morphology accidentally joins them",
+  "basis": "Stage145 archive confirmed original and JPEG band centers y~237/257, but 75%-down-up joined the contiguous component while still retaining 8/12 source blocks after Stage144 ablation",
+  "scope": "source-anchored upper y232..242 and lower y252..267, original Stage144 horizontal morphology 35px threshold175, 12 x-blocks and four lossy/source formats",
+  "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "fixed_source_windows": {
+    "x": [
+      180,
+      1595
+    ],
+    "upper_y_inclusive": [
+      232,
+      242
+    ],
+    "lower_y_inclusive": [
+      252,
+      267
+    ]
+  },
+  "gates": {
+    "min_blocks_per_band": 6,
+    "min_remaining_blocks_after_one_line_ablation": 6
+  },
+  "controls": {
+    "pass": true,
+    "cases": 16,
+    "passed_cases": 16,
+    "fixtures": {
+      "two": {
+        "original": {
+          "pass": true,
+          "expected_two_bands": true,
+          "upper_blocks": 12,
+          "lower_blocks": 12,
+          "after_ablation_max": 12
+        },
+        "jpeg85": {
+          "pass": true,
+          "expected_two_bands": true,
+          "upper_blocks": 12,
+          "lower_blocks": 12,
+          "after_ablation_max": 12
+        },
+        "jpeg70": {
+          "pass": true,
+          "expected_two_bands": true,
+          "upper_blocks": 12,
+          "lower_blocks": 12,
+          "after_ablation_max": 12
+        },
+        "down75_up": {
+          "pass": true,
+          "expected_two_bands": true,
+          "upper_blocks": 12,
+          "lower_blocks": 12,
+          "after_ablation_max": 12
+        }
+      },
+      "upper_only": {
+        "original": {
+          "pass": true,
+          "expected_two_bands": false,
+          "upper_blocks": 12,
+          "lower_blocks": 0,
+          "after_ablation_max": 0
+        },
+        "jpeg85": {
+          "pass": true,
+          "expected_two_bands": false,
+          "upper_blocks": 12,
+          "lower_blocks": 0,
+          "after_ablation_max": 0
+        },
+        "jpeg70": {
+          "pass": true,
+          "expected_two_bands": false,
+          "upper_blocks": 12,
+          "lower_blocks": 0,
+          "after_ablation_max": 0
+        },
+        "down75_up": {
+          "pass": true,
+          "expected_two_bands": false,
+          "upper_blocks": 12,
+          "lower_blocks": 0,
+          "after_ablation_max": 0
+        }
+      },
+      "lower_only": {
+        "original": {
+          "pass": true,
+          "expected_two_bands": false,
+          "upper_blocks": 0,
+          "lower_blocks": 12,
+          "after_ablation_max": 0
+        },
+        "jpeg85": {
+          "pass": true,
+          "expected_two_bands": false,
+          "upper_blocks": 0,
+          "lower_blocks": 12,
+          "after_ablation_max": 0
+        },
+        "jpeg70": {
+          "pass": true,
+          "expected_two_bands": false,
+          "upper_blocks": 0,
+          "lower_blocks": 12,
+          "after_ablation_max": 0
+        },
+        "down75_up": {
+          "pass": true,
+          "expected_two_bands": false,
+          "upper_blocks": 0,
+          "lower_blocks": 12,
+          "after_ablation_max": 0
+        }
+      },
+      "none": {
+        "original": {
+          "pass": true,
+          "expected_two_bands": false,
+          "upper_blocks": 0,
+          "lower_blocks": 0,
+          "after_ablation_max": 0
+        },
+        "jpeg85": {
+          "pass": true,
+          "expected_two_bands": false,
+          "upper_blocks": 0,
+          "lower_blocks": 0,
+          "after_ablation_max": 0
+        },
+        "jpeg70": {
+          "pass": true,
+          "expected_two_bands": false,
+          "upper_blocks": 0,
+          "lower_blocks": 0,
+          "after_ablation_max": 0
+        },
+        "down75_up": {
+          "pass": true,
+          "expected_two_bands": false,
+          "upper_blocks": 0,
+          "lower_blocks": 0,
+          "after_ablation_max": 0
+        }
+      }
+    }
+  },
+  "reproduced_stage145_source": true,
+  "source_results": {
+    "original": {
+      "upper_horizontal_source_support": {
+        "blocks": 8,
+        "ink_density": 0.04433023
+      },
+      "lower_horizontal_source_support": {
+        "blocks": 11,
+        "ink_density": 0.19072438
+      },
+      "upper_remaining_after_single_stroke_removal": {
+        "blocks": 8,
+        "ink_density": 0.04433023
+      },
+      "lower_remaining_after_single_stroke_removal": {
+        "blocks": 5,
+        "ink_density": 0.01863958
+      },
+      "selected_source_line_y": 260,
+      "both_band_regions_have_source_strokes": true,
+      "some_source_band_survives_single_line_ablation": true,
+      "two_band_provenance_supported": true
+    },
+    "jpeg85": {
+      "upper_horizontal_source_support": {
+        "blocks": 8,
+        "ink_density": 0.04208159
+      },
+      "lower_horizontal_source_support": {
+        "blocks": 12,
+        "ink_density": 0.19421378
+      },
+      "upper_remaining_after_single_stroke_removal": {
+        "blocks": 8,
+        "ink_density": 0.04208159
+      },
+      "lower_remaining_after_single_stroke_removal": {
+        "blocks": 7,
+        "ink_density": 0.04059187
+      },
+      "selected_source_line_y": 258,
+      "both_band_regions_have_source_strokes": true,
+      "some_source_band_survives_single_line_ablation": true,
+      "two_band_provenance_supported": true
+    },
+    "jpeg70": {
+      "upper_horizontal_source_support": {
+        "blocks": 8,
+        "ink_density": 0.0459364
+      },
+      "lower_horizontal_source_support": {
+        "blocks": 12,
+        "ink_density": 0.19032686
+      },
+      "upper_remaining_after_single_stroke_removal": {
+        "blocks": 8,
+        "ink_density": 0.0459364
+      },
+      "lower_remaining_after_single_stroke_removal": {
+        "blocks": 5,
+        "ink_density": 0.02239399
+      },
+      "selected_source_line_y": 260,
+      "both_band_regions_have_source_strokes": true,
+      "some_source_band_survives_single_line_ablation": true,
+      "two_band_provenance_supported": true
+    },
+    "down75_up": {
+      "upper_horizontal_source_support": {
+        "blocks": 7,
+        "ink_density": 0.07484741
+      },
+      "lower_horizontal_source_support": {
+        "blocks": 11,
+        "ink_density": 0.26651943
+      },
+      "upper_remaining_after_single_stroke_removal": {
+        "blocks": 7,
+        "ink_density": 0.07484741
+      },
+      "lower_remaining_after_single_stroke_removal": {
+        "blocks": 7,
+        "ink_density": 0.03869258
+      },
+      "selected_source_line_y": 258,
+      "both_band_regions_have_source_strokes": true,
+      "some_source_band_survives_single_line_ablation": true,
+      "two_band_provenance_supported": true
+    }
+  },
+  "two_source_bands_across_all_four_renderings": true,
+  "decision": "FIXED_NATIVE_SKYLINE_BANDS_REPRODUCIBLE",
+  "method_limits": "Fixed windows derived from preceding native-image diagnostic, so statistical independence and author intent are not established. Source support from two bands does not prove independent physical pen strokes or uniqueness of a tower, chess piece, code or binary carrier. This is a source-provenance/re-encoding audit only.",
+  "safety": "No wallet, BIP39, private key, mnemonic, address, off-image or social source access."
+}
