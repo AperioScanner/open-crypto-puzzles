@@ -1,0 +1,1270 @@
+{
+  "experiment_id": "A11-EXP-155",
+  "source_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "hypothesis": "An obsolete [360,480) y-only metadata band clips a material amount of the actual drawn five small sail panels.",
+  "legacy_file": "data/geometry.json",
+  "legacy_small_sails_band_y": [
+    360,
+    480
+  ],
+  "immutable_reference": "Stage153 five genuine sail polygons",
+  "reference_triangles": {
+    "sail1": [
+      [
+        1042,
+        448
+      ],
+      [
+        1007,
+        546
+      ],
+      [
+        1077,
+        546
+      ]
+    ],
+    "sail2": [
+      [
+        1148,
+        433
+      ],
+      [
+        1110,
+        532
+      ],
+      [
+        1186,
+        532
+      ]
+    ],
+    "sail3": [
+      [
+        1282,
+        411
+      ],
+      [
+        1238,
+        514
+      ],
+      [
+        1326,
+        514
+      ]
+    ],
+    "sail4": [
+      [
+        1372,
+        397
+      ],
+      [
+        1330,
+        498
+      ],
+      [
+        1414,
+        498
+      ]
+    ],
+    "sail5": [
+      [
+        1490,
+        357
+      ],
+      [
+        1443,
+        463
+      ],
+      [
+        1537,
+        463
+      ]
+    ]
+  },
+  "source_polygon_masks": {
+    "sail1": {
+      "area": 2913,
+      "area_outside_legacy_band": 2684,
+      "geometric_missing_fraction": 0.921387
+    },
+    "sail2": {
+      "area": 3220,
+      "area_outside_legacy_band": 2585,
+      "geometric_missing_fraction": 0.802795
+    },
+    "sail3": {
+      "area": 3936,
+      "area_outside_legacy_band": 2239,
+      "geometric_missing_fraction": 0.568852
+    },
+    "sail4": {
+      "area": 3666,
+      "area_outside_legacy_band": 1209,
+      "geometric_missing_fraction": 0.329787
+    },
+    "sail5": {
+      "area": 4356,
+      "area_outside_legacy_band": 0,
+      "geometric_missing_fraction": 0.0
+    }
+  },
+  "fixed_gates": {
+    "dark_thresholds": [
+      110,
+      170,
+      210
+    ],
+    "formats": [
+      "original",
+      "jpeg85",
+      "jpeg70",
+      "down75_up"
+    ],
+    "interior_mask_erosion": "5x5 once",
+    "min_real_sail_ink_px": 200,
+    "material_ink_omission_fraction": 0.25,
+    "min_sails_with_material_loss_all_12_settings": 3,
+    "synthetic_controls": "filled full triangles expected geometric fraction +/-0.035; inside-band cropped triangles outside ink <=0.03, all 40 pass"
+  },
+  "synthetic_controls": {
+    "pass": true,
+    "passed": 40,
+    "cases": 40,
+    "failures": [],
+    "full_results": [
+      {
+        "kind": "full_triangles",
+        "format": "original",
+        "site": "sail1",
+        "passed": true,
+        "ratio": 0.921387,
+        "expected_geometry": 0.921387,
+        "dark_pixels": 2913
+      },
+      {
+        "kind": "full_triangles",
+        "format": "original",
+        "site": "sail2",
+        "passed": true,
+        "ratio": 0.802795,
+        "expected_geometry": 0.802795,
+        "dark_pixels": 3220
+      },
+      {
+        "kind": "full_triangles",
+        "format": "original",
+        "site": "sail3",
+        "passed": true,
+        "ratio": 0.568852,
+        "expected_geometry": 0.568852,
+        "dark_pixels": 3936
+      },
+      {
+        "kind": "full_triangles",
+        "format": "original",
+        "site": "sail4",
+        "passed": true,
+        "ratio": 0.329787,
+        "expected_geometry": 0.329787,
+        "dark_pixels": 3666
+      },
+      {
+        "kind": "full_triangles",
+        "format": "original",
+        "site": "sail5",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.0,
+        "dark_pixels": 4356
+      },
+      {
+        "kind": "full_triangles",
+        "format": "jpeg85",
+        "site": "sail1",
+        "passed": true,
+        "ratio": 0.921387,
+        "expected_geometry": 0.921387,
+        "dark_pixels": 2913
+      },
+      {
+        "kind": "full_triangles",
+        "format": "jpeg85",
+        "site": "sail2",
+        "passed": true,
+        "ratio": 0.802795,
+        "expected_geometry": 0.802795,
+        "dark_pixels": 3220
+      },
+      {
+        "kind": "full_triangles",
+        "format": "jpeg85",
+        "site": "sail3",
+        "passed": true,
+        "ratio": 0.568852,
+        "expected_geometry": 0.568852,
+        "dark_pixels": 3936
+      },
+      {
+        "kind": "full_triangles",
+        "format": "jpeg85",
+        "site": "sail4",
+        "passed": true,
+        "ratio": 0.329787,
+        "expected_geometry": 0.329787,
+        "dark_pixels": 3666
+      },
+      {
+        "kind": "full_triangles",
+        "format": "jpeg85",
+        "site": "sail5",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.0,
+        "dark_pixels": 4356
+      },
+      {
+        "kind": "full_triangles",
+        "format": "jpeg70",
+        "site": "sail1",
+        "passed": true,
+        "ratio": 0.921387,
+        "expected_geometry": 0.921387,
+        "dark_pixels": 2913
+      },
+      {
+        "kind": "full_triangles",
+        "format": "jpeg70",
+        "site": "sail2",
+        "passed": true,
+        "ratio": 0.802795,
+        "expected_geometry": 0.802795,
+        "dark_pixels": 3220
+      },
+      {
+        "kind": "full_triangles",
+        "format": "jpeg70",
+        "site": "sail3",
+        "passed": true,
+        "ratio": 0.568852,
+        "expected_geometry": 0.568852,
+        "dark_pixels": 3936
+      },
+      {
+        "kind": "full_triangles",
+        "format": "jpeg70",
+        "site": "sail4",
+        "passed": true,
+        "ratio": 0.329787,
+        "expected_geometry": 0.329787,
+        "dark_pixels": 3666
+      },
+      {
+        "kind": "full_triangles",
+        "format": "jpeg70",
+        "site": "sail5",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.0,
+        "dark_pixels": 4356
+      },
+      {
+        "kind": "full_triangles",
+        "format": "down75_up",
+        "site": "sail1",
+        "passed": true,
+        "ratio": 0.921387,
+        "expected_geometry": 0.921387,
+        "dark_pixels": 2913
+      },
+      {
+        "kind": "full_triangles",
+        "format": "down75_up",
+        "site": "sail2",
+        "passed": true,
+        "ratio": 0.802795,
+        "expected_geometry": 0.802795,
+        "dark_pixels": 3220
+      },
+      {
+        "kind": "full_triangles",
+        "format": "down75_up",
+        "site": "sail3",
+        "passed": true,
+        "ratio": 0.568852,
+        "expected_geometry": 0.568852,
+        "dark_pixels": 3936
+      },
+      {
+        "kind": "full_triangles",
+        "format": "down75_up",
+        "site": "sail4",
+        "passed": true,
+        "ratio": 0.329787,
+        "expected_geometry": 0.329787,
+        "dark_pixels": 3666
+      },
+      {
+        "kind": "full_triangles",
+        "format": "down75_up",
+        "site": "sail5",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.0,
+        "dark_pixels": 4356
+      },
+      {
+        "kind": "band_ink_only",
+        "format": "original",
+        "site": "sail1",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.921387,
+        "dark_pixels": 107
+      },
+      {
+        "kind": "band_ink_only",
+        "format": "original",
+        "site": "sail2",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.802795,
+        "dark_pixels": 409
+      },
+      {
+        "kind": "band_ink_only",
+        "format": "original",
+        "site": "sail3",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.568852,
+        "dark_pixels": 1295
+      },
+      {
+        "kind": "band_ink_only",
+        "format": "original",
+        "site": "sail4",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.329787,
+        "dark_pixels": 1973
+      },
+      {
+        "kind": "band_ink_only",
+        "format": "original",
+        "site": "sail5",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.0,
+        "dark_pixels": 4343
+      },
+      {
+        "kind": "band_ink_only",
+        "format": "jpeg85",
+        "site": "sail1",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.921387,
+        "dark_pixels": 107
+      },
+      {
+        "kind": "band_ink_only",
+        "format": "jpeg85",
+        "site": "sail2",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.802795,
+        "dark_pixels": 409
+      },
+      {
+        "kind": "band_ink_only",
+        "format": "jpeg85",
+        "site": "sail3",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.568852,
+        "dark_pixels": 1295
+      },
+      {
+        "kind": "band_ink_only",
+        "format": "jpeg85",
+        "site": "sail4",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.329787,
+        "dark_pixels": 1973
+      },
+      {
+        "kind": "band_ink_only",
+        "format": "jpeg85",
+        "site": "sail5",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.0,
+        "dark_pixels": 4343
+      },
+      {
+        "kind": "band_ink_only",
+        "format": "jpeg70",
+        "site": "sail1",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.921387,
+        "dark_pixels": 107
+      },
+      {
+        "kind": "band_ink_only",
+        "format": "jpeg70",
+        "site": "sail2",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.802795,
+        "dark_pixels": 409
+      },
+      {
+        "kind": "band_ink_only",
+        "format": "jpeg70",
+        "site": "sail3",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.568852,
+        "dark_pixels": 1295
+      },
+      {
+        "kind": "band_ink_only",
+        "format": "jpeg70",
+        "site": "sail4",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.329787,
+        "dark_pixels": 1973
+      },
+      {
+        "kind": "band_ink_only",
+        "format": "jpeg70",
+        "site": "sail5",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.0,
+        "dark_pixels": 4343
+      },
+      {
+        "kind": "band_ink_only",
+        "format": "down75_up",
+        "site": "sail1",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.921387,
+        "dark_pixels": 107
+      },
+      {
+        "kind": "band_ink_only",
+        "format": "down75_up",
+        "site": "sail2",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.802795,
+        "dark_pixels": 409
+      },
+      {
+        "kind": "band_ink_only",
+        "format": "down75_up",
+        "site": "sail3",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.568852,
+        "dark_pixels": 1295
+      },
+      {
+        "kind": "band_ink_only",
+        "format": "down75_up",
+        "site": "sail4",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.329787,
+        "dark_pixels": 1973
+      },
+      {
+        "kind": "band_ink_only",
+        "format": "down75_up",
+        "site": "sail5",
+        "passed": true,
+        "ratio": 0.0,
+        "expected_geometry": 0.0,
+        "dark_pixels": 4343
+      }
+    ]
+  },
+  "source_ink_sufficient": true,
+  "actual_source_by_format_threshold": {
+    "original": {
+      "110": {
+        "sail1": {
+          "ink_px": 1620,
+          "outside_band_ink_px": 1502,
+          "inside_band_ink_px": 118,
+          "omitted_ink_fraction": 0.92716
+        },
+        "sail2": {
+          "ink_px": 1873,
+          "outside_band_ink_px": 1419,
+          "inside_band_ink_px": 454,
+          "omitted_ink_fraction": 0.757608
+        },
+        "sail3": {
+          "ink_px": 2818,
+          "outside_band_ink_px": 1546,
+          "inside_band_ink_px": 1272,
+          "omitted_ink_fraction": 0.548616
+        },
+        "sail4": {
+          "ink_px": 2425,
+          "outside_band_ink_px": 748,
+          "inside_band_ink_px": 1677,
+          "omitted_ink_fraction": 0.308454
+        },
+        "sail5": {
+          "ink_px": 2652,
+          "outside_band_ink_px": 0,
+          "inside_band_ink_px": 2652,
+          "omitted_ink_fraction": 0.0
+        }
+      },
+      "170": {
+        "sail1": {
+          "ink_px": 1963,
+          "outside_band_ink_px": 1803,
+          "inside_band_ink_px": 160,
+          "omitted_ink_fraction": 0.918492
+        },
+        "sail2": {
+          "ink_px": 2347,
+          "outside_band_ink_px": 1808,
+          "inside_band_ink_px": 539,
+          "omitted_ink_fraction": 0.770345
+        },
+        "sail3": {
+          "ink_px": 3131,
+          "outside_band_ink_px": 1732,
+          "inside_band_ink_px": 1399,
+          "omitted_ink_fraction": 0.553178
+        },
+        "sail4": {
+          "ink_px": 2859,
+          "outside_band_ink_px": 901,
+          "inside_band_ink_px": 1958,
+          "omitted_ink_fraction": 0.315145
+        },
+        "sail5": {
+          "ink_px": 3199,
+          "outside_band_ink_px": 0,
+          "inside_band_ink_px": 3199,
+          "omitted_ink_fraction": 0.0
+        }
+      },
+      "210": {
+        "sail1": {
+          "ink_px": 2214,
+          "outside_band_ink_px": 2028,
+          "inside_band_ink_px": 186,
+          "omitted_ink_fraction": 0.915989
+        },
+        "sail2": {
+          "ink_px": 2605,
+          "outside_band_ink_px": 2023,
+          "inside_band_ink_px": 582,
+          "omitted_ink_fraction": 0.776583
+        },
+        "sail3": {
+          "ink_px": 3280,
+          "outside_band_ink_px": 1829,
+          "inside_band_ink_px": 1451,
+          "omitted_ink_fraction": 0.557622
+        },
+        "sail4": {
+          "ink_px": 3130,
+          "outside_band_ink_px": 982,
+          "inside_band_ink_px": 2148,
+          "omitted_ink_fraction": 0.313738
+        },
+        "sail5": {
+          "ink_px": 3531,
+          "outside_band_ink_px": 0,
+          "inside_band_ink_px": 3531,
+          "omitted_ink_fraction": 0.0
+        }
+      }
+    },
+    "jpeg85": {
+      "110": {
+        "sail1": {
+          "ink_px": 1627,
+          "outside_band_ink_px": 1507,
+          "inside_band_ink_px": 120,
+          "omitted_ink_fraction": 0.926245
+        },
+        "sail2": {
+          "ink_px": 1864,
+          "outside_band_ink_px": 1414,
+          "inside_band_ink_px": 450,
+          "omitted_ink_fraction": 0.758584
+        },
+        "sail3": {
+          "ink_px": 2826,
+          "outside_band_ink_px": 1550,
+          "inside_band_ink_px": 1276,
+          "omitted_ink_fraction": 0.548478
+        },
+        "sail4": {
+          "ink_px": 2420,
+          "outside_band_ink_px": 750,
+          "inside_band_ink_px": 1670,
+          "omitted_ink_fraction": 0.309917
+        },
+        "sail5": {
+          "ink_px": 2648,
+          "outside_band_ink_px": 0,
+          "inside_band_ink_px": 2648,
+          "omitted_ink_fraction": 0.0
+        }
+      },
+      "170": {
+        "sail1": {
+          "ink_px": 1965,
+          "outside_band_ink_px": 1804,
+          "inside_band_ink_px": 161,
+          "omitted_ink_fraction": 0.918066
+        },
+        "sail2": {
+          "ink_px": 2348,
+          "outside_band_ink_px": 1804,
+          "inside_band_ink_px": 544,
+          "omitted_ink_fraction": 0.768313
+        },
+        "sail3": {
+          "ink_px": 3134,
+          "outside_band_ink_px": 1735,
+          "inside_band_ink_px": 1399,
+          "omitted_ink_fraction": 0.553606
+        },
+        "sail4": {
+          "ink_px": 2857,
+          "outside_band_ink_px": 899,
+          "inside_band_ink_px": 1958,
+          "omitted_ink_fraction": 0.314666
+        },
+        "sail5": {
+          "ink_px": 3184,
+          "outside_band_ink_px": 0,
+          "inside_band_ink_px": 3184,
+          "omitted_ink_fraction": 0.0
+        }
+      },
+      "210": {
+        "sail1": {
+          "ink_px": 2214,
+          "outside_band_ink_px": 2028,
+          "inside_band_ink_px": 186,
+          "omitted_ink_fraction": 0.915989
+        },
+        "sail2": {
+          "ink_px": 2601,
+          "outside_band_ink_px": 2021,
+          "inside_band_ink_px": 580,
+          "omitted_ink_fraction": 0.777009
+        },
+        "sail3": {
+          "ink_px": 3284,
+          "outside_band_ink_px": 1832,
+          "inside_band_ink_px": 1452,
+          "omitted_ink_fraction": 0.557856
+        },
+        "sail4": {
+          "ink_px": 3128,
+          "outside_band_ink_px": 981,
+          "inside_band_ink_px": 2147,
+          "omitted_ink_fraction": 0.313619
+        },
+        "sail5": {
+          "ink_px": 3537,
+          "outside_band_ink_px": 0,
+          "inside_band_ink_px": 3537,
+          "omitted_ink_fraction": 0.0
+        }
+      }
+    },
+    "jpeg70": {
+      "110": {
+        "sail1": {
+          "ink_px": 1623,
+          "outside_band_ink_px": 1505,
+          "inside_band_ink_px": 118,
+          "omitted_ink_fraction": 0.927295
+        },
+        "sail2": {
+          "ink_px": 1861,
+          "outside_band_ink_px": 1415,
+          "inside_band_ink_px": 446,
+          "omitted_ink_fraction": 0.760344
+        },
+        "sail3": {
+          "ink_px": 2817,
+          "outside_band_ink_px": 1546,
+          "inside_band_ink_px": 1271,
+          "omitted_ink_fraction": 0.548811
+        },
+        "sail4": {
+          "ink_px": 2422,
+          "outside_band_ink_px": 746,
+          "inside_band_ink_px": 1676,
+          "omitted_ink_fraction": 0.30801
+        },
+        "sail5": {
+          "ink_px": 2638,
+          "outside_band_ink_px": 0,
+          "inside_band_ink_px": 2638,
+          "omitted_ink_fraction": 0.0
+        }
+      },
+      "170": {
+        "sail1": {
+          "ink_px": 1964,
+          "outside_band_ink_px": 1806,
+          "inside_band_ink_px": 158,
+          "omitted_ink_fraction": 0.919552
+        },
+        "sail2": {
+          "ink_px": 2351,
+          "outside_band_ink_px": 1805,
+          "inside_band_ink_px": 546,
+          "omitted_ink_fraction": 0.767758
+        },
+        "sail3": {
+          "ink_px": 3137,
+          "outside_band_ink_px": 1736,
+          "inside_band_ink_px": 1401,
+          "omitted_ink_fraction": 0.553395
+        },
+        "sail4": {
+          "ink_px": 2861,
+          "outside_band_ink_px": 897,
+          "inside_band_ink_px": 1964,
+          "omitted_ink_fraction": 0.313527
+        },
+        "sail5": {
+          "ink_px": 3202,
+          "outside_band_ink_px": 0,
+          "inside_band_ink_px": 3202,
+          "omitted_ink_fraction": 0.0
+        }
+      },
+      "210": {
+        "sail1": {
+          "ink_px": 2213,
+          "outside_band_ink_px": 2028,
+          "inside_band_ink_px": 185,
+          "omitted_ink_fraction": 0.916403
+        },
+        "sail2": {
+          "ink_px": 2606,
+          "outside_band_ink_px": 2021,
+          "inside_band_ink_px": 585,
+          "omitted_ink_fraction": 0.775518
+        },
+        "sail3": {
+          "ink_px": 3286,
+          "outside_band_ink_px": 1827,
+          "inside_band_ink_px": 1459,
+          "omitted_ink_fraction": 0.555995
+        },
+        "sail4": {
+          "ink_px": 3123,
+          "outside_band_ink_px": 986,
+          "inside_band_ink_px": 2137,
+          "omitted_ink_fraction": 0.315722
+        },
+        "sail5": {
+          "ink_px": 3542,
+          "outside_band_ink_px": 0,
+          "inside_band_ink_px": 3542,
+          "omitted_ink_fraction": 0.0
+        }
+      }
+    },
+    "down75_up": {
+      "110": {
+        "sail1": {
+          "ink_px": 1595,
+          "outside_band_ink_px": 1482,
+          "inside_band_ink_px": 113,
+          "omitted_ink_fraction": 0.929154
+        },
+        "sail2": {
+          "ink_px": 1878,
+          "outside_band_ink_px": 1418,
+          "inside_band_ink_px": 460,
+          "omitted_ink_fraction": 0.755059
+        },
+        "sail3": {
+          "ink_px": 2861,
+          "outside_band_ink_px": 1575,
+          "inside_band_ink_px": 1286,
+          "omitted_ink_fraction": 0.550507
+        },
+        "sail4": {
+          "ink_px": 2432,
+          "outside_band_ink_px": 756,
+          "inside_band_ink_px": 1676,
+          "omitted_ink_fraction": 0.310855
+        },
+        "sail5": {
+          "ink_px": 2646,
+          "outside_band_ink_px": 0,
+          "inside_band_ink_px": 2646,
+          "omitted_ink_fraction": 0.0
+        }
+      },
+      "170": {
+        "sail1": {
+          "ink_px": 2047,
+          "outside_band_ink_px": 1880,
+          "inside_band_ink_px": 167,
+          "omitted_ink_fraction": 0.918417
+        },
+        "sail2": {
+          "ink_px": 2423,
+          "outside_band_ink_px": 1866,
+          "inside_band_ink_px": 557,
+          "omitted_ink_fraction": 0.77012
+        },
+        "sail3": {
+          "ink_px": 3227,
+          "outside_band_ink_px": 1793,
+          "inside_band_ink_px": 1434,
+          "omitted_ink_fraction": 0.555624
+        },
+        "sail4": {
+          "ink_px": 2947,
+          "outside_band_ink_px": 927,
+          "inside_band_ink_px": 2020,
+          "omitted_ink_fraction": 0.314557
+        },
+        "sail5": {
+          "ink_px": 3318,
+          "outside_band_ink_px": 0,
+          "inside_band_ink_px": 3318,
+          "omitted_ink_fraction": 0.0
+        }
+      },
+      "210": {
+        "sail1": {
+          "ink_px": 2341,
+          "outside_band_ink_px": 2148,
+          "inside_band_ink_px": 193,
+          "omitted_ink_fraction": 0.917557
+        },
+        "sail2": {
+          "ink_px": 2672,
+          "outside_band_ink_px": 2083,
+          "inside_band_ink_px": 589,
+          "omitted_ink_fraction": 0.779566
+        },
+        "sail3": {
+          "ink_px": 3458,
+          "outside_band_ink_px": 1918,
+          "inside_band_ink_px": 1540,
+          "omitted_ink_fraction": 0.554656
+        },
+        "sail4": {
+          "ink_px": 3250,
+          "outside_band_ink_px": 1017,
+          "inside_band_ink_px": 2233,
+          "omitted_ink_fraction": 0.312923
+        },
+        "sail5": {
+          "ink_px": 3660,
+          "outside_band_ink_px": 0,
+          "inside_band_ink_px": 3660,
+          "omitted_ink_fraction": 0.0
+        }
+      }
+    }
+  },
+  "material_ink_loss_stable_by_sail": {
+    "sail1": true,
+    "sail2": true,
+    "sail3": true,
+    "sail4": true,
+    "sail5": false
+  },
+  "materially_truncated_sails": 4,
+  "static_code_provenance": {
+    "total_scripts_scanned": 212,
+    "direct_field_references": [
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage12_count_perimeter.py",
+        "line": 86,
+        "text": "y0,y1=geom[\"small_sails_band_y\"]"
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage19_small_sail_remeasure.py",
+        "line": 126,
+        "text": "y0,y1=map(int,g[\"small_sails_band_y\"])"
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage15_semantic_321_counts.py",
+        "line": 76,
+        "text": "y0,y1=geom[\"small_sails_band_y\"]"
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage23_bitplane_statistics.py",
+        "line": 47,
+        "text": "s=g[\"large_sailboat\"]; y0,y1=g[\"small_sails_band_y\"]"
+      }
+    ],
+    "generic_geometry_file_references": [
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage91_historical_clue_reconciliation.py",
+        "line": 231,
+        "text": "p in (\"analysis/tested.md\",\"README.md\",\"data/geometry.json\",\"puzzle.json\")"
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage103_building_roof_profiles.py",
+        "line": 32,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage5_visual_structure.py",
+        "line": 11,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage35_building_reflection_coupling.py",
+        "line": 25,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage132_large_sail_legacy_bbox_audit.py",
+        "line": 25,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage132_large_sail_legacy_bbox_audit.py",
+        "line": 184,
+        "text": "\"scope\":\"manual fixed large sail and hull silhouettes + old data/geometry.json ROI, 3 thresholds, original/JPEG85/JPEG70/resampling\","
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage139_reflection_coverage_audit.py",
+        "line": 46,
+        "text": "GEOMETRY=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage111_sail_skyline_alignment.py",
+        "line": 23,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage12_count_perimeter.py",
+        "line": 16,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage10_marker_robustness.py",
+        "line": 17,
+        "text": "GEOM = ROOT / \"data\" / \"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage3_marked_grayscale.py",
+        "line": 128,
+        "text": "# Bounded hashes of the marked boat region. The geometry box is from data/geometry.json;"
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage150_v_facade_lower_h_perturb.py",
+        "line": 37,
+        "text": "GEOMETRY=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage95_grayscale_16level_alphabet.py",
+        "line": 36,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage121_building_hatch_line_counts.py",
+        "line": 23,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage17_orientation_geometry_independence.py",
+        "line": 7,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage19_small_sail_remeasure.py",
+        "line": 16,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage148_hv_building_aspect_confounds.py",
+        "line": 40,
+        "text": "GEOMETRY=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage18_small_sail_sequence.py",
+        "line": 7,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage15_semantic_321_counts.py",
+        "line": 19,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage6_321.py",
+        "line": 23,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage94_large_sail_stroke_carrier.py",
+        "line": 19,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/fig_geometry.py",
+        "line": 9,
+        "text": "measurement. Every box comes from data/geometry.json; nothing here is invented."
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/fig_geometry.py",
+        "line": 24,
+        "text": "data/geometry.json (measured bounding boxes)"
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/fig_geometry.py",
+        "line": 36,
+        "text": "DATA_FILE = ROOT / \"data\" / \"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage16_321_coding_audit.py",
+        "line": 15,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage23_bitplane_statistics.py",
+        "line": 11,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/superbatch_stage37_87.py",
+        "line": 12,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage100_ocr_spatial_localization.py",
+        "line": 45,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage138_corrected_all_building_reflections.py",
+        "line": 36,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage143_mirrored_skyline_chess_shapes.py",
+        "line": 36,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage143_mirrored_skyline_chess_shapes.py",
+        "line": 247,
+        "text": "\"scope\":\"fixed geometry.json building boxes, two reversed skyline groups, 90\u00b0 plus horizontal mirror, original/JPEG85/JPEG70/downsample; no OCR, no key material\","
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage99_visible_alphanumeric_audit.py",
+        "line": 41,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage31_format_invariance.py",
+        "line": 19,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage8_orientation_geometry.py",
+        "line": 20,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage149_hv_within_facade_layers.py",
+        "line": 33,
+        "text": "GEOMETRY=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage36_large_boat_visual_reveal.py",
+        "line": 22,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage21_independent_hv_classifiers.py",
+        "line": 16,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage109_skyline_5_7_delimiter.py",
+        "line": 26,
+        "text": "GEOM=ROOT/\"data\"/\"geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage16-321-coding-audit.yml",
+        "line": 10,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage35-building-reflection-coupling.yml",
+        "line": 11,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage138-all-building-reflection-recheck.yml",
+        "line": 10,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage10-marker-robustness.yml",
+        "line": 11,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage19-small-sail-remeasure.yml",
+        "line": 11,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-superbatch-37-87.yml",
+        "line": 12,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage150-v-lower-facade-jitter.yml",
+        "line": 10,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage132-large-sail-roi-coverage.yml",
+        "line": 10,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage149-hv-facade-layers.yml",
+        "line": 10,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage143-mirrored-skyline-chess.yml",
+        "line": 10,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage5-visual-structure.yml",
+        "line": 10,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage109-skyline-5-7-delimiter.yml",
+        "line": 11,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage36-large-boat-visual-reveal.yml",
+        "line": 11,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage133-corrected-full-sail-strokes.yml",
+        "line": 10,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage121-building-hatch-counts.yml",
+        "line": 11,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage139-reflection-coverage-audit.yml",
+        "line": 10,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage99-visible-alphanumeric-audit.yml",
+        "line": 11,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage95-grayscale-16level-alphabet.yml",
+        "line": 11,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage148-hv-building-shape-confound.yml",
+        "line": 10,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage111-sail-skyline-alignment.yml",
+        "line": 11,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage12-count-perimeter.yml",
+        "line": 11,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage31-format-invariance.yml",
+        "line": 11,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage94-large-sail-stroke-carrier.yml",
+        "line": 11,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage8-orientation-geometry.yml",
+        "line": 10,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage17-orientation-geometry-independence.yml",
+        "line": 10,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage15-semantic-321-counts.yml",
+        "line": 11,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage6-321.yml",
+        "line": 10,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage21-independent-hv-classifiers.yml",
+        "line": 11,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage18-small-sail-sequence.yml",
+        "line": 10,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      },
+      {
+        "path": ".github/workflows/arweave11-stage103-building-roof-profiles.yml",
+        "line": 11,
+        "text": "- \"2-mid-prizes/arweave-puzzle-11-1eth/data/geometry.json\""
+      }
+    ],
+    "meaning": "Lexical matches only: a match does not prove runtime use, and absence of exact field literal does not rule out indirect dynamic access."
+  },
+  "decision": "LEGACY_SMALL_SAIL_BAND_MATERIALLY_TRUNCATES_TRUE_SAILS",
+  "limits": "A legacy file's poor geometric coverage is not proof any historical workflow used the field. It does not invalidate past results without direct code/report linkage; it is not evidence of a code or hidden key.",
+  "safety": "Image geometry and repository static metadata only. No key generation, BIP39, addresses, wallets, social or off-source research."
+}
