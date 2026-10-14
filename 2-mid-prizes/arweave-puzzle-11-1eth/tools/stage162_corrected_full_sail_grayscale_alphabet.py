@@ -47,8 +47,8 @@ def masked_fixture(mask,kind):
     img=np.full(mask.shape,255,np.uint8)
     yy,xx=np.indices(mask.shape)
     if kind=="16_discrete":
-        # 24px geometric patches maintain 16 known ink levels across JPEG.
-        indices=((xx//24)+3*(yy//24))%16
+        # 32px geometric patches preserve 16 known tones under 75% resize.
+        indices=((xx//32)+3*(yy//32))%16
         img[mask]=INK_LEVELS[indices[mask]]
     elif kind=="smooth_gradient":
         # Continuous gray-gradient negative, same geometry and brightness span.
