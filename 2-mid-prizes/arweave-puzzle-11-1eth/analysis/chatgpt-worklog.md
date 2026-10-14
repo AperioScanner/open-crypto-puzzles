@@ -493,3 +493,10 @@ Stage141 selected to repair a *distinct historical image localization defect*: S
 Stage141 Actions #38495806304 completed SUCCESS. SHA and real source coverage confirmed; synthetic true horizontal mirror positive and independent-redraw negative passed 4/4 formats each (16 band cases). Real corrected hull mirrored left/right highpass detail -0.036/+0.017 original and similar JPEG/resample, no exact interior pencil copy; does not address hull silhouette or metaphoric meaning.
 
 Selected Stage142 because Stage41 top/bottom "large boat" symmetry relied on old erroneous ROI with no hull ink, and Stage141 only repaired L/R. Fixed true hull Stage132 polygon eroded and axis y860.5, two anatomical fore/aft x-bands and precommitted upper/lower y-pairs; smooth ink/detail controls for mirrored vs fresh redraw strokes. All image-only; no secret, key, BIP39 or wallet operation.
+
+
+## 2026-10-13 — Stage142 validated, user's chess silhouettes, Stage143 selected
+
+GitHub Stage142 #38496317157 finished SUCCESS. Corrected full hull source coverage valid and 8 mirrored/independent redraw format-level controls passed across two x-strips. The real top/bottom ink correlations and pencil-detail correlations were low (<.26 smooth, <.015 high-pass); no replicated vertical mirror of hull strokes.
+
+User uploaded an image they created by duplicating and rotating the original and tracing its central white negative spaces red, perceiving a king in the upper and a queen in the lower half. The source scene has two skyline groups, left 5 and right 7 buildings. Rotating then mirroring **necessarily manufactures symmetric blank shapes**; perceptual resemblance alone, especially hand outlined, is not independently established author intent. Selected Stage143 source-only comparison: faithfully recreate mirror+rotation, roofline-only silhouette and exact rooftop reordering controls; compare purely generic base/head flaring (posthoc descriptive, not chess significance), evaluate original roof source evidence across 4 variants, flag absence of unambiguous crown/cross specific features. Neither download/interpret any external chess puzzle hints nor generate codes/wallet keys.
