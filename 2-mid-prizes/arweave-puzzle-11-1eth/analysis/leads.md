@@ -170,3 +170,8 @@ Stage145 successfully reproduced Stage144 source, passed 12/12 fixed two/single/
 ## Stage146 positive fixed source-band support; Stage147 independent validation
 
 Stage146 fixed-band test controls 16/16 and source replay pass. Upper y232..242 and lower y252..267 original skyline pencil strokes robustly support >=7/12 and >=11/12 x-bins in all four lossy/PNG versions, whereas Stage145 downsampling merely fused their morphological connected components. This supports source origin for central spire in artificially mirrored/rotated skyline, not intentional symbols. Stage147 independently audits the same fixed source apertures with Canny-Hough horizontal segments and Sobel horizontal edge-energy rather than the earlier morphology kernel. A positive is ordinary source drawing structure, not coded significance.
+
+
+## Stage147 closes mirrored-spire source-line explanation; Stage148 H/V art-confound audit
+
+Stage147 independently corroborated the Stage146 two native source horizontal shoreline bands with Canny-Hough and Sobel: upper 7/11 of 12 x-bins, lower 10/12, all 4 formats, calibration 16/16. These original drawn horizontal bands plausibly generate the apparent vertical axis under user duplication/rotation, but do NOT independently document a special tower or encoded object. Next investigate the principal robust ORIGINAL visual datum: 12 building H/V textures `HHVVHHVHHHHV` (H0/V1 yields 0x321). Stage148 tests whether natural building dimensions (width/height/shape ratio/area) predict illustrator hatching orientation using exact 495 label permutations and 4-variable familywise correction. Not a key search and not a claim of author intent.
