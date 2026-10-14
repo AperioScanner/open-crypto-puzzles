@@ -486,3 +486,10 @@ Next Stage140 selected to test previously unmeasured large-sail-to-five-small-sa
 Stage140 #38495397342 completed successfully; 20/20 true-copy and 20/20 independent same-outline controls passed, actual 5/5 interiors sampled adequately, 0/5 meeting copy criterion across smooth/detail channels on left and right in all four images. This is narrow evidence against literal large-to-small resized template cloning, not against visible geometric coding.
 
 Stage141 selected to repair a *distinct historical image localization defect*: Stage40 did left/right symmetry on old large boat ROI whose hull coverage was zero (confirmed Stage132). Stage141 checks true large HULL interior bilateral pencil stroke copying (not mirrored hull shape), with predeclared axis x275, symmetric paired masks eroded from Stage132 polygon, two vertical bands, positive exact-mirror vs independent stroke redraw controls on all 4 image formats; image-only and no secret operations.
+
+
+## 2026-10-13 — Stage141 reviewed; Stage142 started
+
+Stage141 Actions #38495806304 completed SUCCESS. SHA and real source coverage confirmed; synthetic true horizontal mirror positive and independent-redraw negative passed 4/4 formats each (16 band cases). Real corrected hull mirrored left/right highpass detail -0.036/+0.017 original and similar JPEG/resample, no exact interior pencil copy; does not address hull silhouette or metaphoric meaning.
+
+Selected Stage142 because Stage41 top/bottom "large boat" symmetry relied on old erroneous ROI with no hull ink, and Stage141 only repaired L/R. Fixed true hull Stage132 polygon eroded and axis y860.5, two anatomical fore/aft x-bands and precommitted upper/lower y-pairs; smooth ink/detail controls for mirrored vs fresh redraw strokes. All image-only; no secret, key, BIP39 or wallet operation.
