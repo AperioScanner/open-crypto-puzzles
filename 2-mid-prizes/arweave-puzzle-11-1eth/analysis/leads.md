@@ -125,3 +125,8 @@ Stage137: literal mirrored lower-wake relation negative with successful reflecte
 ## Stage138 closed; Stage139 verifies source adequacy of reflection crops
 
 Stage138 reproduced Stage35's original 10 measurements exactly, restored buildings #1/#2, and found no association in all 12 (Sobel negative V-H, Fourier p>.32). But Stage138's archive reports water-band mean darkness just 0.40 at building #6 and 0.83 at #11, versus the 2.0-source gate applied only to newly included buildings. Stage139 is a quality-controlled retest using identical old estimator, same all-site threshold 2.0 (NOT fitted to p) and exact permutation on actually drawn reflection patches, plus original-data and synthetic positive/reversal controls. No key/phrase decoding.
+
+
+## Stage139 calibrated reflection negative; Stage140 cross-scale sail sketch fingerprint
+
+Stage139 source audit excluded #6/#11 near-blank reflection crops, controls passed; retained ten buildings 4V/6H with Sobel p~.2 and Fourier p~.33, no reproducible facade/reflection relationship. Stage140 switches to a distinct visual question enabled by Stage132's verified large-sail crop correction: does the complete giant sail's *pencil stroke template* appear resized in a small sail? Stage120 only compared small-to-small; Stage123 only same-scale patches. Affine normalizations, independent smudge/detail correlation, 20 copied vs 20 independent redraw controls, lossy replications. No secrets.
