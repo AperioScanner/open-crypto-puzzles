@@ -1,0 +1,407 @@
+{
+  "experiment_id": "A11-EXP-131",
+  "date": "2026-10-13",
+  "hypothesis": "isolated ink marks in untouched sky might be intentional repeatable dashes rather than scanning speckles",
+  "evidence": "Visible sky contains a few isolated pencil flecks outside the main buildings and boats; Stage12 counted components only in the top 0..48 full-width strip.",
+  "scope": "four fixed blank sky ROIs below y=48 and outside buildings; two object-measurement algorithms x three thresholds x four re-encodings",
+  "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "rois": {
+    "left_blank_sky": [
+      20,
+      57,
+      195,
+      215
+    ],
+    "central_sky_gap": [
+      792,
+      54,
+      864,
+      174
+    ],
+    "upper_right_sky": [
+      1170,
+      53,
+      1335,
+      96
+    ],
+    "right_top_sky": [
+      1363,
+      15,
+      1491,
+      92
+    ]
+  },
+  "criteria": {
+    "min_area": 12,
+    "max_area": 250,
+    "min_major": 8,
+    "min_minor": 2,
+    "min_border": 4,
+    "min_stable_regions": 3,
+    "min_positive_regions": 2,
+    "match_tolerance_px": 3
+  },
+  "controls": {
+    "pass": true,
+    "cases": 192,
+    "failures": [],
+    "results": {
+      "dashes:left_blank_sky": {
+        "stable": true,
+        "count_range": [
+          3,
+          3
+        ]
+      },
+      "dashes:central_sky_gap": {
+        "stable": true,
+        "count_range": [
+          3,
+          3
+        ]
+      },
+      "dashes:upper_right_sky": {
+        "stable": true,
+        "count_range": [
+          3,
+          3
+        ]
+      },
+      "dashes:right_top_sky": {
+        "stable": true,
+        "count_range": [
+          3,
+          3
+        ]
+      },
+      "speckles:left_blank_sky": {
+        "stable": true,
+        "count_range": [
+          0,
+          0
+        ]
+      },
+      "speckles:central_sky_gap": {
+        "stable": true,
+        "count_range": [
+          0,
+          0
+        ]
+      },
+      "speckles:upper_right_sky": {
+        "stable": true,
+        "count_range": [
+          0,
+          0
+        ]
+      },
+      "speckles:right_top_sky": {
+        "stable": true,
+        "count_range": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "real": {
+    "left_blank_sky": {
+      "roi": [
+        20,
+        57,
+        195,
+        215
+      ],
+      "by_variant": {
+        "original": {
+          "90": {
+            "cc": 0,
+            "contour": 0
+          },
+          "140": {
+            "cc": 0,
+            "contour": 0
+          },
+          "190": {
+            "cc": 0,
+            "contour": 0
+          }
+        },
+        "jpeg85": {
+          "90": {
+            "cc": 0,
+            "contour": 0
+          },
+          "140": {
+            "cc": 0,
+            "contour": 0
+          },
+          "190": {
+            "cc": 0,
+            "contour": 0
+          }
+        },
+        "jpeg70": {
+          "90": {
+            "cc": 0,
+            "contour": 0
+          },
+          "140": {
+            "cc": 0,
+            "contour": 0
+          },
+          "190": {
+            "cc": 0,
+            "contour": 0
+          }
+        },
+        "down75_up": {
+          "90": {
+            "cc": 0,
+            "contour": 0
+          },
+          "140": {
+            "cc": 0,
+            "contour": 0
+          },
+          "190": {
+            "cc": 0,
+            "contour": 0
+          }
+        }
+      },
+      "stable": true,
+      "stable_count": 0,
+      "count_range": [
+        0,
+        0
+      ],
+      "original_boxes": []
+    },
+    "central_sky_gap": {
+      "roi": [
+        792,
+        54,
+        864,
+        174
+      ],
+      "by_variant": {
+        "original": {
+          "90": {
+            "cc": 0,
+            "contour": 0
+          },
+          "140": {
+            "cc": 0,
+            "contour": 0
+          },
+          "190": {
+            "cc": 0,
+            "contour": 0
+          }
+        },
+        "jpeg85": {
+          "90": {
+            "cc": 0,
+            "contour": 0
+          },
+          "140": {
+            "cc": 0,
+            "contour": 0
+          },
+          "190": {
+            "cc": 0,
+            "contour": 0
+          }
+        },
+        "jpeg70": {
+          "90": {
+            "cc": 0,
+            "contour": 0
+          },
+          "140": {
+            "cc": 0,
+            "contour": 0
+          },
+          "190": {
+            "cc": 0,
+            "contour": 0
+          }
+        },
+        "down75_up": {
+          "90": {
+            "cc": 0,
+            "contour": 0
+          },
+          "140": {
+            "cc": 0,
+            "contour": 0
+          },
+          "190": {
+            "cc": 0,
+            "contour": 0
+          }
+        }
+      },
+      "stable": true,
+      "stable_count": 0,
+      "count_range": [
+        0,
+        0
+      ],
+      "original_boxes": []
+    },
+    "upper_right_sky": {
+      "roi": [
+        1170,
+        53,
+        1335,
+        96
+      ],
+      "by_variant": {
+        "original": {
+          "90": {
+            "cc": 0,
+            "contour": 0
+          },
+          "140": {
+            "cc": 0,
+            "contour": 0
+          },
+          "190": {
+            "cc": 0,
+            "contour": 0
+          }
+        },
+        "jpeg85": {
+          "90": {
+            "cc": 0,
+            "contour": 0
+          },
+          "140": {
+            "cc": 0,
+            "contour": 0
+          },
+          "190": {
+            "cc": 0,
+            "contour": 0
+          }
+        },
+        "jpeg70": {
+          "90": {
+            "cc": 0,
+            "contour": 0
+          },
+          "140": {
+            "cc": 0,
+            "contour": 0
+          },
+          "190": {
+            "cc": 0,
+            "contour": 0
+          }
+        },
+        "down75_up": {
+          "90": {
+            "cc": 0,
+            "contour": 0
+          },
+          "140": {
+            "cc": 0,
+            "contour": 0
+          },
+          "190": {
+            "cc": 0,
+            "contour": 0
+          }
+        }
+      },
+      "stable": true,
+      "stable_count": 0,
+      "count_range": [
+        0,
+        0
+      ],
+      "original_boxes": []
+    },
+    "right_top_sky": {
+      "roi": [
+        1363,
+        15,
+        1491,
+        92
+      ],
+      "by_variant": {
+        "original": {
+          "90": {
+            "cc": 0,
+            "contour": 0
+          },
+          "140": {
+            "cc": 0,
+            "contour": 0
+          },
+          "190": {
+            "cc": 0,
+            "contour": 0
+          }
+        },
+        "jpeg85": {
+          "90": {
+            "cc": 0,
+            "contour": 0
+          },
+          "140": {
+            "cc": 0,
+            "contour": 0
+          },
+          "190": {
+            "cc": 0,
+            "contour": 0
+          }
+        },
+        "jpeg70": {
+          "90": {
+            "cc": 0,
+            "contour": 0
+          },
+          "140": {
+            "cc": 0,
+            "contour": 0
+          },
+          "190": {
+            "cc": 0,
+            "contour": 0
+          }
+        },
+        "down75_up": {
+          "90": {
+            "cc": 0,
+            "contour": 0
+          },
+          "140": {
+            "cc": 0,
+            "contour": 0
+          },
+          "190": {
+            "cc": 0,
+            "contour": 0
+          }
+        }
+      },
+      "stable": true,
+      "stable_count": 0,
+      "count_range": [
+        0,
+        0
+      ],
+      "original_boxes": []
+    }
+  },
+  "stable_region_count": 4,
+  "positive_region_count": 0,
+  "promoted": false,
+  "decision": "NO_REPLICATED_ISOLATED_SKY_MARK_PATTERN",
+  "coverage_guard": "Only isolated marks of 12-250 pixels within these sky windows. No broader negative for other markings or text; a count of sky flecks is not by itself a secret.",
+  "safety": "Pure canonical image diagnostics. No key, seed phrase, BIP39, wallet or social-source operations."
+}
