@@ -559,3 +559,10 @@ Exactly one Stage150 follow-up: verify lower-H of #3,#4,#7 and all-V of #12 unde
 Stage150 source jitter run #38577281719 completed: all 3 artificial V/V/H, V/V/V, V/V/V-with-external-H synthetic patterns passed at 4 V building geometries; source upper V remains V 36/36 all sites, lower H #3 36/36, #4/#7 24/36 and lower V #12 24/36 with no opposite labels. Preregistered 31/36 per-building gate fails, resulting in boundary-sensitive basal zone pattern. Do not promote 321 intentional coding.
 
 The canonical drawing contains a distinct hollow triangular construction beneath the right pier, roughly vertices (1052,633),(1052,778),(1280,714), not included in 5 annotated small sails or big left sail. One new Stage151 source-only test evaluates whether it has dense pencil hatching like any of five known sails vs unhatched outline/rigging, with affine rectification, 2 fixed interior features, four formats, 48 hatched/empty object fixtures, positive source recovery gate 4/5. No wallet, key, mnemonic or outside source work.
+
+
+## 2026-10-14 — Stage151 completed, Stage152 outline follow-up
+
+Stage151 Actions #38578665223 finished. Canonical image source control and 48/48 synthetic filled/unfilled triangle calibrations passed; 5/5 known sail interiors full-source recovered, while under-pier triangular region at fixed (1052,633),(1052,778),(1280,714) has low interior shading density .154 and detail .082 and fails normal filled sail criterion. No sixth sail established under this test.
+
+Stage152 preregistered: a sparsely shaded triangle can still be genuinely CLOSED or simply crossing dock ropes; test three fixed boundaries by affine normalizing exact prior six ROI triplets. Synthetic full triangle vs 2-edge V vs mast-only ×4 formats ×6 known sites; source positive control requires ≥4/5 true sail outlines. No keys, mnemonic, wallets or external research.
