@@ -545,3 +545,10 @@ Stage148 pivots to unmirrored original H/V building fill already robust since St
 Stage148 GitHub Actions #38502142003 completed successfully; SHA verified and 12×4 original H/V facade labels HHVVHHVHHHHV and all rooflines independently confirmed. Geometry null controls success; width, height, ratio and area exact permutation p values 0.1273,0.5980,0.5374,0.1798, joint corrected p=.29899, no simple shape explanation. Visual mapping H0 V1 yields 0x321 but intentional encoding remains unverified and Stage22 grouping caveat holds.
 
 One new Stage149 assesses cross-facade vertical texture consistency, not previous overall orientation or line counts. Three fixed source tier windows per building and two genuinely different classifiers (Sobel direction energy and directional 4px-pair grayscale correlation), four original/lossy images, positive full H and V and alternating H/V/H plus white-negative fixtures, all 576 registered classification checks must pass before evaluating original. No secret/mnemonic/address/wallet work.
+
+
+## 2026-10-14 — Stage149 concluded; Stage150 source jitter selected
+
+Stage149 run #38576395527 successful and saved result/REPORT. SHA, whole 12-building H/V labels and 576/576 synthetic all-H/all-V/HVH/blank 3-tier source fixture readings PASS. Source real tier orientation stable 35/36, 9/12 facades 3/3 match whole building; mixed vertical-H changes observed in V facades #3/#4/#7 at lower tier, V facade #12 remains V. Threshold for promoting broad facade layer mixture was 4 buildings, so verdict FACADES_PARTIALLY_MIXED_OR_SOURCE_AMBIGUOUS, not decoded 321.
+
+Exactly one Stage150 follow-up: verify lower-H of #3,#4,#7 and all-V of #12 under nine predeclared x/y source crop shifts and four renderings, keeping same Stage149 independent Sobel/lag classifiers and no thresholds fit to source. Positive V/V/H and two V/V/V null fixtures (with/without outside horizontal line); >=31/36 per-site per-band stability, 3 case families, source provenance gate; image-only. No mnemonics, private keys, wallets or external research.
