@@ -1,0 +1,116 @@
+{
+  "experiment_id": "A11-EXP-166",
+  "source_hash_provenance_only": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "source_pixels_reexamined": false,
+  "prior_hand_annotated_base_widths": [
+    70,
+    76,
+    88,
+    84,
+    94
+  ],
+  "endpoint_displacement_per_side_px": [
+    -4,
+    0,
+    4
+  ],
+  "derived_width_changes_px": [
+    -8,
+    -4,
+    0,
+    4,
+    8
+  ],
+  "multiplicity_per_derived_width_change": [
+    1,
+    2,
+    3,
+    2,
+    1
+  ],
+  "synthetic_labelled_endpoint_assignments": 59049,
+  "unique_width_vectors": 3125,
+  "controls": {
+    "source_SHA": true,
+    "Stage165_negative": true,
+    "annotation_base_widths": true,
+    "Stage165_source_controls": true,
+    "Stage165_numerical_controls": true,
+    "four_formats": true,
+    "positive_fixture": true,
+    "constant_negative": true,
+    "unique_3125": true,
+    "labelled_59049": true,
+    "all_positive_widths": true,
+    "unperturbed_present": true,
+    "Stage165_120_permutation_replay_original": true,
+    "Stage165_120_permutation_replay_jpeg85": true,
+    "Stage165_120_permutation_replay_jpeg70": true,
+    "Stage165_120_permutation_replay_down75_up": true
+  },
+  "controls_passed": 16,
+  "controls_total": 16,
+  "by_format": {
+    "original": {
+      "baseline_p": 0.6166666666666667,
+      "baseline_abs_r": 0.39970403251589476,
+      "min_p": 0.016666666666666666,
+      "max_p": 1.0,
+      "min_abs_r": 0.005051084868548463,
+      "max_abs_r": 0.9882385261744173,
+      "single_nominal_p_le_005_unique": 36,
+      "single_nominal_p_le_005_labelled": 182
+    },
+    "jpeg85": {
+      "baseline_p": 0.6166666666666667,
+      "baseline_abs_r": 0.39970403251589476,
+      "min_p": 0.016666666666666666,
+      "max_p": 1.0,
+      "min_abs_r": 0.005051084868548463,
+      "max_abs_r": 0.9882385261744173,
+      "single_nominal_p_le_005_unique": 36,
+      "single_nominal_p_le_005_labelled": 182
+    },
+    "jpeg70": {
+      "baseline_p": 0.6166666666666667,
+      "baseline_abs_r": 0.39970403251589476,
+      "min_p": 0.016666666666666666,
+      "max_p": 1.0,
+      "min_abs_r": 0.005051084868548463,
+      "max_abs_r": 0.9882385261744173,
+      "single_nominal_p_le_005_unique": 36,
+      "single_nominal_p_le_005_labelled": 182
+    },
+    "down75_up": {
+      "baseline_p": 0.5666666666666667,
+      "baseline_abs_r": 0.43187803371226485,
+      "min_p": 0.008333333333333333,
+      "max_p": 1.0,
+      "min_abs_r": 0.0,
+      "max_abs_r": 0.9948320067476139,
+      "single_nominal_p_le_005_unique": 46,
+      "single_nominal_p_le_005_labelled": 266
+    }
+  },
+  "sensitivity_counts": {
+    "any_single_format_p_le_005": {
+      "unique": 49,
+      "labelled": 273
+    },
+    "four_formats_p_le_005": {
+      "unique": 33,
+      "labelled": 175
+    },
+    "complete_original_Stage165_joint_gate": {
+      "unique": 33,
+      "labelled": 175
+    },
+    "all_formats_p_gt_005": {
+      "unique": 3076,
+      "labelled": 58776
+    }
+  },
+  "decision": "ANNOTATION_JITTER_CAN_FLIP_STAGE165_JOINT_GATE",
+  "scope_limit": "Artificial exhaustive coordinate uncertainties are NOT 59,049 independent image measurements and are NOT posterior probabilities. No source contour is remeasured, and a p-value in a perturbed vector is not evidence of author coding.",
+  "safety": "No cryptographic material, BIP39, wallet/address access or external research."
+}
