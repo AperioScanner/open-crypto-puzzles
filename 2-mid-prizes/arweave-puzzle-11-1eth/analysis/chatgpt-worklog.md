@@ -538,3 +538,10 @@ Stage146 Actions #38501412862 completed SUCCESS. Canonical hash, all 16 artifici
 Stage147 Actions #38501723077 completed successfully: synthetic four-case source fixtures x four lossy formats 16/16; Stage146 image-source replay exact. Independent Canny/Hough native y232..242 line support 11/12 x-bins, y252..267 12/12; Sobel 7/12 and 10/12, identical across PNG/JPEG/resample. This corroborates two native horizontal shoreline source bands without implying rotated/mirrored 'spire' is an authored code. Archive user mirror-specific branch unless new source-specific evidence.
 
 Stage148 pivots to unmirrored original H/V building fill already robust since Stage10/31: test specific *ordinary building proportions as a confound* for H/V visual directions, NOT repeat coding or original bit-stream search. Fixed width, height, ratio, area extracted from existing geometry.json, exact C(12,4) assignment calibration and FWER max statistic, Stage10 source classifier and Stage143 roof corroboration 4 lossy copies, synthetic large/wide/tall H/V positives and invariant negative. No secret derivations, key candidates, addresses, wallets or Twitter.
+
+
+## 2026-10-14 — Stage148 verified, Stage149 preregistered
+
+Stage148 GitHub Actions #38502142003 completed successfully; SHA verified and 12×4 original H/V facade labels HHVVHHVHHHHV and all rooflines independently confirmed. Geometry null controls success; width, height, ratio and area exact permutation p values 0.1273,0.5980,0.5374,0.1798, joint corrected p=.29899, no simple shape explanation. Visual mapping H0 V1 yields 0x321 but intentional encoding remains unverified and Stage22 grouping caveat holds.
+
+One new Stage149 assesses cross-facade vertical texture consistency, not previous overall orientation or line counts. Three fixed source tier windows per building and two genuinely different classifiers (Sobel direction energy and directional 4px-pair grayscale correlation), four original/lossy images, positive full H and V and alternating H/V/H plus white-negative fixtures, all 576 registered classification checks must pass before evaluating original. No secret/mnemonic/address/wallet work.
