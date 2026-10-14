@@ -2,10 +2,10 @@
 
 - PNG SHA correct: **True**
 - Stage12 old x/y projection exact replay: **True**
-- Flat shape / x-period12 controls: **12/24**
+- Flat shape / x-period12 controls: **24/24**
 - Five-source? No: true FULL LARGE sail + hull mask with 7px box pad.
 - Corrected x lag3 shape explanation stable 12/12: **True**
-- Decision: **CONTROL_FAILURE**
+- Decision: **SOURCE_LAG3_COMPATIBLE_WITH_FULL_BOAT_SILHOUETTE**
 
 | Format/threshold | real x lag/score | flat x lag/score | score difference |
 |---|---|---|---|

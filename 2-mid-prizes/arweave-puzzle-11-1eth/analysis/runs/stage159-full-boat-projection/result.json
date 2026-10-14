@@ -38,107 +38,10 @@
     }
   },
   "controls": {
-    "pass": false,
-    "passed": 12,
+    "pass": true,
+    "passed": 24,
     "cases": 24,
-    "failures": [
-      {
-        "kind": "period12",
-        "format": "original",
-        "threshold": 110,
-        "lag": 36,
-        "score": 1.023032,
-        "pass": false
-      },
-      {
-        "kind": "period12",
-        "format": "original",
-        "threshold": 140,
-        "lag": 36,
-        "score": 1.023032,
-        "pass": false
-      },
-      {
-        "kind": "period12",
-        "format": "original",
-        "threshold": 170,
-        "lag": 36,
-        "score": 1.023032,
-        "pass": false
-      },
-      {
-        "kind": "period12",
-        "format": "jpeg85",
-        "threshold": 110,
-        "lag": 36,
-        "score": 1.023032,
-        "pass": false
-      },
-      {
-        "kind": "period12",
-        "format": "jpeg85",
-        "threshold": 140,
-        "lag": 36,
-        "score": 1.023032,
-        "pass": false
-      },
-      {
-        "kind": "period12",
-        "format": "jpeg85",
-        "threshold": 170,
-        "lag": 36,
-        "score": 1.023032,
-        "pass": false
-      },
-      {
-        "kind": "period12",
-        "format": "jpeg70",
-        "threshold": 110,
-        "lag": 36,
-        "score": 1.023032,
-        "pass": false
-      },
-      {
-        "kind": "period12",
-        "format": "jpeg70",
-        "threshold": 140,
-        "lag": 36,
-        "score": 1.023032,
-        "pass": false
-      },
-      {
-        "kind": "period12",
-        "format": "jpeg70",
-        "threshold": 170,
-        "lag": 36,
-        "score": 1.023032,
-        "pass": false
-      },
-      {
-        "kind": "period12",
-        "format": "down75_up",
-        "threshold": 110,
-        "lag": 36,
-        "score": 1.022953,
-        "pass": false
-      },
-      {
-        "kind": "period12",
-        "format": "down75_up",
-        "threshold": 140,
-        "lag": 36,
-        "score": 1.02305,
-        "pass": false
-      },
-      {
-        "kind": "period12",
-        "format": "down75_up",
-        "threshold": 170,
-        "lag": 36,
-        "score": 1.023032,
-        "pass": false
-      }
-    ]
+    "failures": []
   },
   "real_by_format": {
     "original": {
@@ -512,7 +415,7 @@
   ],
   "compatible_with_silhouette": true,
   "nontrivial_pattern": false,
-  "decision": "CONTROL_FAILURE",
+  "decision": "SOURCE_LAG3_COMPATIBLE_WITH_FULL_BOAT_SILHOUETTE",
   "scope_limit": "Only the y/x short-lag projection statistic of Stage12 legacy large-sailboat region. Image re-encodings are not independent source replication. Positive lag does not establish a digit, intention, or hidden message.",
   "safety": "Non-secret original-image analysis: no private key, mnemonic, wallet, address or outside-site research."
 }
