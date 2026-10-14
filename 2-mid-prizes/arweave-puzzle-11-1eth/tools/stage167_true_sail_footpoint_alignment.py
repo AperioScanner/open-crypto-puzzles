@@ -29,8 +29,7 @@ FOOT_INDEXES=(1,2)
 CANDIDATE_OFFSETS=(-8,-4,0,4,8)
 CONTROL_SHIFTS=(0,-8,8)
 T_SAMPLES=np.linspace(.69,.96,20)
-INK_THRESHOLD=175
-PATCH_RADIUS=1
+POINT_NORMALIZER=255.0
 SCORE_MIN=.70
 MARGIN_MIN=.15
 
@@ -40,18 +39,22 @@ def site_list():
             yield (site,idx,triangle[0],triangle[idx])
 
 def scoring(frame,apex,foot,offset):
+    """Source-blind repaired metric: single center pixel mean darkness.
+
+    No hard grayscale cutoff and no dilated 3x3 any-dark corridor:
+    that old corridor made all 120 known-positive synthetic source lines
+    indistinguishable across adjacent 4px candidate x displacements.
+    Keep the original 20 fixed ray samples, candidate offsets and gates.
+    """
     x0,y0=apex
     x1,y1=foot
     x1+=offset
-    seen=0
+    darkness=[]
     for t in T_SAMPLES:
         x=int(round((1-t)*x0+t*x1))
         y=int(round((1-t)*y0+t*y1))
-        sub=frame[max(0,y-PATCH_RADIUS):min(frame.shape[0],y+PATCH_RADIUS+1),
-                  max(0,x-PATCH_RADIUS):min(frame.shape[1],x+PATCH_RADIUS+1)]
-        if sub.size and bool(np.any(sub<INK_THRESHOLD)):
-            seen+=1
-    return float(seen/len(T_SAMPLES))
+        darkness.append((POINT_NORMALIZER-float(frame[y,x]))/POINT_NORMALIZER)
+    return float(np.mean(darkness))
 
 def classify(frame,apex,foot):
     values=[scoring(frame,apex,foot,v) for v in CANDIDATE_OFFSETS]
@@ -142,7 +145,7 @@ def main():
         "original_immutable_sail_vertices":SITES,
         "fixed_parameters":{"offsets_px":CANDIDATE_OFFSETS,
             "fractional_distance_from_apex":T_SAMPLES.tolist(),
-            "sample_patch_radius":PATCH_RADIUS,"dark_less_than":INK_THRESHOLD,
+            "pixel_metric":"mean normalized center-pixel darkness, fixed t samples; synthetic-only repair; no hard ink cutoff",
             "min_top_score":SCORE_MIN,"min_best_second_margin":MARGIN_MIN,
             "source_formats":FORMATS},
         "prior_source_guards":guards,
