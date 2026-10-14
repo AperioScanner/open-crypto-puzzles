@@ -77,6 +77,19 @@ def whiten_outside(original,mask):
 def calc_rings(frame):
     return {str(w):float(perimeter_fraction(frame,THRESHOLD,w)) for w in WIDTHS}
 
+def eligible_ring_mask_pixels(mask,width):
+    """Count image pixels that COULD affect the corrected crop-ring metric.
+
+    If this is zero for the preregistered width2, then a zero edge measurement
+    is mathematically forced by the mask and tells us NOTHING about source ink.
+    """
+    ring=np.zeros(mask.shape,np.bool_)
+    ring[:width,:]=True
+    ring[-width:,:]=True
+    ring[:,:width]=True
+    ring[:,-width:]=True
+    return int(np.count_nonzero(mask & ring))
+
 def archive_replay(gray):
     archive=json.loads(STAGE12.read_text())
     rows={}
@@ -162,6 +175,9 @@ def main():
                 "source_minus_shape_w":{str(w):r[str(w)]-f[str(w)] for w in WIDTHS}}
         measured[name]={"fixed_bbox":info["bbox"],"mask_area":info["area"],
                         "by_format":byfmt}
+    ring_coverage={name:{str(w):eligible_ring_mask_pixels(info["mask"],w)
+                         for w in WIDTHS} for name,info in sources.items()}
+    w2_informative=all(row["2"]>0 for row in ring_coverage.values())
     compatible=all(
         measured[name]["by_format"][fmt]["source_minus_shape_w"]["2"]<=.15
         for name in sources for fmt in FORMATS
@@ -174,6 +190,7 @@ def main():
     )
     decision=("CONTROL_FAILURE" if not ctl["pass"] else
               "HISTORICAL_REPLAY_FAILURE" if not old["pass"] else
+              "MASKED_RECTANGLE_EDGE_NONINFORMATIVE_BY_CONSTRUCTION" if not w2_informative else
               "SOURCE_CROP_EDGE_COMPATIBLE_WITH_FILLED_GEOMETRY" if compatible else
               "CORRECTED_EDGE_EXCESS_WARRANTS_VISUAL_REVIEW" if outlier else
               "PERIMETER_MEASUREMENT_INCONCLUSIVE")
@@ -187,6 +204,8 @@ def main():
             "expected_shape_compatibility":"source w2 minus flat w2 <= 0.15 for both regions in all four variants",
             "excess_review":"source w2>=0.25 AND source minus flat >0.15 at one region, all four formats"},
         "synthetic_controls":ctl,
+        "eligible_mask_pixels_in_crop_rings":ring_coverage,
+        "source_w2_informative":bool(w2_informative),
         "corrected_vs_flat":measured,
         "source_shape_compatible":compatible,
         "exceptional_source_edge_occupancy":outlier,
@@ -199,6 +218,7 @@ def main():
         f"- Canonical image SHA correct: **{digest==SHA}**",
         f"- Six original Stage12 source crop perimeter percentages exactly reproduced: **{old['passed']}/{old['cases']}**",
         f"- Synthetic black-rim / white-rim fixture controls: **{ctl['passed']}/{ctl['cases']}**",
+        f"- Real source pixels eligible in corrected width2 rings: **{ring_coverage['large_sailboat']['2']} large / {ring_coverage['small_sails_full_band']['2']} small**",
         f"- Real source edge occupancies consistent with filled silhouette control in both corrected objects and four formats: **{compatible}**",
         f"- Decision: **{decision}**","",
         "| Object | Historical cropped w2 (t140) | Corrected real w2 original | Fixed filled silhouette w2 | Source minus silhouette |",
@@ -207,11 +227,12 @@ def main():
         h=old["by_region"][name]["actual"]["2"]
         v=measured[name]["by_format"]["original"]
         lines.append(f"| {name} | {h:.4f} | {v['source_w']['2']:.4f} | {v['shape_only_w']['2']:.4f} | {v['source_minus_shape_w']['2']:+.4f} |")
-    lines+=["","**Interpretation:** Stage12's perimeter fraction was defined on the rectangle crop edge, not the hand-drawn outline. The old ROI is defective for both objects and no source geometry correction establishes a hidden code. Historical counts and other already-validated regions were untouched.","",
+    lines+=["","**Interpretation:** Stage12's perimeter fraction was defined on the rectangle crop edge, not the hand-drawn outline. The old ROI is defective for both objects. If eligible pixels in the 2px corrected ring are ZERO, the corrected zero is guaranteed by mask erosion and cannot be evidence about original pencil marks. Historical counts and other already-validated regions were untouched.","",
            "The two different ROI definitions do not estimate the same quantity; numerical difference is provenance-only.","",
            "No hidden payload, key, wallet or BIP39 extraction attempted.",""]
     (OUT/"REPORT.md").write_text("\n".join(lines))
     print(json.dumps({"stage":160,"old_replay":f"{old['passed']}/{old['cases']}",
+          "eligible_w2_pixels":{k:v["2"] for k,v in ring_coverage.items()},
           "controls":f"{ctl['passed']}/{ctl['cases']}",
           "shape":compatible,"exceptional":outlier,"decision":decision}))
 if __name__=="__main__":
