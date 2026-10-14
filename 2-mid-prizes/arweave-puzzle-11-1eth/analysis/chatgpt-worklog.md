@@ -425,3 +425,10 @@ Stage129 selected to correct Stage102's proved object association defect (not ge
 ## 2026-10-13 — Stage 131 results and Stage 132 selection
 
 GitHub Stage131 #38487611024 completed: 192/192 synthetic controls; all four real fixed sky ROIs empty of qualifying 12..250 pixel isolated short ink marks in original/JPEG85/JPEG70/resampled across 90/140/190. Negative only for four surveyed locations. Shifted to a newly seen implementation-quality issue in canonical image geometry: data/geometry.json claims "large_sailboat" bbox [44,320,359,599], whereas the visibly drawn triangle and hull extend to about x~525 and y~940. Stages36/94 use old box. Stage132 preregisters old-vs-fixed-polygon ink coverage with positive full/cropped negative synthetic controls, thresholds and lossy tests, and saves actual source overlay; may reveal undercoverage without posthoc key search. No external/sensitive operations.
+
+
+## 2026-10-13 — Stage132 confirmation and Stage133 re-audit
+
+Verified GitHub Stage132 run #38488910201 completed with success, canonical image hash, full/truncated positive and negative calibration 24/24. All 12 source/lossy×threshold checks meet incompleteness criterion. Original threshold 170 source polygon ink outside legacy geometry.json bbox: sail 0.667162, hull 1.000000. This exposes ROI-truncation in previous structural work, including Stage94. Prohibited inference: a defective source ROI does not magically establish secret code.
+
+Selected exactly one next experiment, Stage133: preserve Stage94 segmentation/skeleton/Hough code and its fixed thresholds, but compare counts under its original ROI and Stage132 corrected sail polygon, with explicit blank and synthetic 16/64 count controls. Do not extract ordered stroke signs, words, private keys or wallet material. The author's historical "format does not matter" note strongly favors a visually persistent clue, but no statistically defensible posterior percentage exists.
