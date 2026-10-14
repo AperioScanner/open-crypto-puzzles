@@ -90,3 +90,8 @@ Stage130 synthetic panel-classification controls passed 100/100 but real five-sa
 ## Stage131 valid negative; Stage132 geometry-provenance audit
 
 Stage131: 192/192 dash-versus-speckle positive/negative controls pass; no reproducible 12–250-pixel short isolated sky marks in its four fixed sky regions. New Stage132 is a source-quality audit, not a key test: the legacy "large_sailboat" bbox [44,320,359,599] appears to omit most of the visible large triangle and hull in the canonical image. Quantify missing ink across fixed polygons, three thresholds and four lossy variants; controls ensure full-vs-truncated shape distinguishes correct vs incomplete ROI. Do not declare old hypotheses invalid until the measured polygon/ROI boundaries and scope are reviewed.
+
+
+## Stage132 verified visual ROI defect; Stage133 targeted re-audit
+
+Stage132 returned a positive, independently calibrated SOURCE-GEOMETRY result: the old large-sailboat bbox misses 66.7% of source-polygon sail ink and all hull ink under threshold 170. Stages 36 and 94's ROI-dependent negatives therefore apply only to their cropped portions, not the entire drawn vessel. Stage133 remeasures corrected *full-sail* structural strokes with the identical Stage94 count estimator and blank/drawn controls; no candidate secrets. This is justified by a concrete implementation defect, not recycling a negative.
