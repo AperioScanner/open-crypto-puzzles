@@ -1,0 +1,35 @@
+name: Arweave 11 stage 168 flagged sail foot source contact sheet
+on:
+  push:
+    branches: [research/arweave11-chatgpt]
+    paths:
+      - ".github/workflows/arweave11-stage168-flagged-foot-review.yml"
+      - "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage168_flagged_sail_foot_contact_review.py"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  stage168:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PZL: 2-mid-prizes/arweave-puzzle-11-1eth
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/arweave11-chatgpt
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --disable-pip-version-check numpy pillow opencv-python-headless
+      - run: python -m py_compile "$PZL/tools/stage168_flagged_sail_foot_contact_review.py"
+      - run: python "$PZL/tools/stage168_flagged_sail_foot_contact_review.py"
+      - name: Archive source-verified diagnostic contact sheet
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$PZL/analysis/runs/stage168-sail-foot-review"
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "research: Stage168 original footpoint contact review [skip ci]"
+          git pull --rebase origin research/arweave11-chatgpt
+          git push origin HEAD:research/arweave11-chatgpt
