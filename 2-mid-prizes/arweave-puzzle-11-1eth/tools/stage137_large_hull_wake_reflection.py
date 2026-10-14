@@ -112,7 +112,7 @@ def draw_pencil(h,w,seed):
     img=np.full((h,w),255,np.uint8)
     # Multiple short independently located pencil strokes, not a straight
     # horizon/rectangle, to exercise both grayscale and edge channels.
-    for _ in range(70):
+    for _ in range(130):
         x=int(rng.integers(18,w-50))
         y=int(rng.integers(15,h-18))
         dx=int(rng.integers(12,52))
