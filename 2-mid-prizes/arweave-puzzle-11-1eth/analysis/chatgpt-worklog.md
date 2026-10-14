@@ -552,3 +552,10 @@ One new Stage149 assesses cross-facade vertical texture consistency, not previou
 Stage149 run #38576395527 successful and saved result/REPORT. SHA, whole 12-building H/V labels and 576/576 synthetic all-H/all-V/HVH/blank 3-tier source fixture readings PASS. Source real tier orientation stable 35/36, 9/12 facades 3/3 match whole building; mixed vertical-H changes observed in V facades #3/#4/#7 at lower tier, V facade #12 remains V. Threshold for promoting broad facade layer mixture was 4 buildings, so verdict FACADES_PARTIALLY_MIXED_OR_SOURCE_AMBIGUOUS, not decoded 321.
 
 Exactly one Stage150 follow-up: verify lower-H of #3,#4,#7 and all-V of #12 under nine predeclared x/y source crop shifts and four renderings, keeping same Stage149 independent Sobel/lag classifiers and no thresholds fit to source. Positive V/V/H and two V/V/V null fixtures (with/without outside horizontal line); >=31/36 per-site per-band stability, 3 case families, source provenance gate; image-only. No mnemonics, private keys, wallets or external research.
+
+
+## 2026-10-14 — Stage150 finished; Stage151 new source image triangle selected
+
+Stage150 source jitter run #38577281719 completed: all 3 artificial V/V/H, V/V/V, V/V/V-with-external-H synthetic patterns passed at 4 V building geometries; source upper V remains V 36/36 all sites, lower H #3 36/36, #4/#7 24/36 and lower V #12 24/36 with no opposite labels. Preregistered 31/36 per-building gate fails, resulting in boundary-sensitive basal zone pattern. Do not promote 321 intentional coding.
+
+The canonical drawing contains a distinct hollow triangular construction beneath the right pier, roughly vertices (1052,633),(1052,778),(1280,714), not included in 5 annotated small sails or big left sail. One new Stage151 source-only test evaluates whether it has dense pencil hatching like any of five known sails vs unhatched outline/rigging, with affine rectification, 2 fixed interior features, four formats, 48 hatched/empty object fixtures, positive source recovery gate 4/5. No wallet, key, mnemonic or outside source work.
