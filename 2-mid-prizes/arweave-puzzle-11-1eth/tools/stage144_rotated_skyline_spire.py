@@ -78,14 +78,21 @@ def scored_line(source):
 def strip(source,best):
     out=source.copy()
     mask=long_horizontal(source)
-    # Erase ONLY already-detected source horizontal ink in a fixed +/-3px
-    # neighborhood of the strongest Y. Never erase vertical strokes at other
-    # rows or redraw any portion of the original.
+    # REPAIR: selecting only pixels at y ±3 removes the top of a 2-px
+    # antialiased stroke but LEAVES its lower rows. The initial 4/4 copied
+    # positive controls kept 12/12 covered x-blocks after that partial cut.
+    # Select each ENTIRE horizontal-opening connected component intersecting
+    # the original fixed ±3px row seed. This removes one actual pencil-stroke
+    # component from endpoint to endpoint without expanding the seed search,
+    # relaxing gates or inventing new source content.
     yc=best["original_y"]-Y0
     ylo=max(0,yc-LOCAL_Y_RADIUS)
     yhi=min(mask.shape[0],yc+LOCAL_Y_RADIUS+1)
-    keep=np.zeros_like(mask)
-    keep[ylo:yhi,:]=mask[ylo:yhi,:]
+    binary=(mask>0).astype(np.uint8)
+    n,labels,_,_=cv2.connectedComponentsWithStats(binary,connectivity=8)
+    seed_labels=np.unique(labels[ylo:yhi,:])
+    seed_labels=seed_labels[seed_labels>0]
+    keep=np.isin(labels,seed_labels).astype(np.uint8)*255
     enlarged=cv2.dilate(keep,np.ones((3,3),np.uint8),iterations=1)
     patch=out[Y0:Y1,X0:X1]
     patch[enlarged>0]=255
@@ -214,7 +221,7 @@ def main():
             "required_source_coverage_blocks":MIN_COVERED_BLOCKS,
             "required_ablation_block_drop":MIN_ABLATION_BLOCK_DROP
         },
-        "controls":ctl,
+        "calibration_repair":"Initial positive horizon synthetic scored 12/12 before and after partial 3px ablation. Repaired only the ablation primitive: erase complete detected long-horizontal connected components touching the unchanged seed row, keeping all precommitted source ROIs/thresholds.","controls":ctl,
         "source_variants":results,
         "same_source_y_under_lossy_formats":y_stable,
         "independent_new_spire_evidence":False,
@@ -228,6 +235,7 @@ def main():
         "# Stage144 — source origin of the central spire in reversed skyline mirror",
         "",
         f"- Canonical source verified: **{digest==SHA}**",
+        "- Calibration repair: remove full connected horizontal strokes seeded at the same fixed y±3 instead of clipping their upper pixels.",
         f"- Synthetic horizon and independent-building null controls: **{ctl['pass']}** (4/4 + 4/4)",
         f"- Original line near skyline/waterfront y: **{results['original']['best_source_horizon_y']}**",
         f"- Vertical-spire provenance across four formats: **{consistent}**",
