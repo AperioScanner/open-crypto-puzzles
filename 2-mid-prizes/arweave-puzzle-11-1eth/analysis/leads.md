@@ -115,3 +115,8 @@ Stage135 discovered a repeatable, highly significant (under its simple global nu
 ## Stage136 negative under natural V-shading null; Stage137 image-only reflection
 
 Stage136 matched Stage135's source exactly and its conditioned left/right null shows 0/4 significant top/bottom differences (p 0.27..1.0). Stage135's visual pattern is therefore consistent with normal left-negative/right-positive sail sketching, not a detected cipher. A distinct large-hull-to-lower-wake reflection check (Stage137) is justified by Stage132's confirmed omission of the **entire hull** from prior box-dependent work; same-format controls and shift null. No keys or external clues.
+
+
+## Stage137 closed; Stage138 restored 12-building reflection cohort
+
+Stage137: literal mirrored lower-wake relation negative with successful reflected/independent synthetic controls and full real-source coverage (real ink corr .023–.039). Stage138 instead audits the proved **source-exclusion error** in Stage35: buildings 1 and 2 were omitted from y330..360 skyline reflection due to an incorrect boat rectangle, though the real sail begins below at y398. Restore all 12 H/V building regions, keep original Sobel/Fourier metrics, use 495 label permutations, calibration and JPEG invariance. No wallet/key operations.
