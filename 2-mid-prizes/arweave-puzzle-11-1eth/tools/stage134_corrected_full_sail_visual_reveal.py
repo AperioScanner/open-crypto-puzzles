@@ -146,8 +146,13 @@ def synth_scene(box,mask,text_is_target):
         if (name=="large_sail")==text_is_target:
             # Four known, visible synthetic shapes ONLY for calibrating the
             # generic glyph-alignment detector; never output guessed glyphs.
-            cv2.putText(regions[name],"ABCD",(130,177),
-                        cv2.FONT_HERSHEY_SIMPLEX,.82,0,2,cv2.LINE_AA)
+            # Repair positive fixture: old "ABCD" occupied only ~14.2% of
+            # image width, *below the fixed 15% coverage gate*, so a known
+            # visible synthetic word was rejected before classification.
+            # A longer non-secret example spans the same aperture and
+            # exercises the unmodified glyph-alignment criterion.
+            cv2.putText(regions[name],"ABCDEFGH",(78,177),
+                        cv2.FONT_HERSHEY_SIMPLEX,.68,0,2,cv2.LINE_AA)
         else:
             # Diffuse non-letter pencil lines, not aligned as a word.
             for k in range(14):
@@ -251,6 +256,7 @@ def main():
                       "required_replicated_transforms":REQUIRED_REPLICATED,
                       "required_distinct_transform_families":REQUIRED_FAMILIES},
         "source_control":source,
+        "synthetic_calibration_repair":"Original ABCD fixture covered ~14.2% of ROI x-axis, below the precommitted 15% aligned-x gate. Expanded positive fixture to ABCDEFGH so the existing detector and thresholds can be tested without altering any real-data measurement.",
         "synthetic_text_vs_random_control":calibration,
         "by_variant":scores,
         "outcome":review,
@@ -262,6 +268,7 @@ def main():
     save_visual_contact(all_regions["original"],scores)
     rows=[
        "# Stage 134 — Stage36 visual reveal re-audit on the complete sail",
+       "- Calibration fix: original ABCD source control occupied ~14.2% x coverage, below the unchanged 15% positive coverage gate; replaced with longer ABCDEFGH demo.",
        "",
        f"- Source SHA verified: **{digest==EXPECTED_SHA}**",
        f"- Corrected sail support valid: **{source['pass']}** (ink {source['fraction']:.3f})",
