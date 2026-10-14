@@ -155,3 +155,8 @@ Source image mirror/90° transform reproduced the user's king/queen-like voids w
 ## Stage143 closed; Stage144 central black spire source provenance
 
 Stage143 validated the generated king/queen-like central WHITE gaps but concluded their stepped symmetry is manufactured by reflecting 7- and 5-building skyline blocks. User then produced a reversed presentation with a BLACK narrow vertical spire down the axis, a distinct visible observation. Stage144 pretests the physical explanation: canonical horizontal waterfront baseline y225..292 in skyline becomes vertical when rotated 90 degrees, and mirror provides left/right bilateral repetition. Fixed horizontal-line detector, ablation, 4 image format reproducibility and horizontal-line-vs-independent-hatching synthetic controls. Does not call it an encoded spire.
+
+
+## Stage144 repaired controls / Stage145 native multiple source horizontals (2026-10-13)
+
+Stage144 first attempt invalid (positive original baseline not fully erased); fixed *same* stage via complete connected-component ablation preserving threshold/ROI. Controls now 8/8 PASS. Real source has a long skyline horizontal feature at y258..260 covering 11–12 x-bins, but 8/12 long-stroke x-bins survive removing one original line. No confirmed full central-spire provenance from a SINGLE source horizon stroke; neither is it a verified special drawn spire. Stage145 examines separate bands of the same original horizontal strokes using 2-line/single-line/no-line synthetic controls, immutable source settings and side-by-side ablation artwork.
