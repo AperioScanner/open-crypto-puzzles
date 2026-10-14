@@ -1,0 +1,596 @@
+{
+  "experiment_id": "A11-EXP-140",
+  "hypothesis": "the five true small sail drawings share a pen-stroke template geometrically copied from the complete large sail, after scale normalization",
+  "motivation": "Stage120 compared only five small sails, Stage123 checked same-size 64px cross-region patches, while Stage132 verified giant sail source ROI had been truncated.",
+  "source_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "sail_geometry_fixed": {
+    "large": [
+      [
+        242,
+        398
+      ],
+      [
+        56,
+        758
+      ],
+      [
+        512,
+        760
+      ]
+    ],
+    "small_1": [
+      [
+        1042,
+        448
+      ],
+      [
+        1007,
+        546
+      ],
+      [
+        1077,
+        546
+      ]
+    ],
+    "small_2": [
+      [
+        1148,
+        433
+      ],
+      [
+        1110,
+        532
+      ],
+      [
+        1186,
+        532
+      ]
+    ],
+    "small_3": [
+      [
+        1282,
+        411
+      ],
+      [
+        1238,
+        514
+      ],
+      [
+        1326,
+        514
+      ]
+    ],
+    "small_4": [
+      [
+        1372,
+        397
+      ],
+      [
+        1330,
+        498
+      ],
+      [
+        1414,
+        498
+      ]
+    ],
+    "small_5": [
+      [
+        1490,
+        357
+      ],
+      [
+        1443,
+        463
+      ],
+      [
+        1537,
+        463
+      ]
+    ]
+  },
+  "normalization": {
+    "width": 128,
+    "height": 128,
+    "interior_y": [
+      0.26,
+      0.79
+    ],
+    "interior_abs_x": [
+      0.17,
+      0.76
+    ]
+  },
+  "thresholds": {
+    "min_source_density": 0.1,
+    "min_dark_correlation_both_panels": 0.65,
+    "min_detail_correlation_both_panels": 0.28
+  },
+  "controls": {
+    "pass": true,
+    "positive_cases": 20,
+    "positive_pass": 20,
+    "negative_cases": 20,
+    "negative_pass": 20,
+    "positive_min_panel_dark": 0.997992,
+    "positive_min_panel_detail": 0.823297,
+    "negative_max_panel_dark": 0.911095,
+    "negative_max_panel_detail": 0.426845
+  },
+  "sails": {
+    "small_1": {
+      "source_adequate": true,
+      "replicated_template_match": false,
+      "measurements": {
+        "original": {
+          "panel_values": {
+            "left": {
+              "dark": 0.703831,
+              "detail": 0.084244
+            },
+            "right": {
+              "dark": 0.473284,
+              "detail": 0.06923
+            }
+          },
+          "density_large": {
+            "left": 0.373941,
+            "right": 0.525212
+          },
+          "density_small": {
+            "left": 0.570795,
+            "right": 0.666801
+          },
+          "enough_ink": true,
+          "template_match": false
+        },
+        "jpeg85": {
+          "panel_values": {
+            "left": {
+              "dark": 0.706096,
+              "detail": 0.083661
+            },
+            "right": {
+              "dark": 0.474304,
+              "detail": 0.068815
+            }
+          },
+          "density_large": {
+            "left": 0.374344,
+            "right": 0.526825
+          },
+          "density_small": {
+            "left": 0.572408,
+            "right": 0.667608
+          },
+          "enough_ink": true,
+          "template_match": false
+        },
+        "jpeg70": {
+          "panel_values": {
+            "left": {
+              "dark": 0.707197,
+              "detail": 0.085967
+            },
+            "right": {
+              "dark": 0.476975,
+              "detail": 0.069072
+            }
+          },
+          "density_large": {
+            "left": 0.374748,
+            "right": 0.529649
+          },
+          "density_small": {
+            "left": 0.575232,
+            "right": 0.668818
+          },
+          "enough_ink": true,
+          "template_match": false
+        },
+        "down75_up": {
+          "panel_values": {
+            "left": {
+              "dark": 0.710411,
+              "detail": 0.087754
+            },
+            "right": {
+              "dark": 0.473034,
+              "detail": 0.085352
+            }
+          },
+          "density_large": {
+            "left": 0.400161,
+            "right": 0.549415
+          },
+          "density_small": {
+            "left": 0.58814,
+            "right": 0.686971
+          },
+          "enough_ink": true,
+          "template_match": false
+        }
+      }
+    },
+    "small_2": {
+      "source_adequate": true,
+      "replicated_template_match": false,
+      "measurements": {
+        "original": {
+          "panel_values": {
+            "left": {
+              "dark": 0.484926,
+              "detail": -0.018348
+            },
+            "right": {
+              "dark": 0.130737,
+              "detail": 0.040844
+            }
+          },
+          "density_large": {
+            "left": 0.373941,
+            "right": 0.525212
+          },
+          "density_small": {
+            "left": 0.796289,
+            "right": 0.704316
+          },
+          "enough_ink": true,
+          "template_match": false
+        },
+        "jpeg85": {
+          "panel_values": {
+            "left": {
+              "dark": 0.486638,
+              "detail": -0.020764
+            },
+            "right": {
+              "dark": 0.133833,
+              "detail": 0.041732
+            }
+          },
+          "density_large": {
+            "left": 0.374344,
+            "right": 0.526825
+          },
+          "density_small": {
+            "left": 0.795885,
+            "right": 0.70593
+          },
+          "enough_ink": true,
+          "template_match": false
+        },
+        "jpeg70": {
+          "panel_values": {
+            "left": {
+              "dark": 0.483437,
+              "detail": -0.021349
+            },
+            "right": {
+              "dark": 0.13511,
+              "detail": 0.0378
+            }
+          },
+          "density_large": {
+            "left": 0.374748,
+            "right": 0.529649
+          },
+          "density_small": {
+            "left": 0.797902,
+            "right": 0.701493
+          },
+          "enough_ink": true,
+          "template_match": false
+        },
+        "down75_up": {
+          "panel_values": {
+            "left": {
+              "dark": 0.492858,
+              "detail": -0.030746
+            },
+            "right": {
+              "dark": 0.135936,
+              "detail": 0.041549
+            }
+          },
+          "density_large": {
+            "left": 0.400161,
+            "right": 0.549415
+          },
+          "density_small": {
+            "left": 0.80597,
+            "right": 0.720452
+          },
+          "enough_ink": true,
+          "template_match": false
+        }
+      }
+    },
+    "small_3": {
+      "source_adequate": true,
+      "replicated_template_match": false,
+      "measurements": {
+        "original": {
+          "panel_values": {
+            "left": {
+              "dark": 0.114354,
+              "detail": 0.016228
+            },
+            "right": {
+              "dark": 0.802439,
+              "detail": 0.093267
+            }
+          },
+          "density_large": {
+            "left": 0.373941,
+            "right": 0.525212
+          },
+          "density_small": {
+            "left": 0.787818,
+            "right": 0.613554
+          },
+          "enough_ink": true,
+          "template_match": false
+        },
+        "jpeg85": {
+          "panel_values": {
+            "left": {
+              "dark": 0.110091,
+              "detail": 0.014753
+            },
+            "right": {
+              "dark": 0.804806,
+              "detail": 0.094657
+            }
+          },
+          "density_large": {
+            "left": 0.374344,
+            "right": 0.526825
+          },
+          "density_small": {
+            "left": 0.791045,
+            "right": 0.61315
+          },
+          "enough_ink": true,
+          "template_match": false
+        },
+        "jpeg70": {
+          "panel_values": {
+            "left": {
+              "dark": 0.113195,
+              "detail": 0.013026
+            },
+            "right": {
+              "dark": 0.806641,
+              "detail": 0.092485
+            }
+          },
+          "density_large": {
+            "left": 0.374748,
+            "right": 0.529649
+          },
+          "density_small": {
+            "left": 0.789835,
+            "right": 0.614361
+          },
+          "enough_ink": true,
+          "template_match": false
+        },
+        "down75_up": {
+          "panel_values": {
+            "left": {
+              "dark": 0.111057,
+              "detail": 0.014702
+            },
+            "right": {
+              "dark": 0.807657,
+              "detail": 0.096486
+            }
+          },
+          "density_large": {
+            "left": 0.400161,
+            "right": 0.549415
+          },
+          "density_small": {
+            "left": 0.818072,
+            "right": 0.620008
+          },
+          "enough_ink": true,
+          "template_match": false
+        }
+      }
+    },
+    "small_4": {
+      "source_adequate": true,
+      "replicated_template_match": false,
+      "measurements": {
+        "original": {
+          "panel_values": {
+            "left": {
+              "dark": -0.156113,
+              "detail": 0.023195
+            },
+            "right": {
+              "dark": 0.721076,
+              "detail": 0.02276
+            }
+          },
+          "density_large": {
+            "left": 0.373941,
+            "right": 0.525212
+          },
+          "density_small": {
+            "left": 0.795079,
+            "right": 0.603066
+          },
+          "enough_ink": true,
+          "template_match": false
+        },
+        "jpeg85": {
+          "panel_values": {
+            "left": {
+              "dark": -0.155471,
+              "detail": 0.021374
+            },
+            "right": {
+              "dark": 0.724021,
+              "detail": 0.022882
+            }
+          },
+          "density_large": {
+            "left": 0.374344,
+            "right": 0.526825
+          },
+          "density_small": {
+            "left": 0.794675,
+            "right": 0.601856
+          },
+          "enough_ink": true,
+          "template_match": false
+        },
+        "jpeg70": {
+          "panel_values": {
+            "left": {
+              "dark": -0.152092,
+              "detail": 0.026458
+            },
+            "right": {
+              "dark": 0.72621,
+              "detail": 0.028283
+            }
+          },
+          "density_large": {
+            "left": 0.374748,
+            "right": 0.529649
+          },
+          "density_small": {
+            "left": 0.796289,
+            "right": 0.601856
+          },
+          "enough_ink": true,
+          "template_match": false
+        },
+        "down75_up": {
+          "panel_values": {
+            "left": {
+              "dark": -0.144677,
+              "detail": 0.015178
+            },
+            "right": {
+              "dark": 0.73045,
+              "detail": 0.024533
+            }
+          },
+          "density_large": {
+            "left": 0.400161,
+            "right": 0.549415
+          },
+          "density_small": {
+            "left": 0.815651,
+            "right": 0.613554
+          },
+          "enough_ink": true,
+          "template_match": false
+        }
+      }
+    },
+    "small_5": {
+      "source_adequate": true,
+      "replicated_template_match": false,
+      "measurements": {
+        "original": {
+          "panel_values": {
+            "left": {
+              "dark": -0.043635,
+              "detail": -0.042393
+            },
+            "right": {
+              "dark": 0.538602,
+              "detail": 0.03403
+            }
+          },
+          "density_large": {
+            "left": 0.373941,
+            "right": 0.525212
+          },
+          "density_small": {
+            "left": 0.83098,
+            "right": 0.5595
+          },
+          "enough_ink": true,
+          "template_match": false
+        },
+        "jpeg85": {
+          "panel_values": {
+            "left": {
+              "dark": -0.040734,
+              "detail": -0.041134
+            },
+            "right": {
+              "dark": 0.543428,
+              "detail": 0.035694
+            }
+          },
+          "density_large": {
+            "left": 0.374344,
+            "right": 0.526825
+          },
+          "density_small": {
+            "left": 0.830173,
+            "right": 0.56071
+          },
+          "enough_ink": true,
+          "template_match": false
+        },
+        "jpeg70": {
+          "panel_values": {
+            "left": {
+              "dark": -0.03761,
+              "detail": -0.039031
+            },
+            "right": {
+              "dark": 0.549763,
+              "detail": 0.037714
+            }
+          },
+          "density_large": {
+            "left": 0.374748,
+            "right": 0.529649
+          },
+          "density_small": {
+            "left": 0.831787,
+            "right": 0.561517
+          },
+          "enough_ink": true,
+          "template_match": false
+        },
+        "down75_up": {
+          "panel_values": {
+            "left": {
+              "dark": -0.036781,
+              "detail": -0.053097
+            },
+            "right": {
+              "dark": 0.554502,
+              "detail": 0.042831
+            }
+          },
+          "density_large": {
+            "left": 0.400161,
+            "right": 0.549415
+          },
+          "density_small": {
+            "left": 0.839451,
+            "right": 0.574425
+          },
+          "enough_ink": true,
+          "template_match": false
+        }
+      }
+    }
+  },
+  "stable_copied_sails": [],
+  "decision": "NO_LARGE_TO_SMALL_STROKE_TEMPLATE_COPY",
+  "interpretation_limit": "Only linear affine normalization anchored at six fixed manually identified sail triangles; a positive would be a cross-scale reproduced *drawing* requiring source review, not an encoding. A negative does not exclude rough redraws, other landmarks or semantics.",
+  "safety": "No private keys, BIP39, wallets, Ethereum, secrets or other sources used."
+}
