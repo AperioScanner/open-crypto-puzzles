@@ -465,3 +465,10 @@ Stage137 chosen as one image-only, ROI-defect-justified question: compare reflec
 Stage137 GitHub #38492279979 SUCCESS. SHA/control/source passed; two independent metrics across four image formats show near-zero direct mirrored hull/wake pencil template correlations, worse than all shifted-null baselines. Clear, scope-limited negative, not a global claim about reflections or the image.
 
 Noticed a concrete, unaddressed consequence of Stage132's verified incorrect boat box: Stage35's building↔reflection test omitted buildings 1 and 2 due to claimed overlapping old boat bbox in reflection band y330..360, but Stage132's real sail top y398 does not intersect this band. Selected Stage138 as calibrated repair of Stage35 cohort without changing its statistic or H/V labels; exact 4-of-12 test, source-coverage gate, four format replication and positive/negative synthetic orientation patterns. No cryptographic material produced.
+
+
+## 2026-10-13 — Stage138 all-building result; Stage139 ink-coverage gate
+
+Stage138 GitHub #38492878610 completed SUCCESS; SHA, original Stage35 ten exact values reproduced, 8/8 positive/reversed synthetic controls PASS; first-two new reflection crops show mean darkness 63.31 and 38.13. Full 12-building Sobel V-H negative -0.032 to -0.023, exact p .556..582, Fourier p .327..370, so no confirmed direct facade H/V vs underlying-reflection orientation.
+
+Audit noticed **existing Stage138 cohort had near-empty reflection ROI** in building #6 (0.4) and #11 (0.832), while Stage138 applied min mean-darkness 2.0 only to newly included #1/#2. Those blank areas cannot yield trustworthy orientation estimates. Stage139 precommits uniformly applying Stage138's own 2.0 coverage gate to every building; exact permutation comparison only if >=8 usable, >=3 V, >=4 H and exclusions replicate across all 4 source formats. Synthetic strongly directional positive/inverted negative controls have exact blank #6/#11. Do not re-label original H/V or update any p gate. No external source or private key operation.
