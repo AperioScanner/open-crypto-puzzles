@@ -1,0 +1,842 @@
+{
+  "experiment_id": "A11-EXP-152",
+  "hypothesis": "the white triangle beneath the right-hand pier could have a complete but unhatched three-sided triangular outline, different from confirmed dense sail panels",
+  "motivation": "Stage151 compared interior hatch density and rejected a densely filled sixth sail; it did NOT independently test whether the candidate's THREE edges close, unlike an open mooring brace.",
+  "scope": "Stage151 immutable 5 real small sail triangles + 1 under-pier candidate polygon, affine normalization to 128x128; line support along the fixed three edges with 45 sample locations/edge and +/-4px local source tolerance, 4 source/reencoded formats",
+  "sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "thresholds": {
+    "max_distance_px": 4,
+    "dark_gray_less_than": 185,
+    "min_per_edge_detected_fraction": 0.58,
+    "samples_per_side": 45,
+    "min_real_sail_positive_outlines": 4
+  },
+  "control": {
+    "pass": true,
+    "passed_cases": 72,
+    "cases": 72,
+    "fixtures": {
+      "full_three_edges": {
+        "original": {
+          "small_sail_1": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          },
+          "small_sail_2": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          },
+          "small_sail_3": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          },
+          "small_sail_4": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          },
+          "small_sail_5": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          },
+          "under_pier_triangle": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          }
+        },
+        "jpeg85": {
+          "small_sail_1": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          },
+          "small_sail_2": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          },
+          "small_sail_3": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          },
+          "small_sail_4": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          },
+          "small_sail_5": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          },
+          "under_pier_triangle": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          }
+        },
+        "jpeg70": {
+          "small_sail_1": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          },
+          "small_sail_2": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          },
+          "small_sail_3": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          },
+          "small_sail_4": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          },
+          "small_sail_5": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          },
+          "under_pier_triangle": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          }
+        },
+        "down75_up": {
+          "small_sail_1": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          },
+          "small_sail_2": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          },
+          "small_sail_3": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          },
+          "small_sail_4": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          },
+          "small_sail_5": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          },
+          "under_pier_triangle": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 1.0
+            }
+          }
+        }
+      },
+      "V_without_base": {
+        "original": {
+          "small_sail_1": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          },
+          "small_sail_2": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          },
+          "small_sail_3": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          },
+          "small_sail_4": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          },
+          "small_sail_5": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          },
+          "under_pier_triangle": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          }
+        },
+        "jpeg85": {
+          "small_sail_1": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          },
+          "small_sail_2": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          },
+          "small_sail_3": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          },
+          "small_sail_4": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          },
+          "small_sail_5": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          },
+          "under_pier_triangle": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          }
+        },
+        "jpeg70": {
+          "small_sail_1": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          },
+          "small_sail_2": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          },
+          "small_sail_3": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          },
+          "small_sail_4": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          },
+          "small_sail_5": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          },
+          "under_pier_triangle": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          }
+        },
+        "down75_up": {
+          "small_sail_1": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          },
+          "small_sail_2": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          },
+          "small_sail_3": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          },
+          "small_sail_4": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          },
+          "small_sail_5": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          },
+          "under_pier_triangle": {
+            "pass": true,
+            "sides": {
+              "left": 1.0,
+              "right": 1.0,
+              "base": 0.0
+            }
+          }
+        }
+      },
+      "vertical_mast_only": {
+        "original": {
+          "small_sail_1": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.155556
+            }
+          },
+          "small_sail_2": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          },
+          "small_sail_3": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          },
+          "small_sail_4": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          },
+          "small_sail_5": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          },
+          "under_pier_triangle": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          }
+        },
+        "jpeg85": {
+          "small_sail_1": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.155556
+            }
+          },
+          "small_sail_2": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          },
+          "small_sail_3": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          },
+          "small_sail_4": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          },
+          "small_sail_5": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          },
+          "under_pier_triangle": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          }
+        },
+        "jpeg70": {
+          "small_sail_1": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          },
+          "small_sail_2": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          },
+          "small_sail_3": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          },
+          "small_sail_4": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          },
+          "small_sail_5": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          },
+          "under_pier_triangle": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          }
+        },
+        "down75_up": {
+          "small_sail_1": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          },
+          "small_sail_2": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          },
+          "small_sail_3": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          },
+          "small_sail_4": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          },
+          "small_sail_5": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          },
+          "under_pier_triangle": {
+            "pass": true,
+            "sides": {
+              "left": 0.0,
+              "right": 0.0,
+              "base": 0.177778
+            }
+          }
+        }
+      }
+    }
+  },
+  "stage151_source_chain_valid": true,
+  "real_five_sail_outline_recovery": {
+    "small_sail_1": true,
+    "small_sail_2": true,
+    "small_sail_3": true,
+    "small_sail_4": true,
+    "small_sail_5": true
+  },
+  "real_sail_outlines_stable": 5,
+  "under_pier_full_outline_four_formats": true,
+  "by_variant": {
+    "original": {
+      "small_sail_1": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 0.933333
+        },
+        "closed_three_edge_triangle": true
+      },
+      "small_sail_2": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 1.0
+        },
+        "closed_three_edge_triangle": true
+      },
+      "small_sail_3": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 0.955556
+        },
+        "closed_three_edge_triangle": true
+      },
+      "small_sail_4": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 1.0
+        },
+        "closed_three_edge_triangle": true
+      },
+      "small_sail_5": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 1.0
+        },
+        "closed_three_edge_triangle": true
+      },
+      "under_pier_triangle": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 1.0
+        },
+        "closed_three_edge_triangle": true
+      }
+    },
+    "jpeg85": {
+      "small_sail_1": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 0.933333
+        },
+        "closed_three_edge_triangle": true
+      },
+      "small_sail_2": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 1.0
+        },
+        "closed_three_edge_triangle": true
+      },
+      "small_sail_3": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 0.955556
+        },
+        "closed_three_edge_triangle": true
+      },
+      "small_sail_4": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 1.0
+        },
+        "closed_three_edge_triangle": true
+      },
+      "small_sail_5": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 1.0
+        },
+        "closed_three_edge_triangle": true
+      },
+      "under_pier_triangle": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 1.0
+        },
+        "closed_three_edge_triangle": true
+      }
+    },
+    "jpeg70": {
+      "small_sail_1": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 0.933333
+        },
+        "closed_three_edge_triangle": true
+      },
+      "small_sail_2": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 1.0
+        },
+        "closed_three_edge_triangle": true
+      },
+      "small_sail_3": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 0.955556
+        },
+        "closed_three_edge_triangle": true
+      },
+      "small_sail_4": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 1.0
+        },
+        "closed_three_edge_triangle": true
+      },
+      "small_sail_5": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 1.0
+        },
+        "closed_three_edge_triangle": true
+      },
+      "under_pier_triangle": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 1.0
+        },
+        "closed_three_edge_triangle": true
+      }
+    },
+    "down75_up": {
+      "small_sail_1": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 0.933333
+        },
+        "closed_three_edge_triangle": true
+      },
+      "small_sail_2": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 1.0
+        },
+        "closed_three_edge_triangle": true
+      },
+      "small_sail_3": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 0.933333
+        },
+        "closed_three_edge_triangle": true
+      },
+      "small_sail_4": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 1.0
+        },
+        "closed_three_edge_triangle": true
+      },
+      "small_sail_5": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 1.0
+        },
+        "closed_three_edge_triangle": true
+      },
+      "under_pier_triangle": {
+        "edge_dark_support": {
+          "left": 1.0,
+          "right": 1.0,
+          "base": 1.0
+        },
+        "closed_three_edge_triangle": true
+      }
+    }
+  },
+  "decision": "UNDER_PIER_CLOSED_TRIANGLE_WARRANTS_VISUAL_REVIEW",
+  "scope_limit": "One visually preselected triangle, fixed hand-annotated vertices; source line crossings may trigger edge ink even if their semantics differ. A complete outline alone does NOT establish an extra sail or steganography. A negative addresses only that fixed triangle outline geometry.",
+  "safety": "No cryptographic key material, BIP39, seed phrases, wallets, addresses, checking or off-image research."
+}
