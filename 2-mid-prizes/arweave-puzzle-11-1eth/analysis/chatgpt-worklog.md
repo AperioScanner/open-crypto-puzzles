@@ -479,3 +479,10 @@ Audit noticed **existing Stage138 cohort had near-empty reflection ROI** in buil
 Stage139 Actions run #38494403165 completed successful. Full synthetic V/H and reversal controls pass, Stage138 12 rows reproduce exactly, real mean-darkness gate 2.0 excludes only buildings 6 and 11 on all four image formats. Both estimator exact p values fail (Sobel .20–.21; Fourier .329–.352). Conclusion negative strictly for direct H/V building-to-water orientation, even after fixing source exclusion and ink quality.
 
 Next Stage140 selected to test previously unmeasured large-sail-to-five-small-sail cross-scale copy-paste of internal pencil marks, not comparable to Stage120's small-sail-to-small-sail repeat or Stage123's exact fixed-grid same-scale patch reuse. Fixed six true triangle anchors, affine rectification, both left/right interior panels, two complementary image estimators and lossiness replication. Synthetic same-template positives and independent same-silhouette negatives in advance. No key, seed, wallet or outside-image research.
+
+
+## 2026-10-13 — Stage140 result; Stage141 handoff
+
+Stage140 #38495397342 completed successfully; 20/20 true-copy and 20/20 independent same-outline controls passed, actual 5/5 interiors sampled adequately, 0/5 meeting copy criterion across smooth/detail channels on left and right in all four images. This is narrow evidence against literal large-to-small resized template cloning, not against visible geometric coding.
+
+Stage141 selected to repair a *distinct historical image localization defect*: Stage40 did left/right symmetry on old large boat ROI whose hull coverage was zero (confirmed Stage132). Stage141 checks true large HULL interior bilateral pencil stroke copying (not mirrored hull shape), with predeclared axis x275, symmetric paired masks eroded from Stage132 polygon, two vertical bands, positive exact-mirror vs independent stroke redraw controls on all 4 image formats; image-only and no secret operations.
