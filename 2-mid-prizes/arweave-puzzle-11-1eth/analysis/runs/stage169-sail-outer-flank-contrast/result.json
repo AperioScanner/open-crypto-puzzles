@@ -1,0 +1,365 @@
+{
+  "experiment_id": "A11-EXP-169",
+  "hypothesis": "External white-vs-internal dark pencil flank asymmetry can distinguish an outer sail edge from a dark inner hatch in four predefined source foot guides.",
+  "canonical_source_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "predecessor_and_fixed_site_guards": {
+    "canonical_sha": true,
+    "Stage167_repaired_clean_positive_controls": true,
+    "Stage167_3_fixed_nonzero_sites": true,
+    "Stage167_reference_original_zero": true,
+    "Stage168_original_crop_provenance": true,
+    "sites_are_original_registered_sails": true
+  },
+  "synthetic_source_independent_controls": {
+    "pass": true,
+    "passed": 128,
+    "cases": 128,
+    "failures": [],
+    "families": {
+      "solid_fill": 32,
+      "solid_with_internal_decoy": 32,
+      "gray_fill_with_internal_decoy": 32,
+      "isolated_dark_line": 16,
+      "blank": 16
+    }
+  },
+  "fixed_sites": [
+    {
+      "site": "sail2_right",
+      "apex": [
+        1148,
+        433
+      ],
+      "original_foot": [
+        1186,
+        532
+      ],
+      "inward_alternative_dx": -8
+    },
+    {
+      "site": "sail3_left",
+      "apex": [
+        1282,
+        411
+      ],
+      "original_foot": [
+        1238,
+        514
+      ],
+      "inward_alternative_dx": 8
+    },
+    {
+      "site": "sail4_right",
+      "apex": [
+        1372,
+        397
+      ],
+      "original_foot": [
+        1414,
+        498
+      ],
+      "inward_alternative_dx": -8
+    },
+    {
+      "site": "sail5_right",
+      "apex": [
+        1490,
+        357
+      ],
+      "original_foot": [
+        1537,
+        463
+      ],
+      "inward_alternative_dx": -8
+    }
+  ],
+  "fixed_parameters": {
+    "t_start": 0.73,
+    "t_end": 0.93,
+    "n_t": 22,
+    "inside_outside_dx_px": [
+      5,
+      8,
+      11,
+      14
+    ],
+    "min_score": 0.3,
+    "min_inside_dark": 0.5,
+    "max_outside_dark": 0.3,
+    "min_best_second": 0.15,
+    "format": [
+      "original",
+      "jpeg85",
+      "jpeg70",
+      "down75_up"
+    ]
+  },
+  "real_by_source_variant": {
+    "original": {
+      "sail2_right": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.14830659,
+        "original_dx0": {
+          "inside": 0.59772727,
+          "outside": 0.47486631,
+          "contrast": 0.12286096
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.53048128,
+          "outside": 0.55592692,
+          "contrast": -0.02544563
+        }
+      },
+      "sail3_left": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.16430481,
+        "original_dx0": {
+          "inside": 0.6333779,
+          "outside": 0.48213012,
+          "contrast": 0.15124777
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.52268271,
+          "outside": 0.53573975,
+          "contrast": -0.01305704
+        }
+      },
+      "sail4_right": {
+        "selected_dx": -8,
+        "confident": true,
+        "best_margin": 0.30231729,
+        "original_dx0": {
+          "inside": 0.71885027,
+          "outside": 0.38418004,
+          "contrast": 0.33467023
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.66715686,
+          "outside": 0.03016934,
+          "contrast": 0.63698752
+        }
+      },
+      "sail5_right": {
+        "selected_dx": 0,
+        "confident": true,
+        "best_margin": 0.36332442,
+        "original_dx0": {
+          "inside": 0.71457219,
+          "outside": 0.01118538,
+          "contrast": 0.70338681
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.65557041,
+          "outside": 0.31550802,
+          "contrast": 0.34006239
+        }
+      }
+    },
+    "jpeg85": {
+      "sail2_right": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.14081996,
+        "original_dx0": {
+          "inside": 0.59532086,
+          "outside": 0.47598039,
+          "contrast": 0.11934046
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.53244207,
+          "outside": 0.55392157,
+          "contrast": -0.0214795
+        }
+      },
+      "sail3_left": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.16287878,
+        "original_dx0": {
+          "inside": 0.63324421,
+          "outside": 0.48386809,
+          "contrast": 0.14937611
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.52459893,
+          "outside": 0.5381016,
+          "contrast": -0.01350267
+        }
+      },
+      "sail4_right": {
+        "selected_dx": -8,
+        "confident": true,
+        "best_margin": 0.3025401,
+        "original_dx0": {
+          "inside": 0.7157754,
+          "outside": 0.38524955,
+          "contrast": 0.33052585
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.66622103,
+          "outside": 0.03315508,
+          "contrast": 0.63306595
+        }
+      },
+      "sail5_right": {
+        "selected_dx": 0,
+        "confident": true,
+        "best_margin": 0.35940285,
+        "original_dx0": {
+          "inside": 0.71100713,
+          "outside": 0.01261141,
+          "contrast": 0.69839572
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.65565954,
+          "outside": 0.31666667,
+          "contrast": 0.33899287
+        }
+      }
+    },
+    "jpeg70": {
+      "sail2_right": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.13578431,
+        "original_dx0": {
+          "inside": 0.59010695,
+          "outside": 0.47446524,
+          "contrast": 0.11564171
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.52611408,
+          "outside": 0.54625668,
+          "contrast": -0.0201426
+        }
+      },
+      "sail3_left": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.15392157,
+        "original_dx0": {
+          "inside": 0.62905526,
+          "outside": 0.48413547,
+          "contrast": 0.14491979
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.52361854,
+          "outside": 0.53262032,
+          "contrast": -0.00900178
+        }
+      },
+      "sail4_right": {
+        "selected_dx": -8,
+        "confident": true,
+        "best_margin": 0.30334225,
+        "original_dx0": {
+          "inside": 0.71261141,
+          "outside": 0.38431373,
+          "contrast": 0.32829768
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.67156863,
+          "outside": 0.0399287,
+          "contrast": 0.63163993
+        }
+      },
+      "sail5_right": {
+        "selected_dx": 0,
+        "confident": true,
+        "best_margin": 0.36109626,
+        "original_dx0": {
+          "inside": 0.70993761,
+          "outside": 0.01590909,
+          "contrast": 0.69402852
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.64986631,
+          "outside": 0.31693405,
+          "contrast": 0.33293226
+        }
+      }
+    },
+    "down75_up": {
+      "sail2_right": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.13475936,
+        "original_dx0": {
+          "inside": 0.6048574,
+          "outside": 0.47424242,
+          "contrast": 0.13061497
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.52638146,
+          "outside": 0.53052585,
+          "contrast": -0.00414439
+        }
+      },
+      "sail3_left": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.16769162,
+        "original_dx0": {
+          "inside": 0.61898396,
+          "outside": 0.49491979,
+          "contrast": 0.12406417
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.50102496,
+          "outside": 0.54465241,
+          "contrast": -0.04362745
+        }
+      },
+      "sail4_right": {
+        "selected_dx": -8,
+        "confident": true,
+        "best_margin": 0.29407309,
+        "original_dx0": {
+          "inside": 0.71581996,
+          "outside": 0.38097148,
+          "contrast": 0.33484848
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.66207665,
+          "outside": 0.03315508,
+          "contrast": 0.62892157
+        }
+      },
+      "sail5_right": {
+        "selected_dx": 0,
+        "confident": true,
+        "best_margin": 0.34946524,
+        "original_dx0": {
+          "inside": 0.69812834,
+          "outside": 0.01697861,
+          "contrast": 0.68114973
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.65472371,
+          "outside": 0.32303922,
+          "contrast": 0.33168449
+        }
+      }
+    }
+  },
+  "summary": {
+    "stable_original": [
+      "sail5_right"
+    ],
+    "stable_inward": [
+      "sail4_right"
+    ],
+    "ambiguous": [
+      "sail2_right",
+      "sail3_left"
+    ],
+    "original_count": 1,
+    "inward_count": 1,
+    "ambiguous_count": 2
+  },
+  "decision": "INSUFFICIENT_SOURCE_FLANK_CONTRAST",
+  "scope_limit": "Comparing 2 fixed slope-guide pixels flanks is not an independent real contour trace or exact source footpoint. Uncertainty near ink hatches, hull and pier remains. Do not feed source-selected offsets into Stage165 p-values or infer intentional numerals.",
+  "safety": "Image only; no private key, mnemonic, wallet, address/ETH comparison, OCR or external social investigation."
+}
