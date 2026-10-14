@@ -1,0 +1,284 @@
+{
+  "experiment_id": "A11-EXP-165",
+  "canonical_SHA": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "hypothesis": "Full annotated genuine sail BASE outline widths may retain prior Stage61 correlation with the distance to the next true sail center.",
+  "width_data_type": "Stage153 existing manually annotated full-sail base x endpoints, NOT remeasured raster widths",
+  "fixed_true_sail_widths": [
+    70,
+    76,
+    88,
+    84,
+    94
+  ],
+  "source_guards": {
+    "canonical_SHA": true,
+    "Stage152_true_five_outlines": true,
+    "Stage152_72_calibration": true,
+    "Stage163_legacy_superbatch_scope": true,
+    "Stage164_width_roi_defect": true,
+    "Stage164_synthetic_controls": true,
+    "Stage61_past_nominal": true,
+    "Stage88_historical_rejected": true,
+    "Stage112_five_correct_centers": true,
+    "Stage112_center_drift_original": true,
+    "Stage112_center_drift_jpeg85": true,
+    "Stage112_center_drift_jpeg70": true,
+    "Stage112_center_drift_down75_up": true
+  },
+  "synthetic_and_permutation_controls": {
+    "pass": true,
+    "passed": 7,
+    "cases": 7,
+    "checks": {
+      "centers_independent_known_gaps": true,
+      "positive_120_permutations": true,
+      "positive_high_r": true,
+      "positive_significant": true,
+      "constant_null_120_permutations": true,
+      "constant_null_zero_r": true,
+      "constant_null_exact_p_one": true
+    },
+    "positive": {
+      "widths": [
+        106.0,
+        134.0,
+        90.0,
+        118.0,
+        50.0
+      ],
+      "centers": [
+        1042.0,
+        1148.0,
+        1282.0,
+        1372.0,
+        1490.0
+      ],
+      "following_gaps": [
+        106.0,
+        134.0,
+        90.0,
+        118.0
+      ],
+      "abs_correlation": 0.9999999999999998,
+      "exact_permutations": 120,
+      "exact_p": 0.016666666666666666,
+      "null_median": 0.4910017246520766
+    },
+    "negative": {
+      "widths": [
+        30.0,
+        30.0,
+        30.0,
+        30.0,
+        30.0
+      ],
+      "centers": [
+        1042.0,
+        1148.0,
+        1282.0,
+        1372.0,
+        1490.0
+      ],
+      "following_gaps": [
+        106.0,
+        134.0,
+        90.0,
+        118.0
+      ],
+      "abs_correlation": 0.0,
+      "exact_permutations": 120,
+      "exact_p": 1.0,
+      "null_median": 0.0
+    }
+  },
+  "old_superbatch_stage61_nominal_p": 0.0399800099950025,
+  "Stage88_old_identity_replication": {
+    "candidate": "A11-EXP-061",
+    "name": "small-sail width vs following-gap correlation",
+    "original_superbatch_p": 0.0399800099950025,
+    "independent_stage19_methods": {
+      "connected_components_close3": {
+        "widths": [
+          80.0,
+          29.0,
+          56.0,
+          84.0,
+          85.0
+        ],
+        "centers": [
+          675.5,
+          1046.5,
+          1144.5,
+          1269.5,
+          1361.0
+        ],
+        "following_gaps": [
+          371.0,
+          98.0,
+          125.0,
+          91.5
+        ],
+        "abs_correlation": 0.4449392685464326,
+        "exact_permutations": 120,
+        "exact_p": 0.5333333333333333,
+        "null_median": 0.4592147864228866
+      },
+      "vertical_projection_runs": {
+        "widths": [
+          76.0,
+          28.0,
+          54.0,
+          81.0,
+          83.0
+        ],
+        "centers": [
+          671.5,
+          1046.5,
+          1145.0,
+          1268.0,
+          1361.0
+        ],
+        "following_gaps": [
+          375.0,
+          98.5,
+          123.0,
+          93.0
+        ],
+        "abs_correlation": 0.4298928125878344,
+        "exact_permutations": 120,
+        "exact_p": 0.5666666666666667,
+        "null_median": 0.4711783907471585
+      }
+    },
+    "stage61_to_stage19_center_nearest_distance_px": [
+      121.45147679324896,
+      3.4032773780975276,
+      3.3637010676156933,
+      2.5805661404465354,
+      115.18690334128883
+    ],
+    "stage61_components_matching_stage19_within_40px": 3,
+    "primary_confirmation_p": 0.5666666666666667,
+    "family_gate": false,
+    "gate_rule": "both independent Stage-19 segmentation families must have exact permutation p<=0.05",
+    "holm_p": 1.0,
+    "confirmed": false
+  },
+  "per_variant": {
+    "original": {
+      "widths": [
+        70.0,
+        76.0,
+        88.0,
+        84.0,
+        94.0
+      ],
+      "centers": [
+        1042.0,
+        1148.0,
+        1282.0,
+        1372.0,
+        1490.0
+      ],
+      "following_gaps": [
+        106.0,
+        134.0,
+        90.0,
+        118.0
+      ],
+      "abs_correlation": 0.39970403251589476,
+      "exact_permutations": 120,
+      "exact_p": 0.6166666666666667,
+      "null_median": 0.4740902205655086,
+      "signed_correlation": -0.39970403251589476,
+      "max_center_drift_vs_original": 0.0
+    },
+    "jpeg85": {
+      "widths": [
+        70.0,
+        76.0,
+        88.0,
+        84.0,
+        94.0
+      ],
+      "centers": [
+        1042.0,
+        1148.0,
+        1282.0,
+        1372.0,
+        1490.0
+      ],
+      "following_gaps": [
+        106.0,
+        134.0,
+        90.0,
+        118.0
+      ],
+      "abs_correlation": 0.39970403251589476,
+      "exact_permutations": 120,
+      "exact_p": 0.6166666666666667,
+      "null_median": 0.4740902205655086,
+      "signed_correlation": -0.39970403251589476,
+      "max_center_drift_vs_original": 0.0
+    },
+    "jpeg70": {
+      "widths": [
+        70.0,
+        76.0,
+        88.0,
+        84.0,
+        94.0
+      ],
+      "centers": [
+        1042.0,
+        1148.0,
+        1282.0,
+        1372.0,
+        1490.0
+      ],
+      "following_gaps": [
+        106.0,
+        134.0,
+        90.0,
+        118.0
+      ],
+      "abs_correlation": 0.39970403251589476,
+      "exact_permutations": 120,
+      "exact_p": 0.6166666666666667,
+      "null_median": 0.4740902205655086,
+      "signed_correlation": -0.39970403251589476,
+      "max_center_drift_vs_original": 0.0
+    },
+    "down75_up": {
+      "widths": [
+        70.0,
+        76.0,
+        88.0,
+        84.0,
+        94.0
+      ],
+      "centers": [
+        1042.0,
+        1150.0,
+        1280.0,
+        1372.0,
+        1490.0
+      ],
+      "following_gaps": [
+        108.0,
+        130.0,
+        92.0,
+        118.0
+      ],
+      "abs_correlation": 0.43187803371226485,
+      "exact_permutations": 120,
+      "exact_p": 0.5666666666666667,
+      "null_median": 0.49131811856245516,
+      "signed_correlation": -0.43187803371226485,
+      "max_center_drift_vs_original": 2.0
+    }
+  },
+  "decision": "NO_SIGNIFICANT_TRUE_SAIL_BASE_WIDTH_GAP_RELATION",
+  "scope_limit": "An exact p for this particular five pre-annotated sail base-width vector does not imply author intention. JPEG variants reuse the same frozen base polygon widths (not independent samples). No other width estimate or sail-gap code has been tested here.",
+  "safety": "Original image content only via previously archived visual geometry and SHA; no mnemonic, key, wallet or address verification."
+}
