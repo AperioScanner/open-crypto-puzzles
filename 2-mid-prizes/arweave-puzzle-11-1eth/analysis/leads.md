@@ -95,3 +95,8 @@ Stage131: 192/192 dash-versus-speckle positive/negative controls pass; no reprod
 ## Stage132 verified visual ROI defect; Stage133 targeted re-audit
 
 Stage132 returned a positive, independently calibrated SOURCE-GEOMETRY result: the old large-sailboat bbox misses 66.7% of source-polygon sail ink and all hull ink under threshold 170. Stages 36 and 94's ROI-dependent negatives therefore apply only to their cropped portions, not the entire drawn vessel. Stage133 remeasures corrected *full-sail* structural strokes with the identical Stage94 count estimator and blank/drawn controls; no candidate secrets. This is justified by a concrete implementation defect, not recycling a negative.
+
+
+## Stage133 source-ROI replication confirmed; Stage134 correct full-sail visual inspection
+
+Stage133 passed blank/synthetic and original-image-source controls. Old Stage94 large-sail 10–14 stroke count becomes 76–90 on the much larger Stage132 full triangular patch. This does not establish a code; previous count-negative is limited to its old cropped ROI. Stage134 revisits Stage36's *generic glyph-line spatial metric* with an exact corrected image aperture, 3 comparably masked scene controls and full re-encoding replication, with synthetic positive vs false-text negative before any inference. No OCR or secret candidates.
