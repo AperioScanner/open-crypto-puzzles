@@ -1,0 +1,244 @@
+{
+  "experiment_id": "A11-EXP-158",
+  "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "source_polygon_origins": "Stage132 immutable large sail and hull hand annotations",
+  "old_stage15_bbox": [
+    44,
+    320,
+    359,
+    599
+  ],
+  "historical_exact_replay": 5,
+  "historical_replay_total": 5,
+  "old_counts": [
+    [
+      122,
+      5,
+      1
+    ],
+    [
+      102,
+      5,
+      1
+    ],
+    [
+      71,
+      4,
+      1
+    ],
+    [
+      49,
+      4,
+      1
+    ],
+    [
+      26,
+      2,
+      2
+    ]
+  ],
+  "fixed_mask_erosion": 5,
+  "sail_polygon": [
+    [
+      242,
+      398
+    ],
+    [
+      56,
+      758
+    ],
+    [
+      512,
+      760
+    ]
+  ],
+  "hull_polygon": [
+    [
+      25,
+      783
+    ],
+    [
+      525,
+      778
+    ],
+    [
+      480,
+      931
+    ],
+    [
+      75,
+      939
+    ]
+  ],
+  "sail_ink_mask_area": 79607,
+  "hull_ink_mask_area": 67902,
+  "thresholds": [
+    80,
+    110,
+    140,
+    170,
+    200
+  ],
+  "component_bins": {
+    "small": [
+      3,
+      200
+    ],
+    "medium": [
+      201,
+      2000
+    ],
+    "large": [
+      2001,
+      null
+    ]
+  },
+  "synthetic_controls": {
+    "pass": true,
+    "passed": 60,
+    "cases": 60,
+    "failures": []
+  },
+  "results_by_format": {
+    "original": {
+      "counts_by_threshold": {
+        "80": [
+          445,
+          4,
+          2
+        ],
+        "110": [
+          323,
+          1,
+          2
+        ],
+        "140": [
+          208,
+          2,
+          2
+        ],
+        "170": [
+          147,
+          1,
+          2
+        ],
+        "200": [
+          98,
+          1,
+          2
+        ]
+      },
+      "exact_matches": {
+        "321": 0,
+        "123": 0
+      },
+      "promoted": false
+    },
+    "jpeg85": {
+      "counts_by_threshold": {
+        "80": [
+          440,
+          5,
+          2
+        ],
+        "110": [
+          322,
+          0,
+          2
+        ],
+        "140": [
+          213,
+          2,
+          2
+        ],
+        "170": [
+          152,
+          1,
+          2
+        ],
+        "200": [
+          105,
+          1,
+          2
+        ]
+      },
+      "exact_matches": {
+        "321": 0,
+        "123": 0
+      },
+      "promoted": false
+    },
+    "jpeg70": {
+      "counts_by_threshold": {
+        "80": [
+          452,
+          7,
+          2
+        ],
+        "110": [
+          310,
+          1,
+          2
+        ],
+        "140": [
+          205,
+          2,
+          2
+        ],
+        "170": [
+          150,
+          1,
+          2
+        ],
+        "200": [
+          104,
+          1,
+          2
+        ]
+      },
+      "exact_matches": {
+        "321": 0,
+        "123": 0
+      },
+      "promoted": false
+    },
+    "down75_up": {
+      "counts_by_threshold": {
+        "80": [
+          449,
+          5,
+          3
+        ],
+        "110": [
+          291,
+          2,
+          2
+        ],
+        "140": [
+          197,
+          3,
+          2
+        ],
+        "170": [
+          110,
+          1,
+          2
+        ],
+        "200": [
+          70,
+          2,
+          2
+        ]
+      },
+      "exact_matches": {
+        "321": 0,
+        "123": 0
+      },
+      "promoted": false
+    }
+  },
+  "source_promoted_all_four_formats": false,
+  "decision": "NO_STABLE_FULL_LARGE_BOAT_COUNT_CORROBORATION",
+  "scope_limit": "Only historical Stage15 truncated large-sailboat ROI repaired. Negative cannot prove absence of any arbitrary image encoding. A 321/123 count positive would only warrant source review, not author intent.",
+  "safety": "No key, BIP39, wallet, address or external research."
+}
