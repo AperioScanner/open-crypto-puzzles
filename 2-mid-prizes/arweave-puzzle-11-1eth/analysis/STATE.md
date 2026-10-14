@@ -93,3 +93,9 @@ Stop and request review if:
 ## 2026-10-13 — superseding operating scope
 
 The user instructed: stop exploring Twitter/external social references, concentrate strictly on the image. Stage 119 archival-source partial coverage is shelved rather than called a negative. Stage 120 tests only repeated stroke templates among five independently localized small-sail regions in the canonical image. Preserve previous negative scopes and controls. Do not enumerate, derive, test, validate or reconstruct BIP39 mnemonic phrases, private keys or funded-wallet access.
+
+## 2026-10-14 — Current verified source-research stop after Stage165 (supersedes older Stage32 prioritization)
+
+- Work is exclusively NON-SECRET, canonical-source visual/geometry/method QA. Do not derive, enumerate, verify or reconstruct any private key, mnemonic, funded-wallet access or new candidate public-address matching. Do not reopen Twitter/social/outside-image source archaeology. The initial P1 known-address probe text above is HISTORICAL, not the active assistant directive.
+- Latest scientific stage: Stage165 Actions #38647720314 SUCCESS. Confirmed source/controls 13/13 plus numerical 7/7, no significant base sail width vs following gap correlation (exact original p=.616667). Previous stage164 verified Stage112 original partial width windows omitted significant real ink in 3/5 sails; stage163 verified 24/50 original superbatch source defects; stage162 retested the genuinely full main sail for 16-tone structure and found none with 22/22 calibrated controls.
+- Strongest descriptive original image feature remains 12 building hatch orientation HHVVHHVHHHHV. Its 0x321 reading has no independent support and Stage22 withdrew code-interpretation priority. No intentional message or puzzle solution has been authenticated. No Stage166 justified absent genuinely independent visual observation/implementation defect. GitHub branch research/arweave11-chatgpt preserves full reports.
