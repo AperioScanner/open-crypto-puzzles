@@ -140,3 +140,8 @@ Stage140 passed 40/40 copied-vs-redrawn template controls and evaluated all 5 re
 ## Stage141 closed; Stage142 corrected large-hull top/bottom stroke test
 
 Stage141 source-adequate true-hull L/R interior pencil-copy negatives (all 16 synthetic positive and independent-redraw controls passed), ink smooth -0.060/+0.333, detail near zero across two bands and 4 renderings. Stage142 targets the separately unverified UPPER/LOWER hull-pencil copied texture: historical Stage41 tested Y-symmetry on a mistaken ROI with no hull ink, confirmed by Stage132, while Stage141 only tested X-symmetry. Precommitted y860.5, two fixed x-strips, two texture channels, four variants, mirrored positives and independently redrawn negatives, no secrets.
+
+
+## Stage142 negative; Stage143 user-supplied mirrored chess negative-space hypothesis
+
+Stage142 source-adequate 4-format top/bottom mirrored hull-pencil control audit found no exact copied internal strokes (4/4 positive and 4/4 independent negative calibration pass). New visual lead is user's duplicated+rotated canonical image showing two white stepped voids traced red, compared to a king and queen. Stage143 must distinguish AUTHOR-DRAWN crown details from forced bilateral symmetry: rotated+mirrored city skyline with 7 right-side roofs and 5 left-side roofs automatically forms two stair-step pedestal voids. Controls: original roofline source validation, synthetic stepped-vs-flat profiles, exact within-cluster roof-height permutations, and four-format reproduction. No assigned chess piece identities or secret extraction.
