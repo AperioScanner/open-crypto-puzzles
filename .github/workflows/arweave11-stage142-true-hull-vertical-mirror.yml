@@ -1,0 +1,44 @@
+name: Arweave 11 stage 142 corrected hull upper lower pencil mirror
+on:
+  push:
+    branches:
+      - research/arweave11-chatgpt
+    paths:
+      - ".github/workflows/arweave11-stage142-true-hull-vertical-mirror.yml"
+      - "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage142_corrected_hull_vertical_mirror.py"
+      - "2-mid-prizes/arweave-puzzle-11-1eth/clues/arweave-puzzle-11.png"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  image-only-stage142:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PZL: 2-mid-prizes/arweave-puzzle-11-1eth
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/arweave11-chatgpt
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check numpy pillow opencv-python-headless
+      - name: Check Python source
+        run: python -m py_compile "$PZL/tools/stage142_corrected_hull_vertical_mirror.py"
+      - name: Execute Stage 142
+        run: python "$PZL/tools/stage142_corrected_hull_vertical_mirror.py"
+      - name: Commit image-only diagnostic report
+        if: success()
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$PZL/analysis/runs/stage142-true-hull-vertical-mirror"
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "research: Stage142 corrected hull vertical symmetry [skip ci]"
+          git pull --rebase origin research/arweave11-chatgpt
+          git push origin HEAD:research/arweave11-chatgpt
