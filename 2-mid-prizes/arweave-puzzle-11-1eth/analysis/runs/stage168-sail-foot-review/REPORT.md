@@ -13,3 +13,7 @@
 **Required human judgment:** determine whether each blue/orange shifted guide follows the OUTER sail edge rather than dense interior hatching, another boat's hull, or pier rigging. If not unambiguous, retain INCONCLUSIVE instead of modifying annotated widths.
 
 This generation does not independently validate physical corner connectivity, image-coded meaning, keys or wallets. No source artwork was edited.
+
+## Follow-up qualitative assistant inspection — NOT an independent edge annotation
+
+The raw-vs-guide contact sheet was visually inspected; see VISUAL_REVIEW.md. The three Stage167 ±8px candidates tend to follow strong INNER hatching rather than unambiguously the OUTER sail silhouettes. This is an assistant descriptive impression, not independent human certification. **No source-corrected footpoints were established**, and no widths or p-values were revised. Scientific next step would require independent manually annotated source-boundary evidence before any geometry-based test; no automatic Stage169.
