@@ -1,0 +1,518 @@
+{
+  "experiment_id": "A11-EXP-159",
+  "original_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "immutable_source": "Stage132 full sail and hull polygons, fixed 5x5 erosion and 7px bounding pad",
+  "fixed_box": [
+    18,
+    391,
+    533,
+    947
+  ],
+  "legacy_roi": [
+    44,
+    320,
+    359,
+    599
+  ],
+  "old_stage12_exact_replay": {
+    "pass": true,
+    "expected": {
+      "x": {
+        "best_lag": 3,
+        "score": 0.9924260055546131
+      },
+      "y": {
+        "best_lag": 3,
+        "score": 0.9648026727871066
+      }
+    },
+    "observed": {
+      "x": {
+        "best_lag": 3,
+        "score": 0.9924260055546131
+      },
+      "y": {
+        "best_lag": 3,
+        "score": 0.9648026727871069
+      }
+    }
+  },
+  "controls": {
+    "pass": false,
+    "passed": 12,
+    "cases": 24,
+    "failures": [
+      {
+        "kind": "period12",
+        "format": "original",
+        "threshold": 110,
+        "lag": 36,
+        "score": 1.023032,
+        "pass": false
+      },
+      {
+        "kind": "period12",
+        "format": "original",
+        "threshold": 140,
+        "lag": 36,
+        "score": 1.023032,
+        "pass": false
+      },
+      {
+        "kind": "period12",
+        "format": "original",
+        "threshold": 170,
+        "lag": 36,
+        "score": 1.023032,
+        "pass": false
+      },
+      {
+        "kind": "period12",
+        "format": "jpeg85",
+        "threshold": 110,
+        "lag": 36,
+        "score": 1.023032,
+        "pass": false
+      },
+      {
+        "kind": "period12",
+        "format": "jpeg85",
+        "threshold": 140,
+        "lag": 36,
+        "score": 1.023032,
+        "pass": false
+      },
+      {
+        "kind": "period12",
+        "format": "jpeg85",
+        "threshold": 170,
+        "lag": 36,
+        "score": 1.023032,
+        "pass": false
+      },
+      {
+        "kind": "period12",
+        "format": "jpeg70",
+        "threshold": 110,
+        "lag": 36,
+        "score": 1.023032,
+        "pass": false
+      },
+      {
+        "kind": "period12",
+        "format": "jpeg70",
+        "threshold": 140,
+        "lag": 36,
+        "score": 1.023032,
+        "pass": false
+      },
+      {
+        "kind": "period12",
+        "format": "jpeg70",
+        "threshold": 170,
+        "lag": 36,
+        "score": 1.023032,
+        "pass": false
+      },
+      {
+        "kind": "period12",
+        "format": "down75_up",
+        "threshold": 110,
+        "lag": 36,
+        "score": 1.022953,
+        "pass": false
+      },
+      {
+        "kind": "period12",
+        "format": "down75_up",
+        "threshold": 140,
+        "lag": 36,
+        "score": 1.02305,
+        "pass": false
+      },
+      {
+        "kind": "period12",
+        "format": "down75_up",
+        "threshold": 170,
+        "lag": 36,
+        "score": 1.023032,
+        "pass": false
+      }
+    ]
+  },
+  "real_by_format": {
+    "original": {
+      "110": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9755412729655943
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9392969839089191
+        }
+      },
+      "140": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9777458238857424
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9412808123466173
+        }
+      },
+      "170": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9799802231322291
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9457065653945124
+        }
+      }
+    },
+    "jpeg85": {
+      "110": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9755570817043715
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9394814580828413
+        }
+      },
+      "140": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9774692437327535
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.941369113175927
+        }
+      },
+      "170": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9799354318704948
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9459041212065938
+        }
+      }
+    },
+    "jpeg70": {
+      "110": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9758453115022294
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9389458176274234
+        }
+      },
+      "140": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9776351602728541
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9417850180844306
+        }
+      },
+      "170": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.979856404055875
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9460623270775211
+        }
+      }
+    },
+    "down75_up": {
+      "110": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9747357775028229
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9356323948279776
+        }
+      },
+      "140": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.977680108913371
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9418587746027502
+        }
+      },
+      "170": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9804160379252522
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9466366515833492
+        }
+      }
+    }
+  },
+  "shape_only_by_format": {
+    "original": {
+      "110": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9813773553263733
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9580848672813838
+        }
+      },
+      "140": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9813773553263733
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9580848672813838
+        }
+      },
+      "170": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9813773553263733
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9580848672813838
+        }
+      }
+    },
+    "jpeg85": {
+      "110": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9813773553263733
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9580848672813838
+        }
+      },
+      "140": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9813773553263733
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9580848672813838
+        }
+      },
+      "170": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9813773553263733
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9580848672813838
+        }
+      }
+    },
+    "jpeg70": {
+      "110": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9813773553263733
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9580848672813838
+        }
+      },
+      "140": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9813773553263733
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9580848672813838
+        }
+      },
+      "170": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9813773553263733
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9580848672813838
+        }
+      }
+    },
+    "down75_up": {
+      "110": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9813802648183841
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9581383625790104
+        }
+      },
+      "140": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9813773553263733
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9580848672813838
+        }
+      },
+      "170": {
+        "x": {
+          "best_lag": 3,
+          "score": 0.9813773553263733
+        },
+        "y": {
+          "best_lag": 3,
+          "score": 0.9580848672813838
+        }
+      }
+    }
+  },
+  "precommitted_observations": [
+    {
+      "format": "original",
+      "threshold": 110,
+      "real_x_lag": 3,
+      "real_x_score": 0.9755412729655943,
+      "flat_x_lag": 3,
+      "flat_x_score": 0.9813773553263733,
+      "abs_score_delta": 0.005836082360778927
+    },
+    {
+      "format": "original",
+      "threshold": 140,
+      "real_x_lag": 3,
+      "real_x_score": 0.9777458238857424,
+      "flat_x_lag": 3,
+      "flat_x_score": 0.9813773553263733,
+      "abs_score_delta": 0.0036315314406308863
+    },
+    {
+      "format": "original",
+      "threshold": 170,
+      "real_x_lag": 3,
+      "real_x_score": 0.9799802231322291,
+      "flat_x_lag": 3,
+      "flat_x_score": 0.9813773553263733,
+      "abs_score_delta": 0.0013971321941441683
+    },
+    {
+      "format": "jpeg85",
+      "threshold": 110,
+      "real_x_lag": 3,
+      "real_x_score": 0.9755570817043715,
+      "flat_x_lag": 3,
+      "flat_x_score": 0.9813773553263733,
+      "abs_score_delta": 0.00582027362200177
+    },
+    {
+      "format": "jpeg85",
+      "threshold": 140,
+      "real_x_lag": 3,
+      "real_x_score": 0.9774692437327535,
+      "flat_x_lag": 3,
+      "flat_x_score": 0.9813773553263733,
+      "abs_score_delta": 0.003908111593619812
+    },
+    {
+      "format": "jpeg85",
+      "threshold": 170,
+      "real_x_lag": 3,
+      "real_x_score": 0.9799354318704948,
+      "flat_x_lag": 3,
+      "flat_x_score": 0.9813773553263733,
+      "abs_score_delta": 0.0014419234558784577
+    },
+    {
+      "format": "jpeg70",
+      "threshold": 110,
+      "real_x_lag": 3,
+      "real_x_score": 0.9758453115022294,
+      "flat_x_lag": 3,
+      "flat_x_score": 0.9813773553263733,
+      "abs_score_delta": 0.005532043824143851
+    },
+    {
+      "format": "jpeg70",
+      "threshold": 140,
+      "real_x_lag": 3,
+      "real_x_score": 0.9776351602728541,
+      "flat_x_lag": 3,
+      "flat_x_score": 0.9813773553263733,
+      "abs_score_delta": 0.0037421950535191373
+    },
+    {
+      "format": "jpeg70",
+      "threshold": 170,
+      "real_x_lag": 3,
+      "real_x_score": 0.979856404055875,
+      "flat_x_lag": 3,
+      "flat_x_score": 0.9813773553263733,
+      "abs_score_delta": 0.0015209512704982275
+    },
+    {
+      "format": "down75_up",
+      "threshold": 110,
+      "real_x_lag": 3,
+      "real_x_score": 0.9747357775028229,
+      "flat_x_lag": 3,
+      "flat_x_score": 0.9813802648183841,
+      "abs_score_delta": 0.0066444873155612205
+    },
+    {
+      "format": "down75_up",
+      "threshold": 140,
+      "real_x_lag": 3,
+      "real_x_score": 0.977680108913371,
+      "flat_x_lag": 3,
+      "flat_x_score": 0.9813773553263733,
+      "abs_score_delta": 0.0036972464130022864
+    },
+    {
+      "format": "down75_up",
+      "threshold": 170,
+      "real_x_lag": 3,
+      "real_x_score": 0.9804160379252522,
+      "flat_x_lag": 3,
+      "flat_x_score": 0.9813773553263733,
+      "abs_score_delta": 0.0009613174011210424
+    }
+  ],
+  "compatible_with_silhouette": true,
+  "nontrivial_pattern": false,
+  "decision": "CONTROL_FAILURE",
+  "scope_limit": "Only the y/x short-lag projection statistic of Stage12 legacy large-sailboat region. Image re-encodings are not independent source replication. Positive lag does not establish a digit, intention, or hidden message.",
+  "safety": "Non-secret original-image analysis: no private key, mnemonic, wallet, address or outside-site research."
+}
