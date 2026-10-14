@@ -1,0 +1,312 @@
+{
+  "experiment_id": "A11-EXP-142",
+  "hypothesis": "the genuine large hull has its interior upper/lower pencil marks duplicated by vertical reflection about the fixed central hull axis, beyond natural vessel-silhouette shape",
+  "justification": "Historical Stage41 boat y-symmetry used a rectangle with zero true hull coverage; Stage132 proved the defect. Stage141 tested true hull L/R symmetry but not U/D.",
+  "scope": "immutable Stage132 hull polygon; y-axis 860.5 and x-band fore/aft fixed; 2 texture channels and 4 image variants",
+  "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "source_geometry": {
+    "hull_polygon": [
+      [
+        25,
+        783
+      ],
+      [
+        525,
+        778
+      ],
+      [
+        480,
+        931
+      ],
+      [
+        75,
+        939
+      ]
+    ],
+    "mirror_y_axis": 860.5,
+    "upper_y": [
+      798,
+      847
+    ],
+    "lower_y": [
+      875,
+      924
+    ],
+    "fore_aft_x_bands": [
+      [
+        "fore_hull",
+        95,
+        235
+      ],
+      [
+        "aft_hull",
+        315,
+        455
+      ]
+    ],
+    "border_erosion_px": 7
+  },
+  "thresholds": {
+    "min_mask_pairs": 1200,
+    "min_ink_density": 0.075,
+    "ink_correlation": 0.72,
+    "detail_correlation": 0.56
+  },
+  "controls": {
+    "pass": true,
+    "cases": 16,
+    "positive_format_passes": 4,
+    "independent_redraw_negative_format_passes": 4,
+    "positive": {
+      "original": {
+        "fore_hull": {
+          "paired_mask_pixels": 6860,
+          "upper_ink_density": 0.418367,
+          "lower_ink_density": 0.418367,
+          "valid": true,
+          "ink_corr": 1.0,
+          "detail_corr": 1.0,
+          "mirrored_pencil_fingerprint": true
+        },
+        "aft_hull": {
+          "paired_mask_pixels": 6860,
+          "upper_ink_density": 0.417201,
+          "lower_ink_density": 0.417201,
+          "valid": true,
+          "ink_corr": 1.0,
+          "detail_corr": 1.0,
+          "mirrored_pencil_fingerprint": true
+        }
+      },
+      "jpeg85": {
+        "fore_hull": {
+          "paired_mask_pixels": 6860,
+          "upper_ink_density": 0.422449,
+          "lower_ink_density": 0.422303,
+          "valid": true,
+          "ink_corr": 0.999954,
+          "detail_corr": 0.997801,
+          "mirrored_pencil_fingerprint": true
+        },
+        "aft_hull": {
+          "paired_mask_pixels": 6860,
+          "upper_ink_density": 0.418367,
+          "lower_ink_density": 0.417638,
+          "valid": true,
+          "ink_corr": 0.999955,
+          "detail_corr": 0.997806,
+          "mirrored_pencil_fingerprint": true
+        }
+      },
+      "jpeg70": {
+        "fore_hull": {
+          "paired_mask_pixels": 6860,
+          "upper_ink_density": 0.424052,
+          "lower_ink_density": 0.425219,
+          "valid": true,
+          "ink_corr": 0.999861,
+          "detail_corr": 0.99175,
+          "mirrored_pencil_fingerprint": true
+        },
+        "aft_hull": {
+          "paired_mask_pixels": 6860,
+          "upper_ink_density": 0.421574,
+          "lower_ink_density": 0.420408,
+          "valid": true,
+          "ink_corr": 0.999856,
+          "detail_corr": 0.99208,
+          "mirrored_pencil_fingerprint": true
+        }
+      },
+      "down75_up": {
+        "fore_hull": {
+          "paired_mask_pixels": 6860,
+          "upper_ink_density": 0.461808,
+          "lower_ink_density": 0.460641,
+          "valid": true,
+          "ink_corr": 0.999987,
+          "detail_corr": 0.999155,
+          "mirrored_pencil_fingerprint": true
+        },
+        "aft_hull": {
+          "paired_mask_pixels": 6860,
+          "upper_ink_density": 0.454227,
+          "lower_ink_density": 0.453207,
+          "valid": true,
+          "ink_corr": 0.999986,
+          "detail_corr": 0.99907,
+          "mirrored_pencil_fingerprint": true
+        }
+      }
+    },
+    "negative": {
+      "original": {
+        "fore_hull": {
+          "paired_mask_pixels": 6860,
+          "upper_ink_density": 0.418367,
+          "lower_ink_density": 0.431487,
+          "valid": true,
+          "ink_corr": 0.387045,
+          "detail_corr": -0.007357,
+          "mirrored_pencil_fingerprint": false
+        },
+        "aft_hull": {
+          "paired_mask_pixels": 6860,
+          "upper_ink_density": 0.417201,
+          "lower_ink_density": 0.409475,
+          "valid": true,
+          "ink_corr": 0.350315,
+          "detail_corr": 0.022627,
+          "mirrored_pencil_fingerprint": false
+        }
+      },
+      "jpeg85": {
+        "fore_hull": {
+          "paired_mask_pixels": 6860,
+          "upper_ink_density": 0.422449,
+          "lower_ink_density": 0.433382,
+          "valid": true,
+          "ink_corr": 0.38856,
+          "detail_corr": -0.007166,
+          "mirrored_pencil_fingerprint": false
+        },
+        "aft_hull": {
+          "paired_mask_pixels": 6860,
+          "upper_ink_density": 0.418367,
+          "lower_ink_density": 0.411953,
+          "valid": true,
+          "ink_corr": 0.352428,
+          "detail_corr": 0.022516,
+          "mirrored_pencil_fingerprint": false
+        }
+      },
+      "jpeg70": {
+        "fore_hull": {
+          "paired_mask_pixels": 6860,
+          "upper_ink_density": 0.424052,
+          "lower_ink_density": 0.433819,
+          "valid": true,
+          "ink_corr": 0.389626,
+          "detail_corr": -0.006594,
+          "mirrored_pencil_fingerprint": false
+        },
+        "aft_hull": {
+          "paired_mask_pixels": 6860,
+          "upper_ink_density": 0.421574,
+          "lower_ink_density": 0.412536,
+          "valid": true,
+          "ink_corr": 0.353347,
+          "detail_corr": 0.020244,
+          "mirrored_pencil_fingerprint": false
+        }
+      },
+      "down75_up": {
+        "fore_hull": {
+          "paired_mask_pixels": 6860,
+          "upper_ink_density": 0.461808,
+          "lower_ink_density": 0.471429,
+          "valid": true,
+          "ink_corr": 0.398504,
+          "detail_corr": -0.00701,
+          "mirrored_pencil_fingerprint": false
+        },
+        "aft_hull": {
+          "paired_mask_pixels": 6860,
+          "upper_ink_density": 0.454227,
+          "lower_ink_density": 0.450292,
+          "valid": true,
+          "ink_corr": 0.360725,
+          "detail_corr": 0.02713,
+          "mirrored_pencil_fingerprint": false
+        }
+      }
+    }
+  },
+  "real": {
+    "original": {
+      "fore_hull": {
+        "paired_mask_pixels": 6860,
+        "upper_ink_density": 0.848105,
+        "lower_ink_density": 0.622886,
+        "valid": true,
+        "ink_corr": 0.154842,
+        "detail_corr": 0.009484,
+        "mirrored_pencil_fingerprint": false
+      },
+      "aft_hull": {
+        "paired_mask_pixels": 6860,
+        "upper_ink_density": 0.750875,
+        "lower_ink_density": 0.510933,
+        "valid": true,
+        "ink_corr": 0.251419,
+        "detail_corr": 0.005359,
+        "mirrored_pencil_fingerprint": false
+      }
+    },
+    "jpeg85": {
+      "fore_hull": {
+        "paired_mask_pixels": 6860,
+        "upper_ink_density": 0.848251,
+        "lower_ink_density": 0.623178,
+        "valid": true,
+        "ink_corr": 0.153877,
+        "detail_corr": 0.01007,
+        "mirrored_pencil_fingerprint": false
+      },
+      "aft_hull": {
+        "paired_mask_pixels": 6860,
+        "upper_ink_density": 0.752041,
+        "lower_ink_density": 0.512245,
+        "valid": true,
+        "ink_corr": 0.251959,
+        "detail_corr": 0.004295,
+        "mirrored_pencil_fingerprint": false
+      }
+    },
+    "jpeg70": {
+      "fore_hull": {
+        "paired_mask_pixels": 6860,
+        "upper_ink_density": 0.850437,
+        "lower_ink_density": 0.62172,
+        "valid": true,
+        "ink_corr": 0.153041,
+        "detail_corr": 0.008412,
+        "mirrored_pencil_fingerprint": false
+      },
+      "aft_hull": {
+        "paired_mask_pixels": 6860,
+        "upper_ink_density": 0.752915,
+        "lower_ink_density": 0.51312,
+        "valid": true,
+        "ink_corr": 0.252024,
+        "detail_corr": 0.005993,
+        "mirrored_pencil_fingerprint": false
+      }
+    },
+    "down75_up": {
+      "fore_hull": {
+        "paired_mask_pixels": 6860,
+        "upper_ink_density": 0.867493,
+        "lower_ink_density": 0.655102,
+        "valid": true,
+        "ink_corr": 0.152207,
+        "detail_corr": 0.012377,
+        "mirrored_pencil_fingerprint": false
+      },
+      "aft_hull": {
+        "paired_mask_pixels": 6860,
+        "upper_ink_density": 0.776968,
+        "lower_ink_density": 0.54344,
+        "valid": true,
+        "ink_corr": 0.250528,
+        "detail_corr": 0.014271,
+        "mirrored_pencil_fingerprint": false
+      }
+    }
+  },
+  "source_adequate": true,
+  "full_mirror_replicated": false,
+  "decision": "NO_UPPER_LOWER_HULL_PENCIL_TEMPLATE_MIRROR",
+  "limits": "Only the predeclared axis and two hull interior strips. This cannot address approximate hull outline symmetry, hidden lettering, altered axis positions or secrets.",
+  "safety": "No cryptographic candidates, BIP39, mnemonic words, keys, wallets, addresses or social/external sources."
+}
