@@ -56,7 +56,7 @@ def fixture(mask,kind):
         raw[mask]=0
     elif kind=="period12":
         y,x=np.indices(raw.shape)
-        raw[mask&(x%12<3)]=0
+        raw[mask&(x%12<5)]=0
     else: raise ValueError(kind)
     return raw
 
