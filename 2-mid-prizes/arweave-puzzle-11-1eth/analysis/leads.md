@@ -185,3 +185,8 @@ Stage148 12/12 building source H/V labels repeat on four image variants and two 
 ## Stage149 partially mixed original H/V facades; Stage150 jitter confirmation
 
 Stage149 576/576 positive/mixed/blank controls passed, 35/36 real facade zones reproducible across original/JPEG variants. Nine facades match whole-facade H/V at all three y tiers; of four overall V-labelled facades, #3/#4/#7 have stable horizontal LOWER hatching, #12 stays vertical. The mixed-facade count 3/12 falls short of stage's predeclared 4-facade gate; do not claim new binary data. Stage150 checks this exact source layer phenomenon with a fixed x±4/y±3 crop-jitter grid, 4 image formats, and V/V/H vs V/V/V with adjacent outside-H controls. Art orientation alone does not imply deliberate coding.
+
+
+## Stage150 V/H basal observation source boundary sensitive; Stage151 under-pier triangle
+
+Stage150 3/3 controlled synthetic patterns calibrate 4 V-facade x/y jitter; source original Stage149 replay passed. Top of all 4 V buildings classified V in 36/36, but bottom labels #4/#7 were only H in 24/36 and #12 V 24/36 due missing classifications, while #3 was H 36/36. Original three lower-H observation did not meet strict 31/36 gate. Stage151 explores a genuinely different original-image visible triangle beneath the right pier around x1052..1280/y633..778 (not one of five known small sails). Test the fixed candidate's affine-normalized interior ink density and fine pen hatching against five known sails, with 48 calibrated filled/hollow synthetic source objects and four rendered formats. No encoded key hypothesis.
