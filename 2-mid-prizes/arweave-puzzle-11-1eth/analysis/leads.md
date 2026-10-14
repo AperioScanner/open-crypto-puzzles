@@ -135,3 +135,8 @@ Stage139 source audit excluded #6/#11 near-blank reflection crops, controls pass
 ## Stage140 valid negative; Stage141 corrected hull mirror audit
 
 Stage140 passed 40/40 copied-vs-redrawn template controls and evaluated all 5 real sails at source-adequate normalized scale. No small sail reproduces the complete large sail's detailed pencil fingerprint (0/5). Stage141 is motivated by Stage132's established hull ROI omission and the original Stage40 boat symmetry test's incorrect crop: compare natural bilateral hull shape versus exact mirrored *internal pencil marks*, with fixed x-axis, two independent texture channels, two anatomical hull bands, cloned/independent synthetic controls and four lossy variants. No secret reconstruction.
+
+
+## Stage141 closed; Stage142 corrected large-hull top/bottom stroke test
+
+Stage141 source-adequate true-hull L/R interior pencil-copy negatives (all 16 synthetic positive and independent-redraw controls passed), ink smooth -0.060/+0.333, detail near zero across two bands and 4 renderings. Stage142 targets the separately unverified UPPER/LOWER hull-pencil copied texture: historical Stage41 tested Y-symmetry on a mistaken ROI with no hull ink, confirmed by Stage132, while Stage141 only tested X-symmetry. Precommitted y860.5, two fixed x-strips, two texture channels, four variants, mirrored positives and independently redrawn negatives, no secrets.
