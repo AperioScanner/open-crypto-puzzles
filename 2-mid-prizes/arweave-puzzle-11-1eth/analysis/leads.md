@@ -145,3 +145,8 @@ Stage141 source-adequate true-hull L/R interior pencil-copy negatives (all 16 sy
 ## Stage142 negative; Stage143 user-supplied mirrored chess negative-space hypothesis
 
 Stage142 source-adequate 4-format top/bottom mirrored hull-pencil control audit found no exact copied internal strokes (4/4 positive and 4/4 independent negative calibration pass). New visual lead is user's duplicated+rotated canonical image showing two white stepped voids traced red, compared to a king and queen. Stage143 must distinguish AUTHOR-DRAWN crown details from forced bilateral symmetry: rotated+mirrored city skyline with 7 right-side roofs and 5 left-side roofs automatically forms two stair-step pedestal voids. Controls: original roofline source validation, synthetic stepped-vs-flat profiles, exact within-cluster roof-height permutations, and four-format reproduction. No assigned chess piece identities or secret extraction.
+
+
+## Stage143 chess piece negative-space resemblance — unconfirmed
+
+Source image mirror/90° transform reproduced the user's king/queen-like voids with rooftop geometry. The upper piece-like contour uses 7 skyline buildings, lower 5; symmetry mathematically forced by duplicating/reflection. Four format source roof checks 12/12 and synthetic stepped/flat controls succeeded. Exact null gives 17.14% of height permutations creating two generic widening pedestals (posthoc descriptive, not evidence of chess). No independently visible king cross or queen multi-point crown. Remains a user-inspired semantic lead awaiting an unambiguous independently visible chess-specific feature, not a verified intentional puzzle encoding.
