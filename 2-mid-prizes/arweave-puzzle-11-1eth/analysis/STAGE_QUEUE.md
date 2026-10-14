@@ -291,3 +291,13 @@ Stage137 Actions #38492279979 completed successfully. Canonical SHA matched, pos
 - Promotion needs **both** original Stage35 methods V-minus-H positive and one-sided exact p<=.025 each (two-test Bonferroni), surviving all four lossy/original variants. No retuning to get a positive.
 - Never derive keys, mnemonic words, account access or external Twitter content. Source canonical image only.
 - Script tools/stage138_corrected_all_building_reflections.py, outputs analysis/runs/stage138-all-building-reflection-recheck/.
+
+
+## 2026-10-13 — Stage138 calibrated negative; Stage139 quality audit preregistered
+
+- Stage138 Actions #38492878610 completed SUCCESS and canonical SHA matched. Reproduced the original Stage35 data at all ten legacy retained sites with exact zero numerical drift; synthetic V-vertical/H-horizontal and inverted negative passed on 4 variants. Newly restored buildings #1 and #2 both show strong water-band ink. Full 12-building result: Sobel V-minus-H is NEGATIVE -0.032..-0.023 (p=.556..582); Fourier V-minus-H +.085..+.113 but p=.327..370. NO_REPLICATED_ALL_12_REFLECTION_ASSOCIATION. Do not treat this as general failure of visible H/V facade sequence.
+- A NEW SOURCE-COVERAGE defect is apparent in the Stage138 original rows: building #6 water-band brightness darkness=0.400 and #11 darkness=0.832, well below the **2.0 mean darkness** already predeclared for #1 and #2 in Stage138. Stage138 never required source adequacy across its original ten sites, so near-empty patches contributed meaningless Sobel/Fourier orientations.
+- Stage139 is exactly one non-arbitrary re-audit: reproduce Stage138 measurements verbatim, apply the SAME fixed 2.0 darkness minimum uniformly across all 12 building-water apertures in original/JPEG85/JPEG70/resampled, precommit per-class and total coverage >=8 good / >=3 V / >=4 H, and require stable excluded IDs. Then retain the same Stage35/138 two-method exact V-vs-H permutation gate (each one-sided p<=.025), without retuning.
+- Calibrations: exact Stage138 original 12-row replay <=1e-7, synthetic V/H positive plus H/V inversion negative with Stage138-observed near-empty #6/#11 artificially blanked in source, all 4 variants; require exactly those two exclusions and 4 V/6 H synthetic. Control failure => repair Stage139. Real source low coverage => inconclusive; positive => independent adversarial review, not code. Any p is exploratory because this check was initiated after Stage138 diagnostics; no claims of fresh independent confirmation.
+- Strictly image-only; no BIP39, mnemonic, key, wallet or Twitter.
+- Script tools/stage139_reflection_coverage_audit.py; artifacts analysis/runs/stage139-reflection-coverage-audit/.
