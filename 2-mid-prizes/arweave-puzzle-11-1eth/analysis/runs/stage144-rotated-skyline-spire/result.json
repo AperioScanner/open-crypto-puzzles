@@ -21,38 +21,39 @@
     "required_source_coverage_blocks": 9,
     "required_ablation_block_drop": 6
   },
+  "calibration_repair": "Initial positive horizon synthetic scored 12/12 before and after partial 3px ablation. Repaired only the ablation primitive: erase complete detected long-horizontal connected components touching the unchanged seed row, keeping all precommitted source ROIs/thresholds.",
   "controls": {
-    "pass": false,
-    "positive_passing_formats": 0,
+    "pass": true,
+    "positive_passing_formats": 4,
     "negative_passing_formats": 4,
     "positive": {
       "original": {
         "best_source_horizon_y": 256,
         "source_horizontal_support_blocks": 12,
-        "post_horizontal_rule_removal_blocks": 12,
-        "source_blocks_lost_by_ablation": 0,
-        "unmodified_source_rule_explains_vertical_spire": false
+        "post_horizontal_rule_removal_blocks": 0,
+        "source_blocks_lost_by_ablation": 12,
+        "unmodified_source_rule_explains_vertical_spire": true
       },
       "jpeg85": {
         "best_source_horizon_y": 256,
         "source_horizontal_support_blocks": 12,
-        "post_horizontal_rule_removal_blocks": 12,
-        "source_blocks_lost_by_ablation": 0,
-        "unmodified_source_rule_explains_vertical_spire": false
+        "post_horizontal_rule_removal_blocks": 0,
+        "source_blocks_lost_by_ablation": 12,
+        "unmodified_source_rule_explains_vertical_spire": true
       },
       "jpeg70": {
         "best_source_horizon_y": 256,
         "source_horizontal_support_blocks": 12,
-        "post_horizontal_rule_removal_blocks": 12,
-        "source_blocks_lost_by_ablation": 0,
-        "unmodified_source_rule_explains_vertical_spire": false
+        "post_horizontal_rule_removal_blocks": 0,
+        "source_blocks_lost_by_ablation": 12,
+        "unmodified_source_rule_explains_vertical_spire": true
       },
       "down75_up": {
         "best_source_horizon_y": 256,
         "source_horizontal_support_blocks": 12,
-        "post_horizontal_rule_removal_blocks": 12,
-        "source_blocks_lost_by_ablation": 0,
-        "unmodified_source_rule_explains_vertical_spire": false
+        "post_horizontal_rule_removal_blocks": 0,
+        "source_blocks_lost_by_ablation": 12,
+        "unmodified_source_rule_explains_vertical_spire": true
       }
     },
     "negative": {
@@ -97,8 +98,8 @@
     "jpeg85": {
       "best_source_horizon_y": 258,
       "source_horizontal_support_blocks": 12,
-      "post_horizontal_rule_removal_blocks": 9,
-      "source_blocks_lost_by_ablation": 3,
+      "post_horizontal_rule_removal_blocks": 8,
+      "source_blocks_lost_by_ablation": 4,
       "unmodified_source_rule_explains_vertical_spire": false
     },
     "jpeg70": {
@@ -111,14 +112,14 @@
     "down75_up": {
       "best_source_horizon_y": 258,
       "source_horizontal_support_blocks": 11,
-      "post_horizontal_rule_removal_blocks": 9,
-      "source_blocks_lost_by_ablation": 2,
+      "post_horizontal_rule_removal_blocks": 8,
+      "source_blocks_lost_by_ablation": 3,
       "unmodified_source_rule_explains_vertical_spire": false
     }
   },
   "same_source_y_under_lossy_formats": true,
   "independent_new_spire_evidence": false,
-  "decision": "CONTROL_FAILURE",
+  "decision": "SPIRE_SOURCE_HORIZON_NOT_CONFIRMED",
   "scope_note": "Representative reconstruction uses skyline crop y0..330, not asserted pixel-equal to user's unknown crop/flip settings. This test only explains a source horizontal line rotating into a vertical apparent spire; it cannot confirm or exclude every possible hidden symbol or artist intention.",
   "safety": "No secret candidates, BIP39, private keys, wallet access, addresses or off-image research."
 }
