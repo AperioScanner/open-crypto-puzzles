@@ -130,3 +130,8 @@ Stage138 reproduced Stage35's original 10 measurements exactly, restored buildin
 ## Stage139 calibrated reflection negative; Stage140 cross-scale sail sketch fingerprint
 
 Stage139 source audit excluded #6/#11 near-blank reflection crops, controls passed; retained ten buildings 4V/6H with Sobel p~.2 and Fourier p~.33, no reproducible facade/reflection relationship. Stage140 switches to a distinct visual question enabled by Stage132's verified large-sail crop correction: does the complete giant sail's *pencil stroke template* appear resized in a small sail? Stage120 only compared small-to-small; Stage123 only same-scale patches. Affine normalizations, independent smudge/detail correlation, 20 copied vs 20 independent redraw controls, lossy replications. No secrets.
+
+
+## Stage140 valid negative; Stage141 corrected hull mirror audit
+
+Stage140 passed 40/40 copied-vs-redrawn template controls and evaluated all 5 real sails at source-adequate normalized scale. No small sail reproduces the complete large sail's detailed pencil fingerprint (0/5). Stage141 is motivated by Stage132's established hull ROI omission and the original Stage40 boat symmetry test's incorrect crop: compare natural bilateral hull shape versus exact mirrored *internal pencil marks*, with fixed x-axis, two independent texture channels, two anatomical hull bands, cloned/independent synthetic controls and four lossy variants. No secret reconstruction.
