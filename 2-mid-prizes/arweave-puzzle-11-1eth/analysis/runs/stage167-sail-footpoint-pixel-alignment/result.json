@@ -104,8 +104,7 @@
       0.9457894736842105,
       0.96
     ],
-    "sample_patch_radius": 1,
-    "dark_less_than": 175,
+    "pixel_metric": "mean normalized center-pixel darkness, fixed t samples; synthetic-only repair; no hard ink cutoff",
     "min_top_score": 0.7,
     "min_best_second_margin": 0.15,
     "source_formats": [
@@ -124,2672 +123,151 @@
     "unchanged_sail_count": true
   },
   "synthetic_fixture_controls": {
-    "pass": false,
+    "pass": true,
     "cases": 160,
-    "passed": 40,
-    "failures": [
-      {
-        "site": "sail1",
-        "foot_index": 1,
-        "known_actual_shift": 0,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 1,
-        "known_actual_shift": 0,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 1,
-        "known_actual_shift": 0,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 1,
-        "known_actual_shift": 0,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 1,
-        "known_actual_shift": -8,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 1,
-        "known_actual_shift": -8,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 1,
-        "known_actual_shift": -8,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 1,
-        "known_actual_shift": -8,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 1,
-        "known_actual_shift": 8,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 1,
-        "known_actual_shift": 8,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 1,
-        "known_actual_shift": 8,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 1,
-        "known_actual_shift": 8,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 2,
-        "known_actual_shift": 0,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 2,
-        "known_actual_shift": 0,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 2,
-        "known_actual_shift": 0,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 2,
-        "known_actual_shift": 0,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 2,
-        "known_actual_shift": -8,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 2,
-        "known_actual_shift": -8,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 2,
-        "known_actual_shift": -8,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 2,
-        "known_actual_shift": -8,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 2,
-        "known_actual_shift": 8,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 2,
-        "known_actual_shift": 8,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 2,
-        "known_actual_shift": 8,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail1",
-        "foot_index": 2,
-        "known_actual_shift": 8,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 1,
-        "known_actual_shift": 0,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 1,
-        "known_actual_shift": 0,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 1,
-        "known_actual_shift": 0,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 1,
-        "known_actual_shift": 0,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 1,
-        "known_actual_shift": -8,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 1,
-        "known_actual_shift": -8,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 1,
-        "known_actual_shift": -8,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 1,
-        "known_actual_shift": -8,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 1,
-        "known_actual_shift": 8,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 1,
-        "known_actual_shift": 8,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 1,
-        "known_actual_shift": 8,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 1,
-        "known_actual_shift": 8,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 2,
-        "known_actual_shift": 0,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 2,
-        "known_actual_shift": 0,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 2,
-        "known_actual_shift": 0,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 2,
-        "known_actual_shift": 0,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 2,
-        "known_actual_shift": -8,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 2,
-        "known_actual_shift": -8,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 2,
-        "known_actual_shift": -8,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 2,
-        "known_actual_shift": -8,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 2,
-        "known_actual_shift": 8,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 2,
-        "known_actual_shift": 8,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 2,
-        "known_actual_shift": 8,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail2",
-        "foot_index": 2,
-        "known_actual_shift": 8,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 1,
-        "known_actual_shift": 0,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 1,
-        "known_actual_shift": 0,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 1,
-        "known_actual_shift": 0,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 1,
-        "known_actual_shift": 0,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 1,
-        "known_actual_shift": -8,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 1,
-        "known_actual_shift": -8,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 1,
-        "known_actual_shift": -8,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 1,
-        "known_actual_shift": -8,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 1,
-        "known_actual_shift": 8,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 1,
-        "known_actual_shift": 8,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 1,
-        "known_actual_shift": 8,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 1,
-        "known_actual_shift": 8,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 2,
-        "known_actual_shift": 0,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 2,
-        "known_actual_shift": 0,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 2,
-        "known_actual_shift": 0,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 2,
-        "known_actual_shift": 0,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 2,
-        "known_actual_shift": -8,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 2,
-        "known_actual_shift": -8,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 2,
-        "known_actual_shift": -8,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 2,
-        "known_actual_shift": -8,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 2,
-        "known_actual_shift": 8,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 2,
-        "known_actual_shift": 8,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 2,
-        "known_actual_shift": 8,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail3",
-        "foot_index": 2,
-        "known_actual_shift": 8,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 1,
-        "known_actual_shift": 0,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 1,
-        "known_actual_shift": 0,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 1,
-        "known_actual_shift": 0,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 1,
-        "known_actual_shift": 0,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 1,
-        "known_actual_shift": -8,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 1,
-        "known_actual_shift": -8,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 1,
-        "known_actual_shift": -8,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 1,
-        "known_actual_shift": -8,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 1,
-        "known_actual_shift": 8,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 1,
-        "known_actual_shift": 8,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 1,
-        "known_actual_shift": 8,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 1,
-        "known_actual_shift": 8,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 2,
-        "known_actual_shift": 0,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 2,
-        "known_actual_shift": 0,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 2,
-        "known_actual_shift": 0,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 2,
-        "known_actual_shift": 0,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 2,
-        "known_actual_shift": -8,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 2,
-        "known_actual_shift": -8,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 2,
-        "known_actual_shift": -8,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 2,
-        "known_actual_shift": -8,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 2,
-        "known_actual_shift": 8,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 2,
-        "known_actual_shift": 8,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 2,
-        "known_actual_shift": 8,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail4",
-        "foot_index": 2,
-        "known_actual_shift": 8,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 1,
-        "known_actual_shift": 0,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 1,
-        "known_actual_shift": 0,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 1,
-        "known_actual_shift": 0,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 1,
-        "known_actual_shift": 0,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 1,
-        "known_actual_shift": -8,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 1,
-        "known_actual_shift": -8,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 1,
-        "known_actual_shift": -8,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 1,
-        "known_actual_shift": -8,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 1,
-        "known_actual_shift": 8,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 1,
-        "known_actual_shift": 8,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 1,
-        "known_actual_shift": 8,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 1,
-        "known_actual_shift": 8,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 2,
-        "known_actual_shift": 0,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 2,
-        "known_actual_shift": 0,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 2,
-        "known_actual_shift": 0,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 2,
-        "known_actual_shift": 0,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 1.0,
-            "0": 1.0,
-            "4": 1.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 2,
-        "known_actual_shift": -8,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 2,
-        "known_actual_shift": -8,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 2,
-        "known_actual_shift": -8,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 2,
-        "known_actual_shift": -8,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 1.0,
-            "-4": 1.0,
-            "0": 0.0,
-            "4": 0.0,
-            "8": 0.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 2,
-        "known_actual_shift": 8,
-        "format": "original",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 2,
-        "known_actual_shift": 8,
-        "format": "jpeg85",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 2,
-        "known_actual_shift": 8,
-        "format": "jpeg70",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      },
-      {
-        "site": "sail5",
-        "foot_index": 2,
-        "known_actual_shift": 8,
-        "format": "down75_up",
-        "pass": false,
-        "result": {
-          "selected_offset_px": null,
-          "confident": false,
-          "top_support": 1.0,
-          "second_support": 1.0,
-          "support_margin": 0.0,
-          "all_candidate_support": {
-            "-8": 0.0,
-            "-4": 0.0,
-            "0": 0.0,
-            "4": 1.0,
-            "8": 1.0
-          }
-        }
-      }
-    ]
+    "passed": 160,
+    "failures": []
   },
   "source_by_format_site": {
     "original": {
       "sail1_left": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.845882,
+        "second_support": 0.816078,
+        "support_margin": 0.029804,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 0.9,
-          "4": 0.7,
-          "8": 1.0
+          "-8": 0.71549,
+          "-4": 0.816078,
+          "0": 0.249608,
+          "4": 0.078235,
+          "8": 0.845882
         }
       },
       "sail1_right": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.868431,
+        "second_support": 0.812549,
+        "support_margin": 0.055882,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 1.0,
-          "8": 1.0
+          "-8": 0.30098,
+          "-4": 0.868431,
+          "0": 0.611569,
+          "4": 0.226863,
+          "8": 0.812549
         }
       },
       "sail2_left": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.873333,
+        "second_support": 0.784118,
+        "support_margin": 0.089216,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 0.65,
-          "4": 1.0,
-          "8": 1.0
+          "-8": 0.784118,
+          "-4": 0.711765,
+          "0": 0.172745,
+          "4": 0.873333,
+          "8": 0.283529
         }
       },
       "sail2_right": {
-        "selected_offset_px": null,
-        "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "selected_offset_px": 0,
+        "confident": true,
+        "top_support": 0.879608,
+        "second_support": 0.713529,
+        "support_margin": 0.166078,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 1.0,
-          "8": 0.65
+          "-8": 0.713529,
+          "-4": 0.698431,
+          "0": 0.879608,
+          "4": 0.453725,
+          "8": 0.272941
         }
       },
       "sail3_left": {
-        "selected_offset_px": null,
-        "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "selected_offset_px": 8,
+        "confident": true,
+        "top_support": 0.984902,
+        "second_support": 0.668627,
+        "support_margin": 0.316275,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 0.9,
-          "8": 1.0
+          "-8": 0.668627,
+          "-4": 0.604706,
+          "0": 0.621176,
+          "4": 0.104314,
+          "8": 0.984902
         }
       },
       "sail3_right": {
         "selected_offset_px": null,
         "confident": false,
         "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "second_support": 0.976667,
+        "support_margin": 0.023333,
         "all_candidate_support": {
           "-8": 1.0,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 1.0,
-          "8": 1.0
+          "-4": 0.976667,
+          "0": 0.64,
+          "4": 0.560196,
+          "8": 0.528431
         }
       },
       "sail4_left": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.82,
+        "second_support": 0.704314,
+        "support_margin": 0.115686,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 0.95,
-          "8": 1.0
+          "-8": 0.82,
+          "-4": 0.576471,
+          "0": 0.411569,
+          "4": 0.318431,
+          "8": 0.704314
         }
       },
       "sail4_right": {
-        "selected_offset_px": null,
-        "confident": false,
-        "top_support": 1.0,
-        "second_support": 0.9,
-        "support_margin": 0.1,
+        "selected_offset_px": -8,
+        "confident": true,
+        "top_support": 0.948039,
+        "second_support": 0.516275,
+        "support_margin": 0.431765,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 0.9,
-          "0": 0.1,
+          "-8": 0.948039,
+          "-4": 0.516275,
+          "0": 0.007059,
           "4": 0.0,
-          "8": 0.0
+          "8": 0.011373
         }
       },
       "sail5_left": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.678039,
+        "second_support": 0.50451,
+        "support_margin": 0.173529,
         "all_candidate_support": {
-          "-8": 0.65,
-          "-4": 0.75,
-          "0": 0.8,
-          "4": 1.0,
-          "8": 1.0
+          "-8": 0.288235,
+          "-4": 0.460784,
+          "0": 0.50451,
+          "4": 0.485098,
+          "8": 0.678039
         }
       },
       "sail5_right": {
-        "selected_offset_px": null,
-        "confident": false,
-        "top_support": 1.0,
-        "second_support": 0.95,
-        "support_margin": 0.05,
+        "selected_offset_px": -8,
+        "confident": true,
+        "top_support": 0.769608,
+        "second_support": 0.601373,
+        "support_margin": 0.168235,
         "all_candidate_support": {
-          "-8": 0.95,
-          "-4": 0.95,
-          "0": 1.0,
-          "4": 0.75,
-          "8": 0.2
+          "-8": 0.769608,
+          "-4": 0.462157,
+          "0": 0.601373,
+          "4": 0.530392,
+          "8": 0.012549
         }
       }
     },
@@ -2797,141 +275,141 @@
       "sail1_left": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.847255,
+        "second_support": 0.816471,
+        "support_margin": 0.030784,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 0.9,
-          "4": 0.7,
-          "8": 1.0
+          "-8": 0.71549,
+          "-4": 0.816471,
+          "0": 0.253529,
+          "4": 0.082157,
+          "8": 0.847255
         }
       },
       "sail1_right": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.866863,
+        "second_support": 0.811373,
+        "support_margin": 0.05549,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 1.0,
-          "8": 1.0
+          "-8": 0.302941,
+          "-4": 0.866863,
+          "0": 0.603529,
+          "4": 0.226667,
+          "8": 0.811373
         }
       },
       "sail2_left": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.86902,
+        "second_support": 0.779804,
+        "support_margin": 0.089216,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 0.7,
-          "4": 1.0,
-          "8": 1.0
+          "-8": 0.779804,
+          "-4": 0.712745,
+          "0": 0.171569,
+          "4": 0.86902,
+          "8": 0.282353
         }
       },
       "sail2_right": {
-        "selected_offset_px": null,
-        "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "selected_offset_px": 0,
+        "confident": true,
+        "top_support": 0.877647,
+        "second_support": 0.712549,
+        "support_margin": 0.165098,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 1.0,
-          "8": 0.65
+          "-8": 0.712549,
+          "-4": 0.70098,
+          "0": 0.877647,
+          "4": 0.451373,
+          "8": 0.272941
         }
       },
       "sail3_left": {
-        "selected_offset_px": null,
-        "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "selected_offset_px": 8,
+        "confident": true,
+        "top_support": 0.983922,
+        "second_support": 0.659608,
+        "support_margin": 0.324314,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 0.9,
-          "8": 1.0
+          "-8": 0.659608,
+          "-4": 0.601765,
+          "0": 0.617255,
+          "4": 0.11,
+          "8": 0.983922
         }
       },
       "sail3_right": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.989412,
+        "second_support": 0.968431,
+        "support_margin": 0.02098,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 1.0,
-          "8": 1.0
+          "-8": 0.989412,
+          "-4": 0.968431,
+          "0": 0.632941,
+          "4": 0.560196,
+          "8": 0.532549
         }
       },
       "sail4_left": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.82098,
+        "second_support": 0.69902,
+        "support_margin": 0.121961,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 0.95,
-          "8": 1.0
+          "-8": 0.82098,
+          "-4": 0.57,
+          "0": 0.408824,
+          "4": 0.317451,
+          "8": 0.69902
         }
       },
       "sail4_right": {
-        "selected_offset_px": null,
-        "confident": false,
-        "top_support": 1.0,
-        "second_support": 0.9,
-        "support_margin": 0.1,
+        "selected_offset_px": -8,
+        "confident": true,
+        "top_support": 0.941176,
+        "second_support": 0.512353,
+        "support_margin": 0.428824,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 0.9,
-          "0": 0.1,
-          "4": 0.0,
-          "8": 0.0
+          "-8": 0.941176,
+          "-4": 0.512353,
+          "0": 0.011569,
+          "4": 0.003725,
+          "8": 0.014902
         }
       },
       "sail5_left": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.673137,
+        "second_support": 0.501176,
+        "support_margin": 0.171961,
         "all_candidate_support": {
-          "-8": 0.65,
-          "-4": 0.75,
-          "0": 0.8,
-          "4": 1.0,
-          "8": 1.0
+          "-8": 0.286471,
+          "-4": 0.460784,
+          "0": 0.501176,
+          "4": 0.484314,
+          "8": 0.673137
         }
       },
       "sail5_right": {
-        "selected_offset_px": null,
-        "confident": false,
-        "top_support": 1.0,
-        "second_support": 0.95,
-        "support_margin": 0.05,
+        "selected_offset_px": -8,
+        "confident": true,
+        "top_support": 0.763529,
+        "second_support": 0.599216,
+        "support_margin": 0.164314,
         "all_candidate_support": {
-          "-8": 0.95,
-          "-4": 0.95,
-          "0": 1.0,
-          "4": 0.75,
-          "8": 0.25
+          "-8": 0.763529,
+          "-4": 0.462745,
+          "0": 0.599216,
+          "4": 0.525294,
+          "8": 0.022549
         }
       }
     },
@@ -2939,141 +417,141 @@
       "sail1_left": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.851961,
+        "second_support": 0.803725,
+        "support_margin": 0.048235,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 0.9,
-          "4": 0.75,
-          "8": 1.0
+          "-8": 0.71549,
+          "-4": 0.803725,
+          "0": 0.257451,
+          "4": 0.08098,
+          "8": 0.851961
         }
       },
       "sail1_right": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.856275,
+        "second_support": 0.817451,
+        "support_margin": 0.038824,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 1.0,
-          "8": 1.0
+          "-8": 0.293922,
+          "-4": 0.856275,
+          "0": 0.607647,
+          "4": 0.223137,
+          "8": 0.817451
         }
       },
       "sail2_left": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.872549,
+        "second_support": 0.785686,
+        "support_margin": 0.086863,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 0.65,
-          "4": 1.0,
-          "8": 1.0
+          "-8": 0.785686,
+          "-4": 0.710392,
+          "0": 0.172941,
+          "4": 0.872549,
+          "8": 0.285882
         }
       },
       "sail2_right": {
-        "selected_offset_px": null,
-        "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "selected_offset_px": 0,
+        "confident": true,
+        "top_support": 0.875098,
+        "second_support": 0.715098,
+        "support_margin": 0.16,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 1.0,
-          "8": 0.7
+          "-8": 0.715098,
+          "-4": 0.688235,
+          "0": 0.875098,
+          "4": 0.461765,
+          "8": 0.279216
         }
       },
       "sail3_left": {
-        "selected_offset_px": null,
-        "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "selected_offset_px": 8,
+        "confident": true,
+        "top_support": 0.974314,
+        "second_support": 0.67549,
+        "support_margin": 0.298824,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 0.9,
-          "8": 1.0
+          "-8": 0.67549,
+          "-4": 0.597843,
+          "0": 0.616078,
+          "4": 0.113922,
+          "8": 0.974314
         }
       },
       "sail3_right": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.981569,
+        "second_support": 0.960784,
+        "support_margin": 0.020784,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 1.0,
-          "8": 1.0
+          "-8": 0.981569,
+          "-4": 0.960784,
+          "0": 0.636667,
+          "4": 0.562157,
+          "8": 0.527255
         }
       },
       "sail4_left": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.807451,
+        "second_support": 0.705294,
+        "support_margin": 0.102157,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 0.95,
-          "8": 1.0
+          "-8": 0.807451,
+          "-4": 0.575098,
+          "0": 0.423137,
+          "4": 0.325098,
+          "8": 0.705294
         }
       },
       "sail4_right": {
-        "selected_offset_px": null,
-        "confident": false,
-        "top_support": 1.0,
-        "second_support": 0.9,
-        "support_margin": 0.1,
+        "selected_offset_px": -8,
+        "confident": true,
+        "top_support": 0.941765,
+        "second_support": 0.523725,
+        "support_margin": 0.418039,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 0.9,
-          "0": 0.1,
-          "4": 0.0,
-          "8": 0.0
+          "-8": 0.941765,
+          "-4": 0.523725,
+          "0": 0.01902,
+          "4": 0.009804,
+          "8": 0.022745
         }
       },
       "sail5_left": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 0.95,
-        "support_margin": 0.05,
+        "top_support": 0.673529,
+        "second_support": 0.504706,
+        "support_margin": 0.168824,
         "all_candidate_support": {
-          "-8": 0.65,
-          "-4": 0.85,
-          "0": 0.75,
-          "4": 1.0,
-          "8": 0.95
+          "-8": 0.283333,
+          "-4": 0.472941,
+          "0": 0.504706,
+          "4": 0.482941,
+          "8": 0.673529
         }
       },
       "sail5_right": {
-        "selected_offset_px": null,
-        "confident": false,
-        "top_support": 1.0,
-        "second_support": 0.95,
-        "support_margin": 0.05,
+        "selected_offset_px": -8,
+        "confident": true,
+        "top_support": 0.766863,
+        "second_support": 0.605294,
+        "support_margin": 0.161569,
         "all_candidate_support": {
-          "-8": 0.95,
-          "-4": 0.95,
-          "0": 1.0,
-          "4": 0.75,
-          "8": 0.25
+          "-8": 0.766863,
+          "-4": 0.462353,
+          "0": 0.605294,
+          "4": 0.532745,
+          "8": 0.018627
         }
       }
     },
@@ -3081,166 +559,177 @@
       "sail1_left": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.846863,
+        "second_support": 0.728431,
+        "support_margin": 0.118431,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 0.7,
-          "4": 0.75,
-          "8": 1.0
+          "-8": 0.687647,
+          "-4": 0.728431,
+          "0": 0.227451,
+          "4": 0.105686,
+          "8": 0.846863
         }
       },
       "sail1_right": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.847843,
+        "second_support": 0.805098,
+        "support_margin": 0.042745,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 1.0,
-          "8": 1.0
+          "-8": 0.314314,
+          "-4": 0.847843,
+          "0": 0.615686,
+          "4": 0.218431,
+          "8": 0.805098
         }
       },
       "sail2_left": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.876275,
+        "second_support": 0.737647,
+        "support_margin": 0.138627,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 0.7,
-          "4": 1.0,
-          "8": 1.0
+          "-8": 0.737647,
+          "-4": 0.658627,
+          "0": 0.180784,
+          "4": 0.876275,
+          "8": 0.308627
         }
       },
       "sail2_right": {
-        "selected_offset_px": null,
-        "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "selected_offset_px": 0,
+        "confident": true,
+        "top_support": 0.852549,
+        "second_support": 0.689216,
+        "support_margin": 0.163333,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 1.0,
-          "8": 0.75
+          "-8": 0.689216,
+          "-4": 0.669412,
+          "0": 0.852549,
+          "4": 0.461176,
+          "8": 0.250392
         }
       },
       "sail3_left": {
-        "selected_offset_px": null,
-        "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "selected_offset_px": 8,
+        "confident": true,
+        "top_support": 0.947647,
+        "second_support": 0.62,
+        "support_margin": 0.327647,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 0.9,
-          "8": 1.0
+          "-8": 0.62,
+          "-4": 0.590196,
+          "0": 0.597843,
+          "4": 0.15549,
+          "8": 0.947647
         }
       },
       "sail3_right": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.995098,
+        "second_support": 0.952549,
+        "support_margin": 0.042549,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 1.0,
-          "8": 0.95
+          "-8": 0.995098,
+          "-4": 0.952549,
+          "0": 0.662157,
+          "4": 0.604902,
+          "8": 0.487843
         }
       },
       "sail4_left": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.802941,
+        "second_support": 0.724118,
+        "support_margin": 0.078824,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 1.0,
-          "8": 1.0
+          "-8": 0.802941,
+          "-4": 0.589608,
+          "0": 0.440196,
+          "4": 0.335686,
+          "8": 0.724118
         }
       },
       "sail4_right": {
-        "selected_offset_px": null,
-        "confident": false,
-        "top_support": 1.0,
-        "second_support": 0.9,
-        "support_margin": 0.1,
+        "selected_offset_px": -8,
+        "confident": true,
+        "top_support": 0.94549,
+        "second_support": 0.479608,
+        "support_margin": 0.465882,
         "all_candidate_support": {
-          "-8": 1.0,
-          "-4": 0.9,
-          "0": 0.05,
-          "4": 0.0,
-          "8": 0.0
+          "-8": 0.94549,
+          "-4": 0.479608,
+          "0": 0.014902,
+          "4": 0.000588,
+          "8": 0.016078
         }
       },
       "sail5_left": {
         "selected_offset_px": null,
         "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "top_support": 0.674314,
+        "second_support": 0.504314,
+        "support_margin": 0.17,
         "all_candidate_support": {
-          "-8": 0.65,
-          "-4": 0.8,
-          "0": 0.8,
-          "4": 1.0,
-          "8": 1.0
+          "-8": 0.293922,
+          "-4": 0.470196,
+          "0": 0.504314,
+          "4": 0.493725,
+          "8": 0.674314
         }
       },
       "sail5_right": {
-        "selected_offset_px": null,
-        "confident": false,
-        "top_support": 1.0,
-        "second_support": 1.0,
-        "support_margin": 0.0,
+        "selected_offset_px": -8,
+        "confident": true,
+        "top_support": 0.747059,
+        "second_support": 0.566275,
+        "support_margin": 0.180784,
         "all_candidate_support": {
-          "-8": 0.95,
-          "-4": 1.0,
-          "0": 1.0,
-          "4": 0.75,
-          "8": 0.25
+          "-8": 0.747059,
+          "-4": 0.470392,
+          "0": 0.566275,
+          "4": 0.518431,
+          "8": 0.023922
         }
       }
     }
   },
-  "stable_original_offset_zero": [],
-  "stable_same_nonzero_offsets": [],
+  "stable_original_offset_zero": [
+    "sail2_right"
+  ],
+  "stable_same_nonzero_offsets": [
+    {
+      "site": "sail3_left",
+      "offset_px": 8
+    },
+    {
+      "site": "sail4_right",
+      "offset_px": -8
+    },
+    {
+      "site": "sail5_right",
+      "offset_px": -8
+    }
+  ],
   "source_unresolved_foot_sites": [
     "sail1_left",
     "sail1_right",
     "sail2_left",
-    "sail2_right",
-    "sail3_left",
     "sail3_right",
     "sail4_left",
-    "sail4_right",
-    "sail5_left",
-    "sail5_right"
+    "sail5_left"
   ],
   "summary": {
     "known_foot_sites": 10,
-    "stable_original_zero": 0,
-    "stable_same_nonzero": 0,
-    "unresolved": 10
+    "stable_original_zero": 1,
+    "stable_same_nonzero": 3,
+    "unresolved": 6
   },
-  "decision": "CONTROL_FAILURE",
+  "decision": "ANNOTATED_FOOT_SHIFT_REQUIRES_MANUAL_SOURCE_REVIEW",
   "interpretation_limit": "Edge support near an annotated diagonal does not prove pixel-precise base endpoints or any physical three-stroke junction. Heavy sail hatching, boat hull or pier rigging may confound matches. Predeclared score scanning is never used to choose widths for Stage165 p-value optimization.",
   "safety": "Only canonical original pencil pixels; no key, BIP39, wallet, address comparison or external/social search."
 }
