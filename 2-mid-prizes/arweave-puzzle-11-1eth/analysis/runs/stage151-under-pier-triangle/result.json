@@ -1,0 +1,515 @@
+{
+  "experiment_id": "A11-EXP-151",
+  "hypothesis": "a visually apparent triangular structure BELOW the right pier might be an additional filled sail instead of an unhatched dock support/rigging opening",
+  "scope": "one candidate under-pier triangular aperture x1052..1280/y633..778 vs five previously registered true small sails; affine-normalized fixed interior panel density and highpass pencil energy, 4 source/lossy formats",
+  "original_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "source_vertices_precommitted": {
+    "small_sail_1": [
+      [
+        1042,
+        448
+      ],
+      [
+        1007,
+        546
+      ],
+      [
+        1077,
+        546
+      ]
+    ],
+    "small_sail_2": [
+      [
+        1148,
+        433
+      ],
+      [
+        1110,
+        532
+      ],
+      [
+        1186,
+        532
+      ]
+    ],
+    "small_sail_3": [
+      [
+        1282,
+        411
+      ],
+      [
+        1238,
+        514
+      ],
+      [
+        1326,
+        514
+      ]
+    ],
+    "small_sail_4": [
+      [
+        1372,
+        397
+      ],
+      [
+        1330,
+        498
+      ],
+      [
+        1414,
+        498
+      ]
+    ],
+    "small_sail_5": [
+      [
+        1490,
+        357
+      ],
+      [
+        1443,
+        463
+      ],
+      [
+        1537,
+        463
+      ]
+    ],
+    "under_pier_triangle": [
+      [
+        1052,
+        633
+      ],
+      [
+        1052,
+        778
+      ],
+      [
+        1280,
+        714
+      ]
+    ]
+  },
+  "gates": {
+    "min_dense_dark_source_fraction": 0.18,
+    "min_source_highpass_residual": 0.03,
+    "min_real_positive_sails": 4,
+    "min_normalized_interior_pixels": 2100
+  },
+  "controls": {
+    "pass": true,
+    "passed_cases": 48,
+    "cases": 48,
+    "details": {
+      "hatched_sail": {
+        "original:small_sail_1": {
+          "pass": true,
+          "dark": 0.725608,
+          "detail": 0.160925
+        },
+        "original:small_sail_2": {
+          "pass": true,
+          "dark": 0.72028,
+          "detail": 0.164822
+        },
+        "original:small_sail_3": {
+          "pass": true,
+          "dark": 0.711622,
+          "detail": 0.171349
+        },
+        "original:small_sail_4": {
+          "pass": true,
+          "dark": 0.711289,
+          "detail": 0.169278
+        },
+        "original:small_sail_5": {
+          "pass": true,
+          "dark": 0.703297,
+          "detail": 0.174556
+        },
+        "original:under_pier_triangle": {
+          "pass": true,
+          "dark": 0.667666,
+          "detail": 0.207272
+        },
+        "jpeg85:small_sail_1": {
+          "pass": true,
+          "dark": 0.725608,
+          "detail": 0.159236
+        },
+        "jpeg85:small_sail_2": {
+          "pass": true,
+          "dark": 0.719281,
+          "detail": 0.163362
+        },
+        "jpeg85:small_sail_3": {
+          "pass": true,
+          "dark": 0.711622,
+          "detail": 0.169339
+        },
+        "jpeg85:small_sail_4": {
+          "pass": true,
+          "dark": 0.712954,
+          "detail": 0.167913
+        },
+        "jpeg85:small_sail_5": {
+          "pass": true,
+          "dark": 0.702631,
+          "detail": 0.172953
+        },
+        "jpeg85:under_pier_triangle": {
+          "pass": true,
+          "dark": 0.667333,
+          "detail": 0.204888
+        },
+        "jpeg70:small_sail_1": {
+          "pass": true,
+          "dark": 0.725608,
+          "detail": 0.158495
+        },
+        "jpeg70:small_sail_2": {
+          "pass": true,
+          "dark": 0.719281,
+          "detail": 0.161218
+        },
+        "jpeg70:small_sail_3": {
+          "pass": true,
+          "dark": 0.714952,
+          "detail": 0.167907
+        },
+        "jpeg70:small_sail_4": {
+          "pass": true,
+          "dark": 0.711955,
+          "detail": 0.165455
+        },
+        "jpeg70:small_sail_5": {
+          "pass": true,
+          "dark": 0.701632,
+          "detail": 0.171025
+        },
+        "jpeg70:under_pier_triangle": {
+          "pass": true,
+          "dark": 0.670996,
+          "detail": 0.201967
+        },
+        "down75_up:small_sail_1": {
+          "pass": true,
+          "dark": 0.748585,
+          "detail": 0.129251
+        },
+        "down75_up:small_sail_2": {
+          "pass": true,
+          "dark": 0.736597,
+          "detail": 0.137338
+        },
+        "down75_up:small_sail_3": {
+          "pass": true,
+          "dark": 0.733933,
+          "detail": 0.148418
+        },
+        "down75_up:small_sail_4": {
+          "pass": true,
+          "dark": 0.733267,
+          "detail": 0.143659
+        },
+        "down75_up:small_sail_5": {
+          "pass": true,
+          "dark": 0.725275,
+          "detail": 0.15271
+        },
+        "down75_up:under_pier_triangle": {
+          "pass": true,
+          "dark": 0.677323,
+          "detail": 0.196835
+        }
+      },
+      "hollow_outline": {
+        "original:small_sail_1": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.000168
+        },
+        "original:small_sail_2": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.000145
+        },
+        "original:small_sail_3": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.00014
+        },
+        "original:small_sail_4": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.000155
+        },
+        "original:small_sail_5": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.000107
+        },
+        "original:under_pier_triangle": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 3e-06
+        },
+        "jpeg85:small_sail_1": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.000777
+        },
+        "jpeg85:small_sail_2": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.00091
+        },
+        "jpeg85:small_sail_3": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.000656
+        },
+        "jpeg85:small_sail_4": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.000692
+        },
+        "jpeg85:small_sail_5": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.000573
+        },
+        "jpeg85:under_pier_triangle": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 4e-05
+        },
+        "jpeg70:small_sail_1": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.001333
+        },
+        "jpeg70:small_sail_2": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.001273
+        },
+        "jpeg70:small_sail_3": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.000866
+        },
+        "jpeg70:small_sail_4": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.000975
+        },
+        "jpeg70:small_sail_5": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.000828
+        },
+        "jpeg70:under_pier_triangle": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.000148
+        },
+        "down75_up:small_sail_1": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.00079
+        },
+        "down75_up:small_sail_2": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.000727
+        },
+        "down75_up:small_sail_3": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.000708
+        },
+        "down75_up:small_sail_4": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.000464
+        },
+        "down75_up:small_sail_5": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 0.00071
+        },
+        "down75_up:under_pier_triangle": {
+          "pass": true,
+          "dark": 0.0,
+          "detail": 3e-06
+        }
+      }
+    }
+  },
+  "positive_five_real_sail_recovery": {
+    "small_sail_1": true,
+    "small_sail_2": true,
+    "small_sail_3": true,
+    "small_sail_4": true,
+    "small_sail_5": true
+  },
+  "positive_real_sails_stable": 5,
+  "under_pier_target_dense_sail_in_four_formats": false,
+  "observations": {
+    "original": {
+      "small_sail_1": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.76357,
+        "high_frequency_pencil_detail": 0.128696,
+        "looks_like_dense_ink_sail_panel": true
+      },
+      "small_sail_2": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.805861,
+        "high_frequency_pencil_detail": 0.145186,
+        "looks_like_dense_ink_sail_panel": true
+      },
+      "small_sail_3": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.837829,
+        "high_frequency_pencil_detail": 0.138187,
+        "looks_like_dense_ink_sail_panel": true
+      },
+      "small_sail_4": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.846154,
+        "high_frequency_pencil_detail": 0.140525,
+        "looks_like_dense_ink_sail_panel": true
+      },
+      "small_sail_5": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.828172,
+        "high_frequency_pencil_detail": 0.167293,
+        "looks_like_dense_ink_sail_panel": true
+      },
+      "under_pier_triangle": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.154179,
+        "high_frequency_pencil_detail": 0.081976,
+        "looks_like_dense_ink_sail_panel": false
+      }
+    },
+    "jpeg85": {
+      "small_sail_1": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.765568,
+        "high_frequency_pencil_detail": 0.127307,
+        "looks_like_dense_ink_sail_panel": true
+      },
+      "small_sail_2": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.809524,
+        "high_frequency_pencil_detail": 0.144294,
+        "looks_like_dense_ink_sail_panel": true
+      },
+      "small_sail_3": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.838828,
+        "high_frequency_pencil_detail": 0.136334,
+        "looks_like_dense_ink_sail_panel": true
+      },
+      "small_sail_4": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.848152,
+        "high_frequency_pencil_detail": 0.139505,
+        "looks_like_dense_ink_sail_panel": true
+      },
+      "small_sail_5": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.827173,
+        "high_frequency_pencil_detail": 0.165709,
+        "looks_like_dense_ink_sail_panel": true
+      },
+      "under_pier_triangle": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.153846,
+        "high_frequency_pencil_detail": 0.081243,
+        "looks_like_dense_ink_sail_panel": false
+      }
+    },
+    "jpeg70": {
+      "small_sail_1": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.765901,
+        "high_frequency_pencil_detail": 0.125836,
+        "looks_like_dense_ink_sail_panel": true
+      },
+      "small_sail_2": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.806194,
+        "high_frequency_pencil_detail": 0.142473,
+        "looks_like_dense_ink_sail_panel": true
+      },
+      "small_sail_3": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.84016,
+        "high_frequency_pencil_detail": 0.135023,
+        "looks_like_dense_ink_sail_panel": true
+      },
+      "small_sail_4": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.848152,
+        "high_frequency_pencil_detail": 0.138138,
+        "looks_like_dense_ink_sail_panel": true
+      },
+      "small_sail_5": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.829504,
+        "high_frequency_pencil_detail": 0.164285,
+        "looks_like_dense_ink_sail_panel": true
+      },
+      "under_pier_triangle": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.15651,
+        "high_frequency_pencil_detail": 0.080395,
+        "looks_like_dense_ink_sail_panel": false
+      }
+    },
+    "down75_up": {
+      "small_sail_1": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.787213,
+        "high_frequency_pencil_detail": 0.108917,
+        "looks_like_dense_ink_sail_panel": true
+      },
+      "small_sail_2": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.82351,
+        "high_frequency_pencil_detail": 0.12628,
+        "looks_like_dense_ink_sail_panel": true
+      },
+      "small_sail_3": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.861139,
+        "high_frequency_pencil_detail": 0.110177,
+        "looks_like_dense_ink_sail_panel": true
+      },
+      "small_sail_4": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.863137,
+        "high_frequency_pencil_detail": 0.120977,
+        "looks_like_dense_ink_sail_panel": true
+      },
+      "small_sail_5": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.841159,
+        "high_frequency_pencil_detail": 0.14851,
+        "looks_like_dense_ink_sail_panel": true
+      },
+      "under_pier_triangle": {
+        "inner_source_pixels": 3003,
+        "dark_stroke_coverage": 0.162837,
+        "high_frequency_pencil_detail": 0.076104,
+        "looks_like_dense_ink_sail_panel": false
+      }
+    }
+  },
+  "decision": "NO_HATCHED_SIXTH_SAIL_UNDER_PIER",
+  "limits": "This source candidate polygon was selected visually and may include mooring cables/dock cross-braces. Only dense ink-panel sail texture is tested; this does not distinguish all semantic or unfilled sails, exact triangle outline or hidden code. No p-value or author-intent inference.",
+  "safety_guard": "No private keys, mnemonics, BIP39, wallet addresses, checking, derivation or off-image reference."
+}
