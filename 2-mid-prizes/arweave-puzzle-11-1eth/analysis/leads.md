@@ -165,3 +165,8 @@ Stage144 first attempt invalid (positive original baseline not fully erased); fi
 ## Stage145 3/4 distinct source bands; Stage146 resampling-merger validation
 
 Stage145 successfully reproduced Stage144 source, passed 12/12 fixed two/single/zero horizontal-line synthetic controls and found two distinct horizontal-ink y-band groups at source y~237 and y~257 in native PNG, JPEG85 and JPEG70. Downsample/up-rendering merged them into one connected group, so the strict four-format separation criterion remained unconfirmed. This is not evidence for an encoded tower. Stage146 fixes the two **originally observed** source y intervals 232..242 and 252..267 and tests both fixed footprints independently in every variant, including the downsampled one. Calibration covers both lines versus a single upper, a single lower and no line with no threshold tuning or secret decoding.
+
+
+## Stage146 positive fixed source-band support; Stage147 independent validation
+
+Stage146 fixed-band test controls 16/16 and source replay pass. Upper y232..242 and lower y252..267 original skyline pencil strokes robustly support >=7/12 and >=11/12 x-bins in all four lossy/PNG versions, whereas Stage145 downsampling merely fused their morphological connected components. This supports source origin for central spire in artificially mirrored/rotated skyline, not intentional symbols. Stage147 independently audits the same fixed source apertures with Canny-Hough horizontal segments and Sobel horizontal edge-energy rather than the earlier morphology kernel. A positive is ordinary source drawing structure, not coded significance.
