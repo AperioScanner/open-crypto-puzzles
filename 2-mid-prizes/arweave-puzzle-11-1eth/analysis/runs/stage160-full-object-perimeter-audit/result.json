@@ -1,0 +1,246 @@
+{
+  "experiment_id": "A11-EXP-160",
+  "source_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "hypothesis": "Stage12 crop-border occupancy is not an intrinsic drawn-object contour; after known false ROIs are corrected, compare observed image ink at fixed rectangle edges to shape-only controls.",
+  "historical_stage12_replay": {
+    "pass": true,
+    "passed": 6,
+    "cases": 6,
+    "by_region": {
+      "large_sailboat": {
+        "original_box": [
+          44,
+          320,
+          359,
+          599
+        ],
+        "expected": {
+          "1": 0.22972972972972974,
+          "2": 0.2347457627118644,
+          "4": 0.23080204778156996
+        },
+        "actual": {
+          "1": 0.22972972972972974,
+          "2": 0.2347457627118644,
+          "4": 0.23080204778156996
+        },
+        "passes": {
+          "1": true,
+          "2": true,
+          "4": true
+        }
+      },
+      "small_sails_full_band": {
+        "original_box": [
+          0,
+          360,
+          1600,
+          480
+        ],
+        "expected": {
+          "1": 0.14639115250291035,
+          "2": 0.13986013986013987,
+          "4": 0.1386536214953271
+        },
+        "actual": {
+          "1": 0.14639115250291035,
+          "2": 0.13986013986013987,
+          "4": 0.1386536214953271
+        },
+        "passes": {
+          "1": true,
+          "2": true,
+          "4": true
+        }
+      }
+    }
+  },
+  "corrected_source_regions": "Fixed polygons from prior Stages132 and153; 5x5 erosion; tight native extents, no new annotations.",
+  "fixed_gates": {
+    "gray_less_than": 140,
+    "ring_widths": [
+      1,
+      2,
+      4
+    ],
+    "formats": [
+      "original",
+      "jpeg85",
+      "jpeg70",
+      "down75_up"
+    ],
+    "expected_shape_compatibility": "source w2 minus flat w2 <= 0.15 for both regions in all four variants",
+    "excess_review": "source w2>=0.25 AND source minus flat >0.15 at one region, all four formats"
+  },
+  "synthetic_controls": {
+    "pass": true,
+    "passed": 48,
+    "cases": 48,
+    "failures": []
+  },
+  "corrected_vs_flat": {
+    "large_sailboat": {
+      "fixed_bbox": [
+        25,
+        398,
+        526,
+        940
+      ],
+      "mask_area": 147509,
+      "by_format": {
+        "original": {
+          "source_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": 0.0
+          },
+          "shape_only_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": 0.011714975845410628
+          },
+          "source_minus_shape_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": -0.011714975845410628
+          }
+        },
+        "jpeg85": {
+          "source_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": 0.0
+          },
+          "shape_only_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": 0.011714975845410628
+          },
+          "source_minus_shape_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": -0.011714975845410628
+          }
+        },
+        "jpeg70": {
+          "source_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": 0.0
+          },
+          "shape_only_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": 0.011714975845410628
+          },
+          "source_minus_shape_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": -0.011714975845410628
+          }
+        },
+        "down75_up": {
+          "source_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": 0.0
+          },
+          "shape_only_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": 0.011714975845410628
+          },
+          "source_minus_shape_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": -0.011714975845410628
+          }
+        }
+      }
+    },
+    "small_sails_full_band": {
+      "fixed_bbox": [
+        1007,
+        357,
+        1538,
+        547
+      ],
+      "mask_area": 18091,
+      "by_format": {
+        "original": {
+          "source_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": 0.010869565217391304
+          },
+          "shape_only_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": 0.02244039270687237
+          },
+          "source_minus_shape_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": -0.011570827489481066
+          }
+        },
+        "jpeg85": {
+          "source_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": 0.011044880785413744
+          },
+          "shape_only_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": 0.02244039270687237
+          },
+          "source_minus_shape_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": -0.011395511921458625
+          }
+        },
+        "jpeg70": {
+          "source_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": 0.010518934081346423
+          },
+          "shape_only_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": 0.02244039270687237
+          },
+          "source_minus_shape_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": -0.011921458625525946
+          }
+        },
+        "down75_up": {
+          "source_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": 0.010518934081346423
+          },
+          "shape_only_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": 0.02244039270687237
+          },
+          "source_minus_shape_w": {
+            "1": 0.0,
+            "2": 0.0,
+            "4": -0.011921458625525946
+          }
+        }
+      }
+    }
+  },
+  "source_shape_compatible": true,
+  "exceptional_source_edge_occupancy": false,
+  "decision": "SOURCE_CROP_EDGE_COMPATIBLE_WITH_FILLED_GEOMETRY",
+  "scope_limit": "The old crops and corrected masks describe different samples: their perimeter percentages cannot be compared as if they were object attributes. One source image in all formats. This is QA, not a cipher or author-intent claim.",
+  "safety": "Image-source analysis only; no keys, wallets, mnemonics, addresses or external research."
+}
