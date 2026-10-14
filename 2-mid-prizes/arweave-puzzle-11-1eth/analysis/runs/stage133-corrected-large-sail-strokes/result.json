@@ -1,0 +1,545 @@
+{
+  "experiment_id": "A11-EXP-133",
+  "date": "2026-10-13",
+  "hypothesis": "Stage94 inherited a source-geometry defect and its short-patch count-negative must not be extrapolated to the full, visible large sail",
+  "cause": "Stage132 verified the old bounding-box omission; this is a proven implementation defect, not a recycled arbitrary encoding search.",
+  "scope": "reproduce Stage94's nonsecret structural tracking in old ROI and corrected Stage132 full-sail triangle; 4 image variants; synthetic 16/32/64/128/256 controls and blank control",
+  "sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "polygon_from_stage132": [
+    [
+      242,
+      398
+    ],
+    [
+      56,
+      758
+    ],
+    [
+      512,
+      760
+    ]
+  ],
+  "eroded_edge_px": 5,
+  "real_source_control": {
+    "visible_sail_ink": 53289,
+    "outside_legacy_box": 45260,
+    "fraction_outside": 0.849331,
+    "source_pass": true
+  },
+  "detector_calibration": {
+    "pass": true,
+    "blank_tracks": 0,
+    "synthetic_16_min": 15,
+    "synthetic_64_min": 42,
+    "synthetic_256_min": 64,
+    "controls_calibrated": {
+      "16": {
+        "drawn_strokes": 16,
+        "variants": {
+          "original": {
+            "stable_tracks": 15,
+            "classifiable_tracks": 15,
+            "positive_orientation_tracks": 8,
+            "negative_orientation_tracks": 7,
+            "minority_fraction": 0.4666666666666667,
+            "orientation_median_separation_deg": 106.89373017919813,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 49,
+              "tolerance": 8
+            }
+          },
+          "jpeg85": {
+            "stable_tracks": 16,
+            "classifiable_tracks": 16,
+            "positive_orientation_tracks": 8,
+            "negative_orientation_tracks": 8,
+            "minority_fraction": 0.5,
+            "orientation_median_separation_deg": 108.41691585683796,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 48,
+              "tolerance": 8
+            }
+          },
+          "jpeg70": {
+            "stable_tracks": 15,
+            "classifiable_tracks": 15,
+            "positive_orientation_tracks": 8,
+            "negative_orientation_tracks": 7,
+            "minority_fraction": 0.4666666666666667,
+            "orientation_median_separation_deg": 107.75080592990315,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 49,
+              "tolerance": 8
+            }
+          },
+          "down75_up": {
+            "stable_tracks": 15,
+            "classifiable_tracks": 15,
+            "positive_orientation_tracks": 8,
+            "negative_orientation_tracks": 7,
+            "minority_fraction": 0.4666666666666667,
+            "orientation_median_separation_deg": 108.92464441605124,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 49,
+              "tolerance": 8
+            }
+          }
+        },
+        "mean_detected": 15.25,
+        "min_detected": 15,
+        "max_detected": 16,
+        "cv": 0.02839427553391602
+      },
+      "32": {
+        "drawn_strokes": 32,
+        "variants": {
+          "original": {
+            "stable_tracks": 26,
+            "classifiable_tracks": 26,
+            "positive_orientation_tracks": 13,
+            "negative_orientation_tracks": 13,
+            "minority_fraction": 0.5,
+            "orientation_median_separation_deg": 108.92464441605124,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 38,
+              "tolerance": 8
+            }
+          },
+          "jpeg85": {
+            "stable_tracks": 29,
+            "classifiable_tracks": 29,
+            "positive_orientation_tracks": 15,
+            "negative_orientation_tracks": 14,
+            "minority_fraction": 0.4827586206896552,
+            "orientation_median_separation_deg": 108.41691585683796,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 35,
+              "tolerance": 8
+            }
+          },
+          "jpeg70": {
+            "stable_tracks": 27,
+            "classifiable_tracks": 27,
+            "positive_orientation_tracks": 13,
+            "negative_orientation_tracks": 14,
+            "minority_fraction": 0.48148148148148145,
+            "orientation_median_separation_deg": 107.90918729762468,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 37,
+              "tolerance": 8
+            }
+          },
+          "down75_up": {
+            "stable_tracks": 24,
+            "classifiable_tracks": 24,
+            "positive_orientation_tracks": 11,
+            "negative_orientation_tracks": 13,
+            "minority_fraction": 0.4583333333333333,
+            "orientation_median_separation_deg": 109.34590654642145,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 40,
+              "tolerance": 8
+            }
+          }
+        },
+        "mean_detected": 26.5,
+        "min_detected": 24,
+        "max_detected": 29,
+        "cv": 0.06802926934837715
+      },
+      "64": {
+        "drawn_strokes": 64,
+        "variants": {
+          "original": {
+            "stable_tracks": 48,
+            "classifiable_tracks": 48,
+            "positive_orientation_tracks": 22,
+            "negative_orientation_tracks": 26,
+            "minority_fraction": 0.4583333333333333,
+            "orientation_median_separation_deg": 109.47007118276349,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 16,
+              "tolerance": 8
+            }
+          },
+          "jpeg85": {
+            "stable_tracks": 46,
+            "classifiable_tracks": 46,
+            "positive_orientation_tracks": 21,
+            "negative_orientation_tracks": 25,
+            "minority_fraction": 0.45652173913043476,
+            "orientation_median_separation_deg": 107.5924245621816,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 18,
+              "tolerance": 8
+            }
+          },
+          "jpeg70": {
+            "stable_tracks": 51,
+            "classifiable_tracks": 51,
+            "positive_orientation_tracks": 25,
+            "negative_orientation_tracks": 26,
+            "minority_fraction": 0.49019607843137253,
+            "orientation_median_separation_deg": 108.08386089337054,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 13,
+              "tolerance": 8
+            }
+          },
+          "down75_up": {
+            "stable_tracks": 42,
+            "classifiable_tracks": 42,
+            "positive_orientation_tracks": 18,
+            "negative_orientation_tracks": 24,
+            "minority_fraction": 0.42857142857142855,
+            "orientation_median_separation_deg": 108.92464441605124,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 22,
+              "tolerance": 8
+            }
+          }
+        },
+        "mean_detected": 46.75,
+        "min_detected": 42,
+        "max_detected": 51,
+        "cv": 0.06992886005680225
+      },
+      "128": {
+        "drawn_strokes": 128,
+        "variants": {
+          "original": {
+            "stable_tracks": 73,
+            "classifiable_tracks": 73,
+            "positive_orientation_tracks": 39,
+            "negative_orientation_tracks": 34,
+            "minority_fraction": 0.4657534246575342,
+            "orientation_median_separation_deg": 107.08082027042823,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 9,
+              "tolerance": 8
+            }
+          },
+          "jpeg85": {
+            "stable_tracks": 74,
+            "classifiable_tracks": 74,
+            "positive_orientation_tracks": 37,
+            "negative_orientation_tracks": 37,
+            "minority_fraction": 0.5,
+            "orientation_median_separation_deg": 107.90918729762468,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 10,
+              "tolerance": 8
+            }
+          },
+          "jpeg70": {
+            "stable_tracks": 85,
+            "classifiable_tracks": 85,
+            "positive_orientation_tracks": 39,
+            "negative_orientation_tracks": 46,
+            "minority_fraction": 0.4588235294117647,
+            "orientation_median_separation_deg": 108.25853448911641,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 21,
+              "tolerance": 8
+            }
+          },
+          "down75_up": {
+            "stable_tracks": 63,
+            "classifiable_tracks": 63,
+            "positive_orientation_tracks": 37,
+            "negative_orientation_tracks": 26,
+            "minority_fraction": 0.4126984126984127,
+            "orientation_median_separation_deg": 107.5924245621816,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 1,
+              "tolerance": 8
+            }
+          }
+        },
+        "mean_detected": 73.75,
+        "min_detected": 63,
+        "max_detected": 85,
+        "cv": 0.1056300776331043
+      },
+      "256": {
+        "drawn_strokes": 256,
+        "variants": {
+          "original": {
+            "stable_tracks": 89,
+            "classifiable_tracks": 89,
+            "positive_orientation_tracks": 50,
+            "negative_orientation_tracks": 39,
+            "minority_fraction": 0.43820224719101125,
+            "orientation_median_separation_deg": 109.063310871217,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 25,
+              "tolerance": 8
+            }
+          },
+          "jpeg85": {
+            "stable_tracks": 97,
+            "classifiable_tracks": 97,
+            "positive_orientation_tracks": 53,
+            "negative_orientation_tracks": 44,
+            "minority_fraction": 0.4536082474226804,
+            "orientation_median_separation_deg": 109.76716867679166,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 33,
+              "tolerance": 8
+            }
+          },
+          "jpeg70": {
+            "stable_tracks": 79,
+            "classifiable_tracks": 79,
+            "positive_orientation_tracks": 48,
+            "negative_orientation_tracks": 31,
+            "minority_fraction": 0.3924050632911392,
+            "orientation_median_separation_deg": 109.76716867679166,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 15,
+              "tolerance": 8
+            }
+          },
+          "down75_up": {
+            "stable_tracks": 64,
+            "classifiable_tracks": 64,
+            "positive_orientation_tracks": 41,
+            "negative_orientation_tracks": 23,
+            "minority_fraction": 0.359375,
+            "orientation_median_separation_deg": 109.47030200946696,
+            "nearest_target_count": {
+              "target": 64,
+              "delta": 0,
+              "tolerance": 8
+            }
+          }
+        },
+        "mean_detected": 82.25,
+        "min_detected": 64,
+        "max_detected": 97,
+        "cv": 0.1497404004468523
+      }
+    },
+    "drawn_detected_correlation": 0.9115464334492309
+  },
+  "old": {
+    "geometry": {
+      "box": [
+        44,
+        320,
+        359,
+        526
+      ],
+      "triangle": [
+        [
+          151,
+          6
+        ],
+        [
+          8,
+          201
+        ],
+        [
+          307,
+          201
+        ]
+      ]
+    },
+    "variant_summaries": {
+      "original": {
+        "stable_tracks": 13,
+        "classifiable_tracks": 10,
+        "positive_orientation_tracks": 6,
+        "negative_orientation_tracks": 4,
+        "minority_fraction": 0.4,
+        "orientation_median_separation_deg": 111.93267425688745,
+        "nearest_target_count": {
+          "target": 64,
+          "delta": 54,
+          "tolerance": 8
+        }
+      },
+      "jpeg85": {
+        "stable_tracks": 16,
+        "classifiable_tracks": 13,
+        "positive_orientation_tracks": 8,
+        "negative_orientation_tracks": 5,
+        "minority_fraction": 0.38461538461538464,
+        "orientation_median_separation_deg": 112.3572801167854,
+        "nearest_target_count": {
+          "target": 64,
+          "delta": 51,
+          "tolerance": 8
+        }
+      },
+      "jpeg70": {
+        "stable_tracks": 13,
+        "classifiable_tracks": 12,
+        "positive_orientation_tracks": 7,
+        "negative_orientation_tracks": 5,
+        "minority_fraction": 0.4166666666666667,
+        "orientation_median_separation_deg": 111.08375458238066,
+        "nearest_target_count": {
+          "target": 64,
+          "delta": 52,
+          "tolerance": 8
+        }
+      },
+      "down75_up": {
+        "stable_tracks": 16,
+        "classifiable_tracks": 14,
+        "positive_orientation_tracks": 7,
+        "negative_orientation_tracks": 7,
+        "minority_fraction": 0.5,
+        "orientation_median_separation_deg": 111.26378818470923,
+        "nearest_target_count": {
+          "target": 64,
+          "delta": 50,
+          "tolerance": 8
+        }
+      }
+    },
+    "agreement": {
+      "jpeg85": {
+        "matched": 6,
+        "matched_fraction": 0.6,
+        "same_sign_fraction": 1.0
+      },
+      "jpeg70": {
+        "matched": 8,
+        "matched_fraction": 0.8,
+        "same_sign_fraction": 1.0
+      },
+      "down75_up": {
+        "matched": 7,
+        "matched_fraction": 0.7,
+        "same_sign_fraction": 1.0
+      }
+    },
+    "min_classifiable": 10,
+    "max_classifiable": 14,
+    "classifiable_cv": 0.120736
+  },
+  "corrected": {
+    "geometry": {
+      "box": [
+        52,
+        394,
+        517,
+        765
+      ],
+      "mask_pixels": 79607,
+      "full_polygon_points": [
+        [
+          242,
+          398
+        ],
+        [
+          56,
+          758
+        ],
+        [
+          512,
+          760
+        ]
+      ]
+    },
+    "variant_summaries": {
+      "original": {
+        "stable_tracks": 95,
+        "classifiable_tracks": 80,
+        "positive_orientation_tracks": 48,
+        "negative_orientation_tracks": 32,
+        "minority_fraction": 0.4,
+        "orientation_median_separation_deg": 112.50817028638741,
+        "nearest_target_count": {
+          "target": 64,
+          "delta": 16,
+          "tolerance": 8
+        }
+      },
+      "jpeg85": {
+        "stable_tracks": 90,
+        "classifiable_tracks": 76,
+        "positive_orientation_tracks": 42,
+        "negative_orientation_tracks": 34,
+        "minority_fraction": 0.4473684210526316,
+        "orientation_median_separation_deg": 115.03346796448905,
+        "nearest_target_count": {
+          "target": 64,
+          "delta": 12,
+          "tolerance": 8
+        }
+      },
+      "jpeg70": {
+        "stable_tracks": 100,
+        "classifiable_tracks": 90,
+        "positive_orientation_tracks": 54,
+        "negative_orientation_tracks": 36,
+        "minority_fraction": 0.4,
+        "orientation_median_separation_deg": 114.84043180974707,
+        "nearest_target_count": {
+          "target": 64,
+          "delta": 26,
+          "tolerance": 8
+        }
+      },
+      "down75_up": {
+        "stable_tracks": 84,
+        "classifiable_tracks": 77,
+        "positive_orientation_tracks": 40,
+        "negative_orientation_tracks": 37,
+        "minority_fraction": 0.4805194805194805,
+        "orientation_median_separation_deg": 116.36229785352724,
+        "nearest_target_count": {
+          "target": 64,
+          "delta": 13,
+          "tolerance": 8
+        }
+      }
+    },
+    "agreement": {
+      "jpeg85": {
+        "matched": 44,
+        "matched_fraction": 0.55,
+        "same_sign_fraction": 1.0
+      },
+      "jpeg70": {
+        "matched": 48,
+        "matched_fraction": 0.6,
+        "same_sign_fraction": 1.0
+      },
+      "down75_up": {
+        "matched": 41,
+        "matched_fraction": 0.5125,
+        "same_sign_fraction": 1.0
+      }
+    },
+    "min_classifiable": 76,
+    "max_classifiable": 90,
+    "classifiable_cv": 0.068602
+  },
+  "max_count_difference_new_minus_old": 76,
+  "decision": "STAGE94_CARRIER_NEGATIVE_REQUIRES_REAUDIT",
+  "interpretation_guard": "Regardless of sign of count differences, this is solely an ROI-provenance and visible-stroke diagnostic; no hidden sequence or key can be inferred. Old Stage94 numerical negative only covered its truncated ROI.",
+  "safety_guard": "Canonical visible image only, no private keys, word lists, seeds, wallet operations, external references or candidate verifications."
+}
