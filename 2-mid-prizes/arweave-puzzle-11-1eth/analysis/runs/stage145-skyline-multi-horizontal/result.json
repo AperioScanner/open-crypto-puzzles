@@ -1,0 +1,358 @@
+{
+  "experiment_id": "A11-EXP-145",
+  "date": "2026-10-13",
+  "hypothesis": "the apparent vertical axis in user's reversed skyline mirror arises from MORE THAN ONE original horizontal waterfront pencil stroke, rather than one continuous original source line",
+  "evidence": "Repaired Stage144 single-component ablation leaves 8/12 x-blocks of valid long horizontal source strokes under every source/JPEG rendering; center y258-260 stable",
+  "scope": "same unmodified Stage144 canonical x180..1595 y225..292 source region, same 35px morphological horizontal filter, 12 x-blocks, 4 image formats; analyze separated y bands and first-component ablation",
+  "sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "criteria": {
+    "minimum_support_blocks_per_band": 6,
+    "minimum_band_separation_y": 15,
+    "maximum_missing_band_rows": 2,
+    "minimum_residual_after_first_line": 6
+  },
+  "controls": {
+    "passed": true,
+    "cases": 12,
+    "passed_cases": 12,
+    "experiments": {
+      "multiple_parallel_lines": {
+        "original": {
+          "expected_multi": true,
+          "actual_multi": true,
+          "pass": true,
+          "bands": [
+            {
+              "y": 239,
+              "blocks": 12
+            },
+            {
+              "y": 281,
+              "blocks": 12
+            }
+          ],
+          "post_selected_horizon_support": 12
+        },
+        "jpeg85": {
+          "expected_multi": true,
+          "actual_multi": true,
+          "pass": true,
+          "bands": [
+            {
+              "y": 239,
+              "blocks": 12
+            },
+            {
+              "y": 281,
+              "blocks": 12
+            }
+          ],
+          "post_selected_horizon_support": 12
+        },
+        "jpeg70": {
+          "expected_multi": true,
+          "actual_multi": true,
+          "pass": true,
+          "bands": [
+            {
+              "y": 239,
+              "blocks": 12
+            },
+            {
+              "y": 281,
+              "blocks": 12
+            }
+          ],
+          "post_selected_horizon_support": 12
+        },
+        "down75_up": {
+          "expected_multi": true,
+          "actual_multi": true,
+          "pass": true,
+          "bands": [
+            {
+              "y": 238,
+              "blocks": 12
+            },
+            {
+              "y": 282,
+              "blocks": 12
+            }
+          ],
+          "post_selected_horizon_support": 12
+        }
+      },
+      "single_baseline": {
+        "original": {
+          "expected_multi": false,
+          "actual_multi": false,
+          "pass": true,
+          "bands": [
+            {
+              "y": 260,
+              "blocks": 12
+            }
+          ],
+          "post_selected_horizon_support": 0
+        },
+        "jpeg85": {
+          "expected_multi": false,
+          "actual_multi": false,
+          "pass": true,
+          "bands": [
+            {
+              "y": 260,
+              "blocks": 12
+            }
+          ],
+          "post_selected_horizon_support": 0
+        },
+        "jpeg70": {
+          "expected_multi": false,
+          "actual_multi": false,
+          "pass": true,
+          "bands": [
+            {
+              "y": 260,
+              "blocks": 12
+            }
+          ],
+          "post_selected_horizon_support": 0
+        },
+        "down75_up": {
+          "expected_multi": false,
+          "actual_multi": false,
+          "pass": true,
+          "bands": [
+            {
+              "y": 260,
+              "blocks": 12
+            }
+          ],
+          "post_selected_horizon_support": 0
+        }
+      },
+      "facades_no_long_baseline": {
+        "original": {
+          "expected_multi": false,
+          "actual_multi": false,
+          "pass": true,
+          "bands": [],
+          "post_selected_horizon_support": 0
+        },
+        "jpeg85": {
+          "expected_multi": false,
+          "actual_multi": false,
+          "pass": true,
+          "bands": [],
+          "post_selected_horizon_support": 0
+        },
+        "jpeg70": {
+          "expected_multi": false,
+          "actual_multi": false,
+          "pass": true,
+          "bands": [],
+          "post_selected_horizon_support": 0
+        },
+        "down75_up": {
+          "expected_multi": false,
+          "actual_multi": false,
+          "pass": true,
+          "bands": [],
+          "post_selected_horizon_support": 0
+        }
+      }
+    }
+  },
+  "stage144_exact_reproduction": true,
+  "by_variant": {
+    "original": {
+      "long_horizontal_y_groups": [
+        {
+          "from_y": 232,
+          "to_y": 242,
+          "center_y": 237,
+          "peak_y": 239,
+          "max_horizontal_support_blocks": 8,
+          "rows": 10
+        },
+        {
+          "from_y": 246,
+          "to_y": 268,
+          "center_y": 257,
+          "peak_y": 260,
+          "max_horizontal_support_blocks": 11,
+          "rows": 23
+        }
+      ],
+      "remaining_y_groups_after_stage144_single_stroke_ablation": [
+        {
+          "from_y": 232,
+          "to_y": 242,
+          "center_y": 237,
+          "peak_y": 239,
+          "max_horizontal_support_blocks": 8,
+          "rows": 10
+        },
+        {
+          "from_y": 249,
+          "to_y": 252,
+          "center_y": 250,
+          "peak_y": 249,
+          "max_horizontal_support_blocks": 6,
+          "rows": 4
+        }
+      ],
+      "original_stage144": {
+        "best_source_horizon_y": 260,
+        "source_horizontal_support_blocks": 11,
+        "post_horizontal_rule_removal_blocks": 8,
+        "source_blocks_lost_by_ablation": 3,
+        "unmodified_source_rule_explains_vertical_spire": false
+      },
+      "two_independent_skyline_horizon_bands": true
+    },
+    "jpeg85": {
+      "long_horizontal_y_groups": [
+        {
+          "from_y": 232,
+          "to_y": 242,
+          "center_y": 237,
+          "peak_y": 239,
+          "max_horizontal_support_blocks": 8,
+          "rows": 10
+        },
+        {
+          "from_y": 247,
+          "to_y": 268,
+          "center_y": 258,
+          "peak_y": 258,
+          "max_horizontal_support_blocks": 12,
+          "rows": 22
+        }
+      ],
+      "remaining_y_groups_after_stage144_single_stroke_ablation": [
+        {
+          "from_y": 232,
+          "to_y": 242,
+          "center_y": 237,
+          "peak_y": 239,
+          "max_horizontal_support_blocks": 8,
+          "rows": 10
+        },
+        {
+          "from_y": 249,
+          "to_y": 251,
+          "center_y": 250,
+          "peak_y": 249,
+          "max_horizontal_support_blocks": 6,
+          "rows": 3
+        },
+        {
+          "from_y": 264,
+          "to_y": 265,
+          "center_y": 264,
+          "peak_y": 264,
+          "max_horizontal_support_blocks": 6,
+          "rows": 2
+        }
+      ],
+      "original_stage144": {
+        "best_source_horizon_y": 258,
+        "source_horizontal_support_blocks": 12,
+        "post_horizontal_rule_removal_blocks": 8,
+        "source_blocks_lost_by_ablation": 4,
+        "unmodified_source_rule_explains_vertical_spire": false
+      },
+      "two_independent_skyline_horizon_bands": true
+    },
+    "jpeg70": {
+      "long_horizontal_y_groups": [
+        {
+          "from_y": 232,
+          "to_y": 242,
+          "center_y": 237,
+          "peak_y": 239,
+          "max_horizontal_support_blocks": 8,
+          "rows": 10
+        },
+        {
+          "from_y": 246,
+          "to_y": 268,
+          "center_y": 257,
+          "peak_y": 260,
+          "max_horizontal_support_blocks": 12,
+          "rows": 23
+        }
+      ],
+      "remaining_y_groups_after_stage144_single_stroke_ablation": [
+        {
+          "from_y": 232,
+          "to_y": 242,
+          "center_y": 237,
+          "peak_y": 239,
+          "max_horizontal_support_blocks": 8,
+          "rows": 10
+        },
+        {
+          "from_y": 246,
+          "to_y": 252,
+          "center_y": 249,
+          "peak_y": 249,
+          "max_horizontal_support_blocks": 7,
+          "rows": 7
+        }
+      ],
+      "original_stage144": {
+        "best_source_horizon_y": 260,
+        "source_horizontal_support_blocks": 12,
+        "post_horizontal_rule_removal_blocks": 8,
+        "source_blocks_lost_by_ablation": 4,
+        "unmodified_source_rule_explains_vertical_spire": false
+      },
+      "two_independent_skyline_horizon_bands": true
+    },
+    "down75_up": {
+      "long_horizontal_y_groups": [
+        {
+          "from_y": 232,
+          "to_y": 268,
+          "center_y": 250,
+          "peak_y": 258,
+          "max_horizontal_support_blocks": 11,
+          "rows": 37
+        }
+      ],
+      "remaining_y_groups_after_stage144_single_stroke_ablation": [
+        {
+          "from_y": 232,
+          "to_y": 253,
+          "center_y": 242,
+          "peak_y": 241,
+          "max_horizontal_support_blocks": 8,
+          "rows": 22
+        },
+        {
+          "from_y": 264,
+          "to_y": 266,
+          "center_y": 265,
+          "peak_y": 265,
+          "max_horizontal_support_blocks": 7,
+          "rows": 3
+        }
+      ],
+      "original_stage144": {
+        "best_source_horizon_y": 258,
+        "source_horizontal_support_blocks": 11,
+        "post_horizontal_rule_removal_blocks": 8,
+        "source_blocks_lost_by_ablation": 3,
+        "unmodified_source_rule_explains_vertical_spire": false
+      },
+      "two_independent_skyline_horizon_bands": false
+    }
+  },
+  "multi_band_all_four_variants": false,
+  "decision": "NO_REPLICATED_MULTIPLE_HORIZONTAL_RULES",
+  "interpretation_guard": "A positive only verifies native multiple long horizontal ink bands that rotate into the user's apparent black vertical axis. Symmetric shape is user-created by flip; neither a chess/tower code nor proof of intentional steganography. Negative limits solely fixed horizontal line-band test.",
+  "safety_guard": "No private keys, BIP39, wallets, Ethereum, mnemonic words, secret candidates, off-image sources or social media."
+}
