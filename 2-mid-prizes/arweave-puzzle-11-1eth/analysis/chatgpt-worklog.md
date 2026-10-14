@@ -505,3 +505,10 @@ User uploaded an image they created by duplicating and rotating the original and
 ## 2026-10-13 — Stage143 source-only chess negative-space audit
 
 Action #38498657551 completed SUCCESS. Source mirror reproduction visually agrees with user's duplicated, rotated photograph minus their red marker tracing. Canonical rooftop ink across 12 buildings validated all four lossy/source renderings. Top void from right 7 buildings, lower void from left 5, with base/head flare ratios 2.716 and 8.05. Symmetry guaranteed by mirror transform, not an independent author-drawn element. Generic paired pedestal flares were possible in 17.14% of exact within-cluster roof-endpoint permutations. This figure is posthoc and cannot be used as a chess probability. No original unambiguous king cross or queen crown found, and no decoding attempted. Save findings; wait for another distinct source-visible clue from user's further rotations. Strict image-only, no wallets or key material.
+
+
+## 2026-10-13 — Stage143 checked, Stage144 reversed-spire follow-up
+
+Stage143 GitHub Action #38498657551 completed with canonical/roof provenance confirmed, synthetic 1.30x stepped pedestal controls passed, mirror equality 1.0. It reproduced user's hand-traced paired white central voids, but found no independently drawn chess crown/cross; generic stepped neck/base pair possible in 17.14% of descriptive rooftop permutations. Keep chess analogy unconfirmed.
+
+Following user supplied a different mirror/rotation screenshot, with a single vertically pointed black spike and stacked horizontal building tiers. Stage144 asks a distinct, grounded visual provenance question: can an ordinary native HORIZONTAL shoreline/horizon pen stroke generate that VERTICAL spike after rotating and flipping the skyline? Source band fixed y225..292, long-run source detection across 12 x-bins, removal counterfactual, 4 lossy variants, synthetic horizon-on vs building-hatches-only off controls. Results remain image-only, not code/words/private keys or wallet access.
