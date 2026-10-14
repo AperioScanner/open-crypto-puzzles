@@ -180,3 +180,8 @@ Stage147 independently corroborated the Stage146 two native source horizontal sh
 ## Stage148 shape confound negative; Stage149 original facade layer structure
 
 Stage148 12/12 building source H/V labels repeat on four image variants and two synthetic geometry positives/equal null controls pass. Simple width/height/aspect/area geometry does NOT predict the real H/V labels under 495 exact permutations with 4-way max-stat multiple-testing adjustment (p=.29899). This neither confirms an intentional number 321 nor disproves mundane artistic choices. Stage149 checks a different, independently visible issue: do each of the 12 buildings keep the SAME H/V hatch orientation in TOP/MIDDLE/BOTTOM source tiers, or does averaging the entire building conceal mixed-direction layers? Controls for H, V, H/V/H and blank at 12×3 source boxes under all four image variants, independently evaluated Sobel vs shifted-ink autocorrelation. No key or external materials.
+
+
+## Stage149 partially mixed original H/V facades; Stage150 jitter confirmation
+
+Stage149 576/576 positive/mixed/blank controls passed, 35/36 real facade zones reproducible across original/JPEG variants. Nine facades match whole-facade H/V at all three y tiers; of four overall V-labelled facades, #3/#4/#7 have stable horizontal LOWER hatching, #12 stays vertical. The mixed-facade count 3/12 falls short of stage's predeclared 4-facade gate; do not claim new binary data. Stage150 checks this exact source layer phenomenon with a fixed x±4/y±3 crop-jitter grid, 4 image formats, and V/V/H vs V/V/V with adjacent outside-H controls. Art orientation alone does not imply deliberate coding.
