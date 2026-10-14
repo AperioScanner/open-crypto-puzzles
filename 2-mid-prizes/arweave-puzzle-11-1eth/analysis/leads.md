@@ -100,3 +100,8 @@ Stage132 returned a positive, independently calibrated SOURCE-GEOMETRY result: t
 ## Stage133 source-ROI replication confirmed; Stage134 correct full-sail visual inspection
 
 Stage133 passed blank/synthetic and original-image-source controls. Old Stage94 large-sail 10–14 stroke count becomes 76–90 on the much larger Stage132 full triangular patch. This does not establish a code; previous count-negative is limited to its old cropped ROI. Stage134 revisits Stage36's *generic glyph-line spatial metric* with an exact corrected image aperture, 3 comparably masked scene controls and full re-encoding replication, with synthetic positive vs false-text negative before any inference. No OCR or secret candidates.
+
+
+## Stage134 calibrated narrow negative; Stage135 spatial structure on full sail
+
+Stage134 synthetic calibration repaired within same stage number, controls now pass. Real complete-sail glyph-like alignments reproduced in only 2 DoG transforms (one family), falling short of preregistered independent-family gate. No text claimed. Stage135 uses Stage133's corrected full-sail 76–90 signed strokes to check **coarse quadrant-specific sign association** with conditional randomization under fixed thresholds; these spatial aggregates were not tested in Stage94 and no ordered signal/secret will be stored.
