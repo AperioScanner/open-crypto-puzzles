@@ -105,3 +105,8 @@ Stage133 passed blank/synthetic and original-image-source controls. Old Stage94 
 ## Stage134 calibrated narrow negative; Stage135 spatial structure on full sail
 
 Stage134 synthetic calibration repaired within same stage number, controls now pass. Real complete-sail glyph-like alignments reproduced in only 2 DoG transforms (one family), falling short of preregistered independent-family gate. No text claimed. Stage135 uses Stage133's corrected full-sail 76–90 signed strokes to check **coarse quadrant-specific sign association** with conditional randomization under fixed thresholds; these spatial aggregates were not tested in Stage94 and no ordered signal/secret will be stored.
+
+
+## Stage135 robust LEFT/RIGHT hatch symmetry; Stage136 conditional-null follow-up
+
+Stage135 discovered a repeatable, highly significant (under its simple global null) orientation split throughout the corrected full sail. All four images show left NEG and right POS in BOTH top and bottom sectors. This is exactly what natural V-shaped sail hatching might produce. Stage136 tests incremental upper-vs-lower asymmetry AFTER conditioning on side, with an exact hypergeometric null, structured reversal positive and natural mirror negative. Even a strong Stage135 p-value does not establish an encoding.
