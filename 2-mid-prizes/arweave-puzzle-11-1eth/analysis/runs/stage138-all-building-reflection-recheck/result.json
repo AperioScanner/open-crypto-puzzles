@@ -1,0 +1,471 @@
+{
+  "experiment_id": "A11-EXP-138",
+  "hypothesis": "the Stage35 H/V-to-reflection comparison may have excluded relevant first-two buildings only because the large-sail geometry was incorrectly localized",
+  "evidence": "Stage132 verified the legacy large_sailboat bbox was wrong; real sail apex y>=398, below Stage35's y330..360 reflection band.",
+  "scope": "all 12 legacy building x spans with Stage35 unchanged Sobel/Fourier measures, unchanged y330..360 / 10% inner x, all 4 formats and exact 4-of-12 label permutations",
+  "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "H_V_labels": "HHVVHHVHHHHV",
+  "expected_exact_permutations": 495,
+  "buildings_included": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "newly_included_buildings": [
+    1,
+    2
+  ],
+  "stage35_original_exclusion_reason": "large sailboat overlaps first two below-skyline reflection apertures",
+  "actual_registered_sail_top_y": 398,
+  "reflection_band": [
+    330,
+    360
+  ],
+  "control": {
+    "pass": true,
+    "cases": 8,
+    "stage35_numerical_reproduction_pass": true,
+    "stage35_reproduction": [
+      {
+        "id": 3,
+        "maximum_numerical_difference": 0.0
+      },
+      {
+        "id": 4,
+        "maximum_numerical_difference": 0.0
+      },
+      {
+        "id": 5,
+        "maximum_numerical_difference": 0.0
+      },
+      {
+        "id": 6,
+        "maximum_numerical_difference": 0.0
+      },
+      {
+        "id": 7,
+        "maximum_numerical_difference": 0.0
+      },
+      {
+        "id": 8,
+        "maximum_numerical_difference": 0.0
+      },
+      {
+        "id": 9,
+        "maximum_numerical_difference": 0.0
+      },
+      {
+        "id": 10,
+        "maximum_numerical_difference": 0.0
+      },
+      {
+        "id": 11,
+        "maximum_numerical_difference": 0.0
+      },
+      {
+        "id": 12,
+        "maximum_numerical_difference": 0.0
+      }
+    ],
+    "corrected_sail_starts_below_reflection_band": true,
+    "corrected_min_sail_y": 398,
+    "first_two_buildings_legacy_exclusion_invalid": true,
+    "synthetic_orientation_positive_pass": true,
+    "reversed_orientation_negative_pass": true,
+    "synthetic_tests": {
+      "positive": {
+        "original": {
+          "sobel": {
+            "observed_V_minus_H": 1.934062097,
+            "exact_one_sided_p": 0.0020202,
+            "exact_two_sided_p": 0.0020202,
+            "H_mean": -0.956198051,
+            "V_mean": 0.977864046
+          },
+          "fourier": {
+            "observed_V_minus_H": 1.718564939,
+            "exact_one_sided_p": 0.0020202,
+            "exact_two_sided_p": 0.0020202,
+            "H_mean": -0.999996509,
+            "V_mean": 0.71856843
+          }
+        },
+        "jpeg85": {
+          "sobel": {
+            "observed_V_minus_H": 1.934758238,
+            "exact_one_sided_p": 0.0020202,
+            "exact_two_sided_p": 0.0020202,
+            "H_mean": -0.957089718,
+            "V_mean": 0.97766852
+          },
+          "fourier": {
+            "observed_V_minus_H": 1.449224492,
+            "exact_one_sided_p": 0.0020202,
+            "exact_two_sided_p": 0.0020202,
+            "H_mean": -0.99999631,
+            "V_mean": 0.449228182
+          }
+        },
+        "jpeg70": {
+          "sobel": {
+            "observed_V_minus_H": 1.935599026,
+            "exact_one_sided_p": 0.0020202,
+            "exact_two_sided_p": 0.0020202,
+            "H_mean": -0.958690587,
+            "V_mean": 0.976908439
+          },
+          "fourier": {
+            "observed_V_minus_H": 1.163269847,
+            "exact_one_sided_p": 0.0020202,
+            "exact_two_sided_p": 0.0020202,
+            "H_mean": -0.999995407,
+            "V_mean": 0.16327444
+          }
+        },
+        "down75_up": {
+          "sobel": {
+            "observed_V_minus_H": 1.932685821,
+            "exact_one_sided_p": 0.0020202,
+            "exact_two_sided_p": 0.0020202,
+            "H_mean": -0.958206276,
+            "V_mean": 0.974479545
+          },
+          "fourier": {
+            "observed_V_minus_H": 1.475873507,
+            "exact_one_sided_p": 0.0020202,
+            "exact_two_sided_p": 0.0020202,
+            "H_mean": -0.999995768,
+            "V_mean": 0.475877739
+          }
+        }
+      },
+      "reversed_negative": {
+        "original": {
+          "sobel": {
+            "observed_V_minus_H": -1.942802508,
+            "exact_one_sided_p": 1.0,
+            "exact_two_sided_p": 0.0020202,
+            "H_mean": 0.977864047,
+            "V_mean": -0.964938461
+          },
+          "fourier": {
+            "observed_V_minus_H": -1.999994789,
+            "exact_one_sided_p": 1.0,
+            "exact_two_sided_p": 0.0020202,
+            "H_mean": 0.999996995,
+            "V_mean": -0.999997794
+          }
+        },
+        "jpeg85": {
+          "sobel": {
+            "observed_V_minus_H": -1.943230989,
+            "exact_one_sided_p": 1.0,
+            "exact_two_sided_p": 0.0020202,
+            "H_mean": 0.977459692,
+            "V_mean": -0.965771297
+          },
+          "fourier": {
+            "observed_V_minus_H": -1.999988413,
+            "exact_one_sided_p": 1.0,
+            "exact_two_sided_p": 0.0020202,
+            "H_mean": 0.999990659,
+            "V_mean": -0.999997754
+          }
+        },
+        "jpeg70": {
+          "sobel": {
+            "observed_V_minus_H": -1.944174628,
+            "exact_one_sided_p": 1.0,
+            "exact_two_sided_p": 0.0020202,
+            "H_mean": 0.977081936,
+            "V_mean": -0.967092692
+          },
+          "fourier": {
+            "observed_V_minus_H": -1.999957097,
+            "exact_one_sided_p": 1.0,
+            "exact_two_sided_p": 0.0020202,
+            "H_mean": 0.999959644,
+            "V_mean": -0.999997453
+          }
+        },
+        "down75_up": {
+          "sobel": {
+            "observed_V_minus_H": -1.941302293,
+            "exact_one_sided_p": 1.0,
+            "exact_two_sided_p": 0.0020202,
+            "H_mean": 0.974812764,
+            "V_mean": -0.966489529
+          },
+          "fourier": {
+            "observed_V_minus_H": -1.999987613,
+            "exact_one_sided_p": 1.0,
+            "exact_two_sided_p": 0.0020202,
+            "H_mean": 0.999990195,
+            "V_mean": -0.999997418
+          }
+        }
+      }
+    }
+  },
+  "new_reflection_aperture_darkness": {
+    "original": {
+      "1": 63.31,
+      "2": 38.126471
+    },
+    "jpeg85": {
+      "1": 63.903333,
+      "2": 38.573039
+    },
+    "jpeg70": {
+      "1": 64.084286,
+      "2": 38.935294
+    },
+    "down75_up": {
+      "1": 64.165714,
+      "2": 39.435784
+    }
+  },
+  "new_regions_adequate": true,
+  "by_format": {
+    "original": {
+      "sobel": {
+        "observed_V_minus_H": -0.032393167,
+        "exact_one_sided_p": 0.58181818,
+        "exact_two_sided_p": 0.82424242,
+        "H_mean": -0.43414254,
+        "V_mean": -0.466535707
+      },
+      "fourier": {
+        "observed_V_minus_H": 0.099526368,
+        "exact_one_sided_p": 0.34545455,
+        "exact_two_sided_p": 0.67878788,
+        "H_mean": 0.099005165,
+        "V_mean": 0.198531533
+      }
+    },
+    "jpeg85": {
+      "sobel": {
+        "observed_V_minus_H": -0.029096656,
+        "exact_one_sided_p": 0.56969697,
+        "exact_two_sided_p": 0.84242424,
+        "H_mean": -0.436874298,
+        "V_mean": -0.465970954
+      },
+      "fourier": {
+        "observed_V_minus_H": 0.112583313,
+        "exact_one_sided_p": 0.32727273,
+        "exact_two_sided_p": 0.64040404,
+        "H_mean": 0.083962874,
+        "V_mean": 0.196546188
+      }
+    },
+    "jpeg70": {
+      "sobel": {
+        "observed_V_minus_H": -0.030411483,
+        "exact_one_sided_p": 0.57575758,
+        "exact_two_sided_p": 0.83434343,
+        "H_mean": -0.437643717,
+        "V_mean": -0.4680552
+      },
+      "fourier": {
+        "observed_V_minus_H": 0.085466706,
+        "exact_one_sided_p": 0.36969697,
+        "exact_two_sided_p": 0.71717172,
+        "H_mean": 0.120179842,
+        "V_mean": 0.205646548
+      }
+    },
+    "down75_up": {
+      "sobel": {
+        "observed_V_minus_H": -0.023462418,
+        "exact_one_sided_p": 0.55555556,
+        "exact_two_sided_p": 0.87070707,
+        "H_mean": -0.429746991,
+        "V_mean": -0.453209408
+      },
+      "fourier": {
+        "observed_V_minus_H": 0.09751637,
+        "exact_one_sided_p": 0.33939394,
+        "exact_two_sided_p": 0.66666667,
+        "H_mean": 0.202960193,
+        "V_mean": 0.300476563
+      }
+    }
+  },
+  "real_original_rows": [
+    {
+      "id": 1,
+      "label": "H",
+      "aperture": [
+        243,
+        330,
+        313,
+        360
+      ],
+      "sobel": -0.5706587537918808,
+      "fourier": 0.007573777055282296,
+      "mean_darkness": 63.31
+    },
+    {
+      "id": 2,
+      "label": "H",
+      "aperture": [
+        335,
+        330,
+        403,
+        360
+      ],
+      "sobel": -0.5885744921729834,
+      "fourier": 0.21103977952009767,
+      "mean_darkness": 38.12647058823529
+    },
+    {
+      "id": 3,
+      "label": "V",
+      "aperture": [
+        424,
+        330,
+        492,
+        360
+      ],
+      "sobel": -0.6532460065381723,
+      "fourier": -0.39402066771882943,
+      "mean_darkness": 19.498529411764707
+    },
+    {
+      "id": 4,
+      "label": "V",
+      "aperture": [
+        519,
+        330,
+        659,
+        360
+      ],
+      "sobel": -0.595197318888795,
+      "fourier": 0.5300721350800374,
+      "mean_darkness": 41.295476190476194
+    },
+    {
+      "id": 5,
+      "label": "H",
+      "aperture": [
+        688,
+        330,
+        772,
+        360
+      ],
+      "sobel": -0.554500034086583,
+      "fourier": 0.4208786666744832,
+      "mean_darkness": 13.286111111111097
+    },
+    {
+      "id": 6,
+      "label": "H",
+      "aperture": [
+        893,
+        330,
+        969,
+        360
+      ],
+      "sobel": 0.04209479920027515,
+      "fourier": 0.3859756148310537,
+      "mean_darkness": 0.4000000000000057
+    },
+    {
+      "id": 7,
+      "label": "V",
+      "aperture": [
+        996,
+        330,
+        1124,
+        360
+      ],
+      "sobel": -0.45383108811815853,
+      "fourier": 0.039924261946225344,
+      "mean_darkness": 20.07890624999999
+    },
+    {
+      "id": 8,
+      "label": "H",
+      "aperture": [
+        1154,
+        330,
+        1246,
+        360
+      ],
+      "sobel": -0.5344077216248472,
+      "fourier": 0.3730608922554909,
+      "mean_darkness": 15.860144927536226
+    },
+    {
+      "id": 9,
+      "label": "H",
+      "aperture": [
+        1269,
+        330,
+        1339,
+        360
+      ],
+      "sobel": -0.7880877678060296,
+      "fourier": -0.5862570884484629,
+      "mean_darkness": 2.413333333333327
+    },
+    {
+      "id": 10,
+      "label": "H",
+      "aperture": [
+        1360,
+        330,
+        1442,
+        360
+      ],
+      "sobel": -0.3994314976825008,
+      "fourier": 0.10158521569768134,
+      "mean_darkness": 15.414634146341456
+    },
+    {
+      "id": 11,
+      "label": "H",
+      "aperture": [
+        1460,
+        330,
+        1504,
+        360
+      ],
+      "sobel": -0.07957485564896732,
+      "fourier": -0.12181553921708548,
+      "mean_darkness": 0.8310606060606176
+    },
+    {
+      "id": 12,
+      "label": "V",
+      "aperture": [
+        1522,
+        330,
+        1584,
+        360
+      ],
+      "sobel": -0.16386841556445858,
+      "fourier": 0.6181504034519696,
+      "mean_darkness": 4.641397849462379
+    }
+  ],
+  "real_significant_all_formats": false,
+  "decision": "NO_REPLICATED_ALL_12_REFLECTION_ASSOCIATION",
+  "thresholds": {
+    "min_new_crop_mean_darkness": 2.0,
+    "min_positive_V_H_difference": 0.0,
+    "bonferroni_corrected_one_sided_p_max": 0.025
+  },
+  "interpretation_guard": "A potential coupling requires independent inspection and does not establish an encoded message. A negative retires ONLY this specific 12-building y330-360 Sobel/Fourier coupling; the standalone H/V observation remains valid.",
+  "safety": "No secret phrases, crypto keys, wallet, Twitter/social sources or content decoding."
+}
