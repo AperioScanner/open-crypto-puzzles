@@ -1,0 +1,3391 @@
+{
+  "experiment_id": "A11-EXP-171",
+  "canonical_SHA256_provenance_only": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "source_image_pixels_reanalyzed": false,
+  "test": "Unchanged Stage169 contrast scorer with fixed known-outer synthetic sailing wedge + exterior boat/hull stroke nuisances, no source data.",
+  "fixed_synthetic_sites": [
+    [
+      "sail2",
+      2,
+      -8
+    ],
+    [
+      "sail3",
+      1,
+      8
+    ],
+    [
+      "sail4",
+      2,
+      -8
+    ],
+    [
+      "sail5",
+      2,
+      -8
+    ]
+  ],
+  "fixed_true_offsets": [
+    0,
+    "previous_registered_inward"
+  ],
+  "nuisance_types": [
+    "outside_parallel_11",
+    "outside_cross_20_to_4",
+    "outside_gray_boat_wedge"
+  ],
+  "renderer_formats": [
+    "original",
+    "jpeg85",
+    "jpeg70",
+    "down75_up"
+  ],
+  "original_stage169_calibration": 128,
+  "checks": {
+    "original_SHA_provenance_only": true,
+    "Stage169_SHA": true,
+    "Stage169_prior_synthetic_128": true,
+    "independently_replayed_original_synthetics_128": true,
+    "Stage169_source_registry_6": true,
+    "Stage170_original_pixel_15": true,
+    "four_immutable_source_sites": true,
+    "two_alternatives_per_site": true,
+    "only_3_fixed_nuisances": true,
+    "32_clean_known_edge_fixture_replay": true,
+    "96_synthetic_adversarial_scene_integrity": true,
+    "all_3_nuisance_classes_hit_true_edge_flank": true
+  },
+  "checks_passed": 12,
+  "checks_total": 12,
+  "clean_known_edge_tests": [
+    {
+      "site": "sail2_right",
+      "known_true_dx": 0,
+      "format": "original",
+      "correct": true,
+      "measured": {
+        "selected_dx": 0,
+        "confident": true,
+        "best_margin": 0.32361854,
+        "original_dx0": {
+          "inside": 0.85949198,
+          "outside": 0.0,
+          "contrast": 0.85949198
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.7254902,
+          "outside": 0.18961676,
+          "contrast": 0.53587344
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "known_true_dx": 0,
+      "format": "jpeg85",
+      "correct": true,
+      "measured": {
+        "selected_dx": 0,
+        "confident": true,
+        "best_margin": 0.32196969,
+        "original_dx0": {
+          "inside": 0.85628342,
+          "outside": 0.00173797,
+          "contrast": 0.85454545
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72580214,
+          "outside": 0.19322638,
+          "contrast": 0.53257576
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "known_true_dx": 0,
+      "format": "jpeg70",
+      "correct": true,
+      "measured": {
+        "selected_dx": 0,
+        "confident": true,
+        "best_margin": 0.33163993,
+        "original_dx0": {
+          "inside": 0.85663993,
+          "outside": 0.00423351,
+          "contrast": 0.85240642
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72054367,
+          "outside": 0.19977718,
+          "contrast": 0.52076649
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "known_true_dx": 0,
+      "format": "down75_up",
+      "correct": true,
+      "measured": {
+        "selected_dx": 0,
+        "confident": true,
+        "best_margin": 0.34255793,
+        "original_dx0": {
+          "inside": 0.8535205,
+          "outside": 0.00022282,
+          "contrast": 0.85329768
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72388592,
+          "outside": 0.21314617,
+          "contrast": 0.51073975
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "known_true_dx": -8,
+      "format": "original",
+      "correct": true,
+      "measured": {
+        "selected_dx": -8,
+        "confident": true,
+        "best_margin": 0.20196078,
+        "original_dx0": {
+          "inside": 0.65512478,
+          "outside": 0.0,
+          "contrast": 0.65512478
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85708556,
+          "outside": 0.0,
+          "contrast": 0.85708556
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "known_true_dx": -8,
+      "format": "jpeg85",
+      "correct": true,
+      "measured": {
+        "selected_dx": -8,
+        "confident": true,
+        "best_margin": 0.19728164,
+        "original_dx0": {
+          "inside": 0.65695187,
+          "outside": 0.0,
+          "contrast": 0.65695187
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85512478,
+          "outside": 0.00089127,
+          "contrast": 0.85423351
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "known_true_dx": -8,
+      "format": "jpeg70",
+      "correct": true,
+      "measured": {
+        "selected_dx": -8,
+        "confident": true,
+        "best_margin": 0.20026738,
+        "original_dx0": {
+          "inside": 0.65298574,
+          "outside": 0.0,
+          "contrast": 0.65298574
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85459002,
+          "outside": 0.0013369,
+          "contrast": 0.85325312
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "known_true_dx": -8,
+      "format": "down75_up",
+      "correct": true,
+      "measured": {
+        "selected_dx": -8,
+        "confident": true,
+        "best_margin": 0.18065954,
+        "original_dx0": {
+          "inside": 0.67112299,
+          "outside": 0.0,
+          "contrast": 0.67112299
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85196078,
+          "outside": 0.00017825,
+          "contrast": 0.85178253
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "known_true_dx": 0,
+      "format": "original",
+      "correct": true,
+      "measured": {
+        "selected_dx": 0,
+        "confident": true,
+        "best_margin": 0.34126559,
+        "original_dx0": {
+          "inside": 0.86065062,
+          "outside": 0.0,
+          "contrast": 0.86065062
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.7254902,
+          "outside": 0.20610517,
+          "contrast": 0.51938503
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "known_true_dx": 0,
+      "format": "jpeg85",
+      "correct": true,
+      "measured": {
+        "selected_dx": 0,
+        "confident": true,
+        "best_margin": 0.34108735,
+        "original_dx0": {
+          "inside": 0.85686275,
+          "outside": 0.00254011,
+          "contrast": 0.85432264
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.72566845,
+          "outside": 0.21243316,
+          "contrast": 0.51323529
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "known_true_dx": 0,
+      "format": "jpeg70",
+      "correct": true,
+      "measured": {
+        "selected_dx": 0,
+        "confident": true,
+        "best_margin": 0.34643494,
+        "original_dx0": {
+          "inside": 0.8561943,
+          "outside": 0.00280749,
+          "contrast": 0.85338681
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.72228164,
+          "outside": 0.21532977,
+          "contrast": 0.50695187
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "known_true_dx": 0,
+      "format": "down75_up",
+      "correct": true,
+      "measured": {
+        "selected_dx": 0,
+        "confident": true,
+        "best_margin": 0.35049019,
+        "original_dx0": {
+          "inside": 0.85476827,
+          "outside": 0.00013369,
+          "contrast": 0.85463458
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.72393048,
+          "outside": 0.2197861,
+          "contrast": 0.50414439
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "known_true_dx": 8,
+      "format": "original",
+      "correct": true,
+      "measured": {
+        "selected_dx": 8,
+        "confident": true,
+        "best_margin": 0.20414439,
+        "original_dx0": {
+          "inside": 0.65699643,
+          "outside": 0.0,
+          "contrast": 0.65699643
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.86114082,
+          "outside": 0.0,
+          "contrast": 0.86114082
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "known_true_dx": 8,
+      "format": "jpeg85",
+      "correct": true,
+      "measured": {
+        "selected_dx": 8,
+        "confident": true,
+        "best_margin": 0.20200535,
+        "original_dx0": {
+          "inside": 0.65557041,
+          "outside": 0.0,
+          "contrast": 0.65557041
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.85984848,
+          "outside": 0.00227273,
+          "contrast": 0.85757576
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "known_true_dx": 8,
+      "format": "jpeg70",
+      "correct": true,
+      "measured": {
+        "selected_dx": 8,
+        "confident": true,
+        "best_margin": 0.19286987,
+        "original_dx0": {
+          "inside": 0.66154189,
+          "outside": 0.0,
+          "contrast": 0.66154189
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.85766488,
+          "outside": 0.00325312,
+          "contrast": 0.85441176
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "known_true_dx": 8,
+      "format": "down75_up",
+      "correct": true,
+      "measured": {
+        "selected_dx": 8,
+        "confident": true,
+        "best_margin": 0.17647059,
+        "original_dx0": {
+          "inside": 0.67785205,
+          "outside": 0.0,
+          "contrast": 0.67785205
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.85454545,
+          "outside": 0.00022282,
+          "contrast": 0.85432264
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "known_true_dx": 0,
+      "format": "original",
+      "correct": true,
+      "measured": {
+        "selected_dx": 0,
+        "confident": true,
+        "best_margin": 0.32357398,
+        "original_dx0": {
+          "inside": 0.85944742,
+          "outside": 0.0,
+          "contrast": 0.85944742
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.7254902,
+          "outside": 0.18961676,
+          "contrast": 0.53587344
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "known_true_dx": 0,
+      "format": "jpeg85",
+      "correct": true,
+      "measured": {
+        "selected_dx": 0,
+        "confident": true,
+        "best_margin": 0.32433155,
+        "original_dx0": {
+          "inside": 0.85583779,
+          "outside": 0.00111408,
+          "contrast": 0.85472371
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72522282,
+          "outside": 0.19483066,
+          "contrast": 0.53039216
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "known_true_dx": 0,
+      "format": "jpeg70",
+      "correct": true,
+      "measured": {
+        "selected_dx": 0,
+        "confident": true,
+        "best_margin": 0.31885027,
+        "original_dx0": {
+          "inside": 0.85187166,
+          "outside": 0.00178253,
+          "contrast": 0.85008913
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72161319,
+          "outside": 0.19037433,
+          "contrast": 0.53123886
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "known_true_dx": 0,
+      "format": "down75_up",
+      "correct": true,
+      "measured": {
+        "selected_dx": 0,
+        "confident": true,
+        "best_margin": 0.34362745,
+        "original_dx0": {
+          "inside": 0.85414439,
+          "outside": 0.00017825,
+          "contrast": 0.85396613
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72379679,
+          "outside": 0.21345811,
+          "contrast": 0.51033868
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "known_true_dx": -8,
+      "format": "original",
+      "correct": true,
+      "measured": {
+        "selected_dx": -8,
+        "confident": true,
+        "best_margin": 0.19336007,
+        "original_dx0": {
+          "inside": 0.66385918,
+          "outside": 0.0,
+          "contrast": 0.66385918
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85721925,
+          "outside": 0.0,
+          "contrast": 0.85721925
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "known_true_dx": -8,
+      "format": "jpeg85",
+      "correct": true,
+      "measured": {
+        "selected_dx": -8,
+        "confident": true,
+        "best_margin": 0.18796792,
+        "original_dx0": {
+          "inside": 0.66457219,
+          "outside": 0.0,
+          "contrast": 0.66457219
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85601604,
+          "outside": 0.00347594,
+          "contrast": 0.85254011
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "known_true_dx": -8,
+      "format": "jpeg70",
+      "correct": true,
+      "measured": {
+        "selected_dx": -8,
+        "confident": true,
+        "best_margin": 0.18578431,
+        "original_dx0": {
+          "inside": 0.66461676,
+          "outside": 0.0,
+          "contrast": 0.66461676
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85258467,
+          "outside": 0.0021836,
+          "contrast": 0.85040107
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "known_true_dx": -8,
+      "format": "down75_up",
+      "correct": true,
+      "measured": {
+        "selected_dx": -8,
+        "confident": true,
+        "best_margin": 0.17174688,
+        "original_dx0": {
+          "inside": 0.6798574,
+          "outside": 0.0,
+          "contrast": 0.6798574
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.8516934,
+          "outside": 8.913e-05,
+          "contrast": 0.85160428
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "known_true_dx": 0,
+      "format": "original",
+      "correct": true,
+      "measured": {
+        "selected_dx": 0,
+        "confident": true,
+        "best_margin": 0.34202317,
+        "original_dx0": {
+          "inside": 0.8614082,
+          "outside": 0.0,
+          "contrast": 0.8614082
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.7254902,
+          "outside": 0.20610517,
+          "contrast": 0.51938503
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "known_true_dx": 0,
+      "format": "jpeg85",
+      "correct": true,
+      "measured": {
+        "selected_dx": 0,
+        "confident": true,
+        "best_margin": 0.34024065,
+        "original_dx0": {
+          "inside": 0.85726381,
+          "outside": 0.00080214,
+          "contrast": 0.85646168
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72513369,
+          "outside": 0.20891266,
+          "contrast": 0.51622103
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "known_true_dx": 0,
+      "format": "jpeg70",
+      "correct": true,
+      "measured": {
+        "selected_dx": 0,
+        "confident": true,
+        "best_margin": 0.34803921,
+        "original_dx0": {
+          "inside": 0.85726381,
+          "outside": 0.00111408,
+          "contrast": 0.85614973
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72170232,
+          "outside": 0.2135918,
+          "contrast": 0.50811052
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "known_true_dx": 0,
+      "format": "down75_up",
+      "correct": true,
+      "measured": {
+        "selected_dx": 0,
+        "confident": true,
+        "best_margin": 0.35187165,
+        "original_dx0": {
+          "inside": 0.85614973,
+          "outside": 0.00013369,
+          "contrast": 0.85601604
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.7236631,
+          "outside": 0.21951872,
+          "contrast": 0.50414439
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "known_true_dx": -8,
+      "format": "original",
+      "correct": true,
+      "measured": {
+        "selected_dx": -8,
+        "confident": true,
+        "best_margin": 0.20155971,
+        "original_dx0": {
+          "inside": 0.65864528,
+          "outside": 0.0,
+          "contrast": 0.65864528
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.86020499,
+          "outside": 0.0,
+          "contrast": 0.86020499
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "known_true_dx": -8,
+      "format": "jpeg85",
+      "correct": true,
+      "measured": {
+        "selected_dx": -8,
+        "confident": true,
+        "best_margin": 0.19674688,
+        "original_dx0": {
+          "inside": 0.65775401,
+          "outside": 0.0,
+          "contrast": 0.65775401
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85628342,
+          "outside": 0.00178253,
+          "contrast": 0.85450089
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "known_true_dx": -8,
+      "format": "jpeg70",
+      "correct": true,
+      "measured": {
+        "selected_dx": -8,
+        "confident": true,
+        "best_margin": 0.19362745,
+        "original_dx0": {
+          "inside": 0.66060606,
+          "outside": 0.0,
+          "contrast": 0.66060606
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.8565508,
+          "outside": 0.00231729,
+          "contrast": 0.85423351
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "known_true_dx": -8,
+      "format": "down75_up",
+      "correct": true,
+      "measured": {
+        "selected_dx": -8,
+        "confident": true,
+        "best_margin": 0.17660428,
+        "original_dx0": {
+          "inside": 0.67673797,
+          "outside": 0.0,
+          "contrast": 0.67673797
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85365419,
+          "outside": 0.00031194,
+          "contrast": 0.85334225
+        }
+      }
+    }
+  ],
+  "nuisance_tests": [
+    {
+      "site": "sail2_right",
+      "true_dx": 0,
+      "nuisance": "outside_parallel_11",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 325,
+      "outside_darkness_added_at_true_edge": 0.4490642,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.1092246,
+        "original_dx0": {
+          "inside": 0.85949198,
+          "outside": 0.44906417,
+          "contrast": 0.41042781
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.7254902,
+          "outside": 0.20583779,
+          "contrast": 0.51965241
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": 0,
+      "nuisance": "outside_parallel_11",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 325,
+      "outside_darkness_added_at_true_edge": 0.447861,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.10900178,
+        "original_dx0": {
+          "inside": 0.85628342,
+          "outside": 0.44959893,
+          "contrast": 0.40668449
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72580214,
+          "outside": 0.21011586,
+          "contrast": 0.51568627
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": 0,
+      "nuisance": "outside_parallel_11",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 325,
+      "outside_darkness_added_at_true_edge": 0.4537433,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.10209448,
+        "original_dx0": {
+          "inside": 0.85663993,
+          "outside": 0.45797683,
+          "contrast": 0.3986631
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72054367,
+          "outside": 0.2197861,
+          "contrast": 0.50075758
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": 0,
+      "nuisance": "outside_parallel_11",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 325,
+      "outside_darkness_added_at_true_edge": 0.4565954,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.0837344,
+        "original_dx0": {
+          "inside": 0.8535205,
+          "outside": 0.45681818,
+          "contrast": 0.39670232
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72388592,
+          "outside": 0.2434492,
+          "contrast": 0.48043672
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": 0,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 411,
+      "outside_darkness_added_at_true_edge": 0.573975,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.09799466,
+        "original_dx0": {
+          "inside": 0.85949198,
+          "outside": 0.57397504,
+          "contrast": 0.28551693
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.7254902,
+          "outside": 0.34197861,
+          "contrast": 0.38351159
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": 0,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 411,
+      "outside_darkness_added_at_true_edge": 0.572549,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.09973263,
+        "original_dx0": {
+          "inside": 0.85628342,
+          "outside": 0.57428699,
+          "contrast": 0.28199643
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72580214,
+          "outside": 0.34407308,
+          "contrast": 0.38172906
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": 0,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 411,
+      "outside_darkness_added_at_true_edge": 0.5709893,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.08930482,
+        "original_dx0": {
+          "inside": 0.85663993,
+          "outside": 0.57522282,
+          "contrast": 0.28141711
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72054367,
+          "outside": 0.34982175,
+          "contrast": 0.37072193
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": 0,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 411,
+      "outside_darkness_added_at_true_edge": 0.5711676,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.07076649,
+        "original_dx0": {
+          "inside": 0.8535205,
+          "outside": 0.57139037,
+          "contrast": 0.28213012
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72388592,
+          "outside": 0.3709893,
+          "contrast": 0.35289661
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": 0,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 663,
+      "outside_darkness_added_at_true_edge": 0.5853387,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.07210338,
+        "original_dx0": {
+          "inside": 0.85949198,
+          "outside": 0.58533868,
+          "contrast": 0.2741533
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.7254902,
+          "outside": 0.37923351,
+          "contrast": 0.34625668
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": 0,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 663,
+      "outside_darkness_added_at_true_edge": 0.5847594,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.07504456,
+        "original_dx0": {
+          "inside": 0.85628342,
+          "outside": 0.58649733,
+          "contrast": 0.2697861
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72580214,
+          "outside": 0.38097148,
+          "contrast": 0.34483066
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": 0,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 663,
+      "outside_darkness_added_at_true_edge": 0.5832442,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.0597148,
+        "original_dx0": {
+          "inside": 0.85663993,
+          "outside": 0.58747772,
+          "contrast": 0.26916221
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72054367,
+          "outside": 0.39166667,
+          "contrast": 0.32887701
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": 0,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 663,
+      "outside_darkness_added_at_true_edge": 0.6014706,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.04549911,
+        "original_dx0": {
+          "inside": 0.8535205,
+          "outside": 0.6016934,
+          "contrast": 0.25182709
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72388592,
+          "outside": 0.42655971,
+          "contrast": 0.2973262
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": -8,
+      "nuisance": "outside_parallel_11",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 314,
+      "outside_darkness_added_at_true_edge": 0.4235294,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.06172014,
+        "original_dx0": {
+          "inside": 0.65512478,
+          "outside": 0.28328877,
+          "contrast": 0.37183601
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85708556,
+          "outside": 0.42352941,
+          "contrast": 0.43355615
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": -8,
+      "nuisance": "outside_parallel_11",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 314,
+      "outside_darkness_added_at_true_edge": 0.4244652,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.05641711,
+        "original_dx0": {
+          "inside": 0.65730838,
+          "outside": 0.28395722,
+          "contrast": 0.37335116
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85512478,
+          "outside": 0.42535651,
+          "contrast": 0.42976827
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": -8,
+      "nuisance": "outside_parallel_11",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 314,
+      "outside_darkness_added_at_true_edge": 0.4244207,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.06466132,
+        "original_dx0": {
+          "inside": 0.65316399,
+          "outside": 0.28899287,
+          "contrast": 0.36417112
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85459002,
+          "outside": 0.42575758,
+          "contrast": 0.42883244
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": -8,
+      "nuisance": "outside_parallel_11",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 314,
+      "outside_darkness_added_at_true_edge": 0.4437166,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.03030303,
+        "original_dx0": {
+          "inside": 0.67112299,
+          "outside": 0.29336007,
+          "contrast": 0.37776292
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85196078,
+          "outside": 0.44389483,
+          "contrast": 0.40806595
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": -8,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 414,
+      "outside_darkness_added_at_true_edge": 0.5612299,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.01069519,
+        "original_dx0": {
+          "inside": 0.65512478,
+          "outside": 0.34857398,
+          "contrast": 0.3065508
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85708556,
+          "outside": 0.56122995,
+          "contrast": 0.29585561
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": -8,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 414,
+      "outside_darkness_added_at_true_edge": 0.5586453,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.01461675,
+        "original_dx0": {
+          "inside": 0.65708556,
+          "outside": 0.34688057,
+          "contrast": 0.31020499
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85512478,
+          "outside": 0.55953654,
+          "contrast": 0.29558824
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": -8,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 414,
+      "outside_darkness_added_at_true_edge": 0.5571301,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.01096257,
+        "original_dx0": {
+          "inside": 0.65298574,
+          "outside": 0.34590018,
+          "contrast": 0.30708556
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85459002,
+          "outside": 0.55846702,
+          "contrast": 0.29612299
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": -8,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 414,
+      "outside_darkness_added_at_true_edge": 0.5594029,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.03226381,
+        "original_dx0": {
+          "inside": 0.67188057,
+          "outside": 0.34723708,
+          "contrast": 0.32464349
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85196078,
+          "outside": 0.55958111,
+          "contrast": 0.29237968
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": -8,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 663,
+      "outside_darkness_added_at_true_edge": 0.5441177,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.38333333,
+        "original_dx0": {
+          "inside": 0.65512478,
+          "outside": 0.7254902,
+          "contrast": -0.07036542
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85708556,
+          "outside": 0.54411765,
+          "contrast": 0.31296791
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": -8,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 663,
+      "outside_darkness_added_at_true_edge": 0.5470588,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.37651515,
+        "original_dx0": {
+          "inside": 0.65717469,
+          "outside": 0.72651515,
+          "contrast": -0.06934046
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85512478,
+          "outside": 0.54795009,
+          "contrast": 0.30717469
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": -8,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 663,
+      "outside_darkness_added_at_true_edge": 0.5500446,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.37076649,
+        "original_dx0": {
+          "inside": 0.6535205,
+          "outside": 0.72107843,
+          "contrast": -0.06755793
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85459002,
+          "outside": 0.55138146,
+          "contrast": 0.30320856
+        }
+      }
+    },
+    {
+      "site": "sail2_right",
+      "true_dx": -8,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 663,
+      "outside_darkness_added_at_true_edge": 0.5762478,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.32967915,
+        "original_dx0": {
+          "inside": 0.67116756,
+          "outside": 0.72531194,
+          "contrast": -0.05414439
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85196078,
+          "outside": 0.57642602,
+          "contrast": 0.27553476
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 0,
+      "nuisance": "outside_parallel_11",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 333,
+      "outside_darkness_added_at_true_edge": 0.4709893,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.0635918,
+        "original_dx0": {
+          "inside": 0.86065062,
+          "outside": 0.4709893,
+          "contrast": 0.38966132
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.7254902,
+          "outside": 0.27223708,
+          "contrast": 0.45325312
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 0,
+      "nuisance": "outside_parallel_11",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 333,
+      "outside_darkness_added_at_true_edge": 0.4713904,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.06354724,
+        "original_dx0": {
+          "inside": 0.85686275,
+          "outside": 0.47393048,
+          "contrast": 0.38293226
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.72566845,
+          "outside": 0.27918895,
+          "contrast": 0.4464795
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 0,
+      "nuisance": "outside_parallel_11",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 333,
+      "outside_darkness_added_at_true_edge": 0.4692068,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.05583779,
+        "original_dx0": {
+          "inside": 0.8561943,
+          "outside": 0.47201426,
+          "contrast": 0.38418004
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.72228164,
+          "outside": 0.28226381,
+          "contrast": 0.44001783
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 0,
+      "nuisance": "outside_parallel_11",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 333,
+      "outside_darkness_added_at_true_edge": 0.4743761,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.05111408,
+        "original_dx0": {
+          "inside": 0.85476827,
+          "outside": 0.4745098,
+          "contrast": 0.38025847
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.72393048,
+          "outside": 0.29255793,
+          "contrast": 0.43137255
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 0,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 419,
+      "outside_darkness_added_at_true_edge": 0.5694742,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.06769162,
+        "original_dx0": {
+          "inside": 0.86065062,
+          "outside": 0.56947415,
+          "contrast": 0.29117647
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.7254902,
+          "outside": 0.3666221,
+          "contrast": 0.35886809
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 0,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 419,
+      "outside_darkness_added_at_true_edge": 0.568672,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.06751337,
+        "original_dx0": {
+          "inside": 0.85686275,
+          "outside": 0.57121212,
+          "contrast": 0.28565062
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.72566845,
+          "outside": 0.37250446,
+          "contrast": 0.35316399
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 0,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 419,
+      "outside_darkness_added_at_true_edge": 0.5668895,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.06314616,
+        "original_dx0": {
+          "inside": 0.8561943,
+          "outside": 0.56969697,
+          "contrast": 0.28649733
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.72228164,
+          "outside": 0.37263815,
+          "contrast": 0.34964349
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 0,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 419,
+      "outside_darkness_added_at_true_edge": 0.5692513,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.05637255,
+        "original_dx0": {
+          "inside": 0.85476827,
+          "outside": 0.56938503,
+          "contrast": 0.28538324
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.72393048,
+          "outside": 0.38217469,
+          "contrast": 0.34175579
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 0,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 682,
+      "outside_darkness_added_at_true_edge": 0.5853387,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.04621212,
+        "original_dx0": {
+          "inside": 0.86065062,
+          "outside": 0.58533868,
+          "contrast": 0.27531194
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.7254902,
+          "outside": 0.40396613,
+          "contrast": 0.32152406
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 0,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 682,
+      "outside_darkness_added_at_true_edge": 0.5849376,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.04719251,
+        "original_dx0": {
+          "inside": 0.85686275,
+          "outside": 0.58747772,
+          "contrast": 0.26938503
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.72566845,
+          "outside": 0.40909091,
+          "contrast": 0.31657754
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 0,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 682,
+      "outside_darkness_added_at_true_edge": 0.5829768,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.03493761,
+        "original_dx0": {
+          "inside": 0.8561943,
+          "outside": 0.58578431,
+          "contrast": 0.27040998
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.72228164,
+          "outside": 0.41693405,
+          "contrast": 0.30534759
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 0,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 682,
+      "outside_darkness_added_at_true_edge": 0.6054367,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.04197861,
+        "original_dx0": {
+          "inside": 0.85476827,
+          "outside": 0.60557041,
+          "contrast": 0.24919786
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.72393048,
+          "outside": 0.43275401,
+          "contrast": 0.29117647
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 8,
+      "nuisance": "outside_parallel_11",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 327,
+      "outside_darkness_added_at_true_edge": 0.4377451,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.06060606,
+        "original_dx0": {
+          "inside": 0.65699643,
+          "outside": 0.29420677,
+          "contrast": 0.36278966
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.86114082,
+          "outside": 0.4377451,
+          "contrast": 0.42339572
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 8,
+      "nuisance": "outside_parallel_11",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 327,
+      "outside_darkness_added_at_true_edge": 0.4383244,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.05766489,
+        "original_dx0": {
+          "inside": 0.65534759,
+          "outside": 0.29376114,
+          "contrast": 0.36158645
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.85984848,
+          "outside": 0.44059715,
+          "contrast": 0.41925134
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 8,
+      "nuisance": "outside_parallel_11",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 327,
+      "outside_darkness_added_at_true_edge": 0.4314171,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.0587344,
+        "original_dx0": {
+          "inside": 0.65940285,
+          "outside": 0.2951426,
+          "contrast": 0.36426025
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.85766488,
+          "outside": 0.43467023,
+          "contrast": 0.42299465
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 8,
+      "nuisance": "outside_parallel_11",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 327,
+      "outside_darkness_added_at_true_edge": 0.4548574,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.02468806,
+        "original_dx0": {
+          "inside": 0.67789661,
+          "outside": 0.30311943,
+          "contrast": 0.37477718
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.85454545,
+          "outside": 0.45508021,
+          "contrast": 0.39946524
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 8,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 419,
+      "outside_darkness_added_at_true_edge": 0.5674688,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.00280749,
+        "original_dx0": {
+          "inside": 0.65806595,
+          "outside": 0.36158645,
+          "contrast": 0.2964795
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.86114082,
+          "outside": 0.56746881,
+          "contrast": 0.29367201
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 8,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 419,
+      "outside_darkness_added_at_true_edge": 0.566533,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.00271836,
+        "original_dx0": {
+          "inside": 0.6565508,
+          "outside": 0.36278966,
+          "contrast": 0.29376114
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.85984848,
+          "outside": 0.5688057,
+          "contrast": 0.29104278
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 8,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 419,
+      "outside_darkness_added_at_true_edge": 0.5618093,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.00601604,
+        "original_dx0": {
+          "inside": 0.66198752,
+          "outside": 0.36336898,
+          "contrast": 0.29861854
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.85766488,
+          "outside": 0.56506239,
+          "contrast": 0.2926025
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 8,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 419,
+      "outside_darkness_added_at_true_edge": 0.5621658,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.03021391,
+        "original_dx0": {
+          "inside": 0.68195187,
+          "outside": 0.35958111,
+          "contrast": 0.32237077
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.85454545,
+          "outside": 0.56238859,
+          "contrast": 0.29215686
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 8,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 683,
+      "outside_darkness_added_at_true_edge": 0.5523619,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.37727273,
+        "original_dx0": {
+          "inside": 0.65699643,
+          "outside": 0.7254902,
+          "contrast": -0.06849376
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.86114082,
+          "outside": 0.55236185,
+          "contrast": 0.30877897
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 8,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 683,
+      "outside_darkness_added_at_true_edge": 0.5506239,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.37615864,
+        "original_dx0": {
+          "inside": 0.65579323,
+          "outside": 0.725,
+          "contrast": -0.06920677
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.85984848,
+          "outside": 0.55289661,
+          "contrast": 0.30695187
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 8,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 683,
+      "outside_darkness_added_at_true_edge": 0.5523619,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.36377005,
+        "original_dx0": {
+          "inside": 0.65868984,
+          "outside": 0.72040998,
+          "contrast": -0.06172014
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.85766488,
+          "outside": 0.55561497,
+          "contrast": 0.30204991
+        }
+      }
+    },
+    {
+      "site": "sail3_left",
+      "true_dx": 8,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 683,
+      "outside_darkness_added_at_true_edge": 0.5846702,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.31671123,
+        "original_dx0": {
+          "inside": 0.67829768,
+          "outside": 0.72535651,
+          "contrast": -0.04705882
+        },
+        "inward_candidate_dx8": {
+          "inside": 0.85454545,
+          "outside": 0.58489305,
+          "contrast": 0.26965241
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": 0,
+      "nuisance": "outside_parallel_11",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 323,
+      "outside_darkness_added_at_true_edge": 0.4614528,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.09407309,
+        "original_dx0": {
+          "inside": 0.85944742,
+          "outside": 0.46145276,
+          "contrast": 0.39799465
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.7254902,
+          "outside": 0.23342246,
+          "contrast": 0.49206774
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": 0,
+      "nuisance": "outside_parallel_11",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 323,
+      "outside_darkness_added_at_true_edge": 0.4601159,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.09264706,
+        "original_dx0": {
+          "inside": 0.85583779,
+          "outside": 0.46122995,
+          "contrast": 0.39460784
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72522282,
+          "outside": 0.23796791,
+          "contrast": 0.4872549
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": 0,
+      "nuisance": "outside_parallel_11",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 323,
+      "outside_darkness_added_at_true_edge": 0.4644385,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.09790553,
+        "original_dx0": {
+          "inside": 0.85187166,
+          "outside": 0.46622103,
+          "contrast": 0.38565062
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72161319,
+          "outside": 0.23805704,
+          "contrast": 0.48355615
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": 0,
+      "nuisance": "outside_parallel_11",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 323,
+      "outside_darkness_added_at_true_edge": 0.4710784,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.06818182,
+        "original_dx0": {
+          "inside": 0.85414439,
+          "outside": 0.47125668,
+          "contrast": 0.3828877
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72379679,
+          "outside": 0.27272727,
+          "contrast": 0.45106952
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": 0,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 411,
+      "outside_darkness_added_at_true_edge": 0.5759358,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.08975044,
+        "original_dx0": {
+          "inside": 0.85944742,
+          "outside": 0.57593583,
+          "contrast": 0.28351159
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.7254902,
+          "outside": 0.35222816,
+          "contrast": 0.37326203
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": 0,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 411,
+      "outside_darkness_added_at_true_edge": 0.5743316,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.08863636,
+        "original_dx0": {
+          "inside": 0.85583779,
+          "outside": 0.57544563,
+          "contrast": 0.28039216
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72522282,
+          "outside": 0.3561943,
+          "contrast": 0.36902852
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": 0,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 411,
+      "outside_darkness_added_at_true_edge": 0.575,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.09420677,
+        "original_dx0": {
+          "inside": 0.85187166,
+          "outside": 0.57678253,
+          "contrast": 0.27508913
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72161319,
+          "outside": 0.35231729,
+          "contrast": 0.3692959
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": 0,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 411,
+      "outside_darkness_added_at_true_edge": 0.5713458,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.0618984,
+        "original_dx0": {
+          "inside": 0.85414439,
+          "outside": 0.57152406,
+          "contrast": 0.28262032
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72379679,
+          "outside": 0.37927807,
+          "contrast": 0.34451872
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": 0,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 663,
+      "outside_darkness_added_at_true_edge": 0.5606061,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.05565954,
+        "original_dx0": {
+          "inside": 0.85944742,
+          "outside": 0.56060606,
+          "contrast": 0.29884135
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.7254902,
+          "outside": 0.3709893,
+          "contrast": 0.35450089
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": 0,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 663,
+      "outside_darkness_added_at_true_edge": 0.5621212,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.05565953,
+        "original_dx0": {
+          "inside": 0.85583779,
+          "outside": 0.56323529,
+          "contrast": 0.2926025
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72522282,
+          "outside": 0.37696078,
+          "contrast": 0.34826203
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": 0,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 663,
+      "outside_darkness_added_at_true_edge": 0.5586007,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.0588681,
+        "original_dx0": {
+          "inside": 0.85187166,
+          "outside": 0.56038324,
+          "contrast": 0.29148841
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72161319,
+          "outside": 0.37125668,
+          "contrast": 0.35035651
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": 0,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 663,
+      "outside_darkness_added_at_true_edge": 0.5887255,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.04255793,
+        "original_dx0": {
+          "inside": 0.85414439,
+          "outside": 0.58890374,
+          "contrast": 0.26524064
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72379679,
+          "outside": 0.41599822,
+          "contrast": 0.30779857
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": -8,
+      "nuisance": "outside_parallel_11",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 320,
+      "outside_darkness_added_at_true_edge": 0.4422906,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.01782531,
+        "original_dx0": {
+          "inside": 0.66385918,
+          "outside": 0.26675579,
+          "contrast": 0.39710339
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85721925,
+          "outside": 0.44229055,
+          "contrast": 0.4149287
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": -8,
+      "nuisance": "outside_parallel_11",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 320,
+      "outside_darkness_added_at_true_edge": 0.4409982,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.01559715,
+        "original_dx0": {
+          "inside": 0.66470588,
+          "outside": 0.26876114,
+          "contrast": 0.39594474
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85601604,
+          "outside": 0.44447415,
+          "contrast": 0.41154189
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": -8,
+      "nuisance": "outside_parallel_11",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 320,
+      "outside_darkness_added_at_true_edge": 0.4445633,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.00967023,
+        "original_dx0": {
+          "inside": 0.66399287,
+          "outside": 0.26782531,
+          "contrast": 0.39616756
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85258467,
+          "outside": 0.44674688,
+          "contrast": 0.40583779
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": -8,
+      "nuisance": "outside_parallel_11",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 320,
+      "outside_darkness_added_at_true_edge": 0.456328,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.00695187,
+        "original_dx0": {
+          "inside": 0.67981283,
+          "outside": 0.27758467,
+          "contrast": 0.40222816
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.8516934,
+          "outside": 0.45641711,
+          "contrast": 0.39527629
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": -8,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 412,
+      "outside_darkness_added_at_true_edge": 0.577451,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.03529412,
+        "original_dx0": {
+          "inside": 0.66483957,
+          "outside": 0.34977718,
+          "contrast": 0.31506239
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85721925,
+          "outside": 0.57745098,
+          "contrast": 0.27976827
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": -8,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 412,
+      "outside_darkness_added_at_true_edge": 0.5771836,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.04006238,
+        "original_dx0": {
+          "inside": 0.66532977,
+          "outside": 0.34991087,
+          "contrast": 0.31541889
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85601604,
+          "outside": 0.58065954,
+          "contrast": 0.27535651
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": -8,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 412,
+      "outside_darkness_added_at_true_edge": 0.5729947,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.0367647,
+        "original_dx0": {
+          "inside": 0.66466132,
+          "outside": 0.3504902,
+          "contrast": 0.31417112
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85258467,
+          "outside": 0.57517825,
+          "contrast": 0.27740642
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": -8,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 412,
+      "outside_darkness_added_at_true_edge": 0.5709447,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.05730837,
+        "original_dx0": {
+          "inside": 0.68368984,
+          "outside": 0.34572193,
+          "contrast": 0.33796791
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.8516934,
+          "outside": 0.57103387,
+          "contrast": 0.28065954
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": -8,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 663,
+      "outside_darkness_added_at_true_edge": 0.5441177,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.37473262,
+        "original_dx0": {
+          "inside": 0.66385918,
+          "outside": 0.7254902,
+          "contrast": -0.06163102
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85721925,
+          "outside": 0.54411765,
+          "contrast": 0.3131016
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": -8,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 663,
+      "outside_darkness_added_at_true_edge": 0.5436275,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.37250446,
+        "original_dx0": {
+          "inside": 0.66434938,
+          "outside": 0.72794118,
+          "contrast": -0.0635918
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85601604,
+          "outside": 0.54710339,
+          "contrast": 0.30891266
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": -8,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 663,
+      "outside_darkness_added_at_true_edge": 0.5411765,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.36644385,
+        "original_dx0": {
+          "inside": 0.66368093,
+          "outside": 0.72090018,
+          "contrast": -0.05721925
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85258467,
+          "outside": 0.54336007,
+          "contrast": 0.3092246
+        }
+      }
+    },
+    {
+      "site": "sail4_right",
+      "true_dx": -8,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 663,
+      "outside_darkness_added_at_true_edge": 0.5759358,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.3206328,
+        "original_dx0": {
+          "inside": 0.68008021,
+          "outside": 0.72504456,
+          "contrast": -0.04496435
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.8516934,
+          "outside": 0.57602496,
+          "contrast": 0.27566845
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": 0,
+      "nuisance": "outside_parallel_11",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 341,
+      "outside_darkness_added_at_true_edge": 0.4770499,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.05802139,
+        "original_dx0": {
+          "inside": 0.8614082,
+          "outside": 0.47704991,
+          "contrast": 0.38435829
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.7254902,
+          "outside": 0.28311052,
+          "contrast": 0.44237968
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": 0,
+      "nuisance": "outside_parallel_11",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 341,
+      "outside_darkness_added_at_true_edge": 0.4760695,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.05753119,
+        "original_dx0": {
+          "inside": 0.85726381,
+          "outside": 0.47687166,
+          "contrast": 0.38039216
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72513369,
+          "outside": 0.28721034,
+          "contrast": 0.43792335
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": 0,
+      "nuisance": "outside_parallel_11",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 341,
+      "outside_darkness_added_at_true_edge": 0.4810606,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.05222816,
+        "original_dx0": {
+          "inside": 0.85726381,
+          "outside": 0.48217469,
+          "contrast": 0.37508913
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72170232,
+          "outside": 0.29438503,
+          "contrast": 0.42731729
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": 0,
+      "nuisance": "outside_parallel_11",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 341,
+      "outside_darkness_added_at_true_edge": 0.4779412,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.04621212,
+        "original_dx0": {
+          "inside": 0.85614973,
+          "outside": 0.47807487,
+          "contrast": 0.37807487
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.7236631,
+          "outside": 0.29937611,
+          "contrast": 0.42428699
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": 0,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 431,
+      "outside_darkness_added_at_true_edge": 0.5675134,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.05824421,
+        "original_dx0": {
+          "inside": 0.8614082,
+          "outside": 0.56751337,
+          "contrast": 0.29389483
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.7254902,
+          "outside": 0.37335116,
+          "contrast": 0.35213904
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": 0,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 431,
+      "outside_darkness_added_at_true_edge": 0.5668004,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.05962567,
+        "original_dx0": {
+          "inside": 0.85726381,
+          "outside": 0.5676025,
+          "contrast": 0.28966132
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72513369,
+          "outside": 0.3758467,
+          "contrast": 0.34928699
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": 0,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 431,
+      "outside_darkness_added_at_true_edge": 0.5671569,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.0526738,
+        "original_dx0": {
+          "inside": 0.85726381,
+          "outside": 0.56827094,
+          "contrast": 0.28899287
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72170232,
+          "outside": 0.38003565,
+          "contrast": 0.34166667
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": 0,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 431,
+      "outside_darkness_added_at_true_edge": 0.5659537,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.04861854,
+        "original_dx0": {
+          "inside": 0.85614973,
+          "outside": 0.56608734,
+          "contrast": 0.29006239
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.7236631,
+          "outside": 0.38498217,
+          "contrast": 0.33868093
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": 0,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 702,
+      "outside_darkness_added_at_true_edge": 0.6018271,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.05369875,
+        "original_dx0": {
+          "inside": 0.8614082,
+          "outside": 0.60182709,
+          "contrast": 0.25958111
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.7254902,
+          "outside": 0.41221034,
+          "contrast": 0.31327986
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": 0,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 702,
+      "outside_darkness_added_at_true_edge": 0.6004902,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.05222816,
+        "original_dx0": {
+          "inside": 0.85726381,
+          "outside": 0.60129234,
+          "contrast": 0.25597148
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72513369,
+          "outside": 0.41693405,
+          "contrast": 0.30819964
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": 0,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 702,
+      "outside_darkness_added_at_true_edge": 0.6010695,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.04180036,
+        "original_dx0": {
+          "inside": 0.85726381,
+          "outside": 0.6021836,
+          "contrast": 0.25508021
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.72170232,
+          "outside": 0.42482175,
+          "contrast": 0.29688057
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": 0,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 702,
+      "outside_darkness_added_at_true_edge": 0.6150624,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.04135473,
+        "original_dx0": {
+          "inside": 0.85614973,
+          "outside": 0.61519608,
+          "contrast": 0.24095365
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.7236631,
+          "outside": 0.44135472,
+          "contrast": 0.28230838
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": -8,
+      "nuisance": "outside_parallel_11",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 336,
+      "outside_darkness_added_at_true_edge": 0.4586453,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.00017825,
+        "original_dx0": {
+          "inside": 0.65864528,
+          "outside": 0.25726381,
+          "contrast": 0.40138146
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.86020499,
+          "outside": 0.45864528,
+          "contrast": 0.40155971
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": -8,
+      "nuisance": "outside_parallel_11",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 336,
+      "outside_darkness_added_at_true_edge": 0.4592246,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.00708556,
+        "original_dx0": {
+          "inside": 0.6583779,
+          "outside": 0.25601604,
+          "contrast": 0.40236185
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85628342,
+          "outside": 0.46100713,
+          "contrast": 0.39527629
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": -8,
+      "nuisance": "outside_parallel_11",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 336,
+      "outside_darkness_added_at_true_edge": 0.4610963,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.00998218,
+        "original_dx0": {
+          "inside": 0.66136364,
+          "outside": 0.25824421,
+          "contrast": 0.40311943
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.8565508,
+          "outside": 0.46341355,
+          "contrast": 0.39313725
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": -8,
+      "nuisance": "outside_parallel_11",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 336,
+      "outside_darkness_added_at_true_edge": 0.466533,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.0206328,
+        "original_dx0": {
+          "inside": 0.67673797,
+          "outside": 0.2692959,
+          "contrast": 0.40744207
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85365419,
+          "outside": 0.46684492,
+          "contrast": 0.38680927
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": -8,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 426,
+      "outside_darkness_added_at_true_edge": 0.5661319,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.01951872,
+        "original_dx0": {
+          "inside": 0.66100713,
+          "outside": 0.34741533,
+          "contrast": 0.3135918
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.86020499,
+          "outside": 0.56613191,
+          "contrast": 0.29407308
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": -8,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 426,
+      "outside_darkness_added_at_true_edge": 0.5655972,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.02370767,
+        "original_dx0": {
+          "inside": 0.65998217,
+          "outside": 0.34737077,
+          "contrast": 0.31261141
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85628342,
+          "outside": 0.56737968,
+          "contrast": 0.28890374
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": -8,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 426,
+      "outside_darkness_added_at_true_edge": 0.5645276,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.02357398,
+        "original_dx0": {
+          "inside": 0.66221034,
+          "outside": 0.34893048,
+          "contrast": 0.31327986
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.8565508,
+          "outside": 0.56684492,
+          "contrast": 0.28970588
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": -8,
+      "nuisance": "outside_cross_20_to_4",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 426,
+      "outside_darkness_added_at_true_edge": 0.5666667,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.0504902,
+        "original_dx0": {
+          "inside": 0.68101604,
+          "outside": 0.34385027,
+          "contrast": 0.33716578
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85365419,
+          "outside": 0.56697861,
+          "contrast": 0.28667558
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": -8,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "original",
+      "changed_original_synthetic_ink_pixels": 702,
+      "outside_darkness_added_at_true_edge": 0.5688503,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.35819964,
+        "original_dx0": {
+          "inside": 0.65864528,
+          "outside": 0.7254902,
+          "contrast": -0.06684492
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.86020499,
+          "outside": 0.56885027,
+          "contrast": 0.29135472
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": -8,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "jpeg85",
+      "changed_original_synthetic_ink_pixels": 702,
+      "outside_darkness_added_at_true_edge": 0.5684938,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.35164884,
+        "original_dx0": {
+          "inside": 0.65748663,
+          "outside": 0.72312834,
+          "contrast": -0.06564171
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85628342,
+          "outside": 0.57027629,
+          "contrast": 0.28600713
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": -8,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "jpeg70",
+      "changed_original_synthetic_ink_pixels": 702,
+      "outside_darkness_added_at_true_edge": 0.5704991,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.34233511,
+        "original_dx0": {
+          "inside": 0.66390374,
+          "outside": 0.72250446,
+          "contrast": -0.05860071
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.8565508,
+          "outside": 0.5728164,
+          "contrast": 0.2837344
+        }
+      }
+    },
+    {
+      "site": "sail5_right",
+      "true_dx": -8,
+      "nuisance": "outside_gray_boat_wedge",
+      "format": "down75_up",
+      "changed_original_synthetic_ink_pixels": 702,
+      "outside_darkness_added_at_true_edge": 0.5913547,
+      "correct": false,
+      "wrong_accepted": false,
+      "unresolved": true,
+      "measurement": {
+        "selected_dx": null,
+        "confident": false,
+        "best_margin": 0.3100713,
+        "original_dx0": {
+          "inside": 0.67722816,
+          "outside": 0.72531194,
+          "contrast": -0.04808378
+        },
+        "inward_candidate_dx-8": {
+          "inside": 0.85365419,
+          "outside": 0.59166667,
+          "contrast": 0.26198752
+        }
+      }
+    }
+  ],
+  "summary": {
+    "clean_known_edge_cases": 32,
+    "adversarial_cases": 96,
+    "correct_adversarial": 0,
+    "wrong_accepted_adversarial": 0,
+    "unresolved_adversarial": 96,
+    "stable_wrong_across_all_four_formats": [],
+    "stable_unresolved_across_all_four_formats": [
+      {
+        "site": "sail2_right",
+        "known_true_dx": 0,
+        "nuisance": "outside_parallel_11"
+      },
+      {
+        "site": "sail2_right",
+        "known_true_dx": 0,
+        "nuisance": "outside_cross_20_to_4"
+      },
+      {
+        "site": "sail2_right",
+        "known_true_dx": 0,
+        "nuisance": "outside_gray_boat_wedge"
+      },
+      {
+        "site": "sail2_right",
+        "known_true_dx": -8,
+        "nuisance": "outside_parallel_11"
+      },
+      {
+        "site": "sail2_right",
+        "known_true_dx": -8,
+        "nuisance": "outside_cross_20_to_4"
+      },
+      {
+        "site": "sail2_right",
+        "known_true_dx": -8,
+        "nuisance": "outside_gray_boat_wedge"
+      },
+      {
+        "site": "sail3_left",
+        "known_true_dx": 0,
+        "nuisance": "outside_parallel_11"
+      },
+      {
+        "site": "sail3_left",
+        "known_true_dx": 0,
+        "nuisance": "outside_cross_20_to_4"
+      },
+      {
+        "site": "sail3_left",
+        "known_true_dx": 0,
+        "nuisance": "outside_gray_boat_wedge"
+      },
+      {
+        "site": "sail3_left",
+        "known_true_dx": 8,
+        "nuisance": "outside_parallel_11"
+      },
+      {
+        "site": "sail3_left",
+        "known_true_dx": 8,
+        "nuisance": "outside_cross_20_to_4"
+      },
+      {
+        "site": "sail3_left",
+        "known_true_dx": 8,
+        "nuisance": "outside_gray_boat_wedge"
+      },
+      {
+        "site": "sail4_right",
+        "known_true_dx": 0,
+        "nuisance": "outside_parallel_11"
+      },
+      {
+        "site": "sail4_right",
+        "known_true_dx": 0,
+        "nuisance": "outside_cross_20_to_4"
+      },
+      {
+        "site": "sail4_right",
+        "known_true_dx": 0,
+        "nuisance": "outside_gray_boat_wedge"
+      },
+      {
+        "site": "sail4_right",
+        "known_true_dx": -8,
+        "nuisance": "outside_parallel_11"
+      },
+      {
+        "site": "sail4_right",
+        "known_true_dx": -8,
+        "nuisance": "outside_cross_20_to_4"
+      },
+      {
+        "site": "sail4_right",
+        "known_true_dx": -8,
+        "nuisance": "outside_gray_boat_wedge"
+      },
+      {
+        "site": "sail5_right",
+        "known_true_dx": 0,
+        "nuisance": "outside_parallel_11"
+      },
+      {
+        "site": "sail5_right",
+        "known_true_dx": 0,
+        "nuisance": "outside_cross_20_to_4"
+      },
+      {
+        "site": "sail5_right",
+        "known_true_dx": 0,
+        "nuisance": "outside_gray_boat_wedge"
+      },
+      {
+        "site": "sail5_right",
+        "known_true_dx": -8,
+        "nuisance": "outside_parallel_11"
+      },
+      {
+        "site": "sail5_right",
+        "known_true_dx": -8,
+        "nuisance": "outside_cross_20_to_4"
+      },
+      {
+        "site": "sail5_right",
+        "known_true_dx": -8,
+        "nuisance": "outside_gray_boat_wedge"
+      }
+    ],
+    "per_nuisance": {
+      "outside_parallel_11": {
+        "known_outer_scenes": 32,
+        "correct": 0,
+        "wrong_accepted": 0,
+        "unresolved": 32,
+        "outside_dark_increase_at_true_edge_at_least_005": 32,
+        "largest_outside_dark_increase": 0.481061
+      },
+      "outside_cross_20_to_4": {
+        "known_outer_scenes": 32,
+        "correct": 0,
+        "wrong_accepted": 0,
+        "unresolved": 32,
+        "outside_dark_increase_at_true_edge_at_least_005": 32,
+        "largest_outside_dark_increase": 0.577451
+      },
+      "outside_gray_boat_wedge": {
+        "known_outer_scenes": 32,
+        "correct": 0,
+        "wrong_accepted": 0,
+        "unresolved": 32,
+        "outside_dark_increase_at_true_edge_at_least_005": 32,
+        "largest_outside_dark_increase": 0.615062
+      }
+    }
+  },
+  "decision": "STAGE169_NEIGHBOR_NUISANCE_CAUSES_CLASSIFICATION_LOSS",
+  "interpretation_limit": "Only controlled synthetic strokes were used. False identification would demonstrate a nuisance confound in the Stage169 detector, not the actual original artist's intended edge. A no-false result cannot validate real-source positions because more complex hatching and overlapping boat artwork were not tested. No statistical p-values, author code, or wallet claims.",
+  "safety": "No key, mnemonic, BIP39, address, wallet, OCR or off-image research."
+}
