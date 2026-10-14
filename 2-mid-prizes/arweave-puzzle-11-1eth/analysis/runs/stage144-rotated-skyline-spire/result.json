@@ -1,0 +1,124 @@
+{
+  "experiment_id": "A11-EXP-144",
+  "hypothesis": "the pointed central vertical spire in the second mirrored/rotated montage is ordinary original skyline waterfront baseline, rotated into a vertical line and enhanced by bilateral reflection",
+  "observation": "User's second transformed picture shows a narrow central dark spire with stacked horizontal skyline building blocks on both sides",
+  "source_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "registered_source_region": {
+    "x": [
+      180,
+      1595
+    ],
+    "y": [
+      225,
+      292
+    ]
+  },
+  "fixed_feature_gates": {
+    "long_horizontal_open_kernel": 35,
+    "dark_threshold": 175,
+    "number_source_x_blocks": 12,
+    "max_y_drift": 3,
+    "required_source_coverage_blocks": 9,
+    "required_ablation_block_drop": 6
+  },
+  "controls": {
+    "pass": false,
+    "positive_passing_formats": 0,
+    "negative_passing_formats": 4,
+    "positive": {
+      "original": {
+        "best_source_horizon_y": 256,
+        "source_horizontal_support_blocks": 12,
+        "post_horizontal_rule_removal_blocks": 12,
+        "source_blocks_lost_by_ablation": 0,
+        "unmodified_source_rule_explains_vertical_spire": false
+      },
+      "jpeg85": {
+        "best_source_horizon_y": 256,
+        "source_horizontal_support_blocks": 12,
+        "post_horizontal_rule_removal_blocks": 12,
+        "source_blocks_lost_by_ablation": 0,
+        "unmodified_source_rule_explains_vertical_spire": false
+      },
+      "jpeg70": {
+        "best_source_horizon_y": 256,
+        "source_horizontal_support_blocks": 12,
+        "post_horizontal_rule_removal_blocks": 12,
+        "source_blocks_lost_by_ablation": 0,
+        "unmodified_source_rule_explains_vertical_spire": false
+      },
+      "down75_up": {
+        "best_source_horizon_y": 256,
+        "source_horizontal_support_blocks": 12,
+        "post_horizontal_rule_removal_blocks": 12,
+        "source_blocks_lost_by_ablation": 0,
+        "unmodified_source_rule_explains_vertical_spire": false
+      }
+    },
+    "negative": {
+      "original": {
+        "best_source_horizon_y": 228,
+        "source_horizontal_support_blocks": 0,
+        "post_horizontal_rule_removal_blocks": 0,
+        "source_blocks_lost_by_ablation": 0,
+        "unmodified_source_rule_explains_vertical_spire": false
+      },
+      "jpeg85": {
+        "best_source_horizon_y": 228,
+        "source_horizontal_support_blocks": 0,
+        "post_horizontal_rule_removal_blocks": 0,
+        "source_blocks_lost_by_ablation": 0,
+        "unmodified_source_rule_explains_vertical_spire": false
+      },
+      "jpeg70": {
+        "best_source_horizon_y": 228,
+        "source_horizontal_support_blocks": 0,
+        "post_horizontal_rule_removal_blocks": 0,
+        "source_blocks_lost_by_ablation": 0,
+        "unmodified_source_rule_explains_vertical_spire": false
+      },
+      "down75_up": {
+        "best_source_horizon_y": 228,
+        "source_horizontal_support_blocks": 0,
+        "post_horizontal_rule_removal_blocks": 0,
+        "source_blocks_lost_by_ablation": 0,
+        "unmodified_source_rule_explains_vertical_spire": false
+      }
+    }
+  },
+  "source_variants": {
+    "original": {
+      "best_source_horizon_y": 260,
+      "source_horizontal_support_blocks": 11,
+      "post_horizontal_rule_removal_blocks": 8,
+      "source_blocks_lost_by_ablation": 3,
+      "unmodified_source_rule_explains_vertical_spire": false
+    },
+    "jpeg85": {
+      "best_source_horizon_y": 258,
+      "source_horizontal_support_blocks": 12,
+      "post_horizontal_rule_removal_blocks": 9,
+      "source_blocks_lost_by_ablation": 3,
+      "unmodified_source_rule_explains_vertical_spire": false
+    },
+    "jpeg70": {
+      "best_source_horizon_y": 260,
+      "source_horizontal_support_blocks": 12,
+      "post_horizontal_rule_removal_blocks": 8,
+      "source_blocks_lost_by_ablation": 4,
+      "unmodified_source_rule_explains_vertical_spire": false
+    },
+    "down75_up": {
+      "best_source_horizon_y": 258,
+      "source_horizontal_support_blocks": 11,
+      "post_horizontal_rule_removal_blocks": 9,
+      "source_blocks_lost_by_ablation": 2,
+      "unmodified_source_rule_explains_vertical_spire": false
+    }
+  },
+  "same_source_y_under_lossy_formats": true,
+  "independent_new_spire_evidence": false,
+  "decision": "CONTROL_FAILURE",
+  "scope_note": "Representative reconstruction uses skyline crop y0..330, not asserted pixel-equal to user's unknown crop/flip settings. This test only explains a source horizontal line rotating into a vertical apparent spire; it cannot confirm or exclude every possible hidden symbol or artist intention.",
+  "safety": "No secret candidates, BIP39, private keys, wallet access, addresses or off-image research."
+}
