@@ -1,0 +1,511 @@
+{
+  "experiment_id": "A11-EXP-164",
+  "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "source_original": "Stage153 fixed 5 genuine small sail polygons",
+  "Stage112_boxes_reproduced": {
+    "original": true,
+    "jpeg85": true,
+    "jpeg70": true,
+    "down75_up": true
+  },
+  "Stage112_code_search": [
+    900,
+    345,
+    1585,
+    500
+  ],
+  "Stage112_thresholds": [
+    120,
+    150,
+    180
+  ],
+  "synthetic_controls": {
+    "pass": true,
+    "passed": 40,
+    "cases": 40,
+    "failures": []
+  },
+  "source_ink_sufficient_all_conditions": true,
+  "fixed_geometry": {
+    "sail1": {
+      "polygon": [
+        [
+          1042,
+          448
+        ],
+        [
+          1007,
+          546
+        ],
+        [
+          1077,
+          546
+        ]
+      ],
+      "original_stage112_crop": [
+        987,
+        345,
+        1095,
+        500
+      ],
+      "geometric_omission": {
+        "polygon_area": 2913,
+        "omitted_area": 2180,
+        "omitted_area_fraction": 0.7483693786474425
+      }
+    },
+    "sail2": {
+      "polygon": [
+        [
+          1148,
+          433
+        ],
+        [
+          1110,
+          532
+        ],
+        [
+          1186,
+          532
+        ]
+      ],
+      "original_stage112_crop": [
+        1095,
+        345,
+        1215,
+        500
+      ],
+      "geometric_omission": {
+        "polygon_area": 3220,
+        "omitted_area": 1809,
+        "omitted_area_fraction": 0.5618012422360248
+      }
+    },
+    "sail3": {
+      "polygon": [
+        [
+          1282,
+          411
+        ],
+        [
+          1238,
+          514
+        ],
+        [
+          1326,
+          514
+        ]
+      ],
+      "original_stage112_crop": [
+        1215,
+        345,
+        1327,
+        500
+      ],
+      "geometric_omission": {
+        "polygon_area": 3936,
+        "omitted_area": 993,
+        "omitted_area_fraction": 0.25228658536585363
+      }
+    },
+    "sail4": {
+      "polygon": [
+        [
+          1372,
+          397
+        ],
+        [
+          1330,
+          498
+        ],
+        [
+          1414,
+          498
+        ]
+      ],
+      "original_stage112_crop": [
+        1327,
+        345,
+        1431,
+        500
+      ],
+      "geometric_omission": {
+        "polygon_area": 3666,
+        "omitted_area": 0,
+        "omitted_area_fraction": 0.0
+      }
+    },
+    "sail5": {
+      "polygon": [
+        [
+          1490,
+          357
+        ],
+        [
+          1443,
+          463
+        ],
+        [
+          1537,
+          463
+        ]
+      ],
+      "original_stage112_crop": [
+        1431,
+        345,
+        1550,
+        500
+      ],
+      "geometric_omission": {
+        "polygon_area": 4356,
+        "omitted_area": 0,
+        "omitted_area_fraction": 0.0
+      }
+    }
+  },
+  "ink_omission_by_variant": {
+    "original": {
+      "120": {
+        "sail1": {
+          "dark_ink": 1692,
+          "outside_box_ink": 1182,
+          "fraction_lost": 0.698582
+        },
+        "sail2": {
+          "dark_ink": 1944,
+          "outside_box_ink": 983,
+          "fraction_lost": 0.505658
+        },
+        "sail3": {
+          "dark_ink": 2871,
+          "outside_box_ink": 651,
+          "fraction_lost": 0.22675
+        },
+        "sail4": {
+          "dark_ink": 2505,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        },
+        "sail5": {
+          "dark_ink": 2744,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        }
+      },
+      "150": {
+        "sail1": {
+          "dark_ink": 1859,
+          "outside_box_ink": 1304,
+          "fraction_lost": 0.701452
+        },
+        "sail2": {
+          "dark_ink": 2193,
+          "outside_box_ink": 1128,
+          "fraction_lost": 0.514364
+        },
+        "sail3": {
+          "dark_ink": 3043,
+          "outside_box_ink": 690,
+          "fraction_lost": 0.22675
+        },
+        "sail4": {
+          "dark_ink": 2732,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        },
+        "sail5": {
+          "dark_ink": 3015,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        }
+      },
+      "180": {
+        "sail1": {
+          "dark_ink": 2027,
+          "outside_box_ink": 1429,
+          "fraction_lost": 0.704983
+        },
+        "sail2": {
+          "dark_ink": 2414,
+          "outside_box_ink": 1256,
+          "fraction_lost": 0.520298
+        },
+        "sail3": {
+          "dark_ink": 3175,
+          "outside_box_ink": 731,
+          "fraction_lost": 0.230236
+        },
+        "sail4": {
+          "dark_ink": 2928,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        },
+        "sail5": {
+          "dark_ink": 3276,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        }
+      }
+    },
+    "jpeg85": {
+      "120": {
+        "sail1": {
+          "dark_ink": 1689,
+          "outside_box_ink": 1180,
+          "fraction_lost": 0.698638
+        },
+        "sail2": {
+          "dark_ink": 1941,
+          "outside_box_ink": 979,
+          "fraction_lost": 0.504379
+        },
+        "sail3": {
+          "dark_ink": 2876,
+          "outside_box_ink": 651,
+          "fraction_lost": 0.226356
+        },
+        "sail4": {
+          "dark_ink": 2502,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        },
+        "sail5": {
+          "dark_ink": 2740,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        }
+      },
+      "150": {
+        "sail1": {
+          "dark_ink": 1861,
+          "outside_box_ink": 1307,
+          "fraction_lost": 0.702311
+        },
+        "sail2": {
+          "dark_ink": 2195,
+          "outside_box_ink": 1127,
+          "fraction_lost": 0.51344
+        },
+        "sail3": {
+          "dark_ink": 3046,
+          "outside_box_ink": 692,
+          "fraction_lost": 0.227183
+        },
+        "sail4": {
+          "dark_ink": 2737,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        },
+        "sail5": {
+          "dark_ink": 3011,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        }
+      },
+      "180": {
+        "sail1": {
+          "dark_ink": 2021,
+          "outside_box_ink": 1427,
+          "fraction_lost": 0.706086
+        },
+        "sail2": {
+          "dark_ink": 2419,
+          "outside_box_ink": 1257,
+          "fraction_lost": 0.519636
+        },
+        "sail3": {
+          "dark_ink": 3171,
+          "outside_box_ink": 732,
+          "fraction_lost": 0.230842
+        },
+        "sail4": {
+          "dark_ink": 2928,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        },
+        "sail5": {
+          "dark_ink": 3263,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        }
+      }
+    },
+    "jpeg70": {
+      "120": {
+        "sail1": {
+          "dark_ink": 1692,
+          "outside_box_ink": 1181,
+          "fraction_lost": 0.697991
+        },
+        "sail2": {
+          "dark_ink": 1942,
+          "outside_box_ink": 979,
+          "fraction_lost": 0.504119
+        },
+        "sail3": {
+          "dark_ink": 2878,
+          "outside_box_ink": 649,
+          "fraction_lost": 0.225504
+        },
+        "sail4": {
+          "dark_ink": 2511,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        },
+        "sail5": {
+          "dark_ink": 2736,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        }
+      },
+      "150": {
+        "sail1": {
+          "dark_ink": 1865,
+          "outside_box_ink": 1305,
+          "fraction_lost": 0.699732
+        },
+        "sail2": {
+          "dark_ink": 2201,
+          "outside_box_ink": 1129,
+          "fraction_lost": 0.512949
+        },
+        "sail3": {
+          "dark_ink": 3048,
+          "outside_box_ink": 693,
+          "fraction_lost": 0.227362
+        },
+        "sail4": {
+          "dark_ink": 2728,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        },
+        "sail5": {
+          "dark_ink": 3012,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        }
+      },
+      "180": {
+        "sail1": {
+          "dark_ink": 2019,
+          "outside_box_ink": 1428,
+          "fraction_lost": 0.707281
+        },
+        "sail2": {
+          "dark_ink": 2418,
+          "outside_box_ink": 1258,
+          "fraction_lost": 0.520265
+        },
+        "sail3": {
+          "dark_ink": 3177,
+          "outside_box_ink": 735,
+          "fraction_lost": 0.23135
+        },
+        "sail4": {
+          "dark_ink": 2926,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        },
+        "sail5": {
+          "dark_ink": 3275,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        }
+      }
+    },
+    "down75_up": {
+      "120": {
+        "sail1": {
+          "dark_ink": 1666,
+          "outside_box_ink": 1163,
+          "fraction_lost": 0.698079
+        },
+        "sail2": {
+          "dark_ink": 1966,
+          "outside_box_ink": 987,
+          "fraction_lost": 0.502035
+        },
+        "sail3": {
+          "dark_ink": 2934,
+          "outside_box_ink": 654,
+          "fraction_lost": 0.222904
+        },
+        "sail4": {
+          "dark_ink": 2538,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        },
+        "sail5": {
+          "dark_ink": 2771,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        }
+      },
+      "150": {
+        "sail1": {
+          "dark_ink": 1918,
+          "outside_box_ink": 1348,
+          "fraction_lost": 0.702815
+        },
+        "sail2": {
+          "dark_ink": 2256,
+          "outside_box_ink": 1154,
+          "fraction_lost": 0.511525
+        },
+        "sail3": {
+          "dark_ink": 3117,
+          "outside_box_ink": 716,
+          "fraction_lost": 0.229708
+        },
+        "sail4": {
+          "dark_ink": 2809,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        },
+        "sail5": {
+          "dark_ink": 3092,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        }
+      },
+      "180": {
+        "sail1": {
+          "dark_ink": 2131,
+          "outside_box_ink": 1515,
+          "fraction_lost": 0.710934
+        },
+        "sail2": {
+          "dark_ink": 2486,
+          "outside_box_ink": 1302,
+          "fraction_lost": 0.523733
+        },
+        "sail3": {
+          "dark_ink": 3275,
+          "outside_box_ink": 756,
+          "fraction_lost": 0.23084
+        },
+        "sail4": {
+          "dark_ink": 3021,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        },
+        "sail5": {
+          "dark_ink": 3406,
+          "outside_box_ink": 0,
+          "fraction_lost": 0.0
+        }
+      }
+    }
+  },
+  "material_loss_stable_by_sail": {
+    "sail1": true,
+    "sail2": true,
+    "sail3": true,
+    "sail4": false,
+    "sail5": false
+  },
+  "materially_incomplete_true_sails": 3,
+  "decision": "STAGE112_UPPER_SAIL_CROPS_MATERIALLY_INCOMPLETE",
+  "scope_limit": "Stage112 detection of which five sail apexes is distinct from its measured widths in an upper-only y345..500 crop; this coverage audit does not determine corrected full-object widths or invalidate all Stage112 observations.",
+  "safety": "Canonical source and fixed polygons only; no key, BIP39, wallet, address or external research."
+}
