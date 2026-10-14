@@ -78,6 +78,19 @@
     "cases": 48,
     "failures": []
   },
+  "eligible_mask_pixels_in_crop_rings": {
+    "large_sailboat": {
+      "1": 0,
+      "2": 0,
+      "4": 97
+    },
+    "small_sails_full_band": {
+      "1": 0,
+      "2": 0,
+      "4": 128
+    }
+  },
+  "source_w2_informative": false,
   "corrected_vs_flat": {
     "large_sailboat": {
       "fixed_bbox": [
@@ -240,7 +253,7 @@
   },
   "source_shape_compatible": true,
   "exceptional_source_edge_occupancy": false,
-  "decision": "SOURCE_CROP_EDGE_COMPATIBLE_WITH_FILLED_GEOMETRY",
+  "decision": "MASKED_RECTANGLE_EDGE_NONINFORMATIVE_BY_CONSTRUCTION",
   "scope_limit": "The old crops and corrected masks describe different samples: their perimeter percentages cannot be compared as if they were object attributes. One source image in all formats. This is QA, not a cipher or author-intent claim.",
   "safety": "Image-source analysis only; no keys, wallets, mnemonics, addresses or external research."
 }
