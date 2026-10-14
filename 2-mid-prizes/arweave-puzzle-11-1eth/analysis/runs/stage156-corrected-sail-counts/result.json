@@ -1,0 +1,280 @@
+{
+  "experiment_id": "A11-EXP-156",
+  "sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "source_provenance": "Stage155 confirmed obsolete band; corrected masks from Stage153 five true polygons",
+  "legacy_stage15_replay_passed": 5,
+  "legacy_stage15_replay_total": 5,
+  "legacy_stage15_old_counts": [
+    [
+      110,
+      3,
+      4
+    ],
+    [
+      85,
+      5,
+      4
+    ],
+    [
+      77,
+      5,
+      4
+    ],
+    [
+      67,
+      7,
+      4
+    ],
+    [
+      57,
+      7,
+      4
+    ]
+  ],
+  "original_stage15_promoted_count": 0,
+  "synthetic_controls": {
+    "passed": 60,
+    "cases": 60,
+    "pass": true,
+    "failures": []
+  },
+  "original_bands": {
+    "thresholds": [
+      80,
+      110,
+      140,
+      170,
+      200
+    ],
+    "small": [
+      3,
+      200
+    ],
+    "medium": [
+      201,
+      2000
+    ],
+    "large": [
+      2001,
+      null
+    ]
+  },
+  "fixed_masks": {
+    "sites": {
+      "sail1": [
+        [
+          1042,
+          448
+        ],
+        [
+          1007,
+          546
+        ],
+        [
+          1077,
+          546
+        ]
+      ],
+      "sail2": [
+        [
+          1148,
+          433
+        ],
+        [
+          1110,
+          532
+        ],
+        [
+          1186,
+          532
+        ]
+      ],
+      "sail3": [
+        [
+          1282,
+          411
+        ],
+        [
+          1238,
+          514
+        ],
+        [
+          1326,
+          514
+        ]
+      ],
+      "sail4": [
+        [
+          1372,
+          397
+        ],
+        [
+          1330,
+          498
+        ],
+        [
+          1414,
+          498
+        ]
+      ],
+      "sail5": [
+        [
+          1490,
+          357
+        ],
+        [
+          1443,
+          463
+        ],
+        [
+          1537,
+          463
+        ]
+      ]
+    },
+    "erode_px": 5,
+    "total_area": 18091
+  },
+  "by_variant": {
+    "original": {
+      "source_counts": {
+        "80": [
+          38,
+          2,
+          3
+        ],
+        "110": [
+          19,
+          2,
+          3
+        ],
+        "140": [
+          12,
+          1,
+          4
+        ],
+        "170": [
+          7,
+          1,
+          4
+        ],
+        "200": [
+          1,
+          0,
+          5
+        ]
+      },
+      "exact_threshold_matches": {
+        "321": 0,
+        "123": 0
+      },
+      "promoted_any": false
+    },
+    "jpeg85": {
+      "source_counts": {
+        "80": [
+          41,
+          2,
+          3
+        ],
+        "110": [
+          15,
+          2,
+          3
+        ],
+        "140": [
+          11,
+          1,
+          4
+        ],
+        "170": [
+          8,
+          1,
+          4
+        ],
+        "200": [
+          1,
+          0,
+          5
+        ]
+      },
+      "exact_threshold_matches": {
+        "321": 0,
+        "123": 0
+      },
+      "promoted_any": false
+    },
+    "jpeg70": {
+      "source_counts": {
+        "80": [
+          36,
+          2,
+          3
+        ],
+        "110": [
+          22,
+          2,
+          3
+        ],
+        "140": [
+          11,
+          1,
+          4
+        ],
+        "170": [
+          6,
+          1,
+          4
+        ],
+        "200": [
+          1,
+          0,
+          5
+        ]
+      },
+      "exact_threshold_matches": {
+        "321": 0,
+        "123": 0
+      },
+      "promoted_any": false
+    },
+    "down75_up": {
+      "source_counts": {
+        "80": [
+          29,
+          2,
+          3
+        ],
+        "110": [
+          20,
+          2,
+          3
+        ],
+        "140": [
+          10,
+          1,
+          4
+        ],
+        "170": [
+          4,
+          0,
+          5
+        ],
+        "200": [
+          1,
+          0,
+          5
+        ]
+      },
+      "exact_threshold_matches": {
+        "321": 0,
+        "123": 0
+      },
+      "promoted_any": false
+    }
+  },
+  "all_formats_source_promoted": false,
+  "decision": "NO_STABLE_FULL_SAIL_COUNT_CORROBORATION",
+  "interpretation_limit": "Single corrected subset re-test after a known source defect. A numeric count match could be accidental; it would not establish an intentional code, and old Stage15 other regions remain unchanged.",
+  "safety": "Non-cryptographic only; no private key, mnemonic, candidate, wallet, or address computation."
+}
