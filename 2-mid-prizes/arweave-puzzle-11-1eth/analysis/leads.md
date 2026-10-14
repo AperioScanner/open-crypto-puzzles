@@ -110,3 +110,8 @@ Stage134 synthetic calibration repaired within same stage number, controls now p
 ## Stage135 robust LEFT/RIGHT hatch symmetry; Stage136 conditional-null follow-up
 
 Stage135 discovered a repeatable, highly significant (under its simple global null) orientation split throughout the corrected full sail. All four images show left NEG and right POS in BOTH top and bottom sectors. This is exactly what natural V-shaped sail hatching might produce. Stage136 tests incremental upper-vs-lower asymmetry AFTER conditioning on side, with an exact hypergeometric null, structured reversal positive and natural mirror negative. Even a strong Stage135 p-value does not establish an encoding.
+
+
+## Stage136 negative under natural V-shading null; Stage137 image-only reflection
+
+Stage136 matched Stage135's source exactly and its conditioned left/right null shows 0/4 significant top/bottom differences (p 0.27..1.0). Stage135's visual pattern is therefore consistent with normal left-negative/right-positive sail sketching, not a detected cipher. A distinct large-hull-to-lower-wake reflection check (Stage137) is justified by Stage132's confirmed omission of the **entire hull** from prior box-dependent work; same-format controls and shift null. No keys or external clues.
