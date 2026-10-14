@@ -342,3 +342,14 @@ Stage137 Actions #38492279979 completed successfully. Canonical SHA matched, pos
 - Conditional exact **descriptive** null: permute rooftop heights among existing building-width positions within each cluster; count frequency that both paired source gaps are generic stepped flared pedestals (base/head >=1.30). This is NOT a king or queen classifier and is post-hoc after seeing user-selected montage; do NOT treat its permutation frequency as familywise support for intent. Generate original mirrored image, roofline-only geometric paired contours and six fixed seeded null image pairs for adversarial visual review.
 - Critical chess specificity: a true king normally has an unambiguous cross finial, queen a multi-pointed crown; neither can be asserted from a manually traced pair of skyline-based negative voids without independent visible crown evidence in original.
 - No BIP39/key/secret/wallet operations or Twitter/off-image investigation. Script tools/stage143_mirrored_skyline_chess_shapes.py; results analysis/runs/stage143-mirrored-skyline-chess/.
+
+
+## 2026-10-13 — Stage143 user-supplied chess silhouette investigation completed
+
+Stage143 GitHub Action #38498657551 completed successfully. Canonical SHA verified, roof-line sources 12/12 buildings in all 4 source/lossy formats, synthetic stepped-pedestal versus flat-rectangle controls PASS. The reconstructed 90° source rotation and two mirror-facing copies visually reproduce the user's two white outlines (excluding their manual red tracing). The bilateral symmetry is ARTIFICIALLY FORCED by reflection, rather than two independently drawn symbols.
+
+Top void follows 7 right-city building roof heights (IDs 12–6); lower void follows 5 left-city building roof heights (IDs 5–1). Their mirrored roofline gap widths widen base/head by 2.716× and 8.05×. An exact within-cluster endpoint permutation null gives 17.14286% occurrence of merely GENERIC pairs of widening pedestal profiles using the fixed 1.30× ratio criterion. This is a POST-HOC illustrative null, not a calibrated chess-classification p-value or chance of author intent.
+
+Verdict MIRROR_GENERATES_GENERIC_PIECE_LIKE_NEGATIVE_SPACE. No unambiguously identifiable king cross finial or queen multi-pointed crown independently documented in the original canonical picture. Do NOT infer coded king/queen identities or force a connection with H/V 321 absent independent, source-visible distinguishing features. Investigation is archived pending the user's further rotations; do not initiate more speculative image transformations without a new observed difference.
+
+Source file tools/stage143_mirrored_skyline_chess_shapes.py; artifacts analysis/runs/stage143-mirrored-skyline-chess/ include canonical-rotated-mirror-pair.png, geometry-only-stepped-voids.png, six-randomized-skyline-mirror-controls.png. No secret or off-image operations.
