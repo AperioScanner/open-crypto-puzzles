@@ -1,0 +1,318 @@
+{
+  "experiment_id": "A11-EXP-150",
+  "hypothesis": "three of the four V-painted buildings have stable H-painted basal zones independent of moderate user-selected cropping, while the fourth is V throughout",
+  "motivation": "Stage149 classified 35/36 facade 3-tier regions across 4 formats and identified lower H at #3/#4/#7 vs lower V at #12, but did not perturb crop boxes",
+  "scope": "known V source buildings 3,4,7,12, their fixed Stage149 upper and lower zones; 3 x jitters \u00d7 3 y jitters \u00d7 4 re-encodings; same two-estimator Stage149 rule unchanged",
+  "sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "source_original_HV": "HHVVHHVHHHHV",
+  "predeclared_shifts": {
+    "x": [
+      -4,
+      0,
+      4
+    ],
+    "y": [
+      -3,
+      0,
+      3
+    ]
+  },
+  "thresholds": {
+    "min_V_upper_cases": 31,
+    "min_lower_expected_cases": 31,
+    "max_false_negative_H_cases": 5,
+    "cases_per_zone_per_building": 36
+  },
+  "controls": {
+    "pass": true,
+    "cases": 864,
+    "case_definition": "three synthetic fixture types \u00d7 four V facade sites \u00d7 4 source formats \u00d7 3x3 jitters \u00d7 two facade zones",
+    "regime_checks_passed": 3,
+    "regime_checks_total": 3,
+    "details": {
+      "upper_V_lower_H": {
+        "pass": true,
+        "by_building_pass": {
+          "3": true,
+          "4": true,
+          "7": true,
+          "12": true
+        },
+        "by_building": {
+          "3": {
+            "upper_counts": {
+              "V": 36,
+              "H": 0,
+              "null": 0
+            },
+            "lower_counts": {
+              "V": 0,
+              "H": 36,
+              "null": 0
+            },
+            "upper_v_fraction": 1.0,
+            "lower_h_fraction": 1.0,
+            "lower_v_fraction": 0.0
+          },
+          "4": {
+            "upper_counts": {
+              "V": 36,
+              "H": 0,
+              "null": 0
+            },
+            "lower_counts": {
+              "V": 0,
+              "H": 36,
+              "null": 0
+            },
+            "upper_v_fraction": 1.0,
+            "lower_h_fraction": 1.0,
+            "lower_v_fraction": 0.0
+          },
+          "7": {
+            "upper_counts": {
+              "V": 36,
+              "H": 0,
+              "null": 0
+            },
+            "lower_counts": {
+              "V": 0,
+              "H": 36,
+              "null": 0
+            },
+            "upper_v_fraction": 1.0,
+            "lower_h_fraction": 1.0,
+            "lower_v_fraction": 0.0
+          },
+          "12": {
+            "upper_counts": {
+              "V": 36,
+              "H": 0,
+              "null": 0
+            },
+            "lower_counts": {
+              "V": 0,
+              "H": 36,
+              "null": 0
+            },
+            "upper_v_fraction": 1.0,
+            "lower_h_fraction": 1.0,
+            "lower_v_fraction": 0.0
+          }
+        }
+      },
+      "all_V": {
+        "pass": true,
+        "by_building_pass": {
+          "3": true,
+          "4": true,
+          "7": true,
+          "12": true
+        },
+        "by_building": {
+          "3": {
+            "upper_counts": {
+              "V": 36,
+              "H": 0,
+              "null": 0
+            },
+            "lower_counts": {
+              "V": 36,
+              "H": 0,
+              "null": 0
+            },
+            "upper_v_fraction": 1.0,
+            "lower_h_fraction": 0.0,
+            "lower_v_fraction": 1.0
+          },
+          "4": {
+            "upper_counts": {
+              "V": 36,
+              "H": 0,
+              "null": 0
+            },
+            "lower_counts": {
+              "V": 36,
+              "H": 0,
+              "null": 0
+            },
+            "upper_v_fraction": 1.0,
+            "lower_h_fraction": 0.0,
+            "lower_v_fraction": 1.0
+          },
+          "7": {
+            "upper_counts": {
+              "V": 36,
+              "H": 0,
+              "null": 0
+            },
+            "lower_counts": {
+              "V": 36,
+              "H": 0,
+              "null": 0
+            },
+            "upper_v_fraction": 1.0,
+            "lower_h_fraction": 0.0,
+            "lower_v_fraction": 1.0
+          },
+          "12": {
+            "upper_counts": {
+              "V": 36,
+              "H": 0,
+              "null": 0
+            },
+            "lower_counts": {
+              "V": 36,
+              "H": 0,
+              "null": 0
+            },
+            "upper_v_fraction": 1.0,
+            "lower_h_fraction": 0.0,
+            "lower_v_fraction": 1.0
+          }
+        }
+      },
+      "V_with_outside_H": {
+        "pass": true,
+        "by_building_pass": {
+          "3": true,
+          "4": true,
+          "7": true,
+          "12": true
+        },
+        "by_building": {
+          "3": {
+            "upper_counts": {
+              "V": 36,
+              "H": 0,
+              "null": 0
+            },
+            "lower_counts": {
+              "V": 36,
+              "H": 0,
+              "null": 0
+            },
+            "upper_v_fraction": 1.0,
+            "lower_h_fraction": 0.0,
+            "lower_v_fraction": 1.0
+          },
+          "4": {
+            "upper_counts": {
+              "V": 36,
+              "H": 0,
+              "null": 0
+            },
+            "lower_counts": {
+              "V": 36,
+              "H": 0,
+              "null": 0
+            },
+            "upper_v_fraction": 1.0,
+            "lower_h_fraction": 0.0,
+            "lower_v_fraction": 1.0
+          },
+          "7": {
+            "upper_counts": {
+              "V": 36,
+              "H": 0,
+              "null": 0
+            },
+            "lower_counts": {
+              "V": 36,
+              "H": 0,
+              "null": 0
+            },
+            "upper_v_fraction": 1.0,
+            "lower_h_fraction": 0.0,
+            "lower_v_fraction": 1.0
+          },
+          "12": {
+            "upper_counts": {
+              "V": 36,
+              "H": 0,
+              "null": 0
+            },
+            "lower_counts": {
+              "V": 36,
+              "H": 0,
+              "null": 0
+            },
+            "upper_v_fraction": 1.0,
+            "lower_h_fraction": 0.0,
+            "lower_v_fraction": 1.0
+          }
+        }
+      }
+    }
+  },
+  "stage149_original_provenance_reproduced": true,
+  "source_by_building": {
+    "3": {
+      "upper_counts": {
+        "V": 36,
+        "H": 0,
+        "null": 0
+      },
+      "lower_counts": {
+        "V": 0,
+        "H": 36,
+        "null": 0
+      },
+      "upper_v_fraction": 1.0,
+      "lower_h_fraction": 1.0,
+      "lower_v_fraction": 0.0
+    },
+    "4": {
+      "upper_counts": {
+        "V": 36,
+        "H": 0,
+        "null": 0
+      },
+      "lower_counts": {
+        "V": 0,
+        "H": 24,
+        "null": 12
+      },
+      "upper_v_fraction": 1.0,
+      "lower_h_fraction": 0.666667,
+      "lower_v_fraction": 0.0
+    },
+    "7": {
+      "upper_counts": {
+        "V": 36,
+        "H": 0,
+        "null": 0
+      },
+      "lower_counts": {
+        "V": 0,
+        "H": 24,
+        "null": 12
+      },
+      "upper_v_fraction": 1.0,
+      "lower_h_fraction": 0.666667,
+      "lower_v_fraction": 0.0
+    },
+    "12": {
+      "upper_counts": {
+        "V": 36,
+        "H": 0,
+        "null": 0
+      },
+      "lower_counts": {
+        "V": 24,
+        "H": 0,
+        "null": 12
+      },
+      "upper_v_fraction": 1.0,
+      "lower_h_fraction": 0.0,
+      "lower_v_fraction": 0.666667
+    }
+  },
+  "all_four_upper_V_robust": true,
+  "three_lower_H_robust": false,
+  "building_12_lower_V_robust": false,
+  "full_observed_pattern_replicated": false,
+  "decision": "V_BUILDING_BASAL_HATCH_CHANGE_NOT_REPLICATED_UNDER_JITTER",
+  "interpretation_limit": "This is a post-Stage149 crop-perturbation stability audit of the SAME pixels, not independent evidence of encoded bits. Basal H hatching may be conventional artist shading; original H0 V1 321 remains interpretationally unproven.",
+  "safety_guard": "No private key, BIP39, mnemonic, wallet, address, transactions or off-image/social research."
+}
