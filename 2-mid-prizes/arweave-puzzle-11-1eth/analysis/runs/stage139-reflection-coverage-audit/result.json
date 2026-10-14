@@ -1,0 +1,697 @@
+{
+  "experiment_id": "A11-EXP-139",
+  "hypothesis": "Stage138 may have relied on blank building reflection apertures. Uniformly gate all 12 using the SAME pre-existing mean-darkness>=2.0 standard to avoid noise-defined orientation effects.",
+  "basis": "Stage138 observed building #6 mean darkness 0.40 and #11 0.831; the original Stage138 coverage gate was only applied to newly restored buildings 1 and 2.",
+  "scope": "all 12 unchanged building positions, same y330..360 reflection band, same Stage35/138 Sobel/Fourier; uniform source coverage screen across four image variants",
+  "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "preregistered_thresholds": {
+    "minimum_mean_darkness": 2.0,
+    "one_sided_exact_p_max_per_method": 0.025,
+    "min_valid_buildings": 8,
+    "min_V": 3,
+    "min_H": 4
+  },
+  "controls": {
+    "pass": true,
+    "source_reproduced": true,
+    "positive_pass": true,
+    "negative_pass": true,
+    "cases": 8,
+    "synthetic_missing_ids": [
+      6,
+      11
+    ],
+    "positive": {
+      "original": {
+        "retained_building_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          12
+        ],
+        "excluded_low_ink_ids": [
+          6,
+          11
+        ],
+        "retained_count": 10,
+        "retained_V_count": 4,
+        "retained_H_count": 6,
+        "adequate": true,
+        "per_method": {
+          "sobel": {
+            "valid": true,
+            "V_minus_H": 1.937907139,
+            "one_sided_exact_p": 0.0047619,
+            "exact_assignments": 210,
+            "V_mean": 0.977864046,
+            "H_mean": -0.960043093
+          },
+          "fourier": {
+            "valid": true,
+            "V_minus_H": 1.718565867,
+            "one_sided_exact_p": 0.0047619,
+            "exact_assignments": 210,
+            "V_mean": 0.71856843,
+            "H_mean": -0.999997437
+          }
+        },
+        "strong_orientation_coupling": true,
+        "darkness_by_building": {
+          "1": 111.92,
+          "2": 111.776471,
+          "3": 100.278431,
+          "4": 103.501667,
+          "5": 112.733333,
+          "6": 0.0,
+          "7": 99.886719,
+          "8": 113.086957,
+          "9": 111.92,
+          "10": 112.634146,
+          "11": 0.0,
+          "12": 96.234946
+        }
+      },
+      "jpeg85": {
+        "retained_building_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          12
+        ],
+        "excluded_low_ink_ids": [
+          6,
+          11
+        ],
+        "retained_count": 10,
+        "retained_V_count": 4,
+        "retained_H_count": 6,
+        "adequate": true,
+        "per_method": {
+          "sobel": {
+            "valid": true,
+            "V_minus_H": 1.938503863,
+            "one_sided_exact_p": 0.0047619,
+            "exact_assignments": 210,
+            "V_mean": 0.97766852,
+            "H_mean": -0.960835342
+          },
+          "fourier": {
+            "valid": true,
+            "V_minus_H": 1.449225566,
+            "one_sided_exact_p": 0.0047619,
+            "exact_assignments": 210,
+            "V_mean": 0.449228182,
+            "H_mean": -0.999997384
+          }
+        },
+        "strong_orientation_coupling": true,
+        "darkness_by_building": {
+          "1": 111.785238,
+          "2": 111.615196,
+          "3": 100.254902,
+          "4": 103.424762,
+          "5": 112.561905,
+          "6": 0.0,
+          "7": 99.923438,
+          "8": 112.936594,
+          "9": 111.79381,
+          "10": 112.481707,
+          "11": 0.0,
+          "12": 96.369355
+        }
+      },
+      "jpeg70": {
+        "retained_building_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          12
+        ],
+        "excluded_low_ink_ids": [
+          6,
+          11
+        ],
+        "retained_count": 10,
+        "retained_V_count": 4,
+        "retained_H_count": 6,
+        "adequate": true,
+        "per_method": {
+          "sobel": {
+            "valid": true,
+            "V_minus_H": 1.93929566,
+            "one_sided_exact_p": 0.0047619,
+            "exact_assignments": 210,
+            "V_mean": 0.976908439,
+            "H_mean": -0.962387221
+          },
+          "fourier": {
+            "valid": true,
+            "V_minus_H": 1.163271766,
+            "one_sided_exact_p": 0.0047619,
+            "exact_assignments": 210,
+            "V_mean": 0.16327444,
+            "H_mean": -0.999997327
+          }
+        },
+        "strong_orientation_coupling": true,
+        "darkness_by_building": {
+          "1": 112.01,
+          "2": 111.859804,
+          "3": 100.168627,
+          "4": 103.894286,
+          "5": 112.85754,
+          "6": 0.0,
+          "7": 100.189323,
+          "8": 113.181884,
+          "9": 112.142381,
+          "10": 112.797154,
+          "11": 0.0,
+          "12": 96.915054
+        }
+      },
+      "down75_up": {
+        "retained_building_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          12
+        ],
+        "excluded_low_ink_ids": [
+          6,
+          11
+        ],
+        "retained_count": 10,
+        "retained_V_count": 4,
+        "retained_H_count": 6,
+        "adequate": true,
+        "per_method": {
+          "sobel": {
+            "valid": true,
+            "V_minus_H": 1.936350077,
+            "one_sided_exact_p": 0.0047619,
+            "exact_assignments": 210,
+            "V_mean": 0.974479545,
+            "H_mean": -0.961870533
+          },
+          "fourier": {
+            "valid": true,
+            "V_minus_H": 1.47587474,
+            "one_sided_exact_p": 0.0047619,
+            "exact_assignments": 210,
+            "V_mean": 0.475877739,
+            "H_mean": -0.999997001
+          }
+        },
+        "strong_orientation_coupling": true,
+        "darkness_by_building": {
+          "1": 109.070952,
+          "2": 108.952941,
+          "3": 97.273529,
+          "4": 101.705476,
+          "5": 109.792063,
+          "6": 0.0,
+          "7": 96.86849,
+          "8": 110.219203,
+          "9": 109.092381,
+          "10": 109.752846,
+          "11": 0.0,
+          "12": 94.804839
+        }
+      }
+    },
+    "negative": {
+      "original": {
+        "retained_building_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          12
+        ],
+        "excluded_low_ink_ids": [
+          6,
+          11
+        ],
+        "retained_count": 10,
+        "retained_V_count": 4,
+        "retained_H_count": 6,
+        "adequate": true,
+        "per_method": {
+          "sobel": {
+            "valid": true,
+            "V_minus_H": -1.942802507,
+            "one_sided_exact_p": 1.0,
+            "exact_assignments": 210,
+            "V_mean": -0.964938461,
+            "H_mean": 0.977864046
+          },
+          "fourier": {
+            "valid": true,
+            "V_minus_H": -1.999994731,
+            "one_sided_exact_p": 1.0,
+            "exact_assignments": 210,
+            "V_mean": -0.999997794,
+            "H_mean": 0.999996936
+          }
+        },
+        "strong_orientation_coupling": false,
+        "darkness_by_building": {
+          "1": 97.413333,
+          "2": 100.278431,
+          "3": 111.776471,
+          "4": 114.36,
+          "5": 101.472222,
+          "6": 0.0,
+          "7": 114.13125,
+          "8": 101.913406,
+          "9": 97.413333,
+          "10": 93.552439,
+          "11": 0.0,
+          "12": 111.290323
+        }
+      },
+      "jpeg85": {
+        "retained_building_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          12
+        ],
+        "excluded_low_ink_ids": [
+          6,
+          11
+        ],
+        "retained_count": 10,
+        "retained_V_count": 4,
+        "retained_H_count": 6,
+        "adequate": true,
+        "per_method": {
+          "sobel": {
+            "valid": true,
+            "V_minus_H": -1.943250565,
+            "one_sided_exact_p": 1.0,
+            "exact_assignments": 210,
+            "V_mean": -0.965771297,
+            "H_mean": 0.977479268
+          },
+          "fourier": {
+            "valid": true,
+            "V_minus_H": -1.999988748,
+            "one_sided_exact_p": 1.0,
+            "exact_assignments": 210,
+            "V_mean": -0.999997754,
+            "H_mean": 0.999990994
+          }
+        },
+        "strong_orientation_coupling": false,
+        "darkness_by_building": {
+          "1": 97.445714,
+          "2": 100.203922,
+          "3": 111.619608,
+          "4": 114.161667,
+          "5": 101.448413,
+          "6": 0.0,
+          "7": 113.954948,
+          "8": 102.0,
+          "9": 97.447619,
+          "10": 93.530488,
+          "11": 0.0,
+          "12": 111.148387
+        }
+      },
+      "jpeg70": {
+        "retained_building_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          12
+        ],
+        "excluded_low_ink_ids": [
+          6,
+          11
+        ],
+        "retained_count": 10,
+        "retained_V_count": 4,
+        "retained_H_count": 6,
+        "adequate": true,
+        "per_method": {
+          "sobel": {
+            "valid": true,
+            "V_minus_H": -1.944460931,
+            "one_sided_exact_p": 1.0,
+            "exact_assignments": 210,
+            "V_mean": -0.967092692,
+            "H_mean": 0.977368239
+          },
+          "fourier": {
+            "valid": true,
+            "V_minus_H": -1.999957551,
+            "one_sided_exact_p": 1.0,
+            "exact_assignments": 210,
+            "V_mean": -0.999997453,
+            "H_mean": 0.999960098
+          }
+        },
+        "strong_orientation_coupling": false,
+        "darkness_by_building": {
+          "1": 98.394762,
+          "2": 100.658824,
+          "3": 111.922059,
+          "4": 114.417619,
+          "5": 101.361111,
+          "6": 0.0,
+          "7": 114.209896,
+          "8": 102.524275,
+          "9": 97.664762,
+          "10": 93.45,
+          "11": 0.0,
+          "12": 111.401613
+        }
+      },
+      "down75_up": {
+        "retained_building_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          12
+        ],
+        "excluded_low_ink_ids": [
+          6,
+          11
+        ],
+        "retained_count": 10,
+        "retained_V_count": 4,
+        "retained_H_count": 6,
+        "adequate": true,
+        "per_method": {
+          "sobel": {
+            "valid": true,
+            "V_minus_H": -1.940952841,
+            "one_sided_exact_p": 1.0,
+            "exact_assignments": 210,
+            "V_mean": -0.966489529,
+            "H_mean": 0.974463312
+          },
+          "fourier": {
+            "valid": true,
+            "V_minus_H": -1.999987629,
+            "one_sided_exact_p": 1.0,
+            "exact_assignments": 210,
+            "V_mean": -0.999997418,
+            "H_mean": 0.999990211
+          }
+        },
+        "strong_orientation_coupling": false,
+        "darkness_by_building": {
+          "1": 95.779524,
+          "2": 98.596569,
+          "3": 108.896078,
+          "4": 111.342857,
+          "5": 98.420635,
+          "6": 0.0,
+          "7": 111.101042,
+          "8": 100.352536,
+          "9": 94.436667,
+          "10": 90.743496,
+          "11": 0.0,
+          "12": 108.512366
+        }
+      }
+    }
+  },
+  "source_coverage_adequate": true,
+  "excluded_source_sets_consistent": true,
+  "by_variant": {
+    "original": {
+      "retained_building_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "excluded_low_ink_ids": [
+        6,
+        11
+      ],
+      "retained_count": 10,
+      "retained_V_count": 4,
+      "retained_H_count": 6,
+      "adequate": true,
+      "per_method": {
+        "sobel": {
+          "valid": true,
+          "V_minus_H": 0.106074337,
+          "one_sided_exact_p": 0.2,
+          "exact_assignments": 210,
+          "V_mean": -0.466535707,
+          "H_mean": -0.572610045
+        },
+        "fourier": {
+          "valid": true,
+          "V_minus_H": 0.110551326,
+          "one_sided_exact_p": 0.33333333,
+          "exact_assignments": 210,
+          "V_mean": 0.198531533,
+          "H_mean": 0.087980207
+        }
+      },
+      "strong_orientation_coupling": false,
+      "darkness_by_building": {
+        "1": 63.31,
+        "2": 38.126471,
+        "3": 19.498529,
+        "4": 41.295476,
+        "5": 13.286111,
+        "6": 0.4,
+        "7": 20.078906,
+        "8": 15.860145,
+        "9": 2.413333,
+        "10": 15.414634,
+        "11": 0.831061,
+        "12": 4.641398
+      }
+    },
+    "jpeg85": {
+      "retained_building_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "excluded_low_ink_ids": [
+        6,
+        11
+      ],
+      "retained_count": 10,
+      "retained_V_count": 4,
+      "retained_H_count": 6,
+      "adequate": true,
+      "per_method": {
+        "sobel": {
+          "valid": true,
+          "V_minus_H": 0.105169923,
+          "one_sided_exact_p": 0.2,
+          "exact_assignments": 210,
+          "V_mean": -0.465970954,
+          "H_mean": -0.571140877
+        },
+        "fourier": {
+          "valid": true,
+          "V_minus_H": 0.113188736,
+          "one_sided_exact_p": 0.32857143,
+          "exact_assignments": 210,
+          "V_mean": 0.196546188,
+          "H_mean": 0.083357451
+        }
+      },
+      "strong_orientation_coupling": false,
+      "darkness_by_building": {
+        "1": 63.903333,
+        "2": 38.573039,
+        "3": 20.020098,
+        "4": 42.319762,
+        "5": 14.101984,
+        "6": 0.692105,
+        "7": 20.698958,
+        "8": 16.357246,
+        "9": 2.580952,
+        "10": 16.241463,
+        "11": 0.889394,
+        "12": 4.762366
+      }
+    },
+    "jpeg70": {
+      "retained_building_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "excluded_low_ink_ids": [
+        6,
+        11
+      ],
+      "retained_count": 10,
+      "retained_V_count": 4,
+      "retained_H_count": 6,
+      "adequate": true,
+      "per_method": {
+        "sobel": {
+          "valid": true,
+          "V_minus_H": 0.104940422,
+          "one_sided_exact_p": 0.2,
+          "exact_assignments": 210,
+          "V_mean": -0.4680552,
+          "H_mean": -0.572995622
+        },
+        "fourier": {
+          "valid": true,
+          "V_minus_H": 0.11424724,
+          "one_sided_exact_p": 0.33333333,
+          "exact_assignments": 210,
+          "V_mean": 0.205646548,
+          "H_mean": 0.091399308
+        }
+      },
+      "strong_orientation_coupling": false,
+      "darkness_by_building": {
+        "1": 64.084286,
+        "2": 38.935294,
+        "3": 20.478431,
+        "4": 43.106429,
+        "5": 14.740476,
+        "6": 0.689035,
+        "7": 21.157292,
+        "8": 16.763768,
+        "9": 2.710476,
+        "10": 16.856911,
+        "11": 0.914394,
+        "12": 4.796237
+      }
+    },
+    "down75_up": {
+      "retained_building_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "excluded_low_ink_ids": [
+        6,
+        11
+      ],
+      "retained_count": 10,
+      "retained_V_count": 4,
+      "retained_H_count": 6,
+      "adequate": true,
+      "per_method": {
+        "sobel": {
+          "valid": true,
+          "V_minus_H": 0.092636422,
+          "one_sided_exact_p": 0.20952381,
+          "exact_assignments": 210,
+          "V_mean": -0.453209408,
+          "H_mean": -0.54584583
+        },
+        "fourier": {
+          "valid": true,
+          "V_minus_H": 0.093215871,
+          "one_sided_exact_p": 0.35238095,
+          "exact_assignments": 210,
+          "V_mean": 0.300476563,
+          "H_mean": 0.207260692
+        }
+      },
+      "strong_orientation_coupling": false,
+      "darkness_by_building": {
+        "1": 64.165714,
+        "2": 39.435784,
+        "3": 20.868627,
+        "4": 43.899286,
+        "5": 14.959127,
+        "6": 0.553509,
+        "7": 21.182031,
+        "8": 17.119203,
+        "9": 2.789524,
+        "10": 16.865854,
+        "11": 0.906061,
+        "12": 4.85
+      }
+    }
+  },
+  "all_replicated_significance": false,
+  "decision": "NO_COVERAGE_GATED_REFLECTION_RELATION",
+  "limits": "Coverage gating was motivated by Stage138 diagnostics, not a pre-Stage138 independent hypothesis. Multiple prior tests mean any apparent positive must be independently validated, not treated as a nominal p-value finding. Rejection is only for this fixed source-adequate reflection association.",
+  "safety_guard": "No private keys, wallets, mnemonic strings, addresses, candidate generation or social-site research."
+}
