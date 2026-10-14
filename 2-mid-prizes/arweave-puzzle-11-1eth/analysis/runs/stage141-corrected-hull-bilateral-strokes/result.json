@@ -1,0 +1,307 @@
+{
+  "experiment_id": "A11-EXP-141",
+  "hypothesis": "the actual complete hull's interior pencil stroke fingerprint is deliberately mirrored across the central keel rather than independently drawn freehand",
+  "evidence": "Stage132 validated that the old large_sailboat bbox misses 100% of the hull; Stage40's earlier boat symmetry audit used the defective ROI",
+  "scope": "unchanged Stage132 hull polygon, fixed x-axis 275; two nonoverlapping interior y bands; lowpass grayscale and highpass pencil strokes; four source variants",
+  "source_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "source_geometry": {
+    "hull_polygon": [
+      [
+        25,
+        783
+      ],
+      [
+        525,
+        778
+      ],
+      [
+        480,
+        931
+      ],
+      [
+        75,
+        939
+      ]
+    ],
+    "mirror_x": 275,
+    "x_offsets": [
+      12,
+      180
+    ],
+    "y_bands": [
+      [
+        "upper_hull",
+        803,
+        855
+      ],
+      [
+        "lower_hull",
+        859,
+        921
+      ]
+    ]
+  },
+  "thresholds": {
+    "min_mask_pixels": 550,
+    "min_ink_density": 0.075,
+    "min_smooth_ink_correlation": 0.72,
+    "min_detail_correlation": 0.56
+  },
+  "controls": {
+    "pass": true,
+    "positive_full_format_passes": 4,
+    "negative_full_format_passes": 4,
+    "cases": 16,
+    "positive": {
+      "original": {
+        "upper_hull": {
+          "paired_mask_pixels": 8736,
+          "left_ink_density": 0.34741,
+          "right_ink_density": 0.34741,
+          "coverage_valid": true,
+          "smoothed_ink_corr": 1.0,
+          "stroke_detail_corr": 1.0,
+          "copied_stroke_match": true
+        },
+        "lower_hull": {
+          "paired_mask_pixels": 10416,
+          "left_ink_density": 0.30597,
+          "right_ink_density": 0.30597,
+          "coverage_valid": true,
+          "smoothed_ink_corr": 1.0,
+          "stroke_detail_corr": 1.0,
+          "copied_stroke_match": true
+        }
+      },
+      "jpeg85": {
+        "upper_hull": {
+          "paired_mask_pixels": 8736,
+          "left_ink_density": 0.34764,
+          "right_ink_density": 0.34707,
+          "coverage_valid": true,
+          "smoothed_ink_corr": 0.999963,
+          "stroke_detail_corr": 0.99775,
+          "copied_stroke_match": true
+        },
+        "lower_hull": {
+          "paired_mask_pixels": 10416,
+          "left_ink_density": 0.30607,
+          "right_ink_density": 0.30693,
+          "coverage_valid": true,
+          "smoothed_ink_corr": 0.999958,
+          "stroke_detail_corr": 0.997763,
+          "copied_stroke_match": true
+        }
+      },
+      "jpeg70": {
+        "upper_hull": {
+          "paired_mask_pixels": 8736,
+          "left_ink_density": 0.3497,
+          "right_ink_density": 0.35027,
+          "coverage_valid": true,
+          "smoothed_ink_corr": 0.999859,
+          "stroke_detail_corr": 0.991863,
+          "copied_stroke_match": true
+        },
+        "lower_hull": {
+          "paired_mask_pixels": 10416,
+          "left_ink_density": 0.30914,
+          "right_ink_density": 0.30626,
+          "coverage_valid": true,
+          "smoothed_ink_corr": 0.999854,
+          "stroke_detail_corr": 0.992313,
+          "copied_stroke_match": true
+        }
+      },
+      "down75_up": {
+        "upper_hull": {
+          "paired_mask_pixels": 8736,
+          "left_ink_density": 0.38141,
+          "right_ink_density": 0.38072,
+          "coverage_valid": true,
+          "smoothed_ink_corr": 0.999942,
+          "stroke_detail_corr": 0.997122,
+          "copied_stroke_match": true
+        },
+        "lower_hull": {
+          "paired_mask_pixels": 10416,
+          "left_ink_density": 0.33804,
+          "right_ink_density": 0.33871,
+          "coverage_valid": true,
+          "smoothed_ink_corr": 0.999956,
+          "stroke_detail_corr": 0.996856,
+          "copied_stroke_match": true
+        }
+      }
+    },
+    "negative": {
+      "original": {
+        "upper_hull": {
+          "paired_mask_pixels": 8736,
+          "left_ink_density": 0.34741,
+          "right_ink_density": 0.34558,
+          "coverage_valid": true,
+          "smoothed_ink_corr": 0.141041,
+          "stroke_detail_corr": 0.014829,
+          "copied_stroke_match": false
+        },
+        "lower_hull": {
+          "paired_mask_pixels": 10416,
+          "left_ink_density": 0.30597,
+          "right_ink_density": 0.29608,
+          "coverage_valid": true,
+          "smoothed_ink_corr": 0.009956,
+          "stroke_detail_corr": 0.00393,
+          "copied_stroke_match": false
+        }
+      },
+      "jpeg85": {
+        "upper_hull": {
+          "paired_mask_pixels": 8736,
+          "left_ink_density": 0.34764,
+          "right_ink_density": 0.34627,
+          "coverage_valid": true,
+          "smoothed_ink_corr": 0.141982,
+          "stroke_detail_corr": 0.014273,
+          "copied_stroke_match": false
+        },
+        "lower_hull": {
+          "paired_mask_pixels": 10416,
+          "left_ink_density": 0.30607,
+          "right_ink_density": 0.29666,
+          "coverage_valid": true,
+          "smoothed_ink_corr": 0.010644,
+          "stroke_detail_corr": 0.003803,
+          "copied_stroke_match": false
+        }
+      },
+      "jpeg70": {
+        "upper_hull": {
+          "paired_mask_pixels": 8736,
+          "left_ink_density": 0.3497,
+          "right_ink_density": 0.3497,
+          "coverage_valid": true,
+          "smoothed_ink_corr": 0.143269,
+          "stroke_detail_corr": 0.015028,
+          "copied_stroke_match": false
+        },
+        "lower_hull": {
+          "paired_mask_pixels": 10416,
+          "left_ink_density": 0.30914,
+          "right_ink_density": 0.29868,
+          "coverage_valid": true,
+          "smoothed_ink_corr": 0.011178,
+          "stroke_detail_corr": 0.00357,
+          "copied_stroke_match": false
+        }
+      },
+      "down75_up": {
+        "upper_hull": {
+          "paired_mask_pixels": 8736,
+          "left_ink_density": 0.38141,
+          "right_ink_density": 0.37889,
+          "coverage_valid": true,
+          "smoothed_ink_corr": 0.148269,
+          "stroke_detail_corr": 0.011855,
+          "copied_stroke_match": false
+        },
+        "lower_hull": {
+          "paired_mask_pixels": 10416,
+          "left_ink_density": 0.33804,
+          "right_ink_density": 0.32584,
+          "coverage_valid": true,
+          "smoothed_ink_corr": 0.011909,
+          "stroke_detail_corr": 0.006948,
+          "copied_stroke_match": false
+        }
+      }
+    }
+  },
+  "real": {
+    "original": {
+      "upper_hull": {
+        "paired_mask_pixels": 8736,
+        "left_ink_density": 0.82269,
+        "right_ink_density": 0.75011,
+        "coverage_valid": true,
+        "smoothed_ink_corr": -0.060222,
+        "stroke_detail_corr": -0.036201,
+        "copied_stroke_match": false
+      },
+      "lower_hull": {
+        "paired_mask_pixels": 10416,
+        "left_ink_density": 0.6539,
+        "right_ink_density": 0.51296,
+        "coverage_valid": true,
+        "smoothed_ink_corr": 0.332842,
+        "stroke_detail_corr": 0.017099,
+        "copied_stroke_match": false
+      }
+    },
+    "jpeg85": {
+      "upper_hull": {
+        "paired_mask_pixels": 8736,
+        "left_ink_density": 0.82234,
+        "right_ink_density": 0.75103,
+        "coverage_valid": true,
+        "smoothed_ink_corr": -0.060403,
+        "stroke_detail_corr": -0.036233,
+        "copied_stroke_match": false
+      },
+      "lower_hull": {
+        "paired_mask_pixels": 10416,
+        "left_ink_density": 0.65438,
+        "right_ink_density": 0.51334,
+        "coverage_valid": true,
+        "smoothed_ink_corr": 0.333875,
+        "stroke_detail_corr": 0.01757,
+        "copied_stroke_match": false
+      }
+    },
+    "jpeg70": {
+      "upper_hull": {
+        "paired_mask_pixels": 8736,
+        "left_ink_density": 0.82498,
+        "right_ink_density": 0.75183,
+        "coverage_valid": true,
+        "smoothed_ink_corr": -0.061307,
+        "stroke_detail_corr": -0.036842,
+        "copied_stroke_match": false
+      },
+      "lower_hull": {
+        "paired_mask_pixels": 10416,
+        "left_ink_density": 0.65342,
+        "right_ink_density": 0.51277,
+        "coverage_valid": true,
+        "smoothed_ink_corr": 0.334735,
+        "stroke_detail_corr": 0.016975,
+        "copied_stroke_match": false
+      }
+    },
+    "down75_up": {
+      "upper_hull": {
+        "paired_mask_pixels": 8736,
+        "left_ink_density": 0.84467,
+        "right_ink_density": 0.77999,
+        "coverage_valid": true,
+        "smoothed_ink_corr": -0.059558,
+        "stroke_detail_corr": -0.042983,
+        "copied_stroke_match": false
+      },
+      "lower_hull": {
+        "paired_mask_pixels": 10416,
+        "left_ink_density": 0.68836,
+        "right_ink_density": 0.54483,
+        "coverage_valid": true,
+        "smoothed_ink_corr": 0.339109,
+        "stroke_detail_corr": 0.018189,
+        "copied_stroke_match": false
+      }
+    }
+  },
+  "all_real_source_adequate": true,
+  "all_real_exact_mirror_fingerprint": false,
+  "decision": "NO_EXACT_MIRRORED_HULL_STROKE_FINGERPRINT",
+  "interpretation_guard": "A positive is a repeated drawing fingerprint, not a secret; a negative excludes only exact central mirror of internal hull pencil strokes, not approximate bilateral boat shape or symbolic design.",
+  "safety_guard": "No key, BIP39, mnemonic, wallet, address or off-image access."
+}
