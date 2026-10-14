@@ -150,3 +150,8 @@ Stage142 source-adequate 4-format top/bottom mirrored hull-pencil control audit 
 ## Stage143 chess piece negative-space resemblance — unconfirmed
 
 Source image mirror/90° transform reproduced the user's king/queen-like voids with rooftop geometry. The upper piece-like contour uses 7 skyline buildings, lower 5; symmetry mathematically forced by duplicating/reflection. Four format source roof checks 12/12 and synthetic stepped/flat controls succeeded. Exact null gives 17.14% of height permutations creating two generic widening pedestals (posthoc descriptive, not evidence of chess). No independently visible king cross or queen multi-point crown. Remains a user-inspired semantic lead awaiting an unambiguous independently visible chess-specific feature, not a verified intentional puzzle encoding.
+
+
+## Stage143 closed; Stage144 central black spire source provenance
+
+Stage143 validated the generated king/queen-like central WHITE gaps but concluded their stepped symmetry is manufactured by reflecting 7- and 5-building skyline blocks. User then produced a reversed presentation with a BLACK narrow vertical spire down the axis, a distinct visible observation. Stage144 pretests the physical explanation: canonical horizontal waterfront baseline y225..292 in skyline becomes vertical when rotated 90 degrees, and mirror provides left/right bilateral repetition. Fixed horizontal-line detector, ablation, 4 image format reproducibility and horizontal-line-vs-independent-hatching synthetic controls. Does not call it an encoded spire.
