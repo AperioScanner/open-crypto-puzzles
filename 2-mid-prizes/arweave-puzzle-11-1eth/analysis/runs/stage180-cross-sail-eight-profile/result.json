@@ -1,0 +1,205 @@
+{
+  "experiment_id": "A11-EXP-180",
+  "canonical_source_sha256_provenance_only": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "original_artwork_pixels_examined": false,
+  "hypothesis": "Two source selected stable-eight lower ink profiles may replicate each other's eight normalized ridge positions, distinct from exact copied 2D pen pixels.",
+  "historical_comparison_scope": "Only sail1 vs sail2 and archived Stage176 8 normalized u values; Stage120 2D motif-reuse null remains valid.",
+  "fixed_tolerance": {
+    "grid_step": 0.006562500000000001,
+    "three_grid_bins_plus_archive_rounding_epsilon": 0.019707500000000003,
+    "ordered_peak_matching_only": true,
+    "n_peak_matches_required": 8,
+    "no_global_translation_rotation_flip_or_rescale": true
+  },
+  "precommitted_checks": {
+    "source_sha_provenance": true,
+    "Stage176_source_sha_and_240_controls": true,
+    "Stage176_two_eight_peak_source_sails": true,
+    "Stage177_24_controls_but_not_eight_continuity": true,
+    "Stage179_15_source_archive_guards": true,
+    "Stage179_24_numeric_reference_controls": true,
+    "Stage179_both_sail_peak_positions_stable_within_encodings": true,
+    "Stage120_no_copied_2D_penstrokes_remains_valid": true,
+    "Stage179_frozen_grid": true,
+    "24_known_shift_reference_controls": true,
+    "archived_peak_vectors_are_ordered_and_eight": true
+  },
+  "checks_passed": 11,
+  "checks_total": 11,
+  "numeric_controls": {
+    "pass": true,
+    "cases": 24,
+    "passed": 24,
+    "failures": []
+  },
+  "source_one_d_profile_comparisons": {
+    "original": {
+      "sail1_eight_u": [
+        0.11938,
+        0.19812,
+        0.36875,
+        0.46719,
+        0.5525,
+        0.67063,
+        0.76906,
+        0.85437
+      ],
+      "sail2_eight_u": [
+        0.16531,
+        0.27031,
+        0.3425,
+        0.40813,
+        0.53281,
+        0.63781,
+        0.69688,
+        0.80188
+      ],
+      "comparison": {
+        "ordered_positions_compared": 8,
+        "matching_positions_3bins": 1,
+        "all8_match": false,
+        "max_normalized_u_delta": 0.07219,
+        "mean_normalized_u_delta": 0.0475762,
+        "max_projected_shift_sail1_px": 5.0533,
+        "max_projected_shift_sail2_px": 5.4864,
+        "eight_ordered_du": [
+          0.04593,
+          0.07219,
+          0.02625,
+          0.05906,
+          0.01969,
+          0.03282,
+          0.07218,
+          0.05249
+        ]
+      }
+    },
+    "jpeg85": {
+      "sail1_eight_u": [
+        0.11938,
+        0.19812,
+        0.36875,
+        0.46719,
+        0.5525,
+        0.67063,
+        0.76906,
+        0.85437
+      ],
+      "sail2_eight_u": [
+        0.16531,
+        0.27031,
+        0.3425,
+        0.40813,
+        0.53281,
+        0.63781,
+        0.69688,
+        0.80188
+      ],
+      "comparison": {
+        "ordered_positions_compared": 8,
+        "matching_positions_3bins": 1,
+        "all8_match": false,
+        "max_normalized_u_delta": 0.07219,
+        "mean_normalized_u_delta": 0.0475762,
+        "max_projected_shift_sail1_px": 5.0533,
+        "max_projected_shift_sail2_px": 5.4864,
+        "eight_ordered_du": [
+          0.04593,
+          0.07219,
+          0.02625,
+          0.05906,
+          0.01969,
+          0.03282,
+          0.07218,
+          0.05249
+        ]
+      }
+    },
+    "jpeg70": {
+      "sail1_eight_u": [
+        0.11281,
+        0.19812,
+        0.36875,
+        0.46719,
+        0.5525,
+        0.67063,
+        0.76906,
+        0.85437
+      ],
+      "sail2_eight_u": [
+        0.16531,
+        0.27031,
+        0.3425,
+        0.40813,
+        0.53281,
+        0.63781,
+        0.69688,
+        0.80188
+      ],
+      "comparison": {
+        "ordered_positions_compared": 8,
+        "matching_positions_3bins": 1,
+        "all8_match": false,
+        "max_normalized_u_delta": 0.07219,
+        "mean_normalized_u_delta": 0.0483975,
+        "max_projected_shift_sail1_px": 5.0533,
+        "max_projected_shift_sail2_px": 5.4864,
+        "eight_ordered_du": [
+          0.0525,
+          0.07219,
+          0.02625,
+          0.05906,
+          0.01969,
+          0.03282,
+          0.07218,
+          0.05249
+        ]
+      }
+    },
+    "down75_up": {
+      "sail1_eight_u": [
+        0.11281,
+        0.21125,
+        0.37531,
+        0.46719,
+        0.5525,
+        0.67063,
+        0.77563,
+        0.85437
+      ],
+      "sail2_eight_u": [
+        0.16531,
+        0.26375,
+        0.3425,
+        0.41469,
+        0.53281,
+        0.63781,
+        0.69688,
+        0.80844
+      ],
+      "comparison": {
+        "ordered_positions_compared": 8,
+        "matching_positions_3bins": 1,
+        "all8_match": false,
+        "max_normalized_u_delta": 0.07875,
+        "mean_normalized_u_delta": 0.0459375,
+        "max_projected_shift_sail1_px": 5.5125,
+        "max_projected_shift_sail2_px": 5.985,
+        "eight_ordered_du": [
+          0.0525,
+          0.0525,
+          0.03281,
+          0.0525,
+          0.01969,
+          0.03282,
+          0.07875,
+          0.04593
+        ]
+      }
+    }
+  },
+  "source_all_four_eight_positions_aligned": false,
+  "decision": "NO_CROSS_SAIL_EIGHT_1D_POSITION_STENCIL_AT_FIXED_TOLERANCE",
+  "interpretation_limit": "Pair was selected after both were noticed to have eight stable peaks. Even a matching profile would only describe two shading patterns from the SAME source drawing, not independent authorship proof, physical apex rays, p-value, key or intentionally encoded message. A negative excludes only direct unshifted same-index matching at the preregistered precision.",
+  "safety": "No private key, BIP39, address/wallet checking, OCR or off-image/social investigation."
+}
