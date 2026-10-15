@@ -1,0 +1,179 @@
+{
+  "experiment_id": "A11-EXP-175",
+  "source_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "original_artwork_pixels_examined": false,
+  "hypothesis": "Stage105's local upper-crop dark-pixel apex does not reproduce the five authentic independently fixed small-sail tips; synthetic spoke counts were already nonmonotone.",
+  "guards": {
+    "original_SHA": true,
+    "legacy_Stage105_id": true,
+    "legacy_Stage105_fixed_5_centers": true,
+    "legacy_Stage105_y345_to_500_source": true,
+    "legacy_Stage105_apex_from_dark_upper_crop": true,
+    "legacy_Stage105_five_site_count": true,
+    "old_Stage105_failed_controls": true,
+    "old_3_to_7_annulus_replay": true,
+    "old_3_to_7_scanline_replay": true,
+    "old_both_synthetic_sequences_nonmonotone": true,
+    "independent_Stage153_reference_has_apexes": true,
+    "confirmed_Stage164_crop_source_loss": true,
+    "Stage105_box_equals_Stage164_original_box_sail1": true,
+    "Stage105_box_equals_Stage164_original_box_sail2": true,
+    "Stage105_box_equals_Stage164_original_box_sail3": true,
+    "Stage105_box_equals_Stage164_original_box_sail4": true,
+    "Stage105_box_equals_Stage164_original_box_sail5": true,
+    "at_least_three_source_apices_wrong_by_8px": true
+  },
+  "controls_passed": 18,
+  "controls_total": 18,
+  "legacy_synthetic_annulus": [
+    3,
+    4,
+    3,
+    3,
+    2
+  ],
+  "legacy_synthetic_scanline": [
+    3,
+    4,
+    5,
+    6,
+    2
+  ],
+  "legacy_controls_pass": false,
+  "bad_apex_locations_at_least_8px": 3,
+  "per_sail_apex_and_crop_data": [
+    {
+      "sail_index": 1,
+      "known_true_tip_xy": [
+        1042,
+        448
+      ],
+      "old_crop": [
+        987,
+        345,
+        1095,
+        500
+      ],
+      "old_apex_within_crop": [
+        34.0,
+        2.0
+      ],
+      "old_estimated_global_apex_xy": [
+        1021.0,
+        347.0
+      ],
+      "true_apex_distance_px": 103.16,
+      "displacement_at_least_8px": true,
+      "Stage164_percent_real_mask_area_cut_below_or_outside_box": 74.84,
+      "Stage105_spoke_count_reported": 0,
+      "Stage105_count_stable_original": true
+    },
+    {
+      "sail_index": 2,
+      "known_true_tip_xy": [
+        1148,
+        433
+      ],
+      "old_crop": [
+        1095,
+        345,
+        1215,
+        500
+      ],
+      "old_apex_within_crop": [
+        69.0,
+        2.0
+      ],
+      "old_estimated_global_apex_xy": [
+        1164.0,
+        347.0
+      ],
+      "true_apex_distance_px": 87.476,
+      "displacement_at_least_8px": true,
+      "Stage164_percent_real_mask_area_cut_below_or_outside_box": 56.18,
+      "Stage105_spoke_count_reported": null,
+      "Stage105_count_stable_original": false
+    },
+    {
+      "sail_index": 3,
+      "known_true_tip_xy": [
+        1282,
+        411
+      ],
+      "old_crop": [
+        1215,
+        345,
+        1327,
+        500
+      ],
+      "old_apex_within_crop": [
+        64.0,
+        62.0
+      ],
+      "old_estimated_global_apex_xy": [
+        1279.0,
+        407.0
+      ],
+      "true_apex_distance_px": 5.0,
+      "displacement_at_least_8px": false,
+      "Stage164_percent_real_mask_area_cut_below_or_outside_box": 25.23,
+      "Stage105_spoke_count_reported": null,
+      "Stage105_count_stable_original": false
+    },
+    {
+      "sail_index": 4,
+      "known_true_tip_xy": [
+        1372,
+        397
+      ],
+      "old_crop": [
+        1327,
+        345,
+        1431,
+        500
+      ],
+      "old_apex_within_crop": [
+        43.0,
+        2.0
+      ],
+      "old_estimated_global_apex_xy": [
+        1370.0,
+        347.0
+      ],
+      "true_apex_distance_px": 50.04,
+      "displacement_at_least_8px": true,
+      "Stage164_percent_real_mask_area_cut_below_or_outside_box": 0.0,
+      "Stage105_spoke_count_reported": 0,
+      "Stage105_count_stable_original": true
+    },
+    {
+      "sail_index": 5,
+      "known_true_tip_xy": [
+        1490,
+        357
+      ],
+      "old_crop": [
+        1431,
+        345,
+        1550,
+        500
+      ],
+      "old_apex_within_crop": [
+        60.0,
+        15.0
+      ],
+      "old_estimated_global_apex_xy": [
+        1491.0,
+        360.0
+      ],
+      "true_apex_distance_px": 3.162,
+      "displacement_at_least_8px": false,
+      "Stage164_percent_real_mask_area_cut_below_or_outside_box": 0.0,
+      "Stage105_spoke_count_reported": null,
+      "Stage105_count_stable_original": false
+    }
+  ],
+  "decision": "CONFIRMED_STAGE105_UNCALIBRATED_AND_WRONG_APEX_SOURCE",
+  "scope_limit": "An observed wrong local anchor and failed synthetic 3..7 calibration invalidate old Stage105 inferred spoke count sequence, not all possible visible lines in real sails. No source content was re-tested.",
+  "safety": "No wallet, addresses, key derivation, BIP39, OCR, social/external research."
+}
