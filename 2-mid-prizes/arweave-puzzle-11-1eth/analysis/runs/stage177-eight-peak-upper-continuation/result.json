@@ -1,0 +1,583 @@
+{
+  "experiment_id": "A11-EXP-177",
+  "canonical_source_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "hypothesis": "Two true sails' eight stable lower-depth ink-profile peaks may or may not persist in a separate upper source trapezoid, distinguishing genuine radial strokes from local lower hatches.",
+  "sites": [
+    "sail1",
+    "sail2"
+  ],
+  "original_immutable_source_vertices": {
+    "sail1": [
+      [
+        1042,
+        448
+      ],
+      [
+        1007,
+        546
+      ],
+      [
+        1077,
+        546
+      ]
+    ],
+    "sail2": [
+      [
+        1148,
+        433
+      ],
+      [
+        1110,
+        532
+      ],
+      [
+        1186,
+        532
+      ]
+    ]
+  },
+  "calibration": {
+    "pass": true,
+    "passed": 24,
+    "cases": 24,
+    "failures": []
+  },
+  "archived_source_preconditions": {
+    "canonical_SHA": true,
+    "prior_Stage175_known_invalid_apex": true,
+    "prior_Stage176_SHA": true,
+    "prior_Stage176_240_synthetic_controls": true,
+    "Stage176_decision_known_insufficient_coverage": true,
+    "two_fixed_independent_real_peak_sites": true
+  },
+  "fixed_test": {
+    "upper_ts_start_end": [
+      0.49,
+      0.69
+    ],
+    "rows": 28,
+    "flank_du": 0.055,
+    "center_min": 0.7,
+    "contrast_min": 0.2,
+    "max_mean_flank_ink": 0.9,
+    "min_supported_out_of_8": 6
+  },
+  "upper_source_results": {
+    "original": {
+      "sail1": {
+        "count": 0,
+        "expected_eight": true,
+        "mean_flank_darkness": 0.68863,
+        "per_ridge": [
+          {
+            "u": 0.11938,
+            "upper_ink": 0.76499,
+            "flank_ink": 0.79328,
+            "upper_vs_flank": -0.02829,
+            "qualifies": false
+          },
+          {
+            "u": 0.19812,
+            "upper_ink": 0.90644,
+            "flank_ink": 0.83368,
+            "upper_vs_flank": 0.07276,
+            "qualifies": false
+          },
+          {
+            "u": 0.36875,
+            "upper_ink": 0.17829,
+            "flank_ink": 0.53235,
+            "upper_vs_flank": -0.35406,
+            "qualifies": false
+          },
+          {
+            "u": 0.46719,
+            "upper_ink": 0.69804,
+            "flank_ink": 0.45875,
+            "upper_vs_flank": 0.23929,
+            "qualifies": false
+          },
+          {
+            "u": 0.5525,
+            "upper_ink": 0.28095,
+            "flank_ink": 0.54293,
+            "upper_vs_flank": -0.26197,
+            "qualifies": false
+          },
+          {
+            "u": 0.67063,
+            "upper_ink": 0.61092,
+            "flank_ink": 0.89055,
+            "upper_vs_flank": -0.27962,
+            "qualifies": false
+          },
+          {
+            "u": 0.76906,
+            "upper_ink": 0.89426,
+            "flank_ink": 0.75623,
+            "upper_vs_flank": 0.13803,
+            "qualifies": false
+          },
+          {
+            "u": 0.85437,
+            "upper_ink": 0.34034,
+            "flank_ink": 0.70126,
+            "upper_vs_flank": -0.36092,
+            "qualifies": false
+          }
+        ]
+      },
+      "sail2": {
+        "count": 4,
+        "expected_eight": true,
+        "mean_flank_darkness": 0.60156,
+        "per_ridge": [
+          {
+            "u": 0.16531,
+            "upper_ink": 0.88866,
+            "flank_ink": 0.78957,
+            "upper_vs_flank": 0.09909,
+            "qualifies": false
+          },
+          {
+            "u": 0.27031,
+            "upper_ink": 0.62801,
+            "flank_ink": 0.6951,
+            "upper_vs_flank": -0.06709,
+            "qualifies": false
+          },
+          {
+            "u": 0.3425,
+            "upper_ink": 0.39804,
+            "flank_ink": 0.86688,
+            "upper_vs_flank": -0.46884,
+            "qualifies": false
+          },
+          {
+            "u": 0.40813,
+            "upper_ink": 0.78543,
+            "flank_ink": 0.29545,
+            "upper_vs_flank": 0.48999,
+            "qualifies": true
+          },
+          {
+            "u": 0.53281,
+            "upper_ink": 0.97395,
+            "flank_ink": 0.25581,
+            "upper_vs_flank": 0.71814,
+            "qualifies": true
+          },
+          {
+            "u": 0.63781,
+            "upper_ink": 0.85392,
+            "flank_ink": 0.58964,
+            "upper_vs_flank": 0.26429,
+            "qualifies": true
+          },
+          {
+            "u": 0.69688,
+            "upper_ink": 0.99048,
+            "flank_ink": 0.78887,
+            "upper_vs_flank": 0.20161,
+            "qualifies": true
+          },
+          {
+            "u": 0.80188,
+            "upper_ink": 0.26415,
+            "flank_ink": 0.53116,
+            "upper_vs_flank": -0.26702,
+            "qualifies": false
+          }
+        ]
+      }
+    },
+    "jpeg85": {
+      "sail1": {
+        "count": 0,
+        "expected_eight": true,
+        "mean_flank_darkness": 0.68723,
+        "per_ridge": [
+          {
+            "u": 0.11938,
+            "upper_ink": 0.76359,
+            "flank_ink": 0.79132,
+            "upper_vs_flank": -0.02773,
+            "qualifies": false
+          },
+          {
+            "u": 0.19812,
+            "upper_ink": 0.8993,
+            "flank_ink": 0.8299,
+            "upper_vs_flank": 0.0694,
+            "qualifies": false
+          },
+          {
+            "u": 0.36875,
+            "upper_ink": 0.18235,
+            "flank_ink": 0.53487,
+            "upper_vs_flank": -0.35252,
+            "qualifies": false
+          },
+          {
+            "u": 0.46719,
+            "upper_ink": 0.69972,
+            "flank_ink": 0.46303,
+            "upper_vs_flank": 0.23669,
+            "qualifies": false
+          },
+          {
+            "u": 0.5525,
+            "upper_ink": 0.27955,
+            "flank_ink": 0.54041,
+            "upper_vs_flank": -0.26085,
+            "qualifies": false
+          },
+          {
+            "u": 0.67063,
+            "upper_ink": 0.61008,
+            "flank_ink": 0.88711,
+            "upper_vs_flank": -0.27703,
+            "qualifies": false
+          },
+          {
+            "u": 0.76906,
+            "upper_ink": 0.88908,
+            "flank_ink": 0.75238,
+            "upper_vs_flank": 0.13669,
+            "qualifies": false
+          },
+          {
+            "u": 0.85437,
+            "upper_ink": 0.33894,
+            "flank_ink": 0.69881,
+            "upper_vs_flank": -0.35987,
+            "qualifies": false
+          }
+        ]
+      },
+      "sail2": {
+        "count": 3,
+        "expected_eight": true,
+        "mean_flank_darkness": 0.60076,
+        "per_ridge": [
+          {
+            "u": 0.16531,
+            "upper_ink": 0.88824,
+            "flank_ink": 0.78943,
+            "upper_vs_flank": 0.09881,
+            "qualifies": false
+          },
+          {
+            "u": 0.27031,
+            "upper_ink": 0.62941,
+            "flank_ink": 0.69811,
+            "upper_vs_flank": -0.0687,
+            "qualifies": false
+          },
+          {
+            "u": 0.3425,
+            "upper_ink": 0.40112,
+            "flank_ink": 0.86387,
+            "upper_vs_flank": -0.46275,
+            "qualifies": false
+          },
+          {
+            "u": 0.40813,
+            "upper_ink": 0.78235,
+            "flank_ink": 0.2979,
+            "upper_vs_flank": 0.48445,
+            "qualifies": true
+          },
+          {
+            "u": 0.53281,
+            "upper_ink": 0.96933,
+            "flank_ink": 0.25735,
+            "upper_vs_flank": 0.71197,
+            "qualifies": true
+          },
+          {
+            "u": 0.63781,
+            "upper_ink": 0.84874,
+            "flank_ink": 0.58459,
+            "upper_vs_flank": 0.26415,
+            "qualifies": true
+          },
+          {
+            "u": 0.69688,
+            "upper_ink": 0.98235,
+            "flank_ink": 0.78515,
+            "upper_vs_flank": 0.1972,
+            "qualifies": false
+          },
+          {
+            "u": 0.80188,
+            "upper_ink": 0.26303,
+            "flank_ink": 0.52969,
+            "upper_vs_flank": -0.26667,
+            "qualifies": false
+          }
+        ]
+      }
+    },
+    "jpeg70": {
+      "sail1": {
+        "count": 1,
+        "expected_eight": true,
+        "mean_flank_darkness": 0.68039,
+        "per_ridge": [
+          {
+            "u": 0.11281,
+            "upper_ink": 0.77143,
+            "flank_ink": 0.74419,
+            "upper_vs_flank": 0.02724,
+            "qualifies": false
+          },
+          {
+            "u": 0.19812,
+            "upper_ink": 0.89916,
+            "flank_ink": 0.82738,
+            "upper_vs_flank": 0.07178,
+            "qualifies": false
+          },
+          {
+            "u": 0.36875,
+            "upper_ink": 0.18305,
+            "flank_ink": 0.53109,
+            "upper_vs_flank": -0.34804,
+            "qualifies": false
+          },
+          {
+            "u": 0.46719,
+            "upper_ink": 0.70364,
+            "flank_ink": 0.46057,
+            "upper_vs_flank": 0.24307,
+            "qualifies": true
+          },
+          {
+            "u": 0.5525,
+            "upper_ink": 0.28067,
+            "flank_ink": 0.54272,
+            "upper_vs_flank": -0.26204,
+            "qualifies": false
+          },
+          {
+            "u": 0.67063,
+            "upper_ink": 0.60434,
+            "flank_ink": 0.88459,
+            "upper_vs_flank": -0.28025,
+            "qualifies": false
+          },
+          {
+            "u": 0.76906,
+            "upper_ink": 0.8902,
+            "flank_ink": 0.75308,
+            "upper_vs_flank": 0.13711,
+            "qualifies": false
+          },
+          {
+            "u": 0.85437,
+            "upper_ink": 0.34552,
+            "flank_ink": 0.69951,
+            "upper_vs_flank": -0.35399,
+            "qualifies": false
+          }
+        ]
+      },
+      "sail2": {
+        "count": 3,
+        "expected_eight": true,
+        "mean_flank_darkness": 0.59903,
+        "per_ridge": [
+          {
+            "u": 0.16531,
+            "upper_ink": 0.88179,
+            "flank_ink": 0.78501,
+            "upper_vs_flank": 0.09678,
+            "qualifies": false
+          },
+          {
+            "u": 0.27031,
+            "upper_ink": 0.62647,
+            "flank_ink": 0.69279,
+            "upper_vs_flank": -0.06632,
+            "qualifies": false
+          },
+          {
+            "u": 0.3425,
+            "upper_ink": 0.40364,
+            "flank_ink": 0.86043,
+            "upper_vs_flank": -0.45679,
+            "qualifies": false
+          },
+          {
+            "u": 0.40813,
+            "upper_ink": 0.78151,
+            "flank_ink": 0.29846,
+            "upper_vs_flank": 0.48305,
+            "qualifies": true
+          },
+          {
+            "u": 0.53281,
+            "upper_ink": 0.96303,
+            "flank_ink": 0.25903,
+            "upper_vs_flank": 0.70399,
+            "qualifies": true
+          },
+          {
+            "u": 0.63781,
+            "upper_ink": 0.85322,
+            "flank_ink": 0.58592,
+            "upper_vs_flank": 0.2673,
+            "qualifies": true
+          },
+          {
+            "u": 0.69688,
+            "upper_ink": 0.97969,
+            "flank_ink": 0.78501,
+            "upper_vs_flank": 0.19468,
+            "qualifies": false
+          },
+          {
+            "u": 0.80188,
+            "upper_ink": 0.26597,
+            "flank_ink": 0.52563,
+            "upper_vs_flank": -0.25966,
+            "qualifies": false
+          }
+        ]
+      }
+    },
+    "down75_up": {
+      "sail1": {
+        "count": 0,
+        "expected_eight": true,
+        "mean_flank_darkness": 0.66619,
+        "per_ridge": [
+          {
+            "u": 0.11281,
+            "upper_ink": 0.77605,
+            "flank_ink": 0.74195,
+            "upper_vs_flank": 0.0341,
+            "qualifies": false
+          },
+          {
+            "u": 0.21125,
+            "upper_ink": 0.89594,
+            "flank_ink": 0.78936,
+            "upper_vs_flank": 0.10658,
+            "qualifies": false
+          },
+          {
+            "u": 0.37531,
+            "upper_ink": 0.20644,
+            "flank_ink": 0.54321,
+            "upper_vs_flank": -0.33676,
+            "qualifies": false
+          },
+          {
+            "u": 0.46719,
+            "upper_ink": 0.6895,
+            "flank_ink": 0.44153,
+            "upper_vs_flank": 0.24797,
+            "qualifies": false
+          },
+          {
+            "u": 0.5525,
+            "upper_ink": 0.28655,
+            "flank_ink": 0.53501,
+            "upper_vs_flank": -0.24846,
+            "qualifies": false
+          },
+          {
+            "u": 0.67063,
+            "upper_ink": 0.59118,
+            "flank_ink": 0.85966,
+            "upper_vs_flank": -0.26849,
+            "qualifies": false
+          },
+          {
+            "u": 0.77563,
+            "upper_ink": 0.85,
+            "flank_ink": 0.73116,
+            "upper_vs_flank": 0.11884,
+            "qualifies": false
+          },
+          {
+            "u": 0.85437,
+            "upper_ink": 0.35182,
+            "flank_ink": 0.68768,
+            "upper_vs_flank": -0.33585,
+            "qualifies": false
+          }
+        ]
+      },
+      "sail2": {
+        "count": 2,
+        "expected_eight": true,
+        "mean_flank_darkness": 0.60895,
+        "per_ridge": [
+          {
+            "u": 0.16531,
+            "upper_ink": 0.89608,
+            "flank_ink": 0.78277,
+            "upper_vs_flank": 0.11331,
+            "qualifies": false
+          },
+          {
+            "u": 0.26375,
+            "upper_ink": 0.60448,
+            "flank_ink": 0.74531,
+            "upper_vs_flank": -0.14083,
+            "qualifies": false
+          },
+          {
+            "u": 0.3425,
+            "upper_ink": 0.41303,
+            "flank_ink": 0.84797,
+            "upper_vs_flank": -0.43494,
+            "qualifies": false
+          },
+          {
+            "u": 0.41469,
+            "upper_ink": 0.64454,
+            "flank_ink": 0.37528,
+            "upper_vs_flank": 0.26926,
+            "qualifies": false
+          },
+          {
+            "u": 0.53281,
+            "upper_ink": 0.93922,
+            "flank_ink": 0.27409,
+            "upper_vs_flank": 0.66513,
+            "qualifies": true
+          },
+          {
+            "u": 0.63781,
+            "upper_ink": 0.86204,
+            "flank_ink": 0.5916,
+            "upper_vs_flank": 0.27045,
+            "qualifies": true
+          },
+          {
+            "u": 0.69688,
+            "upper_ink": 0.95518,
+            "flank_ink": 0.78361,
+            "upper_vs_flank": 0.17157,
+            "qualifies": false
+          },
+          {
+            "u": 0.80844,
+            "upper_ink": 0.3888,
+            "flank_ink": 0.47094,
+            "upper_vs_flank": -0.08214,
+            "qualifies": false
+          }
+        ]
+      }
+    }
+  },
+  "source_flank_adequate": true,
+  "decision": "INCONCLUSIVE_UPPER_TRACE_CORROBORATION",
+  "scope_limit": "Upper path ink is neither proven connected to apex nor a uniquely authored eight-ray drawing. The eight peak positions are SOURCE-SELECTED by prior Stage176 and provide no independent hypothesis testing p-value. Four image re-encodings share one original.",
+  "safety": "No mnemonic, private key, public address/wallet testing, new semantic decoding or outside/social research."
+}
