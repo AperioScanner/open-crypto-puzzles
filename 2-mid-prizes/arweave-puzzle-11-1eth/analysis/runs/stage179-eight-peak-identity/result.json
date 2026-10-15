@@ -1,0 +1,231 @@
+{
+  "experiment_id": "A11-EXP-179",
+  "canonical_SHA256_provenance_only": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "original_source_pixel_reads": false,
+  "hypothesis": "An unchanged peak COUNT of 8 over lossy encodings may not identify the same eight original source ink ridge POSITIONS; Stage177 implicitly compared variant-specific independently selected peaks.",
+  "fixed_sites": [
+    "sail1",
+    "sail2"
+  ],
+  "source_of_frozen_peak_locations": "Stage176 archived peak_u lists by source format and true sail",
+  "fixed_grid": {
+    "u_start": 0.08,
+    "u_end": 0.92,
+    "grid_columns": 129,
+    "grid_step_u": 0.006562500000000001,
+    "max_positional_shift_grid_bins": 3,
+    "archive_5_decimal_rounding_epsilon": 2e-05,
+    "normalized_u_tolerance": 0.019707500000000003
+  },
+  "source_and_numerical_guards": {
+    "canonical_SHA_only": true,
+    "Stage176_source_SHA": true,
+    "Stage176_240_calibrated_fixtures": true,
+    "Stage176_18_of_20_adequate": true,
+    "Stage176_two_eight_peaks_in_all_four_formats": true,
+    "Stage176_original_grid_129_t72_87": true,
+    "Stage177_original_source_SHA": true,
+    "Stage177_24_calibrated_known_eight_fixtures": true,
+    "Stage177_no_eight_upper_ray_confirmation": true,
+    "Stage178_source_blind_controls": true,
+    "frozen_true_sail_geometry": true,
+    "quantized_three_u_bins_plus_rounding_tol": true,
+    "24_of_24_known_offset_numeric_controls": true,
+    "original_8_peak_list_each_site": true,
+    "all_per_format_comparisons_well_defined": true
+  },
+  "checks_passed": 15,
+  "checks_total": 15,
+  "known_positional_controls": {
+    "pass": true,
+    "passed": 24,
+    "cases": 24,
+    "failures": []
+  },
+  "per_sail_archived_peak_matches": {
+    "sail1": {
+      "original_eight_normalized_u": [
+        0.11938,
+        0.19812,
+        0.36875,
+        0.46719,
+        0.5525,
+        0.67063,
+        0.76906,
+        0.85437
+      ],
+      "by_format": {
+        "original": {
+          "eight_ordered_comparisons": 8,
+          "matches_within_3_grid_indices": 8,
+          "all_eight_same_peak_within_tolerance": true,
+          "maximum_normalized_u_shift": 0.0,
+          "mean_normalized_u_shift": 0.0,
+          "max_base_projected_px_shift": 0.0,
+          "per_peak_abs_du": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jpeg85": {
+          "eight_ordered_comparisons": 8,
+          "matches_within_3_grid_indices": 8,
+          "all_eight_same_peak_within_tolerance": true,
+          "maximum_normalized_u_shift": 0.0,
+          "mean_normalized_u_shift": 0.0,
+          "max_base_projected_px_shift": 0.0,
+          "per_peak_abs_du": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jpeg70": {
+          "eight_ordered_comparisons": 8,
+          "matches_within_3_grid_indices": 8,
+          "all_eight_same_peak_within_tolerance": true,
+          "maximum_normalized_u_shift": 0.00657,
+          "mean_normalized_u_shift": 0.0008213,
+          "max_base_projected_px_shift": 0.4599,
+          "per_peak_abs_du": [
+            0.00657,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "down75_up": {
+          "eight_ordered_comparisons": 8,
+          "matches_within_3_grid_indices": 8,
+          "all_eight_same_peak_within_tolerance": true,
+          "maximum_normalized_u_shift": 0.01313,
+          "mean_normalized_u_shift": 0.0041038,
+          "max_base_projected_px_shift": 0.9191,
+          "per_peak_abs_du": [
+            0.00657,
+            0.01313,
+            0.00656,
+            0.0,
+            0.0,
+            0.0,
+            0.00657,
+            0.0
+          ]
+        }
+      },
+      "all_four_formats_same_eight_positions": true,
+      "source_reference_type": "Stage176 archived peaks, not new image pixels"
+    },
+    "sail2": {
+      "original_eight_normalized_u": [
+        0.16531,
+        0.27031,
+        0.3425,
+        0.40813,
+        0.53281,
+        0.63781,
+        0.69688,
+        0.80188
+      ],
+      "by_format": {
+        "original": {
+          "eight_ordered_comparisons": 8,
+          "matches_within_3_grid_indices": 8,
+          "all_eight_same_peak_within_tolerance": true,
+          "maximum_normalized_u_shift": 0.0,
+          "mean_normalized_u_shift": 0.0,
+          "max_base_projected_px_shift": 0.0,
+          "per_peak_abs_du": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jpeg85": {
+          "eight_ordered_comparisons": 8,
+          "matches_within_3_grid_indices": 8,
+          "all_eight_same_peak_within_tolerance": true,
+          "maximum_normalized_u_shift": 0.0,
+          "mean_normalized_u_shift": 0.0,
+          "max_base_projected_px_shift": 0.0,
+          "per_peak_abs_du": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "jpeg70": {
+          "eight_ordered_comparisons": 8,
+          "matches_within_3_grid_indices": 8,
+          "all_eight_same_peak_within_tolerance": true,
+          "maximum_normalized_u_shift": 0.0,
+          "mean_normalized_u_shift": 0.0,
+          "max_base_projected_px_shift": 0.0,
+          "per_peak_abs_du": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "down75_up": {
+          "eight_ordered_comparisons": 8,
+          "matches_within_3_grid_indices": 8,
+          "all_eight_same_peak_within_tolerance": true,
+          "maximum_normalized_u_shift": 0.00656,
+          "mean_normalized_u_shift": 0.00246,
+          "max_base_projected_px_shift": 0.4986,
+          "per_peak_abs_du": [
+            0.0,
+            0.00656,
+            0.0,
+            0.00656,
+            0.0,
+            0.0,
+            0.0,
+            0.00656
+          ]
+        }
+      },
+      "all_four_formats_same_eight_positions": true,
+      "source_reference_type": "Stage176 archived peaks, not new image pixels"
+    }
+  },
+  "stable_eight_peak_position_site_count": 2,
+  "stable_eight_peak_sites": [
+    "sail1",
+    "sail2"
+  ],
+  "decision": "BOTH_EIGHT_PEAK_SETS_POSITIONALLY_STABLE",
+  "interpretation_limit": "This tests positional reproducibility in ONE original PNG, not physical ray connectivity, no independent art or author intention. A failure of predeclared 3-bin matching does not prove the same peaks could not be recognized under a differently justified criterion. Numeric 8 from same source is not a secret digit.",
+  "safety": "Read-only existing source arrays and PNG SHA, no private key, mnemonic, address check, wallet access, OCR or off-image/social research."
+}
