@@ -1,0 +1,420 @@
+{
+  "experiment_id": "A11-EXP-182",
+  "canonical_SHA_provenance_only": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "original_artwork_pixels_reanalyzed": false,
+  "objective": "Check whether Stage94 complete pre-existing binary carrier-capacity/robustness gate can classify TRUE 256 drawn synthetic source, rather than only count-calibrate its detector.",
+  "immutable_geometry": "Stage133 eroded Stage132 true full large sail polygon",
+  "immutable_stage94_detector": "synthetic_image / roi_variants / track_across_thresholds / summarize / cross_agreement",
+  "immutable_stage181_gates": "full original Stage94 evaluate",
+  "source_and_generator_checks": {
+    "pass": true,
+    "passed": 14,
+    "cases": 14,
+    "checks": {
+      "canonical_source_sha_provenance": true,
+      "Stage181_scientifically_completed": true,
+      "Stage181_corrected_256_count_compat_but_agreement_fail": true,
+      "Stage133_known_source_ROI_correction": true,
+      "Stage133_same_fixed_large_sail_polygon": true,
+      "source_blind_white_base": true,
+      "blank_zero_all_renderings": true,
+      "known_16_drawn_exactly": true,
+      "known_16_calibration_count_exact_replay": true,
+      "known_64_drawn_exactly": true,
+      "known_64_calibration_count_exact_replay": true,
+      "known_256_drawn_exactly": true,
+      "known_256_calibration_count_exact_replay": true,
+      "16_known_negative_rejected_for_both_targets": true
+    }
+  },
+  "frozen_synthetic_families": {
+    "16": {
+      "known_drawn_strokes": 16,
+      "synthetic_source_count_replay_expected": {
+        "original": 15,
+        "jpeg85": 16,
+        "jpeg70": 15,
+        "down75_up": 15
+      },
+      "synthetic_source_count_replay_found": {
+        "original": 15,
+        "jpeg85": 16,
+        "jpeg70": 15,
+        "down75_up": 15
+      },
+      "by_variant": {
+        "original": {
+          "stable_tracks": 15,
+          "classifiable_tracks": 15,
+          "positive_orientation_tracks": 8,
+          "negative_orientation_tracks": 7,
+          "minority_fraction": 0.4666666666666667,
+          "orientation_median_separation_deg": 106.89373017919813,
+          "nearest_target_count": {
+            "target": 64,
+            "delta": 49,
+            "tolerance": 8
+          }
+        },
+        "jpeg85": {
+          "stable_tracks": 16,
+          "classifiable_tracks": 16,
+          "positive_orientation_tracks": 8,
+          "negative_orientation_tracks": 8,
+          "minority_fraction": 0.5,
+          "orientation_median_separation_deg": 108.41691585683796,
+          "nearest_target_count": {
+            "target": 64,
+            "delta": 48,
+            "tolerance": 8
+          }
+        },
+        "jpeg70": {
+          "stable_tracks": 15,
+          "classifiable_tracks": 15,
+          "positive_orientation_tracks": 8,
+          "negative_orientation_tracks": 7,
+          "minority_fraction": 0.4666666666666667,
+          "orientation_median_separation_deg": 107.75080592990315,
+          "nearest_target_count": {
+            "target": 64,
+            "delta": 49,
+            "tolerance": 8
+          }
+        },
+        "down75_up": {
+          "stable_tracks": 15,
+          "classifiable_tracks": 15,
+          "positive_orientation_tracks": 8,
+          "negative_orientation_tracks": 7,
+          "minority_fraction": 0.4666666666666667,
+          "orientation_median_separation_deg": 108.92464441605124,
+          "nearest_target_count": {
+            "target": 64,
+            "delta": 49,
+            "tolerance": 8
+          }
+        }
+      },
+      "cross_reencoding_agreement": {
+        "jpeg85": {
+          "matched": 15,
+          "matched_fraction": 1.0,
+          "same_sign_fraction": 1.0
+        },
+        "jpeg70": {
+          "matched": 15,
+          "matched_fraction": 1.0,
+          "same_sign_fraction": 1.0
+        },
+        "down75_up": {
+          "matched": 15,
+          "matched_fraction": 1.0,
+          "same_sign_fraction": 1.0
+        }
+      },
+      "full_original_Stage94_capacity_gate": {
+        "counts_by_format": {
+          "original": 15,
+          "jpeg85": 16,
+          "jpeg70": 15,
+          "down75_up": 15
+        },
+        "cv": 0.02839427553391602,
+        "minority_orientation_gate": true,
+        "cross_variant_agreement_gate": true,
+        "all_count_carriers_rejected": true,
+        "carrier_by_size": {
+          "64": {
+            "synthetic_min": 42,
+            "synthetic_max": 51,
+            "source_min": 15,
+            "source_max": 16,
+            "compatibility_band": [
+              21,
+              77
+            ],
+            "compatible": false,
+            "rejected_by_count": true
+          },
+          "256": {
+            "synthetic_min": 64,
+            "synthetic_max": 97,
+            "source_min": 15,
+            "source_max": 16,
+            "compatibility_band": [
+              32,
+              146
+            ],
+            "compatible": false,
+            "rejected_by_count": true
+          }
+        },
+        "compatible_target_counts": [],
+        "promoted": false
+      }
+    },
+    "64": {
+      "known_drawn_strokes": 64,
+      "synthetic_source_count_replay_expected": {
+        "original": 48,
+        "jpeg85": 46,
+        "jpeg70": 51,
+        "down75_up": 42
+      },
+      "synthetic_source_count_replay_found": {
+        "original": 48,
+        "jpeg85": 46,
+        "jpeg70": 51,
+        "down75_up": 42
+      },
+      "by_variant": {
+        "original": {
+          "stable_tracks": 48,
+          "classifiable_tracks": 48,
+          "positive_orientation_tracks": 22,
+          "negative_orientation_tracks": 26,
+          "minority_fraction": 0.4583333333333333,
+          "orientation_median_separation_deg": 109.47007118276349,
+          "nearest_target_count": {
+            "target": 64,
+            "delta": 16,
+            "tolerance": 8
+          }
+        },
+        "jpeg85": {
+          "stable_tracks": 46,
+          "classifiable_tracks": 46,
+          "positive_orientation_tracks": 21,
+          "negative_orientation_tracks": 25,
+          "minority_fraction": 0.45652173913043476,
+          "orientation_median_separation_deg": 107.5924245621816,
+          "nearest_target_count": {
+            "target": 64,
+            "delta": 18,
+            "tolerance": 8
+          }
+        },
+        "jpeg70": {
+          "stable_tracks": 51,
+          "classifiable_tracks": 51,
+          "positive_orientation_tracks": 25,
+          "negative_orientation_tracks": 26,
+          "minority_fraction": 0.49019607843137253,
+          "orientation_median_separation_deg": 108.08386089337054,
+          "nearest_target_count": {
+            "target": 64,
+            "delta": 13,
+            "tolerance": 8
+          }
+        },
+        "down75_up": {
+          "stable_tracks": 42,
+          "classifiable_tracks": 42,
+          "positive_orientation_tracks": 18,
+          "negative_orientation_tracks": 24,
+          "minority_fraction": 0.42857142857142855,
+          "orientation_median_separation_deg": 108.92464441605124,
+          "nearest_target_count": {
+            "target": 64,
+            "delta": 22,
+            "tolerance": 8
+          }
+        }
+      },
+      "cross_reencoding_agreement": {
+        "jpeg85": {
+          "matched": 41,
+          "matched_fraction": 0.8541666666666666,
+          "same_sign_fraction": 1.0
+        },
+        "jpeg70": {
+          "matched": 42,
+          "matched_fraction": 0.875,
+          "same_sign_fraction": 1.0
+        },
+        "down75_up": {
+          "matched": 37,
+          "matched_fraction": 0.7708333333333334,
+          "same_sign_fraction": 1.0
+        }
+      },
+      "full_original_Stage94_capacity_gate": {
+        "counts_by_format": {
+          "original": 48,
+          "jpeg85": 46,
+          "jpeg70": 51,
+          "down75_up": 42
+        },
+        "cv": 0.06992886005680225,
+        "minority_orientation_gate": true,
+        "cross_variant_agreement_gate": true,
+        "all_count_carriers_rejected": false,
+        "carrier_by_size": {
+          "64": {
+            "synthetic_min": 42,
+            "synthetic_max": 51,
+            "source_min": 42,
+            "source_max": 51,
+            "compatibility_band": [
+              21,
+              77
+            ],
+            "compatible": true,
+            "rejected_by_count": false
+          },
+          "256": {
+            "synthetic_min": 64,
+            "synthetic_max": 97,
+            "source_min": 42,
+            "source_max": 51,
+            "compatibility_band": [
+              32,
+              146
+            ],
+            "compatible": true,
+            "rejected_by_count": false
+          }
+        },
+        "compatible_target_counts": [
+          64,
+          256
+        ],
+        "promoted": true
+      }
+    },
+    "256": {
+      "known_drawn_strokes": 256,
+      "synthetic_source_count_replay_expected": {
+        "original": 89,
+        "jpeg85": 97,
+        "jpeg70": 79,
+        "down75_up": 64
+      },
+      "synthetic_source_count_replay_found": {
+        "original": 89,
+        "jpeg85": 97,
+        "jpeg70": 79,
+        "down75_up": 64
+      },
+      "by_variant": {
+        "original": {
+          "stable_tracks": 89,
+          "classifiable_tracks": 89,
+          "positive_orientation_tracks": 50,
+          "negative_orientation_tracks": 39,
+          "minority_fraction": 0.43820224719101125,
+          "orientation_median_separation_deg": 109.063310871217,
+          "nearest_target_count": {
+            "target": 64,
+            "delta": 25,
+            "tolerance": 8
+          }
+        },
+        "jpeg85": {
+          "stable_tracks": 97,
+          "classifiable_tracks": 97,
+          "positive_orientation_tracks": 53,
+          "negative_orientation_tracks": 44,
+          "minority_fraction": 0.4536082474226804,
+          "orientation_median_separation_deg": 109.76716867679166,
+          "nearest_target_count": {
+            "target": 64,
+            "delta": 33,
+            "tolerance": 8
+          }
+        },
+        "jpeg70": {
+          "stable_tracks": 79,
+          "classifiable_tracks": 79,
+          "positive_orientation_tracks": 48,
+          "negative_orientation_tracks": 31,
+          "minority_fraction": 0.3924050632911392,
+          "orientation_median_separation_deg": 109.76716867679166,
+          "nearest_target_count": {
+            "target": 64,
+            "delta": 15,
+            "tolerance": 8
+          }
+        },
+        "down75_up": {
+          "stable_tracks": 64,
+          "classifiable_tracks": 64,
+          "positive_orientation_tracks": 41,
+          "negative_orientation_tracks": 23,
+          "minority_fraction": 0.359375,
+          "orientation_median_separation_deg": 109.47030200946696,
+          "nearest_target_count": {
+            "target": 64,
+            "delta": 0,
+            "tolerance": 8
+          }
+        }
+      },
+      "cross_reencoding_agreement": {
+        "jpeg85": {
+          "matched": 61,
+          "matched_fraction": 0.6853932584269663,
+          "same_sign_fraction": 1.0
+        },
+        "jpeg70": {
+          "matched": 60,
+          "matched_fraction": 0.6741573033707865,
+          "same_sign_fraction": 1.0
+        },
+        "down75_up": {
+          "matched": 46,
+          "matched_fraction": 0.5168539325842697,
+          "same_sign_fraction": 1.0
+        }
+      },
+      "full_original_Stage94_capacity_gate": {
+        "counts_by_format": {
+          "original": 89,
+          "jpeg85": 97,
+          "jpeg70": 79,
+          "down75_up": 64
+        },
+        "cv": 0.1497404004468523,
+        "minority_orientation_gate": true,
+        "cross_variant_agreement_gate": false,
+        "all_count_carriers_rejected": false,
+        "carrier_by_size": {
+          "64": {
+            "synthetic_min": 42,
+            "synthetic_max": 51,
+            "source_min": 64,
+            "source_max": 97,
+            "compatibility_band": [
+              21,
+              77
+            ],
+            "compatible": false,
+            "rejected_by_count": false
+          },
+          "256": {
+            "synthetic_min": 64,
+            "synthetic_max": 97,
+            "source_min": 64,
+            "source_max": 97,
+            "compatibility_band": [
+              32,
+              146
+            ],
+            "compatible": true,
+            "rejected_by_count": false
+          }
+        },
+        "compatible_target_counts": [
+          256
+        ],
+        "promoted": false
+      }
+    }
+  },
+  "known_true_64_is_count_compatible_with_256_scenario": true,
+  "known_true_256_full_gate_promoted": false,
+  "decision": "FULL_STAGE94_GATE_REJECTS_KNOWN_TRUE_256_STROKE_FIXTURE",
+  "interpretation_limit": "This measures one stylized synthetic generator and one fixed SOURCE-INDEPENDENT full-sail geometry. Even known 256 stroke calibration success does not certify that a natural pencil drawing encodes 256 bits. If this known-positive fails, the Stage181 real-image cross-format negative is NOT a calibrated exclusion of the 256 target.",
+  "safety": "No ordered true image angles, numeric secret candidate, key, BIP39 mnemonic, wallet, Ethereum address compare or external/social search."
+}
