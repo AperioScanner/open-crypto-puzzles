@@ -1,0 +1,34 @@
+name: Arweave 11 stage 181 corrected full sail capacity gate
+on:
+  push:
+    branches: [research/arweave11-chatgpt]
+    paths:
+      - ".github/workflows/arweave11-stage181-full-sail-capacity.yml"
+      - "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage181_full_sail_stage94_capacity_verdict.py"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  stage181:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      PZL: 2-mid-prizes/arweave-puzzle-11-1eth
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/arweave11-chatgpt
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m py_compile "$PZL/tools/stage181_full_sail_stage94_capacity_verdict.py"
+      - run: python "$PZL/tools/stage181_full_sail_stage94_capacity_verdict.py"
+      - name: Commit isolated Stage181 nonsecret source-provenance result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$PZL/analysis/runs/stage181-full-sail-capacity"
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "research: Stage181 corrected full sail capacity result [skip ci]"
+          git pull --rebase origin research/arweave11-chatgpt
+          git push origin HEAD:research/arweave11-chatgpt
