@@ -756,3 +756,8 @@ Stage155 also performs an automated static, read-only reference search across pu
 
 - Initial Actions #38666485939 failed BEFORE any Stage179 numeric control or source-archive reading: stage179_eight_peak_positional_identity.py imports the frozen Stage153 TRIANGLES module, which imports OpenCV cv2; workflow had installed only numpy. GitHub job logs explicitly show ModuleNotFoundError: No module named 'cv2' at imported Stage153 line 16. No scientific data or thresholds tested, no Stage179 report published.
 - Fix ONLY workflow dependency install numpy opencv-python-headless, leave Stage179 original registered source/archived-array comparison script, its u tolerance, reference/negative controls, and interpretation rule EXACTLY unchanged. Re-run under SAME experiment ID Stage179, no Stage180.
+
+## 2026-10-14 — Stage179 second import-only environment blocker (PIL), no scientific output yet
+
+- Actions #38666583054 after cv2 dependency fix STILL failed BEFORE source archive or controls: Stage153 imports PIL.Image, workflow missing Pillow. GitHub job log explicitly states ModuleNotFoundError: No module named 'PIL', Stage153 line18.
+- Correct ONLY workflow pip dependencies to numpy + opencv-python-headless + pillow (imports required by frozen Stage153 module), no code or fixture changes. Rerun SAME Stage179; do not call either missing-import workflow outcome a scientific negative.
