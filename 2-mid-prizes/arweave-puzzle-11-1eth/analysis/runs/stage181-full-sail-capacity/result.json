@@ -1,0 +1,117 @@
+{
+  "experiment_id": "A11-EXP-181",
+  "original_SHA256_provenance_only": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "original_artwork_pixels_reanalyzed": false,
+  "hypothesis": "Stage94's old 64/256 capacity exclusion was specific to a wrong small ROI, but the source-corrected full-sail capacity GATES were never re-evaluated as a whole.",
+  "source_code_and_archived_provenance_checks": {
+    "canonical_sha_provenance": true,
+    "prior_Stage132_confirmed_defect": true,
+    "Stage133_valid_corrected_ROI": true,
+    "Stage133_known_count_controls": true,
+    "Stage94_original_target_constants": true,
+    "Stage94_original_promotion_gates": true,
+    "Stage133_old_summary_matches_Stage94_raw": true,
+    "Stage133_old_agreement_matches_Stage94_raw": true,
+    "Stage133_corrected_full_sail_count_all_variants": true,
+    "calibration_records_both_original_carrier_sizes": true,
+    "exact_archived_old_carrier_gate_replay": true,
+    "three_pure_numeric_positive_negative_cases": true
+  },
+  "checks_passed": 12,
+  "checks_total": 12,
+  "numeric_gate_controls": {
+    "pass": true,
+    "passed": 3,
+    "cases": 3,
+    "checks": {
+      "positive_mock_composite_promotes": true,
+      "negative_mock_two_sizes_rejected": true,
+      "one_weak_format_blocks_promotion": true
+    }
+  },
+  "original_Stage94_gate_replay": {
+    "counts_by_format": {
+      "original": 10,
+      "jpeg85": 13,
+      "jpeg70": 12,
+      "down75_up": 14
+    },
+    "cv": 0.1207363221040738,
+    "minority_orientation_gate": true,
+    "cross_variant_agreement_gate": true,
+    "all_count_carriers_rejected": true,
+    "carrier_by_size": {
+      "64": {
+        "synthetic_min": 45,
+        "synthetic_max": 52,
+        "source_min": 10,
+        "source_max": 14,
+        "compatibility_band": [
+          22,
+          78
+        ],
+        "compatible": false,
+        "rejected_by_count": true
+      },
+      "256": {
+        "synthetic_min": 53,
+        "synthetic_max": 70,
+        "source_min": 10,
+        "source_max": 14,
+        "compatibility_band": [
+          26,
+          105
+        ],
+        "compatible": false,
+        "rejected_by_count": true
+      }
+    },
+    "compatible_target_counts": [],
+    "promoted": false
+  },
+  "corrected_full_sail_original_Stage94_gate": {
+    "counts_by_format": {
+      "original": 80,
+      "jpeg85": 76,
+      "jpeg70": 90,
+      "down75_up": 77
+    },
+    "cv": 0.0686022285020444,
+    "minority_orientation_gate": true,
+    "cross_variant_agreement_gate": false,
+    "all_count_carriers_rejected": false,
+    "carrier_by_size": {
+      "64": {
+        "synthetic_min": 42,
+        "synthetic_max": 51,
+        "source_min": 76,
+        "source_max": 90,
+        "compatibility_band": [
+          21,
+          77
+        ],
+        "compatible": false,
+        "rejected_by_count": false
+      },
+      "256": {
+        "synthetic_min": 64,
+        "synthetic_max": 97,
+        "source_min": 76,
+        "source_max": 90,
+        "compatibility_band": [
+          32,
+          146
+        ],
+        "compatible": true,
+        "rejected_by_count": false
+      }
+    },
+    "compatible_target_counts": [
+      256
+    ],
+    "promoted": false
+  },
+  "decision": "FULL_SAIL_COUNT_COMPATIBLE_BUT_ROBUSTNESS_GATE_FAILS",
+  "scope_limit": "Only detection-capacity and repeatability of two previously REGISTERED count families is assessed, NOT a 256-bit extraction. A 256-drawn synthetic often collapses to fewer detected graphite tracks; compatibility is not proof of a natural or encoded 256-stroke arrangement. JPEGs are one artwork, not independent replicates.",
+  "safety": "No private key, mnemonic, BIP39 word, Ethereum address, wallet or external/social work."
+}
