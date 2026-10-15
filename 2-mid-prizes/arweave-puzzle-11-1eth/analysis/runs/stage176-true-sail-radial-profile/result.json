@@ -1,0 +1,592 @@
+{
+  "experiment_id": "A11-EXP-176",
+  "canonical_sha256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "hypothesis": "Known five true small sail triangles may carry distinct stable apex-radial ink ridges detectable after normalizing their cross-sections.",
+  "source_defect_motivation": "Stage175 confirmed old Stage105 false apex coordinates 3/5 and completely failed synthetic 3..7 counts.",
+  "independent_source_guards": {
+    "canonical_SHA_provenance": true,
+    "Stage175_independent_apex_error_confirmed": true,
+    "Stage175_18_source_guards": true,
+    "original_five_apex_geometry": true,
+    "known_five_shapes": true
+  },
+  "controls": {
+    "pass": true,
+    "passed": 240,
+    "cases": 240,
+    "failures": []
+  },
+  "static_geometry": {
+    "sail1": [
+      [
+        1042,
+        448
+      ],
+      [
+        1007,
+        546
+      ],
+      [
+        1077,
+        546
+      ]
+    ],
+    "sail2": [
+      [
+        1148,
+        433
+      ],
+      [
+        1110,
+        532
+      ],
+      [
+        1186,
+        532
+      ]
+    ],
+    "sail3": [
+      [
+        1282,
+        411
+      ],
+      [
+        1238,
+        514
+      ],
+      [
+        1326,
+        514
+      ]
+    ],
+    "sail4": [
+      [
+        1372,
+        397
+      ],
+      [
+        1330,
+        498
+      ],
+      [
+        1414,
+        498
+      ]
+    ],
+    "sail5": [
+      [
+        1490,
+        357
+      ],
+      [
+        1443,
+        463
+      ],
+      [
+        1537,
+        463
+      ]
+    ]
+  },
+  "fixed_method": {
+    "t_rows": 35,
+    "t_limits": [
+      0.72,
+      0.87
+    ],
+    "x_columns": 129,
+    "u_limits": [
+      0.08,
+      0.92
+    ],
+    "resampling": "cv2.remap bilinear",
+    "measure": "mean normalized grayscale darkness",
+    "find_peaks": {
+      "height": 0.35,
+      "prominence": 0.25,
+      "distance_samples": 8
+    },
+    "source_min_max_dark_fraction": [
+      0.05,
+      0.85
+    ],
+    "source_ink_cutoff": 175
+  },
+  "source_by_format_sail": {
+    "original": {
+      "sail1": {
+        "count": 8,
+        "ink_occupancy": 0.682392,
+        "peak_u": [
+          0.11938,
+          0.19812,
+          0.36875,
+          0.46719,
+          0.5525,
+          0.67063,
+          0.76906,
+          0.85437
+        ],
+        "peak_heights": [
+          0.89703,
+          0.96863,
+          0.56459,
+          0.93882,
+          0.46073,
+          0.96605,
+          0.96941,
+          0.84706
+        ],
+        "n_samples": 4515,
+        "adequate": true
+      },
+      "sail2": {
+        "count": 8,
+        "ink_occupancy": 0.694574,
+        "peak_u": [
+          0.16531,
+          0.27031,
+          0.3425,
+          0.40813,
+          0.53281,
+          0.63781,
+          0.69688,
+          0.80188
+        ],
+        "peak_heights": [
+          0.97748,
+          0.93468,
+          0.69143,
+          0.84852,
+          0.98936,
+          0.79317,
+          0.90588,
+          0.7721
+        ],
+        "n_samples": 4515,
+        "adequate": true
+      },
+      "sail3": {
+        "count": 4,
+        "ink_occupancy": 0.848505,
+        "peak_u": [
+          0.27031,
+          0.37531,
+          0.52625,
+          0.6575
+        ],
+        "peak_heights": [
+          0.88403,
+          0.99585,
+          0.92605,
+          1.0
+        ],
+        "n_samples": 4515,
+        "adequate": true
+      },
+      "sail4": {
+        "count": 4,
+        "ink_occupancy": 0.839203,
+        "peak_u": [
+          0.22437,
+          0.36219,
+          0.67063,
+          0.7625
+        ],
+        "peak_heights": [
+          0.81412,
+          0.95798,
+          0.97132,
+          0.76952
+        ],
+        "n_samples": 4515,
+        "adequate": true
+      },
+      "sail5": {
+        "count": 6,
+        "ink_occupancy": 0.80598,
+        "peak_u": [
+          0.185,
+          0.25719,
+          0.47375,
+          0.55906,
+          0.64438,
+          0.73625
+        ],
+        "peak_heights": [
+          0.83395,
+          0.86095,
+          0.86331,
+          0.95137,
+          0.94196,
+          0.87451
+        ],
+        "n_samples": 4515,
+        "adequate": true
+      }
+    },
+    "jpeg85": {
+      "sail1": {
+        "count": 8,
+        "ink_occupancy": 0.682835,
+        "peak_u": [
+          0.11938,
+          0.19812,
+          0.36875,
+          0.46719,
+          0.5525,
+          0.67063,
+          0.76906,
+          0.85437
+        ],
+        "peak_heights": [
+          0.893,
+          0.96146,
+          0.56123,
+          0.93143,
+          0.4605,
+          0.95776,
+          0.96202,
+          0.8456
+        ],
+        "n_samples": 4515,
+        "adequate": true
+      },
+      "sail2": {
+        "count": 8,
+        "ink_occupancy": 0.697674,
+        "peak_u": [
+          0.16531,
+          0.27031,
+          0.3425,
+          0.40813,
+          0.53281,
+          0.63781,
+          0.69688,
+          0.80188
+        ],
+        "peak_heights": [
+          0.97457,
+          0.92874,
+          0.69031,
+          0.84359,
+          0.97703,
+          0.78969,
+          0.90185,
+          0.77199
+        ],
+        "n_samples": 4515,
+        "adequate": true
+      },
+      "sail3": {
+        "count": 4,
+        "ink_occupancy": 0.848283,
+        "peak_u": [
+          0.27031,
+          0.37531,
+          0.52625,
+          0.65094
+        ],
+        "peak_heights": [
+          0.87585,
+          0.98868,
+          0.92034,
+          0.99664
+        ],
+        "n_samples": 4515,
+        "adequate": true
+      },
+      "sail4": {
+        "count": 3,
+        "ink_occupancy": 0.839424,
+        "peak_u": [
+          0.22437,
+          0.36219,
+          0.67063
+        ],
+        "peak_heights": [
+          0.80919,
+          0.95059,
+          0.9665
+        ],
+        "n_samples": 4515,
+        "adequate": true
+      },
+      "sail5": {
+        "count": 6,
+        "ink_occupancy": 0.804651,
+        "peak_u": [
+          0.185,
+          0.25719,
+          0.47375,
+          0.55906,
+          0.64438,
+          0.73625
+        ],
+        "peak_heights": [
+          0.82812,
+          0.85457,
+          0.86387,
+          0.94487,
+          0.93479,
+          0.86947
+        ],
+        "n_samples": 4515,
+        "adequate": true
+      }
+    },
+    "jpeg70": {
+      "sail1": {
+        "count": 8,
+        "ink_occupancy": 0.683056,
+        "peak_u": [
+          0.11281,
+          0.19812,
+          0.36875,
+          0.46719,
+          0.5525,
+          0.67063,
+          0.76906,
+          0.85437
+        ],
+        "peak_heights": [
+          0.89154,
+          0.95955,
+          0.55529,
+          0.9256,
+          0.46487,
+          0.96056,
+          0.95787,
+          0.84123
+        ],
+        "n_samples": 4515,
+        "adequate": true
+      },
+      "sail2": {
+        "count": 8,
+        "ink_occupancy": 0.698339,
+        "peak_u": [
+          0.16531,
+          0.27031,
+          0.3425,
+          0.40813,
+          0.53281,
+          0.63781,
+          0.69688,
+          0.80188
+        ],
+        "peak_heights": [
+          0.9684,
+          0.92739,
+          0.68852,
+          0.85031,
+          0.97277,
+          0.78801,
+          0.8986,
+          0.77176
+        ],
+        "n_samples": 4515,
+        "adequate": true
+      },
+      "sail3": {
+        "count": 4,
+        "ink_occupancy": 0.849612,
+        "peak_u": [
+          0.27031,
+          0.37531,
+          0.52625,
+          0.66406
+        ],
+        "peak_heights": [
+          0.87126,
+          0.97871,
+          0.91597,
+          0.99417
+        ],
+        "n_samples": 4515,
+        "adequate": true
+      },
+      "sail4": {
+        "count": 4,
+        "ink_occupancy": 0.839867,
+        "peak_u": [
+          0.22437,
+          0.36219,
+          0.66406,
+          0.7625
+        ],
+        "peak_heights": [
+          0.8084,
+          0.95429,
+          0.96437,
+          0.77165
+        ],
+        "n_samples": 4515,
+        "adequate": true
+      },
+      "sail5": {
+        "count": 6,
+        "ink_occupancy": 0.806645,
+        "peak_u": [
+          0.185,
+          0.25719,
+          0.47375,
+          0.55906,
+          0.64438,
+          0.73625
+        ],
+        "peak_heights": [
+          0.8251,
+          0.86062,
+          0.85994,
+          0.94711,
+          0.92796,
+          0.87541
+        ],
+        "n_samples": 4515,
+        "adequate": true
+      }
+    },
+    "down75_up": {
+      "sail1": {
+        "count": 8,
+        "ink_occupancy": 0.702104,
+        "peak_u": [
+          0.11281,
+          0.21125,
+          0.37531,
+          0.46719,
+          0.5525,
+          0.67063,
+          0.77563,
+          0.85437
+        ],
+        "peak_heights": [
+          0.8502,
+          0.96157,
+          0.56627,
+          0.90566,
+          0.42644,
+          0.94655,
+          0.94331,
+          0.8195
+        ],
+        "n_samples": 4515,
+        "adequate": true
+      },
+      "sail2": {
+        "count": 8,
+        "ink_occupancy": 0.716501,
+        "peak_u": [
+          0.16531,
+          0.26375,
+          0.3425,
+          0.41469,
+          0.53281,
+          0.63781,
+          0.69688,
+          0.80844
+        ],
+        "peak_heights": [
+          0.96269,
+          0.91036,
+          0.63585,
+          0.84426,
+          0.9842,
+          0.73815,
+          0.90745,
+          0.75115
+        ],
+        "n_samples": 4515,
+        "adequate": true
+      },
+      "sail3": {
+        "count": 3,
+        "ink_occupancy": 0.865116,
+        "peak_u": [
+          0.27031,
+          0.36875,
+          0.65094
+        ],
+        "peak_heights": [
+          0.84381,
+          0.94151,
+          0.99944
+        ],
+        "n_samples": 4515,
+        "adequate": false
+      },
+      "sail4": {
+        "count": 4,
+        "ink_occupancy": 0.860465,
+        "peak_u": [
+          0.22437,
+          0.34906,
+          0.66406,
+          0.75594
+        ],
+        "peak_heights": [
+          0.75563,
+          0.93367,
+          0.96179,
+          0.7628
+        ],
+        "n_samples": 4515,
+        "adequate": false
+      },
+      "sail5": {
+        "count": 6,
+        "ink_occupancy": 0.820598,
+        "peak_u": [
+          0.185,
+          0.26375,
+          0.47375,
+          0.55906,
+          0.63781,
+          0.73625
+        ],
+        "peak_heights": [
+          0.82588,
+          0.85423,
+          0.85894,
+          0.95003,
+          0.92381,
+          0.86599
+        ],
+        "n_samples": 4515,
+        "adequate": true
+      }
+    }
+  },
+  "per_sail_stability": [
+    {
+      "site": "sail1",
+      "count": 8,
+      "all_four_same": true
+    },
+    {
+      "site": "sail2",
+      "count": 8,
+      "all_four_same": true
+    },
+    {
+      "site": "sail3",
+      "count": null,
+      "all_four_same": false
+    },
+    {
+      "site": "sail4",
+      "count": null,
+      "all_four_same": false
+    },
+    {
+      "site": "sail5",
+      "count": 6,
+      "all_four_same": true
+    }
+  ],
+  "adequate_real_site_format_count": 18,
+  "decision": "INSUFFICIENT_REAL_SAIL_PROFILE_COVERAGE",
+  "scope_limit": "A radial ink intensity peak may be a disconnected hatch/boat stroke rather than a connected sail spoke. JPEGs are not independent artwork. This narrow countermeasure does not establish an intentionally encoded count or absence of all strokes.",
+  "safety": "Image geometry and source only, no keys, private phrases, wallet or public address checks, no external research."
+}
