@@ -1,0 +1,121 @@
+{
+  "experiment_id": "A11-EXP-173",
+  "canonical_SHA_provenance_only": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "original_art_pixels_examined": false,
+  "source_checks": {
+    "source_SHA": true,
+    "archived_stage126_id": true,
+    "five_sites": true,
+    "declared_apex_window": true,
+    "original_inspect_code": true,
+    "synthetic_tip_code": true,
+    "synthetic_calibration": true,
+    "old_original_stable_count": true,
+    "old_original_decision": true,
+    "all_actual_apex_coordinates": true,
+    "no_original_test_pixel_above_apex": true,
+    "all_synthetic_test_pixels_above_fake_apex": true
+  },
+  "controls_passed": 12,
+  "controls_total": 12,
+  "sites": [
+    {
+      "site": 1,
+      "source_apex": [
+        1042,
+        448
+      ],
+      "Stage126_reference_top": 448,
+      "old_measured_y_interval": [
+        451,
+        466
+      ],
+      "synthetic_apex_y": 472,
+      "original_above_true_apex": 0,
+      "synthetic_above_own_fake_apex": 15,
+      "points": 15,
+      "source_point_equal_to_original_apex": true,
+      "source_data_match_archive": true,
+      "historical_label": "EXTENDED"
+    },
+    {
+      "site": 2,
+      "source_apex": [
+        1148,
+        433
+      ],
+      "Stage126_reference_top": 433,
+      "old_measured_y_interval": [
+        436,
+        451
+      ],
+      "synthetic_apex_y": 457,
+      "original_above_true_apex": 0,
+      "synthetic_above_own_fake_apex": 15,
+      "points": 15,
+      "source_point_equal_to_original_apex": true,
+      "source_data_match_archive": true,
+      "historical_label": "EXTENDED"
+    },
+    {
+      "site": 3,
+      "source_apex": [
+        1282,
+        411
+      ],
+      "Stage126_reference_top": 411,
+      "old_measured_y_interval": [
+        414,
+        429
+      ],
+      "synthetic_apex_y": 435,
+      "original_above_true_apex": 0,
+      "synthetic_above_own_fake_apex": 15,
+      "points": 15,
+      "source_point_equal_to_original_apex": true,
+      "source_data_match_archive": true,
+      "historical_label": null
+    },
+    {
+      "site": 4,
+      "source_apex": [
+        1372,
+        397
+      ],
+      "Stage126_reference_top": 397,
+      "old_measured_y_interval": [
+        400,
+        415
+      ],
+      "synthetic_apex_y": 421,
+      "original_above_true_apex": 0,
+      "synthetic_above_own_fake_apex": 15,
+      "points": 15,
+      "source_point_equal_to_original_apex": true,
+      "source_data_match_archive": true,
+      "historical_label": "EXTENDED"
+    },
+    {
+      "site": 5,
+      "source_apex": [
+        1490,
+        357
+      ],
+      "Stage126_reference_top": 357,
+      "old_measured_y_interval": [
+        360,
+        375
+      ],
+      "synthetic_apex_y": 381,
+      "original_above_true_apex": 0,
+      "synthetic_above_own_fake_apex": 15,
+      "points": 15,
+      "source_point_equal_to_original_apex": true,
+      "source_data_match_archive": true,
+      "historical_label": "EXTENDED"
+    }
+  ],
+  "decision": "CONFIRMED_STAGE126_SOURCE_SYNTHETIC_APEX_FRAME_MISMATCH",
+  "limit": "Four original Stage126 EXTENDED states in region BELOW real sail apex do not evidence extension ABOVE apex; no corrected real masthead pixels examined.",
+  "safety": "No wallet, key, mnemonic, address or social/external analysis"
+}
