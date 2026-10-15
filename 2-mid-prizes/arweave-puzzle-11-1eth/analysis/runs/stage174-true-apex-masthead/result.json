@@ -1,0 +1,695 @@
+{
+  "experiment_id": "A11-EXP-174",
+  "source_SHA256": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "source_defect": "Stage173 shows old Stage126 original windows below actual tips while its synthetic windows were above artificially shifted tips.",
+  "correction": "Pass virtual site top = source original top-24 to unchanged Stage126 inspect and synthetic functions, aligning synthetic and actual apex at same y",
+  "true_original_apex_y": [
+    448,
+    433,
+    411,
+    397,
+    357
+  ],
+  "source_frame_guards": {
+    "original_SHA": true,
+    "Stage173_source_frame_defect_verified": true,
+    "Stage173_structural_12": true,
+    "Stage126_180_historical_calibration": true,
+    "all_five_apex_locations_match": true,
+    "all_15_rows_above_true_apex": true,
+    "fixed_shift_24px": true,
+    "unchanged_old_five_stroke_gates": true,
+    "original_x_jitter_three": true
+  },
+  "source_guards_passed": 9,
+  "source_guards_total": 9,
+  "reframed_synthetic_controls": {
+    "passed": 180,
+    "cases": 180,
+    "pass": true,
+    "failures": []
+  },
+  "real_source_above_apex": [
+    {
+      "original_site": [
+        "sail_1",
+        1042,
+        448,
+        98,
+        35
+      ],
+      "corrected_virtual_site": [
+        "sail_1",
+        1042,
+        424,
+        98,
+        35
+      ],
+      "source_window_y": [
+        427,
+        442
+      ],
+      "stable_label": "ABSENT",
+      "measurements": [
+        {
+          "format": "original",
+          "dx": -2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "original",
+          "dx": 0,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "original",
+          "dx": 2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg85",
+          "dx": -2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg85",
+          "dx": 0,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg85",
+          "dx": 2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg70",
+          "dx": -2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg70",
+          "dx": 0,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg70",
+          "dx": 2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "down75_up",
+          "dx": -2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "down75_up",
+          "dx": 0,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "down75_up",
+          "dx": 2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        }
+      ]
+    },
+    {
+      "original_site": [
+        "sail_2",
+        1148,
+        433,
+        99,
+        38
+      ],
+      "corrected_virtual_site": [
+        "sail_2",
+        1148,
+        409,
+        99,
+        38
+      ],
+      "source_window_y": [
+        412,
+        427
+      ],
+      "stable_label": "ABSENT",
+      "measurements": [
+        {
+          "format": "original",
+          "dx": -2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "original",
+          "dx": 0,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "original",
+          "dx": 2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg85",
+          "dx": -2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg85",
+          "dx": 0,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg85",
+          "dx": 2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg70",
+          "dx": -2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg70",
+          "dx": 0,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg70",
+          "dx": 2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "down75_up",
+          "dx": -2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "down75_up",
+          "dx": 0,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "down75_up",
+          "dx": 2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        }
+      ]
+    },
+    {
+      "original_site": [
+        "sail_3",
+        1282,
+        411,
+        103,
+        44
+      ],
+      "corrected_virtual_site": [
+        "sail_3",
+        1282,
+        387,
+        103,
+        44
+      ],
+      "source_window_y": [
+        390,
+        405
+      ],
+      "stable_label": "ABSENT",
+      "measurements": [
+        {
+          "format": "original",
+          "dx": -2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "original",
+          "dx": 0,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "original",
+          "dx": 2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg85",
+          "dx": -2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg85",
+          "dx": 0,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg85",
+          "dx": 2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg70",
+          "dx": -2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg70",
+          "dx": 0,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg70",
+          "dx": 2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "down75_up",
+          "dx": -2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "down75_up",
+          "dx": 0,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "down75_up",
+          "dx": 2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        }
+      ]
+    },
+    {
+      "original_site": [
+        "sail_4",
+        1372,
+        397,
+        101,
+        42
+      ],
+      "corrected_virtual_site": [
+        "sail_4",
+        1372,
+        373,
+        101,
+        42
+      ],
+      "source_window_y": [
+        376,
+        391
+      ],
+      "stable_label": "ABSENT",
+      "measurements": [
+        {
+          "format": "original",
+          "dx": -2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "original",
+          "dx": 0,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "original",
+          "dx": 2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg85",
+          "dx": -2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg85",
+          "dx": 0,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg85",
+          "dx": 2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg70",
+          "dx": -2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg70",
+          "dx": 0,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg70",
+          "dx": 2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "down75_up",
+          "dx": -2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "down75_up",
+          "dx": 0,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "down75_up",
+          "dx": 2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        }
+      ]
+    },
+    {
+      "original_site": [
+        "sail_5",
+        1490,
+        357,
+        106,
+        47
+      ],
+      "corrected_virtual_site": [
+        "sail_5",
+        1490,
+        333,
+        106,
+        47
+      ],
+      "source_window_y": [
+        336,
+        351
+      ],
+      "stable_label": "ABSENT",
+      "measurements": [
+        {
+          "format": "original",
+          "dx": -2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "original",
+          "dx": 0,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "original",
+          "dx": 2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg85",
+          "dx": -2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg85",
+          "dx": 0,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg85",
+          "dx": 2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg70",
+          "dx": -2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg70",
+          "dx": 0,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "jpeg70",
+          "dx": 2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "down75_up",
+          "dx": -2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "down75_up",
+          "dx": 0,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        },
+        {
+          "format": "down75_up",
+          "dx": 2,
+          "classification": "ABSENT",
+          "ink_rows": 0,
+          "edge_rows": 0,
+          "ink_longest_run": 0,
+          "edge_longest_run": 0
+        }
+      ]
+    }
+  ],
+  "stable_sites": 5,
+  "mixed_known_states": false,
+  "uniform_known_states": true,
+  "decision": "UNIFORM_TRUE_APEX_UPPER_INK_STATE",
+  "scope_limit": "Centered ink above apex may be unrelated/disconnected pencil marks; stable EXTENDED means only Stage126's fixed vertical-ink/edge rule, not physically connected mast extension or code.",
+  "safety": "Image only; no private-key, mnemonic, address, wallet or social/outside research."
+}
