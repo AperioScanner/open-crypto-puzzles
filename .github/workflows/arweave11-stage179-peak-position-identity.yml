@@ -21,7 +21,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python -m pip install --disable-pip-version-check numpy opencv-python-headless
+      - run: python -m pip install --disable-pip-version-check numpy opencv-python-headless pillow
       - run: python -m py_compile "$PZL/tools/stage179_eight_peak_positional_identity.py"
       - run: python "$PZL/tools/stage179_eight_peak_positional_identity.py"
       - name: Archive Stage179 frozen peak identity results
