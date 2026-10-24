@@ -259,3 +259,8 @@ Stage182 (#38792693846) proved a serious limitation: the OLD Stage94 full gate a
 ## 2026-10-24 — Stage184-R 256-stroke carrier instrument limitation
 
 The Stage184 one-off source-blind fixture only barely passed the combined full-canvas + max-matching gate (49/89). Stage184-R independently preregistered 18 different synthetic scenes: known256 accepted 4/8 (uniform0/4, pencil4/4), known64/128 false compatible/promoted for256 7/8, known16 negatives correctly rejected. All 76/76 calibration/source guards pass, workflow #40103194186 success. This stage RETIRES USING THE CURRENT COMPOSITE DETECTOR AS EVIDENCE THAT 256 intentional symbols are present or absent; it does not prove a natural carrier impossible. No additional numerical threshold, change of synthetic style after observation, source-sequence extraction or Stage185 is justified from the present one-off finding.
+
+
+## 2026-10-24 — Stage185 reopened only Stage127 hull-detector sensitivity (no code)
+
+Stage185 #40104994829 (44/44 guards) compared unchanged Stage127 two-method/four-format classifier against source-blind curved, broken and curved+broken known hull slope strokes. The source-like curved+broken positives recover 2/5, 0/5, 2/5 for UP, LEVEL, DOWN; the original clean hull-slope negatives cannot be generalized to hand-drawn interrupted/curved hulls. Verdict STAGE127_SOURCE_LIKE_POSITIVE_RECOVERY_INADEQUATE. No new source pixel pattern or intentional sign code demonstrated; avoid rerunning old Stage127 source to manufacture a positive. The current 256 large-sail detector remains nonspecific (Stage184-R).
