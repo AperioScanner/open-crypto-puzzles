@@ -167,6 +167,9 @@ def main():
                 "minority_orientation_gate":gate["minority_orientation_gate"],
                 "all_variant_matching_gate":gate["cross_variant_agreement_gate"],
             })
+    # NumPy scalars can report their type as 'bool' but are not JSON-native.
+    # Convert QA flags to Python booleans; no measurements or gates change.
+    checks={key:bool(value) for key,value in checks.items()}
     valid=all(checks.values())
     positives=[v for v in observations if v["known_drawn"]==256]
     decoys=[v for v in observations if v["known_drawn"] in (64,128)]
