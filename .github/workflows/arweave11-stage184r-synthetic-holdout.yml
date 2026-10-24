@@ -1,0 +1,42 @@
+name: Arweave 11 Stage184-R synthetic holdout
+on:
+  push:
+    branches: [research/arweave11-chatgpt]
+    paths:
+      - ".github/workflows/arweave11-stage184r-synthetic-holdout.yml"
+      - "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage184r_synthetic_holdout.py"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: arweave11-stage184r
+  cancel-in-progress: false
+jobs:
+  stage184r:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      PZL: 2-mid-prizes/arweave-puzzle-11-1eth
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/arweave11-chatgpt
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install frozen detector dependencies
+        run: python -m pip install --disable-pip-version-check numpy pillow opencv-python-headless
+      - name: Syntax check
+        run: python -m py_compile "$PZL/tools/stage184r_synthetic_holdout.py"
+      - name: Stage184-R preregistered source-blind holdout
+        run: python "$PZL/tools/stage184r_synthetic_holdout.py"
+      - name: Archive Stage184-R result and report
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$PZL/analysis/runs/stage184r-synthetic-holdout"
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "research: archive Stage184-R holdout results [skip ci]"
+          git pull --rebase origin research/arweave11-chatgpt
+          git push origin HEAD:research/arweave11-chatgpt
