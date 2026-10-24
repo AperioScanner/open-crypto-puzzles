@@ -1,0 +1,336 @@
+{
+  "experiment_id": "A11-EXP-185",
+  "canonical_sha256_provenance_only": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "original_artwork_pixels_read": false,
+  "question": "Can Stage127 old detector recover stylized curved/broken 5-small-boat hull positives, unlike its idealized straight-line controls?",
+  "families": [
+    "curved",
+    "broken",
+    "curved_broken"
+  ],
+  "classes": [
+    "UP_RIGHT",
+    "LEVEL",
+    "DOWN_RIGHT"
+  ],
+  "bow_amplitude_px": 6.0,
+  "broken_ink_span_px": 20,
+  "broken_gap_span_px": 8,
+  "line_thickness_px": 2,
+  "unchanged_old_gate_slope_sign": 0.12,
+  "qa_checks": {
+    "canonical_sha_provenance_only": true,
+    "stage127_archived_source_abstention": true,
+    "stage127_archived_calibration": true,
+    "frozen_original_stage127_geometry": true,
+    "four_formats_and_two_methods_unchanged": true,
+    "clean_known_mixed_5_of_5": true,
+    "clean_known_level_decoy_5_of_5": true,
+    "source_blind_blank_0_of_5": true,
+    "curved_UP_RIGHT_5_sail_hull_sites_drawn": true,
+    "curved_UP_RIGHT_real_strokes_present": true,
+    "curved_UP_RIGHT_contours_present": true,
+    "curved_UP_RIGHT_in_image": true,
+    "curved_LEVEL_5_sail_hull_sites_drawn": true,
+    "curved_LEVEL_real_strokes_present": true,
+    "curved_LEVEL_contours_present": true,
+    "curved_LEVEL_in_image": true,
+    "curved_DOWN_RIGHT_5_sail_hull_sites_drawn": true,
+    "curved_DOWN_RIGHT_real_strokes_present": true,
+    "curved_DOWN_RIGHT_contours_present": true,
+    "curved_DOWN_RIGHT_in_image": true,
+    "broken_UP_RIGHT_5_sail_hull_sites_drawn": true,
+    "broken_UP_RIGHT_real_strokes_present": true,
+    "broken_UP_RIGHT_contours_present": true,
+    "broken_UP_RIGHT_in_image": true,
+    "broken_LEVEL_5_sail_hull_sites_drawn": true,
+    "broken_LEVEL_real_strokes_present": true,
+    "broken_LEVEL_contours_present": true,
+    "broken_LEVEL_in_image": true,
+    "broken_DOWN_RIGHT_5_sail_hull_sites_drawn": true,
+    "broken_DOWN_RIGHT_real_strokes_present": true,
+    "broken_DOWN_RIGHT_contours_present": true,
+    "broken_DOWN_RIGHT_in_image": true,
+    "curved_broken_UP_RIGHT_5_sail_hull_sites_drawn": true,
+    "curved_broken_UP_RIGHT_real_strokes_present": true,
+    "curved_broken_UP_RIGHT_contours_present": true,
+    "curved_broken_UP_RIGHT_in_image": true,
+    "curved_broken_LEVEL_5_sail_hull_sites_drawn": true,
+    "curved_broken_LEVEL_real_strokes_present": true,
+    "curved_broken_LEVEL_contours_present": true,
+    "curved_broken_LEVEL_in_image": true,
+    "curved_broken_DOWN_RIGHT_5_sail_hull_sites_drawn": true,
+    "curved_broken_DOWN_RIGHT_real_strokes_present": true,
+    "curved_broken_DOWN_RIGHT_contours_present": true,
+    "curved_broken_DOWN_RIGHT_in_image": true
+  },
+  "qa_passed": 44,
+  "qa_total": 44,
+  "known_fixture_results": [
+    {
+      "nuisance": "curved",
+      "known_true_class": "UP_RIGHT",
+      "correct_stable": 5,
+      "wrong_stable": 0,
+      "abstained": 0,
+      "known_5_site_results": [
+        {
+          "site": "sail_1",
+          "stable": "UP_RIGHT"
+        },
+        {
+          "site": "sail_2",
+          "stable": "UP_RIGHT"
+        },
+        {
+          "site": "sail_3",
+          "stable": "UP_RIGHT"
+        },
+        {
+          "site": "sail_4",
+          "stable": "UP_RIGHT"
+        },
+        {
+          "site": "sail_5",
+          "stable": "UP_RIGHT"
+        }
+      ]
+    },
+    {
+      "nuisance": "curved",
+      "known_true_class": "LEVEL",
+      "correct_stable": 1,
+      "wrong_stable": 0,
+      "abstained": 4,
+      "known_5_site_results": [
+        {
+          "site": "sail_1",
+          "stable": null
+        },
+        {
+          "site": "sail_2",
+          "stable": null
+        },
+        {
+          "site": "sail_3",
+          "stable": null
+        },
+        {
+          "site": "sail_4",
+          "stable": null
+        },
+        {
+          "site": "sail_5",
+          "stable": "LEVEL"
+        }
+      ]
+    },
+    {
+      "nuisance": "curved",
+      "known_true_class": "DOWN_RIGHT",
+      "correct_stable": 3,
+      "wrong_stable": 0,
+      "abstained": 2,
+      "known_5_site_results": [
+        {
+          "site": "sail_1",
+          "stable": "DOWN_RIGHT"
+        },
+        {
+          "site": "sail_2",
+          "stable": null
+        },
+        {
+          "site": "sail_3",
+          "stable": "DOWN_RIGHT"
+        },
+        {
+          "site": "sail_4",
+          "stable": null
+        },
+        {
+          "site": "sail_5",
+          "stable": "DOWN_RIGHT"
+        }
+      ]
+    },
+    {
+      "nuisance": "broken",
+      "known_true_class": "UP_RIGHT",
+      "correct_stable": 5,
+      "wrong_stable": 0,
+      "abstained": 0,
+      "known_5_site_results": [
+        {
+          "site": "sail_1",
+          "stable": "UP_RIGHT"
+        },
+        {
+          "site": "sail_2",
+          "stable": "UP_RIGHT"
+        },
+        {
+          "site": "sail_3",
+          "stable": "UP_RIGHT"
+        },
+        {
+          "site": "sail_4",
+          "stable": "UP_RIGHT"
+        },
+        {
+          "site": "sail_5",
+          "stable": "UP_RIGHT"
+        }
+      ]
+    },
+    {
+      "nuisance": "broken",
+      "known_true_class": "LEVEL",
+      "correct_stable": 5,
+      "wrong_stable": 0,
+      "abstained": 0,
+      "known_5_site_results": [
+        {
+          "site": "sail_1",
+          "stable": "LEVEL"
+        },
+        {
+          "site": "sail_2",
+          "stable": "LEVEL"
+        },
+        {
+          "site": "sail_3",
+          "stable": "LEVEL"
+        },
+        {
+          "site": "sail_4",
+          "stable": "LEVEL"
+        },
+        {
+          "site": "sail_5",
+          "stable": "LEVEL"
+        }
+      ]
+    },
+    {
+      "nuisance": "broken",
+      "known_true_class": "DOWN_RIGHT",
+      "correct_stable": 5,
+      "wrong_stable": 0,
+      "abstained": 0,
+      "known_5_site_results": [
+        {
+          "site": "sail_1",
+          "stable": "DOWN_RIGHT"
+        },
+        {
+          "site": "sail_2",
+          "stable": "DOWN_RIGHT"
+        },
+        {
+          "site": "sail_3",
+          "stable": "DOWN_RIGHT"
+        },
+        {
+          "site": "sail_4",
+          "stable": "DOWN_RIGHT"
+        },
+        {
+          "site": "sail_5",
+          "stable": "DOWN_RIGHT"
+        }
+      ]
+    },
+    {
+      "nuisance": "curved_broken",
+      "known_true_class": "UP_RIGHT",
+      "correct_stable": 2,
+      "wrong_stable": 0,
+      "abstained": 3,
+      "known_5_site_results": [
+        {
+          "site": "sail_1",
+          "stable": null
+        },
+        {
+          "site": "sail_2",
+          "stable": null
+        },
+        {
+          "site": "sail_3",
+          "stable": "UP_RIGHT"
+        },
+        {
+          "site": "sail_4",
+          "stable": null
+        },
+        {
+          "site": "sail_5",
+          "stable": "UP_RIGHT"
+        }
+      ]
+    },
+    {
+      "nuisance": "curved_broken",
+      "known_true_class": "LEVEL",
+      "correct_stable": 0,
+      "wrong_stable": 0,
+      "abstained": 5,
+      "known_5_site_results": [
+        {
+          "site": "sail_1",
+          "stable": null
+        },
+        {
+          "site": "sail_2",
+          "stable": null
+        },
+        {
+          "site": "sail_3",
+          "stable": null
+        },
+        {
+          "site": "sail_4",
+          "stable": null
+        },
+        {
+          "site": "sail_5",
+          "stable": null
+        }
+      ]
+    },
+    {
+      "nuisance": "curved_broken",
+      "known_true_class": "DOWN_RIGHT",
+      "correct_stable": 2,
+      "wrong_stable": 0,
+      "abstained": 3,
+      "known_5_site_results": [
+        {
+          "site": "sail_1",
+          "stable": null
+        },
+        {
+          "site": "sail_2",
+          "stable": null
+        },
+        {
+          "site": "sail_3",
+          "stable": "DOWN_RIGHT"
+        },
+        {
+          "site": "sail_4",
+          "stable": "DOWN_RIGHT"
+        },
+        {
+          "site": "sail_5",
+          "stable": null
+        }
+      ]
+    }
+  ],
+  "strict_positive_recovery_all_nine_scenes": false,
+  "decision": "STAGE127_SOURCE_LIKE_POSITIVE_RECOVERY_INADEQUATE",
+  "scientific_scope": "Synthetic diagnostic of Stage127 instrument only; no claim that any natural hull carries information or that the drawing is solved.",
+  "safety": "No natural pixel inspection, secret-key enumeration, BIP39, wallet, public-address testing or social research."
+}
