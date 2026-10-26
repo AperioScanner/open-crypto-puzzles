@@ -1,0 +1,3732 @@
+{
+  "experiment_id": "A11-EXP-186",
+  "pre_registration": "analysis/runs/stage186-hull-column-center-holdout/PREREGISTRATION.md",
+  "canonical_sha256_provenance_only": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "original_artwork_pixels_read": false,
+  "frozen_detector": {
+    "x_from_center_inclusive": [
+      -26,
+      26
+    ],
+    "y_from_by_inclusive": [
+      -5,
+      34
+    ],
+    "thresholds": [
+      155,
+      185
+    ],
+    "min_vertical_runs": 3,
+    "min_columns": 16,
+    "min_column_span": 32,
+    "min_pair_x_separation": 14,
+    "slope_sign": 0.12,
+    "slope_level": 0.055,
+    "unanimous_8_readings": true
+  },
+  "synthetic_holdouts": {
+    "holdout_A": [
+      4.0,
+      16,
+      7,
+      3
+    ],
+    "holdout_B": [
+      8.0,
+      12,
+      9,
+      5
+    ]
+  },
+  "qa": {
+    "source_sha_bytes_only": true,
+    "original_artwork_pixels_not_read": true,
+    "stage127_archived_abstention": true,
+    "stage127_original_controls": true,
+    "stage185_archived_44_of_44": true,
+    "frozen_sites": true,
+    "frozen_formats": true,
+    "frozen_thresholds": true,
+    "different_frozen_holdout_styles": true,
+    "draw_holdout_A_UP_RIGHT": true,
+    "draw_holdout_A_LEVEL": true,
+    "draw_holdout_A_DOWN_RIGHT": true,
+    "draw_holdout_B_UP_RIGHT": true,
+    "draw_holdout_B_LEVEL": true,
+    "draw_holdout_B_DOWN_RIGHT": true,
+    "negative_fixture_blank": true,
+    "negative_fixture_single_diagonal": true,
+    "negative_fixture_opposing_two_diagonals": true
+  },
+  "qa_passed": 18,
+  "qa_total": 18,
+  "known_holdout_results": [
+    {
+      "family": "holdout_A",
+      "known_truth": "UP_RIGHT",
+      "correct_stable": 1,
+      "wrong_stable": 0,
+      "abstained": 4,
+      "false_positive": 0,
+      "site_results": [
+        {
+          "site": "sail_1",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.263938,
+              "columns": 43,
+              "span": 52,
+              "pairs": 530
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.260801,
+              "columns": 41,
+              "span": 52,
+              "pairs": 474
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.263918,
+              "columns": 43,
+              "span": 52,
+              "pairs": 530
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.259491,
+              "columns": 41,
+              "span": 52,
+              "pairs": 473
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.266933,
+              "columns": 43,
+              "span": 52,
+              "pairs": 530
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.264209,
+              "columns": 39,
+              "span": 52,
+              "pairs": 434
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.258206,
+              "columns": 27,
+              "span": 51,
+              "pairs": 205
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 14,
+              "span": 50,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_2",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.264282,
+              "columns": 43,
+              "span": 52,
+              "pairs": 542
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.258236,
+              "columns": 41,
+              "span": 51,
+              "pairs": 469
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.266094,
+              "columns": 43,
+              "span": 52,
+              "pairs": 542
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.256029,
+              "columns": 40,
+              "span": 51,
+              "pairs": 448
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.265019,
+              "columns": 43,
+              "span": 52,
+              "pairs": 542
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.261594,
+              "columns": 41,
+              "span": 51,
+              "pairs": 486
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.261905,
+              "columns": 32,
+              "span": 51,
+              "pairs": 294
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 11,
+              "span": 36,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_3",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.258138,
+              "columns": 43,
+              "span": 52,
+              "pairs": 530
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.258751,
+              "columns": 43,
+              "span": 52,
+              "pairs": 524
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.25803,
+              "columns": 43,
+              "span": 52,
+              "pairs": 530
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.252436,
+              "columns": 43,
+              "span": 52,
+              "pairs": 524
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.259838,
+              "columns": 43,
+              "span": 52,
+              "pairs": 530
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.257195,
+              "columns": 43,
+              "span": 52,
+              "pairs": 530
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.257614,
+              "columns": 28,
+              "span": 50,
+              "pairs": 210
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 13,
+              "span": 46,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_4",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.258503,
+              "columns": 43,
+              "span": 52,
+              "pairs": 539
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.253207,
+              "columns": 43,
+              "span": 52,
+              "pairs": 522
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.257863,
+              "columns": 43,
+              "span": 52,
+              "pairs": 539
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.253137,
+              "columns": 42,
+              "span": 52,
+              "pairs": 498
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.257509,
+              "columns": 43,
+              "span": 52,
+              "pairs": 539
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.257523,
+              "columns": 43,
+              "span": 52,
+              "pairs": 522
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.251279,
+              "columns": 30,
+              "span": 50,
+              "pairs": 237
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 13,
+              "span": 40,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_5",
+          "stable_class": "UP_RIGHT",
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.258065,
+              "columns": 41,
+              "span": 50,
+              "pairs": 458
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.256266,
+              "columns": 43,
+              "span": 51,
+              "pairs": 514
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.258086,
+              "columns": 41,
+              "span": 50,
+              "pairs": 458
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.254002,
+              "columns": 42,
+              "span": 51,
+              "pairs": 491
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.258547,
+              "columns": 41,
+              "span": 50,
+              "pairs": 458
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.255688,
+              "columns": 43,
+              "span": 51,
+              "pairs": 514
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.261758,
+              "columns": 31,
+              "span": 50,
+              "pairs": 272
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.256202,
+              "columns": 16,
+              "span": 48,
+              "pairs": 76
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family": "holdout_A",
+      "known_truth": "LEVEL",
+      "correct_stable": 5,
+      "wrong_stable": 0,
+      "abstained": 0,
+      "false_positive": 0,
+      "site_results": [
+        {
+          "site": "sail_1",
+          "stable_class": "LEVEL",
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 43,
+              "span": 52,
+              "pairs": 530
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 45,
+              "span": 52,
+              "pairs": 574
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": -0.000181,
+              "columns": 43,
+              "span": 52,
+              "pairs": 530
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": -0.000514,
+              "columns": 45,
+              "span": 52,
+              "pairs": 572
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": -0.00177,
+              "columns": 43,
+              "span": 52,
+              "pairs": 530
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": -0.001363,
+              "columns": 43,
+              "span": 52,
+              "pairs": 530
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": -0.000267,
+              "columns": 42,
+              "span": 52,
+              "pairs": 505
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.000624,
+              "columns": 29,
+              "span": 52,
+              "pairs": 186
+            }
+          ]
+        },
+        {
+          "site": "sail_2",
+          "stable_class": "LEVEL",
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 43,
+              "span": 52,
+              "pairs": 542
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 46,
+              "span": 52,
+              "pairs": 609
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 43,
+              "span": 52,
+              "pairs": 542
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 45,
+              "span": 52,
+              "pairs": 587
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 43,
+              "span": 52,
+              "pairs": 542
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 46,
+              "span": 52,
+              "pairs": 603
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 3.3e-05,
+              "columns": 40,
+              "span": 52,
+              "pairs": 467
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 8.3e-05,
+              "columns": 24,
+              "span": 52,
+              "pairs": 170
+            }
+          ]
+        },
+        {
+          "site": "sail_3",
+          "stable_class": "LEVEL",
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 43,
+              "span": 52,
+              "pairs": 530
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 45,
+              "span": 52,
+              "pairs": 578
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 2e-05,
+              "columns": 43,
+              "span": 52,
+              "pairs": 530
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 7.8e-05,
+              "columns": 44,
+              "span": 52,
+              "pairs": 551
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": -0.000822,
+              "columns": 43,
+              "span": 52,
+              "pairs": 530
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": -0.000293,
+              "columns": 43,
+              "span": 52,
+              "pairs": 525
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": -0.000196,
+              "columns": 42,
+              "span": 52,
+              "pairs": 504
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": -0.000722,
+              "columns": 34,
+              "span": 50,
+              "pairs": 292
+            }
+          ]
+        },
+        {
+          "site": "sail_4",
+          "stable_class": "LEVEL",
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 43,
+              "span": 52,
+              "pairs": 539
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 45,
+              "span": 52,
+              "pairs": 585
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": -4.1e-05,
+              "columns": 44,
+              "span": 52,
+              "pairs": 563
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 8e-06,
+              "columns": 45,
+              "span": 52,
+              "pairs": 585
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": -0.00027,
+              "columns": 43,
+              "span": 52,
+              "pairs": 539
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": -0.00025,
+              "columns": 44,
+              "span": 52,
+              "pairs": 556
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 7.8e-05,
+              "columns": 41,
+              "span": 52,
+              "pairs": 486
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": -2.5e-05,
+              "columns": 32,
+              "span": 47,
+              "pairs": 243
+            }
+          ]
+        },
+        {
+          "site": "sail_5",
+          "stable_class": "LEVEL",
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 41,
+              "span": 50,
+              "pairs": 458
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 44,
+              "span": 51,
+              "pairs": 535
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": -0.000799,
+              "columns": 41,
+              "span": 50,
+              "pairs": 458
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": -0.000342,
+              "columns": 41,
+              "span": 50,
+              "pairs": 458
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 0.001133,
+              "columns": 41,
+              "span": 50,
+              "pairs": 458
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": -0.001458,
+              "columns": 44,
+              "span": 51,
+              "pairs": 538
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": -4.3e-05,
+              "columns": 40,
+              "span": 50,
+              "pairs": 435
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": -0.000124,
+              "columns": 32,
+              "span": 50,
+              "pairs": 270
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family": "holdout_A",
+      "known_truth": "DOWN_RIGHT",
+      "correct_stable": 0,
+      "wrong_stable": 0,
+      "abstained": 5,
+      "false_positive": 0,
+      "site_results": [
+        {
+          "site": "sail_1",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.25458,
+              "columns": 43,
+              "span": 52,
+              "pairs": 530
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.245001,
+              "columns": 42,
+              "span": 51,
+              "pairs": 487
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.251157,
+              "columns": 43,
+              "span": 52,
+              "pairs": 530
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.245314,
+              "columns": 42,
+              "span": 51,
+              "pairs": 491
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.254799,
+              "columns": 43,
+              "span": 52,
+              "pairs": 530
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.247206,
+              "columns": 43,
+              "span": 51,
+              "pairs": 511
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.246354,
+              "columns": 31,
+              "span": 52,
+              "pairs": 266
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 15,
+              "span": 46,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_2",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.263844,
+              "columns": 43,
+              "span": 52,
+              "pairs": 542
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.251556,
+              "columns": 42,
+              "span": 51,
+              "pairs": 488
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.263415,
+              "columns": 43,
+              "span": 52,
+              "pairs": 542
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.253631,
+              "columns": 41,
+              "span": 51,
+              "pairs": 465
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.263151,
+              "columns": 43,
+              "span": 52,
+              "pairs": 542
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.260724,
+              "columns": 42,
+              "span": 51,
+              "pairs": 498
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.257453,
+              "columns": 30,
+              "span": 51,
+              "pairs": 258
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 12,
+              "span": 39,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_3",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.261995,
+              "columns": 43,
+              "span": 52,
+              "pairs": 530
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.263863,
+              "columns": 41,
+              "span": 52,
+              "pairs": 475
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.260229,
+              "columns": 43,
+              "span": 52,
+              "pairs": 530
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.26194,
+              "columns": 39,
+              "span": 52,
+              "pairs": 430
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.26475,
+              "columns": 43,
+              "span": 52,
+              "pairs": 530
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.263329,
+              "columns": 40,
+              "span": 52,
+              "pairs": 457
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.265052,
+              "columns": 30,
+              "span": 52,
+              "pairs": 247
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 12,
+              "span": 37,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_4",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.259863,
+              "columns": 43,
+              "span": 52,
+              "pairs": 539
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.258281,
+              "columns": 42,
+              "span": 52,
+              "pairs": 503
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.259934,
+              "columns": 43,
+              "span": 52,
+              "pairs": 539
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.257747,
+              "columns": 40,
+              "span": 52,
+              "pairs": 462
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.260358,
+              "columns": 43,
+              "span": 52,
+              "pairs": 539
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.257391,
+              "columns": 41,
+              "span": 52,
+              "pairs": 478
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.257504,
+              "columns": 28,
+              "span": 50,
+              "pairs": 212
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 12,
+              "span": 36,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_5",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.260583,
+              "columns": 41,
+              "span": 50,
+              "pairs": 458
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.259259,
+              "columns": 42,
+              "span": 51,
+              "pairs": 485
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.259806,
+              "columns": 41,
+              "span": 50,
+              "pairs": 458
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.259092,
+              "columns": 41,
+              "span": 51,
+              "pairs": 466
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.26029,
+              "columns": 41,
+              "span": 50,
+              "pairs": 458
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.258946,
+              "columns": 42,
+              "span": 51,
+              "pairs": 485
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.26002,
+              "columns": 28,
+              "span": 50,
+              "pairs": 216
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 14,
+              "span": 51,
+              "pairs": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family": "holdout_B",
+      "known_truth": "UP_RIGHT",
+      "correct_stable": 2,
+      "wrong_stable": 0,
+      "abstained": 3,
+      "false_positive": 0,
+      "site_results": [
+        {
+          "site": "sail_1",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.270089,
+              "columns": 37,
+              "span": 50,
+              "pairs": 406
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.264742,
+              "columns": 38,
+              "span": 51,
+              "pairs": 420
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.270459,
+              "columns": 37,
+              "span": 50,
+              "pairs": 406
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.261208,
+              "columns": 38,
+              "span": 51,
+              "pairs": 415
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.267294,
+              "columns": 37,
+              "span": 50,
+              "pairs": 406
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.255238,
+              "columns": 35,
+              "span": 51,
+              "pairs": 335
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.247065,
+              "columns": 28,
+              "span": 48,
+              "pairs": 213
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 13,
+              "span": 42,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_2",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.261178,
+              "columns": 34,
+              "span": 47,
+              "pairs": 322
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.259945,
+              "columns": 35,
+              "span": 47,
+              "pairs": 332
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.265507,
+              "columns": 34,
+              "span": 47,
+              "pairs": 322
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.258979,
+              "columns": 35,
+              "span": 48,
+              "pairs": 334
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.25728,
+              "columns": 34,
+              "span": 47,
+              "pairs": 322
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.263463,
+              "columns": 35,
+              "span": 48,
+              "pairs": 334
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.252975,
+              "columns": 23,
+              "span": 47,
+              "pairs": 138
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 14,
+              "span": 43,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_3",
+          "stable_class": "UP_RIGHT",
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.261305,
+              "columns": 32,
+              "span": 45,
+              "pairs": 269
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.266125,
+              "columns": 35,
+              "span": 52,
+              "pairs": 327
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.259319,
+              "columns": 32,
+              "span": 45,
+              "pairs": 269
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.266658,
+              "columns": 35,
+              "span": 52,
+              "pairs": 333
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.262636,
+              "columns": 32,
+              "span": 45,
+              "pairs": 269
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.26608,
+              "columns": 35,
+              "span": 52,
+              "pairs": 326
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.250769,
+              "columns": 24,
+              "span": 45,
+              "pairs": 148
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.248799,
+              "columns": 18,
+              "span": 52,
+              "pairs": 90
+            }
+          ]
+        },
+        {
+          "site": "sail_4",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.265333,
+              "columns": 32,
+              "span": 52,
+              "pairs": 269
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.267559,
+              "columns": 32,
+              "span": 52,
+              "pairs": 270
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.266489,
+              "columns": 32,
+              "span": 52,
+              "pairs": 269
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.269374,
+              "columns": 31,
+              "span": 52,
+              "pairs": 254
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.269583,
+              "columns": 32,
+              "span": 52,
+              "pairs": 269
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.262477,
+              "columns": 34,
+              "span": 52,
+              "pairs": 315
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.272982,
+              "columns": 22,
+              "span": 52,
+              "pairs": 125
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 14,
+              "span": 52,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_5",
+          "stable_class": "UP_RIGHT",
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.2572,
+              "columns": 35,
+              "span": 48,
+              "pairs": 350
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.259717,
+              "columns": 37,
+              "span": 49,
+              "pairs": 383
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.25898,
+              "columns": 35,
+              "span": 48,
+              "pairs": 350
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.259252,
+              "columns": 36,
+              "span": 49,
+              "pairs": 361
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.255686,
+              "columns": 35,
+              "span": 48,
+              "pairs": 350
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.257491,
+              "columns": 36,
+              "span": 49,
+              "pairs": 365
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "UP_RIGHT",
+              "slope": -0.24588,
+              "columns": 28,
+              "span": 48,
+              "pairs": 220
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": "UP_RIGHT",
+              "slope": -0.244645,
+              "columns": 17,
+              "span": 49,
+              "pairs": 78
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family": "holdout_B",
+      "known_truth": "LEVEL",
+      "correct_stable": 5,
+      "wrong_stable": 0,
+      "abstained": 0,
+      "false_positive": 0,
+      "site_results": [
+        {
+          "site": "sail_1",
+          "stable_class": "LEVEL",
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": -7e-06,
+              "columns": 37,
+              "span": 50,
+              "pairs": 406
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 1.8e-05,
+              "columns": 40,
+              "span": 51,
+              "pairs": 471
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": -0.000129,
+              "columns": 37,
+              "span": 50,
+              "pairs": 406
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": -0.0025,
+              "columns": 39,
+              "span": 50,
+              "pairs": 445
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 0.002191,
+              "columns": 37,
+              "span": 50,
+              "pairs": 406
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.001439,
+              "columns": 39,
+              "span": 51,
+              "pairs": 444
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 0.013348,
+              "columns": 34,
+              "span": 48,
+              "pairs": 329
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.045936,
+              "columns": 24,
+              "span": 47,
+              "pairs": 136
+            }
+          ]
+        },
+        {
+          "site": "sail_2",
+          "stable_class": "LEVEL",
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 34,
+              "span": 47,
+              "pairs": 322
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 37,
+              "span": 48,
+              "pairs": 381
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": -0.003699,
+              "columns": 34,
+              "span": 47,
+              "pairs": 322
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.012528,
+              "columns": 36,
+              "span": 48,
+              "pairs": 365
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 0.001508,
+              "columns": 34,
+              "span": 47,
+              "pairs": 322
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.01475,
+              "columns": 37,
+              "span": 48,
+              "pairs": 375
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": -7.6e-05,
+              "columns": 32,
+              "span": 47,
+              "pairs": 285
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": -0.022572,
+              "columns": 24,
+              "span": 48,
+              "pairs": 161
+            }
+          ]
+        },
+        {
+          "site": "sail_3",
+          "stable_class": "LEVEL",
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 32,
+              "span": 45,
+              "pairs": 269
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 35,
+              "span": 52,
+              "pairs": 324
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 0.004778,
+              "columns": 32,
+              "span": 45,
+              "pairs": 269
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.004556,
+              "columns": 37,
+              "span": 52,
+              "pairs": 369
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": -0.000455,
+              "columns": 32,
+              "span": 45,
+              "pairs": 269
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.006426,
+              "columns": 33,
+              "span": 45,
+              "pairs": 284
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 0.002315,
+              "columns": 31,
+              "span": 45,
+              "pairs": 251
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.001052,
+              "columns": 25,
+              "span": 43,
+              "pairs": 147
+            }
+          ]
+        },
+        {
+          "site": "sail_4",
+          "stable_class": "LEVEL",
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 32,
+              "span": 52,
+              "pairs": 269
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 35,
+              "span": 52,
+              "pairs": 324
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": -0.000736,
+              "columns": 32,
+              "span": 52,
+              "pairs": 269
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": -0.001328,
+              "columns": 34,
+              "span": 52,
+              "pairs": 305
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": -0.00031,
+              "columns": 32,
+              "span": 52,
+              "pairs": 269
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": -0.001242,
+              "columns": 35,
+              "span": 52,
+              "pairs": 328
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": -5.6e-05,
+              "columns": 30,
+              "span": 52,
+              "pairs": 238
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 7.4e-05,
+              "columns": 26,
+              "span": 52,
+              "pairs": 182
+            }
+          ]
+        },
+        {
+          "site": "sail_5",
+          "stable_class": "LEVEL",
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 35,
+              "span": 48,
+              "pairs": 350
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.0,
+              "columns": 37,
+              "span": 48,
+              "pairs": 381
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 0.001,
+              "columns": 35,
+              "span": 48,
+              "pairs": 350
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.002296,
+              "columns": 37,
+              "span": 49,
+              "pairs": 394
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": 0.00303,
+              "columns": 35,
+              "span": 48,
+              "pairs": 350
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": -0.000546,
+              "columns": 39,
+              "span": 49,
+              "pairs": 428
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "LEVEL",
+              "slope": -0.004888,
+              "columns": 33,
+              "span": 46,
+              "pairs": 295
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": "LEVEL",
+              "slope": 0.000832,
+              "columns": 25,
+              "span": 45,
+              "pairs": 162
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family": "holdout_B",
+      "known_truth": "DOWN_RIGHT",
+      "correct_stable": 2,
+      "wrong_stable": 0,
+      "abstained": 3,
+      "false_positive": 0,
+      "site_results": [
+        {
+          "site": "sail_1",
+          "stable_class": "DOWN_RIGHT",
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.265067,
+              "columns": 37,
+              "span": 50,
+              "pairs": 406
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.267584,
+              "columns": 38,
+              "span": 51,
+              "pairs": 425
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.257522,
+              "columns": 37,
+              "span": 50,
+              "pairs": 406
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.267514,
+              "columns": 38,
+              "span": 51,
+              "pairs": 424
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.268595,
+              "columns": 37,
+              "span": 50,
+              "pairs": 406
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.26936,
+              "columns": 39,
+              "span": 50,
+              "pairs": 441
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.247173,
+              "columns": 25,
+              "span": 50,
+              "pairs": 179
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.23329,
+              "columns": 20,
+              "span": 50,
+              "pairs": 110
+            }
+          ]
+        },
+        {
+          "site": "sail_2",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.258923,
+              "columns": 34,
+              "span": 47,
+              "pairs": 322
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.260391,
+              "columns": 36,
+              "span": 48,
+              "pairs": 354
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.259007,
+              "columns": 34,
+              "span": 47,
+              "pairs": 322
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.257404,
+              "columns": 37,
+              "span": 48,
+              "pairs": 375
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.264977,
+              "columns": 34,
+              "span": 47,
+              "pairs": 322
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.265739,
+              "columns": 36,
+              "span": 48,
+              "pairs": 349
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.243658,
+              "columns": 25,
+              "span": 47,
+              "pairs": 169
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 14,
+              "span": 44,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_3",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.272199,
+              "columns": 32,
+              "span": 45,
+              "pairs": 269
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.264916,
+              "columns": 33,
+              "span": 52,
+              "pairs": 287
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.268252,
+              "columns": 32,
+              "span": 45,
+              "pairs": 269
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.272933,
+              "columns": 32,
+              "span": 45,
+              "pairs": 261
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.271609,
+              "columns": 32,
+              "span": 45,
+              "pairs": 269
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.269051,
+              "columns": 35,
+              "span": 46,
+              "pairs": 322
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.278824,
+              "columns": 26,
+              "span": 45,
+              "pairs": 172
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 12,
+              "span": 43,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_4",
+          "stable_class": "DOWN_RIGHT",
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.266667,
+              "columns": 32,
+              "span": 52,
+              "pairs": 269
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.263121,
+              "columns": 33,
+              "span": 52,
+              "pairs": 285
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.268032,
+              "columns": 32,
+              "span": 52,
+              "pairs": 269
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.268598,
+              "columns": 33,
+              "span": 52,
+              "pairs": 286
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.262312,
+              "columns": 32,
+              "span": 52,
+              "pairs": 269
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.266627,
+              "columns": 34,
+              "span": 52,
+              "pairs": 304
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.268324,
+              "columns": 24,
+              "span": 52,
+              "pairs": 153
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.246805,
+              "columns": 16,
+              "span": 52,
+              "pairs": 71
+            }
+          ]
+        },
+        {
+          "site": "sail_5",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.267275,
+              "columns": 35,
+              "span": 48,
+              "pairs": 350
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.256631,
+              "columns": 35,
+              "span": 48,
+              "pairs": 333
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.270428,
+              "columns": 35,
+              "span": 48,
+              "pairs": 350
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.271101,
+              "columns": 33,
+              "span": 48,
+              "pairs": 307
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.263222,
+              "columns": 35,
+              "span": 48,
+              "pairs": 350
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": "DOWN_RIGHT",
+              "slope": 0.264477,
+              "columns": 34,
+              "span": 48,
+              "pairs": 320
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": "DOWN_RIGHT",
+              "slope": 0.27778,
+              "columns": 29,
+              "span": 48,
+              "pairs": 237
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 15,
+              "span": 44,
+              "pairs": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "negative_holdout_results": [
+    {
+      "kind": "blank",
+      "correct_stable": 0,
+      "wrong_stable": 0,
+      "abstained": 5,
+      "false_positive": 0,
+      "site_results": [
+        {
+          "site": "sail_1",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_2",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_3",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_4",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_5",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "single_diagonal",
+      "correct_stable": 0,
+      "wrong_stable": 0,
+      "abstained": 5,
+      "false_positive": 0,
+      "site_results": [
+        {
+          "site": "sail_1",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_2",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_3",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_4",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_5",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "opposing_two_diagonals",
+      "correct_stable": 0,
+      "wrong_stable": 0,
+      "abstained": 5,
+      "false_positive": 0,
+      "site_results": [
+        {
+          "site": "sail_1",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_2",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_3",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_4",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            }
+          ]
+        },
+        {
+          "site": "sail_5",
+          "stable_class": null,
+          "readings": [
+            {
+              "variant": "original",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "original",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg85",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "jpeg70",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 155,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            },
+            {
+              "variant": "down75_up",
+              "threshold": 185,
+              "label": null,
+              "slope": null,
+              "columns": 0,
+              "span": 0,
+              "pairs": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stage185_in_sample_diagnostics_only": [
+    {
+      "family": "curved",
+      "known_truth": "UP_RIGHT",
+      "correct_stable": 0,
+      "wrong_stable": 0,
+      "abstained": 5
+    },
+    {
+      "family": "curved",
+      "known_truth": "LEVEL",
+      "correct_stable": 5,
+      "wrong_stable": 0,
+      "abstained": 0
+    },
+    {
+      "family": "curved",
+      "known_truth": "DOWN_RIGHT",
+      "correct_stable": 0,
+      "wrong_stable": 0,
+      "abstained": 5
+    },
+    {
+      "family": "broken",
+      "known_truth": "UP_RIGHT",
+      "correct_stable": 0,
+      "wrong_stable": 0,
+      "abstained": 5
+    },
+    {
+      "family": "broken",
+      "known_truth": "LEVEL",
+      "correct_stable": 4,
+      "wrong_stable": 0,
+      "abstained": 1
+    },
+    {
+      "family": "broken",
+      "known_truth": "DOWN_RIGHT",
+      "correct_stable": 0,
+      "wrong_stable": 0,
+      "abstained": 5
+    },
+    {
+      "family": "curved_broken",
+      "known_truth": "UP_RIGHT",
+      "correct_stable": 1,
+      "wrong_stable": 0,
+      "abstained": 4
+    },
+    {
+      "family": "curved_broken",
+      "known_truth": "LEVEL",
+      "correct_stable": 5,
+      "wrong_stable": 0,
+      "abstained": 0
+    },
+    {
+      "family": "curved_broken",
+      "known_truth": "DOWN_RIGHT",
+      "correct_stable": 0,
+      "wrong_stable": 0,
+      "abstained": 5
+    }
+  ],
+  "decision": "STAGE186_HELDOUT_CALIBRATION_INADEQUATE",
+  "scope": "Source-blind synthetic detector validation only. No natural-image slope inference.",
+  "safety": "No source pixels, keys, BIP39, wallets, addresses or off-image research."
+}
