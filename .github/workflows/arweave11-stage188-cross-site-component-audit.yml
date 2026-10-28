@@ -1,0 +1,44 @@
+name: Arweave 11 Stage188 source-blind cross-site component audit
+on:
+  push:
+    branches: [research/arweave11-chatgpt]
+    paths:
+      - ".github/workflows/arweave11-stage188-cross-site-component-audit.yml"
+      - "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage188_stage187_cross_site_component_audit.py"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: arweave11-stage188
+  cancel-in-progress: false
+jobs:
+  stage188:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      PZL: 2-mid-prizes/arweave-puzzle-11-1eth
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/arweave11-chatgpt
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install nonsecret source-blind measurement dependencies
+        run: python -m pip install --disable-pip-version-check numpy pillow opencv-python-headless
+      - name: Verify frozen Stage188 preregistration exists
+        run: test -s "$PZL/analysis/runs/stage188-stage187-cross-site-component-audit/PREREGISTRATION.md"
+      - name: Compile independent Stage188 audit
+        run: python -m py_compile "$PZL/tools/stage188_stage187_cross_site_component_audit.py"
+      - name: Run exact Stage188 synthetic QA reattribution
+        run: python "$PZL/tools/stage188_stage187_cross_site_component_audit.py"
+      - name: Archive results even if controls fail
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$PZL/analysis/runs/stage188-stage187-cross-site-component-audit"
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "research: Stage188 cross-site QA audit findings [skip ci]"
+          git pull --rebase origin research/arweave11-chatgpt
+          git push origin HEAD:research/arweave11-chatgpt
