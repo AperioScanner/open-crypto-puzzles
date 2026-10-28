@@ -1,0 +1,476 @@
+{
+  "audited_sites": 45,
+  "canonical_sha256_provenance_only": "c6ba4b50fd75181a325f28b620438f740120925a07a23b889dda597546db87e1",
+  "decision": "STAGE185_COMPOSITE_COMPONENT_QA_MISMATCH_CONFIRMED",
+  "experiment_id": "A11-EXP-187",
+  "fixed_component_counter": {
+    "connectivity": 8,
+    "foreground_gray_below": 245,
+    "input": "unchanged Stage127.crop scene/site"
+  },
+  "fresh_known_component_controls": {
+    "blank": 0,
+    "joined": 1,
+    "one": 1,
+    "two": 2
+  },
+  "mismatch_count": 10,
+  "original_artwork_pixels_read": false,
+  "per_family": {
+    "broken": {
+      "component_histogram": {
+        "4": 9,
+        "5": 6
+      },
+      "mismatches": 0,
+      "total_sites": 15
+    },
+    "curved": {
+      "component_histogram": {
+        "1": 10,
+        "2": 4,
+        "3": 1
+      },
+      "mismatches": 10,
+      "total_sites": 15
+    },
+    "curved_broken": {
+      "component_histogram": {
+        "4": 8,
+        "5": 6,
+        "6": 1
+      },
+      "mismatches": 0,
+      "total_sites": 15
+    }
+  },
+  "preregistration": "analysis/runs/stage187-stage185-component-qa-audit/PREREGISTRATION.md",
+  "qa": {
+    "archived_composite_claims_true": true,
+    "archived_individual_strokes_4_each": true,
+    "exactly_45_existing_fixture_sites": true,
+    "fresh_blank_is_zero": true,
+    "fresh_one_line_is_one": true,
+    "fresh_two_joined_lines_are_one": true,
+    "fresh_two_separated_lines_are_two": true,
+    "frozen_five_sites": true,
+    "frozen_three_classes": true,
+    "frozen_three_families": true,
+    "source_identity_bytes_only": true,
+    "stage185_archived_44_of_44": true,
+    "stage186_archived_18_of_18": true
+  },
+  "qa_passed": 13,
+  "qa_total": 13,
+  "reused_old_fixtures_not_independent_holdouts": true,
+  "safety": "No canonical pixel read, keys, BIP39, wallets, addresses, OCR or outside-image research.",
+  "scientific_limit": "Old QA protocol mismatch cannot validate a source-image code. Stage185/186 negative scientific conclusions unchanged.",
+  "scope": "Stage185 QA protocol compliance on old synthetic fixtures only",
+  "site_results": [
+    {
+      "actual_composite_components": 1,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved",
+      "known_truth": "UP_RIGHT",
+      "precommitted_qa_discrepancy": true,
+      "site": "sail_1"
+    },
+    {
+      "actual_composite_components": 1,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved",
+      "known_truth": "UP_RIGHT",
+      "precommitted_qa_discrepancy": true,
+      "site": "sail_2"
+    },
+    {
+      "actual_composite_components": 1,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved",
+      "known_truth": "UP_RIGHT",
+      "precommitted_qa_discrepancy": true,
+      "site": "sail_3"
+    },
+    {
+      "actual_composite_components": 3,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved",
+      "known_truth": "UP_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_4"
+    },
+    {
+      "actual_composite_components": 2,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved",
+      "known_truth": "UP_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_5"
+    },
+    {
+      "actual_composite_components": 1,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved",
+      "known_truth": "LEVEL",
+      "precommitted_qa_discrepancy": true,
+      "site": "sail_1"
+    },
+    {
+      "actual_composite_components": 1,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved",
+      "known_truth": "LEVEL",
+      "precommitted_qa_discrepancy": true,
+      "site": "sail_2"
+    },
+    {
+      "actual_composite_components": 1,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved",
+      "known_truth": "LEVEL",
+      "precommitted_qa_discrepancy": true,
+      "site": "sail_3"
+    },
+    {
+      "actual_composite_components": 2,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved",
+      "known_truth": "LEVEL",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_4"
+    },
+    {
+      "actual_composite_components": 1,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved",
+      "known_truth": "LEVEL",
+      "precommitted_qa_discrepancy": true,
+      "site": "sail_5"
+    },
+    {
+      "actual_composite_components": 1,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved",
+      "known_truth": "DOWN_RIGHT",
+      "precommitted_qa_discrepancy": true,
+      "site": "sail_1"
+    },
+    {
+      "actual_composite_components": 1,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved",
+      "known_truth": "DOWN_RIGHT",
+      "precommitted_qa_discrepancy": true,
+      "site": "sail_2"
+    },
+    {
+      "actual_composite_components": 2,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved",
+      "known_truth": "DOWN_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_3"
+    },
+    {
+      "actual_composite_components": 2,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved",
+      "known_truth": "DOWN_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_4"
+    },
+    {
+      "actual_composite_components": 1,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved",
+      "known_truth": "DOWN_RIGHT",
+      "precommitted_qa_discrepancy": true,
+      "site": "sail_5"
+    },
+    {
+      "actual_composite_components": 4,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "broken",
+      "known_truth": "UP_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_1"
+    },
+    {
+      "actual_composite_components": 4,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "broken",
+      "known_truth": "UP_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_2"
+    },
+    {
+      "actual_composite_components": 4,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "broken",
+      "known_truth": "UP_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_3"
+    },
+    {
+      "actual_composite_components": 5,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "broken",
+      "known_truth": "UP_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_4"
+    },
+    {
+      "actual_composite_components": 5,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "broken",
+      "known_truth": "UP_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_5"
+    },
+    {
+      "actual_composite_components": 4,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "broken",
+      "known_truth": "LEVEL",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_1"
+    },
+    {
+      "actual_composite_components": 4,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "broken",
+      "known_truth": "LEVEL",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_2"
+    },
+    {
+      "actual_composite_components": 4,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "broken",
+      "known_truth": "LEVEL",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_3"
+    },
+    {
+      "actual_composite_components": 4,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "broken",
+      "known_truth": "LEVEL",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_4"
+    },
+    {
+      "actual_composite_components": 5,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "broken",
+      "known_truth": "LEVEL",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_5"
+    },
+    {
+      "actual_composite_components": 4,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "broken",
+      "known_truth": "DOWN_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_1"
+    },
+    {
+      "actual_composite_components": 4,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "broken",
+      "known_truth": "DOWN_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_2"
+    },
+    {
+      "actual_composite_components": 5,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "broken",
+      "known_truth": "DOWN_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_3"
+    },
+    {
+      "actual_composite_components": 5,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "broken",
+      "known_truth": "DOWN_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_4"
+    },
+    {
+      "actual_composite_components": 5,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "broken",
+      "known_truth": "DOWN_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_5"
+    },
+    {
+      "actual_composite_components": 4,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved_broken",
+      "known_truth": "UP_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_1"
+    },
+    {
+      "actual_composite_components": 4,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved_broken",
+      "known_truth": "UP_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_2"
+    },
+    {
+      "actual_composite_components": 4,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved_broken",
+      "known_truth": "UP_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_3"
+    },
+    {
+      "actual_composite_components": 6,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved_broken",
+      "known_truth": "UP_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_4"
+    },
+    {
+      "actual_composite_components": 5,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved_broken",
+      "known_truth": "UP_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_5"
+    },
+    {
+      "actual_composite_components": 4,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved_broken",
+      "known_truth": "LEVEL",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_1"
+    },
+    {
+      "actual_composite_components": 4,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved_broken",
+      "known_truth": "LEVEL",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_2"
+    },
+    {
+      "actual_composite_components": 4,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved_broken",
+      "known_truth": "LEVEL",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_3"
+    },
+    {
+      "actual_composite_components": 5,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved_broken",
+      "known_truth": "LEVEL",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_4"
+    },
+    {
+      "actual_composite_components": 5,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved_broken",
+      "known_truth": "LEVEL",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_5"
+    },
+    {
+      "actual_composite_components": 4,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved_broken",
+      "known_truth": "DOWN_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_1"
+    },
+    {
+      "actual_composite_components": 4,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved_broken",
+      "known_truth": "DOWN_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_2"
+    },
+    {
+      "actual_composite_components": 5,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved_broken",
+      "known_truth": "DOWN_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_3"
+    },
+    {
+      "actual_composite_components": 5,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved_broken",
+      "known_truth": "DOWN_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_4"
+    },
+    {
+      "actual_composite_components": 5,
+      "archived_claim_two_contours": true,
+      "archived_individual_strokes": 4,
+      "family": "curved_broken",
+      "known_truth": "DOWN_RIGHT",
+      "precommitted_qa_discrepancy": false,
+      "site": "sail_5"
+    }
+  ]
+}
