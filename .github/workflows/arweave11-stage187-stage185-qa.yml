@@ -1,0 +1,44 @@
+name: Arweave 11 Stage187 audit Stage185 component QA mismatch
+on:
+  push:
+    branches: [research/arweave11-chatgpt]
+    paths:
+      - ".github/workflows/arweave11-stage187-stage185-qa.yml"
+      - "2-mid-prizes/arweave-puzzle-11-1eth/tools/stage187_stage185_component_qa_audit.py"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: arweave11-stage187
+  cancel-in-progress: false
+jobs:
+  stage187:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      PZL: 2-mid-prizes/arweave-puzzle-11-1eth
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/arweave11-chatgpt
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install source-blind audit dependencies
+        run: python -m pip install --disable-pip-version-check numpy pillow opencv-python-headless
+      - name: Verify Stage187 was preregistered
+        run: test -s "$PZL/analysis/runs/stage187-stage185-component-qa-audit/PREREGISTRATION.md"
+      - name: Compile Stage187
+        run: python -m py_compile "$PZL/tools/stage187_stage185_component_qa_audit.py"
+      - name: Run Stage187 source-blind existing-fixture QA audit
+        run: python "$PZL/tools/stage187_stage185_component_qa_audit.py"
+      - name: Archive Stage187 actual result including failures
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$PZL/analysis/runs/stage187-stage185-component-qa-audit"
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "research: Stage187 historic component QA audit findings [skip ci]"
+          git pull --rebase origin research/arweave11-chatgpt
+          git push origin HEAD:research/arweave11-chatgpt
